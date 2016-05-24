@@ -1,0 +1,621 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lbl_HoraSaida.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lbl_HoraSaida.Location" type="System.Drawing.Point, System.Drawing">
+    <value>650, 254</value>
+  </data>
+  <data name="lbl_HoraSaida.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 13</value>
+  </data>
+  <data name="lbl_HoraSaida.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;lbl_HoraSaida.Name" xml:space="preserve">
+    <value>lbl_HoraSaida</value>
+  </data>
+  <data name="&gt;&gt;lbl_HoraSaida.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_HoraSaida.Parent" xml:space="preserve">
+    <value>group_InscricoesTurmas</value>
+  </data>
+  <data name="&gt;&gt;lbl_HoraSaida.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lbl_HorarioSaida.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_HorarioSaida.Location" type="System.Drawing.Point, System.Drawing">
+    <value>592, 231</value>
+  </data>
+  <data name="lbl_HorarioSaida.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 13</value>
+  </data>
+  <data name="lbl_HorarioSaida.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="lbl_HorarioSaida.Text" xml:space="preserve">
+    <value>Horario de saída:</value>
+  </data>
+  <data name="&gt;&gt;lbl_HorarioSaida.Name" xml:space="preserve">
+    <value>lbl_HorarioSaida</value>
+  </data>
+  <data name="&gt;&gt;lbl_HorarioSaida.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_HorarioSaida.Parent" xml:space="preserve">
+    <value>group_InscricoesTurmas</value>
+  </data>
+  <data name="&gt;&gt;lbl_HorarioSaida.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lbl_HoraEntrada.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lbl_HoraEntrada.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_HoraEntrada.Location" type="System.Drawing.Point, System.Drawing">
+    <value>650, 207</value>
+  </data>
+  <data name="lbl_HoraEntrada.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 13</value>
+  </data>
+  <data name="lbl_HoraEntrada.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;lbl_HoraEntrada.Name" xml:space="preserve">
+    <value>lbl_HoraEntrada</value>
+  </data>
+  <data name="&gt;&gt;lbl_HoraEntrada.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_HoraEntrada.Parent" xml:space="preserve">
+    <value>group_InscricoesTurmas</value>
+  </data>
+  <data name="&gt;&gt;lbl_HoraEntrada.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lbl_HorarioEntrada.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_HorarioEntrada.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_HorarioEntrada.Location" type="System.Drawing.Point, System.Drawing">
+    <value>592, 184</value>
+  </data>
+  <data name="lbl_HorarioEntrada.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 13</value>
+  </data>
+  <data name="lbl_HorarioEntrada.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="lbl_HorarioEntrada.Text" xml:space="preserve">
+    <value>Horario de entrada:</value>
+  </data>
+  <data name="&gt;&gt;lbl_HorarioEntrada.Name" xml:space="preserve">
+    <value>lbl_HorarioEntrada</value>
+  </data>
+  <data name="&gt;&gt;lbl_HorarioEntrada.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_HorarioEntrada.Parent" xml:space="preserve">
+    <value>group_InscricoesTurmas</value>
+  </data>
+  <data name="&gt;&gt;lbl_HorarioEntrada.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lbl_NSala.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_NSala.Location" type="System.Drawing.Point, System.Drawing">
+    <value>650, 163</value>
+  </data>
+  <data name="lbl_NSala.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 13</value>
+  </data>
+  <data name="lbl_NSala.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;lbl_NSala.Name" xml:space="preserve">
+    <value>lbl_NSala</value>
+  </data>
+  <data name="&gt;&gt;lbl_NSala.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_NSala.Parent" xml:space="preserve">
+    <value>group_InscricoesTurmas</value>
+  </data>
+  <data name="&gt;&gt;lbl_NSala.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lbl_Sala.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_Sala.Location" type="System.Drawing.Point, System.Drawing">
+    <value>592, 143</value>
+  </data>
+  <data name="lbl_Sala.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 13</value>
+  </data>
+  <data name="lbl_Sala.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="lbl_Sala.Text" xml:space="preserve">
+    <value>Sala:</value>
+  </data>
+  <data name="&gt;&gt;lbl_Sala.Name" xml:space="preserve">
+    <value>lbl_Sala</value>
+  </data>
+  <data name="&gt;&gt;lbl_Sala.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_Sala.Parent" xml:space="preserve">
+    <value>group_InscricoesTurmas</value>
+  </data>
+  <data name="&gt;&gt;lbl_Sala.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lbl_NomeProfessor.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_NomeProfessor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>650, 124</value>
+  </data>
+  <data name="lbl_NomeProfessor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 13</value>
+  </data>
+  <data name="lbl_NomeProfessor.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomeProfessor.Name" xml:space="preserve">
+    <value>lbl_NomeProfessor</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomeProfessor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomeProfessor.Parent" xml:space="preserve">
+    <value>group_InscricoesTurmas</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomeProfessor.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="lbl_Professor.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_Professor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>592, 104</value>
+  </data>
+  <data name="lbl_Professor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 13</value>
+  </data>
+  <data name="lbl_Professor.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="lbl_Professor.Text" xml:space="preserve">
+    <value>Professor:</value>
+  </data>
+  <data name="&gt;&gt;lbl_Professor.Name" xml:space="preserve">
+    <value>lbl_Professor</value>
+  </data>
+  <data name="&gt;&gt;lbl_Professor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_Professor.Parent" xml:space="preserve">
+    <value>group_InscricoesTurmas</value>
+  </data>
+  <data name="&gt;&gt;lbl_Professor.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lbl_NomeCurso.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_NomeCurso.Location" type="System.Drawing.Point, System.Drawing">
+    <value>650, 86</value>
+  </data>
+  <data name="lbl_NomeCurso.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 13</value>
+  </data>
+  <data name="lbl_NomeCurso.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomeCurso.Name" xml:space="preserve">
+    <value>lbl_NomeCurso</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomeCurso.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomeCurso.Parent" xml:space="preserve">
+    <value>group_InscricoesTurmas</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomeCurso.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="lbl_Curso.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_Curso.Location" type="System.Drawing.Point, System.Drawing">
+    <value>592, 69</value>
+  </data>
+  <data name="lbl_Curso.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 13</value>
+  </data>
+  <data name="lbl_Curso.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="lbl_Curso.Text" xml:space="preserve">
+    <value>Curso:</value>
+  </data>
+  <data name="&gt;&gt;lbl_Curso.Name" xml:space="preserve">
+    <value>lbl_Curso</value>
+  </data>
+  <data name="&gt;&gt;lbl_Curso.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_Curso.Parent" xml:space="preserve">
+    <value>group_InscricoesTurmas</value>
+  </data>
+  <data name="&gt;&gt;lbl_Curso.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>592, 37</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 13</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Id turma:</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>group_InscricoesTurmas</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="msk_IdTurma.Location" type="System.Drawing.Point, System.Drawing">
+    <value>653, 34</value>
+  </data>
+  <data name="msk_IdTurma.Mask" xml:space="preserve">
+    <value>0000</value>
+  </data>
+  <data name="msk_IdTurma.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 20</value>
+  </data>
+  <data name="msk_IdTurma.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;msk_IdTurma.Name" xml:space="preserve">
+    <value>msk_IdTurma</value>
+  </data>
+  <data name="&gt;&gt;msk_IdTurma.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;msk_IdTurma.Parent" xml:space="preserve">
+    <value>group_InscricoesTurmas</value>
+  </data>
+  <data name="&gt;&gt;msk_IdTurma.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="fotoDataGridViewImageColumn.HeaderText" xml:space="preserve">
+    <value>Foto</value>
+  </data>
+  <data name="nomeDoAlunoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Nome do aluno</value>
+  </data>
+  <data name="cursoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Curso</value>
+  </data>
+  <data name="planoContratadoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Plano contratado</value>
+  </data>
+  <data name="vincularAlunoDataGridViewCheckBoxColumn.HeaderText" xml:space="preserve">
+    <value>Vincular aluno</value>
+  </data>
+  <metadata name="inscricoesTurmasBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>164, 17</value>
+  </metadata>
+  <data name="dgv_Alunos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 19</value>
+  </data>
+  <data name="dgv_Alunos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>557, 424</value>
+  </data>
+  <data name="dgv_Alunos.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;dgv_Alunos.Name" xml:space="preserve">
+    <value>dgv_Alunos</value>
+  </data>
+  <data name="&gt;&gt;dgv_Alunos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgv_Alunos.Parent" xml:space="preserve">
+    <value>group_InscricoesTurmas</value>
+  </data>
+  <data name="&gt;&gt;dgv_Alunos.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="group_InscricoesTurmas.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="group_InscricoesTurmas.Size" type="System.Drawing.Size, System.Drawing">
+    <value>870, 449</value>
+  </data>
+  <data name="group_InscricoesTurmas.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="group_InscricoesTurmas.Text" xml:space="preserve">
+    <value>Vincular aluno à turma</value>
+  </data>
+  <data name="&gt;&gt;group_InscricoesTurmas.Name" xml:space="preserve">
+    <value>group_InscricoesTurmas</value>
+  </data>
+  <data name="&gt;&gt;group_InscricoesTurmas.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;group_InscricoesTurmas.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;group_InscricoesTurmas.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btn_Cancelar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>807, 467</value>
+  </data>
+  <data name="btn_Cancelar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btn_Cancelar.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btn_Cancelar.Text" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.Name" xml:space="preserve">
+    <value>btn_Cancelar</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btn_SalvarVinculo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>690, 467</value>
+  </data>
+  <data name="btn_SalvarVinculo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 23</value>
+  </data>
+  <data name="btn_SalvarVinculo.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btn_SalvarVinculo.Text" xml:space="preserve">
+    <value>Salvar vinculo</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarVinculo.Name" xml:space="preserve">
+    <value>btn_SalvarVinculo</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarVinculo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarVinculo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarVinculo.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="dB_EscolaDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="inscricoesTurmasTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>387, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>47</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>894, 501</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Vincular aluno à turma</value>
+  </data>
+  <data name="&gt;&gt;dB_EscolaDataSet.Name" xml:space="preserve">
+    <value>dB_EscolaDataSet</value>
+  </data>
+  <data name="&gt;&gt;dB_EscolaDataSet.Type" xml:space="preserve">
+    <value>CadastroFuncionario.DB_EscolaDataSet, DB_EscolaDataSet.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;inscricoesTurmasBindingSource.Name" xml:space="preserve">
+    <value>inscricoesTurmasBindingSource</value>
+  </data>
+  <data name="&gt;&gt;inscricoesTurmasBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;inscricoesTurmasTableAdapter.Name" xml:space="preserve">
+    <value>inscricoesTurmasTableAdapter</value>
+  </data>
+  <data name="&gt;&gt;inscricoesTurmasTableAdapter.Type" xml:space="preserve">
+    <value>CadastroFuncionario.DB_EscolaDataSetTableAdapters.InscricoesTurmasTableAdapter, DB_EscolaDataSet.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fotoDataGridViewImageColumn.Name" xml:space="preserve">
+    <value>fotoDataGridViewImageColumn</value>
+  </data>
+  <data name="&gt;&gt;fotoDataGridViewImageColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewImageColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nomeDoAlunoDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>nomeDoAlunoDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;nomeDoAlunoDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cursoDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>cursoDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;cursoDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;planoContratadoDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>planoContratadoDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;planoContratadoDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;vincularAlunoDataGridViewCheckBoxColumn.Name" xml:space="preserve">
+    <value>vincularAlunoDataGridViewCheckBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;vincularAlunoDataGridViewCheckBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormInscricoesTurmas</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>
