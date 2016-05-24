@@ -452,7 +452,7 @@ namespace CadastroFuncionario
             return true;
         }
         
-        public static bool CadastrarTurma(int Id_Idioma, int Id_Escala, int Sala, DateTime Data, string Hora_Entrada, string Hora_Saida)
+        public static bool CadastrarTurma(int Id_Plano, int Id_Escala, int Sala, DateTime Data, string Hora_Entrada, string Hora_Saida)
         {
             SqlConnection conexao = new SqlConnection(strConexao);
             SqlCommand cmd;
@@ -463,10 +463,10 @@ namespace CadastroFuncionario
                 cmd = new SqlCommand();
                 cmd.Connection = conexao;
 
-                cmd.CommandText = "Insert into SysProtected.Turmas (Id_Idioma, Id_Escala, Sala, Data, Hora_Entrada, Hora_Saida) " +
-                "values (@Id_Idioma, @Id_Escala, @Sala, @Data, @Hora_Entrada, @Hora_Saida)";
+                cmd.CommandText = "Insert into SysProtected.Turmas (Id_Plano, Id_Escala, Sala, Data, Hora_Entrada, Hora_Saida) " +
+                "values (@Id_Plano, @Id_Escala, @Sala, @Data, @Hora_Entrada, @Hora_Saida)";
 
-                cmd.Parameters.Add(new SqlParameter("@Id_Idioma", Id_Idioma));
+                cmd.Parameters.Add(new SqlParameter("@Id_Plano", Id_Plano));
                 cmd.Parameters.Add(new SqlParameter("@Id_Escala", Id_Escala));
                 cmd.Parameters.Add(new SqlParameter("@Sala", Sala));
                 SqlParameter dataParameter = new SqlParameter("@Data", SqlDbType.Date);

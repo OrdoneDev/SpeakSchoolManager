@@ -98,11 +98,6 @@ namespace CadastroFuncionario
                     cmb_CidadeFuncionario.Text = Endereco[1];
                 }
             }
-            else
-            {
-                cmb_EstadoFuncionario.Text = "";
-                cmb_CidadeFuncionario.Text = "";
-            }
         }
 
         private void btn_AbrirFotoFuncionario_Click(object sender, EventArgs e)

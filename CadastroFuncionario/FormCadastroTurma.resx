@@ -275,31 +275,31 @@
   <data name="&gt;&gt;lbl_NomeFuncionario.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="lbl_NomeIdioma.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lbl_NomePlano.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="lbl_NomeIdioma.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="lbl_NomePlano.Location" type="System.Drawing.Point, System.Drawing">
     <value>114, 25</value>
   </data>
-  <data name="lbl_NomeIdioma.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 13</value>
+  <data name="lbl_NomePlano.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 13</value>
   </data>
-  <data name="lbl_NomeIdioma.TabIndex" type="System.Int32, mscorlib">
+  <data name="lbl_NomePlano.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="lbl_NomeIdioma.Text" xml:space="preserve">
-    <value>Nome do idioma:</value>
+  <data name="lbl_NomePlano.Text" xml:space="preserve">
+    <value>Nome do plano:</value>
   </data>
-  <data name="&gt;&gt;lbl_NomeIdioma.Name" xml:space="preserve">
-    <value>lbl_NomeIdioma</value>
+  <data name="&gt;&gt;lbl_NomePlano.Name" xml:space="preserve">
+    <value>lbl_NomePlano</value>
   </data>
-  <data name="&gt;&gt;lbl_NomeIdioma.Type" xml:space="preserve">
+  <data name="&gt;&gt;lbl_NomePlano.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;lbl_NomeIdioma.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lbl_NomePlano.Parent" xml:space="preserve">
     <value>group_CadastroTurma</value>
   </data>
-  <data name="&gt;&gt;lbl_NomeIdioma.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lbl_NomePlano.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
   <data name="lbl_IdEscala.AutoSize" type="System.Boolean, mscorlib">
@@ -329,31 +329,31 @@
   <data name="&gt;&gt;lbl_IdEscala.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="lbl_IdIdioma.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lbl_IdPlano.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="lbl_IdIdioma.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="lbl_IdPlano.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 25</value>
   </data>
-  <data name="lbl_IdIdioma.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 13</value>
+  <data name="lbl_IdPlano.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 13</value>
   </data>
-  <data name="lbl_IdIdioma.TabIndex" type="System.Int32, mscorlib">
+  <data name="lbl_IdPlano.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="lbl_IdIdioma.Text" xml:space="preserve">
-    <value>Id idioma:</value>
+  <data name="lbl_IdPlano.Text" xml:space="preserve">
+    <value>Id plano:</value>
   </data>
-  <data name="&gt;&gt;lbl_IdIdioma.Name" xml:space="preserve">
-    <value>lbl_IdIdioma</value>
+  <data name="&gt;&gt;lbl_IdPlano.Name" xml:space="preserve">
+    <value>lbl_IdPlano</value>
   </data>
-  <data name="&gt;&gt;lbl_IdIdioma.Type" xml:space="preserve">
+  <data name="&gt;&gt;lbl_IdPlano.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;lbl_IdIdioma.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lbl_IdPlano.Parent" xml:space="preserve">
     <value>group_CadastroTurma</value>
   </data>
-  <data name="&gt;&gt;lbl_IdIdioma.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lbl_IdPlano.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
   <data name="cmb_SalaTurma.Items" xml:space="preserve">
@@ -446,52 +446,52 @@
   <data name="&gt;&gt;msk_IdEscala.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
-  <data name="cmb_NomeIdioma.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="cmb_NomePlano.Location" type="System.Drawing.Point, System.Drawing">
     <value>227, 22</value>
   </data>
-  <data name="cmb_NomeIdioma.MaxLength" type="System.Int32, mscorlib">
+  <data name="cmb_NomePlano.MaxLength" type="System.Int32, mscorlib">
     <value>40</value>
   </data>
-  <data name="cmb_NomeIdioma.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="cmb_NomePlano.Size" type="System.Drawing.Size, System.Drawing">
     <value>181, 21</value>
   </data>
-  <data name="cmb_NomeIdioma.TabIndex" type="System.Int32, mscorlib">
+  <data name="cmb_NomePlano.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;cmb_NomeIdioma.Name" xml:space="preserve">
-    <value>cmb_NomeIdioma</value>
+  <data name="&gt;&gt;cmb_NomePlano.Name" xml:space="preserve">
+    <value>cmb_NomePlano</value>
   </data>
-  <data name="&gt;&gt;cmb_NomeIdioma.Type" xml:space="preserve">
+  <data name="&gt;&gt;cmb_NomePlano.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;cmb_NomeIdioma.Parent" xml:space="preserve">
+  <data name="&gt;&gt;cmb_NomePlano.Parent" xml:space="preserve">
     <value>group_CadastroTurma</value>
   </data>
-  <data name="&gt;&gt;cmb_NomeIdioma.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;cmb_NomePlano.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
-  <data name="msk_IdIdioma.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="msk_IdPlano.Location" type="System.Drawing.Point, System.Drawing">
     <value>62, 22</value>
   </data>
-  <data name="msk_IdIdioma.Mask" xml:space="preserve">
+  <data name="msk_IdPlano.Mask" xml:space="preserve">
     <value>0000</value>
   </data>
-  <data name="msk_IdIdioma.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="msk_IdPlano.Size" type="System.Drawing.Size, System.Drawing">
     <value>33, 20</value>
   </data>
-  <data name="msk_IdIdioma.TabIndex" type="System.Int32, mscorlib">
+  <data name="msk_IdPlano.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;msk_IdIdioma.Name" xml:space="preserve">
-    <value>msk_IdIdioma</value>
+  <data name="&gt;&gt;msk_IdPlano.Name" xml:space="preserve">
+    <value>msk_IdPlano</value>
   </data>
-  <data name="&gt;&gt;msk_IdIdioma.Type" xml:space="preserve">
+  <data name="&gt;&gt;msk_IdPlano.Type" xml:space="preserve">
     <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;msk_IdIdioma.Parent" xml:space="preserve">
+  <data name="&gt;&gt;msk_IdPlano.Parent" xml:space="preserve">
     <value>group_CadastroTurma</value>
   </data>
-  <data name="&gt;&gt;msk_IdIdioma.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;msk_IdPlano.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
   <data name="group_CadastroTurma.Location" type="System.Drawing.Point, System.Drawing">

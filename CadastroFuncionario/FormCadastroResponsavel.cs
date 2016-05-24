@@ -87,11 +87,6 @@ namespace CadastroFuncionario
                     cmb_CidadeResponsavel.Text = Endereco[1];
                 }
             }
-            else
-            {
-                cmb_EstadoResponsavel.Text = "";
-                cmb_CidadeResponsavel.Text = "";
-            }
         }
 
         private void btn_EfetuarCadastroResponsavel_Click(object sender, EventArgs e)

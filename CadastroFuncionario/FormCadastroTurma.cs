@@ -30,21 +30,21 @@ namespace CadastroFuncionario
             return true;
         }
 
-        private void msk_IdIdioma_TextChanged(object sender, EventArgs e)
+        private void msk_IdPlano_TextChanged(object sender, EventArgs e)
         {
-            string NomeIdioma;
-            if (msk_IdIdioma.Text.Length == 4)
+            string NomePlano;
+            if (msk_IdPlano.Text.Length == 4)
             {
-                NomeIdioma = GerenciaBanco.getNome(msk_IdIdioma.Text, "Idiomas", "Id_Idioma");
+                NomePlano = GerenciaBanco.getNome(msk_IdPlano.Text, "Planos", "Id_Plano");
 
-                if (NomeIdioma.Length > 0)
+                if (NomePlano.Length > 0)
                 {
-                    cmb_NomeIdioma.Text = NomeIdioma;
+                    cmb_NomePlano.Text = NomePlano;
                 }
             }
             else
             {
-                cmb_NomeIdioma.Text = "";
+                cmb_NomePlano.Text = "";
             }
         }
 
@@ -70,12 +70,27 @@ namespace CadastroFuncionario
             }
         }
 
+
+        private void cmb_NomePlano_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
+        {
+            ValidaCampos.GetLista(cmb_NomePlano, "TOP 5 Nome, Id_Plano", "Nome", e, "Planos");
+
+            msk_IdPlano.Text = GerenciaBanco.Id_Plano.ToString().PadLeft(4, '0');
+        }
+
+        private void cmb_NomeFuncionario_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
+        {
+            ValidaCampos.GetLista(cmb_NomeFuncionario, "TOP 5 Nome, Id_Funcionario", "Nome", e, "Planos");
+
+            msk_IdPlano.Text = GerenciaBanco.Id_Plano.ToString().PadLeft(4, '0');
+        }
+
         private void btn_SalvarTurma_Click(object sender, EventArgs e)
         {
             if (!VerificaCamposCadastroTurma())
                 return;
             
-            if (GerenciaBanco.CadastrarTurma(int.Parse(msk_IdIdioma.Text), int.Parse(msk_IdEscala.Text),
+            if (GerenciaBanco.CadastrarTurma(int.Parse(msk_IdPlano.Text), int.Parse(msk_IdEscala.Text),
             int.Parse(cmb_SalaTurma.Text), Data, lbl_ValorHoraEntrada.Text, lbl_ValorHoraSaida.Text))
             {
                 MessageBox.Show("Turma cadastrada com sucesso!");

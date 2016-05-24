@@ -36,6 +36,7 @@ namespace CadastroFuncionario
                 {
                     cmb_NomeFuncionario.Text = Funcionario[0];
                     cmb_CargoFuncionario.Text = Funcionario[1];
+                    GerenciaBanco.Cargo = Funcionario[1];
                 }
             }
             else
@@ -51,7 +52,7 @@ namespace CadastroFuncionario
 
             msk_IdFuncionario.Text = GerenciaBanco.Id_Funcionario.ToString().PadLeft(4, '0');
 
-            cmb_CargoFuncionario.Text = GerenciaBanco.Cargo.ToString().PadLeft(4, '0');
+            cmb_CargoFuncionario.Text = GerenciaBanco.Cargo.ToString();
         }
 
         private void btn_SalvarEscala_Click(object sender, EventArgs e)
