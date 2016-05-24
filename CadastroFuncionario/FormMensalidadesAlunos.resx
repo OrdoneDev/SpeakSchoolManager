@@ -329,50 +329,26 @@
   <data name="códigoDaMensalidadeDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>Código da mensalidade</value>
   </data>
-  <data name="códigoDaMensalidadeDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
-    <value>130</value>
-  </data>
   <data name="códigoDoAlunoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>Código do aluno</value>
-  </data>
-  <data name="códigoDoAlunoDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
-    <value>77</value>
   </data>
   <data name="númeroDaParcelaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>Número da parcela</value>
   </data>
-  <data name="númeroDaParcelaDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
-    <value>112</value>
-  </data>
   <data name="situaçãoDataGridViewCheckBoxColumn.HeaderText" xml:space="preserve">
     <value>Situação</value>
-  </data>
-  <data name="situaçãoDataGridViewCheckBoxColumn.Width" type="System.Int32, mscorlib">
-    <value>55</value>
   </data>
   <data name="dataDeVencimentoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>Data de vencimento</value>
   </data>
-  <data name="dataDeVencimentoDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
-    <value>117</value>
-  </data>
   <data name="númeroTotalDeParcelasDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>Número total de parcelas</value>
-  </data>
-  <data name="númeroTotalDeParcelasDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
-    <value>101</value>
   </data>
   <data name="situaçãoTotalDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>Situação total</value>
   </data>
-  <data name="situaçãoTotalDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
-    <value>89</value>
-  </data>
   <data name="nomeDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>Nome</value>
-  </data>
-  <data name="nomeDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
-    <value>60</value>
   </data>
   <metadata name="allMensalidadesBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>171, 17</value>

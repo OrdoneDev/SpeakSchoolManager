@@ -35,6 +35,12 @@
             this.lbl_NomeAluno = new System.Windows.Forms.Label();
             this.cmb_NomeAluno = new System.Windows.Forms.ComboBox();
             this.dgv_BoletimAluno = new System.Windows.Forms.DataGridView();
+            this.allBoletimBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dB_EscolaDataSet2 = new CadastroFuncionario.DB_EscolaDataSet2();
+            this.btn_ConsultarBoletim = new System.Windows.Forms.Button();
+            this.btn_Cancelar = new System.Windows.Forms.Button();
+            this.btn_SalvarAlteracoes = new System.Windows.Forms.Button();
+            this.allBoletimTableAdapter = new CadastroFuncionario.DB_EscolaDataSet2TableAdapters.AllBoletimTableAdapter();
             this.códigoDaInscriçãoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.códigoDoAlunoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomeDoAlunoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,12 +50,6 @@
             this.prova2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mediaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.faltasNoSemestreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.allBoletimBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dB_EscolaDataSet2 = new CadastroFuncionario.DB_EscolaDataSet2();
-            this.btn_ConsultarBoletim = new System.Windows.Forms.Button();
-            this.btn_Cancelar = new System.Windows.Forms.Button();
-            this.btn_SalvarAlteracoes = new System.Windows.Forms.Button();
-            this.allBoletimTableAdapter = new CadastroFuncionario.DB_EscolaDataSet2TableAdapters.AllBoletimTableAdapter();
             this.group_BoletimAluno.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_BoletimAluno)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.allBoletimBindingSource)).BeginInit();
@@ -140,6 +140,51 @@
             this.dgv_BoletimAluno.CellParsing += new System.Windows.Forms.DataGridViewCellParsingEventHandler(this.dgv_BoletimAluno_CellParsing);
             this.dgv_BoletimAluno.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dgv_BoletimAluno_DataError);
             // 
+            // allBoletimBindingSource
+            // 
+            this.allBoletimBindingSource.DataMember = "AllBoletim";
+            this.allBoletimBindingSource.DataSource = this.dB_EscolaDataSet2;
+            // 
+            // dB_EscolaDataSet2
+            // 
+            this.dB_EscolaDataSet2.DataSetName = "DB_EscolaDataSet2";
+            this.dB_EscolaDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // btn_ConsultarBoletim
+            // 
+            this.btn_ConsultarBoletim.Location = new System.Drawing.Point(659, 18);
+            this.btn_ConsultarBoletim.Name = "btn_ConsultarBoletim";
+            this.btn_ConsultarBoletim.Size = new System.Drawing.Size(75, 23);
+            this.btn_ConsultarBoletim.TabIndex = 3;
+            this.btn_ConsultarBoletim.Tag = "0";
+            this.btn_ConsultarBoletim.Text = "Consultar";
+            this.btn_ConsultarBoletim.UseVisualStyleBackColor = true;
+            this.btn_ConsultarBoletim.Click += new System.EventHandler(this.btn_ConsultarBoletim_Click);
+            // 
+            // btn_Cancelar
+            // 
+            this.btn_Cancelar.Location = new System.Drawing.Point(708, 292);
+            this.btn_Cancelar.Name = "btn_Cancelar";
+            this.btn_Cancelar.Size = new System.Drawing.Size(75, 23);
+            this.btn_Cancelar.TabIndex = 6;
+            this.btn_Cancelar.Text = "Cancelar";
+            this.btn_Cancelar.UseVisualStyleBackColor = true;
+            this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
+            // 
+            // btn_SalvarAlteracoes
+            // 
+            this.btn_SalvarAlteracoes.Location = new System.Drawing.Point(590, 292);
+            this.btn_SalvarAlteracoes.Name = "btn_SalvarAlteracoes";
+            this.btn_SalvarAlteracoes.Size = new System.Drawing.Size(112, 23);
+            this.btn_SalvarAlteracoes.TabIndex = 5;
+            this.btn_SalvarAlteracoes.Text = "Salvar alterações";
+            this.btn_SalvarAlteracoes.UseVisualStyleBackColor = true;
+            this.btn_SalvarAlteracoes.Click += new System.EventHandler(this.btn_SalvarAlteracoes_Click);
+            // 
+            // allBoletimTableAdapter
+            // 
+            this.allBoletimTableAdapter.ClearBeforeFill = true;
+            // 
             // códigoDaInscriçãoDataGridViewTextBoxColumn
             // 
             this.códigoDaInscriçãoDataGridViewTextBoxColumn.DataPropertyName = "Código da inscrição";
@@ -214,56 +259,11 @@
             // 
             // faltasNoSemestreDataGridViewTextBoxColumn
             // 
+            this.faltasNoSemestreDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.faltasNoSemestreDataGridViewTextBoxColumn.DataPropertyName = "Faltas no semestre";
             this.faltasNoSemestreDataGridViewTextBoxColumn.HeaderText = "Faltas no semestre";
             this.faltasNoSemestreDataGridViewTextBoxColumn.MaxInputLength = 2;
             this.faltasNoSemestreDataGridViewTextBoxColumn.Name = "faltasNoSemestreDataGridViewTextBoxColumn";
-            this.faltasNoSemestreDataGridViewTextBoxColumn.Width = 110;
-            // 
-            // allBoletimBindingSource
-            // 
-            this.allBoletimBindingSource.DataMember = "AllBoletim";
-            this.allBoletimBindingSource.DataSource = this.dB_EscolaDataSet2;
-            // 
-            // dB_EscolaDataSet2
-            // 
-            this.dB_EscolaDataSet2.DataSetName = "DB_EscolaDataSet2";
-            this.dB_EscolaDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // btn_ConsultarBoletim
-            // 
-            this.btn_ConsultarBoletim.Location = new System.Drawing.Point(659, 18);
-            this.btn_ConsultarBoletim.Name = "btn_ConsultarBoletim";
-            this.btn_ConsultarBoletim.Size = new System.Drawing.Size(75, 23);
-            this.btn_ConsultarBoletim.TabIndex = 3;
-            this.btn_ConsultarBoletim.Tag = "0";
-            this.btn_ConsultarBoletim.Text = "Consultar";
-            this.btn_ConsultarBoletim.UseVisualStyleBackColor = true;
-            this.btn_ConsultarBoletim.Click += new System.EventHandler(this.btn_ConsultarBoletim_Click);
-            // 
-            // btn_Cancelar
-            // 
-            this.btn_Cancelar.Location = new System.Drawing.Point(708, 292);
-            this.btn_Cancelar.Name = "btn_Cancelar";
-            this.btn_Cancelar.Size = new System.Drawing.Size(75, 23);
-            this.btn_Cancelar.TabIndex = 6;
-            this.btn_Cancelar.Text = "Cancelar";
-            this.btn_Cancelar.UseVisualStyleBackColor = true;
-            this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
-            // 
-            // btn_SalvarAlteracoes
-            // 
-            this.btn_SalvarAlteracoes.Location = new System.Drawing.Point(590, 292);
-            this.btn_SalvarAlteracoes.Name = "btn_SalvarAlteracoes";
-            this.btn_SalvarAlteracoes.Size = new System.Drawing.Size(112, 23);
-            this.btn_SalvarAlteracoes.TabIndex = 5;
-            this.btn_SalvarAlteracoes.Text = "Salvar alterações";
-            this.btn_SalvarAlteracoes.UseVisualStyleBackColor = true;
-            this.btn_SalvarAlteracoes.Click += new System.EventHandler(this.btn_SalvarAlteracoes_Click);
-            // 
-            // allBoletimTableAdapter
-            // 
-            this.allBoletimTableAdapter.ClearBeforeFill = true;
             // 
             // FormBoletimAluno
             // 

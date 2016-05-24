@@ -1303,5 +1303,44 @@ namespace CadastroFuncionario
             }
             return dt;
         }
+
+        public static List<string> getTurma(int Id_Turma)
+        {
+            SqlConnection conexao = new SqlConnection(strConexao);
+            SqlCommand cmd;
+            SqlDataReader dr;
+            List<string> lista = new List<string>();
+
+            try
+            {
+                conexao.Open();
+                cmd = new SqlCommand();
+                cmd.Connection = conexao;
+                cmd.CommandType = CommandType.Text;
+
+                cmd.CommandText = "Select * from TurmaAluno where Id_Turma = @Id_Turma";
+                cmd.Parameters.Add(new SqlParameter("@Id_Turma", Id_Turma));
+
+                dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    lista.Add(dr.GetString(1));
+                    lista.Add(dr.GetString(2));
+                    lista.Add(dr.GetValue(3).ToString());
+                    lista.Add(dr.GetTimeSpan(4).ToString());
+                    lista.Add(dr.GetTimeSpan(5).ToString());
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conexao.Close();
+            }
+
+            return lista;
+        }
     }
 }

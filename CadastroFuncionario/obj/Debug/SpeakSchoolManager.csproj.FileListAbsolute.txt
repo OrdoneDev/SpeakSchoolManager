@@ -50,3 +50,4 @@ D:\SpeakSchoolManager\CadastroFuncionario\obj\Debug\CadastroFuncionario.Properti
 D:\SpeakSchoolManager\CadastroFuncionario\obj\Debug\CadastroFuncionario.FormCadastroFuncionario.pt-BR.resources
 D:\SpeakSchoolManager\CadastroFuncionario\obj\Debug\SpeakSchoolManager.csproj.GenerateResource.Cache
 D:\SpeakSchoolManager\CadastroFuncionario\obj\Debug\pt-BR\CadastroFuncionario.resources.dll
+D:\SpeakSchoolManager\CadastroFuncionario\obj\Debug\CadastroFuncionario.FormInscricoesTurmas.resources

@@ -107,5 +107,12 @@ namespace CadastroFuncionario
             form.MdiParent = this;
             form.Show();
         }
+
+        private void vincularAuloATurmaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormInscricoesTurmas form = new FormInscricoesTurmas();
+            form.MdiParent = this;
+            form.Show();
+        }
     }
 }

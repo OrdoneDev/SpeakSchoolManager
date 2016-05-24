@@ -44,6 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DB_EscolaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_EscolaDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DB_EscolaDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -137,6 +142,12 @@
     <Compile Include="FormHistoricoFuncionario.Designer.cs">
       <DependentUpon>FormHistoricoFuncionario.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormInscricoesTurmas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInscricoesTurmas.Designer.cs">
+      <DependentUpon>FormInscricoesTurmas.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMensalidadesAlunos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -200,6 +211,9 @@
     <EmbeddedResource Include="FormHistoricoFuncionario.resx">
       <DependentUpon>FormHistoricoFuncionario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormInscricoesTurmas.resx">
+      <DependentUpon>FormInscricoesTurmas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMensalidadesAlunos.resx">
       <DependentUpon>FormMensalidadesAlunos.cs</DependentUpon>
     </EmbeddedResource>
@@ -211,6 +225,17 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="DB_EscolaDataSet.xsc">
+      <DependentUpon>DB_EscolaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DB_EscolaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_EscolaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_EscolaDataSet.xss">
+      <DependentUpon>DB_EscolaDataSet.xsd</DependentUpon>
+    </None>
     <None Include="DB_EscolaDataSet2.xsc">
       <DependentUpon>DB_EscolaDataSet2.xsd</DependentUpon>
     </None>

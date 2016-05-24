@@ -135,7 +135,7 @@
             this.dgv_MensalidadesAluno.AllowUserToAddRows = false;
             this.dgv_MensalidadesAluno.AllowUserToDeleteRows = false;
             this.dgv_MensalidadesAluno.AutoGenerateColumns = false;
-            this.dgv_MensalidadesAluno.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgv_MensalidadesAluno.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_MensalidadesAluno.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_MensalidadesAluno.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.códigoDaMensalidadeDataGridViewTextBoxColumn,
