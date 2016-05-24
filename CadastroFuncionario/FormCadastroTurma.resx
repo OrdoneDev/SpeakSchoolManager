@@ -1,0 +1,587 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lbl_ValorHoraSaida.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lbl_ValorHoraSaida.Location" type="System.Drawing.Point, System.Drawing">
+    <value>334, 109</value>
+  </data>
+  <data name="lbl_ValorHoraSaida.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 13</value>
+  </data>
+  <data name="lbl_ValorHoraSaida.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;lbl_ValorHoraSaida.Name" xml:space="preserve">
+    <value>lbl_ValorHoraSaida</value>
+  </data>
+  <data name="&gt;&gt;lbl_ValorHoraSaida.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_ValorHoraSaida.Parent" xml:space="preserve">
+    <value>group_CadastroTurma</value>
+  </data>
+  <data name="&gt;&gt;lbl_ValorHoraSaida.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lbl_HoraSaida.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_HoraSaida.Location" type="System.Drawing.Point, System.Drawing">
+    <value>334, 82</value>
+  </data>
+  <data name="lbl_HoraSaida.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 13</value>
+  </data>
+  <data name="lbl_HoraSaida.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="lbl_HoraSaida.Text" xml:space="preserve">
+    <value>Hora de saida:</value>
+  </data>
+  <data name="&gt;&gt;lbl_HoraSaida.Name" xml:space="preserve">
+    <value>lbl_HoraSaida</value>
+  </data>
+  <data name="&gt;&gt;lbl_HoraSaida.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_HoraSaida.Parent" xml:space="preserve">
+    <value>group_CadastroTurma</value>
+  </data>
+  <data name="&gt;&gt;lbl_HoraSaida.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lbl_ValorHoraEntrada.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_ValorHoraEntrada.Location" type="System.Drawing.Point, System.Drawing">
+    <value>224, 109</value>
+  </data>
+  <data name="lbl_ValorHoraEntrada.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 13</value>
+  </data>
+  <data name="lbl_ValorHoraEntrada.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;lbl_ValorHoraEntrada.Name" xml:space="preserve">
+    <value>lbl_ValorHoraEntrada</value>
+  </data>
+  <data name="&gt;&gt;lbl_ValorHoraEntrada.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_ValorHoraEntrada.Parent" xml:space="preserve">
+    <value>group_CadastroTurma</value>
+  </data>
+  <data name="&gt;&gt;lbl_ValorHoraEntrada.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lbl_HoraEntrada.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_HoraEntrada.Location" type="System.Drawing.Point, System.Drawing">
+    <value>224, 82</value>
+  </data>
+  <data name="lbl_HoraEntrada.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 13</value>
+  </data>
+  <data name="lbl_HoraEntrada.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="lbl_HoraEntrada.Text" xml:space="preserve">
+    <value>Hora de entrada:</value>
+  </data>
+  <data name="&gt;&gt;lbl_HoraEntrada.Name" xml:space="preserve">
+    <value>lbl_HoraEntrada</value>
+  </data>
+  <data name="&gt;&gt;lbl_HoraEntrada.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_HoraEntrada.Parent" xml:space="preserve">
+    <value>group_CadastroTurma</value>
+  </data>
+  <data name="&gt;&gt;lbl_HoraEntrada.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lbl_Sala.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_Sala.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 77</value>
+  </data>
+  <data name="lbl_Sala.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 13</value>
+  </data>
+  <data name="lbl_Sala.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="lbl_Sala.Text" xml:space="preserve">
+    <value>Sala:</value>
+  </data>
+  <data name="&gt;&gt;lbl_Sala.Name" xml:space="preserve">
+    <value>lbl_Sala</value>
+  </data>
+  <data name="&gt;&gt;lbl_Sala.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_Sala.Parent" xml:space="preserve">
+    <value>group_CadastroTurma</value>
+  </data>
+  <data name="&gt;&gt;lbl_Sala.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lbl_NomeFuncionario.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_NomeFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>114, 52</value>
+  </data>
+  <data name="lbl_NomeFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 13</value>
+  </data>
+  <data name="lbl_NomeFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="lbl_NomeFuncionario.Text" xml:space="preserve">
+    <value>Nome do funcionário:</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomeFuncionario.Name" xml:space="preserve">
+    <value>lbl_NomeFuncionario</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomeFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomeFuncionario.Parent" xml:space="preserve">
+    <value>group_CadastroTurma</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomeFuncionario.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lbl_NomeIdioma.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_NomeIdioma.Location" type="System.Drawing.Point, System.Drawing">
+    <value>114, 25</value>
+  </data>
+  <data name="lbl_NomeIdioma.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 13</value>
+  </data>
+  <data name="lbl_NomeIdioma.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="lbl_NomeIdioma.Text" xml:space="preserve">
+    <value>Nome do idioma:</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomeIdioma.Name" xml:space="preserve">
+    <value>lbl_NomeIdioma</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomeIdioma.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomeIdioma.Parent" xml:space="preserve">
+    <value>group_CadastroTurma</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomeIdioma.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="lbl_IdEscala.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_IdEscala.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 51</value>
+  </data>
+  <data name="lbl_IdEscala.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 13</value>
+  </data>
+  <data name="lbl_IdEscala.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="lbl_IdEscala.Text" xml:space="preserve">
+    <value>Id escala:</value>
+  </data>
+  <data name="&gt;&gt;lbl_IdEscala.Name" xml:space="preserve">
+    <value>lbl_IdEscala</value>
+  </data>
+  <data name="&gt;&gt;lbl_IdEscala.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_IdEscala.Parent" xml:space="preserve">
+    <value>group_CadastroTurma</value>
+  </data>
+  <data name="&gt;&gt;lbl_IdEscala.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lbl_IdIdioma.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_IdIdioma.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 25</value>
+  </data>
+  <data name="lbl_IdIdioma.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 13</value>
+  </data>
+  <data name="lbl_IdIdioma.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="lbl_IdIdioma.Text" xml:space="preserve">
+    <value>Id idioma:</value>
+  </data>
+  <data name="&gt;&gt;lbl_IdIdioma.Name" xml:space="preserve">
+    <value>lbl_IdIdioma</value>
+  </data>
+  <data name="&gt;&gt;lbl_IdIdioma.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_IdIdioma.Parent" xml:space="preserve">
+    <value>group_CadastroTurma</value>
+  </data>
+  <data name="&gt;&gt;lbl_IdIdioma.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="cmb_SalaTurma.Items" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="cmb_SalaTurma.Items1" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="cmb_SalaTurma.Items2" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="cmb_SalaTurma.Items3" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="cmb_SalaTurma.Items4" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="cmb_SalaTurma.Items5" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="cmb_SalaTurma.Items6" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="cmb_SalaTurma.Location" type="System.Drawing.Point, System.Drawing">
+    <value>62, 74</value>
+  </data>
+  <data name="cmb_SalaTurma.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 21</value>
+  </data>
+  <data name="cmb_SalaTurma.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;cmb_SalaTurma.Name" xml:space="preserve">
+    <value>cmb_SalaTurma</value>
+  </data>
+  <data name="&gt;&gt;cmb_SalaTurma.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmb_SalaTurma.Parent" xml:space="preserve">
+    <value>group_CadastroTurma</value>
+  </data>
+  <data name="&gt;&gt;cmb_SalaTurma.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="cmb_NomeFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>227, 49</value>
+  </data>
+  <data name="cmb_NomeFuncionario.MaxLength" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="cmb_NomeFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 21</value>
+  </data>
+  <data name="cmb_NomeFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;cmb_NomeFuncionario.Name" xml:space="preserve">
+    <value>cmb_NomeFuncionario</value>
+  </data>
+  <data name="&gt;&gt;cmb_NomeFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmb_NomeFuncionario.Parent" xml:space="preserve">
+    <value>group_CadastroTurma</value>
+  </data>
+  <data name="&gt;&gt;cmb_NomeFuncionario.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="msk_IdEscala.Location" type="System.Drawing.Point, System.Drawing">
+    <value>62, 48</value>
+  </data>
+  <data name="msk_IdEscala.Mask" xml:space="preserve">
+    <value>0000</value>
+  </data>
+  <data name="msk_IdEscala.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 20</value>
+  </data>
+  <data name="msk_IdEscala.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;msk_IdEscala.Name" xml:space="preserve">
+    <value>msk_IdEscala</value>
+  </data>
+  <data name="&gt;&gt;msk_IdEscala.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;msk_IdEscala.Parent" xml:space="preserve">
+    <value>group_CadastroTurma</value>
+  </data>
+  <data name="&gt;&gt;msk_IdEscala.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="cmb_NomeIdioma.Location" type="System.Drawing.Point, System.Drawing">
+    <value>227, 22</value>
+  </data>
+  <data name="cmb_NomeIdioma.MaxLength" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="cmb_NomeIdioma.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 21</value>
+  </data>
+  <data name="cmb_NomeIdioma.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;cmb_NomeIdioma.Name" xml:space="preserve">
+    <value>cmb_NomeIdioma</value>
+  </data>
+  <data name="&gt;&gt;cmb_NomeIdioma.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmb_NomeIdioma.Parent" xml:space="preserve">
+    <value>group_CadastroTurma</value>
+  </data>
+  <data name="&gt;&gt;cmb_NomeIdioma.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="msk_IdIdioma.Location" type="System.Drawing.Point, System.Drawing">
+    <value>62, 22</value>
+  </data>
+  <data name="msk_IdIdioma.Mask" xml:space="preserve">
+    <value>0000</value>
+  </data>
+  <data name="msk_IdIdioma.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 20</value>
+  </data>
+  <data name="msk_IdIdioma.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;msk_IdIdioma.Name" xml:space="preserve">
+    <value>msk_IdIdioma</value>
+  </data>
+  <data name="&gt;&gt;msk_IdIdioma.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;msk_IdIdioma.Parent" xml:space="preserve">
+    <value>group_CadastroTurma</value>
+  </data>
+  <data name="&gt;&gt;msk_IdIdioma.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="group_CadastroTurma.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="group_CadastroTurma.Size" type="System.Drawing.Size, System.Drawing">
+    <value>418, 131</value>
+  </data>
+  <data name="group_CadastroTurma.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="group_CadastroTurma.Text" xml:space="preserve">
+    <value>Cadastro de turma</value>
+  </data>
+  <data name="&gt;&gt;group_CadastroTurma.Name" xml:space="preserve">
+    <value>group_CadastroTurma</value>
+  </data>
+  <data name="&gt;&gt;group_CadastroTurma.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;group_CadastroTurma.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;group_CadastroTurma.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btn_Cancelar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>355, 149</value>
+  </data>
+  <data name="btn_Cancelar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btn_Cancelar.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="btn_Cancelar.Text" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.Name" xml:space="preserve">
+    <value>btn_Cancelar</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btn_SalvarTurma.Location" type="System.Drawing.Point, System.Drawing">
+    <value>268, 149</value>
+  </data>
+  <data name="btn_SalvarTurma.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 23</value>
+  </data>
+  <data name="btn_SalvarTurma.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="btn_SalvarTurma.Text" xml:space="preserve">
+    <value>Salvar turma</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarTurma.Name" xml:space="preserve">
+    <value>btn_SalvarTurma</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarTurma.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarTurma.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarTurma.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>442, 176</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Cadastro de turma</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormCadastroTurma</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

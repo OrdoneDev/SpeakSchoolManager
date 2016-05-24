@@ -1,0 +1,1413 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lbl_NomeFuncionario.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lbl_NomeFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 29</value>
+  </data>
+  <data name="lbl_NomeFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 13</value>
+  </data>
+  <data name="lbl_NomeFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lbl_NomeFuncionario.Text" xml:space="preserve">
+    <value>Nome Completo:</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomeFuncionario.Name" xml:space="preserve">
+    <value>lbl_NomeFuncionario</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomeFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomeFuncionario.Parent" xml:space="preserve">
+    <value>group_Funcionario</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomeFuncionario.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="lbl_DataNascimentoFuncionario.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_DataNascimentoFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 57</value>
+  </data>
+  <data name="lbl_DataNascimentoFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 13</value>
+  </data>
+  <data name="lbl_DataNascimentoFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lbl_DataNascimentoFuncionario.Text" xml:space="preserve">
+    <value>Data de Nascimento:</value>
+  </data>
+  <data name="&gt;&gt;lbl_DataNascimentoFuncionario.Name" xml:space="preserve">
+    <value>lbl_DataNascimentoFuncionario</value>
+  </data>
+  <data name="&gt;&gt;lbl_DataNascimentoFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_DataNascimentoFuncionario.Parent" xml:space="preserve">
+    <value>group_Funcionario</value>
+  </data>
+  <data name="&gt;&gt;lbl_DataNascimentoFuncionario.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="lbl_SexoFuncionario.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_SexoFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>206, 58</value>
+  </data>
+  <data name="lbl_SexoFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 13</value>
+  </data>
+  <data name="lbl_SexoFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lbl_SexoFuncionario.Text" xml:space="preserve">
+    <value>Sexo:</value>
+  </data>
+  <data name="&gt;&gt;lbl_SexoFuncionario.Name" xml:space="preserve">
+    <value>lbl_SexoFuncionario</value>
+  </data>
+  <data name="&gt;&gt;lbl_SexoFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_SexoFuncionario.Parent" xml:space="preserve">
+    <value>group_Funcionario</value>
+  </data>
+  <data name="&gt;&gt;lbl_SexoFuncionario.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="lbl_EstadoCivilFuncionario.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_EstadoCivilFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 88</value>
+  </data>
+  <data name="lbl_EstadoCivilFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 13</value>
+  </data>
+  <data name="lbl_EstadoCivilFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="lbl_EstadoCivilFuncionario.Text" xml:space="preserve">
+    <value>Estado Civil:</value>
+  </data>
+  <data name="&gt;&gt;lbl_EstadoCivilFuncionario.Name" xml:space="preserve">
+    <value>lbl_EstadoCivilFuncionario</value>
+  </data>
+  <data name="&gt;&gt;lbl_EstadoCivilFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_EstadoCivilFuncionario.Parent" xml:space="preserve">
+    <value>group_Funcionario</value>
+  </data>
+  <data name="&gt;&gt;lbl_EstadoCivilFuncionario.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="lbl_RgFuncionario.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_RgFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 119</value>
+  </data>
+  <data name="lbl_RgFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 13</value>
+  </data>
+  <data name="lbl_RgFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="lbl_RgFuncionario.Text" xml:space="preserve">
+    <value>RG:</value>
+  </data>
+  <data name="&gt;&gt;lbl_RgFuncionario.Name" xml:space="preserve">
+    <value>lbl_RgFuncionario</value>
+  </data>
+  <data name="&gt;&gt;lbl_RgFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_RgFuncionario.Parent" xml:space="preserve">
+    <value>group_Funcionario</value>
+  </data>
+  <data name="&gt;&gt;lbl_RgFuncionario.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="lbl_CpfFuncionario.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_CpfFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>151, 119</value>
+  </data>
+  <data name="lbl_CpfFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 13</value>
+  </data>
+  <data name="lbl_CpfFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="lbl_CpfFuncionario.Text" xml:space="preserve">
+    <value>CPF:</value>
+  </data>
+  <data name="&gt;&gt;lbl_CpfFuncionario.Name" xml:space="preserve">
+    <value>lbl_CpfFuncionario</value>
+  </data>
+  <data name="&gt;&gt;lbl_CpfFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_CpfFuncionario.Parent" xml:space="preserve">
+    <value>group_Funcionario</value>
+  </data>
+  <data name="&gt;&gt;lbl_CpfFuncionario.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="lbl_EmailFuncionario.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_EmailFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 149</value>
+  </data>
+  <data name="lbl_EmailFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 13</value>
+  </data>
+  <data name="lbl_EmailFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="lbl_EmailFuncionario.Text" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="&gt;&gt;lbl_EmailFuncionario.Name" xml:space="preserve">
+    <value>lbl_EmailFuncionario</value>
+  </data>
+  <data name="&gt;&gt;lbl_EmailFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_EmailFuncionario.Parent" xml:space="preserve">
+    <value>group_Funcionario</value>
+  </data>
+  <data name="&gt;&gt;lbl_EmailFuncionario.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="lbl_FotoFuncionario.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_FotoFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 178</value>
+  </data>
+  <data name="lbl_FotoFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 13</value>
+  </data>
+  <data name="lbl_FotoFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="lbl_FotoFuncionario.Text" xml:space="preserve">
+    <value>Foto:</value>
+  </data>
+  <data name="&gt;&gt;lbl_FotoFuncionario.Name" xml:space="preserve">
+    <value>lbl_FotoFuncionario</value>
+  </data>
+  <data name="&gt;&gt;lbl_FotoFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_FotoFuncionario.Parent" xml:space="preserve">
+    <value>group_Funcionario</value>
+  </data>
+  <data name="&gt;&gt;lbl_FotoFuncionario.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="lbl_DddFuncionario.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_DddFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 206</value>
+  </data>
+  <data name="lbl_DddFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 13</value>
+  </data>
+  <data name="lbl_DddFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="lbl_DddFuncionario.Text" xml:space="preserve">
+    <value>DDD:</value>
+  </data>
+  <data name="&gt;&gt;lbl_DddFuncionario.Name" xml:space="preserve">
+    <value>lbl_DddFuncionario</value>
+  </data>
+  <data name="&gt;&gt;lbl_DddFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_DddFuncionario.Parent" xml:space="preserve">
+    <value>group_Funcionario</value>
+  </data>
+  <data name="&gt;&gt;lbl_DddFuncionario.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="lbl_TelefoneFuncionario.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_TelefoneFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>96, 205</value>
+  </data>
+  <data name="lbl_TelefoneFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 13</value>
+  </data>
+  <data name="lbl_TelefoneFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="lbl_TelefoneFuncionario.Text" xml:space="preserve">
+    <value>Telefone:</value>
+  </data>
+  <data name="&gt;&gt;lbl_TelefoneFuncionario.Name" xml:space="preserve">
+    <value>lbl_TelefoneFuncionario</value>
+  </data>
+  <data name="&gt;&gt;lbl_TelefoneFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_TelefoneFuncionario.Parent" xml:space="preserve">
+    <value>group_Funcionario</value>
+  </data>
+  <data name="&gt;&gt;lbl_TelefoneFuncionario.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="lbl_FilhosFuncionario.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_FilhosFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 233</value>
+  </data>
+  <data name="lbl_FilhosFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 13</value>
+  </data>
+  <data name="lbl_FilhosFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="lbl_FilhosFuncionario.Text" xml:space="preserve">
+    <value>Quantidade de filhos:</value>
+  </data>
+  <data name="&gt;&gt;lbl_FilhosFuncionario.Name" xml:space="preserve">
+    <value>lbl_FilhosFuncionario</value>
+  </data>
+  <data name="&gt;&gt;lbl_FilhosFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_FilhosFuncionario.Parent" xml:space="preserve">
+    <value>group_Funcionario</value>
+  </data>
+  <data name="&gt;&gt;lbl_FilhosFuncionario.ZOrder" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="lbl_GrauEscolaridadeFuncionario.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_GrauEscolaridadeFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 260</value>
+  </data>
+  <data name="lbl_GrauEscolaridadeFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 13</value>
+  </data>
+  <data name="lbl_GrauEscolaridadeFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="lbl_GrauEscolaridadeFuncionario.Text" xml:space="preserve">
+    <value>Grau de escolaridade:</value>
+  </data>
+  <data name="&gt;&gt;lbl_GrauEscolaridadeFuncionario.Name" xml:space="preserve">
+    <value>lbl_GrauEscolaridadeFuncionario</value>
+  </data>
+  <data name="&gt;&gt;lbl_GrauEscolaridadeFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_GrauEscolaridadeFuncionario.Parent" xml:space="preserve">
+    <value>group_Funcionario</value>
+  </data>
+  <data name="&gt;&gt;lbl_GrauEscolaridadeFuncionario.ZOrder" xml:space="preserve">
+    <value>33</value>
+  </data>
+  <data name="lbl_CargoFuncionario.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_CargoFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>312, 30</value>
+  </data>
+  <data name="lbl_CargoFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 13</value>
+  </data>
+  <data name="lbl_CargoFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="lbl_CargoFuncionario.Text" xml:space="preserve">
+    <value>Cargo na empresa:</value>
+  </data>
+  <data name="&gt;&gt;lbl_CargoFuncionario.Name" xml:space="preserve">
+    <value>lbl_CargoFuncionario</value>
+  </data>
+  <data name="&gt;&gt;lbl_CargoFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_CargoFuncionario.Parent" xml:space="preserve">
+    <value>group_Funcionario</value>
+  </data>
+  <data name="&gt;&gt;lbl_CargoFuncionario.ZOrder" xml:space="preserve">
+    <value>34</value>
+  </data>
+  <data name="lbl_SalarioFuncionario.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_SalarioFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>543, 31</value>
+  </data>
+  <data name="lbl_SalarioFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 13</value>
+  </data>
+  <data name="lbl_SalarioFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="lbl_SalarioFuncionario.Text" xml:space="preserve">
+    <value>Salário:</value>
+  </data>
+  <data name="&gt;&gt;lbl_SalarioFuncionario.Name" xml:space="preserve">
+    <value>lbl_SalarioFuncionario</value>
+  </data>
+  <data name="&gt;&gt;lbl_SalarioFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_SalarioFuncionario.Parent" xml:space="preserve">
+    <value>group_Funcionario</value>
+  </data>
+  <data name="&gt;&gt;lbl_SalarioFuncionario.ZOrder" xml:space="preserve">
+    <value>36</value>
+  </data>
+  <data name="lbl_EstadoFuncionario.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_EstadoFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>312, 59</value>
+  </data>
+  <data name="lbl_EstadoFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 13</value>
+  </data>
+  <data name="lbl_EstadoFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="lbl_EstadoFuncionario.Text" xml:space="preserve">
+    <value>Estado:</value>
+  </data>
+  <data name="&gt;&gt;lbl_EstadoFuncionario.Name" xml:space="preserve">
+    <value>lbl_EstadoFuncionario</value>
+  </data>
+  <data name="&gt;&gt;lbl_EstadoFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_EstadoFuncionario.Parent" xml:space="preserve">
+    <value>group_Funcionario</value>
+  </data>
+  <data name="&gt;&gt;lbl_EstadoFuncionario.ZOrder" xml:space="preserve">
+    <value>37</value>
+  </data>
+  <data name="lbl_CidadeFuncionario.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_CidadeFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>488, 58</value>
+  </data>
+  <data name="lbl_CidadeFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 13</value>
+  </data>
+  <data name="lbl_CidadeFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="lbl_CidadeFuncionario.Text" xml:space="preserve">
+    <value>Cidade:</value>
+  </data>
+  <data name="&gt;&gt;lbl_CidadeFuncionario.Name" xml:space="preserve">
+    <value>lbl_CidadeFuncionario</value>
+  </data>
+  <data name="&gt;&gt;lbl_CidadeFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_CidadeFuncionario.Parent" xml:space="preserve">
+    <value>group_Funcionario</value>
+  </data>
+  <data name="&gt;&gt;lbl_CidadeFuncionario.ZOrder" xml:space="preserve">
+    <value>38</value>
+  </data>
+  <data name="lbl_CepFuncionario.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_CepFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>312, 88</value>
+  </data>
+  <data name="lbl_CepFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 13</value>
+  </data>
+  <data name="lbl_CepFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="lbl_CepFuncionario.Text" xml:space="preserve">
+    <value>CEP:</value>
+  </data>
+  <data name="&gt;&gt;lbl_CepFuncionario.Name" xml:space="preserve">
+    <value>lbl_CepFuncionario</value>
+  </data>
+  <data name="&gt;&gt;lbl_CepFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_CepFuncionario.Parent" xml:space="preserve">
+    <value>group_Funcionario</value>
+  </data>
+  <data name="&gt;&gt;lbl_CepFuncionario.ZOrder" xml:space="preserve">
+    <value>39</value>
+  </data>
+  <data name="lbl_BairroFuncionario.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_BairroFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>421, 88</value>
+  </data>
+  <data name="lbl_BairroFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 13</value>
+  </data>
+  <data name="lbl_BairroFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="lbl_BairroFuncionario.Text" xml:space="preserve">
+    <value>Bairro:</value>
+  </data>
+  <data name="&gt;&gt;lbl_BairroFuncionario.Name" xml:space="preserve">
+    <value>lbl_BairroFuncionario</value>
+  </data>
+  <data name="&gt;&gt;lbl_BairroFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_BairroFuncionario.Parent" xml:space="preserve">
+    <value>group_Funcionario</value>
+  </data>
+  <data name="&gt;&gt;lbl_BairroFuncionario.ZOrder" xml:space="preserve">
+    <value>40</value>
+  </data>
+  <data name="lbl_RuaFuncionario.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_RuaFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>312, 115</value>
+  </data>
+  <data name="lbl_RuaFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 13</value>
+  </data>
+  <data name="lbl_RuaFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="lbl_RuaFuncionario.Text" xml:space="preserve">
+    <value>Rua:</value>
+  </data>
+  <data name="&gt;&gt;lbl_RuaFuncionario.Name" xml:space="preserve">
+    <value>lbl_RuaFuncionario</value>
+  </data>
+  <data name="&gt;&gt;lbl_RuaFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_RuaFuncionario.Parent" xml:space="preserve">
+    <value>group_Funcionario</value>
+  </data>
+  <data name="&gt;&gt;lbl_RuaFuncionario.ZOrder" xml:space="preserve">
+    <value>42</value>
+  </data>
+  <data name="lbl_NumeroFuncionario.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_NumeroFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>514, 116</value>
+  </data>
+  <data name="lbl_NumeroFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 13</value>
+  </data>
+  <data name="lbl_NumeroFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="lbl_NumeroFuncionario.Text" xml:space="preserve">
+    <value>Numero:</value>
+  </data>
+  <data name="&gt;&gt;lbl_NumeroFuncionario.Name" xml:space="preserve">
+    <value>lbl_NumeroFuncionario</value>
+  </data>
+  <data name="&gt;&gt;lbl_NumeroFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_NumeroFuncionario.Parent" xml:space="preserve">
+    <value>group_Funcionario</value>
+  </data>
+  <data name="&gt;&gt;lbl_NumeroFuncionario.ZOrder" xml:space="preserve">
+    <value>43</value>
+  </data>
+  <data name="lbl_ComplementoFuncionario.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_ComplementoFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>312, 144</value>
+  </data>
+  <data name="lbl_ComplementoFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 13</value>
+  </data>
+  <data name="lbl_ComplementoFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="lbl_ComplementoFuncionario.Text" xml:space="preserve">
+    <value>Complemento:</value>
+  </data>
+  <data name="&gt;&gt;lbl_ComplementoFuncionario.Name" xml:space="preserve">
+    <value>lbl_ComplementoFuncionario</value>
+  </data>
+  <data name="&gt;&gt;lbl_ComplementoFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_ComplementoFuncionario.Parent" xml:space="preserve">
+    <value>group_Funcionario</value>
+  </data>
+  <data name="&gt;&gt;lbl_ComplementoFuncionario.ZOrder" xml:space="preserve">
+    <value>41</value>
+  </data>
+  <data name="txt_NomeFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>104, 26</value>
+  </data>
+  <data name="txt_NomeFuncionario.MaxLength" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="txt_NomeFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>183, 20</value>
+  </data>
+  <data name="txt_NomeFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txt_NomeFuncionario.Name" xml:space="preserve">
+    <value>txt_NomeFuncionario</value>
+  </data>
+  <data name="&gt;&gt;txt_NomeFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_NomeFuncionario.Parent" xml:space="preserve">
+    <value>group_Funcionario</value>
+  </data>
+  <data name="&gt;&gt;txt_NomeFuncionario.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="txt_EmailFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 144</value>
+  </data>
+  <data name="txt_EmailFuncionario.MaxLength" type="System.Int32, mscorlib">
+    <value>255</value>
+  </data>
+  <data name="txt_EmailFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>237, 20</value>
+  </data>
+  <data name="txt_EmailFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;txt_EmailFuncionario.Name" xml:space="preserve">
+    <value>txt_EmailFuncionario</value>
+  </data>
+  <data name="&gt;&gt;txt_EmailFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_EmailFuncionario.Parent" xml:space="preserve">
+    <value>group_Funcionario</value>
+  </data>
+  <data name="&gt;&gt;txt_EmailFuncionario.ZOrder" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <data name="msk_RgFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 115</value>
+  </data>
+  <data name="msk_RgFuncionario.Mask" xml:space="preserve">
+    <value>00,000,000-A</value>
+  </data>
+  <data name="msk_RgFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 20</value>
+  </data>
+  <data name="msk_RgFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="msk_RgFuncionario.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;msk_RgFuncionario.Name" xml:space="preserve">
+    <value>msk_RgFuncionario</value>
+  </data>
+  <data name="&gt;&gt;msk_RgFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;msk_RgFuncionario.Parent" xml:space="preserve">
+    <value>group_Funcionario</value>
+  </data>
+  <data name="&gt;&gt;msk_RgFuncionario.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="msk_CpfFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>187, 114</value>
+  </data>
+  <data name="msk_CpfFuncionario.Mask" xml:space="preserve">
+    <value>000,000,000-AA</value>
+  </data>
+  <data name="msk_CpfFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="msk_CpfFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="msk_CpfFuncionario.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;msk_CpfFuncionario.Name" xml:space="preserve">
+    <value>msk_CpfFuncionario</value>
+  </data>
+  <data name="&gt;&gt;msk_CpfFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;msk_CpfFuncionario.Parent" xml:space="preserve">
+    <value>group_Funcionario</value>
+  </data>
+  <data name="&gt;&gt;msk_CpfFuncionario.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="dte_DataNascimentoFuncionario.CustomFormat" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dte_DataNascimentoFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>123, 55</value>
+  </data>
+  <data name="dte_DataNascimentoFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 20</value>
+  </data>
+  <data name="dte_DataNascimentoFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;dte_DataNascimentoFuncionario.Name" xml:space="preserve">
+    <value>dte_DataNascimentoFuncionario</value>
+  </data>
+  <data name="&gt;&gt;dte_DataNascimentoFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dte_DataNascimentoFuncionario.Parent" xml:space="preserve">
+    <value>group_Funcionario</value>
+  </data>
+  <data name="&gt;&gt;dte_DataNascimentoFuncionario.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="msk_NumeroFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>567, 112</value>
+  </data>
+  <data name="msk_NumeroFuncionario.Mask" xml:space="preserve">
+    <value>00000</value>
+  </data>
+  <data name="msk_NumeroFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 20</value>
+  </data>
+  <data name="msk_NumeroFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="msk_NumeroFuncionario.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;msk_NumeroFuncionario.Name" xml:space="preserve">
+    <value>msk_NumeroFuncionario</value>
+  </data>
+  <data name="&gt;&gt;msk_NumeroFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;msk_NumeroFuncionario.Parent" xml:space="preserve">
+    <value>group_Funcionario</value>
+  </data>
+  <data name="&gt;&gt;msk_NumeroFuncionario.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="msk_FilhosFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>130, 231</value>
+  </data>
+  <data name="msk_FilhosFuncionario.Mask" xml:space="preserve">
+    <value>00</value>
+  </data>
+  <data name="msk_FilhosFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>18, 20</value>
+  </data>
+  <data name="msk_FilhosFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="msk_FilhosFuncionario.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;msk_FilhosFuncionario.Name" xml:space="preserve">
+    <value>msk_FilhosFuncionario</value>
+  </data>
+  <data name="&gt;&gt;msk_FilhosFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;msk_FilhosFuncionario.Parent" xml:space="preserve">
+    <value>group_Funcionario</value>
+  </data>
+  <data name="&gt;&gt;msk_FilhosFuncionario.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="pic_Funcionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>315, 173</value>
+  </data>
+  <data name="pic_Funcionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 105</value>
+  </data>
+  <data name="pic_Funcionario.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="pic_Funcionario.TabIndex" type="System.Int32, mscorlib">
+    <value>63</value>
+  </data>
+  <data name="&gt;&gt;pic_Funcionario.Name" xml:space="preserve">
+    <value>pic_Funcionario</value>
+  </data>
+  <data name="&gt;&gt;pic_Funcionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pic_Funcionario.Parent" xml:space="preserve">
+    <value>group_Funcionario</value>
+  </data>
+  <data name="&gt;&gt;pic_Funcionario.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="msk_CepFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>348, 84</value>
+  </data>
+  <data name="msk_CepFuncionario.Mask" xml:space="preserve">
+    <value>00000-AAA</value>
+  </data>
+  <data name="msk_CepFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 20</value>
+  </data>
+  <data name="msk_CepFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="msk_CepFuncionario.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;msk_CepFuncionario.Name" xml:space="preserve">
+    <value>msk_CepFuncionario</value>
+  </data>
+  <data name="&gt;&gt;msk_CepFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;msk_CepFuncionario.Parent" xml:space="preserve">
+    <value>group_Funcionario</value>
+  </data>
+  <data name="&gt;&gt;msk_CepFuncionario.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="cmb_RuaFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>347, 111</value>
+  </data>
+  <data name="cmb_RuaFuncionario.MaxLength" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="cmb_RuaFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>156, 21</value>
+  </data>
+  <data name="cmb_RuaFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;cmb_RuaFuncionario.Name" xml:space="preserve">
+    <value>cmb_RuaFuncionario</value>
+  </data>
+  <data name="&gt;&gt;cmb_RuaFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmb_RuaFuncionario.Parent" xml:space="preserve">
+    <value>group_Funcionario</value>
+  </data>
+  <data name="&gt;&gt;cmb_RuaFuncionario.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="cmb_BairroFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>464, 83</value>
+  </data>
+  <data name="cmb_BairroFuncionario.MaxLength" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="cmb_BairroFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>194, 21</value>
+  </data>
+  <data name="cmb_BairroFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;cmb_BairroFuncionario.Name" xml:space="preserve">
+    <value>cmb_BairroFuncionario</value>
+  </data>
+  <data name="&gt;&gt;cmb_BairroFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmb_BairroFuncionario.Parent" xml:space="preserve">
+    <value>group_Funcionario</value>
+  </data>
+  <data name="&gt;&gt;cmb_BairroFuncionario.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="cmb_CidadeFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>537, 55</value>
+  </data>
+  <data name="cmb_CidadeFuncionario.MaxLength" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="cmb_CidadeFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="cmb_CidadeFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;cmb_CidadeFuncionario.Name" xml:space="preserve">
+    <value>cmb_CidadeFuncionario</value>
+  </data>
+  <data name="&gt;&gt;cmb_CidadeFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmb_CidadeFuncionario.Parent" xml:space="preserve">
+    <value>group_Funcionario</value>
+  </data>
+  <data name="&gt;&gt;cmb_CidadeFuncionario.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="cmb_EstadoFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>361, 55</value>
+  </data>
+  <data name="cmb_EstadoFuncionario.MaxLength" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="cmb_EstadoFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="cmb_EstadoFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;cmb_EstadoFuncionario.Name" xml:space="preserve">
+    <value>cmb_EstadoFuncionario</value>
+  </data>
+  <data name="&gt;&gt;cmb_EstadoFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmb_EstadoFuncionario.Parent" xml:space="preserve">
+    <value>group_Funcionario</value>
+  </data>
+  <data name="&gt;&gt;cmb_EstadoFuncionario.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="txt_ComplementoFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>392, 141</value>
+  </data>
+  <data name="txt_ComplementoFuncionario.MaxLength" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="txt_ComplementoFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>266, 20</value>
+  </data>
+  <data name="txt_ComplementoFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;txt_ComplementoFuncionario.Name" xml:space="preserve">
+    <value>txt_ComplementoFuncionario</value>
+  </data>
+  <data name="&gt;&gt;txt_ComplementoFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_ComplementoFuncionario.Parent" xml:space="preserve">
+    <value>group_Funcionario</value>
+  </data>
+  <data name="&gt;&gt;txt_ComplementoFuncionario.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="msk_SalarioFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>591, 27</value>
+  </data>
+  <data name="msk_SalarioFuncionario.Mask" xml:space="preserve">
+    <value>00000.00</value>
+  </data>
+  <data name="msk_SalarioFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 20</value>
+  </data>
+  <data name="msk_SalarioFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="msk_SalarioFuncionario.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;msk_SalarioFuncionario.Name" xml:space="preserve">
+    <value>msk_SalarioFuncionario</value>
+  </data>
+  <data name="&gt;&gt;msk_SalarioFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;msk_SalarioFuncionario.Parent" xml:space="preserve">
+    <value>group_Funcionario</value>
+  </data>
+  <data name="&gt;&gt;msk_SalarioFuncionario.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="cmb_CargoFuncionario.Items" xml:space="preserve">
+    <value>Faixineiro(a)</value>
+  </data>
+  <data name="cmb_CargoFuncionario.Items1" xml:space="preserve">
+    <value>Secretário(a)</value>
+  </data>
+  <data name="cmb_CargoFuncionario.Items2" xml:space="preserve">
+    <value>Professor(a)</value>
+  </data>
+  <data name="cmb_CargoFuncionario.Items3" xml:space="preserve">
+    <value>Cordenador(a)</value>
+  </data>
+  <data name="cmb_CargoFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>413, 26</value>
+  </data>
+  <data name="cmb_CargoFuncionario.MaxLength" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="cmb_CargoFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="cmb_CargoFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;cmb_CargoFuncionario.Name" xml:space="preserve">
+    <value>cmb_CargoFuncionario</value>
+  </data>
+  <data name="&gt;&gt;cmb_CargoFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmb_CargoFuncionario.Parent" xml:space="preserve">
+    <value>group_Funcionario</value>
+  </data>
+  <data name="&gt;&gt;cmb_CargoFuncionario.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="cmb_GrauEscolaridadeFuncionario.Items" xml:space="preserve">
+    <value>Não possui</value>
+  </data>
+  <data name="cmb_GrauEscolaridadeFuncionario.Items1" xml:space="preserve">
+    <value>Ensino fundamental incompleto</value>
+  </data>
+  <data name="cmb_GrauEscolaridadeFuncionario.Items2" xml:space="preserve">
+    <value>Ensino fundamental</value>
+  </data>
+  <data name="cmb_GrauEscolaridadeFuncionario.Items3" xml:space="preserve">
+    <value>Ensino médio incompleto</value>
+  </data>
+  <data name="cmb_GrauEscolaridadeFuncionario.Items4" xml:space="preserve">
+    <value>Ensino médio</value>
+  </data>
+  <data name="cmb_GrauEscolaridadeFuncionario.Items5" xml:space="preserve">
+    <value>Ensino superior incompleto</value>
+  </data>
+  <data name="cmb_GrauEscolaridadeFuncionario.Items6" xml:space="preserve">
+    <value>Ensino superior</value>
+  </data>
+  <data name="cmb_GrauEscolaridadeFuncionario.Items7" xml:space="preserve">
+    <value>Mestrado</value>
+  </data>
+  <data name="cmb_GrauEscolaridadeFuncionario.Items8" xml:space="preserve">
+    <value>Dourado</value>
+  </data>
+  <data name="cmb_GrauEscolaridadeFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>130, 257</value>
+  </data>
+  <data name="cmb_GrauEscolaridadeFuncionario.MaxLength" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="cmb_GrauEscolaridadeFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 21</value>
+  </data>
+  <data name="cmb_GrauEscolaridadeFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;cmb_GrauEscolaridadeFuncionario.Name" xml:space="preserve">
+    <value>cmb_GrauEscolaridadeFuncionario</value>
+  </data>
+  <data name="&gt;&gt;cmb_GrauEscolaridadeFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmb_GrauEscolaridadeFuncionario.Parent" xml:space="preserve">
+    <value>group_Funcionario</value>
+  </data>
+  <data name="&gt;&gt;cmb_GrauEscolaridadeFuncionario.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="msk_TelefoneFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 202</value>
+  </data>
+  <data name="msk_TelefoneFuncionario.Mask" xml:space="preserve">
+    <value>00000-0000</value>
+  </data>
+  <data name="msk_TelefoneFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 20</value>
+  </data>
+  <data name="msk_TelefoneFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="msk_TelefoneFuncionario.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;msk_TelefoneFuncionario.Name" xml:space="preserve">
+    <value>msk_TelefoneFuncionario</value>
+  </data>
+  <data name="&gt;&gt;msk_TelefoneFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;msk_TelefoneFuncionario.Parent" xml:space="preserve">
+    <value>group_Funcionario</value>
+  </data>
+  <data name="&gt;&gt;msk_TelefoneFuncionario.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="msk_DddFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 202</value>
+  </data>
+  <data name="msk_DddFuncionario.Mask" xml:space="preserve">
+    <value>(000)</value>
+  </data>
+  <data name="msk_DddFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 20</value>
+  </data>
+  <data name="msk_DddFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="msk_DddFuncionario.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;msk_DddFuncionario.Name" xml:space="preserve">
+    <value>msk_DddFuncionario</value>
+  </data>
+  <data name="&gt;&gt;msk_DddFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;msk_DddFuncionario.Parent" xml:space="preserve">
+    <value>group_Funcionario</value>
+  </data>
+  <data name="&gt;&gt;msk_DddFuncionario.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="cmb_EstadoCivilFuncionario.Items" xml:space="preserve">
+    <value>Solteiro(a)</value>
+  </data>
+  <data name="cmb_EstadoCivilFuncionario.Items1" xml:space="preserve">
+    <value>Casado(a)</value>
+  </data>
+  <data name="cmb_EstadoCivilFuncionario.Items2" xml:space="preserve">
+    <value>Divorciado(a)</value>
+  </data>
+  <data name="cmb_EstadoCivilFuncionario.Items3" xml:space="preserve">
+    <value>Viuvo(a)</value>
+  </data>
+  <data name="cmb_EstadoCivilFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 84</value>
+  </data>
+  <data name="cmb_EstadoCivilFuncionario.MaxLength" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="cmb_EstadoCivilFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 21</value>
+  </data>
+  <data name="cmb_EstadoCivilFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;cmb_EstadoCivilFuncionario.Name" xml:space="preserve">
+    <value>cmb_EstadoCivilFuncionario</value>
+  </data>
+  <data name="&gt;&gt;cmb_EstadoCivilFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmb_EstadoCivilFuncionario.Parent" xml:space="preserve">
+    <value>group_Funcionario</value>
+  </data>
+  <data name="&gt;&gt;cmb_EstadoCivilFuncionario.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="cmb_SexoFuncionario.Items" xml:space="preserve">
+    <value>M</value>
+  </data>
+  <data name="cmb_SexoFuncionario.Items1" xml:space="preserve">
+    <value>F</value>
+  </data>
+  <data name="cmb_SexoFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>244, 54</value>
+  </data>
+  <data name="cmb_SexoFuncionario.MaxLength" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="cmb_SexoFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 21</value>
+  </data>
+  <data name="cmb_SexoFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;cmb_SexoFuncionario.Name" xml:space="preserve">
+    <value>cmb_SexoFuncionario</value>
+  </data>
+  <data name="&gt;&gt;cmb_SexoFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmb_SexoFuncionario.Parent" xml:space="preserve">
+    <value>group_Funcionario</value>
+  </data>
+  <data name="&gt;&gt;cmb_SexoFuncionario.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="btn_AbrirFotoFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>212, 172</value>
+  </data>
+  <data name="btn_AbrirFotoFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btn_AbrirFotoFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="btn_AbrirFotoFuncionario.Text" xml:space="preserve">
+    <value>Abrir foto</value>
+  </data>
+  <data name="&gt;&gt;btn_AbrirFotoFuncionario.Name" xml:space="preserve">
+    <value>btn_AbrirFotoFuncionario</value>
+  </data>
+  <data name="&gt;&gt;btn_AbrirFotoFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_AbrirFotoFuncionario.Parent" xml:space="preserve">
+    <value>group_Funcionario</value>
+  </data>
+  <data name="&gt;&gt;btn_AbrirFotoFuncionario.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="txt_FotoFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 173</value>
+  </data>
+  <data name="txt_FotoFuncionario.MaxLength" type="System.Int32, mscorlib">
+    <value>255</value>
+  </data>
+  <data name="txt_FotoFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>156, 20</value>
+  </data>
+  <data name="txt_FotoFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;txt_FotoFuncionario.Name" xml:space="preserve">
+    <value>txt_FotoFuncionario</value>
+  </data>
+  <data name="&gt;&gt;txt_FotoFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_FotoFuncionario.Parent" xml:space="preserve">
+    <value>group_Funcionario</value>
+  </data>
+  <data name="&gt;&gt;txt_FotoFuncionario.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="group_Funcionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="group_Funcionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>675, 294</value>
+  </data>
+  <data name="group_Funcionario.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="group_Funcionario.Text" xml:space="preserve">
+    <value>Cadastro de funcionário</value>
+  </data>
+  <data name="&gt;&gt;group_Funcionario.Name" xml:space="preserve">
+    <value>group_Funcionario</value>
+  </data>
+  <data name="&gt;&gt;group_Funcionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;group_Funcionario.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;group_Funcionario.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btn_EfetuarCadastroFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>385, 312</value>
+  </data>
+  <data name="btn_EfetuarCadastroFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 26</value>
+  </data>
+  <data name="btn_EfetuarCadastroFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="btn_EfetuarCadastroFuncionario.Text" xml:space="preserve">
+    <value>Efetuar cadastro</value>
+  </data>
+  <data name="&gt;&gt;btn_EfetuarCadastroFuncionario.Name" xml:space="preserve">
+    <value>btn_EfetuarCadastroFuncionario</value>
+  </data>
+  <data name="&gt;&gt;btn_EfetuarCadastroFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_EfetuarCadastroFuncionario.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_EfetuarCadastroFuncionario.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btn_CancelarCadastro.Location" type="System.Drawing.Point, System.Drawing">
+    <value>539, 312</value>
+  </data>
+  <data name="btn_CancelarCadastro.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 26</value>
+  </data>
+  <data name="btn_CancelarCadastro.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="btn_CancelarCadastro.Text" xml:space="preserve">
+    <value>Cancelar cadastro</value>
+  </data>
+  <data name="&gt;&gt;btn_CancelarCadastro.Name" xml:space="preserve">
+    <value>btn_CancelarCadastro</value>
+  </data>
+  <data name="&gt;&gt;btn_CancelarCadastro.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_CancelarCadastro.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_CancelarCadastro.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>699, 345</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Cadastro de funcionário</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormCadastroFuncionario</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

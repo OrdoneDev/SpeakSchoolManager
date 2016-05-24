@@ -1,0 +1,464 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lbl_NomeIdioma.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lbl_NomeIdioma.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 25</value>
+  </data>
+  <data name="lbl_NomeIdioma.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 13</value>
+  </data>
+  <data name="lbl_NomeIdioma.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lbl_NomeIdioma.Text" xml:space="preserve">
+    <value>Nome do idioma:</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomeIdioma.Name" xml:space="preserve">
+    <value>lbl_NomeIdioma</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomeIdioma.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomeIdioma.Parent" xml:space="preserve">
+    <value>group_CadastroPlano</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomeIdioma.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lbl_DescricaoIdioma.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_DescricaoIdioma.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 55</value>
+  </data>
+  <data name="lbl_DescricaoIdioma.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 13</value>
+  </data>
+  <data name="lbl_DescricaoIdioma.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lbl_DescricaoIdioma.Text" xml:space="preserve">
+    <value>Descrição do idioma:</value>
+  </data>
+  <data name="&gt;&gt;lbl_DescricaoIdioma.Name" xml:space="preserve">
+    <value>lbl_DescricaoIdioma</value>
+  </data>
+  <data name="&gt;&gt;lbl_DescricaoIdioma.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_DescricaoIdioma.Parent" xml:space="preserve">
+    <value>group_CadastroPlano</value>
+  </data>
+  <data name="&gt;&gt;lbl_DescricaoIdioma.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lbl_NomePlano.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_NomePlano.Location" type="System.Drawing.Point, System.Drawing">
+    <value>315, 25</value>
+  </data>
+  <data name="lbl_NomePlano.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 13</value>
+  </data>
+  <data name="lbl_NomePlano.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lbl_NomePlano.Text" xml:space="preserve">
+    <value>Nome do plano:</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomePlano.Name" xml:space="preserve">
+    <value>lbl_NomePlano</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomePlano.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomePlano.Parent" xml:space="preserve">
+    <value>group_CadastroPlano</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomePlano.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="lbl_NumeroAulas.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_NumeroAulas.Location" type="System.Drawing.Point, System.Drawing">
+    <value>314, 75</value>
+  </data>
+  <data name="lbl_NumeroAulas.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 13</value>
+  </data>
+  <data name="lbl_NumeroAulas.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="lbl_NumeroAulas.Text" xml:space="preserve">
+    <value>Numero de aulas previstas:</value>
+  </data>
+  <data name="&gt;&gt;lbl_NumeroAulas.Name" xml:space="preserve">
+    <value>lbl_NumeroAulas</value>
+  </data>
+  <data name="&gt;&gt;lbl_NumeroAulas.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_NumeroAulas.Parent" xml:space="preserve">
+    <value>group_CadastroPlano</value>
+  </data>
+  <data name="&gt;&gt;lbl_NumeroAulas.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="lbl_ValorPlano.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_ValorPlano.Location" type="System.Drawing.Point, System.Drawing">
+    <value>315, 125</value>
+  </data>
+  <data name="lbl_ValorPlano.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 13</value>
+  </data>
+  <data name="lbl_ValorPlano.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="lbl_ValorPlano.Text" xml:space="preserve">
+    <value>Valor do plano:</value>
+  </data>
+  <data name="&gt;&gt;lbl_ValorPlano.Name" xml:space="preserve">
+    <value>lbl_ValorPlano</value>
+  </data>
+  <data name="&gt;&gt;lbl_ValorPlano.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_ValorPlano.Parent" xml:space="preserve">
+    <value>group_CadastroPlano</value>
+  </data>
+  <data name="&gt;&gt;lbl_ValorPlano.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="cmb_NomePlano.Location" type="System.Drawing.Point, System.Drawing">
+    <value>317, 41</value>
+  </data>
+  <data name="cmb_NomePlano.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 21</value>
+  </data>
+  <data name="cmb_NomePlano.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;cmb_NomePlano.Name" xml:space="preserve">
+    <value>cmb_NomePlano</value>
+  </data>
+  <data name="&gt;&gt;cmb_NomePlano.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmb_NomePlano.Parent" xml:space="preserve">
+    <value>group_CadastroPlano</value>
+  </data>
+  <data name="&gt;&gt;cmb_NomePlano.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cmb_NomeIdioma.Location" type="System.Drawing.Point, System.Drawing">
+    <value>98, 22</value>
+  </data>
+  <data name="cmb_NomeIdioma.Size" type="System.Drawing.Size, System.Drawing">
+    <value>197, 21</value>
+  </data>
+  <data name="cmb_NomeIdioma.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;cmb_NomeIdioma.Name" xml:space="preserve">
+    <value>cmb_NomeIdioma</value>
+  </data>
+  <data name="&gt;&gt;cmb_NomeIdioma.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmb_NomeIdioma.Parent" xml:space="preserve">
+    <value>group_CadastroPlano</value>
+  </data>
+  <data name="&gt;&gt;cmb_NomeIdioma.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txb_DescricaoIdioma.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 77</value>
+  </data>
+  <data name="txb_DescricaoIdioma.MaxLength" type="System.Int32, mscorlib">
+    <value>255</value>
+  </data>
+  <data name="txb_DescricaoIdioma.Size" type="System.Drawing.Size, System.Drawing">
+    <value>285, 147</value>
+  </data>
+  <data name="txb_DescricaoIdioma.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="txb_DescricaoIdioma.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;txb_DescricaoIdioma.Name" xml:space="preserve">
+    <value>txb_DescricaoIdioma</value>
+  </data>
+  <data name="&gt;&gt;txb_DescricaoIdioma.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txb_DescricaoIdioma.Parent" xml:space="preserve">
+    <value>group_CadastroPlano</value>
+  </data>
+  <data name="&gt;&gt;txb_DescricaoIdioma.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="msk_NumeroAulas.Location" type="System.Drawing.Point, System.Drawing">
+    <value>318, 91</value>
+  </data>
+  <data name="msk_NumeroAulas.Mask" xml:space="preserve">
+    <value>000</value>
+  </data>
+  <data name="msk_NumeroAulas.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 20</value>
+  </data>
+  <data name="msk_NumeroAulas.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;msk_NumeroAulas.Name" xml:space="preserve">
+    <value>msk_NumeroAulas</value>
+  </data>
+  <data name="&gt;&gt;msk_NumeroAulas.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;msk_NumeroAulas.Parent" xml:space="preserve">
+    <value>group_CadastroPlano</value>
+  </data>
+  <data name="&gt;&gt;msk_NumeroAulas.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="msk_ValorPlano.Location" type="System.Drawing.Point, System.Drawing">
+    <value>318, 141</value>
+  </data>
+  <data name="msk_ValorPlano.Mask" xml:space="preserve">
+    <value>00000,00</value>
+  </data>
+  <data name="msk_ValorPlano.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 20</value>
+  </data>
+  <data name="msk_ValorPlano.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;msk_ValorPlano.Name" xml:space="preserve">
+    <value>msk_ValorPlano</value>
+  </data>
+  <data name="&gt;&gt;msk_ValorPlano.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;msk_ValorPlano.Parent" xml:space="preserve">
+    <value>group_CadastroPlano</value>
+  </data>
+  <data name="&gt;&gt;msk_ValorPlano.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="group_CadastroPlano.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 13</value>
+  </data>
+  <data name="group_CadastroPlano.Size" type="System.Drawing.Size, System.Drawing">
+    <value>536, 232</value>
+  </data>
+  <data name="group_CadastroPlano.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="group_CadastroPlano.Text" xml:space="preserve">
+    <value>Cadastro de plano</value>
+  </data>
+  <data name="&gt;&gt;group_CadastroPlano.Name" xml:space="preserve">
+    <value>group_CadastroPlano</value>
+  </data>
+  <data name="&gt;&gt;group_CadastroPlano.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;group_CadastroPlano.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;group_CadastroPlano.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btn_Cancelar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>474, 251</value>
+  </data>
+  <data name="btn_Cancelar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btn_Cancelar.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="btn_Cancelar.Text" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.Name" xml:space="preserve">
+    <value>btn_Cancelar</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btn_SalvarPlano.Location" type="System.Drawing.Point, System.Drawing">
+    <value>391, 251</value>
+  </data>
+  <data name="btn_SalvarPlano.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btn_SalvarPlano.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="btn_SalvarPlano.Text" xml:space="preserve">
+    <value>Salvar</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarPlano.Name" xml:space="preserve">
+    <value>btn_SalvarPlano</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarPlano.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarPlano.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarPlano.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>563, 282</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Cadastro de plano</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormCadastroPlanos</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

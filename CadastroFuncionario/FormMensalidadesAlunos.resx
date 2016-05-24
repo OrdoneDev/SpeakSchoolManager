@@ -1,0 +1,563 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="rdb_APagar.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="rdb_APagar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>819, 280</value>
+  </data>
+  <data name="rdb_APagar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 17</value>
+  </data>
+  <data name="rdb_APagar.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="rdb_APagar.Text" xml:space="preserve">
+    <value>À pagar</value>
+  </data>
+  <data name="&gt;&gt;rdb_APagar.Name" xml:space="preserve">
+    <value>rdb_APagar</value>
+  </data>
+  <data name="&gt;&gt;rdb_APagar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rdb_APagar.Parent" xml:space="preserve">
+    <value>group_MensalidadesAlunos</value>
+  </data>
+  <data name="&gt;&gt;rdb_APagar.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="rdb_Pago.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rdb_Pago.Location" type="System.Drawing.Point, System.Drawing">
+    <value>744, 280</value>
+  </data>
+  <data name="rdb_Pago.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 17</value>
+  </data>
+  <data name="rdb_Pago.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="rdb_Pago.Text" xml:space="preserve">
+    <value>Pago</value>
+  </data>
+  <data name="&gt;&gt;rdb_Pago.Name" xml:space="preserve">
+    <value>rdb_Pago</value>
+  </data>
+  <data name="&gt;&gt;rdb_Pago.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rdb_Pago.Parent" xml:space="preserve">
+    <value>group_MensalidadesAlunos</value>
+  </data>
+  <data name="&gt;&gt;rdb_Pago.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lbl_Situacao.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_Situacao.Location" type="System.Drawing.Point, System.Drawing">
+    <value>676, 282</value>
+  </data>
+  <data name="lbl_Situacao.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 13</value>
+  </data>
+  <data name="lbl_Situacao.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="lbl_Situacao.Text" xml:space="preserve">
+    <value>Situação:</value>
+  </data>
+  <data name="&gt;&gt;lbl_Situacao.Name" xml:space="preserve">
+    <value>lbl_Situacao</value>
+  </data>
+  <data name="&gt;&gt;lbl_Situacao.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_Situacao.Parent" xml:space="preserve">
+    <value>group_MensalidadesAlunos</value>
+  </data>
+  <data name="&gt;&gt;lbl_Situacao.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lbl_NomeAluno.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_NomeAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>149, 29</value>
+  </data>
+  <data name="lbl_NomeAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 13</value>
+  </data>
+  <data name="lbl_NomeAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="lbl_NomeAluno.Text" xml:space="preserve">
+    <value>Nome aluno:</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomeAluno.Name" xml:space="preserve">
+    <value>lbl_NomeAluno</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomeAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomeAluno.Parent" xml:space="preserve">
+    <value>group_MensalidadesAlunos</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomeAluno.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lbl_IdAluno.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_IdAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 29</value>
+  </data>
+  <data name="lbl_IdAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 13</value>
+  </data>
+  <data name="lbl_IdAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="lbl_IdAluno.Text" xml:space="preserve">
+    <value>Id aluno:</value>
+  </data>
+  <data name="&gt;&gt;lbl_IdAluno.Name" xml:space="preserve">
+    <value>lbl_IdAluno</value>
+  </data>
+  <data name="&gt;&gt;lbl_IdAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_IdAluno.Parent" xml:space="preserve">
+    <value>group_MensalidadesAlunos</value>
+  </data>
+  <data name="&gt;&gt;lbl_IdAluno.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="cmb_NomeAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>222, 25</value>
+  </data>
+  <data name="cmb_NomeAluno.MaxLength" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="cmb_NomeAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>221, 21</value>
+  </data>
+  <data name="cmb_NomeAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;cmb_NomeAluno.Name" xml:space="preserve">
+    <value>cmb_NomeAluno</value>
+  </data>
+  <data name="&gt;&gt;cmb_NomeAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmb_NomeAluno.Parent" xml:space="preserve">
+    <value>group_MensalidadesAlunos</value>
+  </data>
+  <data name="&gt;&gt;cmb_NomeAluno.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="msk_IdAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>72, 26</value>
+  </data>
+  <data name="msk_IdAluno.Mask" xml:space="preserve">
+    <value>0000</value>
+  </data>
+  <data name="msk_IdAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 20</value>
+  </data>
+  <data name="msk_IdAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;msk_IdAluno.Name" xml:space="preserve">
+    <value>msk_IdAluno</value>
+  </data>
+  <data name="&gt;&gt;msk_IdAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;msk_IdAluno.Parent" xml:space="preserve">
+    <value>group_MensalidadesAlunos</value>
+  </data>
+  <data name="&gt;&gt;msk_IdAluno.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="btn_ConsultarMensalidades.Location" type="System.Drawing.Point, System.Drawing">
+    <value>492, 24</value>
+  </data>
+  <data name="btn_ConsultarMensalidades.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btn_ConsultarMensalidades.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btn_ConsultarMensalidades.Text" xml:space="preserve">
+    <value>Consultar</value>
+  </data>
+  <data name="&gt;&gt;btn_ConsultarMensalidades.Name" xml:space="preserve">
+    <value>btn_ConsultarMensalidades</value>
+  </data>
+  <data name="&gt;&gt;btn_ConsultarMensalidades.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ConsultarMensalidades.Parent" xml:space="preserve">
+    <value>group_MensalidadesAlunos</value>
+  </data>
+  <data name="&gt;&gt;btn_ConsultarMensalidades.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="códigoDaMensalidadeDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Código da mensalidade</value>
+  </data>
+  <data name="códigoDaMensalidadeDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>130</value>
+  </data>
+  <data name="códigoDoAlunoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Código do aluno</value>
+  </data>
+  <data name="códigoDoAlunoDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>77</value>
+  </data>
+  <data name="númeroDaParcelaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Número da parcela</value>
+  </data>
+  <data name="númeroDaParcelaDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>112</value>
+  </data>
+  <data name="situaçãoDataGridViewCheckBoxColumn.HeaderText" xml:space="preserve">
+    <value>Situação</value>
+  </data>
+  <data name="situaçãoDataGridViewCheckBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="dataDeVencimentoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Data de vencimento</value>
+  </data>
+  <data name="dataDeVencimentoDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>117</value>
+  </data>
+  <data name="númeroTotalDeParcelasDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Número total de parcelas</value>
+  </data>
+  <data name="númeroTotalDeParcelasDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>101</value>
+  </data>
+  <data name="situaçãoTotalDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Situação total</value>
+  </data>
+  <data name="situaçãoTotalDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>89</value>
+  </data>
+  <data name="nomeDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="nomeDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <metadata name="allMensalidadesBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>171, 17</value>
+  </metadata>
+  <metadata name="dB_EscolaDataSet4.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="dgv_MensalidadesAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 66</value>
+  </data>
+  <data name="dgv_MensalidadesAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>874, 208</value>
+  </data>
+  <data name="dgv_MensalidadesAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;dgv_MensalidadesAluno.Name" xml:space="preserve">
+    <value>dgv_MensalidadesAluno</value>
+  </data>
+  <data name="&gt;&gt;dgv_MensalidadesAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgv_MensalidadesAluno.Parent" xml:space="preserve">
+    <value>group_MensalidadesAlunos</value>
+  </data>
+  <data name="&gt;&gt;dgv_MensalidadesAluno.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="group_MensalidadesAlunos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="group_MensalidadesAlunos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>888, 307</value>
+  </data>
+  <data name="group_MensalidadesAlunos.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="group_MensalidadesAlunos.Text" xml:space="preserve">
+    <value>Mensalidades dos alunos</value>
+  </data>
+  <data name="&gt;&gt;group_MensalidadesAlunos.Name" xml:space="preserve">
+    <value>group_MensalidadesAlunos</value>
+  </data>
+  <data name="&gt;&gt;group_MensalidadesAlunos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;group_MensalidadesAlunos.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;group_MensalidadesAlunos.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btn_Cancelar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>825, 325</value>
+  </data>
+  <data name="btn_Cancelar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btn_Cancelar.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="btn_Cancelar.Text" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.Name" xml:space="preserve">
+    <value>btn_Cancelar</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btn_SalvarAlteracao.Location" type="System.Drawing.Point, System.Drawing">
+    <value>706, 325</value>
+  </data>
+  <data name="btn_SalvarAlteracao.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 23</value>
+  </data>
+  <data name="btn_SalvarAlteracao.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="btn_SalvarAlteracao.Text" xml:space="preserve">
+    <value>Salvar alteração</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarAlteracao.Name" xml:space="preserve">
+    <value>btn_SalvarAlteracao</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarAlteracao.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarAlteracao.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarAlteracao.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="allMensalidadesTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>388, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>910, 357</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Mensalidades dos Alunos</value>
+  </data>
+  <data name="&gt;&gt;códigoDaMensalidadeDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>códigoDaMensalidadeDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;códigoDaMensalidadeDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;códigoDoAlunoDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>códigoDoAlunoDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;códigoDoAlunoDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;númeroDaParcelaDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>númeroDaParcelaDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;númeroDaParcelaDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;situaçãoDataGridViewCheckBoxColumn.Name" xml:space="preserve">
+    <value>situaçãoDataGridViewCheckBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;situaçãoDataGridViewCheckBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataDeVencimentoDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>dataDeVencimentoDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;dataDeVencimentoDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;númeroTotalDeParcelasDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>númeroTotalDeParcelasDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;númeroTotalDeParcelasDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;situaçãoTotalDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>situaçãoTotalDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;situaçãoTotalDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nomeDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>nomeDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;nomeDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;allMensalidadesBindingSource.Name" xml:space="preserve">
+    <value>allMensalidadesBindingSource</value>
+  </data>
+  <data name="&gt;&gt;allMensalidadesBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dB_EscolaDataSet4.Name" xml:space="preserve">
+    <value>dB_EscolaDataSet4</value>
+  </data>
+  <data name="&gt;&gt;dB_EscolaDataSet4.Type" xml:space="preserve">
+    <value>CadastroFuncionario.DB_EscolaDataSet4, DB_EscolaDataSet4.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;allMensalidadesTableAdapter.Name" xml:space="preserve">
+    <value>allMensalidadesTableAdapter</value>
+  </data>
+  <data name="&gt;&gt;allMensalidadesTableAdapter.Type" xml:space="preserve">
+    <value>CadastroFuncionario.DB_EscolaDataSet4TableAdapters.AllMensalidadesTableAdapter, DB_EscolaDataSet4.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormMensalidadesAlunos</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

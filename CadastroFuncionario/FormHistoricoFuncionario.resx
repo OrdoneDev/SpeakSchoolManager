@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="cmb_NomeFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>125, 49</value>
+  </data>
+  <data name="cmb_NomeFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 21</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="cmb_NomeFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;cmb_NomeFuncionario.Name" xml:space="preserve">
+    <value>cmb_NomeFuncionario</value>
+  </data>
+  <data name="&gt;&gt;cmb_NomeFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmb_NomeFuncionario.Parent" xml:space="preserve">
+    <value>group_HistoricoFuncionario</value>
+  </data>
+  <data name="&gt;&gt;cmb_NomeFuncionario.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txb_HistoricoFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 128</value>
+  </data>
+  <data name="txb_HistoricoFuncionario.MaxLength" type="System.Int32, mscorlib">
+    <value>800</value>
+  </data>
+  <data name="txb_HistoricoFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>260, 275</value>
+  </data>
+  <data name="txb_HistoricoFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="txb_HistoricoFuncionario.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;txb_HistoricoFuncionario.Name" xml:space="preserve">
+    <value>txb_HistoricoFuncionario</value>
+  </data>
+  <data name="&gt;&gt;txb_HistoricoFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txb_HistoricoFuncionario.Parent" xml:space="preserve">
+    <value>group_HistoricoFuncionario</value>
+  </data>
+  <data name="&gt;&gt;txb_HistoricoFuncionario.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lbl_HistoricoFuncionario.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_HistoricoFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 109</value>
+  </data>
+  <data name="lbl_HistoricoFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 13</value>
+  </data>
+  <data name="lbl_HistoricoFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>73</value>
+  </data>
+  <data name="lbl_HistoricoFuncionario.Text" xml:space="preserve">
+    <value>Histórico:</value>
+  </data>
+  <data name="&gt;&gt;lbl_HistoricoFuncionario.Name" xml:space="preserve">
+    <value>lbl_HistoricoFuncionario</value>
+  </data>
+  <data name="&gt;&gt;lbl_HistoricoFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_HistoricoFuncionario.Parent" xml:space="preserve">
+    <value>group_HistoricoFuncionario</value>
+  </data>
+  <data name="&gt;&gt;lbl_HistoricoFuncionario.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lbl_IdFuncionario.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lbl_IdFuncionario.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_IdFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 26</value>
+  </data>
+  <data name="lbl_IdFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 13</value>
+  </data>
+  <data name="lbl_IdFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="lbl_IdFuncionario.Text" xml:space="preserve">
+    <value>Id Funcionario:</value>
+  </data>
+  <data name="&gt;&gt;lbl_IdFuncionario.Name" xml:space="preserve">
+    <value>lbl_IdFuncionario</value>
+  </data>
+  <data name="&gt;&gt;lbl_IdFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_IdFuncionario.Parent" xml:space="preserve">
+    <value>group_HistoricoFuncionario</value>
+  </data>
+  <data name="&gt;&gt;lbl_IdFuncionario.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lbl_NomeFuncionario.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_NomeFuncionario.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_NomeFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 54</value>
+  </data>
+  <data name="lbl_NomeFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 13</value>
+  </data>
+  <data name="lbl_NomeFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>71</value>
+  </data>
+  <data name="lbl_NomeFuncionario.Text" xml:space="preserve">
+    <value>Nome do funcionário:</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomeFuncionario.Name" xml:space="preserve">
+    <value>lbl_NomeFuncionario</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomeFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomeFuncionario.Parent" xml:space="preserve">
+    <value>group_HistoricoFuncionario</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomeFuncionario.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="msk_IdFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>125, 23</value>
+  </data>
+  <data name="msk_IdFuncionario.Mask" xml:space="preserve">
+    <value>0000</value>
+  </data>
+  <data name="msk_IdFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 20</value>
+  </data>
+  <data name="msk_IdFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="msk_IdFuncionario.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;msk_IdFuncionario.Name" xml:space="preserve">
+    <value>msk_IdFuncionario</value>
+  </data>
+  <data name="&gt;&gt;msk_IdFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;msk_IdFuncionario.Parent" xml:space="preserve">
+    <value>group_HistoricoFuncionario</value>
+  </data>
+  <data name="&gt;&gt;msk_IdFuncionario.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lbl_DataHistoricoFuncionario.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_DataHistoricoFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 83</value>
+  </data>
+  <data name="lbl_DataHistoricoFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 13</value>
+  </data>
+  <data name="lbl_DataHistoricoFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lbl_DataHistoricoFuncionario.Text" xml:space="preserve">
+    <value>Data:</value>
+  </data>
+  <data name="&gt;&gt;lbl_DataHistoricoFuncionario.Name" xml:space="preserve">
+    <value>lbl_DataHistoricoFuncionario</value>
+  </data>
+  <data name="&gt;&gt;lbl_DataHistoricoFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_DataHistoricoFuncionario.Parent" xml:space="preserve">
+    <value>group_HistoricoFuncionario</value>
+  </data>
+  <data name="&gt;&gt;lbl_DataHistoricoFuncionario.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="dte_DataHistoricoFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>45, 80</value>
+  </data>
+  <data name="dte_DataHistoricoFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>227, 20</value>
+  </data>
+  <data name="dte_DataHistoricoFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;dte_DataHistoricoFuncionario.Name" xml:space="preserve">
+    <value>dte_DataHistoricoFuncionario</value>
+  </data>
+  <data name="&gt;&gt;dte_DataHistoricoFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dte_DataHistoricoFuncionario.Parent" xml:space="preserve">
+    <value>group_HistoricoFuncionario</value>
+  </data>
+  <data name="&gt;&gt;dte_DataHistoricoFuncionario.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="group_HistoricoFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 13</value>
+  </data>
+  <data name="group_HistoricoFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>283, 416</value>
+  </data>
+  <data name="group_HistoricoFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="group_HistoricoFuncionario.Text" xml:space="preserve">
+    <value>Histórico funcionário</value>
+  </data>
+  <data name="&gt;&gt;group_HistoricoFuncionario.Name" xml:space="preserve">
+    <value>group_HistoricoFuncionario</value>
+  </data>
+  <data name="&gt;&gt;group_HistoricoFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;group_HistoricoFuncionario.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;group_HistoricoFuncionario.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btn_SalvarHistoricoFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>140, 435</value>
+  </data>
+  <data name="btn_SalvarHistoricoFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btn_SalvarHistoricoFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="btn_SalvarHistoricoFuncionario.Text" xml:space="preserve">
+    <value>Salvar</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarHistoricoFuncionario.Name" xml:space="preserve">
+    <value>btn_SalvarHistoricoFuncionario</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarHistoricoFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarHistoricoFuncionario.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarHistoricoFuncionario.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btn_Cancelar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>221, 435</value>
+  </data>
+  <data name="btn_Cancelar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btn_Cancelar.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="btn_Cancelar.Text" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.Name" xml:space="preserve">
+    <value>btn_Cancelar</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>304, 465</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Cadastro de histórico de funcionário</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormHistoricoFuncionario</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

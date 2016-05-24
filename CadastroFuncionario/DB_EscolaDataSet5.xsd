@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DB_EscolaDataSet5" targetNamespace="http://tempuri.org/DB_EscolaDataSet5.xsd" xmlns:mstns="http://tempuri.org/DB_EscolaDataSet5.xsd" xmlns="http://tempuri.org/DB_EscolaDataSet5.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DB_EscolaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DB_EscolaConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CadastroFuncionario.Properties.Settings.GlobalReference.Default.DB_EscolaConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="AllInscricoesTableAdapter" GeneratorDataComponentClassName="AllInscricoesTableAdapter" Name="AllInscricoes" UserDataComponentName="AllInscricoesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DB_EscolaConnectionString (Settings)" DbObjectName="DB_Escola.dbo.AllInscricoes" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [Código da inscrição], [Código do aluno], [Nome do aluno], [Código da negociação], [Data de Inscricao], [Status da inscrição] FROM dbo.AllInscricoes</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Código da inscrição" DataSetColumn="Código da inscrição" />
+              <Mapping SourceColumn="Código do aluno" DataSetColumn="Código do aluno" />
+              <Mapping SourceColumn="Nome do aluno" DataSetColumn="Nome do aluno" />
+              <Mapping SourceColumn="Código da negociação" DataSetColumn="Código da negociação" />
+              <Mapping SourceColumn="Data de Inscricao" DataSetColumn="Data de Inscricao" />
+              <Mapping SourceColumn="Status da inscrição" DataSetColumn="Status da inscrição" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DB_EscolaDataSet5" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DB_EscolaDataSet5" msprop:Generator_UserDSName="DB_EscolaDataSet5">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="AllInscricoes" msprop:Generator_TableClassName="AllInscricoesDataTable" msprop:Generator_TableVarName="tableAllInscricoes" msprop:Generator_TablePropName="AllInscricoes" msprop:Generator_RowDeletingName="AllInscricoesRowDeleting" msprop:Generator_RowChangingName="AllInscricoesRowChanging" msprop:Generator_RowEvHandlerName="AllInscricoesRowChangeEventHandler" msprop:Generator_RowDeletedName="AllInscricoesRowDeleted" msprop:Generator_UserTableName="AllInscricoes" msprop:Generator_RowChangedName="AllInscricoesRowChanged" msprop:Generator_RowEvArgName="AllInscricoesRowChangeEvent" msprop:Generator_RowClassName="AllInscricoesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Código_x0020_da_x0020_inscrição" msprop:Generator_ColumnVarNameInTable="columnCódigo_da_inscrição" msprop:Generator_ColumnPropNameInRow="Código_da_inscrição" msprop:Generator_ColumnPropNameInTable="Código_da_inscriçãoColumn" msprop:Generator_UserColumnName="Código da inscrição" type="xs:int" />
+              <xs:element name="Código_x0020_do_x0020_aluno" msprop:Generator_ColumnVarNameInTable="columnCódigo_do_aluno" msprop:Generator_ColumnPropNameInRow="Código_do_aluno" msprop:Generator_ColumnPropNameInTable="Código_do_alunoColumn" msprop:Generator_UserColumnName="Código do aluno" type="xs:int" />
+              <xs:element name="Nome_x0020_do_x0020_aluno" msprop:Generator_ColumnVarNameInTable="columnNome_do_aluno" msprop:Generator_ColumnPropNameInRow="Nome_do_aluno" msprop:Generator_ColumnPropNameInTable="Nome_do_alunoColumn" msprop:Generator_UserColumnName="Nome do aluno">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Código_x0020_da_x0020_negociação" msprop:Generator_ColumnVarNameInTable="columnCódigo_da_negociação" msprop:Generator_ColumnPropNameInRow="Código_da_negociação" msprop:Generator_ColumnPropNameInTable="Código_da_negociaçãoColumn" msprop:Generator_UserColumnName="Código da negociação" type="xs:int" />
+              <xs:element name="Data_x0020_de_x0020_Inscricao" msprop:Generator_ColumnVarNameInTable="columnData_de_Inscricao" msprop:Generator_ColumnPropNameInRow="Data_de_Inscricao" msprop:Generator_ColumnPropNameInTable="Data_de_InscricaoColumn" msprop:Generator_UserColumnName="Data de Inscricao" type="xs:dateTime" />
+              <xs:element name="Status_x0020_da_x0020_inscrição" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnStatus_da_inscrição" msprop:Generator_ColumnPropNameInRow="Status_da_inscrição" msprop:Generator_ColumnPropNameInTable="Status_da_inscriçãoColumn" msprop:Generator_UserColumnName="Status da inscrição" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="7" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:AllInscricoes" />
+      <xs:field xpath="mstns:Código_x0020_da_x0020_inscrição" />
+      <xs:field xpath="mstns:Código_x0020_do_x0020_aluno" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

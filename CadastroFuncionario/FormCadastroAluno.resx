@@ -1,0 +1,1446 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lbl_NomeAluno.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lbl_NomeAluno.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lbl_NomeAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 29</value>
+  </data>
+  <data name="lbl_NomeAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 13</value>
+  </data>
+  <data name="lbl_NomeAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lbl_NomeAluno.Text" xml:space="preserve">
+    <value>Nome Completo:</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomeAluno.Name" xml:space="preserve">
+    <value>lbl_NomeAluno</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomeAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomeAluno.Parent" xml:space="preserve">
+    <value>group_Aluno</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomeAluno.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txt_NomeAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>104, 26</value>
+  </data>
+  <data name="txt_NomeAluno.MaxLength" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="txt_NomeAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>183, 20</value>
+  </data>
+  <data name="txt_NomeAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txt_NomeAluno.Name" xml:space="preserve">
+    <value>txt_NomeAluno</value>
+  </data>
+  <data name="&gt;&gt;txt_NomeAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_NomeAluno.Parent" xml:space="preserve">
+    <value>group_Aluno</value>
+  </data>
+  <data name="&gt;&gt;txt_NomeAluno.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lbl_DataNascimentoAluno.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_DataNascimentoAluno.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_DataNascimentoAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 57</value>
+  </data>
+  <data name="lbl_DataNascimentoAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 13</value>
+  </data>
+  <data name="lbl_DataNascimentoAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lbl_DataNascimentoAluno.Text" xml:space="preserve">
+    <value>Data de Nascimento:</value>
+  </data>
+  <data name="&gt;&gt;lbl_DataNascimentoAluno.Name" xml:space="preserve">
+    <value>lbl_DataNascimentoAluno</value>
+  </data>
+  <data name="&gt;&gt;lbl_DataNascimentoAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_DataNascimentoAluno.Parent" xml:space="preserve">
+    <value>group_Aluno</value>
+  </data>
+  <data name="&gt;&gt;lbl_DataNascimentoAluno.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="dte_DataNascimentoAluno.CustomFormat" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dte_DataNascimentoAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>123, 55</value>
+  </data>
+  <data name="dte_DataNascimentoAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 20</value>
+  </data>
+  <data name="dte_DataNascimentoAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;dte_DataNascimentoAluno.Name" xml:space="preserve">
+    <value>dte_DataNascimentoAluno</value>
+  </data>
+  <data name="&gt;&gt;dte_DataNascimentoAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dte_DataNascimentoAluno.Parent" xml:space="preserve">
+    <value>group_Aluno</value>
+  </data>
+  <data name="&gt;&gt;dte_DataNascimentoAluno.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lbl_SexoAluno.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_SexoAluno.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_SexoAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>206, 58</value>
+  </data>
+  <data name="lbl_SexoAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 13</value>
+  </data>
+  <data name="lbl_SexoAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lbl_SexoAluno.Text" xml:space="preserve">
+    <value>Sexo:</value>
+  </data>
+  <data name="&gt;&gt;lbl_SexoAluno.Name" xml:space="preserve">
+    <value>lbl_SexoAluno</value>
+  </data>
+  <data name="&gt;&gt;lbl_SexoAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_SexoAluno.Parent" xml:space="preserve">
+    <value>group_Aluno</value>
+  </data>
+  <data name="&gt;&gt;lbl_SexoAluno.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="cmb_SexoAluno.Items" xml:space="preserve">
+    <value>M</value>
+  </data>
+  <data name="cmb_SexoAluno.Items1" xml:space="preserve">
+    <value>F</value>
+  </data>
+  <data name="cmb_SexoAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>244, 54</value>
+  </data>
+  <data name="cmb_SexoAluno.MaxLength" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="cmb_SexoAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 21</value>
+  </data>
+  <data name="cmb_SexoAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;cmb_SexoAluno.Name" xml:space="preserve">
+    <value>cmb_SexoAluno</value>
+  </data>
+  <data name="&gt;&gt;cmb_SexoAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmb_SexoAluno.Parent" xml:space="preserve">
+    <value>group_Aluno</value>
+  </data>
+  <data name="&gt;&gt;cmb_SexoAluno.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lbl_EstadoCivilAluno.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_EstadoCivilAluno.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_EstadoCivilAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 88</value>
+  </data>
+  <data name="lbl_EstadoCivilAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 13</value>
+  </data>
+  <data name="lbl_EstadoCivilAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="lbl_EstadoCivilAluno.Text" xml:space="preserve">
+    <value>Estado Civil:</value>
+  </data>
+  <data name="&gt;&gt;lbl_EstadoCivilAluno.Name" xml:space="preserve">
+    <value>lbl_EstadoCivilAluno</value>
+  </data>
+  <data name="&gt;&gt;lbl_EstadoCivilAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_EstadoCivilAluno.Parent" xml:space="preserve">
+    <value>group_Aluno</value>
+  </data>
+  <data name="&gt;&gt;lbl_EstadoCivilAluno.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="cmb_EstadoCivilAluno.Items" xml:space="preserve">
+    <value>Solteiro(a)</value>
+  </data>
+  <data name="cmb_EstadoCivilAluno.Items1" xml:space="preserve">
+    <value>Casado(a)</value>
+  </data>
+  <data name="cmb_EstadoCivilAluno.Items2" xml:space="preserve">
+    <value>Divorciado(a)</value>
+  </data>
+  <data name="cmb_EstadoCivilAluno.Items3" xml:space="preserve">
+    <value>Viuvo(a)</value>
+  </data>
+  <data name="cmb_EstadoCivilAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 84</value>
+  </data>
+  <data name="cmb_EstadoCivilAluno.MaxLength" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="cmb_EstadoCivilAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 21</value>
+  </data>
+  <data name="cmb_EstadoCivilAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;cmb_EstadoCivilAluno.Name" xml:space="preserve">
+    <value>cmb_EstadoCivilAluno</value>
+  </data>
+  <data name="&gt;&gt;cmb_EstadoCivilAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmb_EstadoCivilAluno.Parent" xml:space="preserve">
+    <value>group_Aluno</value>
+  </data>
+  <data name="&gt;&gt;cmb_EstadoCivilAluno.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lbl_RgAluno.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_RgAluno.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_RgAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 119</value>
+  </data>
+  <data name="lbl_RgAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 13</value>
+  </data>
+  <data name="lbl_RgAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="lbl_RgAluno.Text" xml:space="preserve">
+    <value>RG:</value>
+  </data>
+  <data name="&gt;&gt;lbl_RgAluno.Name" xml:space="preserve">
+    <value>lbl_RgAluno</value>
+  </data>
+  <data name="&gt;&gt;lbl_RgAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_RgAluno.Parent" xml:space="preserve">
+    <value>group_Aluno</value>
+  </data>
+  <data name="&gt;&gt;lbl_RgAluno.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="msk_RgAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 115</value>
+  </data>
+  <data name="msk_RgAluno.Mask" xml:space="preserve">
+    <value>00,000,000-A</value>
+  </data>
+  <data name="msk_RgAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 20</value>
+  </data>
+  <data name="msk_RgAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="msk_RgAluno.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;msk_RgAluno.Name" xml:space="preserve">
+    <value>msk_RgAluno</value>
+  </data>
+  <data name="&gt;&gt;msk_RgAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;msk_RgAluno.Parent" xml:space="preserve">
+    <value>group_Aluno</value>
+  </data>
+  <data name="&gt;&gt;msk_RgAluno.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="lbl_CpfAluno.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_CpfAluno.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_CpfAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>151, 119</value>
+  </data>
+  <data name="lbl_CpfAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 13</value>
+  </data>
+  <data name="lbl_CpfAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="lbl_CpfAluno.Text" xml:space="preserve">
+    <value>CPF:</value>
+  </data>
+  <data name="&gt;&gt;lbl_CpfAluno.Name" xml:space="preserve">
+    <value>lbl_CpfAluno</value>
+  </data>
+  <data name="&gt;&gt;lbl_CpfAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_CpfAluno.Parent" xml:space="preserve">
+    <value>group_Aluno</value>
+  </data>
+  <data name="&gt;&gt;lbl_CpfAluno.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="msk_CpfAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>187, 114</value>
+  </data>
+  <data name="msk_CpfAluno.Mask" xml:space="preserve">
+    <value>000,000,000-AA</value>
+  </data>
+  <data name="msk_CpfAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="msk_CpfAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="msk_CpfAluno.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;msk_CpfAluno.Name" xml:space="preserve">
+    <value>msk_CpfAluno</value>
+  </data>
+  <data name="&gt;&gt;msk_CpfAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;msk_CpfAluno.Parent" xml:space="preserve">
+    <value>group_Aluno</value>
+  </data>
+  <data name="&gt;&gt;msk_CpfAluno.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="lbl_EmailAluno.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_EmailAluno.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_EmailAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 149</value>
+  </data>
+  <data name="lbl_EmailAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 13</value>
+  </data>
+  <data name="lbl_EmailAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="lbl_EmailAluno.Text" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="&gt;&gt;lbl_EmailAluno.Name" xml:space="preserve">
+    <value>lbl_EmailAluno</value>
+  </data>
+  <data name="&gt;&gt;lbl_EmailAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_EmailAluno.Parent" xml:space="preserve">
+    <value>group_Aluno</value>
+  </data>
+  <data name="&gt;&gt;lbl_EmailAluno.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="txt_EmailAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 144</value>
+  </data>
+  <data name="txt_EmailAluno.MaxLength" type="System.Int32, mscorlib">
+    <value>255</value>
+  </data>
+  <data name="txt_EmailAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>237, 20</value>
+  </data>
+  <data name="txt_EmailAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;txt_EmailAluno.Name" xml:space="preserve">
+    <value>txt_EmailAluno</value>
+  </data>
+  <data name="&gt;&gt;txt_EmailAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_EmailAluno.Parent" xml:space="preserve">
+    <value>group_Aluno</value>
+  </data>
+  <data name="&gt;&gt;txt_EmailAluno.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="lbl_FotoAluno.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_FotoAluno.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_FotoAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 178</value>
+  </data>
+  <data name="lbl_FotoAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 13</value>
+  </data>
+  <data name="lbl_FotoAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="lbl_FotoAluno.Text" xml:space="preserve">
+    <value>Foto:</value>
+  </data>
+  <data name="&gt;&gt;lbl_FotoAluno.Name" xml:space="preserve">
+    <value>lbl_FotoAluno</value>
+  </data>
+  <data name="&gt;&gt;lbl_FotoAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_FotoAluno.Parent" xml:space="preserve">
+    <value>group_Aluno</value>
+  </data>
+  <data name="&gt;&gt;lbl_FotoAluno.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="txt_FotoAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 173</value>
+  </data>
+  <data name="txt_FotoAluno.MaxLength" type="System.Int32, mscorlib">
+    <value>255</value>
+  </data>
+  <data name="txt_FotoAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>156, 20</value>
+  </data>
+  <data name="txt_FotoAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;txt_FotoAluno.Name" xml:space="preserve">
+    <value>txt_FotoAluno</value>
+  </data>
+  <data name="&gt;&gt;txt_FotoAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_FotoAluno.Parent" xml:space="preserve">
+    <value>group_Aluno</value>
+  </data>
+  <data name="&gt;&gt;txt_FotoAluno.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="btn_AbrirFotoAluno.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_AbrirFotoAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>212, 172</value>
+  </data>
+  <data name="btn_AbrirFotoAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btn_AbrirFotoAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="btn_AbrirFotoAluno.Text" xml:space="preserve">
+    <value>Abrir foto</value>
+  </data>
+  <data name="&gt;&gt;btn_AbrirFotoAluno.Name" xml:space="preserve">
+    <value>btn_AbrirFotoAluno</value>
+  </data>
+  <data name="&gt;&gt;btn_AbrirFotoAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_AbrirFotoAluno.Parent" xml:space="preserve">
+    <value>group_Aluno</value>
+  </data>
+  <data name="&gt;&gt;btn_AbrirFotoAluno.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="lbl_DddAluno.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_DddAluno.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_DddAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 206</value>
+  </data>
+  <data name="lbl_DddAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 13</value>
+  </data>
+  <data name="lbl_DddAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="lbl_DddAluno.Text" xml:space="preserve">
+    <value>DDD:</value>
+  </data>
+  <data name="&gt;&gt;lbl_DddAluno.Name" xml:space="preserve">
+    <value>lbl_DddAluno</value>
+  </data>
+  <data name="&gt;&gt;lbl_DddAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_DddAluno.Parent" xml:space="preserve">
+    <value>group_Aluno</value>
+  </data>
+  <data name="&gt;&gt;lbl_DddAluno.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="msk_DddAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 202</value>
+  </data>
+  <data name="msk_DddAluno.Mask" xml:space="preserve">
+    <value>(000)</value>
+  </data>
+  <data name="msk_DddAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 20</value>
+  </data>
+  <data name="msk_DddAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="msk_DddAluno.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;msk_DddAluno.Name" xml:space="preserve">
+    <value>msk_DddAluno</value>
+  </data>
+  <data name="&gt;&gt;msk_DddAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;msk_DddAluno.Parent" xml:space="preserve">
+    <value>group_Aluno</value>
+  </data>
+  <data name="&gt;&gt;msk_DddAluno.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="lbl_TelefoneAluno.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_TelefoneAluno.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_TelefoneAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>96, 205</value>
+  </data>
+  <data name="lbl_TelefoneAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 13</value>
+  </data>
+  <data name="lbl_TelefoneAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="lbl_TelefoneAluno.Text" xml:space="preserve">
+    <value>Telefone:</value>
+  </data>
+  <data name="&gt;&gt;lbl_TelefoneAluno.Name" xml:space="preserve">
+    <value>lbl_TelefoneAluno</value>
+  </data>
+  <data name="&gt;&gt;lbl_TelefoneAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_TelefoneAluno.Parent" xml:space="preserve">
+    <value>group_Aluno</value>
+  </data>
+  <data name="&gt;&gt;lbl_TelefoneAluno.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="msk_TelefoneAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 202</value>
+  </data>
+  <data name="msk_TelefoneAluno.Mask" xml:space="preserve">
+    <value>00000-0000</value>
+  </data>
+  <data name="msk_TelefoneAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 20</value>
+  </data>
+  <data name="msk_TelefoneAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="msk_TelefoneAluno.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;msk_TelefoneAluno.Name" xml:space="preserve">
+    <value>msk_TelefoneAluno</value>
+  </data>
+  <data name="&gt;&gt;msk_TelefoneAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;msk_TelefoneAluno.Parent" xml:space="preserve">
+    <value>group_Aluno</value>
+  </data>
+  <data name="&gt;&gt;msk_TelefoneAluno.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="lbl_GrauEscolaridadeAluno.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_GrauEscolaridadeAluno.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_GrauEscolaridadeAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 232</value>
+  </data>
+  <data name="lbl_GrauEscolaridadeAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 13</value>
+  </data>
+  <data name="lbl_GrauEscolaridadeAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="lbl_GrauEscolaridadeAluno.Text" xml:space="preserve">
+    <value>Grau de escolaridade:</value>
+  </data>
+  <data name="&gt;&gt;lbl_GrauEscolaridadeAluno.Name" xml:space="preserve">
+    <value>lbl_GrauEscolaridadeAluno</value>
+  </data>
+  <data name="&gt;&gt;lbl_GrauEscolaridadeAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_GrauEscolaridadeAluno.Parent" xml:space="preserve">
+    <value>group_Aluno</value>
+  </data>
+  <data name="&gt;&gt;lbl_GrauEscolaridadeAluno.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="cmb_GrauEscolaridadeAluno.Items" xml:space="preserve">
+    <value>Não possui</value>
+  </data>
+  <data name="cmb_GrauEscolaridadeAluno.Items1" xml:space="preserve">
+    <value>Ensino fundamental incompleto</value>
+  </data>
+  <data name="cmb_GrauEscolaridadeAluno.Items2" xml:space="preserve">
+    <value>Ensino fundamental</value>
+  </data>
+  <data name="cmb_GrauEscolaridadeAluno.Items3" xml:space="preserve">
+    <value>Ensino médio incompleto</value>
+  </data>
+  <data name="cmb_GrauEscolaridadeAluno.Items4" xml:space="preserve">
+    <value>Ensino médio</value>
+  </data>
+  <data name="cmb_GrauEscolaridadeAluno.Items5" xml:space="preserve">
+    <value>Ensino superior incompleto</value>
+  </data>
+  <data name="cmb_GrauEscolaridadeAluno.Items6" xml:space="preserve">
+    <value>Ensino superior</value>
+  </data>
+  <data name="cmb_GrauEscolaridadeAluno.Items7" xml:space="preserve">
+    <value>Mestrado</value>
+  </data>
+  <data name="cmb_GrauEscolaridadeAluno.Items8" xml:space="preserve">
+    <value>Dourado</value>
+  </data>
+  <data name="cmb_GrauEscolaridadeAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 229</value>
+  </data>
+  <data name="cmb_GrauEscolaridadeAluno.MaxLength" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="cmb_GrauEscolaridadeAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 21</value>
+  </data>
+  <data name="cmb_GrauEscolaridadeAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;cmb_GrauEscolaridadeAluno.Name" xml:space="preserve">
+    <value>cmb_GrauEscolaridadeAluno</value>
+  </data>
+  <data name="&gt;&gt;cmb_GrauEscolaridadeAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmb_GrauEscolaridadeAluno.Parent" xml:space="preserve">
+    <value>group_Aluno</value>
+  </data>
+  <data name="&gt;&gt;cmb_GrauEscolaridadeAluno.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="lbl_EstadoAluno.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_EstadoAluno.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_EstadoAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>312, 27</value>
+  </data>
+  <data name="lbl_EstadoAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 13</value>
+  </data>
+  <data name="lbl_EstadoAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="lbl_EstadoAluno.Text" xml:space="preserve">
+    <value>Estado:</value>
+  </data>
+  <data name="&gt;&gt;lbl_EstadoAluno.Name" xml:space="preserve">
+    <value>lbl_EstadoAluno</value>
+  </data>
+  <data name="&gt;&gt;lbl_EstadoAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_EstadoAluno.Parent" xml:space="preserve">
+    <value>group_Aluno</value>
+  </data>
+  <data name="&gt;&gt;lbl_EstadoAluno.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="cmb_EstadoAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>360, 23</value>
+  </data>
+  <data name="cmb_EstadoAluno.MaxLength" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="cmb_EstadoAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="cmb_EstadoAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;cmb_EstadoAluno.Name" xml:space="preserve">
+    <value>cmb_EstadoAluno</value>
+  </data>
+  <data name="&gt;&gt;cmb_EstadoAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmb_EstadoAluno.Parent" xml:space="preserve">
+    <value>group_Aluno</value>
+  </data>
+  <data name="&gt;&gt;cmb_EstadoAluno.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="lbl_CidadeAluno.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_CidadeAluno.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_CidadeAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>488, 26</value>
+  </data>
+  <data name="lbl_CidadeAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 13</value>
+  </data>
+  <data name="lbl_CidadeAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="lbl_CidadeAluno.Text" xml:space="preserve">
+    <value>Cidade:</value>
+  </data>
+  <data name="&gt;&gt;lbl_CidadeAluno.Name" xml:space="preserve">
+    <value>lbl_CidadeAluno</value>
+  </data>
+  <data name="&gt;&gt;lbl_CidadeAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_CidadeAluno.Parent" xml:space="preserve">
+    <value>group_Aluno</value>
+  </data>
+  <data name="&gt;&gt;lbl_CidadeAluno.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="cmb_CidadeAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>537, 23</value>
+  </data>
+  <data name="cmb_CidadeAluno.MaxLength" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="cmb_CidadeAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="cmb_CidadeAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;cmb_CidadeAluno.Name" xml:space="preserve">
+    <value>cmb_CidadeAluno</value>
+  </data>
+  <data name="&gt;&gt;cmb_CidadeAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmb_CidadeAluno.Parent" xml:space="preserve">
+    <value>group_Aluno</value>
+  </data>
+  <data name="&gt;&gt;cmb_CidadeAluno.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="lbl_CepAluno.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_CepAluno.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_CepAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>312, 56</value>
+  </data>
+  <data name="lbl_CepAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 13</value>
+  </data>
+  <data name="lbl_CepAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="lbl_CepAluno.Text" xml:space="preserve">
+    <value>CEP:</value>
+  </data>
+  <data name="&gt;&gt;lbl_CepAluno.Name" xml:space="preserve">
+    <value>lbl_CepAluno</value>
+  </data>
+  <data name="&gt;&gt;lbl_CepAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_CepAluno.Parent" xml:space="preserve">
+    <value>group_Aluno</value>
+  </data>
+  <data name="&gt;&gt;lbl_CepAluno.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="msk_CepAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>348, 52</value>
+  </data>
+  <data name="msk_CepAluno.Mask" xml:space="preserve">
+    <value>00000-AAA</value>
+  </data>
+  <data name="msk_CepAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 20</value>
+  </data>
+  <data name="msk_CepAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="msk_CepAluno.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;msk_CepAluno.Name" xml:space="preserve">
+    <value>msk_CepAluno</value>
+  </data>
+  <data name="&gt;&gt;msk_CepAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;msk_CepAluno.Parent" xml:space="preserve">
+    <value>group_Aluno</value>
+  </data>
+  <data name="&gt;&gt;msk_CepAluno.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="lbl_BairroAluno.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_BairroAluno.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_BairroAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>421, 56</value>
+  </data>
+  <data name="lbl_BairroAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 13</value>
+  </data>
+  <data name="lbl_BairroAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="lbl_BairroAluno.Text" xml:space="preserve">
+    <value>Bairro:</value>
+  </data>
+  <data name="&gt;&gt;lbl_BairroAluno.Name" xml:space="preserve">
+    <value>lbl_BairroAluno</value>
+  </data>
+  <data name="&gt;&gt;lbl_BairroAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_BairroAluno.Parent" xml:space="preserve">
+    <value>group_Aluno</value>
+  </data>
+  <data name="&gt;&gt;lbl_BairroAluno.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="cmb_BairroAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>464, 51</value>
+  </data>
+  <data name="cmb_BairroAluno.MaxLength" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="cmb_BairroAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>194, 21</value>
+  </data>
+  <data name="cmb_BairroAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;cmb_BairroAluno.Name" xml:space="preserve">
+    <value>cmb_BairroAluno</value>
+  </data>
+  <data name="&gt;&gt;cmb_BairroAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmb_BairroAluno.Parent" xml:space="preserve">
+    <value>group_Aluno</value>
+  </data>
+  <data name="&gt;&gt;cmb_BairroAluno.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="lbl_RuaAluno.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_RuaAluno.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_RuaAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>313, 83</value>
+  </data>
+  <data name="lbl_RuaAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 13</value>
+  </data>
+  <data name="lbl_RuaAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="lbl_RuaAluno.Text" xml:space="preserve">
+    <value>Rua:</value>
+  </data>
+  <data name="&gt;&gt;lbl_RuaAluno.Name" xml:space="preserve">
+    <value>lbl_RuaAluno</value>
+  </data>
+  <data name="&gt;&gt;lbl_RuaAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_RuaAluno.Parent" xml:space="preserve">
+    <value>group_Aluno</value>
+  </data>
+  <data name="&gt;&gt;lbl_RuaAluno.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="cmb_RuaAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>347, 79</value>
+  </data>
+  <data name="cmb_RuaAluno.MaxLength" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="cmb_RuaAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>156, 21</value>
+  </data>
+  <data name="cmb_RuaAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;cmb_RuaAluno.Name" xml:space="preserve">
+    <value>cmb_RuaAluno</value>
+  </data>
+  <data name="&gt;&gt;cmb_RuaAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmb_RuaAluno.Parent" xml:space="preserve">
+    <value>group_Aluno</value>
+  </data>
+  <data name="&gt;&gt;cmb_RuaAluno.ZOrder" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="lbl_NumeroAluno.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_NumeroAluno.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_NumeroAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>514, 84</value>
+  </data>
+  <data name="lbl_NumeroAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 13</value>
+  </data>
+  <data name="lbl_NumeroAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="lbl_NumeroAluno.Text" xml:space="preserve">
+    <value>Numero:</value>
+  </data>
+  <data name="&gt;&gt;lbl_NumeroAluno.Name" xml:space="preserve">
+    <value>lbl_NumeroAluno</value>
+  </data>
+  <data name="&gt;&gt;lbl_NumeroAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_NumeroAluno.Parent" xml:space="preserve">
+    <value>group_Aluno</value>
+  </data>
+  <data name="&gt;&gt;lbl_NumeroAluno.ZOrder" xml:space="preserve">
+    <value>33</value>
+  </data>
+  <data name="msk_NumeroAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>567, 80</value>
+  </data>
+  <data name="msk_NumeroAluno.Mask" xml:space="preserve">
+    <value>00000</value>
+  </data>
+  <data name="msk_NumeroAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 20</value>
+  </data>
+  <data name="msk_NumeroAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="msk_NumeroAluno.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;msk_NumeroAluno.Name" xml:space="preserve">
+    <value>msk_NumeroAluno</value>
+  </data>
+  <data name="&gt;&gt;msk_NumeroAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;msk_NumeroAluno.Parent" xml:space="preserve">
+    <value>group_Aluno</value>
+  </data>
+  <data name="&gt;&gt;msk_NumeroAluno.ZOrder" xml:space="preserve">
+    <value>34</value>
+  </data>
+  <data name="lbl_ComplementoAluno.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_ComplementoAluno.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_ComplementoAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>313, 112</value>
+  </data>
+  <data name="lbl_ComplementoAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 13</value>
+  </data>
+  <data name="lbl_ComplementoAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="lbl_ComplementoAluno.Text" xml:space="preserve">
+    <value>Complemento:</value>
+  </data>
+  <data name="&gt;&gt;lbl_ComplementoAluno.Name" xml:space="preserve">
+    <value>lbl_ComplementoAluno</value>
+  </data>
+  <data name="&gt;&gt;lbl_ComplementoAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_ComplementoAluno.Parent" xml:space="preserve">
+    <value>group_Aluno</value>
+  </data>
+  <data name="&gt;&gt;lbl_ComplementoAluno.ZOrder" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <data name="txt_ComplementoAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>392, 109</value>
+  </data>
+  <data name="txt_ComplementoAluno.MaxLength" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="txt_ComplementoAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>266, 20</value>
+  </data>
+  <data name="txt_ComplementoAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;txt_ComplementoAluno.Name" xml:space="preserve">
+    <value>txt_ComplementoAluno</value>
+  </data>
+  <data name="&gt;&gt;txt_ComplementoAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_ComplementoAluno.Parent" xml:space="preserve">
+    <value>group_Aluno</value>
+  </data>
+  <data name="&gt;&gt;txt_ComplementoAluno.ZOrder" xml:space="preserve">
+    <value>36</value>
+  </data>
+  <data name="lbl_NomeResponsavel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_NomeResponsavel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_NomeResponsavel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 54</value>
+  </data>
+  <data name="lbl_NomeResponsavel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 13</value>
+  </data>
+  <data name="lbl_NomeResponsavel.TabIndex" type="System.Int32, mscorlib">
+    <value>67</value>
+  </data>
+  <data name="lbl_NomeResponsavel.Text" xml:space="preserve">
+    <value>Nome do responsavel:</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomeResponsavel.Name" xml:space="preserve">
+    <value>lbl_NomeResponsavel</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomeResponsavel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomeResponsavel.Parent" xml:space="preserve">
+    <value>group_Responsavel</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomeResponsavel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cmb_Responsavel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 72</value>
+  </data>
+  <data name="cmb_Responsavel.MaxLength" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="cmb_Responsavel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 21</value>
+  </data>
+  <data name="cmb_Responsavel.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;cmb_Responsavel.Name" xml:space="preserve">
+    <value>cmb_Responsavel</value>
+  </data>
+  <data name="&gt;&gt;cmb_Responsavel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmb_Responsavel.Parent" xml:space="preserve">
+    <value>group_Responsavel</value>
+  </data>
+  <data name="&gt;&gt;cmb_Responsavel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lbl_CpfResponsavel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_CpfResponsavel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_CpfResponsavel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 26</value>
+  </data>
+  <data name="lbl_CpfResponsavel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 13</value>
+  </data>
+  <data name="lbl_CpfResponsavel.TabIndex" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="lbl_CpfResponsavel.Text" xml:space="preserve">
+    <value>CPF do responsavel:</value>
+  </data>
+  <data name="&gt;&gt;lbl_CpfResponsavel.Name" xml:space="preserve">
+    <value>lbl_CpfResponsavel</value>
+  </data>
+  <data name="&gt;&gt;lbl_CpfResponsavel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_CpfResponsavel.Parent" xml:space="preserve">
+    <value>group_Responsavel</value>
+  </data>
+  <data name="&gt;&gt;lbl_CpfResponsavel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="msk_CpfResponsavelAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>114, 23</value>
+  </data>
+  <data name="msk_CpfResponsavelAluno.Mask" xml:space="preserve">
+    <value>000,000,000-AA</value>
+  </data>
+  <data name="msk_CpfResponsavelAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 20</value>
+  </data>
+  <data name="msk_CpfResponsavelAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="msk_CpfResponsavelAluno.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;msk_CpfResponsavelAluno.Name" xml:space="preserve">
+    <value>msk_CpfResponsavelAluno</value>
+  </data>
+  <data name="&gt;&gt;msk_CpfResponsavelAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;msk_CpfResponsavelAluno.Parent" xml:space="preserve">
+    <value>group_Responsavel</value>
+  </data>
+  <data name="&gt;&gt;msk_CpfResponsavelAluno.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="group_Responsavel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>453, 141</value>
+  </data>
+  <data name="group_Responsavel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>205, 104</value>
+  </data>
+  <data name="group_Responsavel.TabIndex" type="System.Int32, mscorlib">
+    <value>68</value>
+  </data>
+  <data name="group_Responsavel.Text" xml:space="preserve">
+    <value>Responsável</value>
+  </data>
+  <data name="group_Responsavel.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;group_Responsavel.Name" xml:space="preserve">
+    <value>group_Responsavel</value>
+  </data>
+  <data name="&gt;&gt;group_Responsavel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;group_Responsavel.Parent" xml:space="preserve">
+    <value>group_Aluno</value>
+  </data>
+  <data name="&gt;&gt;group_Responsavel.ZOrder" xml:space="preserve">
+    <value>37</value>
+  </data>
+  <data name="pic_Aluno.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pic_Aluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>315, 172</value>
+  </data>
+  <data name="pic_Aluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 105</value>
+  </data>
+  <data name="pic_Aluno.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="pic_Aluno.TabIndex" type="System.Int32, mscorlib">
+    <value>63</value>
+  </data>
+  <data name="&gt;&gt;pic_Aluno.Name" xml:space="preserve">
+    <value>pic_Aluno</value>
+  </data>
+  <data name="&gt;&gt;pic_Aluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pic_Aluno.Parent" xml:space="preserve">
+    <value>group_Aluno</value>
+  </data>
+  <data name="&gt;&gt;pic_Aluno.ZOrder" xml:space="preserve">
+    <value>38</value>
+  </data>
+  <data name="group_Aluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 11</value>
+  </data>
+  <data name="group_Aluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>675, 290</value>
+  </data>
+  <data name="group_Aluno.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
+  </data>
+  <data name="group_Aluno.Text" xml:space="preserve">
+    <value>Cadastro de aluno</value>
+  </data>
+  <data name="&gt;&gt;group_Aluno.Name" xml:space="preserve">
+    <value>group_Aluno</value>
+  </data>
+  <data name="&gt;&gt;group_Aluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;group_Aluno.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;group_Aluno.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btn_CancelarCadastro.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_CancelarCadastro.Location" type="System.Drawing.Point, System.Drawing">
+    <value>539, 307</value>
+  </data>
+  <data name="btn_CancelarCadastro.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 26</value>
+  </data>
+  <data name="btn_CancelarCadastro.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="btn_CancelarCadastro.Text" xml:space="preserve">
+    <value>Cancelar cadastro</value>
+  </data>
+  <data name="&gt;&gt;btn_CancelarCadastro.Name" xml:space="preserve">
+    <value>btn_CancelarCadastro</value>
+  </data>
+  <data name="&gt;&gt;btn_CancelarCadastro.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_CancelarCadastro.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_CancelarCadastro.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btn_EfetuarCadastroAluno.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_EfetuarCadastroAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>385, 306</value>
+  </data>
+  <data name="btn_EfetuarCadastroAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 26</value>
+  </data>
+  <data name="btn_EfetuarCadastroAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="btn_EfetuarCadastroAluno.Text" xml:space="preserve">
+    <value>Efetuar cadastro</value>
+  </data>
+  <data name="&gt;&gt;btn_EfetuarCadastroAluno.Name" xml:space="preserve">
+    <value>btn_EfetuarCadastroAluno</value>
+  </data>
+  <data name="&gt;&gt;btn_EfetuarCadastroAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_EfetuarCadastroAluno.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_EfetuarCadastroAluno.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>699, 341</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Cadastro de aluno</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormCadastroAluno</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

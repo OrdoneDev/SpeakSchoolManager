@@ -1,0 +1,1119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="dte_DataNascimentoResponsavel.CustomFormat" xml:space="preserve">
+    <value />
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="dte_DataNascimentoResponsavel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>123, 55</value>
+  </data>
+  <data name="dte_DataNascimentoResponsavel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 20</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="dte_DataNascimentoResponsavel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;dte_DataNascimentoResponsavel.Name" xml:space="preserve">
+    <value>dte_DataNascimentoResponsavel</value>
+  </data>
+  <data name="&gt;&gt;dte_DataNascimentoResponsavel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dte_DataNascimentoResponsavel.Parent" xml:space="preserve">
+    <value>group_Responsavel</value>
+  </data>
+  <data name="&gt;&gt;dte_DataNascimentoResponsavel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="msk_NumeroResponsavel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>567, 106</value>
+  </data>
+  <data name="msk_NumeroResponsavel.Mask" xml:space="preserve">
+    <value>00000</value>
+  </data>
+  <data name="msk_NumeroResponsavel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 20</value>
+  </data>
+  <data name="msk_NumeroResponsavel.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="msk_NumeroResponsavel.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;msk_NumeroResponsavel.Name" xml:space="preserve">
+    <value>msk_NumeroResponsavel</value>
+  </data>
+  <data name="&gt;&gt;msk_NumeroResponsavel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;msk_NumeroResponsavel.Parent" xml:space="preserve">
+    <value>group_Responsavel</value>
+  </data>
+  <data name="&gt;&gt;msk_NumeroResponsavel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="msk_CepResponsavel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>348, 78</value>
+  </data>
+  <data name="msk_CepResponsavel.Mask" xml:space="preserve">
+    <value>00000-AAA</value>
+  </data>
+  <data name="msk_CepResponsavel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 20</value>
+  </data>
+  <data name="msk_CepResponsavel.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="msk_CepResponsavel.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;msk_CepResponsavel.Name" xml:space="preserve">
+    <value>msk_CepResponsavel</value>
+  </data>
+  <data name="&gt;&gt;msk_CepResponsavel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;msk_CepResponsavel.Parent" xml:space="preserve">
+    <value>group_Responsavel</value>
+  </data>
+  <data name="&gt;&gt;msk_CepResponsavel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="cmb_RuaResponsavel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>347, 105</value>
+  </data>
+  <data name="cmb_RuaResponsavel.MaxLength" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="cmb_RuaResponsavel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>156, 21</value>
+  </data>
+  <data name="cmb_RuaResponsavel.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;cmb_RuaResponsavel.Name" xml:space="preserve">
+    <value>cmb_RuaResponsavel</value>
+  </data>
+  <data name="&gt;&gt;cmb_RuaResponsavel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmb_RuaResponsavel.Parent" xml:space="preserve">
+    <value>group_Responsavel</value>
+  </data>
+  <data name="&gt;&gt;cmb_RuaResponsavel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="cmb_BairroResponsavel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>464, 77</value>
+  </data>
+  <data name="cmb_BairroResponsavel.MaxLength" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="cmb_BairroResponsavel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>194, 21</value>
+  </data>
+  <data name="cmb_BairroResponsavel.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;cmb_BairroResponsavel.Name" xml:space="preserve">
+    <value>cmb_BairroResponsavel</value>
+  </data>
+  <data name="&gt;&gt;cmb_BairroResponsavel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmb_BairroResponsavel.Parent" xml:space="preserve">
+    <value>group_Responsavel</value>
+  </data>
+  <data name="&gt;&gt;cmb_BairroResponsavel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="cmb_CidadeResponsavel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>537, 49</value>
+  </data>
+  <data name="cmb_CidadeResponsavel.MaxLength" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="cmb_CidadeResponsavel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="cmb_CidadeResponsavel.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;cmb_CidadeResponsavel.Name" xml:space="preserve">
+    <value>cmb_CidadeResponsavel</value>
+  </data>
+  <data name="&gt;&gt;cmb_CidadeResponsavel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmb_CidadeResponsavel.Parent" xml:space="preserve">
+    <value>group_Responsavel</value>
+  </data>
+  <data name="&gt;&gt;cmb_CidadeResponsavel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="cmb_EstadoResponsavel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>361, 49</value>
+  </data>
+  <data name="cmb_EstadoResponsavel.MaxLength" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="cmb_EstadoResponsavel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="cmb_EstadoResponsavel.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;cmb_EstadoResponsavel.Name" xml:space="preserve">
+    <value>cmb_EstadoResponsavel</value>
+  </data>
+  <data name="&gt;&gt;cmb_EstadoResponsavel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmb_EstadoResponsavel.Parent" xml:space="preserve">
+    <value>group_Responsavel</value>
+  </data>
+  <data name="&gt;&gt;cmb_EstadoResponsavel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="txt_ComplementoResponsavel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>392, 135</value>
+  </data>
+  <data name="txt_ComplementoResponsavel.MaxLength" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="txt_ComplementoResponsavel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>266, 20</value>
+  </data>
+  <data name="txt_ComplementoResponsavel.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;txt_ComplementoResponsavel.Name" xml:space="preserve">
+    <value>txt_ComplementoResponsavel</value>
+  </data>
+  <data name="&gt;&gt;txt_ComplementoResponsavel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_ComplementoResponsavel.Parent" xml:space="preserve">
+    <value>group_Responsavel</value>
+  </data>
+  <data name="&gt;&gt;txt_ComplementoResponsavel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="msk_TelefoneResponsavel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>152, 172</value>
+  </data>
+  <data name="msk_TelefoneResponsavel.Mask" xml:space="preserve">
+    <value>00000-0000</value>
+  </data>
+  <data name="msk_TelefoneResponsavel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 20</value>
+  </data>
+  <data name="msk_TelefoneResponsavel.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="msk_TelefoneResponsavel.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;msk_TelefoneResponsavel.Name" xml:space="preserve">
+    <value>msk_TelefoneResponsavel</value>
+  </data>
+  <data name="&gt;&gt;msk_TelefoneResponsavel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;msk_TelefoneResponsavel.Parent" xml:space="preserve">
+    <value>group_Responsavel</value>
+  </data>
+  <data name="&gt;&gt;msk_TelefoneResponsavel.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="msk_DddResponsavel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>51, 172</value>
+  </data>
+  <data name="msk_DddResponsavel.Mask" xml:space="preserve">
+    <value>(000)</value>
+  </data>
+  <data name="msk_DddResponsavel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 20</value>
+  </data>
+  <data name="msk_DddResponsavel.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="msk_DddResponsavel.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;msk_DddResponsavel.Name" xml:space="preserve">
+    <value>msk_DddResponsavel</value>
+  </data>
+  <data name="&gt;&gt;msk_DddResponsavel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;msk_DddResponsavel.Parent" xml:space="preserve">
+    <value>group_Responsavel</value>
+  </data>
+  <data name="&gt;&gt;msk_DddResponsavel.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="cmb_EstadoCivilResponsavel.Items" xml:space="preserve">
+    <value>Solteiro(a)</value>
+  </data>
+  <data name="cmb_EstadoCivilResponsavel.Items1" xml:space="preserve">
+    <value>Casado(a)</value>
+  </data>
+  <data name="cmb_EstadoCivilResponsavel.Items2" xml:space="preserve">
+    <value>Divorciado(a)</value>
+  </data>
+  <data name="cmb_EstadoCivilResponsavel.Items3" xml:space="preserve">
+    <value>Viuvo(a)</value>
+  </data>
+  <data name="cmb_EstadoCivilResponsavel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 84</value>
+  </data>
+  <data name="cmb_EstadoCivilResponsavel.MaxLength" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="cmb_EstadoCivilResponsavel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 21</value>
+  </data>
+  <data name="cmb_EstadoCivilResponsavel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;cmb_EstadoCivilResponsavel.Name" xml:space="preserve">
+    <value>cmb_EstadoCivilResponsavel</value>
+  </data>
+  <data name="&gt;&gt;cmb_EstadoCivilResponsavel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmb_EstadoCivilResponsavel.Parent" xml:space="preserve">
+    <value>group_Responsavel</value>
+  </data>
+  <data name="&gt;&gt;cmb_EstadoCivilResponsavel.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="cmb_SexoResponsavel.Items" xml:space="preserve">
+    <value>M</value>
+  </data>
+  <data name="cmb_SexoResponsavel.Items1" xml:space="preserve">
+    <value>F</value>
+  </data>
+  <data name="cmb_SexoResponsavel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>244, 54</value>
+  </data>
+  <data name="cmb_SexoResponsavel.MaxLength" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="cmb_SexoResponsavel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 21</value>
+  </data>
+  <data name="cmb_SexoResponsavel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;cmb_SexoResponsavel.Name" xml:space="preserve">
+    <value>cmb_SexoResponsavel</value>
+  </data>
+  <data name="&gt;&gt;cmb_SexoResponsavel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmb_SexoResponsavel.Parent" xml:space="preserve">
+    <value>group_Responsavel</value>
+  </data>
+  <data name="&gt;&gt;cmb_SexoResponsavel.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="txt_NomeResponsavel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>104, 26</value>
+  </data>
+  <data name="txt_NomeResponsavel.MaxLength" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="txt_NomeResponsavel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>183, 20</value>
+  </data>
+  <data name="txt_NomeResponsavel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txt_NomeResponsavel.Name" xml:space="preserve">
+    <value>txt_NomeResponsavel</value>
+  </data>
+  <data name="&gt;&gt;txt_NomeResponsavel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_NomeResponsavel.Parent" xml:space="preserve">
+    <value>group_Responsavel</value>
+  </data>
+  <data name="&gt;&gt;txt_NomeResponsavel.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="lbl_NomeResponsavel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_NomeResponsavel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_NomeResponsavel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 29</value>
+  </data>
+  <data name="lbl_NomeResponsavel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 13</value>
+  </data>
+  <data name="lbl_NomeResponsavel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lbl_NomeResponsavel.Text" xml:space="preserve">
+    <value>Nome Completo:</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomeResponsavel.Name" xml:space="preserve">
+    <value>lbl_NomeResponsavel</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomeResponsavel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomeResponsavel.Parent" xml:space="preserve">
+    <value>group_Responsavel</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomeResponsavel.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="msk_CpfResponsavel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>187, 114</value>
+  </data>
+  <data name="msk_CpfResponsavel.Mask" xml:space="preserve">
+    <value>000,000,000-AA</value>
+  </data>
+  <data name="msk_CpfResponsavel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="msk_CpfResponsavel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="msk_CpfResponsavel.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;msk_CpfResponsavel.Name" xml:space="preserve">
+    <value>msk_CpfResponsavel</value>
+  </data>
+  <data name="&gt;&gt;msk_CpfResponsavel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;msk_CpfResponsavel.Parent" xml:space="preserve">
+    <value>group_Responsavel</value>
+  </data>
+  <data name="&gt;&gt;msk_CpfResponsavel.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="lbl_DataNascimentoResponsavel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_DataNascimentoResponsavel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_DataNascimentoResponsavel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 57</value>
+  </data>
+  <data name="lbl_DataNascimentoResponsavel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 13</value>
+  </data>
+  <data name="lbl_DataNascimentoResponsavel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lbl_DataNascimentoResponsavel.Text" xml:space="preserve">
+    <value>Data de Nascimento:</value>
+  </data>
+  <data name="&gt;&gt;lbl_DataNascimentoResponsavel.Name" xml:space="preserve">
+    <value>lbl_DataNascimentoResponsavel</value>
+  </data>
+  <data name="&gt;&gt;lbl_DataNascimentoResponsavel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_DataNascimentoResponsavel.Parent" xml:space="preserve">
+    <value>group_Responsavel</value>
+  </data>
+  <data name="&gt;&gt;lbl_DataNascimentoResponsavel.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="msk_RgResponsavel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 115</value>
+  </data>
+  <data name="msk_RgResponsavel.Mask" xml:space="preserve">
+    <value>00,000,000-A</value>
+  </data>
+  <data name="msk_RgResponsavel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 20</value>
+  </data>
+  <data name="msk_RgResponsavel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="msk_RgResponsavel.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;msk_RgResponsavel.Name" xml:space="preserve">
+    <value>msk_RgResponsavel</value>
+  </data>
+  <data name="&gt;&gt;msk_RgResponsavel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;msk_RgResponsavel.Parent" xml:space="preserve">
+    <value>group_Responsavel</value>
+  </data>
+  <data name="&gt;&gt;msk_RgResponsavel.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="lbl_SexoResponsavel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_SexoResponsavel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_SexoResponsavel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>206, 58</value>
+  </data>
+  <data name="lbl_SexoResponsavel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 13</value>
+  </data>
+  <data name="lbl_SexoResponsavel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lbl_SexoResponsavel.Text" xml:space="preserve">
+    <value>Sexo:</value>
+  </data>
+  <data name="&gt;&gt;lbl_SexoResponsavel.Name" xml:space="preserve">
+    <value>lbl_SexoResponsavel</value>
+  </data>
+  <data name="&gt;&gt;lbl_SexoResponsavel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_SexoResponsavel.Parent" xml:space="preserve">
+    <value>group_Responsavel</value>
+  </data>
+  <data name="&gt;&gt;lbl_SexoResponsavel.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="lbl_EstadoCivilResponsavel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_EstadoCivilResponsavel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_EstadoCivilResponsavel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 88</value>
+  </data>
+  <data name="lbl_EstadoCivilResponsavel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 13</value>
+  </data>
+  <data name="lbl_EstadoCivilResponsavel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="lbl_EstadoCivilResponsavel.Text" xml:space="preserve">
+    <value>Estado Civil:</value>
+  </data>
+  <data name="&gt;&gt;lbl_EstadoCivilResponsavel.Name" xml:space="preserve">
+    <value>lbl_EstadoCivilResponsavel</value>
+  </data>
+  <data name="&gt;&gt;lbl_EstadoCivilResponsavel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_EstadoCivilResponsavel.Parent" xml:space="preserve">
+    <value>group_Responsavel</value>
+  </data>
+  <data name="&gt;&gt;lbl_EstadoCivilResponsavel.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="lbl_RgResponsavel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_RgResponsavel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_RgResponsavel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 119</value>
+  </data>
+  <data name="lbl_RgResponsavel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 13</value>
+  </data>
+  <data name="lbl_RgResponsavel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="lbl_RgResponsavel.Text" xml:space="preserve">
+    <value>RG:</value>
+  </data>
+  <data name="&gt;&gt;lbl_RgResponsavel.Name" xml:space="preserve">
+    <value>lbl_RgResponsavel</value>
+  </data>
+  <data name="&gt;&gt;lbl_RgResponsavel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_RgResponsavel.Parent" xml:space="preserve">
+    <value>group_Responsavel</value>
+  </data>
+  <data name="&gt;&gt;lbl_RgResponsavel.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="lbl_CpfResponsavel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_CpfResponsavel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_CpfResponsavel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>151, 119</value>
+  </data>
+  <data name="lbl_CpfResponsavel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 13</value>
+  </data>
+  <data name="lbl_CpfResponsavel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="lbl_CpfResponsavel.Text" xml:space="preserve">
+    <value>CPF:</value>
+  </data>
+  <data name="&gt;&gt;lbl_CpfResponsavel.Name" xml:space="preserve">
+    <value>lbl_CpfResponsavel</value>
+  </data>
+  <data name="&gt;&gt;lbl_CpfResponsavel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_CpfResponsavel.Parent" xml:space="preserve">
+    <value>group_Responsavel</value>
+  </data>
+  <data name="&gt;&gt;lbl_CpfResponsavel.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="lbl_EmailResponsavel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_EmailResponsavel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_EmailResponsavel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 149</value>
+  </data>
+  <data name="lbl_EmailResponsavel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 13</value>
+  </data>
+  <data name="lbl_EmailResponsavel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="lbl_EmailResponsavel.Text" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="&gt;&gt;lbl_EmailResponsavel.Name" xml:space="preserve">
+    <value>lbl_EmailResponsavel</value>
+  </data>
+  <data name="&gt;&gt;lbl_EmailResponsavel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_EmailResponsavel.Parent" xml:space="preserve">
+    <value>group_Responsavel</value>
+  </data>
+  <data name="&gt;&gt;lbl_EmailResponsavel.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="lbl_DddResponsavel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_DddResponsavel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_DddResponsavel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 176</value>
+  </data>
+  <data name="lbl_DddResponsavel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 13</value>
+  </data>
+  <data name="lbl_DddResponsavel.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="lbl_DddResponsavel.Text" xml:space="preserve">
+    <value>DDD:</value>
+  </data>
+  <data name="&gt;&gt;lbl_DddResponsavel.Name" xml:space="preserve">
+    <value>lbl_DddResponsavel</value>
+  </data>
+  <data name="&gt;&gt;lbl_DddResponsavel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_DddResponsavel.Parent" xml:space="preserve">
+    <value>group_Responsavel</value>
+  </data>
+  <data name="&gt;&gt;lbl_DddResponsavel.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="lbl_TelefoneResponsavel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_TelefoneResponsavel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_TelefoneResponsavel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>95, 175</value>
+  </data>
+  <data name="lbl_TelefoneResponsavel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 13</value>
+  </data>
+  <data name="lbl_TelefoneResponsavel.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="lbl_TelefoneResponsavel.Text" xml:space="preserve">
+    <value>Telefone:</value>
+  </data>
+  <data name="&gt;&gt;lbl_TelefoneResponsavel.Name" xml:space="preserve">
+    <value>lbl_TelefoneResponsavel</value>
+  </data>
+  <data name="&gt;&gt;lbl_TelefoneResponsavel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_TelefoneResponsavel.Parent" xml:space="preserve">
+    <value>group_Responsavel</value>
+  </data>
+  <data name="&gt;&gt;lbl_TelefoneResponsavel.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="txt_EmailResponsavel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 144</value>
+  </data>
+  <data name="txt_EmailResponsavel.MaxLength" type="System.Int32, mscorlib">
+    <value>255</value>
+  </data>
+  <data name="txt_EmailResponsavel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>237, 20</value>
+  </data>
+  <data name="txt_EmailResponsavel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;txt_EmailResponsavel.Name" xml:space="preserve">
+    <value>txt_EmailResponsavel</value>
+  </data>
+  <data name="&gt;&gt;txt_EmailResponsavel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_EmailResponsavel.Parent" xml:space="preserve">
+    <value>group_Responsavel</value>
+  </data>
+  <data name="&gt;&gt;txt_EmailResponsavel.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="lbl_EstadoResponsavel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_EstadoResponsavel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_EstadoResponsavel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>312, 53</value>
+  </data>
+  <data name="lbl_EstadoResponsavel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 13</value>
+  </data>
+  <data name="lbl_EstadoResponsavel.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="lbl_EstadoResponsavel.Text" xml:space="preserve">
+    <value>Estado:</value>
+  </data>
+  <data name="&gt;&gt;lbl_EstadoResponsavel.Name" xml:space="preserve">
+    <value>lbl_EstadoResponsavel</value>
+  </data>
+  <data name="&gt;&gt;lbl_EstadoResponsavel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_EstadoResponsavel.Parent" xml:space="preserve">
+    <value>group_Responsavel</value>
+  </data>
+  <data name="&gt;&gt;lbl_EstadoResponsavel.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="lbl_CidadeResponsavel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_CidadeResponsavel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_CidadeResponsavel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>488, 52</value>
+  </data>
+  <data name="lbl_CidadeResponsavel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 13</value>
+  </data>
+  <data name="lbl_CidadeResponsavel.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="lbl_CidadeResponsavel.Text" xml:space="preserve">
+    <value>Cidade:</value>
+  </data>
+  <data name="&gt;&gt;lbl_CidadeResponsavel.Name" xml:space="preserve">
+    <value>lbl_CidadeResponsavel</value>
+  </data>
+  <data name="&gt;&gt;lbl_CidadeResponsavel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_CidadeResponsavel.Parent" xml:space="preserve">
+    <value>group_Responsavel</value>
+  </data>
+  <data name="&gt;&gt;lbl_CidadeResponsavel.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="lbl_CepResponsavel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_CepResponsavel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_CepResponsavel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>313, 82</value>
+  </data>
+  <data name="lbl_CepResponsavel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 13</value>
+  </data>
+  <data name="lbl_CepResponsavel.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="lbl_CepResponsavel.Text" xml:space="preserve">
+    <value>CEP:</value>
+  </data>
+  <data name="&gt;&gt;lbl_CepResponsavel.Name" xml:space="preserve">
+    <value>lbl_CepResponsavel</value>
+  </data>
+  <data name="&gt;&gt;lbl_CepResponsavel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_CepResponsavel.Parent" xml:space="preserve">
+    <value>group_Responsavel</value>
+  </data>
+  <data name="&gt;&gt;lbl_CepResponsavel.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="lbl_BairroResponsavel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_BairroResponsavel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_BairroResponsavel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>421, 82</value>
+  </data>
+  <data name="lbl_BairroResponsavel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 13</value>
+  </data>
+  <data name="lbl_BairroResponsavel.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="lbl_BairroResponsavel.Text" xml:space="preserve">
+    <value>Bairro:</value>
+  </data>
+  <data name="&gt;&gt;lbl_BairroResponsavel.Name" xml:space="preserve">
+    <value>lbl_BairroResponsavel</value>
+  </data>
+  <data name="&gt;&gt;lbl_BairroResponsavel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_BairroResponsavel.Parent" xml:space="preserve">
+    <value>group_Responsavel</value>
+  </data>
+  <data name="&gt;&gt;lbl_BairroResponsavel.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="lbl_ComplementoResponsavel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_ComplementoResponsavel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_ComplementoResponsavel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>312, 138</value>
+  </data>
+  <data name="lbl_ComplementoResponsavel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 13</value>
+  </data>
+  <data name="lbl_ComplementoResponsavel.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="lbl_ComplementoResponsavel.Text" xml:space="preserve">
+    <value>Complemento:</value>
+  </data>
+  <data name="&gt;&gt;lbl_ComplementoResponsavel.Name" xml:space="preserve">
+    <value>lbl_ComplementoResponsavel</value>
+  </data>
+  <data name="&gt;&gt;lbl_ComplementoResponsavel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_ComplementoResponsavel.Parent" xml:space="preserve">
+    <value>group_Responsavel</value>
+  </data>
+  <data name="&gt;&gt;lbl_ComplementoResponsavel.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="lbl_RuaResponsavel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_RuaResponsavel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_RuaResponsavel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>312, 109</value>
+  </data>
+  <data name="lbl_RuaResponsavel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 13</value>
+  </data>
+  <data name="lbl_RuaResponsavel.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="lbl_RuaResponsavel.Text" xml:space="preserve">
+    <value>Rua:</value>
+  </data>
+  <data name="&gt;&gt;lbl_RuaResponsavel.Name" xml:space="preserve">
+    <value>lbl_RuaResponsavel</value>
+  </data>
+  <data name="&gt;&gt;lbl_RuaResponsavel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_RuaResponsavel.Parent" xml:space="preserve">
+    <value>group_Responsavel</value>
+  </data>
+  <data name="&gt;&gt;lbl_RuaResponsavel.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="lbl_NumeroResponsavel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_NumeroResponsavel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_NumeroResponsavel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>514, 110</value>
+  </data>
+  <data name="lbl_NumeroResponsavel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 13</value>
+  </data>
+  <data name="lbl_NumeroResponsavel.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="lbl_NumeroResponsavel.Text" xml:space="preserve">
+    <value>Numero:</value>
+  </data>
+  <data name="&gt;&gt;lbl_NumeroResponsavel.Name" xml:space="preserve">
+    <value>lbl_NumeroResponsavel</value>
+  </data>
+  <data name="&gt;&gt;lbl_NumeroResponsavel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_NumeroResponsavel.Parent" xml:space="preserve">
+    <value>group_Responsavel</value>
+  </data>
+  <data name="&gt;&gt;lbl_NumeroResponsavel.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="group_Responsavel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 17</value>
+  </data>
+  <data name="group_Responsavel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>675, 209</value>
+  </data>
+  <data name="group_Responsavel.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
+  </data>
+  <data name="group_Responsavel.Text" xml:space="preserve">
+    <value>Cadastro de responsável</value>
+  </data>
+  <data name="&gt;&gt;group_Responsavel.Name" xml:space="preserve">
+    <value>group_Responsavel</value>
+  </data>
+  <data name="&gt;&gt;group_Responsavel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;group_Responsavel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;group_Responsavel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btn_CancelarCadastro.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_CancelarCadastro.Location" type="System.Drawing.Point, System.Drawing">
+    <value>539, 232</value>
+  </data>
+  <data name="btn_CancelarCadastro.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 26</value>
+  </data>
+  <data name="btn_CancelarCadastro.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="btn_CancelarCadastro.Text" xml:space="preserve">
+    <value>Cancelar cadastro</value>
+  </data>
+  <data name="&gt;&gt;btn_CancelarCadastro.Name" xml:space="preserve">
+    <value>btn_CancelarCadastro</value>
+  </data>
+  <data name="&gt;&gt;btn_CancelarCadastro.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_CancelarCadastro.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_CancelarCadastro.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btn_EfetuarCadastroResponsavel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_EfetuarCadastroResponsavel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>385, 232</value>
+  </data>
+  <data name="btn_EfetuarCadastroResponsavel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 26</value>
+  </data>
+  <data name="btn_EfetuarCadastroResponsavel.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="btn_EfetuarCadastroResponsavel.Text" xml:space="preserve">
+    <value>Efetuar cadastro</value>
+  </data>
+  <data name="&gt;&gt;btn_EfetuarCadastroResponsavel.Name" xml:space="preserve">
+    <value>btn_EfetuarCadastroResponsavel</value>
+  </data>
+  <data name="&gt;&gt;btn_EfetuarCadastroResponsavel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_EfetuarCadastroResponsavel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_EfetuarCadastroResponsavel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>699, 266</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Cadastro de responsável do aluno</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormCadastroResponsavel</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>
