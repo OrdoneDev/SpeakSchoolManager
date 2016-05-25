@@ -291,6 +291,8 @@ namespace CadastroFuncionario {
             
             private global::System.Data.DataColumn columnVincular_aluno;
             
+            private global::System.Data.DataColumn columnTurma;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public InscricoesTurmasDataTable() {
@@ -374,6 +376,14 @@ namespace CadastroFuncionario {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn TurmaColumn {
+                get {
+                    return this.columnTurma;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -409,7 +419,7 @@ namespace CadastroFuncionario {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public InscricoesTurmasRow AddInscricoesTurmasRow(int Código_da_inscrição, byte[] Foto, string Nome_do_aluno, string Curso, string Plano_contratado, bool Vincular_aluno) {
+            public InscricoesTurmasRow AddInscricoesTurmasRow(int Código_da_inscrição, byte[] Foto, string Nome_do_aluno, string Curso, string Plano_contratado, bool Vincular_aluno, int Turma) {
                 InscricoesTurmasRow rowInscricoesTurmasRow = ((InscricoesTurmasRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Código_da_inscrição,
@@ -417,7 +427,8 @@ namespace CadastroFuncionario {
                         Nome_do_aluno,
                         Curso,
                         Plano_contratado,
-                        Vincular_aluno};
+                        Vincular_aluno,
+                        Turma};
                 rowInscricoesTurmasRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowInscricoesTurmasRow);
                 return rowInscricoesTurmasRow;
@@ -453,6 +464,7 @@ namespace CadastroFuncionario {
                 this.columnCurso = base.Columns["Curso"];
                 this.columnPlano_contratado = base.Columns["Plano contratado"];
                 this.columnVincular_aluno = base.Columns["Vincular aluno"];
+                this.columnTurma = base.Columns["Turma"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -470,6 +482,8 @@ namespace CadastroFuncionario {
                 base.Columns.Add(this.columnPlano_contratado);
                 this.columnVincular_aluno = new global::System.Data.DataColumn("Vincular aluno", typeof(bool), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnVincular_aluno);
+                this.columnTurma = new global::System.Data.DataColumn("Turma", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTurma);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnCódigo_da_inscrição}, true));
                 this.columnCódigo_da_inscrição.AllowDBNull = false;
@@ -694,6 +708,22 @@ namespace CadastroFuncionario {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int Turma {
+                get {
+                    try {
+                        return ((int)(this[this.tableInscricoesTurmas.TurmaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Turma\' in table \'InscricoesTurmas\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableInscricoesTurmas.TurmaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsFotoNull() {
                 return this.IsNull(this.tableInscricoesTurmas.FotoColumn);
             }
@@ -702,6 +732,18 @@ namespace CadastroFuncionario {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetFotoNull() {
                 this[this.tableInscricoesTurmas.FotoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsTurmaNull() {
+                return this.IsNull(this.tableInscricoesTurmas.TurmaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetTurmaNull() {
+                this[this.tableInscricoesTurmas.TurmaColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -870,6 +912,7 @@ namespace CadastroFuncionario.DB_EscolaDataSetTableAdapters {
             tableMapping.ColumnMappings.Add("Curso", "Curso");
             tableMapping.ColumnMappings.Add("Plano contratado", "Plano contratado");
             tableMapping.ColumnMappings.Add("Vincular aluno", "Vincular aluno");
+            tableMapping.ColumnMappings.Add("Turma", "Turma");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -887,7 +930,7 @@ namespace CadastroFuncionario.DB_EscolaDataSetTableAdapters {
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT [Código da inscrição], Foto, [Nome do aluno], Curso, [Plano contratado], [" +
-                "Vincular aluno] FROM dbo.InscricoesTurmas";
+                "Vincular aluno], Turma FROM dbo.InscricoesTurmas";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         

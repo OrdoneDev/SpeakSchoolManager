@@ -12,7 +12,7 @@
               <DbSource ConnectionRef="DB_EscolaConnectionString (Settings)" DbObjectName="DB_Escola.dbo.InscricoesTurmas" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>SELECT [Código da inscrição], Foto, [Nome do aluno], Curso, [Plano contratado], [Vincular aluno] FROM dbo.InscricoesTurmas</CommandText>
+                    <CommandText>SELECT [Código da inscrição], Foto, [Nome do aluno], Curso, [Plano contratado], [Vincular aluno], Turma FROM dbo.InscricoesTurmas</CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
@@ -25,6 +25,7 @@
               <Mapping SourceColumn="Curso" DataSetColumn="Curso" />
               <Mapping SourceColumn="Plano contratado" DataSetColumn="Plano contratado" />
               <Mapping SourceColumn="Vincular aluno" DataSetColumn="Vincular aluno" />
+              <Mapping SourceColumn="Turma" DataSetColumn="Turma" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -63,6 +64,7 @@
                 </xs:simpleType>
               </xs:element>
               <xs:element name="Vincular_x0020_aluno" msprop:Generator_ColumnVarNameInTable="columnVincular_aluno" msprop:Generator_ColumnPropNameInRow="Vincular_aluno" msprop:Generator_ColumnPropNameInTable="Vincular_alunoColumn" msprop:Generator_UserColumnName="Vincular aluno" type="xs:boolean" />
+              <xs:element name="Turma" msprop:Generator_ColumnVarNameInTable="columnTurma" msprop:Generator_ColumnPropNameInRow="Turma" msprop:Generator_ColumnPropNameInTable="TurmaColumn" msprop:Generator_UserColumnName="Turma" type="xs:int" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

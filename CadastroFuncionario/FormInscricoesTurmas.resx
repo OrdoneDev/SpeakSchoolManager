@@ -432,6 +432,15 @@
   <data name="&gt;&gt;msk_IdTurma.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
+  <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column1.HeaderText" xml:space="preserve">
+    <value>Column1</value>
+  </data>
+  <data name="Column1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="fotoDataGridViewImageColumn.HeaderText" xml:space="preserve">
     <value>Foto</value>
   </data>
@@ -446,6 +455,9 @@
   </data>
   <data name="vincularAlunoDataGridViewCheckBoxColumn.HeaderText" xml:space="preserve">
     <value>Vincular aluno</value>
+  </data>
+  <data name="turmaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Turma</value>
   </data>
   <metadata name="inscricoesTurmasBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>164, 17</value>
@@ -564,6 +576,48 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Vincular aluno à turma</value>
   </data>
+  <data name="&gt;&gt;Column1.Name" xml:space="preserve">
+    <value>Column1</value>
+  </data>
+  <data name="&gt;&gt;Column1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;turmaDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>turmaDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;turmaDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;vincularAlunoDataGridViewCheckBoxColumn.Name" xml:space="preserve">
+    <value>vincularAlunoDataGridViewCheckBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;vincularAlunoDataGridViewCheckBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;planoContratadoDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>planoContratadoDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;planoContratadoDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cursoDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>cursoDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;cursoDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nomeDoAlunoDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>nomeDoAlunoDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;nomeDoAlunoDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;fotoDataGridViewImageColumn.Name" xml:space="preserve">
+    <value>fotoDataGridViewImageColumn</value>
+  </data>
+  <data name="&gt;&gt;fotoDataGridViewImageColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewImageColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;dB_EscolaDataSet.Name" xml:space="preserve">
     <value>dB_EscolaDataSet</value>
   </data>
@@ -581,36 +635,6 @@
   </data>
   <data name="&gt;&gt;inscricoesTurmasTableAdapter.Type" xml:space="preserve">
     <value>CadastroFuncionario.DB_EscolaDataSetTableAdapters.InscricoesTurmasTableAdapter, DB_EscolaDataSet.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;fotoDataGridViewImageColumn.Name" xml:space="preserve">
-    <value>fotoDataGridViewImageColumn</value>
-  </data>
-  <data name="&gt;&gt;fotoDataGridViewImageColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewImageColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;nomeDoAlunoDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>nomeDoAlunoDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;nomeDoAlunoDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cursoDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>cursoDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;cursoDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;planoContratadoDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>planoContratadoDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;planoContratadoDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;vincularAlunoDataGridViewCheckBoxColumn.Name" xml:space="preserve">
-    <value>vincularAlunoDataGridViewCheckBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;vincularAlunoDataGridViewCheckBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FormInscricoesTurmas</value>
