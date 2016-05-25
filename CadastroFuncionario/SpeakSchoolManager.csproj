@@ -154,6 +154,12 @@
     <Compile Include="FormInscricoesTurmas.Designer.cs">
       <DependentUpon>FormInscricoesTurmas.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormListaPresenca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListaPresenca.Designer.cs">
+      <DependentUpon>FormListaPresenca.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMensalidadesAlunos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -222,6 +228,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormInscricoesTurmas.resx">
       <DependentUpon>FormInscricoesTurmas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListaPresenca.resx">
+      <DependentUpon>FormListaPresenca.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMensalidadesAlunos.resx">
       <DependentUpon>FormMensalidadesAlunos.cs</DependentUpon>
