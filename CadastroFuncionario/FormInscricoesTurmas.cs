@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,9 +13,12 @@ namespace CadastroFuncionario
 {
     public partial class FormInscricoesTurmas : Form
     {
+        FormFotoInscricao form;
+
         public FormInscricoesTurmas()
         {
             InitializeComponent();
+            this.form = new FormFotoInscricao();
         }
 
         private bool VerificaCamposInscricoesTurmas()
@@ -104,6 +108,21 @@ namespace CadastroFuncionario
         private void btn_Cancelar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void dgv_Alunos_CellMouseEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == 1 && e.RowIndex >= 0)
+            {
+                this.form.set_foto((Bitmap)dgv_Alunos.Rows[e.RowIndex].Cells[e.ColumnIndex].FormattedValue);
+                form.Location = new Point(150, (80 + (e.RowIndex * 30)));
+                this.form.Show();
+            }
+        }
+
+        private void dgv_Alunos_CellMouseLeave(object sender, DataGridViewCellEventArgs e)
+        {
+            this.form.Hide();
         }
     }
 }

@@ -44,22 +44,22 @@
             this.label1 = new System.Windows.Forms.Label();
             this.msk_IdTurma = new System.Windows.Forms.MaskedTextBox();
             this.dgv_Alunos = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fotoDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.nomeDoAlunoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cursoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.planoContratadoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vincularAlunoDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.turmaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.inscricoesTurmasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dB_EscolaDataSet = new CadastroFuncionario.DB_EscolaDataSet();
             this.btn_Cancelar = new System.Windows.Forms.Button();
             this.btn_SalvarVinculo = new System.Windows.Forms.Button();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.turmaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vincularAlunoDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.planoContratadoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cursoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nomeDoAlunoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fotoDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dB_EscolaDataSet = new CadastroFuncionario.DB_EscolaDataSet();
-            this.inscricoesTurmasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.inscricoesTurmasTableAdapter = new CadastroFuncionario.DB_EscolaDataSetTableAdapters.InscricoesTurmasTableAdapter();
             this.group_InscricoesTurmas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Alunos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dB_EscolaDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inscricoesTurmasBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dB_EscolaDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // group_InscricoesTurmas
@@ -173,6 +173,67 @@
             resources.ApplyResources(this.dgv_Alunos, "dgv_Alunos");
             this.dgv_Alunos.Name = "dgv_Alunos";
             this.dgv_Alunos.Tag = "0";
+            this.dgv_Alunos.CellMouseEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Alunos_CellMouseEnter);
+            this.dgv_Alunos.CellMouseLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Alunos_CellMouseLeave);
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "Código da inscrição";
+            resources.ApplyResources(this.Column1, "Column1");
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // fotoDataGridViewImageColumn
+            // 
+            this.fotoDataGridViewImageColumn.DataPropertyName = "Foto";
+            resources.ApplyResources(this.fotoDataGridViewImageColumn, "fotoDataGridViewImageColumn");
+            this.fotoDataGridViewImageColumn.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.fotoDataGridViewImageColumn.Name = "fotoDataGridViewImageColumn";
+            this.fotoDataGridViewImageColumn.ReadOnly = true;
+            // 
+            // nomeDoAlunoDataGridViewTextBoxColumn
+            // 
+            this.nomeDoAlunoDataGridViewTextBoxColumn.DataPropertyName = "Nome do aluno";
+            resources.ApplyResources(this.nomeDoAlunoDataGridViewTextBoxColumn, "nomeDoAlunoDataGridViewTextBoxColumn");
+            this.nomeDoAlunoDataGridViewTextBoxColumn.Name = "nomeDoAlunoDataGridViewTextBoxColumn";
+            this.nomeDoAlunoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // cursoDataGridViewTextBoxColumn
+            // 
+            this.cursoDataGridViewTextBoxColumn.DataPropertyName = "Curso";
+            resources.ApplyResources(this.cursoDataGridViewTextBoxColumn, "cursoDataGridViewTextBoxColumn");
+            this.cursoDataGridViewTextBoxColumn.Name = "cursoDataGridViewTextBoxColumn";
+            this.cursoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // planoContratadoDataGridViewTextBoxColumn
+            // 
+            this.planoContratadoDataGridViewTextBoxColumn.DataPropertyName = "Plano contratado";
+            resources.ApplyResources(this.planoContratadoDataGridViewTextBoxColumn, "planoContratadoDataGridViewTextBoxColumn");
+            this.planoContratadoDataGridViewTextBoxColumn.Name = "planoContratadoDataGridViewTextBoxColumn";
+            this.planoContratadoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // vincularAlunoDataGridViewCheckBoxColumn
+            // 
+            this.vincularAlunoDataGridViewCheckBoxColumn.DataPropertyName = "Vincular aluno";
+            resources.ApplyResources(this.vincularAlunoDataGridViewCheckBoxColumn, "vincularAlunoDataGridViewCheckBoxColumn");
+            this.vincularAlunoDataGridViewCheckBoxColumn.Name = "vincularAlunoDataGridViewCheckBoxColumn";
+            // 
+            // turmaDataGridViewTextBoxColumn
+            // 
+            this.turmaDataGridViewTextBoxColumn.DataPropertyName = "Turma";
+            resources.ApplyResources(this.turmaDataGridViewTextBoxColumn, "turmaDataGridViewTextBoxColumn");
+            this.turmaDataGridViewTextBoxColumn.Name = "turmaDataGridViewTextBoxColumn";
+            this.turmaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // inscricoesTurmasBindingSource
+            // 
+            this.inscricoesTurmasBindingSource.DataMember = "InscricoesTurmas";
+            this.inscricoesTurmasBindingSource.DataSource = this.dB_EscolaDataSet;
+            // 
+            // dB_EscolaDataSet
+            // 
+            this.dB_EscolaDataSet.DataSetName = "DB_EscolaDataSet";
+            this.dB_EscolaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // btn_Cancelar
             // 
@@ -187,65 +248,6 @@
             this.btn_SalvarVinculo.Name = "btn_SalvarVinculo";
             this.btn_SalvarVinculo.UseVisualStyleBackColor = true;
             this.btn_SalvarVinculo.Click += new System.EventHandler(this.btn_SalvarVinculo_Click);
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "Código da inscrição";
-            resources.ApplyResources(this.Column1, "Column1");
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // turmaDataGridViewTextBoxColumn
-            // 
-            this.turmaDataGridViewTextBoxColumn.DataPropertyName = "Turma";
-            resources.ApplyResources(this.turmaDataGridViewTextBoxColumn, "turmaDataGridViewTextBoxColumn");
-            this.turmaDataGridViewTextBoxColumn.Name = "turmaDataGridViewTextBoxColumn";
-            this.turmaDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // vincularAlunoDataGridViewCheckBoxColumn
-            // 
-            this.vincularAlunoDataGridViewCheckBoxColumn.DataPropertyName = "Vincular aluno";
-            resources.ApplyResources(this.vincularAlunoDataGridViewCheckBoxColumn, "vincularAlunoDataGridViewCheckBoxColumn");
-            this.vincularAlunoDataGridViewCheckBoxColumn.Name = "vincularAlunoDataGridViewCheckBoxColumn";
-            // 
-            // planoContratadoDataGridViewTextBoxColumn
-            // 
-            this.planoContratadoDataGridViewTextBoxColumn.DataPropertyName = "Plano contratado";
-            resources.ApplyResources(this.planoContratadoDataGridViewTextBoxColumn, "planoContratadoDataGridViewTextBoxColumn");
-            this.planoContratadoDataGridViewTextBoxColumn.Name = "planoContratadoDataGridViewTextBoxColumn";
-            this.planoContratadoDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // cursoDataGridViewTextBoxColumn
-            // 
-            this.cursoDataGridViewTextBoxColumn.DataPropertyName = "Curso";
-            resources.ApplyResources(this.cursoDataGridViewTextBoxColumn, "cursoDataGridViewTextBoxColumn");
-            this.cursoDataGridViewTextBoxColumn.Name = "cursoDataGridViewTextBoxColumn";
-            this.cursoDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // nomeDoAlunoDataGridViewTextBoxColumn
-            // 
-            this.nomeDoAlunoDataGridViewTextBoxColumn.DataPropertyName = "Nome do aluno";
-            resources.ApplyResources(this.nomeDoAlunoDataGridViewTextBoxColumn, "nomeDoAlunoDataGridViewTextBoxColumn");
-            this.nomeDoAlunoDataGridViewTextBoxColumn.Name = "nomeDoAlunoDataGridViewTextBoxColumn";
-            this.nomeDoAlunoDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // fotoDataGridViewImageColumn
-            // 
-            this.fotoDataGridViewImageColumn.DataPropertyName = "Foto";
-            resources.ApplyResources(this.fotoDataGridViewImageColumn, "fotoDataGridViewImageColumn");
-            this.fotoDataGridViewImageColumn.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.fotoDataGridViewImageColumn.Name = "fotoDataGridViewImageColumn";
-            this.fotoDataGridViewImageColumn.ReadOnly = true;
-            // 
-            // dB_EscolaDataSet
-            // 
-            this.dB_EscolaDataSet.DataSetName = "DB_EscolaDataSet";
-            this.dB_EscolaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // inscricoesTurmasBindingSource
-            // 
-            this.inscricoesTurmasBindingSource.DataMember = "InscricoesTurmas";
-            this.inscricoesTurmasBindingSource.DataSource = this.dB_EscolaDataSet;
             // 
             // inscricoesTurmasTableAdapter
             // 
@@ -265,8 +267,8 @@
             this.group_InscricoesTurmas.ResumeLayout(false);
             this.group_InscricoesTurmas.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Alunos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dB_EscolaDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.inscricoesTurmasBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dB_EscolaDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
