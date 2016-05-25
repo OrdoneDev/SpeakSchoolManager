@@ -45,13 +45,14 @@
             this.novoPlanoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.novaEscalaDoFuncionárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.financeiroEmpresaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.novaTurmaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.vincularAuloATurmaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.negociaçãoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.aquisiçãoDeCursoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mensalidadesDoAlunoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.alterarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inscriçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.boletimDoAlunoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.novaTurmaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -81,7 +82,7 @@
             this.funcionariosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.novoFuncionarioToolStripMenuItem});
             this.funcionariosToolStripMenuItem.Name = "funcionariosToolStripMenuItem";
-            this.funcionariosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.funcionariosToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.funcionariosToolStripMenuItem.Text = "Cadastrar";
             // 
             // novoFuncionarioToolStripMenuItem
@@ -96,7 +97,7 @@
             this.historicoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.funcionarioToolStripMenuItem});
             this.historicoToolStripMenuItem.Name = "historicoToolStripMenuItem";
-            this.historicoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.historicoToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.historicoToolStripMenuItem.Text = "Histórico..";
             // 
             // funcionarioToolStripMenuItem
@@ -121,7 +122,7 @@
             this.alunosToolStripMenuItem2,
             this.reponsavelToolStripMenuItem});
             this.cadastrarToolStripMenuItem1.Name = "cadastrarToolStripMenuItem1";
-            this.cadastrarToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.cadastrarToolStripMenuItem1.Size = new System.Drawing.Size(124, 22);
             this.cadastrarToolStripMenuItem1.Text = "Cadastrar";
             // 
             // alunosToolStripMenuItem2
@@ -143,7 +144,7 @@
             this.historicoToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.alunoToolStripMenuItem});
             this.historicoToolStripMenuItem1.Name = "historicoToolStripMenuItem1";
-            this.historicoToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.historicoToolStripMenuItem1.Size = new System.Drawing.Size(124, 22);
             this.historicoToolStripMenuItem1.Text = "Histórico";
             // 
             // alunoToolStripMenuItem
@@ -169,7 +170,8 @@
             this.novoPlanoToolStripMenuItem,
             this.novaEscalaDoFuncionárioToolStripMenuItem,
             this.financeiroEmpresaToolStripMenuItem,
-            this.novaTurmaToolStripMenuItem});
+            this.novaTurmaToolStripMenuItem,
+            this.vincularAuloATurmaToolStripMenuItem});
             this.cadastrarToolStripMenuItem2.Name = "cadastrarToolStripMenuItem2";
             this.cadastrarToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
             this.cadastrarToolStripMenuItem2.Text = "Cadastrar";
@@ -194,6 +196,20 @@
             this.financeiroEmpresaToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
             this.financeiroEmpresaToolStripMenuItem.Text = "Financeiro empresa...";
             this.financeiroEmpresaToolStripMenuItem.Click += new System.EventHandler(this.financeiroEmpresaToolStripMenuItem_Click);
+            // 
+            // novaTurmaToolStripMenuItem
+            // 
+            this.novaTurmaToolStripMenuItem.Name = "novaTurmaToolStripMenuItem";
+            this.novaTurmaToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
+            this.novaTurmaToolStripMenuItem.Text = "Nova turma...";
+            this.novaTurmaToolStripMenuItem.Click += new System.EventHandler(this.novaTurmaToolStripMenuItem_Click);
+            // 
+            // vincularAuloATurmaToolStripMenuItem
+            // 
+            this.vincularAuloATurmaToolStripMenuItem.Name = "vincularAuloATurmaToolStripMenuItem";
+            this.vincularAuloATurmaToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
+            this.vincularAuloATurmaToolStripMenuItem.Text = "Vincular aulo à turma...";
+            this.vincularAuloATurmaToolStripMenuItem.Click += new System.EventHandler(this.vincularAuloATurmaToolStripMenuItem_Click);
             // 
             // negociaçãoToolStripMenuItem1
             // 
@@ -240,13 +256,6 @@
             this.boletimDoAlunoToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.boletimDoAlunoToolStripMenuItem.Text = "Boletim do aluno...";
             this.boletimDoAlunoToolStripMenuItem.Click += new System.EventHandler(this.boletimDoAlunoToolStripMenuItem_Click);
-            // 
-            // novaTurmaToolStripMenuItem
-            // 
-            this.novaTurmaToolStripMenuItem.Name = "novaTurmaToolStripMenuItem";
-            this.novaTurmaToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
-            this.novaTurmaToolStripMenuItem.Text = "Nova turma...";
-            this.novaTurmaToolStripMenuItem.Click += new System.EventHandler(this.novaTurmaToolStripMenuItem_Click);
             // 
             // FormPrincipal
             // 
@@ -297,6 +306,7 @@
         private System.Windows.Forms.ToolStripMenuItem boletimDoAlunoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem novaEscalaDoFuncionárioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem novaTurmaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem vincularAuloATurmaToolStripMenuItem;
 
     }
 }

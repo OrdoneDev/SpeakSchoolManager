@@ -36,14 +36,14 @@
             this.lbl_HoraEntrada = new System.Windows.Forms.Label();
             this.lbl_Sala = new System.Windows.Forms.Label();
             this.lbl_NomeFuncionario = new System.Windows.Forms.Label();
-            this.lbl_NomeIdioma = new System.Windows.Forms.Label();
+            this.lbl_NomePlano = new System.Windows.Forms.Label();
             this.lbl_IdEscala = new System.Windows.Forms.Label();
-            this.lbl_IdIdioma = new System.Windows.Forms.Label();
+            this.lbl_IdPlano = new System.Windows.Forms.Label();
             this.cmb_SalaTurma = new System.Windows.Forms.ComboBox();
             this.cmb_NomeFuncionario = new System.Windows.Forms.ComboBox();
             this.msk_IdEscala = new System.Windows.Forms.MaskedTextBox();
-            this.cmb_NomeIdioma = new System.Windows.Forms.ComboBox();
-            this.msk_IdIdioma = new System.Windows.Forms.MaskedTextBox();
+            this.cmb_NomePlano = new System.Windows.Forms.ComboBox();
+            this.msk_IdPlano = new System.Windows.Forms.MaskedTextBox();
             this.btn_Cancelar = new System.Windows.Forms.Button();
             this.btn_SalvarTurma = new System.Windows.Forms.Button();
             this.group_CadastroTurma.SuspendLayout();
@@ -57,14 +57,14 @@
             this.group_CadastroTurma.Controls.Add(this.lbl_HoraEntrada);
             this.group_CadastroTurma.Controls.Add(this.lbl_Sala);
             this.group_CadastroTurma.Controls.Add(this.lbl_NomeFuncionario);
-            this.group_CadastroTurma.Controls.Add(this.lbl_NomeIdioma);
+            this.group_CadastroTurma.Controls.Add(this.lbl_NomePlano);
             this.group_CadastroTurma.Controls.Add(this.lbl_IdEscala);
-            this.group_CadastroTurma.Controls.Add(this.lbl_IdIdioma);
+            this.group_CadastroTurma.Controls.Add(this.lbl_IdPlano);
             this.group_CadastroTurma.Controls.Add(this.cmb_SalaTurma);
             this.group_CadastroTurma.Controls.Add(this.cmb_NomeFuncionario);
             this.group_CadastroTurma.Controls.Add(this.msk_IdEscala);
-            this.group_CadastroTurma.Controls.Add(this.cmb_NomeIdioma);
-            this.group_CadastroTurma.Controls.Add(this.msk_IdIdioma);
+            this.group_CadastroTurma.Controls.Add(this.cmb_NomePlano);
+            this.group_CadastroTurma.Controls.Add(this.msk_IdPlano);
             resources.ApplyResources(this.group_CadastroTurma, "group_CadastroTurma");
             this.group_CadastroTurma.Name = "group_CadastroTurma";
             this.group_CadastroTurma.TabStop = false;
@@ -105,11 +105,11 @@
             this.lbl_NomeFuncionario.Name = "lbl_NomeFuncionario";
             this.lbl_NomeFuncionario.Tag = "0";
             // 
-            // lbl_NomeIdioma
+            // lbl_NomePlano
             // 
-            resources.ApplyResources(this.lbl_NomeIdioma, "lbl_NomeIdioma");
-            this.lbl_NomeIdioma.Name = "lbl_NomeIdioma";
-            this.lbl_NomeIdioma.Tag = "0";
+            resources.ApplyResources(this.lbl_NomePlano, "lbl_NomePlano");
+            this.lbl_NomePlano.Name = "lbl_NomePlano";
+            this.lbl_NomePlano.Tag = "0";
             // 
             // lbl_IdEscala
             // 
@@ -117,11 +117,11 @@
             this.lbl_IdEscala.Name = "lbl_IdEscala";
             this.lbl_IdEscala.Tag = "0";
             // 
-            // lbl_IdIdioma
+            // lbl_IdPlano
             // 
-            resources.ApplyResources(this.lbl_IdIdioma, "lbl_IdIdioma");
-            this.lbl_IdIdioma.Name = "lbl_IdIdioma";
-            this.lbl_IdIdioma.Tag = "0";
+            resources.ApplyResources(this.lbl_IdPlano, "lbl_IdPlano");
+            this.lbl_IdPlano.Name = "lbl_IdPlano";
+            this.lbl_IdPlano.Tag = "0";
             // 
             // cmb_SalaTurma
             // 
@@ -142,6 +142,7 @@
             this.cmb_NomeFuncionario.FormattingEnabled = true;
             resources.ApplyResources(this.cmb_NomeFuncionario, "cmb_NomeFuncionario");
             this.cmb_NomeFuncionario.Name = "cmb_NomeFuncionario";
+            this.cmb_NomeFuncionario.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.cmb_NomeFuncionario_PreviewKeyDown);
             // 
             // msk_IdEscala
             // 
@@ -149,17 +150,18 @@
             this.msk_IdEscala.Name = "msk_IdEscala";
             this.msk_IdEscala.TextChanged += new System.EventHandler(this.msk_IdEscala_TextChanged);
             // 
-            // cmb_NomeIdioma
+            // cmb_NomePlano
             // 
-            this.cmb_NomeIdioma.FormattingEnabled = true;
-            resources.ApplyResources(this.cmb_NomeIdioma, "cmb_NomeIdioma");
-            this.cmb_NomeIdioma.Name = "cmb_NomeIdioma";
+            this.cmb_NomePlano.FormattingEnabled = true;
+            resources.ApplyResources(this.cmb_NomePlano, "cmb_NomePlano");
+            this.cmb_NomePlano.Name = "cmb_NomePlano";
+            this.cmb_NomePlano.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.cmb_NomePlano_PreviewKeyDown);
             // 
-            // msk_IdIdioma
+            // msk_IdPlano
             // 
-            resources.ApplyResources(this.msk_IdIdioma, "msk_IdIdioma");
-            this.msk_IdIdioma.Name = "msk_IdIdioma";
-            this.msk_IdIdioma.TextChanged += new System.EventHandler(this.msk_IdIdioma_TextChanged);
+            resources.ApplyResources(this.msk_IdPlano, "msk_IdPlano");
+            this.msk_IdPlano.Name = "msk_IdPlano";
+            this.msk_IdPlano.TextChanged += new System.EventHandler(this.msk_IdPlano_TextChanged);
             // 
             // btn_Cancelar
             // 
@@ -199,14 +201,14 @@
         private System.Windows.Forms.Label lbl_HoraEntrada;
         private System.Windows.Forms.Label lbl_Sala;
         private System.Windows.Forms.Label lbl_NomeFuncionario;
-        private System.Windows.Forms.Label lbl_NomeIdioma;
+        private System.Windows.Forms.Label lbl_NomePlano;
         private System.Windows.Forms.Label lbl_IdEscala;
-        private System.Windows.Forms.Label lbl_IdIdioma;
+        private System.Windows.Forms.Label lbl_IdPlano;
         private System.Windows.Forms.ComboBox cmb_SalaTurma;
         private System.Windows.Forms.ComboBox cmb_NomeFuncionario;
         private System.Windows.Forms.MaskedTextBox msk_IdEscala;
-        private System.Windows.Forms.ComboBox cmb_NomeIdioma;
-        private System.Windows.Forms.MaskedTextBox msk_IdIdioma;
+        private System.Windows.Forms.ComboBox cmb_NomePlano;
+        private System.Windows.Forms.MaskedTextBox msk_IdPlano;
         private System.Windows.Forms.Button btn_Cancelar;
         private System.Windows.Forms.Button btn_SalvarTurma;
         private System.Windows.Forms.GroupBox group_CadastroTurma;

@@ -96,11 +96,6 @@ namespace CadastroFuncionario
                     cmb_CidadeAluno.Text = Endereco[1];
                 }
             }
-            else
-            {
-                cmb_EstadoAluno.Text = "";
-                cmb_CidadeAluno.Text = "";
-            }
         }
 
         private void msk_CpfResponsavel_TextChanged(object sender, EventArgs e)

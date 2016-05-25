@@ -203,38 +203,20 @@
   <data name="códigoDaInscriçãoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>Código da inscrição</value>
   </data>
-  <data name="códigoDaInscriçãoDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
-    <value>114</value>
-  </data>
   <data name="códigoDoAlunoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>Código do aluno</value>
-  </data>
-  <data name="códigoDoAlunoDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
-    <value>77</value>
   </data>
   <data name="nomeDoAlunoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>Nome do aluno</value>
   </data>
-  <data name="nomeDoAlunoDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
-    <value>96</value>
-  </data>
   <data name="códigoDaNegociaçãoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>Código da negociação</value>
-  </data>
-  <data name="códigoDaNegociaçãoDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
-    <value>127</value>
   </data>
   <data name="dataDeInscricaoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>Data de Inscricao</value>
   </data>
-  <data name="dataDeInscricaoDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
-    <value>106</value>
-  </data>
   <data name="statusDaInscriçãoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>Status da inscrição</value>
-  </data>
-  <data name="statusDaInscriçãoDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
-    <value>112</value>
   </data>
   <metadata name="allInscricoesBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>171, 17</value>

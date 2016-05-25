@@ -96,7 +96,7 @@
             this.dgv_InscricaoAluno.AllowUserToAddRows = false;
             this.dgv_InscricaoAluno.AllowUserToDeleteRows = false;
             this.dgv_InscricaoAluno.AutoGenerateColumns = false;
-            this.dgv_InscricaoAluno.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgv_InscricaoAluno.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_InscricaoAluno.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_InscricaoAluno.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.códigoDaInscriçãoDataGridViewTextBoxColumn,
