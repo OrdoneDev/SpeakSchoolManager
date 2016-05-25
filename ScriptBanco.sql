@@ -35,9 +35,9 @@ go
 
 Create schema SysProtected authorization dbo
 go
-
+ 
 Create table SysProtected.Endereco (
-	Id_Endereco			Int							Primary key		identity(0000, 1),
+	Id_Endereco			Int							Primary key		identity,
 	Estado				Varchar(15)		not null,
 	Cidade				Varchar(20)		not null,
 	CEP					Char(10)		not null	Check (CEP like '[0-9][0-9][0-9][0-9][0-9]-[0-9][0-9][0-9]'),
@@ -51,7 +51,7 @@ Create unique index Unico_Endreco
 go
 
 Create table SysProtected.Funcionarios (
-	Id_Funcionario		Int							Primary key		identity(0000, 1),
+	Id_Funcionario		Int							Primary key		identity,
 	Id_Endereco			Int				not null	Foreign key references SysProtected.Endereco (Id_Endereco),
 	Nome				Varchar(40)		not null,
 	DataNascimento		Date			not null	Check (datediff(year, DataNascimento, Getdate( )) > 18),
@@ -115,7 +115,7 @@ AS
 GO
 
 Create table SysProtected.Historico_Funcionario (
-	Id_Historico		Int							Primary key		identity(0000, 1),
+	Id_Historico		Int							Primary key		identity,
 	Id_Funcionario		Int				not null	Foreign key references SysProtected.Funcionarios (Id_Funcionario),
 	Data				DateTime		not null,
 	Descricao			Varchar(800)	not null
@@ -160,7 +160,7 @@ end
 go
 
 Create table SysProtected.Responsavel_Aluno (
-	Id_Responsavel		Int							Primary key		identity(0000, 1),
+	Id_Responsavel		Int							Primary key		identity,
 	Id_Endereco			Int				not null	Foreign key references	SysProtected.Endereco (Id_Endereco),
 	Nome				Varchar(40)		not null,
 	DataNascimento		Date			not null	Check (datediff(year, DataNascimento, Getdate( )) > 18),
@@ -208,7 +208,7 @@ AS
 GO
 
 Create table SysProtected.Alunos (
-	Id_Aluno			Int							Primary key		identity(0000, 1),
+	Id_Aluno			Int							Primary key		identity,
 	Id_Responsavel		Int				null		Foreign key	references SysProtected.Responsavel_Aluno (Id_Responsavel),
 	Id_Endereco			Int				not null	Foreign key	references SysProtected.Endereco (Id_Endereco),
 	Nome				Varchar(40)		not null,
@@ -275,7 +275,7 @@ GO
 
 
 Create table SysProtected.Historico_Aluno (
-	Id_Historico		Int				not null	Primary key		identity(0000, 1),
+	Id_Historico		Int				not null	Primary key		identity,
 	Id_Aluno			Int				not null	Foreign key references SysProtected.Alunos (Id_Aluno),
 	Data				DateTime		not null,
 	Descricao			Varchar(800)	not null
@@ -320,7 +320,7 @@ end
 go
 
 Create table SysProtected.Idiomas (
-	Id_Idioma			Int							Primary key		identity(0000, 1),
+	Id_Idioma			Int							Primary key		identity,
 	Nome				Varchar(40)		not null,
 	Descricao			Varchar(255)	not null
 )
@@ -331,7 +331,7 @@ Create unique index Unico_Idioma
 go
 
 Create table SysProtected.Planos (
-	Id_Plano			Int							Primary key		identity(0000, 1),
+	Id_Plano			Int							Primary key		identity,
 	Id_Idioma			Int				not null	Foreign key	references SysProtected.Idiomas (Id_Idioma),
 	Nome				Varchar(40)		not null,
 	Aulas_Previstas		Tinyint			not null,
@@ -344,7 +344,7 @@ Create unique index Unico_Plano
 go
 
 Create table SysProtected.Financeiro (
-	Id_Financeiro		Int							Primary key		identity(0000, 1),
+	Id_Financeiro		Int							Primary key		identity,
 	Id_Funcionario		Int				null		Unique Foreign key references SysProtected.Funcionarios (Id_Funcionario),
 	Banco				Varchar(20)		not null,
 	Agencia				Int				not null,
@@ -358,7 +358,7 @@ Create unique index Unico_Financeiro
 go
 
 Create table SysProtected.Negociacao (
-	Id_Negociacao		Int							Primary key		identity(0000, 1),
+	Id_Negociacao		Int							Primary key		identity,
 	Id_Financeiro		Int				not null	Foreign key	references SysProtected.Financeiro (Id_Financeiro),
 	Id_Aluno			Int				not null	Foreign key	references SysProtected.Alunos (Id_Aluno),
 	Id_Plano			Int				not null	Foreign key	references SysProtected.Planos (Id_Plano),
@@ -402,7 +402,7 @@ end
 go
 
 Create table SysProtected.Mensalidades (
-	Id_Mensalidade		Int							Primary key		identity(0000, 1),
+	Id_Mensalidade		Int							Primary key		identity,
 	Id_Financeiro		Int				null		Foreign key references SysProtected.Financeiro (Id_Financeiro),
 	Id_Negociacao		Int				null		Foreign key	references SysProtected.Negociacao (Id_Negociacao),
 	Numero_Parcela		Tinyint			not null	Check (Numero_Parcela > 0),
@@ -466,7 +466,7 @@ end
 go
 
 Create table SysProtected.Inscricao (
-	Id_Inscricao		Int							Primary key		identity(0000, 1),
+	Id_Inscricao		Int							Primary key		identity,
 	Id_Aluno			Int				not null	Foreign key	references SysProtected.Alunos (Id_Aluno),	
 	Id_Negociacao		Int				not null	Foreign key references SysProtected.Negociacao (Id_Negociacao),	
 	Data				Date			not null,
@@ -507,7 +507,7 @@ end
 go
 
 Create table SysProtected.Boletim (
-	Id_Boletim			Int							Primary key		identity(0000, 1),
+	Id_Boletim			Int							Primary key		identity,
 	Id_Inscricao		Int				not null	Foreign key references SysProtected.Inscricao (Id_Inscricao),
 	Nota1				Float			null		Check (Nota1 > 0 and Nota1 < 11),
 	Nota2				Float			null		Check (Nota2 > 0 and Nota2 < 11),
@@ -552,7 +552,7 @@ CREATE VIEW AllBoletim AS
 go
 
 Create table SysProtected.Escalas (
-	Id_Escala			Int							Primary key		identity(0000, 1),
+	Id_Escala			Int							Primary key		identity,
 	Id_Funcionario		Int				not null	Foreign key references SysProtected.Funcionarios (Id_Funcionario),
 	Data				Date			not null,
 	Hora_Entrada		Time			not null,
@@ -578,8 +578,8 @@ CREATE VIEW EscalaFuncionario AS
 Go
 
 Create table SysProtected.Turmas (
-	Id_Turma			Int							Primary key		identity(0000, 1),
-	Id_Idioma			Int				not null	Foreign key references SysProtected.Idiomas (Id_Idioma),
+	Id_Turma			Int							Primary key		identity,
+	Id_Plano			Int				not null	Foreign key references SysProtected.Planos (Id_Plano),
 	Id_Escala			Int				not null	Foreign key references SysProtected.Escalas (Id_Escala),
 	Sala				Tinyint			not null,
 	Data				Date			not null,
@@ -589,11 +589,11 @@ Create table SysProtected.Turmas (
 go
 
 Create unique index Unica_Turma
-	on SysProtected.Turmas (Id_Idioma, Id_Escala, Sala);
+	on SysProtected.Turmas (Id_Plano, Id_Escala, Sala);
 go
 
 Create table SysProtected.Inscricoes_Turmas (
-	Id_Inscricao_Turma	int							Primary key		identity(0000, 1),
+	Id_Inscricao_Turma	int							Primary key		identity,
 	Id_Inscricao		int				not null	Foreign key references SysProtected.Inscricao (Id_Inscricao),
 	Id_Turma			int				not null	Foreign key references SysProtected.Turmas (Id_Turma)
 )
@@ -603,14 +603,29 @@ Create unique index Unica_Inscricao_Turma
 	on SysProtected.Inscricoes_Turmas (Id_Inscricao, Id_Turma);
 go
 
+Create trigger TGR_InscricoesTurmas
+on SysProtected.Inscricoes_Turmas
+after insert
+as
+begin
+	Declare @Id_Inscricao int;
+
+	Select @Id_Inscricao = Id_Inscricao from inserted;
+
+	Update SysProtected.Inscricao set Status = 1 where Id_Inscricao = @Id_Inscricao;
+end
+go	 
+
 CREATE VIEW InscricoesTurmas AS
-	Select	A.Id_Aluno	as	'Código do aluno',
-			A.Foto		as	'Foto',
-			A.Nome		as	'Nome do aluno',
-			Id.Nome		as	'Curso',
-			P.Nome		as	'Plano contratado',
-			I.Status	as	'Vincular aluno'
-	from SysProtected.Inscricao I INNER JOIN SysProtected.Negociacao N
+	Select	I.Id_Inscricao	as	'Código da inscrição',
+			A.Foto			as	'Foto',
+			A.Nome			as	'Nome do aluno',
+			Id.Nome			as	'Curso',
+			P.Nome			as	'Plano contratado',
+			I.Status		as	'Vincular aluno',
+			IT.Id_Turma		as	'Turma'
+	from SysProtected.Inscricoes_Turmas IT RIGHT JOIN SysProtected.Inscricao I
+	on IT.Id_Inscricao = I.Id_Inscricao INNER JOIN SysProtected.Negociacao N
 	on I.Id_Negociacao = N.Id_Negociacao INNER JOIN SysProtected.Planos P
 	on N.Id_Plano = P.Id_Plano INNER JOIN SysProtected.Idiomas Id
 	on P.Id_Idioma = Id.Id_Idioma INNER JOIN SysProtected.Alunos A
@@ -618,11 +633,25 @@ CREATE VIEW InscricoesTurmas AS
 	go
 Go
 
+CREATE VIEW TurmaAluno AS
+	Select	T.Id_Turma,
+			P.Nome			as	'Curso',
+			F.Nome			as	'Professor',
+			T.Sala			as	'Sala',
+			T.Hora_Entrada	as	'Hora entrada',
+			T.Hora_Saida	as	'Hora saída'
+	from SysProtected.Planos P INNER JOIN SysProtected.Turmas T
+	on P.Id_Plano = T.Id_Plano INNER JOIN SysProtected.Escalas E
+	on T.Id_Escala = E.Id_Escala INNER JOIN SysProtected.Funcionarios F
+	on E.Id_Funcionario = F.Id_Funcionario
+	where F.Cargo = 'Professor(a)' or F.Cargo = 'Cordenador(a)'
+GO
+
 Create table SysProtected.Lista_Presenca (
-	Id_Presenca			int							Primary key		identity(0000, 1),
+	Id_Presenca			int							Primary key		identity,
 	Id_Inscricao_Turma	int				not null	Foreign key references SysProtected.Inscricoes_Turmas,
-	Chamada				bit				not null,
-	Data				date			not null
+	Chamada				bit				null,
+	Data				date			null
 )
 go
 
