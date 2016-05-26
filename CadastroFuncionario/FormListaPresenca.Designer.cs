@@ -38,11 +38,12 @@
             this.lbl_IdTurma = new System.Windows.Forms.Label();
             this.msk_IdTurma = new System.Windows.Forms.MaskedTextBox();
             this.dgv_ListaPresenca = new System.Windows.Forms.DataGridView();
-            this.listaPresencaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dB_EscolaDataSet1 = new CadastroFuncionario.DB_EscolaDataSet1();
             this.btn_Cancelar = new System.Windows.Forms.Button();
             this.btn_SalvarLista = new System.Windows.Forms.Button();
+            this.dB_EscolaDataSet1 = new CadastroFuncionario.DB_EscolaDataSet1();
+            this.listaPresencaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.listaPresencaTableAdapter = new CadastroFuncionario.DB_EscolaDataSet1TableAdapters.ListaPresencaTableAdapter();
+            this.idPresencaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nºChamadaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomeDoAlunoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.presençaDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
@@ -53,8 +54,8 @@
             this.cursoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.group_ListaPresenca.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ListaPresenca)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.listaPresencaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dB_EscolaDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listaPresencaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // group_ListaPresenca
@@ -146,6 +147,7 @@
             this.dgv_ListaPresenca.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_ListaPresenca.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_ListaPresenca.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idPresencaDataGridViewTextBoxColumn,
             this.nºChamadaDataGridViewTextBoxColumn,
             this.nomeDoAlunoDataGridViewTextBoxColumn,
             this.presençaDataGridViewCheckBoxColumn,
@@ -160,16 +162,6 @@
             this.dgv_ListaPresenca.Size = new System.Drawing.Size(864, 305);
             this.dgv_ListaPresenca.TabIndex = 0;
             this.dgv_ListaPresenca.Tag = "0";
-            // 
-            // listaPresencaBindingSource
-            // 
-            this.listaPresencaBindingSource.DataMember = "ListaPresenca";
-            this.listaPresencaBindingSource.DataSource = this.dB_EscolaDataSet1;
-            // 
-            // dB_EscolaDataSet1
-            // 
-            this.dB_EscolaDataSet1.DataSetName = "DB_EscolaDataSet1";
-            this.dB_EscolaDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // btn_Cancelar
             // 
@@ -191,9 +183,27 @@
             this.btn_SalvarLista.UseVisualStyleBackColor = true;
             this.btn_SalvarLista.Click += new System.EventHandler(this.btn_SalvarLista_Click);
             // 
+            // dB_EscolaDataSet1
+            // 
+            this.dB_EscolaDataSet1.DataSetName = "DB_EscolaDataSet1";
+            this.dB_EscolaDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // listaPresencaBindingSource
+            // 
+            this.listaPresencaBindingSource.DataMember = "ListaPresenca";
+            this.listaPresencaBindingSource.DataSource = this.dB_EscolaDataSet1;
+            // 
             // listaPresencaTableAdapter
             // 
             this.listaPresencaTableAdapter.ClearBeforeFill = true;
+            // 
+            // idPresencaDataGridViewTextBoxColumn
+            // 
+            this.idPresencaDataGridViewTextBoxColumn.DataPropertyName = "Id_Presenca";
+            this.idPresencaDataGridViewTextBoxColumn.HeaderText = "Id_Presenca";
+            this.idPresencaDataGridViewTextBoxColumn.Name = "idPresencaDataGridViewTextBoxColumn";
+            this.idPresencaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.idPresencaDataGridViewTextBoxColumn.Visible = false;
             // 
             // nºChamadaDataGridViewTextBoxColumn
             // 
@@ -209,7 +219,7 @@
             this.nomeDoAlunoDataGridViewTextBoxColumn.HeaderText = "Nome do aluno";
             this.nomeDoAlunoDataGridViewTextBoxColumn.Name = "nomeDoAlunoDataGridViewTextBoxColumn";
             this.nomeDoAlunoDataGridViewTextBoxColumn.ReadOnly = true;
-            this.nomeDoAlunoDataGridViewTextBoxColumn.Width = 104;
+            this.nomeDoAlunoDataGridViewTextBoxColumn.Width = 96;
             // 
             // presençaDataGridViewCheckBoxColumn
             // 
@@ -267,8 +277,8 @@
             this.group_ListaPresenca.ResumeLayout(false);
             this.group_ListaPresenca.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ListaPresenca)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.listaPresencaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dB_EscolaDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listaPresencaBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -289,6 +299,7 @@
         private DB_EscolaDataSet1 dB_EscolaDataSet1;
         private System.Windows.Forms.BindingSource listaPresencaBindingSource;
         private DB_EscolaDataSet1TableAdapters.ListaPresencaTableAdapter listaPresencaTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idPresencaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nºChamadaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomeDoAlunoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewCheckBoxColumn presençaDataGridViewCheckBoxColumn;

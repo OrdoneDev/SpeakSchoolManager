@@ -799,6 +799,36 @@ namespace CadastroFuncionario
             }
             return;
         }
+
+        public static void AtualizarListaPresenca(int Id_Presenca, byte Chamada)
+        {
+            SqlConnection conexao = new SqlConnection(strConexao);
+            SqlCommand cmd;
+
+            try
+            {
+                conexao.Open();
+                cmd = new SqlCommand();
+                cmd.Connection = conexao;
+
+                cmd.CommandText = "Update SysProtected.Lista_Presenca set Chamada = @Chamada where Id_Presenca = @Id_Presenca";
+
+                cmd.Parameters.Add(new SqlParameter("@Id_Presenca", Id_Presenca));
+                cmd.Parameters.Add(new SqlParameter("@Chamada", Chamada));
+
+                cmd.CommandType = CommandType.Text;
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conexao.Close();
+            }
+            return;
+        }
         
         public static bool VerificaFuncionario(string RG, string CPF)
         {

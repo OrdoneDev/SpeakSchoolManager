@@ -279,6 +279,8 @@ namespace CadastroFuncionario {
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class ListaPresencaDataTable : global::System.Data.TypedTableBase<ListaPresencaRow> {
             
+            private global::System.Data.DataColumn columnId_Presenca;
+            
             private global::System.Data.DataColumn columnNº_chamada;
             
             private global::System.Data.DataColumn columnNome_do_aluno;
@@ -326,6 +328,14 @@ namespace CadastroFuncionario {
             protected ListaPresencaDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Id_PresencaColumn {
+                get {
+                    return this.columnId_Presenca;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -429,9 +439,10 @@ namespace CadastroFuncionario {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public ListaPresencaRow AddListaPresencaRow(long Nº_chamada, string Nome_do_aluno, bool Presença, System.DateTime Dia_da_aula, int Código_da_turma, byte Número_da_sala, string Nome_do_professor, string Curso) {
+            public ListaPresencaRow AddListaPresencaRow(int Id_Presenca, long Nº_chamada, string Nome_do_aluno, bool Presença, System.DateTime Dia_da_aula, int Código_da_turma, byte Número_da_sala, string Nome_do_professor, string Curso) {
                 ListaPresencaRow rowListaPresencaRow = ((ListaPresencaRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
+                        Id_Presenca,
                         Nº_chamada,
                         Nome_do_aluno,
                         Presença,
@@ -443,13 +454,6 @@ namespace CadastroFuncionario {
                 rowListaPresencaRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowListaPresencaRow);
                 return rowListaPresencaRow;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public ListaPresencaRow FindByCódigo_da_turma(int Código_da_turma) {
-                return ((ListaPresencaRow)(this.Rows.Find(new object[] {
-                            Código_da_turma})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -469,6 +473,7 @@ namespace CadastroFuncionario {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
+                this.columnId_Presenca = base.Columns["Id_Presenca"];
                 this.columnNº_chamada = base.Columns["Nº chamada"];
                 this.columnNome_do_aluno = base.Columns["Nome do aluno"];
                 this.columnPresença = base.Columns["Presença"];
@@ -482,6 +487,8 @@ namespace CadastroFuncionario {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private void InitClass() {
+                this.columnId_Presenca = new global::System.Data.DataColumn("Id_Presenca", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnId_Presenca);
                 this.columnNº_chamada = new global::System.Data.DataColumn("Nº chamada", typeof(long), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnNº_chamada);
                 this.columnNome_do_aluno = new global::System.Data.DataColumn("Nome do aluno", typeof(string), null, global::System.Data.MappingType.Element);
@@ -498,12 +505,9 @@ namespace CadastroFuncionario {
                 base.Columns.Add(this.columnNome_do_professor);
                 this.columnCurso = new global::System.Data.DataColumn("Curso", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCurso);
-                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnCódigo_da_turma}, true));
                 this.columnNome_do_aluno.AllowDBNull = false;
                 this.columnNome_do_aluno.MaxLength = 40;
                 this.columnCódigo_da_turma.AllowDBNull = false;
-                this.columnCódigo_da_turma.Unique = true;
                 this.columnNúmero_da_sala.AllowDBNull = false;
                 this.columnNome_do_professor.AllowDBNull = false;
                 this.columnNome_do_professor.MaxLength = 40;
@@ -651,6 +655,22 @@ namespace CadastroFuncionario {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int Id_Presenca {
+                get {
+                    try {
+                        return ((int)(this[this.tableListaPresenca.Id_PresencaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Id_Presenca\' in table \'ListaPresenca\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableListaPresenca.Id_PresencaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public long Nº_chamada {
                 get {
                     try {
@@ -750,6 +770,18 @@ namespace CadastroFuncionario {
                 set {
                     this[this.tableListaPresenca.CursoColumn] = value;
                 }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsId_PresencaNull() {
+                return this.IsNull(this.tableListaPresenca.Id_PresencaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetId_PresencaNull() {
+                this[this.tableListaPresenca.Id_PresencaColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -948,6 +980,7 @@ namespace CadastroFuncionario.DB_EscolaDataSet1TableAdapters {
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "ListaPresenca";
+            tableMapping.ColumnMappings.Add("Id_Presenca", "Id_Presenca");
             tableMapping.ColumnMappings.Add("Nº chamada", "Nº chamada");
             tableMapping.ColumnMappings.Add("Nome do aluno", "Nome do aluno");
             tableMapping.ColumnMappings.Add("Presença", "Presença");
@@ -972,8 +1005,9 @@ namespace CadastroFuncionario.DB_EscolaDataSet1TableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT [Nº chamada], [Nome do aluno], Presença, [Dia da aula], [Código da turma]," +
-                " [Número da sala], [Nome do professor], Curso FROM dbo.ListaPresenca";
+            this._commandCollection[0].CommandText = "SELECT Id_Presenca, [Nº chamada], [Nome do aluno], Presença, [Dia da aula], [Códi" +
+                "go da turma], [Número da sala], [Nome do professor], Curso FROM dbo.ListaPresenc" +
+                "a";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         

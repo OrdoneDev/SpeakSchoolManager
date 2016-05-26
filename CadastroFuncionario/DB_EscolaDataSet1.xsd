@@ -12,13 +12,14 @@
               <DbSource ConnectionRef="DB_EscolaConnectionString (Settings)" DbObjectName="DB_Escola.dbo.ListaPresenca" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>SELECT [Nº chamada], [Nome do aluno], Presença, [Dia da aula], [Código da turma], [Número da sala], [Nome do professor], Curso FROM dbo.ListaPresenca</CommandText>
+                    <CommandText>SELECT Id_Presenca, [Nº chamada], [Nome do aluno], Presença, [Dia da aula], [Código da turma], [Número da sala], [Nome do professor], Curso FROM dbo.ListaPresenca</CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
             </MainSource>
             <Mappings>
+              <Mapping SourceColumn="Id_Presenca" DataSetColumn="Id_Presenca" />
               <Mapping SourceColumn="Nº chamada" DataSetColumn="Nº chamada" />
               <Mapping SourceColumn="Nome do aluno" DataSetColumn="Nome do aluno" />
               <Mapping SourceColumn="Presença" DataSetColumn="Presença" />
@@ -41,6 +42,7 @@
         <xs:element name="ListaPresenca" msprop:Generator_TableClassName="ListaPresencaDataTable" msprop:Generator_TableVarName="tableListaPresenca" msprop:Generator_TablePropName="ListaPresenca" msprop:Generator_RowDeletingName="ListaPresencaRowDeleting" msprop:Generator_RowChangingName="ListaPresencaRowChanging" msprop:Generator_RowEvHandlerName="ListaPresencaRowChangeEventHandler" msprop:Generator_RowDeletedName="ListaPresencaRowDeleted" msprop:Generator_UserTableName="ListaPresenca" msprop:Generator_RowChangedName="ListaPresencaRowChanged" msprop:Generator_RowEvArgName="ListaPresencaRowChangeEvent" msprop:Generator_RowClassName="ListaPresencaRow">
           <xs:complexType>
             <xs:sequence>
+              <xs:element name="Id_Presenca" msprop:Generator_ColumnVarNameInTable="columnId_Presenca" msprop:Generator_ColumnPropNameInRow="Id_Presenca" msprop:Generator_ColumnPropNameInTable="Id_PresencaColumn" msprop:Generator_UserColumnName="Id_Presenca" type="xs:int" minOccurs="0" />
               <xs:element name="N_x00BA__x0020_chamada" msprop:Generator_ColumnVarNameInTable="columnNº_chamada" msprop:Generator_ColumnPropNameInRow="Nº_chamada" msprop:Generator_ColumnPropNameInTable="Nº_chamadaColumn" msprop:Generator_UserColumnName="Nº chamada" type="xs:long" minOccurs="0" />
               <xs:element name="Nome_x0020_do_x0020_aluno" msprop:Generator_ColumnVarNameInTable="columnNome_do_aluno" msprop:Generator_ColumnPropNameInRow="Nome_do_aluno" msprop:Generator_ColumnPropNameInTable="Nome_do_alunoColumn" msprop:Generator_UserColumnName="Nome do aluno">
                 <xs:simpleType>
@@ -72,9 +74,5 @@
         </xs:element>
       </xs:choice>
     </xs:complexType>
-    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
-      <xs:selector xpath=".//mstns:ListaPresenca" />
-      <xs:field xpath="mstns:Código_x0020_da_x0020_turma" />
-    </xs:unique>
   </xs:element>
 </xs:schema>
