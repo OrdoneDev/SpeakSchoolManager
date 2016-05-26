@@ -44,28 +44,34 @@
             this.label1 = new System.Windows.Forms.Label();
             this.msk_IdTurma = new System.Windows.Forms.MaskedTextBox();
             this.dgv_Alunos = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_Cancelar = new System.Windows.Forms.Button();
             this.btn_SalvarVinculo = new System.Windows.Forms.Button();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.turmaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vincularAlunoDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.planoContratadoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cursoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nomeDoAlunoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_MostrarNaoVinculados = new System.Windows.Forms.Button();
+            this.btn_MostrarVinculados = new System.Windows.Forms.Button();
+            this.btn_MostarTodos = new System.Windows.Forms.Button();
             this.fotoDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dB_EscolaDataSet = new CadastroFuncionario.DB_EscolaDataSet();
+            this.nomeDoAlunoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cursoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.planoContratadoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vincularAlunoDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.turmaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.inscricoesTurmasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dB_EscolaDataSet = new CadastroFuncionario.DB_EscolaDataSet();
             this.inscricoesTurmasTableAdapter = new CadastroFuncionario.DB_EscolaDataSetTableAdapters.InscricoesTurmasTableAdapter();
             this.group_InscricoesTurmas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Alunos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dB_EscolaDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inscricoesTurmasBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dB_EscolaDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // group_InscricoesTurmas
             // 
+            this.group_InscricoesTurmas.Controls.Add(this.btn_MostrarNaoVinculados);
             this.group_InscricoesTurmas.Controls.Add(this.lbl_HoraSaida);
+            this.group_InscricoesTurmas.Controls.Add(this.btn_MostrarVinculados);
             this.group_InscricoesTurmas.Controls.Add(this.lbl_HorarioSaida);
+            this.group_InscricoesTurmas.Controls.Add(this.btn_MostarTodos);
             this.group_InscricoesTurmas.Controls.Add(this.lbl_HoraEntrada);
             this.group_InscricoesTurmas.Controls.Add(this.lbl_HorarioEntrada);
             this.group_InscricoesTurmas.Controls.Add(this.lbl_NSala);
@@ -173,6 +179,15 @@
             resources.ApplyResources(this.dgv_Alunos, "dgv_Alunos");
             this.dgv_Alunos.Name = "dgv_Alunos";
             this.dgv_Alunos.Tag = "0";
+            this.dgv_Alunos.CellMouseEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Alunos_CellMouseEnter);
+            this.dgv_Alunos.CellMouseLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Alunos_CellMouseLeave);
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "Código da inscrição";
+            resources.ApplyResources(this.Column1, "Column1");
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             // 
             // btn_Cancelar
             // 
@@ -188,46 +203,26 @@
             this.btn_SalvarVinculo.UseVisualStyleBackColor = true;
             this.btn_SalvarVinculo.Click += new System.EventHandler(this.btn_SalvarVinculo_Click);
             // 
-            // Column1
+            // btn_MostrarNaoVinculados
             // 
-            this.Column1.DataPropertyName = "Código da inscrição";
-            resources.ApplyResources(this.Column1, "Column1");
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
+            resources.ApplyResources(this.btn_MostrarNaoVinculados, "btn_MostrarNaoVinculados");
+            this.btn_MostrarNaoVinculados.Name = "btn_MostrarNaoVinculados";
+            this.btn_MostrarNaoVinculados.UseVisualStyleBackColor = true;
+            this.btn_MostrarNaoVinculados.Click += new System.EventHandler(this.btn_MostrarNaoVinculados_Click);
             // 
-            // turmaDataGridViewTextBoxColumn
+            // btn_MostrarVinculados
             // 
-            this.turmaDataGridViewTextBoxColumn.DataPropertyName = "Turma";
-            resources.ApplyResources(this.turmaDataGridViewTextBoxColumn, "turmaDataGridViewTextBoxColumn");
-            this.turmaDataGridViewTextBoxColumn.Name = "turmaDataGridViewTextBoxColumn";
-            this.turmaDataGridViewTextBoxColumn.ReadOnly = true;
+            resources.ApplyResources(this.btn_MostrarVinculados, "btn_MostrarVinculados");
+            this.btn_MostrarVinculados.Name = "btn_MostrarVinculados";
+            this.btn_MostrarVinculados.UseVisualStyleBackColor = true;
+            this.btn_MostrarVinculados.Click += new System.EventHandler(this.btn_MostrarVinculados_Click);
             // 
-            // vincularAlunoDataGridViewCheckBoxColumn
+            // btn_MostarTodos
             // 
-            this.vincularAlunoDataGridViewCheckBoxColumn.DataPropertyName = "Vincular aluno";
-            resources.ApplyResources(this.vincularAlunoDataGridViewCheckBoxColumn, "vincularAlunoDataGridViewCheckBoxColumn");
-            this.vincularAlunoDataGridViewCheckBoxColumn.Name = "vincularAlunoDataGridViewCheckBoxColumn";
-            // 
-            // planoContratadoDataGridViewTextBoxColumn
-            // 
-            this.planoContratadoDataGridViewTextBoxColumn.DataPropertyName = "Plano contratado";
-            resources.ApplyResources(this.planoContratadoDataGridViewTextBoxColumn, "planoContratadoDataGridViewTextBoxColumn");
-            this.planoContratadoDataGridViewTextBoxColumn.Name = "planoContratadoDataGridViewTextBoxColumn";
-            this.planoContratadoDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // cursoDataGridViewTextBoxColumn
-            // 
-            this.cursoDataGridViewTextBoxColumn.DataPropertyName = "Curso";
-            resources.ApplyResources(this.cursoDataGridViewTextBoxColumn, "cursoDataGridViewTextBoxColumn");
-            this.cursoDataGridViewTextBoxColumn.Name = "cursoDataGridViewTextBoxColumn";
-            this.cursoDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // nomeDoAlunoDataGridViewTextBoxColumn
-            // 
-            this.nomeDoAlunoDataGridViewTextBoxColumn.DataPropertyName = "Nome do aluno";
-            resources.ApplyResources(this.nomeDoAlunoDataGridViewTextBoxColumn, "nomeDoAlunoDataGridViewTextBoxColumn");
-            this.nomeDoAlunoDataGridViewTextBoxColumn.Name = "nomeDoAlunoDataGridViewTextBoxColumn";
-            this.nomeDoAlunoDataGridViewTextBoxColumn.ReadOnly = true;
+            resources.ApplyResources(this.btn_MostarTodos, "btn_MostarTodos");
+            this.btn_MostarTodos.Name = "btn_MostarTodos";
+            this.btn_MostarTodos.UseVisualStyleBackColor = true;
+            this.btn_MostarTodos.Click += new System.EventHandler(this.btn_MostarTodos_Click);
             // 
             // fotoDataGridViewImageColumn
             // 
@@ -237,15 +232,49 @@
             this.fotoDataGridViewImageColumn.Name = "fotoDataGridViewImageColumn";
             this.fotoDataGridViewImageColumn.ReadOnly = true;
             // 
-            // dB_EscolaDataSet
+            // nomeDoAlunoDataGridViewTextBoxColumn
             // 
-            this.dB_EscolaDataSet.DataSetName = "DB_EscolaDataSet";
-            this.dB_EscolaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.nomeDoAlunoDataGridViewTextBoxColumn.DataPropertyName = "Nome do aluno";
+            resources.ApplyResources(this.nomeDoAlunoDataGridViewTextBoxColumn, "nomeDoAlunoDataGridViewTextBoxColumn");
+            this.nomeDoAlunoDataGridViewTextBoxColumn.Name = "nomeDoAlunoDataGridViewTextBoxColumn";
+            this.nomeDoAlunoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // cursoDataGridViewTextBoxColumn
+            // 
+            this.cursoDataGridViewTextBoxColumn.DataPropertyName = "Curso";
+            resources.ApplyResources(this.cursoDataGridViewTextBoxColumn, "cursoDataGridViewTextBoxColumn");
+            this.cursoDataGridViewTextBoxColumn.Name = "cursoDataGridViewTextBoxColumn";
+            this.cursoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // planoContratadoDataGridViewTextBoxColumn
+            // 
+            this.planoContratadoDataGridViewTextBoxColumn.DataPropertyName = "Plano contratado";
+            resources.ApplyResources(this.planoContratadoDataGridViewTextBoxColumn, "planoContratadoDataGridViewTextBoxColumn");
+            this.planoContratadoDataGridViewTextBoxColumn.Name = "planoContratadoDataGridViewTextBoxColumn";
+            this.planoContratadoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // vincularAlunoDataGridViewCheckBoxColumn
+            // 
+            this.vincularAlunoDataGridViewCheckBoxColumn.DataPropertyName = "Vincular aluno";
+            resources.ApplyResources(this.vincularAlunoDataGridViewCheckBoxColumn, "vincularAlunoDataGridViewCheckBoxColumn");
+            this.vincularAlunoDataGridViewCheckBoxColumn.Name = "vincularAlunoDataGridViewCheckBoxColumn";
+            // 
+            // turmaDataGridViewTextBoxColumn
+            // 
+            this.turmaDataGridViewTextBoxColumn.DataPropertyName = "Turma";
+            resources.ApplyResources(this.turmaDataGridViewTextBoxColumn, "turmaDataGridViewTextBoxColumn");
+            this.turmaDataGridViewTextBoxColumn.Name = "turmaDataGridViewTextBoxColumn";
+            this.turmaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // inscricoesTurmasBindingSource
             // 
             this.inscricoesTurmasBindingSource.DataMember = "InscricoesTurmas";
             this.inscricoesTurmasBindingSource.DataSource = this.dB_EscolaDataSet;
+            // 
+            // dB_EscolaDataSet
+            // 
+            this.dB_EscolaDataSet.DataSetName = "DB_EscolaDataSet";
+            this.dB_EscolaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // inscricoesTurmasTableAdapter
             // 
@@ -265,8 +294,8 @@
             this.group_InscricoesTurmas.ResumeLayout(false);
             this.group_InscricoesTurmas.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Alunos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dB_EscolaDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.inscricoesTurmasBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dB_EscolaDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -299,5 +328,8 @@
         private DB_EscolaDataSet dB_EscolaDataSet;
         private System.Windows.Forms.BindingSource inscricoesTurmasBindingSource;
         private DB_EscolaDataSetTableAdapters.InscricoesTurmasTableAdapter inscricoesTurmasTableAdapter;
+        private System.Windows.Forms.Button btn_MostrarNaoVinculados;
+        private System.Windows.Forms.Button btn_MostrarVinculados;
+        private System.Windows.Forms.Button btn_MostarTodos;
     }
 }

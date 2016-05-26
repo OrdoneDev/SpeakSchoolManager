@@ -522,7 +522,7 @@ namespace CadastroFuncionario
 
             return true;
         }
-        // int[] Id_InscricaoFalse
+        
         public static void CadastrarInscricoesTurma(int[] Id_Inscricao, int Id_Turma)
         {
             SqlConnection conexao = new SqlConnection(strConexao);
@@ -610,6 +610,38 @@ namespace CadastroFuncionario
             {
                 conexao.Close();
             }
+            return;
+        }
+
+        public static void CadastrarListaPresenca(int Id_Inscricao_Turma, DateTime Data)
+        {
+            SqlConnection conexao = new SqlConnection(strConexao);
+            SqlCommand cmd;
+
+            try
+            {
+                conexao.Open();
+                cmd = new SqlCommand();
+                cmd.Connection = conexao;
+
+                cmd.CommandText = "Insert into SysProtected.Lista_Presenca (Id_Inscricao_Turma, Chamada, Data) values (@Id_Inscricao_Turma, null, @Data)";
+
+                cmd.Parameters.Add(new SqlParameter("@Id_Inscricao_Turma", Id_Inscricao_Turma));
+                SqlParameter dataParameter = new SqlParameter("@Data", SqlDbType.Date);
+                dataParameter.Value = Data.Date;
+                cmd.Parameters.Add(dataParameter);
+
+                cmd.CommandType = CommandType.Text;
+                cmd.ExecuteNonQuery();
+                conexao.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                conexao.Close();
+                return;
+            }
+
             return;
         }
 
@@ -768,6 +800,36 @@ namespace CadastroFuncionario
             return;
         }
 
+        public static void AtualizarListaPresenca(int Id_Presenca, byte Chamada)
+        {
+            SqlConnection conexao = new SqlConnection(strConexao);
+            SqlCommand cmd;
+
+            try
+            {
+                conexao.Open();
+                cmd = new SqlCommand();
+                cmd.Connection = conexao;
+
+                cmd.CommandText = "Update SysProtected.Lista_Presenca set Chamada = @Chamada where Id_Presenca = @Id_Presenca";
+
+                cmd.Parameters.Add(new SqlParameter("@Id_Presenca", Id_Presenca));
+                cmd.Parameters.Add(new SqlParameter("@Chamada", Chamada));
+
+                cmd.CommandType = CommandType.Text;
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conexao.Close();
+            }
+            return;
+        }
+        
         public static bool VerificaFuncionario(string RG, string CPF)
         {
             SqlConnection conexao = new SqlConnection(strConexao);
@@ -1008,6 +1070,45 @@ namespace CadastroFuncionario
             return true;
         }
 
+        public static int VerificaListaPresenca(int Id_Turma, DateTime Data)
+        {
+            SqlConnection conexao = new SqlConnection(strConexao);
+            SqlCommand cmd;
+            SqlDataReader dr;
+            int Id_ListaPresenca = 0;
+
+            try
+            {
+                conexao.Open();
+                cmd = new SqlCommand();
+                cmd.Connection = conexao;
+
+                cmd.CommandText = "select Id_Presenca from VerificarListaPresenca where Data = @Data and Id_Turma = @Id_Turma";
+
+                cmd.Parameters.Add(new SqlParameter("@Id_Turma", Id_Turma));
+                SqlParameter dataParameter = new SqlParameter("@Data", SqlDbType.Date);
+                dataParameter.Value = Data.Date;
+                cmd.Parameters.Add(dataParameter);
+
+                dr = cmd.ExecuteReader();
+
+                while (dr.Read())
+                {
+                    Id_ListaPresenca = (dr.GetInt32(0));
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conexao.Close();
+            }
+
+            return Id_ListaPresenca;
+        }
+        
         public static List<string> getFinanceiroEmpresa()
         {
             SqlConnection conexao = new SqlConnection(strConexao);
@@ -1453,6 +1554,39 @@ namespace CadastroFuncionario
             return dt;
         }
 
+        public static DataTable getListaPresenca(int Id_Turma)
+        {
+            DataTable dt = null;
+            SqlConnection conexao = new SqlConnection(strConexao);
+            SqlCommand cmd;
+
+            try
+            {
+                conexao.Open();
+                cmd = new SqlCommand();
+                cmd.Connection = conexao;
+
+                cmd.CommandText = "Select * from ListaPresenca where [Código da turma] = @Id_Turma";
+
+                cmd.Parameters.Add(new SqlParameter("@Id_Turma", Id_Turma));
+
+                cmd.CommandType = CommandType.Text;
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                dt = new DataTable();
+                da.Fill(dt);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return null;
+            }
+            finally
+            {
+                conexao.Close();
+            }
+            return dt;
+        }
+
         public static List<string> getTurma(int Id_Turma)
         {
             SqlConnection conexao = new SqlConnection(strConexao);
@@ -1478,6 +1612,41 @@ namespace CadastroFuncionario
                     lista.Add(dr.GetValue(3).ToString());
                     lista.Add(dr.GetTimeSpan(4).ToString());
                     lista.Add(dr.GetTimeSpan(5).ToString());
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conexao.Close();
+            }
+
+            return lista;
+        }
+
+        public static List<string> getAlunosTurma(int Id_Turma)
+        {
+            SqlConnection conexao = new SqlConnection(strConexao);
+            SqlCommand cmd;
+            SqlDataReader dr;
+            List<string> lista = new List<string>();
+
+            try
+            {
+                conexao.Open();
+                cmd = new SqlCommand();
+                cmd.Connection = conexao;
+                cmd.CommandType = CommandType.Text;
+
+                cmd.CommandText = "Select Id_Inscricao_Turma, Id_Turma from SysProtected.Inscricoes_Turmas where Id_Turma = @Id_Turma";
+                cmd.Parameters.Add(new SqlParameter("@Id_Turma", Id_Turma));
+
+                dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    lista.Add(dr.GetInt32(0).ToString());
                 }
             }
             catch (Exception ex)

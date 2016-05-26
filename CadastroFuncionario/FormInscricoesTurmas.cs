@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,9 +13,12 @@ namespace CadastroFuncionario
 {
     public partial class FormInscricoesTurmas : Form
     {
+        FormFotoInscricao form;
+
         public FormInscricoesTurmas()
         {
             InitializeComponent();
+            this.form = new FormFotoInscricao();
         }
 
         private bool VerificaCamposInscricoesTurmas()
@@ -56,6 +60,37 @@ namespace CadastroFuncionario
                 lbl_HoraEntrada.Text = "";
                 lbl_HoraSaida.Text = "";
             }
+        }
+
+        private void dgv_Alunos_CellMouseEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == 1 && e.RowIndex >= 0)
+            {
+
+                this.form.set_foto((Bitmap)dgv_Alunos.Rows[e.RowIndex].Cells[e.ColumnIndex].FormattedValue);
+                form.Location = new Point(Form.MousePosition.X + 10, (Form.MousePosition.Y));
+                this.form.Show();
+            }
+        }
+
+        private void dgv_Alunos_CellMouseLeave(object sender, DataGridViewCellEventArgs e)
+        {
+            this.form.Hide();
+        }
+
+        private void btn_MostarTodos_Click(object sender, EventArgs e)
+        {
+            this.inscricoesTurmasTableAdapter.Fill(this.dB_EscolaDataSet.InscricoesTurmas);
+        }
+
+        private void btn_MostrarVinculados_Click(object sender, EventArgs e)
+        {
+            this.inscricoesTurmasTableAdapter.FillAllVinculos(this.dB_EscolaDataSet.InscricoesTurmas);
+        }
+
+        private void btn_MostrarNaoVinculados_Click(object sender, EventArgs e)
+        {
+            this.inscricoesTurmasTableAdapter.FillAllNaoVinculados(this.dB_EscolaDataSet.InscricoesTurmas);
         }
 
         private void btn_SalvarVinculo_Click(object sender, EventArgs e)

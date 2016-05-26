@@ -85,7 +85,7 @@ namespace CadastroFuncionario
             {
                 if (control is Control)
                 {
-                    if (control.Tag != "0" && control.Text.Length == 0)
+                    if (control.Tag != "0" && control.Text.Trim().Length == 0)
                     {
                         control.BackColor = System.Drawing.Color.LightGray;
                         x = false;

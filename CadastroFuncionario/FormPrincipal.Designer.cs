@@ -53,6 +53,7 @@
             this.alterarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inscriçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.boletimDoAlunoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listaDeChamadaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -171,7 +172,8 @@
             this.novaEscalaDoFuncionárioToolStripMenuItem,
             this.financeiroEmpresaToolStripMenuItem,
             this.novaTurmaToolStripMenuItem,
-            this.vincularAuloATurmaToolStripMenuItem});
+            this.vincularAuloATurmaToolStripMenuItem,
+            this.listaDeChamadaToolStripMenuItem});
             this.cadastrarToolStripMenuItem2.Name = "cadastrarToolStripMenuItem2";
             this.cadastrarToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
             this.cadastrarToolStripMenuItem2.Text = "Cadastrar";
@@ -257,6 +259,13 @@
             this.boletimDoAlunoToolStripMenuItem.Text = "Boletim do aluno...";
             this.boletimDoAlunoToolStripMenuItem.Click += new System.EventHandler(this.boletimDoAlunoToolStripMenuItem_Click);
             // 
+            // listaDeChamadaToolStripMenuItem
+            // 
+            this.listaDeChamadaToolStripMenuItem.Name = "listaDeChamadaToolStripMenuItem";
+            this.listaDeChamadaToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
+            this.listaDeChamadaToolStripMenuItem.Text = "Lista de chamada...";
+            this.listaDeChamadaToolStripMenuItem.Click += new System.EventHandler(this.listaDeChamadaToolStripMenuItem_Click);
+            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -307,6 +316,7 @@
         private System.Windows.Forms.ToolStripMenuItem novaEscalaDoFuncionárioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem novaTurmaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem vincularAuloATurmaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listaDeChamadaToolStripMenuItem;
 
     }
 }

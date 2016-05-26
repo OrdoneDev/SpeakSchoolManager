@@ -20,17 +20,17 @@ namespace CadastroFuncionario {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("DB_EscolaDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("DB_EscolaDataSet1")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class DB_EscolaDataSet : global::System.Data.DataSet {
+    public partial class DB_EscolaDataSet1 : global::System.Data.DataSet {
         
-        private InscricoesTurmasDataTable tableInscricoesTurmas;
+        private ListaPresencaDataTable tableListaPresenca;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public DB_EscolaDataSet() {
+        public DB_EscolaDataSet1() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace CadastroFuncionario {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        protected DB_EscolaDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected DB_EscolaDataSet1(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace CadastroFuncionario {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["InscricoesTurmas"] != null)) {
-                    base.Tables.Add(new InscricoesTurmasDataTable(ds.Tables["InscricoesTurmas"]));
+                if ((ds.Tables["ListaPresenca"] != null)) {
+                    base.Tables.Add(new ListaPresencaDataTable(ds.Tables["ListaPresenca"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace CadastroFuncionario {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public InscricoesTurmasDataTable InscricoesTurmas {
+        public ListaPresencaDataTable ListaPresenca {
             get {
-                return this.tableInscricoesTurmas;
+                return this.tableListaPresenca;
             }
         }
         
@@ -127,7 +127,7 @@ namespace CadastroFuncionario {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            DB_EscolaDataSet cln = ((DB_EscolaDataSet)(base.Clone()));
+            DB_EscolaDataSet1 cln = ((DB_EscolaDataSet1)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace CadastroFuncionario {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["InscricoesTurmas"] != null)) {
-                    base.Tables.Add(new InscricoesTurmasDataTable(ds.Tables["InscricoesTurmas"]));
+                if ((ds.Tables["ListaPresenca"] != null)) {
+                    base.Tables.Add(new ListaPresencaDataTable(ds.Tables["ListaPresenca"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace CadastroFuncionario {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableInscricoesTurmas = ((InscricoesTurmasDataTable)(base.Tables["InscricoesTurmas"]));
+            this.tableListaPresenca = ((ListaPresencaDataTable)(base.Tables["ListaPresenca"]));
             if ((initTable == true)) {
-                if ((this.tableInscricoesTurmas != null)) {
-                    this.tableInscricoesTurmas.InitVars();
+                if ((this.tableListaPresenca != null)) {
+                    this.tableListaPresenca.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace CadastroFuncionario {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "DB_EscolaDataSet";
+            this.DataSetName = "DB_EscolaDataSet1";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/DB_EscolaDataSet.xsd";
+            this.Namespace = "http://tempuri.org/DB_EscolaDataSet1.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableInscricoesTurmas = new InscricoesTurmasDataTable();
-            base.Tables.Add(this.tableInscricoesTurmas);
+            this.tableListaPresenca = new ListaPresencaDataTable();
+            base.Tables.Add(this.tableListaPresenca);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private bool ShouldSerializeInscricoesTurmas() {
+        private bool ShouldSerializeListaPresenca() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace CadastroFuncionario {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            DB_EscolaDataSet ds = new DB_EscolaDataSet();
+            DB_EscolaDataSet1 ds = new DB_EscolaDataSet1();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,33 +270,37 @@ namespace CadastroFuncionario {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public delegate void InscricoesTurmasRowChangeEventHandler(object sender, InscricoesTurmasRowChangeEvent e);
+        public delegate void ListaPresencaRowChangeEventHandler(object sender, ListaPresencaRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class InscricoesTurmasDataTable : global::System.Data.TypedTableBase<InscricoesTurmasRow> {
+        public partial class ListaPresencaDataTable : global::System.Data.TypedTableBase<ListaPresencaRow> {
             
-            private global::System.Data.DataColumn columnCódigo_da_inscrição;
+            private global::System.Data.DataColumn columnId_Presenca;
             
-            private global::System.Data.DataColumn columnFoto;
+            private global::System.Data.DataColumn columnNº_chamada;
             
             private global::System.Data.DataColumn columnNome_do_aluno;
             
+            private global::System.Data.DataColumn columnPresença;
+            
+            private global::System.Data.DataColumn columnDia_da_aula;
+            
+            private global::System.Data.DataColumn columnCódigo_da_turma;
+            
+            private global::System.Data.DataColumn columnNúmero_da_sala;
+            
+            private global::System.Data.DataColumn columnNome_do_professor;
+            
             private global::System.Data.DataColumn columnCurso;
-            
-            private global::System.Data.DataColumn columnPlano_contratado;
-            
-            private global::System.Data.DataColumn columnVincular_aluno;
-            
-            private global::System.Data.DataColumn columnTurma;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public InscricoesTurmasDataTable() {
-                this.TableName = "InscricoesTurmas";
+            public ListaPresencaDataTable() {
+                this.TableName = "ListaPresenca";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -304,7 +308,7 @@ namespace CadastroFuncionario {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal InscricoesTurmasDataTable(global::System.Data.DataTable table) {
+            internal ListaPresencaDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -321,24 +325,24 @@ namespace CadastroFuncionario {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected InscricoesTurmasDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected ListaPresencaDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn Código_da_inscriçãoColumn {
+            public global::System.Data.DataColumn Id_PresencaColumn {
                 get {
-                    return this.columnCódigo_da_inscrição;
+                    return this.columnId_Presenca;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn FotoColumn {
+            public global::System.Data.DataColumn Nº_chamadaColumn {
                 get {
-                    return this.columnFoto;
+                    return this.columnNº_chamada;
                 }
             }
             
@@ -352,33 +356,49 @@ namespace CadastroFuncionario {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PresençaColumn {
+                get {
+                    return this.columnPresença;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Dia_da_aulaColumn {
+                get {
+                    return this.columnDia_da_aula;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Código_da_turmaColumn {
+                get {
+                    return this.columnCódigo_da_turma;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Número_da_salaColumn {
+                get {
+                    return this.columnNúmero_da_sala;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Nome_do_professorColumn {
+                get {
+                    return this.columnNome_do_professor;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn CursoColumn {
                 get {
                     return this.columnCurso;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn Plano_contratadoColumn {
-                get {
-                    return this.columnPlano_contratado;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn Vincular_alunoColumn {
-                get {
-                    return this.columnVincular_aluno;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn TurmaColumn {
-                get {
-                    return this.columnTurma;
                 }
             }
             
@@ -393,58 +413,53 @@ namespace CadastroFuncionario {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public InscricoesTurmasRow this[int index] {
+            public ListaPresencaRow this[int index] {
                 get {
-                    return ((InscricoesTurmasRow)(this.Rows[index]));
+                    return ((ListaPresencaRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event InscricoesTurmasRowChangeEventHandler InscricoesTurmasRowChanging;
+            public event ListaPresencaRowChangeEventHandler ListaPresencaRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event InscricoesTurmasRowChangeEventHandler InscricoesTurmasRowChanged;
+            public event ListaPresencaRowChangeEventHandler ListaPresencaRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event InscricoesTurmasRowChangeEventHandler InscricoesTurmasRowDeleting;
+            public event ListaPresencaRowChangeEventHandler ListaPresencaRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event InscricoesTurmasRowChangeEventHandler InscricoesTurmasRowDeleted;
+            public event ListaPresencaRowChangeEventHandler ListaPresencaRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void AddInscricoesTurmasRow(InscricoesTurmasRow row) {
+            public void AddListaPresencaRow(ListaPresencaRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public InscricoesTurmasRow AddInscricoesTurmasRow(int Código_da_inscrição, byte[] Foto, string Nome_do_aluno, string Curso, string Plano_contratado, bool Vincular_aluno, int Turma) {
-                InscricoesTurmasRow rowInscricoesTurmasRow = ((InscricoesTurmasRow)(this.NewRow()));
+            public ListaPresencaRow AddListaPresencaRow(int Id_Presenca, long Nº_chamada, string Nome_do_aluno, bool Presença, System.DateTime Dia_da_aula, int Código_da_turma, byte Número_da_sala, string Nome_do_professor, string Curso) {
+                ListaPresencaRow rowListaPresencaRow = ((ListaPresencaRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        Código_da_inscrição,
-                        Foto,
+                        Id_Presenca,
+                        Nº_chamada,
                         Nome_do_aluno,
-                        Curso,
-                        Plano_contratado,
-                        Vincular_aluno,
-                        Turma};
-                rowInscricoesTurmasRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowInscricoesTurmasRow);
-                return rowInscricoesTurmasRow;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public InscricoesTurmasRow FindByCódigo_da_inscrição(int Código_da_inscrição) {
-                return ((InscricoesTurmasRow)(this.Rows.Find(new object[] {
-                            Código_da_inscrição})));
+                        Presença,
+                        Dia_da_aula,
+                        Código_da_turma,
+                        Número_da_sala,
+                        Nome_do_professor,
+                        Curso};
+                rowListaPresencaRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowListaPresencaRow);
+                return rowListaPresencaRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                InscricoesTurmasDataTable cln = ((InscricoesTurmasDataTable)(base.Clone()));
+                ListaPresencaDataTable cln = ((ListaPresencaDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -452,75 +467,78 @@ namespace CadastroFuncionario {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new InscricoesTurmasDataTable();
+                return new ListaPresencaDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
-                this.columnCódigo_da_inscrição = base.Columns["Código da inscrição"];
-                this.columnFoto = base.Columns["Foto"];
+                this.columnId_Presenca = base.Columns["Id_Presenca"];
+                this.columnNº_chamada = base.Columns["Nº chamada"];
                 this.columnNome_do_aluno = base.Columns["Nome do aluno"];
+                this.columnPresença = base.Columns["Presença"];
+                this.columnDia_da_aula = base.Columns["Dia da aula"];
+                this.columnCódigo_da_turma = base.Columns["Código da turma"];
+                this.columnNúmero_da_sala = base.Columns["Número da sala"];
+                this.columnNome_do_professor = base.Columns["Nome do professor"];
                 this.columnCurso = base.Columns["Curso"];
-                this.columnPlano_contratado = base.Columns["Plano contratado"];
-                this.columnVincular_aluno = base.Columns["Vincular aluno"];
-                this.columnTurma = base.Columns["Turma"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private void InitClass() {
-                this.columnCódigo_da_inscrição = new global::System.Data.DataColumn("Código da inscrição", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCódigo_da_inscrição);
-                this.columnFoto = new global::System.Data.DataColumn("Foto", typeof(byte[]), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnFoto);
+                this.columnId_Presenca = new global::System.Data.DataColumn("Id_Presenca", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnId_Presenca);
+                this.columnNº_chamada = new global::System.Data.DataColumn("Nº chamada", typeof(long), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNº_chamada);
                 this.columnNome_do_aluno = new global::System.Data.DataColumn("Nome do aluno", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnNome_do_aluno);
+                this.columnPresença = new global::System.Data.DataColumn("Presença", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPresença);
+                this.columnDia_da_aula = new global::System.Data.DataColumn("Dia da aula", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDia_da_aula);
+                this.columnCódigo_da_turma = new global::System.Data.DataColumn("Código da turma", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCódigo_da_turma);
+                this.columnNúmero_da_sala = new global::System.Data.DataColumn("Número da sala", typeof(byte), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNúmero_da_sala);
+                this.columnNome_do_professor = new global::System.Data.DataColumn("Nome do professor", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNome_do_professor);
                 this.columnCurso = new global::System.Data.DataColumn("Curso", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCurso);
-                this.columnPlano_contratado = new global::System.Data.DataColumn("Plano contratado", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnPlano_contratado);
-                this.columnVincular_aluno = new global::System.Data.DataColumn("Vincular aluno", typeof(bool), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnVincular_aluno);
-                this.columnTurma = new global::System.Data.DataColumn("Turma", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTurma);
-                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnCódigo_da_inscrição}, true));
-                this.columnCódigo_da_inscrição.AllowDBNull = false;
-                this.columnCódigo_da_inscrição.Unique = true;
                 this.columnNome_do_aluno.AllowDBNull = false;
                 this.columnNome_do_aluno.MaxLength = 40;
+                this.columnCódigo_da_turma.AllowDBNull = false;
+                this.columnNúmero_da_sala.AllowDBNull = false;
+                this.columnNome_do_professor.AllowDBNull = false;
+                this.columnNome_do_professor.MaxLength = 40;
                 this.columnCurso.AllowDBNull = false;
                 this.columnCurso.MaxLength = 40;
-                this.columnPlano_contratado.AllowDBNull = false;
-                this.columnPlano_contratado.MaxLength = 40;
-                this.columnVincular_aluno.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public InscricoesTurmasRow NewInscricoesTurmasRow() {
-                return ((InscricoesTurmasRow)(this.NewRow()));
+            public ListaPresencaRow NewListaPresencaRow() {
+                return ((ListaPresencaRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new InscricoesTurmasRow(builder);
+                return new ListaPresencaRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(InscricoesTurmasRow);
+                return typeof(ListaPresencaRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.InscricoesTurmasRowChanged != null)) {
-                    this.InscricoesTurmasRowChanged(this, new InscricoesTurmasRowChangeEvent(((InscricoesTurmasRow)(e.Row)), e.Action));
+                if ((this.ListaPresencaRowChanged != null)) {
+                    this.ListaPresencaRowChanged(this, new ListaPresencaRowChangeEvent(((ListaPresencaRow)(e.Row)), e.Action));
                 }
             }
             
@@ -528,8 +546,8 @@ namespace CadastroFuncionario {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.InscricoesTurmasRowChanging != null)) {
-                    this.InscricoesTurmasRowChanging(this, new InscricoesTurmasRowChangeEvent(((InscricoesTurmasRow)(e.Row)), e.Action));
+                if ((this.ListaPresencaRowChanging != null)) {
+                    this.ListaPresencaRowChanging(this, new ListaPresencaRowChangeEvent(((ListaPresencaRow)(e.Row)), e.Action));
                 }
             }
             
@@ -537,8 +555,8 @@ namespace CadastroFuncionario {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.InscricoesTurmasRowDeleted != null)) {
-                    this.InscricoesTurmasRowDeleted(this, new InscricoesTurmasRowChangeEvent(((InscricoesTurmasRow)(e.Row)), e.Action));
+                if ((this.ListaPresencaRowDeleted != null)) {
+                    this.ListaPresencaRowDeleted(this, new ListaPresencaRowChangeEvent(((ListaPresencaRow)(e.Row)), e.Action));
                 }
             }
             
@@ -546,14 +564,14 @@ namespace CadastroFuncionario {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.InscricoesTurmasRowDeleting != null)) {
-                    this.InscricoesTurmasRowDeleting(this, new InscricoesTurmasRowChangeEvent(((InscricoesTurmasRow)(e.Row)), e.Action));
+                if ((this.ListaPresencaRowDeleting != null)) {
+                    this.ListaPresencaRowDeleting(this, new ListaPresencaRowChangeEvent(((ListaPresencaRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void RemoveInscricoesTurmasRow(InscricoesTurmasRow row) {
+            public void RemoveListaPresencaRow(ListaPresencaRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -562,7 +580,7 @@ namespace CadastroFuncionario {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                DB_EscolaDataSet ds = new DB_EscolaDataSet();
+                DB_EscolaDataSet1 ds = new DB_EscolaDataSet1();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -580,7 +598,7 @@ namespace CadastroFuncionario {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "InscricoesTurmasDataTable";
+                attribute2.FixedValue = "ListaPresencaDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -624,41 +642,46 @@ namespace CadastroFuncionario {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class InscricoesTurmasRow : global::System.Data.DataRow {
+        public partial class ListaPresencaRow : global::System.Data.DataRow {
             
-            private InscricoesTurmasDataTable tableInscricoesTurmas;
+            private ListaPresencaDataTable tableListaPresenca;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal InscricoesTurmasRow(global::System.Data.DataRowBuilder rb) : 
+            internal ListaPresencaRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableInscricoesTurmas = ((InscricoesTurmasDataTable)(this.Table));
+                this.tableListaPresenca = ((ListaPresencaDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int Código_da_inscrição {
-                get {
-                    return ((int)(this[this.tableInscricoesTurmas.Código_da_inscriçãoColumn]));
-                }
-                set {
-                    this[this.tableInscricoesTurmas.Código_da_inscriçãoColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public byte[] Foto {
+            public int Id_Presenca {
                 get {
                     try {
-                        return ((byte[])(this[this.tableInscricoesTurmas.FotoColumn]));
+                        return ((int)(this[this.tableListaPresenca.Id_PresencaColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Foto\' in table \'InscricoesTurmas\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Id_Presenca\' in table \'ListaPresenca\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableInscricoesTurmas.FotoColumn] = value;
+                    this[this.tableListaPresenca.Id_PresencaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public long Nº_chamada {
+                get {
+                    try {
+                        return ((long)(this[this.tableListaPresenca.Nº_chamadaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Nº chamada\' in table \'ListaPresenca\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableListaPresenca.Nº_chamadaColumn] = value;
                 }
             }
             
@@ -666,10 +689,75 @@ namespace CadastroFuncionario {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string Nome_do_aluno {
                 get {
-                    return ((string)(this[this.tableInscricoesTurmas.Nome_do_alunoColumn]));
+                    return ((string)(this[this.tableListaPresenca.Nome_do_alunoColumn]));
                 }
                 set {
-                    this[this.tableInscricoesTurmas.Nome_do_alunoColumn] = value;
+                    this[this.tableListaPresenca.Nome_do_alunoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool Presença {
+                get {
+                    try {
+                        return ((bool)(this[this.tableListaPresenca.PresençaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Presença\' in table \'ListaPresenca\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableListaPresenca.PresençaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public System.DateTime Dia_da_aula {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tableListaPresenca.Dia_da_aulaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Dia da aula\' in table \'ListaPresenca\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableListaPresenca.Dia_da_aulaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int Código_da_turma {
+                get {
+                    return ((int)(this[this.tableListaPresenca.Código_da_turmaColumn]));
+                }
+                set {
+                    this[this.tableListaPresenca.Código_da_turmaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public byte Número_da_sala {
+                get {
+                    return ((byte)(this[this.tableListaPresenca.Número_da_salaColumn]));
+                }
+                set {
+                    this[this.tableListaPresenca.Número_da_salaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Nome_do_professor {
+                get {
+                    return ((string)(this[this.tableListaPresenca.Nome_do_professorColumn]));
+                }
+                set {
+                    this[this.tableListaPresenca.Nome_do_professorColumn] = value;
                 }
             }
             
@@ -677,73 +765,59 @@ namespace CadastroFuncionario {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string Curso {
                 get {
-                    return ((string)(this[this.tableInscricoesTurmas.CursoColumn]));
+                    return ((string)(this[this.tableListaPresenca.CursoColumn]));
                 }
                 set {
-                    this[this.tableInscricoesTurmas.CursoColumn] = value;
+                    this[this.tableListaPresenca.CursoColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string Plano_contratado {
-                get {
-                    return ((string)(this[this.tableInscricoesTurmas.Plano_contratadoColumn]));
-                }
-                set {
-                    this[this.tableInscricoesTurmas.Plano_contratadoColumn] = value;
-                }
+            public bool IsId_PresencaNull() {
+                return this.IsNull(this.tableListaPresenca.Id_PresencaColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool Vincular_aluno {
-                get {
-                    return ((bool)(this[this.tableInscricoesTurmas.Vincular_alunoColumn]));
-                }
-                set {
-                    this[this.tableInscricoesTurmas.Vincular_alunoColumn] = value;
-                }
+            public void SetId_PresencaNull() {
+                this[this.tableListaPresenca.Id_PresencaColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int Turma {
-                get {
-                    try {
-                        return ((int)(this[this.tableInscricoesTurmas.TurmaColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Turma\' in table \'InscricoesTurmas\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableInscricoesTurmas.TurmaColumn] = value;
-                }
+            public bool IsNº_chamadaNull() {
+                return this.IsNull(this.tableListaPresenca.Nº_chamadaColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsFotoNull() {
-                return this.IsNull(this.tableInscricoesTurmas.FotoColumn);
+            public void SetNº_chamadaNull() {
+                this[this.tableListaPresenca.Nº_chamadaColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetFotoNull() {
-                this[this.tableInscricoesTurmas.FotoColumn] = global::System.Convert.DBNull;
+            public bool IsPresençaNull() {
+                return this.IsNull(this.tableListaPresenca.PresençaColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsTurmaNull() {
-                return this.IsNull(this.tableInscricoesTurmas.TurmaColumn);
+            public void SetPresençaNull() {
+                this[this.tableListaPresenca.PresençaColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetTurmaNull() {
-                this[this.tableInscricoesTurmas.TurmaColumn] = global::System.Convert.DBNull;
+            public bool IsDia_da_aulaNull() {
+                return this.IsNull(this.tableListaPresenca.Dia_da_aulaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetDia_da_aulaNull() {
+                this[this.tableListaPresenca.Dia_da_aulaColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -751,22 +825,22 @@ namespace CadastroFuncionario {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public class InscricoesTurmasRowChangeEvent : global::System.EventArgs {
+        public class ListaPresencaRowChangeEvent : global::System.EventArgs {
             
-            private InscricoesTurmasRow eventRow;
+            private ListaPresencaRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public InscricoesTurmasRowChangeEvent(InscricoesTurmasRow row, global::System.Data.DataRowAction action) {
+            public ListaPresencaRowChangeEvent(ListaPresencaRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public InscricoesTurmasRow Row {
+            public ListaPresencaRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -782,7 +856,7 @@ namespace CadastroFuncionario {
         }
     }
 }
-namespace CadastroFuncionario.DB_EscolaDataSetTableAdapters {
+namespace CadastroFuncionario.DB_EscolaDataSet1TableAdapters {
     
     
     /// <summary>
@@ -794,7 +868,7 @@ namespace CadastroFuncionario.DB_EscolaDataSetTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class InscricoesTurmasTableAdapter : global::System.ComponentModel.Component {
+    public partial class ListaPresencaTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -808,7 +882,7 @@ namespace CadastroFuncionario.DB_EscolaDataSetTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public InscricoesTurmasTableAdapter() {
+        public ListaPresencaTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -905,14 +979,16 @@ namespace CadastroFuncionario.DB_EscolaDataSetTableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "InscricoesTurmas";
-            tableMapping.ColumnMappings.Add("Código da inscrição", "Código da inscrição");
-            tableMapping.ColumnMappings.Add("Foto", "Foto");
+            tableMapping.DataSetTable = "ListaPresenca";
+            tableMapping.ColumnMappings.Add("Id_Presenca", "Id_Presenca");
+            tableMapping.ColumnMappings.Add("Nº chamada", "Nº chamada");
             tableMapping.ColumnMappings.Add("Nome do aluno", "Nome do aluno");
+            tableMapping.ColumnMappings.Add("Presença", "Presença");
+            tableMapping.ColumnMappings.Add("Dia da aula", "Dia da aula");
+            tableMapping.ColumnMappings.Add("Código da turma", "Código da turma");
+            tableMapping.ColumnMappings.Add("Número da sala", "Número da sala");
+            tableMapping.ColumnMappings.Add("Nome do professor", "Nome do professor");
             tableMapping.ColumnMappings.Add("Curso", "Curso");
-            tableMapping.ColumnMappings.Add("Plano contratado", "Plano contratado");
-            tableMapping.ColumnMappings.Add("Vincular aluno", "Vincular aluno");
-            tableMapping.ColumnMappings.Add("Turma", "Turma");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -926,29 +1002,20 @@ namespace CadastroFuncionario.DB_EscolaDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[3];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT [Código da inscrição], Foto, [Nome do aluno], Curso, [Plano contratado], [" +
-                "Vincular aluno], Turma FROM dbo.InscricoesTurmas";
+            this._commandCollection[0].CommandText = "SELECT Id_Presenca, [Nº chamada], [Nome do aluno], Presença, [Dia da aula], [Códi" +
+                "go da turma], [Número da sala], [Nome do professor], Curso FROM dbo.ListaPresenc" +
+                "a";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
-            this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = "SELECT [Código da inscrição], Foto, [Nome do aluno], Curso, [Plano contratado], [" +
-                "Vincular aluno], Turma FROM InscricoesTurmas\r\nwhere Turma is null";
-            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
-            this._commandCollection[2].Connection = this.Connection;
-            this._commandCollection[2].CommandText = "SELECT [Código da inscrição], Foto, [Nome do aluno], Curso, [Plano contratado], [" +
-                "Vincular aluno], Turma FROM InscricoesTurmas\r\nwhere Turma is not null";
-            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DB_EscolaDataSet.InscricoesTurmasDataTable dataTable) {
+        public virtual int Fill(DB_EscolaDataSet1.ListaPresencaDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -961,57 +1028,9 @@ namespace CadastroFuncionario.DB_EscolaDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DB_EscolaDataSet.InscricoesTurmasDataTable GetData() {
+        public virtual DB_EscolaDataSet1.ListaPresencaDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            DB_EscolaDataSet.InscricoesTurmasDataTable dataTable = new DB_EscolaDataSet.InscricoesTurmasDataTable();
-            this.Adapter.Fill(dataTable);
-            return dataTable;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int FillAllNaoVinculados(DB_EscolaDataSet.InscricoesTurmasDataTable dataTable) {
-            this.Adapter.SelectCommand = this.CommandCollection[1];
-            if ((this.ClearBeforeFill == true)) {
-                dataTable.Clear();
-            }
-            int returnValue = this.Adapter.Fill(dataTable);
-            return returnValue;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual DB_EscolaDataSet.InscricoesTurmasDataTable GetDataAllNaoVinculados() {
-            this.Adapter.SelectCommand = this.CommandCollection[1];
-            DB_EscolaDataSet.InscricoesTurmasDataTable dataTable = new DB_EscolaDataSet.InscricoesTurmasDataTable();
-            this.Adapter.Fill(dataTable);
-            return dataTable;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int FillAllVinculos(DB_EscolaDataSet.InscricoesTurmasDataTable dataTable) {
-            this.Adapter.SelectCommand = this.CommandCollection[2];
-            if ((this.ClearBeforeFill == true)) {
-                dataTable.Clear();
-            }
-            int returnValue = this.Adapter.Fill(dataTable);
-            return returnValue;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual DB_EscolaDataSet.InscricoesTurmasDataTable GetDataAllVinculos() {
-            this.Adapter.SelectCommand = this.CommandCollection[2];
-            DB_EscolaDataSet.InscricoesTurmasDataTable dataTable = new DB_EscolaDataSet.InscricoesTurmasDataTable();
+            DB_EscolaDataSet1.ListaPresencaDataTable dataTable = new DB_EscolaDataSet1.ListaPresencaDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1085,7 +1104,7 @@ namespace CadastroFuncionario.DB_EscolaDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateUpdatedRows(DB_EscolaDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(DB_EscolaDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -1095,7 +1114,7 @@ namespace CadastroFuncionario.DB_EscolaDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateInsertedRows(DB_EscolaDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(DB_EscolaDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -1105,7 +1124,7 @@ namespace CadastroFuncionario.DB_EscolaDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateDeletedRows(DB_EscolaDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(DB_EscolaDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             return result;
         }
@@ -1139,7 +1158,7 @@ namespace CadastroFuncionario.DB_EscolaDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public virtual int UpdateAll(DB_EscolaDataSet dataSet) {
+        public virtual int UpdateAll(DB_EscolaDataSet1 dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
