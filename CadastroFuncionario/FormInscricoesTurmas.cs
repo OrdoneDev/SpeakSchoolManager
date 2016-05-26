@@ -62,6 +62,37 @@ namespace CadastroFuncionario
             }
         }
 
+        private void dgv_Alunos_CellMouseEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == 1 && e.RowIndex >= 0)
+            {
+
+                this.form.set_foto((Bitmap)dgv_Alunos.Rows[e.RowIndex].Cells[e.ColumnIndex].FormattedValue);
+                form.Location = new Point(Form.MousePosition.X + 10, (Form.MousePosition.Y));
+                this.form.Show();
+            }
+        }
+
+        private void dgv_Alunos_CellMouseLeave(object sender, DataGridViewCellEventArgs e)
+        {
+            this.form.Hide();
+        }
+
+        private void btn_MostarTodos_Click(object sender, EventArgs e)
+        {
+            this.inscricoesTurmasTableAdapter.Fill(this.dB_EscolaDataSet.InscricoesTurmas);
+        }
+
+        private void btn_MostrarVinculados_Click(object sender, EventArgs e)
+        {
+            this.inscricoesTurmasTableAdapter.FillAllVinculos(this.dB_EscolaDataSet.InscricoesTurmas);
+        }
+
+        private void btn_MostrarNaoVinculados_Click(object sender, EventArgs e)
+        {
+            this.inscricoesTurmasTableAdapter.FillAllNaoVinculados(this.dB_EscolaDataSet.InscricoesTurmas);
+        }
+
         private void btn_SalvarVinculo_Click(object sender, EventArgs e)
         {
             int[] Ids_Inscricao = new int[dgv_Alunos.RowCount];
@@ -108,21 +139,6 @@ namespace CadastroFuncionario
         private void btn_Cancelar_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void dgv_Alunos_CellMouseEnter(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.ColumnIndex == 1 && e.RowIndex >= 0)
-            {
-                this.form.set_foto((Bitmap)dgv_Alunos.Rows[e.RowIndex].Cells[e.ColumnIndex].FormattedValue);
-                form.Location = new Point(150, (80 + (e.RowIndex * 30)));
-                this.form.Show();
-            }
-        }
-
-        private void dgv_Alunos_CellMouseLeave(object sender, DataGridViewCellEventArgs e)
-        {
-            this.form.Hide();
         }
     }
 }

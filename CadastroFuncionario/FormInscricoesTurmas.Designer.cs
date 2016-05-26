@@ -45,6 +45,11 @@
             this.msk_IdTurma = new System.Windows.Forms.MaskedTextBox();
             this.dgv_Alunos = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_Cancelar = new System.Windows.Forms.Button();
+            this.btn_SalvarVinculo = new System.Windows.Forms.Button();
+            this.btn_MostrarNaoVinculados = new System.Windows.Forms.Button();
+            this.btn_MostrarVinculados = new System.Windows.Forms.Button();
+            this.btn_MostarTodos = new System.Windows.Forms.Button();
             this.fotoDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
             this.nomeDoAlunoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cursoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -53,8 +58,6 @@
             this.turmaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.inscricoesTurmasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dB_EscolaDataSet = new CadastroFuncionario.DB_EscolaDataSet();
-            this.btn_Cancelar = new System.Windows.Forms.Button();
-            this.btn_SalvarVinculo = new System.Windows.Forms.Button();
             this.inscricoesTurmasTableAdapter = new CadastroFuncionario.DB_EscolaDataSetTableAdapters.InscricoesTurmasTableAdapter();
             this.group_InscricoesTurmas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Alunos)).BeginInit();
@@ -64,8 +67,11 @@
             // 
             // group_InscricoesTurmas
             // 
+            this.group_InscricoesTurmas.Controls.Add(this.btn_MostrarNaoVinculados);
             this.group_InscricoesTurmas.Controls.Add(this.lbl_HoraSaida);
+            this.group_InscricoesTurmas.Controls.Add(this.btn_MostrarVinculados);
             this.group_InscricoesTurmas.Controls.Add(this.lbl_HorarioSaida);
+            this.group_InscricoesTurmas.Controls.Add(this.btn_MostarTodos);
             this.group_InscricoesTurmas.Controls.Add(this.lbl_HoraEntrada);
             this.group_InscricoesTurmas.Controls.Add(this.lbl_HorarioEntrada);
             this.group_InscricoesTurmas.Controls.Add(this.lbl_NSala);
@@ -183,6 +189,41 @@
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
             // 
+            // btn_Cancelar
+            // 
+            resources.ApplyResources(this.btn_Cancelar, "btn_Cancelar");
+            this.btn_Cancelar.Name = "btn_Cancelar";
+            this.btn_Cancelar.UseVisualStyleBackColor = true;
+            this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
+            // 
+            // btn_SalvarVinculo
+            // 
+            resources.ApplyResources(this.btn_SalvarVinculo, "btn_SalvarVinculo");
+            this.btn_SalvarVinculo.Name = "btn_SalvarVinculo";
+            this.btn_SalvarVinculo.UseVisualStyleBackColor = true;
+            this.btn_SalvarVinculo.Click += new System.EventHandler(this.btn_SalvarVinculo_Click);
+            // 
+            // btn_MostrarNaoVinculados
+            // 
+            resources.ApplyResources(this.btn_MostrarNaoVinculados, "btn_MostrarNaoVinculados");
+            this.btn_MostrarNaoVinculados.Name = "btn_MostrarNaoVinculados";
+            this.btn_MostrarNaoVinculados.UseVisualStyleBackColor = true;
+            this.btn_MostrarNaoVinculados.Click += new System.EventHandler(this.btn_MostrarNaoVinculados_Click);
+            // 
+            // btn_MostrarVinculados
+            // 
+            resources.ApplyResources(this.btn_MostrarVinculados, "btn_MostrarVinculados");
+            this.btn_MostrarVinculados.Name = "btn_MostrarVinculados";
+            this.btn_MostrarVinculados.UseVisualStyleBackColor = true;
+            this.btn_MostrarVinculados.Click += new System.EventHandler(this.btn_MostrarVinculados_Click);
+            // 
+            // btn_MostarTodos
+            // 
+            resources.ApplyResources(this.btn_MostarTodos, "btn_MostarTodos");
+            this.btn_MostarTodos.Name = "btn_MostarTodos";
+            this.btn_MostarTodos.UseVisualStyleBackColor = true;
+            this.btn_MostarTodos.Click += new System.EventHandler(this.btn_MostarTodos_Click);
+            // 
             // fotoDataGridViewImageColumn
             // 
             this.fotoDataGridViewImageColumn.DataPropertyName = "Foto";
@@ -234,20 +275,6 @@
             // 
             this.dB_EscolaDataSet.DataSetName = "DB_EscolaDataSet";
             this.dB_EscolaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // btn_Cancelar
-            // 
-            resources.ApplyResources(this.btn_Cancelar, "btn_Cancelar");
-            this.btn_Cancelar.Name = "btn_Cancelar";
-            this.btn_Cancelar.UseVisualStyleBackColor = true;
-            this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
-            // 
-            // btn_SalvarVinculo
-            // 
-            resources.ApplyResources(this.btn_SalvarVinculo, "btn_SalvarVinculo");
-            this.btn_SalvarVinculo.Name = "btn_SalvarVinculo";
-            this.btn_SalvarVinculo.UseVisualStyleBackColor = true;
-            this.btn_SalvarVinculo.Click += new System.EventHandler(this.btn_SalvarVinculo_Click);
             // 
             // inscricoesTurmasTableAdapter
             // 
@@ -301,5 +328,8 @@
         private DB_EscolaDataSet dB_EscolaDataSet;
         private System.Windows.Forms.BindingSource inscricoesTurmasBindingSource;
         private DB_EscolaDataSetTableAdapters.InscricoesTurmasTableAdapter inscricoesTurmasTableAdapter;
+        private System.Windows.Forms.Button btn_MostrarNaoVinculados;
+        private System.Windows.Forms.Button btn_MostrarVinculados;
+        private System.Windows.Forms.Button btn_MostarTodos;
     }
 }
