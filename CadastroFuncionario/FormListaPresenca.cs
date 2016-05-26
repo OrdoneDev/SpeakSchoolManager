@@ -47,15 +47,38 @@ namespace CadastroFuncionario
 
         private void btn_ConsultarLista_Click(object sender, EventArgs e)
         {
+            DateTime Data;
+            int Id_ListaPresenca = 0;
+            string[] Turma;
+
             if (!VerificaCamposListaPresenca())
                 return;
 
+            Data = dtp_DataAula.Value.Date;
 
+            Id_ListaPresenca = GerenciaBanco.VerificaListaPresenca(int.Parse(msk_IdTurma.Text), Data);
+
+            if (Id_ListaPresenca == 0)
+            {
+                Turma = GerenciaBanco.getAlunosTurma(int.Parse(msk_IdTurma.Text)).ToArray();
+
+                for (int i = 0; i < Turma.Length; ++i)
+                {
+                    GerenciaBanco.CadastrarListaPresenca(int.Parse(Turma[i]), Data);
+                }
+            }
+
+            dgv_ListaPresenca.DataSource = GerenciaBanco.getListaPresenca(int.Parse(msk_IdTurma.Text));
         }
 
         private void btn_Cancelar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btn_SalvarLista_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -49,6 +49,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DB_EscolaDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DB_EscolaDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_EscolaDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DB_EscolaDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -253,6 +258,17 @@
     </None>
     <None Include="DB_EscolaDataSet.xss">
       <DependentUpon>DB_EscolaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DB_EscolaDataSet1.xsc">
+      <DependentUpon>DB_EscolaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DB_EscolaDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_EscolaDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_EscolaDataSet1.xss">
+      <DependentUpon>DB_EscolaDataSet1.xsd</DependentUpon>
     </None>
     <None Include="DB_EscolaDataSet2.xsc">
       <DependentUpon>DB_EscolaDataSet2.xsd</DependentUpon>
