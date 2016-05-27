@@ -579,6 +579,43 @@ namespace CadastroFuncionario
             return;
         }
 
+        public static bool CadastrarPagamentoFuncionario(int Id_Financeiro, DateTime Data)
+        {
+            SqlConnection conexao = new SqlConnection(strConexao);
+            SqlCommand cmd;
+            int Numero_Parcela = 0;
+
+            try
+            {
+                conexao.Open();
+                cmd = new SqlCommand();
+                cmd.Connection = conexao;
+
+                Numero_Parcela = getUltimaParcelaPaga(Id_Financeiro);
+                Numero_Parcela++;
+
+                cmd.CommandText = "Insert into SysProtected.Mensalidades (Id_Financeiro, Numero_Parcela, Situacao, Data) values (@Id_Financeiro, @Numero_Parcela, 1, @Data)";
+
+                cmd.Parameters.Add(new SqlParameter("@Id_Financeiro", Id_Financeiro));
+                cmd.Parameters.Add(new SqlParameter("@Numero_Parcela", Numero_Parcela));
+                SqlParameter dataParameter = new SqlParameter("@Data", SqlDbType.Date);
+                dataParameter.Value = Data.Date;
+                cmd.Parameters.Add(dataParameter);
+
+                cmd.CommandType = CommandType.Text;
+                cmd.ExecuteNonQuery();
+                conexao.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                conexao.Close();
+                return false;
+            }
+
+            return true;
+        }
+
         public static void AtualizaFotoFuncionario(string Foto)
         {
             SqlConnection conexao = new SqlConnection(strConexao);
@@ -1341,6 +1378,44 @@ namespace CadastroFuncionario
             return Nome;
         }
 
+        public static List<string> getInformacoesPagamento(int Id_Funcionario)
+        {
+            SqlConnection conexao = new SqlConnection(strConexao);
+            SqlCommand cmd;
+            SqlDataReader dr;
+            List<string> lista = new List<string>();
+
+            try
+            {
+                conexao.Open();
+                cmd = new SqlCommand();
+                cmd.Connection = conexao;
+                cmd.CommandType = CommandType.Text;
+
+                cmd.CommandText = "SELECT Nome, Salario, Id_Financeiro from PagamentoFuncionario WHERE Id_Funcionario = @Id_Funcionario";
+
+                cmd.Parameters.Add(new SqlParameter("@Id_Funcionario", Id_Funcionario));
+
+                dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    lista.Add(dr.GetString(0));
+                    lista.Add(dr.GetSqlMoney(1).ToString());
+                    lista.Add(dr.GetInt32(2).ToString());
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conexao.Close();
+            }
+
+            return lista;
+        }
+
         public static List<string> getEscalaFuncionario(int Id_Escala)
         {
             SqlConnection conexao = new SqlConnection(strConexao);
@@ -1946,6 +2021,34 @@ namespace CadastroFuncionario
             }
 
             return Id_Valida;
+        }
+
+        public static int getUltimaParcelaPaga(int Id_Financeiro)
+        {
+            SqlConnection conexao = new SqlConnection(strConexao);
+            SqlCommand cmd;
+
+            try
+            {
+                conexao.Open();
+                cmd = new SqlCommand();
+                cmd.Connection = conexao;
+
+                cmd.CommandText = "SELECT TOP 1 Numero_Parcela FROM SysProtected.Mensalidades where Id_Financeiro = @Id_Financeiro ORDER BY Numero_Parcela DESC";
+                cmd.Parameters.Add(new SqlParameter("@Id_Financeiro", Id_Financeiro));
+
+                Id_Financeiro = (int)(cmd.ExecuteScalar());
+            }
+            catch (Exception)
+            {
+                Id_Financeiro = 1;
+            }
+            finally
+            {
+                conexao.Close();
+            }
+
+            return Id_Financeiro;
         }
     }
 }

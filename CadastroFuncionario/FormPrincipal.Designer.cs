@@ -42,9 +42,9 @@
             this.alunoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.administrativoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastrarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.financeiroEmpresaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.novoPlanoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.novaEscalaDoFuncionárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.financeiroEmpresaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.novaTurmaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vincularAuloATurmaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listaDeChamadaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -54,6 +54,7 @@
             this.alterarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inscriçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.boletimDoAlunoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registrarPagamentoFuncionarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -178,6 +179,13 @@
             this.cadastrarToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
             this.cadastrarToolStripMenuItem2.Text = "Cadastrar";
             // 
+            // financeiroEmpresaToolStripMenuItem
+            // 
+            this.financeiroEmpresaToolStripMenuItem.Name = "financeiroEmpresaToolStripMenuItem";
+            this.financeiroEmpresaToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
+            this.financeiroEmpresaToolStripMenuItem.Text = "Financeiro empresa...";
+            this.financeiroEmpresaToolStripMenuItem.Click += new System.EventHandler(this.financeiroEmpresaToolStripMenuItem_Click);
+            // 
             // novoPlanoToolStripMenuItem
             // 
             this.novoPlanoToolStripMenuItem.Name = "novoPlanoToolStripMenuItem";
@@ -191,13 +199,6 @@
             this.novaEscalaDoFuncionárioToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
             this.novaEscalaDoFuncionárioToolStripMenuItem.Text = "Nova escala de trabalho...";
             this.novaEscalaDoFuncionárioToolStripMenuItem.Click += new System.EventHandler(this.novaEscalaDoFuncionárioToolStripMenuItem_Click);
-            // 
-            // financeiroEmpresaToolStripMenuItem
-            // 
-            this.financeiroEmpresaToolStripMenuItem.Name = "financeiroEmpresaToolStripMenuItem";
-            this.financeiroEmpresaToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
-            this.financeiroEmpresaToolStripMenuItem.Text = "Financeiro empresa...";
-            this.financeiroEmpresaToolStripMenuItem.Click += new System.EventHandler(this.financeiroEmpresaToolStripMenuItem_Click);
             // 
             // novaTurmaToolStripMenuItem
             // 
@@ -224,7 +225,8 @@
             // 
             this.negociaçãoToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aquisiçãoDeCursoToolStripMenuItem,
-            this.mensalidadesDoAlunoToolStripMenuItem});
+            this.mensalidadesDoAlunoToolStripMenuItem,
+            this.registrarPagamentoFuncionarioToolStripMenuItem});
             this.negociaçãoToolStripMenuItem1.Name = "negociaçãoToolStripMenuItem1";
             this.negociaçãoToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.negociaçãoToolStripMenuItem1.Text = "Negociação";
@@ -232,14 +234,14 @@
             // aquisiçãoDeCursoToolStripMenuItem
             // 
             this.aquisiçãoDeCursoToolStripMenuItem.Name = "aquisiçãoDeCursoToolStripMenuItem";
-            this.aquisiçãoDeCursoToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
+            this.aquisiçãoDeCursoToolStripMenuItem.Size = new System.Drawing.Size(273, 22);
             this.aquisiçãoDeCursoToolStripMenuItem.Text = "Aquisição de curso...";
             this.aquisiçãoDeCursoToolStripMenuItem.Click += new System.EventHandler(this.aquisiçãoDeCursoToolStripMenuItem_Click);
             // 
             // mensalidadesDoAlunoToolStripMenuItem
             // 
             this.mensalidadesDoAlunoToolStripMenuItem.Name = "mensalidadesDoAlunoToolStripMenuItem";
-            this.mensalidadesDoAlunoToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
+            this.mensalidadesDoAlunoToolStripMenuItem.Size = new System.Drawing.Size(273, 22);
             this.mensalidadesDoAlunoToolStripMenuItem.Text = "Mensalidades do aluno...";
             this.mensalidadesDoAlunoToolStripMenuItem.Click += new System.EventHandler(this.mensalidadesDoAlunoToolStripMenuItem_Click);
             // 
@@ -265,6 +267,13 @@
             this.boletimDoAlunoToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.boletimDoAlunoToolStripMenuItem.Text = "Boletim do aluno...";
             this.boletimDoAlunoToolStripMenuItem.Click += new System.EventHandler(this.boletimDoAlunoToolStripMenuItem_Click);
+            // 
+            // registrarPagamentoFuncionarioToolStripMenuItem
+            // 
+            this.registrarPagamentoFuncionarioToolStripMenuItem.Name = "registrarPagamentoFuncionarioToolStripMenuItem";
+            this.registrarPagamentoFuncionarioToolStripMenuItem.Size = new System.Drawing.Size(273, 22);
+            this.registrarPagamentoFuncionarioToolStripMenuItem.Text = "Registrar pagamento de funcionario...";
+            this.registrarPagamentoFuncionarioToolStripMenuItem.Click += new System.EventHandler(this.registrarPagamentoFuncionarioToolStripMenuItem_Click);
             // 
             // FormPrincipal
             // 
@@ -317,6 +326,7 @@
         private System.Windows.Forms.ToolStripMenuItem novaTurmaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem vincularAuloATurmaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listaDeChamadaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem registrarPagamentoFuncionarioToolStripMenuItem;
 
     }
 }

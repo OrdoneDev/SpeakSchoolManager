@@ -441,6 +441,15 @@ Create table SysProtected.Mensalidades (
 )
 go
 
+CREATE VIEW PagamentoFuncionario AS
+	select	FU.Id_Funcionario,
+			FU.Nome,
+			FU.Salario,
+			FI.Id_Financeiro
+	from SysProtected.Funcionarios FU INNER JOIN SysProtected.Financeiro FI
+	on FU.Id_Funcionario = FI.Id_Funcionario
+GO
+
 Create trigger TGR_MensalidadesFuncionariosHistorico
 on SysProtected.Mensalidades
 after insert
