@@ -51,10 +51,13 @@
             this.negociaçãoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.aquisiçãoDeCursoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mensalidadesDoAlunoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registrarPagamentoFuncionarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.alterarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inscriçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.boletimDoAlunoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.registrarPagamentoFuncionarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.enderecosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.funcionariosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,7 +66,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cadastrarToolStripMenuItem,
             this.alunosToolStripMenuItem1,
-            this.administrativoToolStripMenuItem});
+            this.administrativoToolStripMenuItem,
+            this.editarToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(741, 24);
@@ -176,7 +180,7 @@
             this.vincularAuloATurmaToolStripMenuItem,
             this.listaDeChamadaToolStripMenuItem});
             this.cadastrarToolStripMenuItem2.Name = "cadastrarToolStripMenuItem2";
-            this.cadastrarToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.cadastrarToolStripMenuItem2.Size = new System.Drawing.Size(137, 22);
             this.cadastrarToolStripMenuItem2.Text = "Cadastrar";
             // 
             // financeiroEmpresaToolStripMenuItem
@@ -228,7 +232,7 @@
             this.mensalidadesDoAlunoToolStripMenuItem,
             this.registrarPagamentoFuncionarioToolStripMenuItem});
             this.negociaçãoToolStripMenuItem1.Name = "negociaçãoToolStripMenuItem1";
-            this.negociaçãoToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.negociaçãoToolStripMenuItem1.Size = new System.Drawing.Size(137, 22);
             this.negociaçãoToolStripMenuItem1.Text = "Negociação";
             // 
             // aquisiçãoDeCursoToolStripMenuItem
@@ -245,13 +249,20 @@
             this.mensalidadesDoAlunoToolStripMenuItem.Text = "Mensalidades do aluno...";
             this.mensalidadesDoAlunoToolStripMenuItem.Click += new System.EventHandler(this.mensalidadesDoAlunoToolStripMenuItem_Click);
             // 
+            // registrarPagamentoFuncionarioToolStripMenuItem
+            // 
+            this.registrarPagamentoFuncionarioToolStripMenuItem.Name = "registrarPagamentoFuncionarioToolStripMenuItem";
+            this.registrarPagamentoFuncionarioToolStripMenuItem.Size = new System.Drawing.Size(273, 22);
+            this.registrarPagamentoFuncionarioToolStripMenuItem.Text = "Registrar pagamento de funcionario...";
+            this.registrarPagamentoFuncionarioToolStripMenuItem.Click += new System.EventHandler(this.registrarPagamentoFuncionarioToolStripMenuItem_Click);
+            // 
             // alterarToolStripMenuItem
             // 
             this.alterarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.inscriçõesToolStripMenuItem,
             this.boletimDoAlunoToolStripMenuItem});
             this.alterarToolStripMenuItem.Name = "alterarToolStripMenuItem";
-            this.alterarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.alterarToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.alterarToolStripMenuItem.Text = "Alterar";
             // 
             // inscriçõesToolStripMenuItem
@@ -268,12 +279,28 @@
             this.boletimDoAlunoToolStripMenuItem.Text = "Boletim do aluno...";
             this.boletimDoAlunoToolStripMenuItem.Click += new System.EventHandler(this.boletimDoAlunoToolStripMenuItem_Click);
             // 
-            // registrarPagamentoFuncionarioToolStripMenuItem
+            // editarToolStripMenuItem
             // 
-            this.registrarPagamentoFuncionarioToolStripMenuItem.Name = "registrarPagamentoFuncionarioToolStripMenuItem";
-            this.registrarPagamentoFuncionarioToolStripMenuItem.Size = new System.Drawing.Size(273, 22);
-            this.registrarPagamentoFuncionarioToolStripMenuItem.Text = "Registrar pagamento de funcionario...";
-            this.registrarPagamentoFuncionarioToolStripMenuItem.Click += new System.EventHandler(this.registrarPagamentoFuncionarioToolStripMenuItem_Click);
+            this.editarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.enderecosToolStripMenuItem,
+            this.funcionariosToolStripMenuItem1});
+            this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
+            this.editarToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
+            this.editarToolStripMenuItem.Text = "Editar";
+            // 
+            // enderecosToolStripMenuItem
+            // 
+            this.enderecosToolStripMenuItem.Name = "enderecosToolStripMenuItem";
+            this.enderecosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.enderecosToolStripMenuItem.Text = "Enderecos...";
+            this.enderecosToolStripMenuItem.Click += new System.EventHandler(this.enderecosToolStripMenuItem_Click);
+            // 
+            // funcionariosToolStripMenuItem1
+            // 
+            this.funcionariosToolStripMenuItem1.Name = "funcionariosToolStripMenuItem1";
+            this.funcionariosToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.funcionariosToolStripMenuItem1.Text = "Funcionarios...";
+            this.funcionariosToolStripMenuItem1.Click += new System.EventHandler(this.funcionariosToolStripMenuItem1_Click);
             // 
             // FormPrincipal
             // 
@@ -327,6 +354,9 @@
         private System.Windows.Forms.ToolStripMenuItem vincularAuloATurmaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listaDeChamadaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registrarPagamentoFuncionarioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem editarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem enderecosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem funcionariosToolStripMenuItem1;
 
     }
 }

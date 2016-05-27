@@ -117,13 +117,405 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="dtp_DataAula.Location" type="System.Drawing.Point, System.Drawing">
+    <value>134, 24</value>
+  </data>
+  <data name="dtp_DataAula.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 20</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="dtp_DataAula.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;dtp_DataAula.Name" xml:space="preserve">
+    <value>dtp_DataAula</value>
+  </data>
+  <data name="&gt;&gt;dtp_DataAula.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dtp_DataAula.Parent" xml:space="preserve">
+    <value>group_ListaPresenca</value>
+  </data>
+  <data name="&gt;&gt;dtp_DataAula.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lbl_DataAula.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_DataAula.Location" type="System.Drawing.Point, System.Drawing">
+    <value>95, 27</value>
+  </data>
+  <data name="lbl_DataAula.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 13</value>
+  </data>
+  <data name="lbl_DataAula.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="lbl_DataAula.Text" xml:space="preserve">
+    <value>Data:</value>
+  </data>
+  <data name="&gt;&gt;lbl_DataAula.Name" xml:space="preserve">
+    <value>lbl_DataAula</value>
+  </data>
+  <data name="&gt;&gt;lbl_DataAula.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_DataAula.Parent" xml:space="preserve">
+    <value>group_ListaPresenca</value>
+  </data>
+  <data name="&gt;&gt;lbl_DataAula.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lbl_Professor.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_Professor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>330, 27</value>
+  </data>
+  <data name="lbl_Professor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 13</value>
+  </data>
+  <data name="lbl_Professor.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;lbl_Professor.Name" xml:space="preserve">
+    <value>lbl_Professor</value>
+  </data>
+  <data name="&gt;&gt;lbl_Professor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_Professor.Parent" xml:space="preserve">
+    <value>group_ListaPresenca</value>
+  </data>
+  <data name="&gt;&gt;lbl_Professor.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lbl_Sala.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_Sala.Location" type="System.Drawing.Point, System.Drawing">
+    <value>259, 27</value>
+  </data>
+  <data name="lbl_Sala.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 13</value>
+  </data>
+  <data name="lbl_Sala.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;lbl_Sala.Name" xml:space="preserve">
+    <value>lbl_Sala</value>
+  </data>
+  <data name="&gt;&gt;lbl_Sala.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_Sala.Parent" xml:space="preserve">
+    <value>group_ListaPresenca</value>
+  </data>
+  <data name="&gt;&gt;lbl_Sala.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btn_ConsultarLista.Location" type="System.Drawing.Point, System.Drawing">
+    <value>572, 21</value>
+  </data>
+  <data name="btn_ConsultarLista.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btn_ConsultarLista.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btn_ConsultarLista.Text" xml:space="preserve">
+    <value>Consultar</value>
+  </data>
+  <data name="&gt;&gt;btn_ConsultarLista.Name" xml:space="preserve">
+    <value>btn_ConsultarLista</value>
+  </data>
+  <data name="&gt;&gt;btn_ConsultarLista.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ConsultarLista.Parent" xml:space="preserve">
+    <value>group_ListaPresenca</value>
+  </data>
+  <data name="&gt;&gt;btn_ConsultarLista.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lbl_IdTurma.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_IdTurma.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 27</value>
+  </data>
+  <data name="lbl_IdTurma.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 13</value>
+  </data>
+  <data name="lbl_IdTurma.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lbl_IdTurma.Text" xml:space="preserve">
+    <value>Id turma:</value>
+  </data>
+  <data name="&gt;&gt;lbl_IdTurma.Name" xml:space="preserve">
+    <value>lbl_IdTurma</value>
+  </data>
+  <data name="&gt;&gt;lbl_IdTurma.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_IdTurma.Parent" xml:space="preserve">
+    <value>group_ListaPresenca</value>
+  </data>
+  <data name="&gt;&gt;lbl_IdTurma.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="msk_IdTurma.Location" type="System.Drawing.Point, System.Drawing">
+    <value>57, 24</value>
+  </data>
+  <data name="msk_IdTurma.Mask" xml:space="preserve">
+    <value>0000</value>
+  </data>
+  <data name="msk_IdTurma.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 20</value>
+  </data>
+  <data name="msk_IdTurma.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;msk_IdTurma.Name" xml:space="preserve">
+    <value>msk_IdTurma</value>
+  </data>
+  <data name="&gt;&gt;msk_IdTurma.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;msk_IdTurma.Parent" xml:space="preserve">
+    <value>group_ListaPresenca</value>
+  </data>
+  <data name="&gt;&gt;msk_IdTurma.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="idPresencaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Id_Presenca</value>
+  </data>
+  <data name="idPresencaDataGridViewTextBoxColumn.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="nºChamadaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Nº chamada</value>
+  </data>
+  <data name="nomeDoAlunoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Nome do aluno</value>
+  </data>
+  <data name="nomeDoAlunoDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>96</value>
+  </data>
+  <data name="presençaDataGridViewCheckBoxColumn.HeaderText" xml:space="preserve">
+    <value>Presença</value>
+  </data>
+  <data name="diaDaAulaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Dia da aula</value>
+  </data>
+  <data name="códigoDaTurmaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Código da turma</value>
+  </data>
+  <data name="númeroDaSalaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Número da sala</value>
+  </data>
+  <data name="nomeDoProfessorDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Nome do professor</value>
+  </data>
+  <data name="nomeDoProfessorDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>111</value>
+  </data>
+  <data name="cursoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Curso</value>
+  </data>
   <metadata name="listaPresencaBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>171, 17</value>
   </metadata>
   <metadata name="dB_EscolaDataSet1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="dgv_ListaPresenca.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 49</value>
+  </data>
+  <data name="dgv_ListaPresenca.Size" type="System.Drawing.Size, System.Drawing">
+    <value>864, 305</value>
+  </data>
+  <data name="dgv_ListaPresenca.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;dgv_ListaPresenca.Name" xml:space="preserve">
+    <value>dgv_ListaPresenca</value>
+  </data>
+  <data name="&gt;&gt;dgv_ListaPresenca.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgv_ListaPresenca.Parent" xml:space="preserve">
+    <value>group_ListaPresenca</value>
+  </data>
+  <data name="&gt;&gt;dgv_ListaPresenca.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="group_ListaPresenca.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 13</value>
+  </data>
+  <data name="group_ListaPresenca.Size" type="System.Drawing.Size, System.Drawing">
+    <value>877, 365</value>
+  </data>
+  <data name="group_ListaPresenca.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="group_ListaPresenca.Text" xml:space="preserve">
+    <value>Lista de chamada</value>
+  </data>
+  <data name="&gt;&gt;group_ListaPresenca.Name" xml:space="preserve">
+    <value>group_ListaPresenca</value>
+  </data>
+  <data name="&gt;&gt;group_ListaPresenca.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;group_ListaPresenca.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;group_ListaPresenca.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btn_Cancelar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>815, 384</value>
+  </data>
+  <data name="btn_Cancelar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btn_Cancelar.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btn_Cancelar.Text" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.Name" xml:space="preserve">
+    <value>btn_Cancelar</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btn_SalvarLista.Location" type="System.Drawing.Point, System.Drawing">
+    <value>727, 384</value>
+  </data>
+  <data name="btn_SalvarLista.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 23</value>
+  </data>
+  <data name="btn_SalvarLista.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btn_SalvarLista.Text" xml:space="preserve">
+    <value>Salvar lista</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarLista.Name" xml:space="preserve">
+    <value>btn_SalvarLista</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarLista.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarLista.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarLista.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="listaPresencaTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>371, 17</value>
   </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>902, 415</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Lista de chamada</value>
+  </data>
+  <data name="&gt;&gt;idPresencaDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>idPresencaDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;idPresencaDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nºChamadaDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>nºChamadaDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;nºChamadaDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nomeDoAlunoDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>nomeDoAlunoDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;nomeDoAlunoDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;presençaDataGridViewCheckBoxColumn.Name" xml:space="preserve">
+    <value>presençaDataGridViewCheckBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;presençaDataGridViewCheckBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;diaDaAulaDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>diaDaAulaDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;diaDaAulaDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;códigoDaTurmaDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>códigoDaTurmaDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;códigoDaTurmaDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;númeroDaSalaDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>númeroDaSalaDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;númeroDaSalaDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nomeDoProfessorDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>nomeDoProfessorDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;nomeDoProfessorDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cursoDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>cursoDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;cursoDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listaPresencaBindingSource.Name" xml:space="preserve">
+    <value>listaPresencaBindingSource</value>
+  </data>
+  <data name="&gt;&gt;listaPresencaBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dB_EscolaDataSet1.Name" xml:space="preserve">
+    <value>dB_EscolaDataSet1</value>
+  </data>
+  <data name="&gt;&gt;dB_EscolaDataSet1.Type" xml:space="preserve">
+    <value>CadastroFuncionario.DB_EscolaDataSet1, DB_EscolaDataSet1.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;listaPresencaTableAdapter.Name" xml:space="preserve">
+    <value>listaPresencaTableAdapter</value>
+  </data>
+  <data name="&gt;&gt;listaPresencaTableAdapter.Type" xml:space="preserve">
+    <value>CadastroFuncionario.DB_EscolaDataSet1TableAdapters.ListaPresencaTableAdapter, DB_EscolaDataSet1.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormListaPresenca</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

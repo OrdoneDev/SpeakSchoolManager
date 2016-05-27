@@ -128,5 +128,19 @@ namespace CadastroFuncionario
             form.MdiParent = this;
             form.Show();
         }
+
+        private void enderecosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormTabelaEndereco form = new FormTabelaEndereco();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void funcionariosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FormTabelaFuncionarios form = new FormTabelaFuncionarios();
+            form.MdiParent = this;
+            form.Show();
+        }
     }
 }

@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="idFuncionarioDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Código do funcionário</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="idFuncionarioDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>123</value>
+  </data>
+  <data name="idEnderecoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Código do endereço</value>
+  </data>
+  <data name="idEnderecoDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>117</value>
+  </data>
+  <data name="nomeDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="nomeDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="dataNascimentoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Data de nascimento</value>
+  </data>
+  <data name="dataNascimentoDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>116</value>
+  </data>
+  <data name="sexoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Sexo</value>
+  </data>
+  <data name="sexoDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>56</value>
+  </data>
+  <data name="estadoCivilDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Estado civil</value>
+  </data>
+  <data name="estadoCivilDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>79</value>
+  </data>
+  <data name="rGDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>RG</value>
+  </data>
+  <data name="rGDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <data name="cPFDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>CPF</value>
+  </data>
+  <data name="cPFDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>52</value>
+  </data>
+  <data name="statusFuncionarioDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="statusFuncionarioDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="emailDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="emailDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>57</value>
+  </data>
+  <data name="fotoDataGridViewImageColumn.HeaderText" xml:space="preserve">
+    <value>Foto</value>
+  </data>
+  <data name="fotoDataGridViewImageColumn.Width" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="dDDDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>DDD</value>
+  </data>
+  <data name="dDDDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>56</value>
+  </data>
+  <data name="telefoneDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Telefone</value>
+  </data>
+  <data name="telefoneDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>74</value>
+  </data>
+  <data name="quantidadeFilhosDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Quantidade de filhos</value>
+  </data>
+  <data name="quantidadeFilhosDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>96</value>
+  </data>
+  <data name="historicoEscolarDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Historico escolar</value>
+  </data>
+  <data name="historicoEscolarDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>101</value>
+  </data>
+  <data name="cargoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Cargo</value>
+  </data>
+  <data name="cargoDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="salarioDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Salario</value>
+  </data>
+  <data name="salarioDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="complementoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Complemento</value>
+  </data>
+  <data name="complementoDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>96</value>
+  </data>
+  <data name="numeroDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Nº</value>
+  </data>
+  <data name="numeroDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <metadata name="funcionariosBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>171, 17</value>
+  </metadata>
+  <metadata name="dB_EscolaDataSet6.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="dgv_Funcionarios.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="dgv_Funcionarios.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 16</value>
+  </data>
+  <data name="dgv_Funcionarios.Size" type="System.Drawing.Size, System.Drawing">
+    <value>981, 310</value>
+  </data>
+  <data name="dgv_Funcionarios.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;dgv_Funcionarios.Name" xml:space="preserve">
+    <value>dgv_Funcionarios</value>
+  </data>
+  <data name="&gt;&gt;dgv_Funcionarios.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgv_Funcionarios.Parent" xml:space="preserve">
+    <value>group_TabelaFuncionarios</value>
+  </data>
+  <data name="&gt;&gt;dgv_Funcionarios.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="group_TabelaFuncionarios.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 13</value>
+  </data>
+  <data name="group_TabelaFuncionarios.Size" type="System.Drawing.Size, System.Drawing">
+    <value>987, 329</value>
+  </data>
+  <data name="group_TabelaFuncionarios.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="group_TabelaFuncionarios.Text" xml:space="preserve">
+    <value>Funcionários</value>
+  </data>
+  <data name="&gt;&gt;group_TabelaFuncionarios.Name" xml:space="preserve">
+    <value>group_TabelaFuncionarios</value>
+  </data>
+  <data name="&gt;&gt;group_TabelaFuncionarios.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;group_TabelaFuncionarios.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;group_TabelaFuncionarios.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="funcionariosTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>368, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1012, 354</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Tabela de funcionários</value>
+  </data>
+  <data name="&gt;&gt;funcionariosBindingSource.Name" xml:space="preserve">
+    <value>funcionariosBindingSource</value>
+  </data>
+  <data name="&gt;&gt;funcionariosBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dB_EscolaDataSet6.Name" xml:space="preserve">
+    <value>dB_EscolaDataSet6</value>
+  </data>
+  <data name="&gt;&gt;dB_EscolaDataSet6.Type" xml:space="preserve">
+    <value>CadastroFuncionario.DB_EscolaDataSet6, DB_EscolaDataSet6.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;funcionariosTableAdapter.Name" xml:space="preserve">
+    <value>funcionariosTableAdapter</value>
+  </data>
+  <data name="&gt;&gt;funcionariosTableAdapter.Type" xml:space="preserve">
+    <value>CadastroFuncionario.DB_EscolaDataSet6TableAdapters.FuncionariosTableAdapter, DB_EscolaDataSet6.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;idFuncionarioDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>idFuncionarioDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;idFuncionarioDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;idEnderecoDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>idEnderecoDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;idEnderecoDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nomeDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>nomeDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;nomeDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataNascimentoDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>dataNascimentoDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;dataNascimentoDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sexoDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>sexoDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;sexoDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;estadoCivilDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>estadoCivilDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;estadoCivilDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rGDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>rGDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;rGDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cPFDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>cPFDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;cPFDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;statusFuncionarioDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>statusFuncionarioDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;statusFuncionarioDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;emailDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>emailDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;emailDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;fotoDataGridViewImageColumn.Name" xml:space="preserve">
+    <value>fotoDataGridViewImageColumn</value>
+  </data>
+  <data name="&gt;&gt;fotoDataGridViewImageColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewImageColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dDDDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>dDDDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;dDDDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;telefoneDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>telefoneDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;telefoneDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;quantidadeFilhosDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>quantidadeFilhosDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;quantidadeFilhosDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;historicoEscolarDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>historicoEscolarDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;historicoEscolarDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cargoDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>cargoDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;cargoDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;salarioDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>salarioDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;salarioDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;complementoDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>complementoDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;complementoDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numeroDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>numeroDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;numeroDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormTabelaFuncionarios</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

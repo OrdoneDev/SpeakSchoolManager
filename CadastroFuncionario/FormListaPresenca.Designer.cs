@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormListaPresenca));
             this.group_ListaPresenca = new System.Windows.Forms.GroupBox();
             this.dtp_DataAula = new System.Windows.Forms.DateTimePicker();
             this.lbl_DataAula = new System.Windows.Forms.Label();
@@ -38,11 +39,6 @@
             this.lbl_IdTurma = new System.Windows.Forms.Label();
             this.msk_IdTurma = new System.Windows.Forms.MaskedTextBox();
             this.dgv_ListaPresenca = new System.Windows.Forms.DataGridView();
-            this.btn_Cancelar = new System.Windows.Forms.Button();
-            this.btn_SalvarLista = new System.Windows.Forms.Button();
-            this.dB_EscolaDataSet1 = new CadastroFuncionario.DB_EscolaDataSet1();
-            this.listaPresencaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.listaPresencaTableAdapter = new CadastroFuncionario.DB_EscolaDataSet1TableAdapters.ListaPresencaTableAdapter();
             this.idPresencaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nºChamadaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomeDoAlunoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -52,10 +48,15 @@
             this.númeroDaSalaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomeDoProfessorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cursoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.listaPresencaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dB_EscolaDataSet1 = new CadastroFuncionario.DB_EscolaDataSet1();
+            this.btn_Cancelar = new System.Windows.Forms.Button();
+            this.btn_SalvarLista = new System.Windows.Forms.Button();
+            this.listaPresencaTableAdapter = new CadastroFuncionario.DB_EscolaDataSet1TableAdapters.ListaPresencaTableAdapter();
             this.group_ListaPresenca.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ListaPresenca)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dB_EscolaDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaPresencaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dB_EscolaDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // group_ListaPresenca
@@ -68,75 +69,50 @@
             this.group_ListaPresenca.Controls.Add(this.lbl_IdTurma);
             this.group_ListaPresenca.Controls.Add(this.msk_IdTurma);
             this.group_ListaPresenca.Controls.Add(this.dgv_ListaPresenca);
-            this.group_ListaPresenca.Location = new System.Drawing.Point(13, 13);
+            resources.ApplyResources(this.group_ListaPresenca, "group_ListaPresenca");
             this.group_ListaPresenca.Name = "group_ListaPresenca";
-            this.group_ListaPresenca.Size = new System.Drawing.Size(877, 365);
-            this.group_ListaPresenca.TabIndex = 0;
             this.group_ListaPresenca.TabStop = false;
-            this.group_ListaPresenca.Text = "Lista de chamada";
             // 
             // dtp_DataAula
             // 
             this.dtp_DataAula.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtp_DataAula.Location = new System.Drawing.Point(134, 24);
+            resources.ApplyResources(this.dtp_DataAula, "dtp_DataAula");
             this.dtp_DataAula.Name = "dtp_DataAula";
-            this.dtp_DataAula.Size = new System.Drawing.Size(98, 20);
-            this.dtp_DataAula.TabIndex = 7;
             // 
             // lbl_DataAula
             // 
-            this.lbl_DataAula.AutoSize = true;
-            this.lbl_DataAula.Location = new System.Drawing.Point(95, 27);
+            resources.ApplyResources(this.lbl_DataAula, "lbl_DataAula");
             this.lbl_DataAula.Name = "lbl_DataAula";
-            this.lbl_DataAula.Size = new System.Drawing.Size(33, 13);
-            this.lbl_DataAula.TabIndex = 6;
-            this.lbl_DataAula.Text = "Data:";
             // 
             // lbl_Professor
             // 
-            this.lbl_Professor.AutoSize = true;
-            this.lbl_Professor.Location = new System.Drawing.Point(330, 27);
+            resources.ApplyResources(this.lbl_Professor, "lbl_Professor");
             this.lbl_Professor.Name = "lbl_Professor";
-            this.lbl_Professor.Size = new System.Drawing.Size(0, 13);
-            this.lbl_Professor.TabIndex = 5;
             this.lbl_Professor.Tag = "0";
             // 
             // lbl_Sala
             // 
-            this.lbl_Sala.AutoSize = true;
-            this.lbl_Sala.Location = new System.Drawing.Point(259, 27);
+            resources.ApplyResources(this.lbl_Sala, "lbl_Sala");
             this.lbl_Sala.Name = "lbl_Sala";
-            this.lbl_Sala.Size = new System.Drawing.Size(0, 13);
-            this.lbl_Sala.TabIndex = 4;
             this.lbl_Sala.Tag = "0";
             // 
             // btn_ConsultarLista
             // 
-            this.btn_ConsultarLista.Location = new System.Drawing.Point(572, 21);
+            resources.ApplyResources(this.btn_ConsultarLista, "btn_ConsultarLista");
             this.btn_ConsultarLista.Name = "btn_ConsultarLista";
-            this.btn_ConsultarLista.Size = new System.Drawing.Size(75, 23);
-            this.btn_ConsultarLista.TabIndex = 3;
             this.btn_ConsultarLista.Tag = "0";
-            this.btn_ConsultarLista.Text = "Consultar";
             this.btn_ConsultarLista.UseVisualStyleBackColor = true;
             this.btn_ConsultarLista.Click += new System.EventHandler(this.btn_ConsultarLista_Click);
             // 
             // lbl_IdTurma
             // 
-            this.lbl_IdTurma.AutoSize = true;
-            this.lbl_IdTurma.Location = new System.Drawing.Point(7, 27);
+            resources.ApplyResources(this.lbl_IdTurma, "lbl_IdTurma");
             this.lbl_IdTurma.Name = "lbl_IdTurma";
-            this.lbl_IdTurma.Size = new System.Drawing.Size(48, 13);
-            this.lbl_IdTurma.TabIndex = 2;
-            this.lbl_IdTurma.Text = "Id turma:";
             // 
             // msk_IdTurma
             // 
-            this.msk_IdTurma.Location = new System.Drawing.Point(57, 24);
-            this.msk_IdTurma.Mask = "0000";
+            resources.ApplyResources(this.msk_IdTurma, "msk_IdTurma");
             this.msk_IdTurma.Name = "msk_IdTurma";
-            this.msk_IdTurma.Size = new System.Drawing.Size(32, 20);
-            this.msk_IdTurma.TabIndex = 1;
             this.msk_IdTurma.TextChanged += new System.EventHandler(this.msk_IdTurma_TextChanged);
             // 
             // dgv_ListaPresenca
@@ -157,58 +133,21 @@
             this.nomeDoProfessorDataGridViewTextBoxColumn,
             this.cursoDataGridViewTextBoxColumn});
             this.dgv_ListaPresenca.DataSource = this.listaPresencaBindingSource;
-            this.dgv_ListaPresenca.Location = new System.Drawing.Point(7, 49);
+            resources.ApplyResources(this.dgv_ListaPresenca, "dgv_ListaPresenca");
             this.dgv_ListaPresenca.Name = "dgv_ListaPresenca";
-            this.dgv_ListaPresenca.Size = new System.Drawing.Size(864, 305);
-            this.dgv_ListaPresenca.TabIndex = 0;
             this.dgv_ListaPresenca.Tag = "0";
-            // 
-            // btn_Cancelar
-            // 
-            this.btn_Cancelar.Location = new System.Drawing.Point(815, 384);
-            this.btn_Cancelar.Name = "btn_Cancelar";
-            this.btn_Cancelar.Size = new System.Drawing.Size(75, 23);
-            this.btn_Cancelar.TabIndex = 1;
-            this.btn_Cancelar.Text = "Cancelar";
-            this.btn_Cancelar.UseVisualStyleBackColor = true;
-            this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
-            // 
-            // btn_SalvarLista
-            // 
-            this.btn_SalvarLista.Location = new System.Drawing.Point(727, 384);
-            this.btn_SalvarLista.Name = "btn_SalvarLista";
-            this.btn_SalvarLista.Size = new System.Drawing.Size(82, 23);
-            this.btn_SalvarLista.TabIndex = 2;
-            this.btn_SalvarLista.Text = "Salvar lista";
-            this.btn_SalvarLista.UseVisualStyleBackColor = true;
-            this.btn_SalvarLista.Click += new System.EventHandler(this.btn_SalvarLista_Click);
-            // 
-            // dB_EscolaDataSet1
-            // 
-            this.dB_EscolaDataSet1.DataSetName = "DB_EscolaDataSet1";
-            this.dB_EscolaDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // listaPresencaBindingSource
-            // 
-            this.listaPresencaBindingSource.DataMember = "ListaPresenca";
-            this.listaPresencaBindingSource.DataSource = this.dB_EscolaDataSet1;
-            // 
-            // listaPresencaTableAdapter
-            // 
-            this.listaPresencaTableAdapter.ClearBeforeFill = true;
             // 
             // idPresencaDataGridViewTextBoxColumn
             // 
             this.idPresencaDataGridViewTextBoxColumn.DataPropertyName = "Id_Presenca";
-            this.idPresencaDataGridViewTextBoxColumn.HeaderText = "Id_Presenca";
+            resources.ApplyResources(this.idPresencaDataGridViewTextBoxColumn, "idPresencaDataGridViewTextBoxColumn");
             this.idPresencaDataGridViewTextBoxColumn.Name = "idPresencaDataGridViewTextBoxColumn";
             this.idPresencaDataGridViewTextBoxColumn.ReadOnly = true;
-            this.idPresencaDataGridViewTextBoxColumn.Visible = false;
             // 
             // nºChamadaDataGridViewTextBoxColumn
             // 
             this.nºChamadaDataGridViewTextBoxColumn.DataPropertyName = "Nº chamada";
-            this.nºChamadaDataGridViewTextBoxColumn.HeaderText = "Nº chamada";
+            resources.ApplyResources(this.nºChamadaDataGridViewTextBoxColumn, "nºChamadaDataGridViewTextBoxColumn");
             this.nºChamadaDataGridViewTextBoxColumn.Name = "nºChamadaDataGridViewTextBoxColumn";
             this.nºChamadaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
@@ -216,35 +155,34 @@
             // 
             this.nomeDoAlunoDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.nomeDoAlunoDataGridViewTextBoxColumn.DataPropertyName = "Nome do aluno";
-            this.nomeDoAlunoDataGridViewTextBoxColumn.HeaderText = "Nome do aluno";
+            resources.ApplyResources(this.nomeDoAlunoDataGridViewTextBoxColumn, "nomeDoAlunoDataGridViewTextBoxColumn");
             this.nomeDoAlunoDataGridViewTextBoxColumn.Name = "nomeDoAlunoDataGridViewTextBoxColumn";
             this.nomeDoAlunoDataGridViewTextBoxColumn.ReadOnly = true;
-            this.nomeDoAlunoDataGridViewTextBoxColumn.Width = 96;
             // 
             // presençaDataGridViewCheckBoxColumn
             // 
             this.presençaDataGridViewCheckBoxColumn.DataPropertyName = "Presença";
-            this.presençaDataGridViewCheckBoxColumn.HeaderText = "Presença";
+            resources.ApplyResources(this.presençaDataGridViewCheckBoxColumn, "presençaDataGridViewCheckBoxColumn");
             this.presençaDataGridViewCheckBoxColumn.Name = "presençaDataGridViewCheckBoxColumn";
             // 
             // diaDaAulaDataGridViewTextBoxColumn
             // 
             this.diaDaAulaDataGridViewTextBoxColumn.DataPropertyName = "Dia da aula";
-            this.diaDaAulaDataGridViewTextBoxColumn.HeaderText = "Dia da aula";
+            resources.ApplyResources(this.diaDaAulaDataGridViewTextBoxColumn, "diaDaAulaDataGridViewTextBoxColumn");
             this.diaDaAulaDataGridViewTextBoxColumn.Name = "diaDaAulaDataGridViewTextBoxColumn";
             this.diaDaAulaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // códigoDaTurmaDataGridViewTextBoxColumn
             // 
             this.códigoDaTurmaDataGridViewTextBoxColumn.DataPropertyName = "Código da turma";
-            this.códigoDaTurmaDataGridViewTextBoxColumn.HeaderText = "Código da turma";
+            resources.ApplyResources(this.códigoDaTurmaDataGridViewTextBoxColumn, "códigoDaTurmaDataGridViewTextBoxColumn");
             this.códigoDaTurmaDataGridViewTextBoxColumn.Name = "códigoDaTurmaDataGridViewTextBoxColumn";
             this.códigoDaTurmaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // númeroDaSalaDataGridViewTextBoxColumn
             // 
             this.númeroDaSalaDataGridViewTextBoxColumn.DataPropertyName = "Número da sala";
-            this.númeroDaSalaDataGridViewTextBoxColumn.HeaderText = "Número da sala";
+            resources.ApplyResources(this.númeroDaSalaDataGridViewTextBoxColumn, "númeroDaSalaDataGridViewTextBoxColumn");
             this.númeroDaSalaDataGridViewTextBoxColumn.Name = "númeroDaSalaDataGridViewTextBoxColumn";
             this.númeroDaSalaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
@@ -252,33 +190,60 @@
             // 
             this.nomeDoProfessorDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.nomeDoProfessorDataGridViewTextBoxColumn.DataPropertyName = "Nome do professor";
-            this.nomeDoProfessorDataGridViewTextBoxColumn.HeaderText = "Nome do professor";
+            resources.ApplyResources(this.nomeDoProfessorDataGridViewTextBoxColumn, "nomeDoProfessorDataGridViewTextBoxColumn");
             this.nomeDoProfessorDataGridViewTextBoxColumn.Name = "nomeDoProfessorDataGridViewTextBoxColumn";
             this.nomeDoProfessorDataGridViewTextBoxColumn.ReadOnly = true;
-            this.nomeDoProfessorDataGridViewTextBoxColumn.Width = 111;
             // 
             // cursoDataGridViewTextBoxColumn
             // 
             this.cursoDataGridViewTextBoxColumn.DataPropertyName = "Curso";
-            this.cursoDataGridViewTextBoxColumn.HeaderText = "Curso";
+            resources.ApplyResources(this.cursoDataGridViewTextBoxColumn, "cursoDataGridViewTextBoxColumn");
             this.cursoDataGridViewTextBoxColumn.Name = "cursoDataGridViewTextBoxColumn";
             this.cursoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // listaPresencaBindingSource
+            // 
+            this.listaPresencaBindingSource.DataMember = "ListaPresenca";
+            this.listaPresencaBindingSource.DataSource = this.dB_EscolaDataSet1;
+            // 
+            // dB_EscolaDataSet1
+            // 
+            this.dB_EscolaDataSet1.DataSetName = "DB_EscolaDataSet1";
+            this.dB_EscolaDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // btn_Cancelar
+            // 
+            resources.ApplyResources(this.btn_Cancelar, "btn_Cancelar");
+            this.btn_Cancelar.Name = "btn_Cancelar";
+            this.btn_Cancelar.UseVisualStyleBackColor = true;
+            this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
+            // 
+            // btn_SalvarLista
+            // 
+            resources.ApplyResources(this.btn_SalvarLista, "btn_SalvarLista");
+            this.btn_SalvarLista.Name = "btn_SalvarLista";
+            this.btn_SalvarLista.UseVisualStyleBackColor = true;
+            this.btn_SalvarLista.Click += new System.EventHandler(this.btn_SalvarLista_Click);
+            // 
+            // listaPresencaTableAdapter
+            // 
+            this.listaPresencaTableAdapter.ClearBeforeFill = true;
+            // 
             // FormListaPresenca
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(902, 415);
             this.Controls.Add(this.btn_SalvarLista);
             this.Controls.Add(this.btn_Cancelar);
             this.Controls.Add(this.group_ListaPresenca);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MinimizeBox = false;
             this.Name = "FormListaPresenca";
-            this.Text = "Lista de chamada";
             this.group_ListaPresenca.ResumeLayout(false);
             this.group_ListaPresenca.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ListaPresenca)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dB_EscolaDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaPresencaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dB_EscolaDataSet1)).EndInit();
             this.ResumeLayout(false);
 
         }
