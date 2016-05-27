@@ -513,14 +513,13 @@ Insert into SysProtected.Lista_Presenca values
 go
 
 Select L.Id_Presenca		as 'Número de chamada do aluno',
-	I.Id_Aluno					as 'Número de identificação do aluno',
-	A.Nome						as 'Nome do aluno',
+	A.Nome					as 'Nome do aluno',
 	case when L.Chamada = 1 then 'Presente' 
 	else 'Faltou' end 'Presença',
-	L.Data				as 'Dia da aula',
-	IT.Id_Turma			as 'Número da turma',
+	L.Data					as 'Dia da aula',
+	T.Sala					as 'Número da sala',
 	F.Nome					as 'Nome do professor',
-	T.Sala
+	P.Nome					as 'Curso'
 from SysProtected.Funcionarios F
 INNER JOIN SysProtected.Escalas E
 	on F.Id_Funcionario = E.Id_Funcionario
@@ -534,4 +533,6 @@ INNER JOIN SysProtected.Inscricao I
 	on IT.Id_Inscricao = IT.Id_Inscricao
 INNER JOIN SysProtected.Alunos A
 	on I.Id_Aluno = A.Id_Aluno
+INNER JOIN SysProtected.Planos P
+	on T.Id_Plano = P.Id_Plano
 go

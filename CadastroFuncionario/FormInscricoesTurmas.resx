@@ -690,6 +690,24 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Vincular aluno à turma</value>
   </data>
+  <data name="&gt;&gt;inscricoesTurmasBindingSource.Name" xml:space="preserve">
+    <value>inscricoesTurmasBindingSource</value>
+  </data>
+  <data name="&gt;&gt;inscricoesTurmasBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dB_EscolaDataSet.Name" xml:space="preserve">
+    <value>dB_EscolaDataSet</value>
+  </data>
+  <data name="&gt;&gt;dB_EscolaDataSet.Type" xml:space="preserve">
+    <value>CadastroFuncionario.DB_EscolaDataSet, DB_EscolaDataSet.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;inscricoesTurmasTableAdapter.Name" xml:space="preserve">
+    <value>inscricoesTurmasTableAdapter</value>
+  </data>
+  <data name="&gt;&gt;inscricoesTurmasTableAdapter.Type" xml:space="preserve">
+    <value>CadastroFuncionario.DB_EscolaDataSetTableAdapters.InscricoesTurmasTableAdapter, DB_EscolaDataSet.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
   <data name="&gt;&gt;Column1.Name" xml:space="preserve">
     <value>Column1</value>
   </data>
@@ -731,24 +749,6 @@
   </data>
   <data name="&gt;&gt;turmaDataGridViewTextBoxColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;inscricoesTurmasBindingSource.Name" xml:space="preserve">
-    <value>inscricoesTurmasBindingSource</value>
-  </data>
-  <data name="&gt;&gt;inscricoesTurmasBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dB_EscolaDataSet.Name" xml:space="preserve">
-    <value>dB_EscolaDataSet</value>
-  </data>
-  <data name="&gt;&gt;dB_EscolaDataSet.Type" xml:space="preserve">
-    <value>CadastroFuncionario.DB_EscolaDataSet, DB_EscolaDataSet.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;inscricoesTurmasTableAdapter.Name" xml:space="preserve">
-    <value>inscricoesTurmasTableAdapter</value>
-  </data>
-  <data name="&gt;&gt;inscricoesTurmasTableAdapter.Type" xml:space="preserve">
-    <value>CadastroFuncionario.DB_EscolaDataSetTableAdapters.InscricoesTurmasTableAdapter, DB_EscolaDataSet.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FormInscricoesTurmas</value>

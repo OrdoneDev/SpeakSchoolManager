@@ -39,8 +39,7 @@ namespace CadastroFuncionario
                 cmd.CommandType = CommandType.Text;
                 cmd.ExecuteNonQuery();
 
-                cmd.CommandText = "SELECT TOP 1 Id_Endereco FROM SysProtected.Endereco ORDER BY Id_Endereco DESC";
-                Id_Endereco = (int)(cmd.ExecuteScalar());
+                Id_Endereco = getUltimoEnderecoRegistrado(Id_Endereco);
             }
             catch (Exception ex)
             {
@@ -93,23 +92,15 @@ namespace CadastroFuncionario
 
                 cmd.CommandType = CommandType.Text;
                 cmd.ExecuteNonQuery();
+                conexao.Close();
 
-                cmd.CommandText = "SELECT TOP 1 Id_Funcionario FROM SysProtected.Funcionarios ORDER BY Id_Funcionario DESC";
-                Id_Funcionario = (int)(cmd.ExecuteScalar());
+                getUltimoFuncionarioRegistrado();
 
-                cmd.Parameters.Clear();
                 if (Foto != "null")
                 {
-                    cmd.CommandText = "Declare @img1 as varbinary(max) Set @img1 = (Select * from openrowset(bulk N'" + @Foto +
-                    "', single_blob) as imagem) Update SysProtected.Funcionarios set Foto = @img1 where Id_Funcionario = @Id_Funcionario";
-
-                    cmd.Parameters.Add(new SqlParameter("@Foto", Foto));
-                    cmd.Parameters.Add(new SqlParameter("@Id_Funcionario", @Id_Funcionario));
-                    cmd.CommandType = CommandType.Text;
-                    cmd.ExecuteNonQuery();
+                    AtualizaFotoFuncionario(Foto);
                 }
 
-                conexao.Close();
                 return true;
             }
             catch (Exception ex)
@@ -198,23 +189,15 @@ namespace CadastroFuncionario
 
                 cmd.CommandType = CommandType.Text;
                 cmd.ExecuteNonQuery();
+                conexao.Close();
 
-                cmd.CommandText = "SELECT TOP 1 Id_Aluno FROM SysProtected.Alunos ORDER BY Id_Aluno DESC";
-                Id_Aluno = (int)(cmd.ExecuteScalar());
+                getUltimoAlunoRegistrado();
 
-                cmd.Parameters.Clear();
                 if (Foto != "null")
                 {
-                    cmd.CommandText = "Declare @img1 as varbinary(max) Set @img1 = (Select * from openrowset(bulk N'" + @Foto +
-                    "', single_blob) as imagem) Update SysProtected.Alunos set Foto = @img1 where Id_Aluno = @Id_Aluno";
-
-                    cmd.Parameters.Add(new SqlParameter("@Foto", Foto));
-                    cmd.Parameters.Add(new SqlParameter("@Id_Aluno", @Id_Aluno));
-                    cmd.CommandType = CommandType.Text;
-                    cmd.ExecuteNonQuery();
+                    AtualizaFotoAluno(Foto);
                 }
 
-                conexao.Close();
                 return true;
             }
             catch (Exception ex)
@@ -280,8 +263,7 @@ namespace CadastroFuncionario
 
                 cmd.ExecuteNonQuery();
 
-                cmd.CommandText = "SELECT TOP 1 Id_Idioma FROM SysProtected.Idiomas ORDER BY Id_Idioma DESC";
-                Id_Idioma = (int)(cmd.ExecuteScalar());
+                Id_Idioma = getUltimoIdiomaRegistrado(Id_Idioma);
             }
             catch (Exception ex)
             {
@@ -338,7 +320,7 @@ namespace CadastroFuncionario
                 cmd.Connection = conexao;
 
                 cmd.CommandText = "Insert into SysProtected.Financeiro (Id_Funcionario, Banco, Agencia, Conta, Data)" +
-                                   " values (" + @Id_Funcionario + ", @Banco, @Agencia, @Conta, @Data)";
+                " values (" + @Id_Funcionario + ", @Banco, @Agencia, @Conta, @Data)";
 
                 cmd.Parameters.Add(new SqlParameter("@Id_Funcionario", Id_Funcionario));
                 cmd.Parameters.Add(new SqlParameter("@Banco", Banco));
@@ -364,7 +346,6 @@ namespace CadastroFuncionario
         public static bool CadastrarFinanceiro(string Banco, int Agencia, int Conta)
         {
             SqlConnection conexao = new SqlConnection(strConexao);
-            SqlDataReader dr;
             SqlCommand cmd;
             int Id_Financeiro = 0;
 
@@ -374,34 +355,24 @@ namespace CadastroFuncionario
                 cmd = new SqlCommand();
                 cmd.Connection = conexao;
 
-                cmd.CommandText = "SELECT Id_Financeiro FROM SysProtected.Financeiro WHERE Id_Funcionario is null and Data is null";
-                dr = cmd.ExecuteReader();
-
-                while (dr.Read())
-                {
-                    Id_Financeiro = (dr.GetInt32(0));
-                }
-
-                conexao.Close();
-                conexao.Open();
+                Id_Financeiro = getFinanceiroEmpresa(Id_Financeiro);
 
                 if (Id_Financeiro != 0)
                 {
-                    cmd.CommandText = "Update SysProtected.Financeiro set Banco = @Banco, Agencia = @Agencia, Conta = @Conta where Id_Financeiro = @Id_Financeiro";
-                    cmd.Parameters.Add(new SqlParameter("@Id_Financeiro", Id_Financeiro));
+                    AtualizaFinanceiro(Id_Financeiro, Banco, Agencia, Conta);
                 }
                 else
                 {
                     cmd.CommandText = "Insert into SysProtected.Financeiro (Banco, Agencia, Conta)" +
                                        " values (@Banco, @Agencia, @Conta)";
-                }
 
                     cmd.Parameters.Add(new SqlParameter("@Banco", Banco));
                     cmd.Parameters.Add(new SqlParameter("@Agencia", Agencia));
                     cmd.Parameters.Add(new SqlParameter("@Conta", Conta));
+                }
 
-                    cmd.CommandType = CommandType.Text;
-                    cmd.ExecuteNonQuery();
+                cmd.CommandType = CommandType.Text;
+                cmd.ExecuteNonQuery();
             }
             catch (Exception ex)
             {
@@ -523,11 +494,10 @@ namespace CadastroFuncionario
             return true;
         }
         
-        public static void CadastrarInscricoesTurma(int[] Id_Inscricao, int Id_Turma)
+        public static void CadastrarInscricoesTurma(int[] Id_Inscricao, int[] Id_Turma)
         {
             SqlConnection conexao = new SqlConnection(strConexao);
             SqlCommand cmd;
-            SqlDataReader dr;
             int Id_Valida = 0;
             bool Continua = false;
 
@@ -541,63 +511,27 @@ namespace CadastroFuncionario
                 {
                     if (Id_Inscricao[i] != 0)
                     {
-                        cmd.CommandText = "Select Id_Inscricao_Turma from SysProtected.Inscricoes_Turmas where Id_Inscricao = @Id_Inscricao and Id_Turma = @Id_Turma";
-                        cmd.Parameters.Add(new SqlParameter("@Id_Inscricao", Id_Inscricao[i]));
-                        cmd.Parameters.Add(new SqlParameter("@Id_Turma", Id_Turma));
-
-                        dr = cmd.ExecuteReader();
-                        Id_Valida = 0;
-
-                        while (dr.Read())
-                        {
-                            Id_Valida = (dr.GetInt32(0));
-                        }
-
-                        cmd.Parameters.Clear();
-                        conexao.Close();
-                        conexao.Open();
+                        Id_Valida = getInscricaoTurma(Id_Inscricao[i], Id_Turma[i], Id_Valida);
 
                         if (Id_Valida != 0)
                         {
-                            cmd.CommandText = "Select Status from SysProtected.Inscricao where Id_Inscricao = @Id_Inscricao and Status = 0";
-                            cmd.Parameters.Add(new SqlParameter("@Id_Inscricao", Id_Inscricao[i]));
-
-                            dr = cmd.ExecuteReader();
-
-                            while (dr.Read())
-                            {
-                                Continua = true;
-                            }
+                            Continua = getStatusInscricao(Id_Inscricao[i], Continua);
 
                             if (Continua)
                             {
-                                cmd.Parameters.Clear();
-                                conexao.Close();
-                                conexao.Open();
-
-                                cmd.CommandText = "Update SysProtected.Inscricao set Status = 1 where Id_Inscricao = @Id_Inscricao";
-                                cmd.Parameters.Add(new SqlParameter("@Id_Inscricao", Id_Inscricao[i]));
-
-                                cmd.CommandType = CommandType.Text;
-                                cmd.ExecuteNonQuery();
+                                Id_Inscricao[i] = AtualizaStatusInscricao(Id_Inscricao[i]);
                             }
-
-                            Id_Inscricao[i] = 0;
                         }
-
-                        conexao.Close();
-                        conexao.Open();
 
                         if (Id_Inscricao[i] != 0)
                         {
                             cmd.CommandText = "Insert into SysProtected.Inscricoes_Turmas (Id_Inscricao, Id_Turma) values (@Id_Inscricao, @Id_Turma)";
                             cmd.Parameters.Add(new SqlParameter("@Id_Inscricao", Id_Inscricao[i]));
-                            cmd.Parameters.Add(new SqlParameter("@Id_Turma", Id_Turma));
+                            cmd.Parameters.Add(new SqlParameter("@Id_Turma", Id_Turma[i]));
 
                             cmd.CommandType = CommandType.Text;
                             cmd.ExecuteNonQuery();
                         }
-
                         cmd.Parameters.Clear();
                     }
                 }
@@ -643,6 +577,167 @@ namespace CadastroFuncionario
             }
 
             return;
+        }
+
+        public static bool CadastrarPagamentoFuncionario(int Id_Financeiro, DateTime Data)
+        {
+            SqlConnection conexao = new SqlConnection(strConexao);
+            SqlCommand cmd;
+            int Numero_Parcela = 0;
+
+            try
+            {
+                conexao.Open();
+                cmd = new SqlCommand();
+                cmd.Connection = conexao;
+
+                Numero_Parcela = getUltimaParcelaPaga(Id_Financeiro);
+                Numero_Parcela++;
+
+                cmd.CommandText = "Insert into SysProtected.Mensalidades (Id_Financeiro, Numero_Parcela, Situacao, Data) values (@Id_Financeiro, @Numero_Parcela, 1, @Data)";
+
+                cmd.Parameters.Add(new SqlParameter("@Id_Financeiro", Id_Financeiro));
+                cmd.Parameters.Add(new SqlParameter("@Numero_Parcela", Numero_Parcela));
+                SqlParameter dataParameter = new SqlParameter("@Data", SqlDbType.Date);
+                dataParameter.Value = Data.Date;
+                cmd.Parameters.Add(dataParameter);
+
+                cmd.CommandType = CommandType.Text;
+                cmd.ExecuteNonQuery();
+                conexao.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                conexao.Close();
+                return false;
+            }
+
+            return true;
+        }
+
+        public static void AtualizaFotoFuncionario(string Foto)
+        {
+            SqlConnection conexao = new SqlConnection(strConexao);
+            SqlCommand cmd;
+
+            try
+            {
+                conexao.Open();
+                cmd = new SqlCommand();
+                cmd.Connection = conexao;
+
+                cmd.CommandText = "Declare @img1 as varbinary(max) Set @img1 = (Select * from openrowset(bulk N'" + @Foto +
+                "', single_blob) as imagem) Update SysProtected.Funcionarios set Foto = @img1 where Id_Funcionario = @Id_Funcionario";
+
+                cmd.Parameters.Add(new SqlParameter("@Foto", Foto));
+                cmd.Parameters.Add(new SqlParameter("@Id_Funcionario", @Id_Funcionario));
+                cmd.CommandType = CommandType.Text;
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conexao.Close();
+            }
+
+            return;
+        }
+
+        public static void AtualizaFotoAluno(string Foto)
+        {
+            SqlConnection conexao = new SqlConnection(strConexao);
+            SqlCommand cmd;
+
+            try
+            {
+                conexao.Open();
+                cmd = new SqlCommand();
+                cmd.Connection = conexao;
+
+                cmd.CommandText = "Declare @img1 as varbinary(max) Set @img1 = (Select * from openrowset(bulk N'" + @Foto +
+                "', single_blob) as imagem) Update SysProtected.Alunos set Foto = @img1 where Id_Aluno = @Id_Aluno";
+
+                cmd.Parameters.Add(new SqlParameter("@Foto", Foto));
+                cmd.Parameters.Add(new SqlParameter("@Id_Aluno", @Id_Aluno));
+                cmd.CommandType = CommandType.Text;
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conexao.Close();
+            }
+
+            return;
+        }
+
+        public static void AtualizaFinanceiro(int Id_Financeiro, string Banco, int Agencia, int Conta)
+        {
+            SqlConnection conexao = new SqlConnection(strConexao);
+            SqlCommand cmd;
+
+            try
+            {
+                conexao.Open();
+                cmd = new SqlCommand();
+                cmd.Connection = conexao;
+
+                cmd.CommandText = "Update SysProtected.Financeiro set Banco = @Banco, Agencia = @Agencia, Conta = @Conta where Id_Financeiro = @Id_Financeiro";
+                cmd.Parameters.Add(new SqlParameter("@Id_Financeiro", Id_Financeiro));
+                cmd.Parameters.Add(new SqlParameter("@Banco", Banco));
+                cmd.Parameters.Add(new SqlParameter("@Agencia", Agencia));
+                cmd.Parameters.Add(new SqlParameter("@Conta", Conta));
+
+                cmd.CommandType = CommandType.Text;
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conexao.Close();
+            }
+
+            return;
+        }
+
+        public static int AtualizaStatusInscricao(int Id_Inscricao)
+        {
+            SqlConnection conexao = new SqlConnection(strConexao);
+            SqlCommand cmd;
+
+            try
+            {
+                conexao.Open();
+                cmd = new SqlCommand();
+                cmd.Connection = conexao;
+
+                cmd.CommandText = "Update SysProtected.Inscricao set Status = 1 where Id_Inscricao = @Id_Inscricao";
+                cmd.Parameters.Add(new SqlParameter("@Id_Inscricao", Id_Inscricao));
+
+                cmd.CommandType = CommandType.Text;
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conexao.Close();
+            }
+
+            Id_Inscricao = 0;
+            return Id_Inscricao;
         }
 
         public static bool AtualizaMensalidade(int Id_Mensalidade, byte Situacao)
@@ -741,11 +836,10 @@ namespace CadastroFuncionario
             return true;
         }
 
-        public static void AtualizaInscricoesTurma(int[] Id_InscricaoFalse, int Id_Turma)
+        public static void AtualizaInscricoesTurma(int[] Id_InscricaoFalse, int[] Id_Turma)
         {
             SqlConnection conexao = new SqlConnection(strConexao);
             SqlCommand cmd;
-            SqlDataReader dr;
             int Id_Valida = 0;
             bool Continua = false;
 
@@ -759,24 +853,12 @@ namespace CadastroFuncionario
                 {
                     if (Id_InscricaoFalse[i] != 0)
                     {
-                        cmd.CommandText = "Select Id_Inscricao_Turma from SysProtected.Inscricoes_Turmas where Id_Inscricao = @Id_Inscricao and Id_Turma = @Id_Turma";
-                        cmd.Parameters.Add(new SqlParameter("@Id_Inscricao", Id_InscricaoFalse[i]));
-                        cmd.Parameters.Add(new SqlParameter("@Id_Turma", Id_Turma));
-
-                        dr = cmd.ExecuteReader();
-                        Id_Valida = 0;
-
-                        while (dr.Read())
-                        {
-                            Id_Valida = (dr.GetInt32(0));
-                            Continua = true;
-                        }
-
-                        conexao.Close();
-                        conexao.Open();
+                        Id_Valida = getId_InscricaoAlteracao(Id_InscricaoFalse[i], Id_Turma[i], Id_Valida, Continua);
 
                         if (Id_Valida == 0)
                             Id_InscricaoFalse[i] = 0;
+                        else
+                            Continua = true;
 
                         if (Id_InscricaoFalse[i] != 0 && Continua)
                         {
@@ -1296,6 +1378,44 @@ namespace CadastroFuncionario
             return Nome;
         }
 
+        public static List<string> getInformacoesPagamento(int Id_Funcionario)
+        {
+            SqlConnection conexao = new SqlConnection(strConexao);
+            SqlCommand cmd;
+            SqlDataReader dr;
+            List<string> lista = new List<string>();
+
+            try
+            {
+                conexao.Open();
+                cmd = new SqlCommand();
+                cmd.Connection = conexao;
+                cmd.CommandType = CommandType.Text;
+
+                cmd.CommandText = "SELECT Nome, Salario, Id_Financeiro from PagamentoFuncionario WHERE Id_Funcionario = @Id_Funcionario";
+
+                cmd.Parameters.Add(new SqlParameter("@Id_Funcionario", Id_Funcionario));
+
+                dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    lista.Add(dr.GetString(0));
+                    lista.Add(dr.GetSqlMoney(1).ToString());
+                    lista.Add(dr.GetInt32(2).ToString());
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conexao.Close();
+            }
+
+            return lista;
+        }
+
         public static List<string> getEscalaFuncionario(int Id_Escala)
         {
             SqlConnection conexao = new SqlConnection(strConexao);
@@ -1659,6 +1779,276 @@ namespace CadastroFuncionario
             }
 
             return lista;
+        }
+
+        public static int getUltimoEnderecoRegistrado(int Id_Endereco)
+        {
+            SqlConnection conexao = new SqlConnection(strConexao);
+            SqlCommand cmd;
+
+            try
+            {
+                conexao.Open();
+                cmd = new SqlCommand();
+                cmd.Connection = conexao;
+
+                cmd.CommandText = "SELECT TOP 1 Id_Endereco FROM SysProtected.Endereco ORDER BY Id_Endereco DESC";
+                Id_Endereco = (int)(cmd.ExecuteScalar());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conexao.Close();
+            }
+
+            return Id_Endereco;
+        }
+
+        public static void getUltimoFuncionarioRegistrado()
+        {
+            SqlConnection conexao = new SqlConnection(strConexao);
+            SqlCommand cmd;
+
+            try
+            {
+                conexao.Open();
+                cmd = new SqlCommand();
+                cmd.Connection = conexao;
+
+                cmd.CommandText = "SELECT TOP 1 Id_Funcionario FROM SysProtected.Funcionarios ORDER BY Id_Funcionario DESC";
+                Id_Funcionario = (int)(cmd.ExecuteScalar());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conexao.Close();
+            }
+
+            return;
+        }
+
+        public static void getUltimoAlunoRegistrado()
+        {
+            SqlConnection conexao = new SqlConnection(strConexao);
+            SqlCommand cmd;
+
+            try
+            {
+                conexao.Open();
+                cmd = new SqlCommand();
+                cmd.Connection = conexao;
+
+                cmd.CommandText = "SELECT TOP 1 Id_Aluno FROM SysProtected.Alunos ORDER BY Id_Aluno DESC";
+                Id_Aluno = (int)(cmd.ExecuteScalar());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conexao.Close();
+            }
+
+            return;
+        }
+
+        public static int getUltimoIdiomaRegistrado(int Id_Idioma)
+        {
+            SqlConnection conexao = new SqlConnection(strConexao);
+            SqlCommand cmd;
+
+            try
+            {
+                conexao.Open();
+                cmd = new SqlCommand();
+                cmd.Connection = conexao;
+
+                cmd.CommandText = "SELECT TOP 1 Id_Idioma FROM SysProtected.Idiomas ORDER BY Id_Idioma DESC";
+                Id_Idioma = (int)(cmd.ExecuteScalar());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conexao.Close();
+            }
+
+            return Id_Idioma;
+        }
+
+        public static int getFinanceiroEmpresa(int Id_Financeiro)
+        {
+            SqlConnection conexao = new SqlConnection(strConexao);
+            SqlCommand cmd;
+            SqlDataReader dr;
+
+            try
+            {
+                conexao.Open();
+                cmd = new SqlCommand();
+                cmd.Connection = conexao;
+
+                cmd.CommandText = "SELECT Id_Financeiro FROM SysProtected.Financeiro WHERE Id_Funcionario is null and Data is null";
+                dr = cmd.ExecuteReader();
+
+                while (dr.Read())
+                {
+                    Id_Financeiro = (dr.GetInt32(0));
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conexao.Close();
+            }
+
+            return Id_Financeiro;
+        }
+
+        public static int getInscricaoTurma(int Id_Inscricao, int Id_Turma, int Id_Valida)
+        {
+            SqlConnection conexao = new SqlConnection(strConexao);
+            SqlCommand cmd;
+            SqlDataReader dr;
+
+            try
+            {
+                conexao.Open();
+                cmd = new SqlCommand();
+                cmd.Connection = conexao;
+
+                cmd.CommandText = "Select Id_Inscricao_Turma from SysProtected.Inscricoes_Turmas where Id_Inscricao = @Id_Inscricao and Id_Turma = @Id_Turma";
+                cmd.Parameters.Add(new SqlParameter("@Id_Inscricao", Id_Inscricao));
+                cmd.Parameters.Add(new SqlParameter("@Id_Turma", Id_Turma));
+
+                dr = cmd.ExecuteReader();
+
+                while (dr.Read())
+                {
+                    Id_Valida = (dr.GetInt32(0));
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conexao.Close();
+            }
+
+            return Id_Valida;
+        }
+
+        public static bool getStatusInscricao(int Id_Inscricao, bool Continua)
+        {
+            SqlConnection conexao = new SqlConnection(strConexao);
+            SqlCommand cmd;
+            SqlDataReader dr;
+
+            try
+            {
+                conexao.Open();
+                cmd = new SqlCommand();
+                cmd.Connection = conexao;
+
+                cmd.CommandText = "Select Status from SysProtected.Inscricao where Id_Inscricao = @Id_Inscricao and Status = 0";
+                cmd.Parameters.Add(new SqlParameter("@Id_Inscricao", Id_Inscricao));
+
+                dr = cmd.ExecuteReader();
+
+                while (dr.Read())
+                {
+                    Continua = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conexao.Close();
+            }
+
+            return Continua;
+        }
+
+        public static int getId_InscricaoAlteracao(int Id_InscricaoFalse, int Id_Turma, int Id_Valida, bool Continua)
+        {
+            SqlConnection conexao = new SqlConnection(strConexao);
+            SqlCommand cmd;
+            SqlDataReader dr;
+
+            try
+            {
+                conexao.Open();
+                cmd = new SqlCommand();
+                cmd.Connection = conexao;
+
+                cmd.CommandText = "Select Id_Inscricao_Turma from SysProtected.Inscricoes_Turmas where Id_Inscricao = @Id_Inscricao and Id_Turma = @Id_Turma";
+                cmd.Parameters.Add(new SqlParameter("@Id_Inscricao", Id_InscricaoFalse));
+                cmd.Parameters.Add(new SqlParameter("@Id_Turma", Id_Turma));
+
+                dr = cmd.ExecuteReader();
+                Id_Valida = 0;
+
+                while (dr.Read())
+                {
+                    Id_Valida = (dr.GetInt32(0));
+                    Continua = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conexao.Close();
+            }
+
+            return Id_Valida;
+        }
+
+        public static int getUltimaParcelaPaga(int Id_Financeiro)
+        {
+            SqlConnection conexao = new SqlConnection(strConexao);
+            SqlCommand cmd;
+
+            try
+            {
+                conexao.Open();
+                cmd = new SqlCommand();
+                cmd.Connection = conexao;
+
+                cmd.CommandText = "SELECT TOP 1 Numero_Parcela FROM SysProtected.Mensalidades where Id_Financeiro = @Id_Financeiro ORDER BY Numero_Parcela DESC";
+                cmd.Parameters.Add(new SqlParameter("@Id_Financeiro", Id_Financeiro));
+
+                Id_Financeiro = (int)(cmd.ExecuteScalar());
+            }
+            catch (Exception)
+            {
+                Id_Financeiro = 1;
+            }
+            finally
+            {
+                conexao.Close();
+            }
+
+            return Id_Financeiro;
         }
     }
 }

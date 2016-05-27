@@ -121,5 +121,12 @@ namespace CadastroFuncionario
             form.MdiParent = this;
             form.Show();
         }
+
+        private void registrarPagamentoFuncionarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormRegistraPagamentoFuncionario form = new FormRegistraPagamentoFuncionario();
+            form.MdiParent = this;
+            form.Show();
+        }
     }
 }
