@@ -31,8 +31,11 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormInscricoesTurmas));
             this.group_InscricoesTurmas = new System.Windows.Forms.GroupBox();
+            this.btn_MostrarNaoVinculados = new System.Windows.Forms.Button();
             this.lbl_HoraSaida = new System.Windows.Forms.Label();
+            this.btn_MostrarVinculados = new System.Windows.Forms.Button();
             this.lbl_HorarioSaida = new System.Windows.Forms.Label();
+            this.btn_MostarTodos = new System.Windows.Forms.Button();
             this.lbl_HoraEntrada = new System.Windows.Forms.Label();
             this.lbl_HorarioEntrada = new System.Windows.Forms.Label();
             this.lbl_NSala = new System.Windows.Forms.Label();
@@ -44,21 +47,18 @@
             this.label1 = new System.Windows.Forms.Label();
             this.msk_IdTurma = new System.Windows.Forms.MaskedTextBox();
             this.dgv_Alunos = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.inscricoesTurmasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dB_EscolaDataSet = new CadastroFuncionario.DB_EscolaDataSet();
             this.btn_Cancelar = new System.Windows.Forms.Button();
             this.btn_SalvarVinculo = new System.Windows.Forms.Button();
-            this.btn_MostrarNaoVinculados = new System.Windows.Forms.Button();
-            this.btn_MostrarVinculados = new System.Windows.Forms.Button();
-            this.btn_MostarTodos = new System.Windows.Forms.Button();
+            this.inscricoesTurmasTableAdapter = new CadastroFuncionario.DB_EscolaDataSetTableAdapters.InscricoesTurmasTableAdapter();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fotoDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
             this.nomeDoAlunoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cursoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.planoContratadoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.vincularAlunoDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.turmaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.inscricoesTurmasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dB_EscolaDataSet = new CadastroFuncionario.DB_EscolaDataSet();
-            this.inscricoesTurmasTableAdapter = new CadastroFuncionario.DB_EscolaDataSetTableAdapters.InscricoesTurmasTableAdapter();
             this.group_InscricoesTurmas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Alunos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inscricoesTurmasBindingSource)).BeginInit();
@@ -87,17 +87,38 @@
             this.group_InscricoesTurmas.Name = "group_InscricoesTurmas";
             this.group_InscricoesTurmas.TabStop = false;
             // 
+            // btn_MostrarNaoVinculados
+            // 
+            resources.ApplyResources(this.btn_MostrarNaoVinculados, "btn_MostrarNaoVinculados");
+            this.btn_MostrarNaoVinculados.Name = "btn_MostrarNaoVinculados";
+            this.btn_MostrarNaoVinculados.UseVisualStyleBackColor = true;
+            this.btn_MostrarNaoVinculados.Click += new System.EventHandler(this.btn_MostrarNaoVinculados_Click);
+            // 
             // lbl_HoraSaida
             // 
             resources.ApplyResources(this.lbl_HoraSaida, "lbl_HoraSaida");
             this.lbl_HoraSaida.Name = "lbl_HoraSaida";
             this.lbl_HoraSaida.Tag = "0";
             // 
+            // btn_MostrarVinculados
+            // 
+            resources.ApplyResources(this.btn_MostrarVinculados, "btn_MostrarVinculados");
+            this.btn_MostrarVinculados.Name = "btn_MostrarVinculados";
+            this.btn_MostrarVinculados.UseVisualStyleBackColor = true;
+            this.btn_MostrarVinculados.Click += new System.EventHandler(this.btn_MostrarVinculados_Click);
+            // 
             // lbl_HorarioSaida
             // 
             resources.ApplyResources(this.lbl_HorarioSaida, "lbl_HorarioSaida");
             this.lbl_HorarioSaida.Name = "lbl_HorarioSaida";
             this.lbl_HorarioSaida.Tag = "0";
+            // 
+            // btn_MostarTodos
+            // 
+            resources.ApplyResources(this.btn_MostarTodos, "btn_MostarTodos");
+            this.btn_MostarTodos.Name = "btn_MostarTodos";
+            this.btn_MostarTodos.UseVisualStyleBackColor = true;
+            this.btn_MostarTodos.Click += new System.EventHandler(this.btn_MostarTodos_Click);
             // 
             // lbl_HoraEntrada
             // 
@@ -182,12 +203,15 @@
             this.dgv_Alunos.CellMouseEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Alunos_CellMouseEnter);
             this.dgv_Alunos.CellMouseLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Alunos_CellMouseLeave);
             // 
-            // Column1
+            // inscricoesTurmasBindingSource
             // 
-            this.Column1.DataPropertyName = "Código da inscrição";
-            resources.ApplyResources(this.Column1, "Column1");
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
+            this.inscricoesTurmasBindingSource.DataMember = "InscricoesTurmas";
+            this.inscricoesTurmasBindingSource.DataSource = this.dB_EscolaDataSet;
+            // 
+            // dB_EscolaDataSet
+            // 
+            this.dB_EscolaDataSet.DataSetName = "DB_EscolaDataSet";
+            this.dB_EscolaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // btn_Cancelar
             // 
@@ -203,26 +227,16 @@
             this.btn_SalvarVinculo.UseVisualStyleBackColor = true;
             this.btn_SalvarVinculo.Click += new System.EventHandler(this.btn_SalvarVinculo_Click);
             // 
-            // btn_MostrarNaoVinculados
+            // inscricoesTurmasTableAdapter
             // 
-            resources.ApplyResources(this.btn_MostrarNaoVinculados, "btn_MostrarNaoVinculados");
-            this.btn_MostrarNaoVinculados.Name = "btn_MostrarNaoVinculados";
-            this.btn_MostrarNaoVinculados.UseVisualStyleBackColor = true;
-            this.btn_MostrarNaoVinculados.Click += new System.EventHandler(this.btn_MostrarNaoVinculados_Click);
+            this.inscricoesTurmasTableAdapter.ClearBeforeFill = true;
             // 
-            // btn_MostrarVinculados
+            // Column1
             // 
-            resources.ApplyResources(this.btn_MostrarVinculados, "btn_MostrarVinculados");
-            this.btn_MostrarVinculados.Name = "btn_MostrarVinculados";
-            this.btn_MostrarVinculados.UseVisualStyleBackColor = true;
-            this.btn_MostrarVinculados.Click += new System.EventHandler(this.btn_MostrarVinculados_Click);
-            // 
-            // btn_MostarTodos
-            // 
-            resources.ApplyResources(this.btn_MostarTodos, "btn_MostarTodos");
-            this.btn_MostarTodos.Name = "btn_MostarTodos";
-            this.btn_MostarTodos.UseVisualStyleBackColor = true;
-            this.btn_MostarTodos.Click += new System.EventHandler(this.btn_MostarTodos_Click);
+            this.Column1.DataPropertyName = "Código da inscrição";
+            resources.ApplyResources(this.Column1, "Column1");
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             // 
             // fotoDataGridViewImageColumn
             // 
@@ -264,21 +278,6 @@
             this.turmaDataGridViewTextBoxColumn.DataPropertyName = "Turma";
             resources.ApplyResources(this.turmaDataGridViewTextBoxColumn, "turmaDataGridViewTextBoxColumn");
             this.turmaDataGridViewTextBoxColumn.Name = "turmaDataGridViewTextBoxColumn";
-            this.turmaDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // inscricoesTurmasBindingSource
-            // 
-            this.inscricoesTurmasBindingSource.DataMember = "InscricoesTurmas";
-            this.inscricoesTurmasBindingSource.DataSource = this.dB_EscolaDataSet;
-            // 
-            // dB_EscolaDataSet
-            // 
-            this.dB_EscolaDataSet.DataSetName = "DB_EscolaDataSet";
-            this.dB_EscolaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // inscricoesTurmasTableAdapter
-            // 
-            this.inscricoesTurmasTableAdapter.ClearBeforeFill = true;
             // 
             // FormInscricoesTurmas
             // 
@@ -318,6 +317,12 @@
         private System.Windows.Forms.DataGridView dgv_Alunos;
         private System.Windows.Forms.Button btn_Cancelar;
         private System.Windows.Forms.Button btn_SalvarVinculo;
+        private DB_EscolaDataSet dB_EscolaDataSet;
+        private System.Windows.Forms.BindingSource inscricoesTurmasBindingSource;
+        private DB_EscolaDataSetTableAdapters.InscricoesTurmasTableAdapter inscricoesTurmasTableAdapter;
+        private System.Windows.Forms.Button btn_MostrarNaoVinculados;
+        private System.Windows.Forms.Button btn_MostrarVinculados;
+        private System.Windows.Forms.Button btn_MostarTodos;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewImageColumn fotoDataGridViewImageColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomeDoAlunoDataGridViewTextBoxColumn;
@@ -325,11 +330,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn planoContratadoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewCheckBoxColumn vincularAlunoDataGridViewCheckBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn turmaDataGridViewTextBoxColumn;
-        private DB_EscolaDataSet dB_EscolaDataSet;
-        private System.Windows.Forms.BindingSource inscricoesTurmasBindingSource;
-        private DB_EscolaDataSetTableAdapters.InscricoesTurmasTableAdapter inscricoesTurmasTableAdapter;
-        private System.Windows.Forms.Button btn_MostrarNaoVinculados;
-        private System.Windows.Forms.Button btn_MostrarVinculados;
-        private System.Windows.Forms.Button btn_MostarTodos;
     }
 }

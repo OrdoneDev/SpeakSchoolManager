@@ -21,14 +21,6 @@ namespace CadastroFuncionario
             this.form = new FormFotoInscricao();
         }
 
-        private bool VerificaCamposInscricoesTurmas()
-        {
-            if (!ValidaCampos.ValidaCamposGroup(group_InscricoesTurmas))
-                return false;
-
-            return true;
-        }
-
         private void FormInscricoesTurmas_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'dB_EscolaDataSet.InscricoesTurmas' table. You can move, or remove it, as needed.
@@ -96,12 +88,11 @@ namespace CadastroFuncionario
         private void btn_SalvarVinculo_Click(object sender, EventArgs e)
         {
             int[] Ids_Inscricao = new int[dgv_Alunos.RowCount];
+            int[] Turmas = new int[dgv_Alunos.RowCount];
+            int[] TurmasAlteracoes = new int[dgv_Alunos.RowCount];
             int[] Ids_InscricaoFalse = new int[dgv_Alunos.RowCount];
             bool Cadastrar = false;
             bool Atualizar = false;
-
-            if (!VerificaCamposInscricoesTurmas())
-                return;
 
             for (int i = 0; i < dgv_Alunos.RowCount; ++i)
             {
@@ -109,23 +100,25 @@ namespace CadastroFuncionario
                 {
                     Cadastrar = true;
                     Ids_Inscricao[i] = int.Parse(dgv_Alunos.Rows[i].Cells[0].Value.ToString());
+                    Turmas[i] = int.Parse(dgv_Alunos.Rows[i].Cells[6].Value.ToString());
                 }
                 else
                 {
                     Atualizar = true;
                     Ids_InscricaoFalse[i] = int.Parse(dgv_Alunos.Rows[i].Cells[0].Value.ToString());
+                    TurmasAlteracoes[i] = int.Parse(dgv_Alunos.Rows[i].Cells[6].Value.ToString());
                 }
             }
 
 
             if (Cadastrar)
             {
-                GerenciaBanco.CadastrarInscricoesTurma(Ids_Inscricao, int.Parse(msk_IdTurma.Text));
+                GerenciaBanco.CadastrarInscricoesTurma(Ids_Inscricao, Turmas);
             }
 
             if (Atualizar)
             {
-                GerenciaBanco.AtualizaInscricoesTurma(Ids_InscricaoFalse, int.Parse(msk_IdTurma.Text));
+                GerenciaBanco.AtualizaInscricoesTurma(Ids_InscricaoFalse, TurmasAlteracoes);
             }
 
             if (Cadastrar || Atualizar)

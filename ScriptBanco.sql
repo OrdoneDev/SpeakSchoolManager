@@ -122,7 +122,7 @@ Create table SysProtected.Historico_Funcionario (
 )
 go
 
-Create trigger TGR_HistoricoFuncionariosAdmissao
+Create trigger TGR_FuncionariosAdmissaoHistorico
 on SysProtected.Funcionarios
 after insert
 as
@@ -135,7 +135,7 @@ begin
 end
 go
 
-Create trigger TGR_HistoricoFuncionariosModificaSituacao
+Create trigger TGR_FuncionariosModificaSituacaoHistorico
 on SysProtected.Funcionarios
 after update
 as
@@ -282,7 +282,7 @@ Create table SysProtected.Historico_Aluno (
 )
 go
 
-Create trigger TGR_HistoricoAlunos
+Create trigger TGR_AlunosHistorico
 on SysProtected.Alunos
 after insert
 as
@@ -295,7 +295,7 @@ begin
 end
 go
 
-Create trigger TGR_HistoricoAlunoModificaSituacao
+Create trigger TGR_AlunoModificaSituacaoHistorico
 on SysProtected.Alunos
 after update
 as
@@ -367,6 +367,36 @@ Create table SysProtected.Negociacao (
 )
 go
 
+Create trigger TGR_AlunoRealizaNegociacaoHistorico
+on SysProtected.Negociacao
+after insert
+as
+begin
+	declare @Id_Aluno int;
+	declare @Nome_Plano varchar(40);
+	declare @Parcelas tinyint;
+	declare @Situacao bit;
+	declare @SituacaoParcela varchar(7);
+	
+	select @Id_Aluno = Id_Aluno from inserted;
+	select @Nome_Plano = P.Nome from inserted N INNER JOIN SysProtected.Planos P
+	on N.Id_Plano = P.Id_Idioma where N.Id_Aluno = @Id_Aluno;
+	select @Parcelas = Parcelas from inserted;
+	select @Situacao = Situacao from inserted;
+
+	if (@Situacao = 0)
+	begin
+		set @SituacaoParcela = 'À pagar';
+	end
+	else
+	begin
+		set @SituacaoParcela = 'Pagas';
+	end
+	
+	Insert into SysProtected.Historico_Aluno values (@Id_Aluno, Getdate( ), 'Aluno efetuou compra do plano '+CONVERT(varchar(40), @Nome_Plano)+' no dia de hoje no total de '+CONVERT(varchar(2), @Parcelas)+' parcelas '+CONVERT(varchar(7), @SituacaoParcela)+'.');
+end
+go
+
 Create unique index Unica_Negociacao
    on SysProtected.Negociacao (Id_Aluno, Id_Plano); 
 go
@@ -411,14 +441,68 @@ Create table SysProtected.Mensalidades (
 )
 go
 
+Create trigger TGR_MensalidadesFuncionariosHistorico
+on SysProtected.Mensalidades
+after insert
+as
+begin
+	declare @Id_Funcionario int;
+	declare @Numero_Parcela int;
+	declare @Situacao bit;
+
+	select @Id_Funcionario = FU.Id_Funcionario from inserted M INNER JOIN SysProtected.Financeiro FI
+	on M.Id_Financeiro = FI.Id_Financeiro INNER JOIN SysProtected.Funcionarios FU
+	on FI.Id_Funcionario = FU.Id_Funcionario;
+
+	if (@Id_Funcionario is not null)
+	begin
+		select @Numero_Parcela = Numero_Parcela from inserted;
+
+		select @Situacao = Situacao from inserted;
+
+		if (@Situacao = 1)
+		begin
+			Insert into SysProtected.Historico_Funcionario values (@Id_Funcionario, Getdate( ), 'O '+CONVERT(varchar(5), @Numero_Parcela)+' pagamento do funcionário foi depositado no dia de hoje.');
+		end
+	end
+end
+go
+
+Create trigger TGR_MensalidadesAlunosHistorico
+on SysProtected.Mensalidades
+after update
+as
+begin
+	declare @Id_Aluno int;
+	declare @Numero_Parcela tinyint;
+	declare @Situacao bit;
+
+	select @Id_Aluno = I.Id_Aluno from inserted M INNER JOIN SysProtected.Inscricao I
+	on M.Id_Negociacao = I.Id_Negociacao;
+	
+	select @Numero_Parcela = Numero_Parcela from inserted;
+
+	select @Situacao = Situacao from inserted;
+	
+	if (@Situacao = 1)
+	begin
+		Insert into SysProtected.Historico_Aluno values (@Id_Aluno, Getdate( ), 'Aluno efetuou o pagamento da '+CONVERT(varchar(2), @Numero_Parcela)+' parcela no dia de hoje.');
+	end
+end
+go
+
 Create unique index Unica_Negociacao_Mensalidades
    on SysProtected.Mensalidades (Id_Financeiro, Id_Negociacao, Numero_Parcela, Data);
 go
 
 CREATE VIEW AllMensalidades AS
-	Select M.Id_Mensalidade as 'Código da mensalidade', A.Id_Aluno 'Código do aluno', M.Numero_Parcela
-	as 'Número da parcela', M.Situacao as 'Situação', M.Data as 'Data de vencimento', N.Parcelas as
-	'Número total de parcelas', case when M.Situacao = 1 then 'Pago' else 'A receber' end 'Situação total',
+	Select M.Id_Mensalidade		as 'Código da mensalidade',
+	A.Id_Aluno					as 'Código do aluno',
+	M.Numero_Parcela			as 'Número da parcela',
+	M.Situacao					as 'Situação',
+	M.Data						as 'Data de vencimento',
+	N.Parcelas					as 'Número total de parcelas',
+	case when M.Situacao = 1	then 'Pago' else 'A receber' end 'Situação total',
 	A.Nome from SysProtected.Mensalidades M INNER JOIN SysProtected.Negociacao N	on M.Id_Negociacao = 
 	N.Id_Negociacao INNER JOIN SysProtected.Alunos A on N.Id_Aluno = A.Id_Aluno
 GO
@@ -480,11 +564,11 @@ Create unique index Unica_Inscricao
 go
 
 CREATE VIEW AllInscricoes AS
-	Select I.Id_Inscricao as 'Código da inscrição', 
-	A.Id_Aluno as 'Código do aluno',
-	A.Nome as 'Nome do aluno', 
-	I.Id_Negociacao as 'Código da negociação', 
-	I.Data as 'Data de Inscricao', 
+	Select I.Id_Inscricao	as 'Código da inscrição', 
+	A.Id_Aluno				as 'Código do aluno',
+	A.Nome					as 'Nome do aluno', 
+	I.Id_Negociacao			as 'Código da negociação', 
+	I.Data					as 'Data de Inscricao', 
 	case when I.Status = 1 then 'Ativo' 
 	else 'Inátivo' end 'Status da inscrição'
 	from SysProtected.Inscricao I INNER JOIN SysProtected.Alunos A
@@ -514,6 +598,42 @@ Create table SysProtected.Boletim (
 	Media											As ((Nota1 + Nota2) / 2),
 	Numero_Faltas		Tinyint			null		Check (Numero_Faltas >= 0)
 )
+go
+
+Create trigger TGR_BoletimAlunosHistorico
+on SysProtected.Boletim
+after update
+as
+begin
+	declare @Id_Aluno int;
+	declare @Nota1 float;
+	declare @Nota2 float;
+	declare @Numero_Faltas tinyint;
+
+	select @Id_Aluno = I.Id_Aluno from inserted B INNER JOIN SysProtected.Inscricao I
+	on B.Id_Inscricao = I.Id_Inscricao;
+	
+	select @Nota1 = Nota1 from inserted;
+
+	if (@Nota1 is not null)
+	begin
+		Insert into SysProtected.Historico_Aluno values (@Id_Aluno, Getdate( ), 'A nota da 1 prova do aluno foi: '+CONVERT(varchar(4), @Nota1));
+	end
+
+	select @Nota2 = Nota2 from inserted;
+	
+	if (@Nota2 is not null)
+	begin
+		Insert into SysProtected.Historico_Aluno values (@Id_Aluno, Getdate( ), 'A nota da 1 prova do aluno foi: '+CONVERT(varchar(4), @Nota2));
+	end
+
+	select @Numero_Faltas = Numero_Faltas from inserted;
+
+	if (@Numero_Faltas is not null)
+	begin
+		Insert into SysProtected.Historico_Aluno values (@Id_Aluno, Getdate( ), 'O aluno possui: '+CONVERT(varchar(3), @Numero_Faltas)+' faltas');
+	end
+end
 go
 
 Create trigger TGR_InscricaoBoletimAluno
@@ -561,6 +681,22 @@ Create table SysProtected.Escalas (
 )
 go
 
+Create trigger TGR_EscalaFuncionariosHistorico
+on SysProtected.Escalas
+after insert
+as
+begin
+	declare @Id_Funcionario int;
+	declare @Data Date;
+	declare @Hora_Entrada Time;
+	declare @Hora_Saida Time;
+
+	select @Id_Funcionario = Id_Funcionario, @Data = Data, @Hora_Entrada = Hora_Entrada, @Hora_Saida = Hora_Saida from inserted;
+
+	Insert into SysProtected.Historico_Funcionario values (@Id_Funcionario, Getdate( ), 'O funcionário foi escalado para trabalhar no dia '+CONVERT(varchar(12), @Data, 101)+' às '+CONVERT(varchar(5), @Hora_Entrada)+' até '+CONVERT(varchar(5), @Hora_Saida)+'.');
+end
+go
+
 Create unique index Unica_Escala
 	on SysProtected.Escalas (Id_Funcionario, Data, Hora_Entrada, Hora_Saida);
 go
@@ -588,6 +724,24 @@ Create table SysProtected.Turmas (
 )
 go
 
+Create trigger TGR_FuncionarioTurmasHistorico
+on SysProtected.Turmas
+after insert
+as
+begin
+	declare @Id_Funcionario int;
+	declare @Nome_Plano		varchar(40);
+	declare @Sala			tinyint;
+
+	select @Id_Funcionario = E.Id_Funcionario, @Nome_Plano = P.Nome, @Sala = T.Sala 
+	from SysProtected.Planos P INNER JOIN inserted T 
+	on P.Id_Plano = T.Id_Plano INNER JOIN SysProtected.Escalas E 
+	on T.Id_Escala = E.Id_Escala;
+
+	Insert into SysProtected.Historico_Funcionario values (@Id_Funcionario, Getdate( ), 'Professor foi escalado para ministrar aula de '+CONVERT(varchar(40), @Nome_Plano)+' na sala '+CONVERT(varchar(3), @Sala)+'.');
+end
+go
+
 Create unique index Unica_Turma
 	on SysProtected.Turmas (Id_Plano, Id_Escala, Sala);
 go
@@ -597,6 +751,22 @@ Create table SysProtected.Inscricoes_Turmas (
 	Id_Inscricao		int				not null	Foreign key references SysProtected.Inscricao (Id_Inscricao),
 	Id_Turma			int				not null	Foreign key references SysProtected.Turmas (Id_Turma)
 )
+go
+
+Create trigger TGR_AlunosVinculadosHistorico
+on SysProtected.Inscricoes_Turmas
+after insert
+as
+begin
+	declare @Id_Aluno int;
+	declare @Sala tinyint;
+
+	select @Id_Aluno = I.Id_Aluno, @Sala = T.Sala from SysProtected.Turmas T INNER JOIN inserted IT 
+	on T.Id_Turma = IT.Id_Turma INNER JOIN SysProtected.Inscricao I
+	on IT.Id_Inscricao = I.Id_Inscricao;
+
+	Insert into SysProtected.Historico_Aluno values (@Id_Aluno, Getdate( ), 'O aluno foi selecionado para participar das aulas na sala '+CONVERT(varchar(3), @Sala)+'.');
+end
 go
 
 Create unique index Unica_Inscricao_Turma
@@ -653,6 +823,60 @@ Create table SysProtected.Lista_Presenca (
 	Chamada				bit				null,
 	Data				date			null
 )
+go
+
+Create trigger TGR_ListaPresencaHistorico
+on SysProtected.Lista_Presenca
+after update
+as
+begin
+	declare @Id_Aluno int;
+	declare @Chamada bit;
+	declare @Presenca varchar(10);
+
+	select @Id_Aluno = I.Id_Aluno, @Chamada = L.Chamada from inserted L INNER JOIN SysProtected.Inscricoes_Turmas IT
+	on L.Id_Inscricao_Turma = IT.Id_Inscricao_Turma INNER JOIN SysProtected.Inscricao I
+	on IT.Id_Inscricao = I.Id_Inscricao;
+
+	if (@Chamada = 0)
+	begin
+		set @Presenca = 'ausente'
+	end
+	else
+	begin
+		set @Presenca = 'presente'
+	end
+
+	Insert into SysProtected.Historico_Aluno values (@Id_Aluno, Getdate( ), 'No dia de hoje o aluno está '+CONVERT(varchar(10), @Presenca)+' na aula.');
+end
+go
+
+Create view VerificarListaPresenca as
+	Select	LP.Id_Presenca,
+			LP.Data,
+			IT.Id_Turma
+	from SysProtected.Lista_Presenca LP INNER JOIN SysProtected.Inscricoes_Turmas IT
+	on LP.Id_Inscricao_Turma = IT.Id_Inscricao_Turma
+go
+
+Create view ListaPresenca as
+	select	L.Id_Presenca,
+			ROW_NUMBER() OVER(ORDER BY L.Id_Presenca)	as 'Nº chamada',
+			A.Nome										as 'Nome do aluno',
+			L.Chamada									as 'Presença',
+			L.Data										as 'Dia da aula',
+			T.Id_Turma									as 'Código da turma',
+			T.Sala										as 'Número da sala',
+			F.Nome										as 'Nome do professor',
+			P.Nome										as 'Curso'
+	from SysProtected.Lista_Presenca L RIGHT JOIN SysProtected.Inscricoes_Turmas IT
+	on L.Id_Inscricao_Turma = IT.Id_Inscricao_Turma INNER JOIN SysProtected.Inscricao I
+	on IT.Id_Inscricao = I.Id_Inscricao INNER JOIN SysProtected.Alunos A
+	on I.Id_Aluno = A.Id_Aluno INNER JOIN SysProtected.Turmas T
+	on IT.Id_Turma = T.Id_Turma INNER JOIN SysProtected.Escalas E
+	on T.Id_Escala = E.Id_Escala INNER JOIN SysProtected.Funcionarios F
+	on E.Id_Funcionario = F.Id_Funcionario INNER JOIN SysProtected.Planos P
+	on T.Id_Plano = P.Id_Plano
 go
 
 Create unique index Unica_Lista_Presenca

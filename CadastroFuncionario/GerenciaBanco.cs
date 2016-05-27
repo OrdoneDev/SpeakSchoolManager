@@ -494,7 +494,7 @@ namespace CadastroFuncionario
             return true;
         }
         
-        public static void CadastrarInscricoesTurma(int[] Id_Inscricao, int Id_Turma)
+        public static void CadastrarInscricoesTurma(int[] Id_Inscricao, int[] Id_Turma)
         {
             SqlConnection conexao = new SqlConnection(strConexao);
             SqlCommand cmd;
@@ -511,7 +511,7 @@ namespace CadastroFuncionario
                 {
                     if (Id_Inscricao[i] != 0)
                     {
-                        Id_Valida = getInscricaoTurma(Id_Inscricao[i], Id_Turma, Id_Valida);
+                        Id_Valida = getInscricaoTurma(Id_Inscricao[i], Id_Turma[i], Id_Valida);
 
                         if (Id_Valida != 0)
                         {
@@ -527,7 +527,7 @@ namespace CadastroFuncionario
                         {
                             cmd.CommandText = "Insert into SysProtected.Inscricoes_Turmas (Id_Inscricao, Id_Turma) values (@Id_Inscricao, @Id_Turma)";
                             cmd.Parameters.Add(new SqlParameter("@Id_Inscricao", Id_Inscricao[i]));
-                            cmd.Parameters.Add(new SqlParameter("@Id_Turma", Id_Turma));
+                            cmd.Parameters.Add(new SqlParameter("@Id_Turma", Id_Turma[i]));
 
                             cmd.CommandType = CommandType.Text;
                             cmd.ExecuteNonQuery();
@@ -799,7 +799,7 @@ namespace CadastroFuncionario
             return true;
         }
 
-        public static void AtualizaInscricoesTurma(int[] Id_InscricaoFalse, int Id_Turma)
+        public static void AtualizaInscricoesTurma(int[] Id_InscricaoFalse, int[] Id_Turma)
         {
             SqlConnection conexao = new SqlConnection(strConexao);
             SqlCommand cmd;
@@ -816,7 +816,7 @@ namespace CadastroFuncionario
                 {
                     if (Id_InscricaoFalse[i] != 0)
                     {
-                        Id_Valida = getId_InscricaoAlteracao(Id_InscricaoFalse[i], Id_Turma, Id_Valida, Continua);
+                        Id_Valida = getId_InscricaoAlteracao(Id_InscricaoFalse[i], Id_Turma[i], Id_Valida, Continua);
 
                         if (Id_Valida == 0)
                             Id_InscricaoFalse[i] = 0;

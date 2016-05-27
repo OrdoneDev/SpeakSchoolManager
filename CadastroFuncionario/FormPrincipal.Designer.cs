@@ -47,13 +47,13 @@
             this.financeiroEmpresaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.novaTurmaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vincularAuloATurmaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listaDeChamadaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.negociaçãoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.aquisiçãoDeCursoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mensalidadesDoAlunoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.alterarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inscriçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.boletimDoAlunoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listaDeChamadaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -168,9 +168,9 @@
             // cadastrarToolStripMenuItem2
             // 
             this.cadastrarToolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.financeiroEmpresaToolStripMenuItem,
             this.novoPlanoToolStripMenuItem,
             this.novaEscalaDoFuncionárioToolStripMenuItem,
-            this.financeiroEmpresaToolStripMenuItem,
             this.novaTurmaToolStripMenuItem,
             this.vincularAuloATurmaToolStripMenuItem,
             this.listaDeChamadaToolStripMenuItem});
@@ -212,6 +212,13 @@
             this.vincularAuloATurmaToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
             this.vincularAuloATurmaToolStripMenuItem.Text = "Vincular aulo à turma...";
             this.vincularAuloATurmaToolStripMenuItem.Click += new System.EventHandler(this.vincularAuloATurmaToolStripMenuItem_Click);
+            // 
+            // listaDeChamadaToolStripMenuItem
+            // 
+            this.listaDeChamadaToolStripMenuItem.Name = "listaDeChamadaToolStripMenuItem";
+            this.listaDeChamadaToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
+            this.listaDeChamadaToolStripMenuItem.Text = "Lista de chamada...";
+            this.listaDeChamadaToolStripMenuItem.Click += new System.EventHandler(this.listaDeChamadaToolStripMenuItem_Click);
             // 
             // negociaçãoToolStripMenuItem1
             // 
@@ -258,13 +265,6 @@
             this.boletimDoAlunoToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.boletimDoAlunoToolStripMenuItem.Text = "Boletim do aluno...";
             this.boletimDoAlunoToolStripMenuItem.Click += new System.EventHandler(this.boletimDoAlunoToolStripMenuItem_Click);
-            // 
-            // listaDeChamadaToolStripMenuItem
-            // 
-            this.listaDeChamadaToolStripMenuItem.Name = "listaDeChamadaToolStripMenuItem";
-            this.listaDeChamadaToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
-            this.listaDeChamadaToolStripMenuItem.Text = "Lista de chamada...";
-            this.listaDeChamadaToolStripMenuItem.Click += new System.EventHandler(this.listaDeChamadaToolStripMenuItem_Click);
             // 
             // FormPrincipal
             // 
