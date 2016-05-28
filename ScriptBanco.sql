@@ -122,6 +122,17 @@ Create table SysProtected.Historico_Funcionario (
 )
 go
 
+CREATE VIEW HistoricoFuncionario AS
+	select	FU.Id_Funcionario,
+			HF.Id_Historico,
+			FU.Foto,
+			FU.Nome,
+			HF.Data,
+			HF.Descricao
+	from SysProtected.Funcionarios FU INNER JOIN SysProtected.Historico_Funcionario HF
+	on FU.Id_Funcionario = HF.Id_Funcionario
+GO
+
 Create trigger TGR_FuncionariosAdmissaoHistorico
 on SysProtected.Funcionarios
 after insert
@@ -231,6 +242,17 @@ go
 Create unique index Alunos
    on SysProtected.Alunos (Nome, DataNascimento, Historico_Escolar, Numero); 
 go
+
+CREATE VIEW HistoricoAluno AS
+	select	A.Id_Aluno,
+			H.Id_Historico,
+			A.Foto,
+			A.Nome,
+			H.Data,
+			H.Descricao
+	from SysProtected.Alunos A INNER JOIN SysProtected.Historico_Aluno H
+	on A.Id_Aluno = H.Id_Aluno
+GO
 
 CREATE PROCEDURE CadastroAluno
 	@Id_Responsavel		int,

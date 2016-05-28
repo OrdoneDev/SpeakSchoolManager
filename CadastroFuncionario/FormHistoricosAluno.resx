@@ -117,9 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btn_FiltrarNome.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btn_FiltrarNome.Location" type="System.Drawing.Point, System.Drawing">
-    <value>474, 16</value>
+    <value>448, 16</value>
   </data>
   <data name="btn_FiltrarNome.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 23</value>
@@ -138,13 +142,16 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btn_FiltrarNome.Parent" xml:space="preserve">
-    <value>group_HistoricoFuncionario</value>
+    <value>group_HistoricoAluno</value>
   </data>
   <data name="&gt;&gt;btn_FiltrarNome.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="btn_FiltrarId.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="btn_FiltrarId.Location" type="System.Drawing.Point, System.Drawing">
-    <value>125, 17</value>
+    <value>99, 17</value>
   </data>
   <data name="btn_FiltrarId.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -162,13 +169,13 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btn_FiltrarId.Parent" xml:space="preserve">
-    <value>group_HistoricoFuncionario</value>
+    <value>group_HistoricoAluno</value>
   </data>
   <data name="&gt;&gt;btn_FiltrarId.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="cmb_Nome.Location" type="System.Drawing.Point, System.Drawing">
-    <value>247, 18</value>
+    <value>221, 18</value>
   </data>
   <data name="cmb_Nome.Size" type="System.Drawing.Size, System.Drawing">
     <value>221, 21</value>
@@ -183,7 +190,7 @@
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;cmb_Nome.Parent" xml:space="preserve">
-    <value>group_HistoricoFuncionario</value>
+    <value>group_HistoricoAluno</value>
   </data>
   <data name="&gt;&gt;cmb_Nome.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -191,12 +198,11 @@
   <data name="lbl_Nome.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="lbl_Nome.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="lbl_Nome.Location" type="System.Drawing.Point, System.Drawing">
-    <value>206, 21</value>
+    <value>180, 21</value>
   </data>
   <data name="lbl_Nome.Size" type="System.Drawing.Size, System.Drawing">
     <value>38, 13</value>
@@ -214,7 +220,7 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lbl_Nome.Parent" xml:space="preserve">
-    <value>group_HistoricoFuncionario</value>
+    <value>group_HistoricoAluno</value>
   </data>
   <data name="&gt;&gt;lbl_Nome.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -229,13 +235,13 @@
     <value>6, 22</value>
   </data>
   <data name="lbl_Id.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 13</value>
+    <value>48, 13</value>
   </data>
   <data name="lbl_Id.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
   <data name="lbl_Id.Text" xml:space="preserve">
-    <value>Id funcionário:</value>
+    <value>Id aluno:</value>
   </data>
   <data name="&gt;&gt;lbl_Id.Name" xml:space="preserve">
     <value>lbl_Id</value>
@@ -244,33 +250,33 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lbl_Id.Parent" xml:space="preserve">
-    <value>group_HistoricoFuncionario</value>
+    <value>group_HistoricoAluno</value>
   </data>
   <data name="&gt;&gt;lbl_Id.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="msk_IdFuncionario.Location" type="System.Drawing.Point, System.Drawing">
-    <value>86, 19</value>
+  <data name="msk_IdAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>60, 19</value>
   </data>
-  <data name="msk_IdFuncionario.Mask" xml:space="preserve">
+  <data name="msk_IdAluno.Mask" xml:space="preserve">
     <value>0000</value>
   </data>
-  <data name="msk_IdFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="msk_IdAluno.Size" type="System.Drawing.Size, System.Drawing">
     <value>33, 20</value>
   </data>
-  <data name="msk_IdFuncionario.TabIndex" type="System.Int32, mscorlib">
+  <data name="msk_IdAluno.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;msk_IdFuncionario.Name" xml:space="preserve">
-    <value>msk_IdFuncionario</value>
+  <data name="&gt;&gt;msk_IdAluno.Name" xml:space="preserve">
+    <value>msk_IdAluno</value>
   </data>
-  <data name="&gt;&gt;msk_IdFuncionario.Type" xml:space="preserve">
+  <data name="&gt;&gt;msk_IdAluno.Type" xml:space="preserve">
     <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;msk_IdFuncionario.Parent" xml:space="preserve">
-    <value>group_HistoricoFuncionario</value>
+  <data name="&gt;&gt;msk_IdAluno.Parent" xml:space="preserve">
+    <value>group_HistoricoAluno</value>
   </data>
-  <data name="&gt;&gt;msk_IdFuncionario.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;msk_IdAluno.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
   <data name="idHistoricoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
@@ -279,11 +285,11 @@
   <data name="idHistoricoDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
     <value>112</value>
   </data>
-  <data name="idFuncionarioDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Código do funcionário</value>
+  <data name="idAlunoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Código do aluno</value>
   </data>
-  <data name="idFuncionarioDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
-    <value>123</value>
+  <data name="idAlunoDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>77</value>
   </data>
   <data name="fotoDataGridViewImageColumn.HeaderText" xml:space="preserve">
     <value>Foto</value>
@@ -309,74 +315,74 @@
   <data name="descricaoDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
     <value>80</value>
   </data>
-  <metadata name="historicoFuncionarioBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="historicoAlunoBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>171, 17</value>
   </metadata>
-  <metadata name="dB_EscolaDataSet8.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="dB_EscolaDataSet9.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <data name="dgv_HistoricoFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="dgv_HistoricoAluno.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 45</value>
   </data>
-  <data name="dgv_HistoricoFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="dgv_HistoricoAluno.Size" type="System.Drawing.Size, System.Drawing">
     <value>969, 258</value>
   </data>
-  <data name="dgv_HistoricoFuncionario.TabIndex" type="System.Int32, mscorlib">
+  <data name="dgv_HistoricoAluno.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;dgv_HistoricoFuncionario.Name" xml:space="preserve">
-    <value>dgv_HistoricoFuncionario</value>
+  <data name="&gt;&gt;dgv_HistoricoAluno.Name" xml:space="preserve">
+    <value>dgv_HistoricoAluno</value>
   </data>
-  <data name="&gt;&gt;dgv_HistoricoFuncionario.Type" xml:space="preserve">
+  <data name="&gt;&gt;dgv_HistoricoAluno.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;dgv_HistoricoFuncionario.Parent" xml:space="preserve">
-    <value>group_HistoricoFuncionario</value>
+  <data name="&gt;&gt;dgv_HistoricoAluno.Parent" xml:space="preserve">
+    <value>group_HistoricoAluno</value>
   </data>
-  <data name="&gt;&gt;dgv_HistoricoFuncionario.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;dgv_HistoricoAluno.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="group_HistoricoFuncionario.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 13</value>
+  <data name="group_HistoricoAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 15</value>
   </data>
-  <data name="group_HistoricoFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="group_HistoricoAluno.Size" type="System.Drawing.Size, System.Drawing">
     <value>981, 309</value>
   </data>
-  <data name="group_HistoricoFuncionario.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="group_HistoricoAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="group_HistoricoFuncionario.Text" xml:space="preserve">
-    <value>Históricos do funcionário</value>
+  <data name="group_HistoricoAluno.Text" xml:space="preserve">
+    <value>Históricos do aluno</value>
   </data>
-  <data name="&gt;&gt;group_HistoricoFuncionario.Name" xml:space="preserve">
-    <value>group_HistoricoFuncionario</value>
+  <data name="&gt;&gt;group_HistoricoAluno.Name" xml:space="preserve">
+    <value>group_HistoricoAluno</value>
   </data>
-  <data name="&gt;&gt;group_HistoricoFuncionario.Type" xml:space="preserve">
+  <data name="&gt;&gt;group_HistoricoAluno.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;group_HistoricoFuncionario.Parent" xml:space="preserve">
+  <data name="&gt;&gt;group_HistoricoAluno.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;group_HistoricoFuncionario.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;group_HistoricoAluno.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="dB_EscolaDataSet8.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="historicoFuncionarioTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>412, 17</value>
+  <metadata name="historicoAlunoTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>380, 17</value>
   </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>88</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1006, 334</value>
+    <value>1010, 338</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Históricos do funcionário</value>
+    <value>Históricos do aluno</value>
   </data>
   <data name="&gt;&gt;idHistoricoDataGridViewTextBoxColumn.Name" xml:space="preserve">
     <value>idHistoricoDataGridViewTextBoxColumn</value>
@@ -384,10 +390,10 @@
   <data name="&gt;&gt;idHistoricoDataGridViewTextBoxColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;idFuncionarioDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>idFuncionarioDataGridViewTextBoxColumn</value>
+  <data name="&gt;&gt;idAlunoDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>idAlunoDataGridViewTextBoxColumn</value>
   </data>
-  <data name="&gt;&gt;idFuncionarioDataGridViewTextBoxColumn.Type" xml:space="preserve">
+  <data name="&gt;&gt;idAlunoDataGridViewTextBoxColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;fotoDataGridViewImageColumn.Name" xml:space="preserve">
@@ -414,26 +420,26 @@
   <data name="&gt;&gt;descricaoDataGridViewTextBoxColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;historicoFuncionarioBindingSource.Name" xml:space="preserve">
-    <value>historicoFuncionarioBindingSource</value>
+  <data name="&gt;&gt;historicoAlunoBindingSource.Name" xml:space="preserve">
+    <value>historicoAlunoBindingSource</value>
   </data>
-  <data name="&gt;&gt;historicoFuncionarioBindingSource.Type" xml:space="preserve">
+  <data name="&gt;&gt;historicoAlunoBindingSource.Type" xml:space="preserve">
     <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;dB_EscolaDataSet8.Name" xml:space="preserve">
-    <value>dB_EscolaDataSet8</value>
+  <data name="&gt;&gt;dB_EscolaDataSet9.Name" xml:space="preserve">
+    <value>dB_EscolaDataSet9</value>
   </data>
-  <data name="&gt;&gt;dB_EscolaDataSet8.Type" xml:space="preserve">
-    <value>CadastroFuncionario.DB_EscolaDataSet8, DB_EscolaDataSet8.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="&gt;&gt;dB_EscolaDataSet9.Type" xml:space="preserve">
+    <value>CadastroFuncionario.DB_EscolaDataSet9, DB_EscolaDataSet9.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;historicoFuncionarioTableAdapter.Name" xml:space="preserve">
-    <value>historicoFuncionarioTableAdapter</value>
+  <data name="&gt;&gt;historicoAlunoTableAdapter.Name" xml:space="preserve">
+    <value>historicoAlunoTableAdapter</value>
   </data>
-  <data name="&gt;&gt;historicoFuncionarioTableAdapter.Type" xml:space="preserve">
-    <value>CadastroFuncionario.DB_EscolaDataSet8TableAdapters.HistoricoFuncionarioTableAdapter, DB_EscolaDataSet8.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="&gt;&gt;historicoAlunoTableAdapter.Type" xml:space="preserve">
+    <value>CadastroFuncionario.DB_EscolaDataSet9TableAdapters.HistoricoAlunoTableAdapter, DB_EscolaDataSet9.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>FormHistoricosFuncionario</value>
+    <value>FormHistoricosAluno</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema id="DB_EscolaDataSet8" targetNamespace="http://tempuri.org/DB_EscolaDataSet8.xsd" xmlns:mstns="http://tempuri.org/DB_EscolaDataSet8.xsd" xmlns="http://tempuri.org/DB_EscolaDataSet8.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+<xs:schema id="DB_EscolaDataSet9" targetNamespace="http://tempuri.org/DB_EscolaDataSet9.xsd" xmlns:mstns="http://tempuri.org/DB_EscolaDataSet9.xsd" xmlns="http://tempuri.org/DB_EscolaDataSet9.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
@@ -7,19 +7,19 @@
           <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DB_EscolaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DB_EscolaConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CadastroFuncionario.Properties.Settings.GlobalReference.Default.DB_EscolaConnectionString" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
-          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="HistoricoFuncionarioTableAdapter" GeneratorDataComponentClassName="HistoricoFuncionarioTableAdapter" Name="HistoricoFuncionario" UserDataComponentName="HistoricoFuncionarioTableAdapter">
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="HistoricoAlunoTableAdapter" GeneratorDataComponentClassName="HistoricoAlunoTableAdapter" Name="HistoricoAluno" UserDataComponentName="HistoricoAlunoTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="DB_EscolaConnectionString (Settings)" DbObjectName="DB_Escola.dbo.HistoricoFuncionario" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="DB_EscolaConnectionString (Settings)" DbObjectName="DB_Escola.dbo.HistoricoAluno" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>SELECT Id_Funcionario, Id_Historico, Foto, Nome, Data, Descricao FROM dbo.HistoricoFuncionario</CommandText>
+                    <CommandText>SELECT Id_Aluno, Id_Historico, Foto, Nome, Data, Descricao FROM dbo.HistoricoAluno</CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
             </MainSource>
             <Mappings>
-              <Mapping SourceColumn="Id_Funcionario" DataSetColumn="Id_Funcionario" />
+              <Mapping SourceColumn="Id_Aluno" DataSetColumn="Id_Aluno" />
               <Mapping SourceColumn="Id_Historico" DataSetColumn="Id_Historico" />
               <Mapping SourceColumn="Foto" DataSetColumn="Foto" />
               <Mapping SourceColumn="Nome" DataSetColumn="Nome" />
@@ -33,13 +33,13 @@
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="DB_EscolaDataSet8" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DB_EscolaDataSet8" msprop:Generator_UserDSName="DB_EscolaDataSet8">
+  <xs:element name="DB_EscolaDataSet9" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DB_EscolaDataSet9" msprop:Generator_UserDSName="DB_EscolaDataSet9">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="HistoricoFuncionario" msprop:Generator_TableClassName="HistoricoFuncionarioDataTable" msprop:Generator_TableVarName="tableHistoricoFuncionario" msprop:Generator_TablePropName="HistoricoFuncionario" msprop:Generator_RowDeletingName="HistoricoFuncionarioRowDeleting" msprop:Generator_RowChangingName="HistoricoFuncionarioRowChanging" msprop:Generator_RowEvHandlerName="HistoricoFuncionarioRowChangeEventHandler" msprop:Generator_RowDeletedName="HistoricoFuncionarioRowDeleted" msprop:Generator_UserTableName="HistoricoFuncionario" msprop:Generator_RowChangedName="HistoricoFuncionarioRowChanged" msprop:Generator_RowEvArgName="HistoricoFuncionarioRowChangeEvent" msprop:Generator_RowClassName="HistoricoFuncionarioRow">
+        <xs:element name="HistoricoAluno" msprop:Generator_TableClassName="HistoricoAlunoDataTable" msprop:Generator_TableVarName="tableHistoricoAluno" msprop:Generator_TablePropName="HistoricoAluno" msprop:Generator_RowDeletingName="HistoricoAlunoRowDeleting" msprop:Generator_RowChangingName="HistoricoAlunoRowChanging" msprop:Generator_RowEvHandlerName="HistoricoAlunoRowChangeEventHandler" msprop:Generator_RowDeletedName="HistoricoAlunoRowDeleted" msprop:Generator_UserTableName="HistoricoAluno" msprop:Generator_RowChangedName="HistoricoAlunoRowChanged" msprop:Generator_RowEvArgName="HistoricoAlunoRowChangeEvent" msprop:Generator_RowClassName="HistoricoAlunoRow">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="Id_Funcionario" msprop:Generator_ColumnVarNameInTable="columnId_Funcionario" msprop:Generator_ColumnPropNameInRow="Id_Funcionario" msprop:Generator_ColumnPropNameInTable="Id_FuncionarioColumn" msprop:Generator_UserColumnName="Id_Funcionario" type="xs:int" />
+              <xs:element name="Id_Aluno" msprop:Generator_ColumnVarNameInTable="columnId_Aluno" msprop:Generator_ColumnPropNameInRow="Id_Aluno" msprop:Generator_ColumnPropNameInTable="Id_AlunoColumn" msprop:Generator_UserColumnName="Id_Aluno" type="xs:int" />
               <xs:element name="Id_Historico" msprop:Generator_ColumnVarNameInTable="columnId_Historico" msprop:Generator_ColumnPropNameInRow="Id_Historico" msprop:Generator_ColumnPropNameInTable="Id_HistoricoColumn" msprop:Generator_UserColumnName="Id_Historico" type="xs:int" />
               <xs:element name="Foto" msprop:Generator_ColumnVarNameInTable="columnFoto" msprop:Generator_ColumnPropNameInRow="Foto" msprop:Generator_ColumnPropNameInTable="FotoColumn" msprop:Generator_UserColumnName="Foto" type="xs:base64Binary" minOccurs="0" />
               <xs:element name="Nome" msprop:Generator_ColumnVarNameInTable="columnNome" msprop:Generator_ColumnPropNameInRow="Nome" msprop:Generator_ColumnPropNameInTable="NomeColumn" msprop:Generator_UserColumnName="Nome">
@@ -63,8 +63,8 @@
       </xs:choice>
     </xs:complexType>
     <xs:unique name="Constraint1" msdata:PrimaryKey="true">
-      <xs:selector xpath=".//mstns:HistoricoFuncionario" />
-      <xs:field xpath="mstns:Id_Funcionario" />
+      <xs:selector xpath=".//mstns:HistoricoAluno" />
+      <xs:field xpath="mstns:Id_Aluno" />
       <xs:field xpath="mstns:Id_Historico" />
     </xs:unique>
   </xs:element>

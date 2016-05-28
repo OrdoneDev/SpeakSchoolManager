@@ -1,6 +1,6 @@
 ﻿namespace CadastroFuncionario
 {
-    partial class FormHistoricosFuncionario
+    partial class FormHistoricosAluno
     {
         /// <summary>
         /// Required designer variable.
@@ -29,42 +29,42 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormHistoricosFuncionario));
-            this.group_HistoricoFuncionario = new System.Windows.Forms.GroupBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormHistoricosAluno));
+            this.group_HistoricoAluno = new System.Windows.Forms.GroupBox();
             this.btn_FiltrarNome = new System.Windows.Forms.Button();
             this.btn_FiltrarId = new System.Windows.Forms.Button();
             this.cmb_Nome = new System.Windows.Forms.ComboBox();
             this.lbl_Nome = new System.Windows.Forms.Label();
             this.lbl_Id = new System.Windows.Forms.Label();
-            this.msk_IdFuncionario = new System.Windows.Forms.MaskedTextBox();
-            this.dgv_HistoricoFuncionario = new System.Windows.Forms.DataGridView();
+            this.msk_IdAluno = new System.Windows.Forms.MaskedTextBox();
+            this.dgv_HistoricoAluno = new System.Windows.Forms.DataGridView();
             this.idHistoricoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idFuncionarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idAlunoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fotoDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
             this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descricaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.historicoFuncionarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dB_EscolaDataSet8 = new CadastroFuncionario.DB_EscolaDataSet8();
-            this.historicoFuncionarioTableAdapter = new CadastroFuncionario.DB_EscolaDataSet8TableAdapters.HistoricoFuncionarioTableAdapter();
-            this.group_HistoricoFuncionario.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_HistoricoFuncionario)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.historicoFuncionarioBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dB_EscolaDataSet8)).BeginInit();
+            this.historicoAlunoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dB_EscolaDataSet9 = new CadastroFuncionario.DB_EscolaDataSet9();
+            this.historicoAlunoTableAdapter = new CadastroFuncionario.DB_EscolaDataSet9TableAdapters.HistoricoAlunoTableAdapter();
+            this.group_HistoricoAluno.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_HistoricoAluno)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.historicoAlunoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dB_EscolaDataSet9)).BeginInit();
             this.SuspendLayout();
             // 
-            // group_HistoricoFuncionario
+            // group_HistoricoAluno
             // 
-            this.group_HistoricoFuncionario.Controls.Add(this.btn_FiltrarNome);
-            this.group_HistoricoFuncionario.Controls.Add(this.btn_FiltrarId);
-            this.group_HistoricoFuncionario.Controls.Add(this.cmb_Nome);
-            this.group_HistoricoFuncionario.Controls.Add(this.lbl_Nome);
-            this.group_HistoricoFuncionario.Controls.Add(this.lbl_Id);
-            this.group_HistoricoFuncionario.Controls.Add(this.msk_IdFuncionario);
-            this.group_HistoricoFuncionario.Controls.Add(this.dgv_HistoricoFuncionario);
-            resources.ApplyResources(this.group_HistoricoFuncionario, "group_HistoricoFuncionario");
-            this.group_HistoricoFuncionario.Name = "group_HistoricoFuncionario";
-            this.group_HistoricoFuncionario.TabStop = false;
+            this.group_HistoricoAluno.Controls.Add(this.btn_FiltrarNome);
+            this.group_HistoricoAluno.Controls.Add(this.btn_FiltrarId);
+            this.group_HistoricoAluno.Controls.Add(this.cmb_Nome);
+            this.group_HistoricoAluno.Controls.Add(this.lbl_Nome);
+            this.group_HistoricoAluno.Controls.Add(this.lbl_Id);
+            this.group_HistoricoAluno.Controls.Add(this.msk_IdAluno);
+            this.group_HistoricoAluno.Controls.Add(this.dgv_HistoricoAluno);
+            resources.ApplyResources(this.group_HistoricoAluno, "group_HistoricoAluno");
+            this.group_HistoricoAluno.Name = "group_HistoricoAluno";
+            this.group_HistoricoAluno.TabStop = false;
             // 
             // btn_FiltrarNome
             // 
@@ -98,31 +98,31 @@
             resources.ApplyResources(this.lbl_Id, "lbl_Id");
             this.lbl_Id.Name = "lbl_Id";
             // 
-            // msk_IdFuncionario
+            // msk_IdAluno
             // 
-            resources.ApplyResources(this.msk_IdFuncionario, "msk_IdFuncionario");
-            this.msk_IdFuncionario.Name = "msk_IdFuncionario";
+            resources.ApplyResources(this.msk_IdAluno, "msk_IdAluno");
+            this.msk_IdAluno.Name = "msk_IdAluno";
             // 
-            // dgv_HistoricoFuncionario
+            // dgv_HistoricoAluno
             // 
-            this.dgv_HistoricoFuncionario.AllowUserToAddRows = false;
-            this.dgv_HistoricoFuncionario.AllowUserToDeleteRows = false;
-            this.dgv_HistoricoFuncionario.AutoGenerateColumns = false;
-            this.dgv_HistoricoFuncionario.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgv_HistoricoFuncionario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_HistoricoFuncionario.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgv_HistoricoAluno.AllowUserToAddRows = false;
+            this.dgv_HistoricoAluno.AllowUserToDeleteRows = false;
+            this.dgv_HistoricoAluno.AutoGenerateColumns = false;
+            this.dgv_HistoricoAluno.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_HistoricoAluno.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_HistoricoAluno.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idHistoricoDataGridViewTextBoxColumn,
-            this.idFuncionarioDataGridViewTextBoxColumn,
+            this.idAlunoDataGridViewTextBoxColumn,
             this.fotoDataGridViewImageColumn,
             this.nomeDataGridViewTextBoxColumn,
             this.dataDataGridViewTextBoxColumn,
             this.descricaoDataGridViewTextBoxColumn});
-            this.dgv_HistoricoFuncionario.DataSource = this.historicoFuncionarioBindingSource;
-            resources.ApplyResources(this.dgv_HistoricoFuncionario, "dgv_HistoricoFuncionario");
-            this.dgv_HistoricoFuncionario.Name = "dgv_HistoricoFuncionario";
-            this.dgv_HistoricoFuncionario.ReadOnly = true;
-            this.dgv_HistoricoFuncionario.CellMouseEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_HistoricoFuncionario_CellMouseEnter);
-            this.dgv_HistoricoFuncionario.CellMouseLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_HistoricoFuncionario_CellMouseLeave);
+            this.dgv_HistoricoAluno.DataSource = this.historicoAlunoBindingSource;
+            resources.ApplyResources(this.dgv_HistoricoAluno, "dgv_HistoricoAluno");
+            this.dgv_HistoricoAluno.Name = "dgv_HistoricoAluno";
+            this.dgv_HistoricoAluno.ReadOnly = true;
+            this.dgv_HistoricoAluno.CellMouseEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_HistoricoAluno_CellMouseEnter);
+            this.dgv_HistoricoAluno.CellMouseLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_HistoricoAluno_CellMouseLeave);
             // 
             // idHistoricoDataGridViewTextBoxColumn
             // 
@@ -132,13 +132,13 @@
             this.idHistoricoDataGridViewTextBoxColumn.Name = "idHistoricoDataGridViewTextBoxColumn";
             this.idHistoricoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // idFuncionarioDataGridViewTextBoxColumn
+            // idAlunoDataGridViewTextBoxColumn
             // 
-            this.idFuncionarioDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.idFuncionarioDataGridViewTextBoxColumn.DataPropertyName = "Id_Funcionario";
-            resources.ApplyResources(this.idFuncionarioDataGridViewTextBoxColumn, "idFuncionarioDataGridViewTextBoxColumn");
-            this.idFuncionarioDataGridViewTextBoxColumn.Name = "idFuncionarioDataGridViewTextBoxColumn";
-            this.idFuncionarioDataGridViewTextBoxColumn.ReadOnly = true;
+            this.idAlunoDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.idAlunoDataGridViewTextBoxColumn.DataPropertyName = "Id_Aluno";
+            resources.ApplyResources(this.idAlunoDataGridViewTextBoxColumn, "idAlunoDataGridViewTextBoxColumn");
+            this.idAlunoDataGridViewTextBoxColumn.Name = "idAlunoDataGridViewTextBoxColumn";
+            this.idAlunoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // fotoDataGridViewImageColumn
             // 
@@ -173,53 +173,53 @@
             this.descricaoDataGridViewTextBoxColumn.Name = "descricaoDataGridViewTextBoxColumn";
             this.descricaoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // historicoFuncionarioBindingSource
+            // historicoAlunoBindingSource
             // 
-            this.historicoFuncionarioBindingSource.DataMember = "HistoricoFuncionario";
-            this.historicoFuncionarioBindingSource.DataSource = this.dB_EscolaDataSet8;
+            this.historicoAlunoBindingSource.DataMember = "HistoricoAluno";
+            this.historicoAlunoBindingSource.DataSource = this.dB_EscolaDataSet9;
             // 
-            // dB_EscolaDataSet8
+            // dB_EscolaDataSet9
             // 
-            this.dB_EscolaDataSet8.DataSetName = "DB_EscolaDataSet8";
-            this.dB_EscolaDataSet8.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.dB_EscolaDataSet9.DataSetName = "DB_EscolaDataSet9";
+            this.dB_EscolaDataSet9.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // historicoFuncionarioTableAdapter
+            // historicoAlunoTableAdapter
             // 
-            this.historicoFuncionarioTableAdapter.ClearBeforeFill = true;
+            this.historicoAlunoTableAdapter.ClearBeforeFill = true;
             // 
-            // FormHistoricosFuncionario
+            // FormHistoricosAluno
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.group_HistoricoFuncionario);
+            this.Controls.Add(this.group_HistoricoAluno);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MinimizeBox = false;
-            this.Name = "FormHistoricosFuncionario";
-            this.Load += new System.EventHandler(this.FormHistoricosFuncionario_Load);
-            this.group_HistoricoFuncionario.ResumeLayout(false);
-            this.group_HistoricoFuncionario.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_HistoricoFuncionario)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.historicoFuncionarioBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dB_EscolaDataSet8)).EndInit();
+            this.Name = "FormHistoricosAluno";
+            this.Load += new System.EventHandler(this.FormHistoricosAluno_Load);
+            this.group_HistoricoAluno.ResumeLayout(false);
+            this.group_HistoricoAluno.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_HistoricoAluno)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.historicoAlunoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dB_EscolaDataSet9)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox group_HistoricoFuncionario;
-        private System.Windows.Forms.DataGridView dgv_HistoricoFuncionario;
+        private System.Windows.Forms.GroupBox group_HistoricoAluno;
         private System.Windows.Forms.Button btn_FiltrarNome;
         private System.Windows.Forms.Button btn_FiltrarId;
         private System.Windows.Forms.ComboBox cmb_Nome;
         private System.Windows.Forms.Label lbl_Nome;
         private System.Windows.Forms.Label lbl_Id;
-        private System.Windows.Forms.MaskedTextBox msk_IdFuncionario;
-        private DB_EscolaDataSet8 dB_EscolaDataSet8;
-        private System.Windows.Forms.BindingSource historicoFuncionarioBindingSource;
-        private DB_EscolaDataSet8TableAdapters.HistoricoFuncionarioTableAdapter historicoFuncionarioTableAdapter;
+        private System.Windows.Forms.MaskedTextBox msk_IdAluno;
+        private System.Windows.Forms.DataGridView dgv_HistoricoAluno;
+        private DB_EscolaDataSet9 dB_EscolaDataSet9;
+        private System.Windows.Forms.BindingSource historicoAlunoBindingSource;
+        private DB_EscolaDataSet9TableAdapters.HistoricoAlunoTableAdapter historicoAlunoTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn idHistoricoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idFuncionarioDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idAlunoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewImageColumn fotoDataGridViewImageColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataDataGridViewTextBoxColumn;

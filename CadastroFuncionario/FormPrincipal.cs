@@ -156,5 +156,12 @@ namespace CadastroFuncionario
             form.MdiParent = this;
             form.Show();
         }
+
+        private void históricosRegistradosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FormHistoricosAluno form = new FormHistoricosAluno();
+            form.MdiParent = this;
+            form.Show();
+        }
     }
 }
