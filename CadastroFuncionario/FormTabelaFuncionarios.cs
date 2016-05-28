@@ -44,7 +44,7 @@ namespace CadastroFuncionario
 
         private void cmb_Nome_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
-            ValidaCampos.GetLista(cmb_Nome, "TOP 5 Nome, Id_Funcionario", "Nome", e, "Funcionarios");
+            ValidaCampos.GetLista(cmb_Nome, "TOP 5 Nome", "Nome", e, "Funcionarios");
         }
 
         private void cmb_Nome_SelectedValueChanged(object sender, EventArgs e)
@@ -63,7 +63,7 @@ namespace CadastroFuncionario
 
             msk_Id.BackColor = System.Drawing.Color.White;
 
-            dgv_Funcionarios.DataSource = GerenciaBanco.getFuncionarioFiltro(msk_Id.Text, "Id_Funcionario");
+            dgv_Funcionarios.DataSource = GerenciaBanco.getFiltro(msk_Id.Text, "Id_Funcionario", "SysProtected.Funcionarios");
         }
 
         private void btn_FiltrarNome_Click(object sender, EventArgs e)
@@ -77,7 +77,7 @@ namespace CadastroFuncionario
 
             cmb_Nome.BackColor = System.Drawing.Color.White;
 
-            dgv_Funcionarios.DataSource = GerenciaBanco.getFuncionarioFiltro(cmb_Nome.Text, "Nome");
+            dgv_Funcionarios.DataSource = GerenciaBanco.getFiltro(cmb_Nome.Text, "Nome", "SysProtected.Funcionarios");
         }
 
         private void btn_FiltrarCPF_Click(object sender, EventArgs e)
@@ -91,7 +91,7 @@ namespace CadastroFuncionario
 
             msk_CPF.BackColor = System.Drawing.Color.White;
 
-            dgv_Funcionarios.DataSource = GerenciaBanco.getFuncionarioFiltro(msk_CPF.Text, "CPF");
+            dgv_Funcionarios.DataSource = GerenciaBanco.getFiltro(msk_CPF.Text, "CPF", "SysProtected.Funcionarios");
         }
 
         private void btn_FIltrarCargo_Click(object sender, EventArgs e)
@@ -104,7 +104,7 @@ namespace CadastroFuncionario
 
             msk_CPF.BackColor = System.Drawing.Color.White;
 
-            dgv_Funcionarios.DataSource = GerenciaBanco.getFuncionarioFiltro(cmb_Cargo.Text, "Cargo");
+            dgv_Funcionarios.DataSource = GerenciaBanco.getFiltro(cmb_Cargo.Text, "Cargo", "SysProtected.Funcionarios");
         }
     }
 }

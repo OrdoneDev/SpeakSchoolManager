@@ -58,6 +58,8 @@
             this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.enderecosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.funcionariosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.responsáveisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.históricosRegistradosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -88,7 +90,7 @@
             this.funcionariosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.novoFuncionarioToolStripMenuItem});
             this.funcionariosToolStripMenuItem.Name = "funcionariosToolStripMenuItem";
-            this.funcionariosToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.funcionariosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.funcionariosToolStripMenuItem.Text = "Cadastrar";
             // 
             // novoFuncionarioToolStripMenuItem
@@ -101,9 +103,10 @@
             // historicoToolStripMenuItem
             // 
             this.historicoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.funcionarioToolStripMenuItem});
+            this.funcionarioToolStripMenuItem,
+            this.históricosRegistradosToolStripMenuItem});
             this.historicoToolStripMenuItem.Name = "historicoToolStripMenuItem";
-            this.historicoToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.historicoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.historicoToolStripMenuItem.Text = "Histórico..";
             // 
             // funcionarioToolStripMenuItem
@@ -283,7 +286,8 @@
             // 
             this.editarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.enderecosToolStripMenuItem,
-            this.funcionariosToolStripMenuItem1});
+            this.funcionariosToolStripMenuItem1,
+            this.responsáveisToolStripMenuItem});
             this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
             this.editarToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
             this.editarToolStripMenuItem.Text = "Editar";
@@ -291,16 +295,30 @@
             // enderecosToolStripMenuItem
             // 
             this.enderecosToolStripMenuItem.Name = "enderecosToolStripMenuItem";
-            this.enderecosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.enderecosToolStripMenuItem.Text = "Enderecos...";
+            this.enderecosToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.enderecosToolStripMenuItem.Text = "Endereços...";
             this.enderecosToolStripMenuItem.Click += new System.EventHandler(this.enderecosToolStripMenuItem_Click);
             // 
             // funcionariosToolStripMenuItem1
             // 
             this.funcionariosToolStripMenuItem1.Name = "funcionariosToolStripMenuItem1";
-            this.funcionariosToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
-            this.funcionariosToolStripMenuItem1.Text = "Funcionarios...";
+            this.funcionariosToolStripMenuItem1.Size = new System.Drawing.Size(153, 22);
+            this.funcionariosToolStripMenuItem1.Text = "Funcionários...";
             this.funcionariosToolStripMenuItem1.Click += new System.EventHandler(this.funcionariosToolStripMenuItem1_Click);
+            // 
+            // responsáveisToolStripMenuItem
+            // 
+            this.responsáveisToolStripMenuItem.Name = "responsáveisToolStripMenuItem";
+            this.responsáveisToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.responsáveisToolStripMenuItem.Text = "Responsáveis...";
+            this.responsáveisToolStripMenuItem.Click += new System.EventHandler(this.responsáveisToolStripMenuItem_Click);
+            // 
+            // históricosRegistradosToolStripMenuItem
+            // 
+            this.históricosRegistradosToolStripMenuItem.Name = "históricosRegistradosToolStripMenuItem";
+            this.históricosRegistradosToolStripMenuItem.Size = new System.Drawing.Size(242, 22);
+            this.históricosRegistradosToolStripMenuItem.Text = "Históricos registrados...";
+            this.históricosRegistradosToolStripMenuItem.Click += new System.EventHandler(this.históricosRegistradosToolStripMenuItem_Click);
             // 
             // FormPrincipal
             // 
@@ -357,6 +375,8 @@
         private System.Windows.Forms.ToolStripMenuItem editarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem enderecosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem funcionariosToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem responsáveisToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem históricosRegistradosToolStripMenuItem;
 
     }
 }

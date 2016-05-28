@@ -1516,7 +1516,7 @@ namespace CadastroFuncionario
                 while (dr.Read())
                 {
                     lista.Add(dr.GetString(0));
-                    if (Tabela == "Funcionarios")
+                    if (Tabela == "Funcionarios" && (@Tipo1 == "TOP 5 Nome, Id_Funcionario" || @Tipo1 == "TOP 5 Nome, Id_Funcionario, Cargo"))
                     {
                         Id_Funcionario = (dr.GetInt32(1));
                         if (@Tipo1 == "TOP 5 Nome, Id_Funcionario, Cargo")
@@ -2051,7 +2051,7 @@ namespace CadastroFuncionario
             return Id_Financeiro;
         }
 
-        public static DataTable getEnderecoFiltro(string Filtro, string Campo)
+        public static DataTable getFiltro(string Filtro, string Campo, string Tabela)
         {
             DataTable dt = null;
             SqlConnection conexao = new SqlConnection(strConexao);
@@ -2063,44 +2063,11 @@ namespace CadastroFuncionario
                 cmd = new SqlCommand();
                 cmd.Connection = conexao;
 
-                cmd.CommandText = "SELECT * FROM SysProtected.Endereco where "+@Campo+" = @Filtro";
+                cmd.CommandText = "SELECT * FROM "+@Tabela+" where "+@Campo+" = @Filtro";
 
                 cmd.Parameters.Add(new SqlParameter("@Campo", Campo));
                 cmd.Parameters.Add(new SqlParameter("@Filtro", Filtro));
-
-                cmd.CommandType = CommandType.Text;
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
-                dt = new DataTable();
-                da.Fill(dt);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-                return null;
-            }
-            finally
-            {
-                conexao.Close();
-            }
-            return dt;
-        }
-
-        public static DataTable getFuncionarioFiltro(string Filtro, string Campo)
-        {
-            DataTable dt = null;
-            SqlConnection conexao = new SqlConnection(strConexao);
-            SqlCommand cmd;
-
-            try
-            {
-                conexao.Open();
-                cmd = new SqlCommand();
-                cmd.Connection = conexao;
-
-                cmd.CommandText = "SELECT * FROM SysProtected.Funcionarios where " + @Campo + " = @Filtro";
-
-                cmd.Parameters.Add(new SqlParameter("@Campo", Campo));
-                cmd.Parameters.Add(new SqlParameter("@Filtro", Filtro));
+                cmd.Parameters.Add(new SqlParameter("@Tabela", Tabela));
 
                 cmd.CommandType = CommandType.Text;
                 SqlDataAdapter da = new SqlDataAdapter(cmd);

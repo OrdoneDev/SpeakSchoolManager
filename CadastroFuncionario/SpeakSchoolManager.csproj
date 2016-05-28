@@ -79,6 +79,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DB_EscolaDataSet6.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DB_EscolaDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_EscolaDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_EscolaDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_EscolaDataSet8.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FormAdquirirCursoAluno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -163,6 +173,12 @@
     <Compile Include="FormHistoricoFuncionario.Designer.cs">
       <DependentUpon>FormHistoricoFuncionario.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormHistoricosFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHistoricosFuncionario.Designer.cs">
+      <DependentUpon>FormHistoricosFuncionario.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormInscricoesTurmas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -204,6 +220,12 @@
     </Compile>
     <Compile Include="FormTabelaFuncionarios.Designer.cs">
       <DependentUpon>FormTabelaFuncionarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTabelaResponsavel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTabelaResponsavel.Designer.cs">
+      <DependentUpon>FormTabelaResponsavel.cs</DependentUpon>
     </Compile>
     <Compile Include="GerenciaBanco.cs" />
     <Compile Include="Program.cs" />
@@ -259,6 +281,9 @@
     <EmbeddedResource Include="FormHistoricoFuncionario.resx">
       <DependentUpon>FormHistoricoFuncionario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormHistoricosFuncionario.resx">
+      <DependentUpon>FormHistoricosFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormInscricoesTurmas.resx">
       <DependentUpon>FormInscricoesTurmas.cs</DependentUpon>
     </EmbeddedResource>
@@ -279,6 +304,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormTabelaFuncionarios.resx">
       <DependentUpon>FormTabelaFuncionarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTabelaResponsavel.resx">
+      <DependentUpon>FormTabelaResponsavel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -362,6 +390,28 @@
     <None Include="DB_EscolaDataSet6.xss">
       <DependentUpon>DB_EscolaDataSet6.xsd</DependentUpon>
     </None>
+    <None Include="DB_EscolaDataSet7.xsc">
+      <DependentUpon>DB_EscolaDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="DB_EscolaDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_EscolaDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_EscolaDataSet7.xss">
+      <DependentUpon>DB_EscolaDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="DB_EscolaDataSet8.xsc">
+      <DependentUpon>DB_EscolaDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="DB_EscolaDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_EscolaDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_EscolaDataSet8.xss">
+      <DependentUpon>DB_EscolaDataSet8.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -377,6 +427,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -142,5 +142,19 @@ namespace CadastroFuncionario
             form.MdiParent = this;
             form.Show();
         }
+
+        private void responsáveisToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormTabelaResponsavel form = new FormTabelaResponsavel();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void históricosRegistradosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormHistoricosFuncionario form = new FormHistoricosFuncionario();
+            form.MdiParent = this;
+            form.Show();
+        }
     }
 }

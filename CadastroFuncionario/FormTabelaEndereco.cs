@@ -64,7 +64,7 @@ namespace CadastroFuncionario
 
             msk_IdEndereco.BackColor = System.Drawing.Color.White;
 
-            dgv_Enderecos.DataSource = GerenciaBanco.getEnderecoFiltro(msk_IdEndereco.Text, "Id_Endereco");
+            dgv_Enderecos.DataSource = GerenciaBanco.getFiltro(msk_IdEndereco.Text, "Id_Endereco", "SysProtected.Endereco");
         }
 
         private void btn_FiltrarEstado_Click(object sender, EventArgs e)
@@ -78,7 +78,7 @@ namespace CadastroFuncionario
 
             cmb_Estado.BackColor = System.Drawing.Color.White;
 
-            dgv_Enderecos.DataSource = GerenciaBanco.getEnderecoFiltro(cmb_Estado.Text, "Estado");
+            dgv_Enderecos.DataSource = GerenciaBanco.getFiltro(cmb_Estado.Text, "Estado", "SysProtected.Endereco");
         }
 
         private void btn_FiltrarCidade_Click(object sender, EventArgs e)
@@ -92,7 +92,7 @@ namespace CadastroFuncionario
 
             cmb_Cidade.BackColor = System.Drawing.Color.White;
 
-            dgv_Enderecos.DataSource = GerenciaBanco.getEnderecoFiltro(cmb_Cidade.Text, "Cidade");
+            dgv_Enderecos.DataSource = GerenciaBanco.getFiltro(cmb_Cidade.Text, "Cidade", "SysProtected.Endereco");
         }
 
         private void btn_FiltrarBairro_Click(object sender, EventArgs e)
@@ -106,7 +106,7 @@ namespace CadastroFuncionario
 
             cmb_Bairro.BackColor = System.Drawing.Color.White;
 
-            dgv_Enderecos.DataSource = GerenciaBanco.getEnderecoFiltro(cmb_Bairro.Text, "Bairro");
+            dgv_Enderecos.DataSource = GerenciaBanco.getFiltro(cmb_Bairro.Text, "Bairro", "SysProtected.Endereco");
         }
     }
 }
