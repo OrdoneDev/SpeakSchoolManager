@@ -62,6 +62,7 @@
             this.funcionariosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.responsáveisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.alunosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.idiomasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -305,7 +306,8 @@
             this.enderecosToolStripMenuItem,
             this.funcionariosToolStripMenuItem1,
             this.responsáveisToolStripMenuItem,
-            this.alunosToolStripMenuItem});
+            this.alunosToolStripMenuItem,
+            this.idiomasToolStripMenuItem});
             this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
             this.editarToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
             this.editarToolStripMenuItem.Text = "Editar";
@@ -337,6 +339,13 @@
             this.alunosToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.alunosToolStripMenuItem.Text = "Alunos...";
             this.alunosToolStripMenuItem.Click += new System.EventHandler(this.alunosToolStripMenuItem_Click);
+            // 
+            // idiomasToolStripMenuItem
+            // 
+            this.idiomasToolStripMenuItem.Name = "idiomasToolStripMenuItem";
+            this.idiomasToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.idiomasToolStripMenuItem.Text = "Idiomas...";
+            this.idiomasToolStripMenuItem.Click += new System.EventHandler(this.idiomasToolStripMenuItem_Click);
             // 
             // FormPrincipal
             // 
@@ -397,6 +406,7 @@
         private System.Windows.Forms.ToolStripMenuItem históricosRegistradosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem históricosRegistradosToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem alunosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem idiomasToolStripMenuItem;
 
     }
 }

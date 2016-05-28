@@ -170,5 +170,12 @@ namespace CadastroFuncionario
             form.MdiParent = this;
             form.Show();
         }
+
+        private void idiomasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormTabelaIdiomas form = new FormTabelaIdiomas();
+            form.MdiParent = this;
+            form.Show();
+        }
     }
 }
