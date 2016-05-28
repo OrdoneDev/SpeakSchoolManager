@@ -243,17 +243,6 @@ Create unique index Alunos
    on SysProtected.Alunos (Nome, DataNascimento, Historico_Escolar, Numero); 
 go
 
-CREATE VIEW HistoricoAluno AS
-	select	A.Id_Aluno,
-			H.Id_Historico,
-			A.Foto,
-			A.Nome,
-			H.Data,
-			H.Descricao
-	from SysProtected.Alunos A INNER JOIN SysProtected.Historico_Aluno H
-	on A.Id_Aluno = H.Id_Aluno
-GO
-
 CREATE PROCEDURE CadastroAluno
 	@Id_Responsavel		int,
 	@Id_Endereco		int,
@@ -303,6 +292,17 @@ Create table SysProtected.Historico_Aluno (
 	Descricao			Varchar(800)	not null
 )
 go
+
+CREATE VIEW HistoricoAluno AS
+	select	A.Id_Aluno,
+			H.Id_Historico,
+			A.Foto,
+			A.Nome,
+			H.Data,
+			H.Descricao
+	from SysProtected.Alunos A INNER JOIN SysProtected.Historico_Aluno H
+	on A.Id_Aluno = H.Id_Aluno
+GO
 
 Create trigger TGR_AlunosHistorico
 on SysProtected.Alunos
@@ -408,11 +408,11 @@ begin
 
 	if (@Situacao = 0)
 	begin
-		set @SituacaoParcela = 'À pagar';
+		set @SituacaoParcela = 'à pagar';
 	end
 	else
 	begin
-		set @SituacaoParcela = 'Pagas';
+		set @SituacaoParcela = 'paga(s)';
 	end
 	
 	Insert into SysProtected.Historico_Aluno values (@Id_Aluno, Getdate( ), 'Aluno efetuou compra do plano '+CONVERT(varchar(40), @Nome_Plano)+' no dia de hoje no total de '+CONVERT(varchar(2), @Parcelas)+' parcelas '+CONVERT(varchar(7), @SituacaoParcela)+'.');
@@ -655,7 +655,7 @@ begin
 	
 	if (@Nota2 is not null)
 	begin
-		Insert into SysProtected.Historico_Aluno values (@Id_Aluno, Getdate( ), 'A nota da 1 prova do aluno foi: '+CONVERT(varchar(4), @Nota2));
+		Insert into SysProtected.Historico_Aluno values (@Id_Aluno, Getdate( ), 'A nota da 2 prova do aluno foi: '+CONVERT(varchar(4), @Nota2));
 	end
 
 	select @Numero_Faltas = Numero_Faltas from inserted;

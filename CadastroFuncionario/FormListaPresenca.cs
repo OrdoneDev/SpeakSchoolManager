@@ -87,6 +87,7 @@ namespace CadastroFuncionario
                 else
                 {
                     GerenciaBanco.AtualizarListaPresenca(int.Parse(dgv_ListaPresenca.Rows[i].Cells[0].Value.ToString()), 0);
+                    Sucesso = true;
                 }
             }
 

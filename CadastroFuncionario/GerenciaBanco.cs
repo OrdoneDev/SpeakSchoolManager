@@ -2041,7 +2041,7 @@ namespace CadastroFuncionario
             }
             catch (Exception)
             {
-                Id_Financeiro = 1;
+                Id_Financeiro = 0;
             }
             finally
             {
