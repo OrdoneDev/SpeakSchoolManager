@@ -117,10 +117,323 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btn_FIltrarCargo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>931, 14</value>
+  </data>
+  <data name="btn_FIltrarCargo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 23</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btn_FIltrarCargo.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="btn_FIltrarCargo.Text" xml:space="preserve">
+    <value>Filtrar por cargo</value>
+  </data>
+  <data name="&gt;&gt;btn_FIltrarCargo.Name" xml:space="preserve">
+    <value>btn_FIltrarCargo</value>
+  </data>
+  <data name="&gt;&gt;btn_FIltrarCargo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_FIltrarCargo.Parent" xml:space="preserve">
+    <value>group_TabelaFuncionarios</value>
+  </data>
+  <data name="&gt;&gt;btn_FIltrarCargo.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cmb_Cargo.Items" xml:space="preserve">
+    <value>Faixineiro(a)</value>
+  </data>
+  <data name="cmb_Cargo.Items1" xml:space="preserve">
+    <value>Secretário(a)</value>
+  </data>
+  <data name="cmb_Cargo.Items2" xml:space="preserve">
+    <value>Professor(a)</value>
+  </data>
+  <data name="cmb_Cargo.Items3" xml:space="preserve">
+    <value>Cordenador(a)</value>
+  </data>
+  <data name="cmb_Cargo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>804, 15</value>
+  </data>
+  <data name="cmb_Cargo.MaxLength" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="cmb_Cargo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="cmb_Cargo.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;cmb_Cargo.Name" xml:space="preserve">
+    <value>cmb_Cargo</value>
+  </data>
+  <data name="&gt;&gt;cmb_Cargo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmb_Cargo.Parent" xml:space="preserve">
+    <value>group_TabelaFuncionarios</value>
+  </data>
+  <data name="&gt;&gt;cmb_Cargo.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btn_FiltrarCPF.Location" type="System.Drawing.Point, System.Drawing">
+    <value>679, 14</value>
+  </data>
+  <data name="btn_FiltrarCPF.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btn_FiltrarCPF.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="btn_FiltrarCPF.Text" xml:space="preserve">
+    <value>Filtrar por CPF</value>
+  </data>
+  <data name="&gt;&gt;btn_FiltrarCPF.Name" xml:space="preserve">
+    <value>btn_FiltrarCPF</value>
+  </data>
+  <data name="&gt;&gt;btn_FiltrarCPF.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_FiltrarCPF.Parent" xml:space="preserve">
+    <value>group_TabelaFuncionarios</value>
+  </data>
+  <data name="&gt;&gt;btn_FiltrarCPF.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="msk_CPF.Location" type="System.Drawing.Point, System.Drawing">
+    <value>590, 15</value>
+  </data>
+  <data name="msk_CPF.Mask" xml:space="preserve">
+    <value>000,000,000-AA</value>
+  </data>
+  <data name="msk_CPF.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 20</value>
+  </data>
+  <data name="msk_CPF.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;msk_CPF.Name" xml:space="preserve">
+    <value>msk_CPF</value>
+  </data>
+  <data name="&gt;&gt;msk_CPF.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;msk_CPF.Parent" xml:space="preserve">
+    <value>group_TabelaFuncionarios</value>
+  </data>
+  <data name="&gt;&gt;msk_CPF.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btn_FiltrarNome.Location" type="System.Drawing.Point, System.Drawing">
+    <value>459, 14</value>
+  </data>
+  <data name="btn_FiltrarNome.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 23</value>
+  </data>
+  <data name="btn_FiltrarNome.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="btn_FiltrarNome.Text" xml:space="preserve">
+    <value>Filtrar por nome</value>
+  </data>
+  <data name="&gt;&gt;btn_FiltrarNome.Name" xml:space="preserve">
+    <value>btn_FiltrarNome</value>
+  </data>
+  <data name="&gt;&gt;btn_FiltrarNome.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_FiltrarNome.Parent" xml:space="preserve">
+    <value>group_TabelaFuncionarios</value>
+  </data>
+  <data name="&gt;&gt;btn_FiltrarNome.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="cmb_Nome.Location" type="System.Drawing.Point, System.Drawing">
+    <value>250, 14</value>
+  </data>
+  <data name="cmb_Nome.MaxLength" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="cmb_Nome.Size" type="System.Drawing.Size, System.Drawing">
+    <value>203, 21</value>
+  </data>
+  <data name="cmb_Nome.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;cmb_Nome.Name" xml:space="preserve">
+    <value>cmb_Nome</value>
+  </data>
+  <data name="&gt;&gt;cmb_Nome.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmb_Nome.Parent" xml:space="preserve">
+    <value>group_TabelaFuncionarios</value>
+  </data>
+  <data name="&gt;&gt;cmb_Nome.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="btn_FiltrarId.Location" type="System.Drawing.Point, System.Drawing">
+    <value>125, 14</value>
+  </data>
+  <data name="btn_FiltrarId.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btn_FiltrarId.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="btn_FiltrarId.Text" xml:space="preserve">
+    <value>Filtrar por id</value>
+  </data>
+  <data name="&gt;&gt;btn_FiltrarId.Name" xml:space="preserve">
+    <value>btn_FiltrarId</value>
+  </data>
+  <data name="&gt;&gt;btn_FiltrarId.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_FiltrarId.Parent" xml:space="preserve">
+    <value>group_TabelaFuncionarios</value>
+  </data>
+  <data name="&gt;&gt;btn_FiltrarId.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="msk_Id.Location" type="System.Drawing.Point, System.Drawing">
+    <value>87, 16</value>
+  </data>
+  <data name="msk_Id.Mask" xml:space="preserve">
+    <value>0000</value>
+  </data>
+  <data name="msk_Id.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 20</value>
+  </data>
+  <data name="msk_Id.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;msk_Id.Name" xml:space="preserve">
+    <value>msk_Id</value>
+  </data>
+  <data name="&gt;&gt;msk_Id.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;msk_Id.Parent" xml:space="preserve">
+    <value>group_TabelaFuncionarios</value>
+  </data>
+  <data name="&gt;&gt;msk_Id.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lbl_Cargo.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_Cargo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>760, 20</value>
+  </data>
+  <data name="lbl_Cargo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 13</value>
+  </data>
+  <data name="lbl_Cargo.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="lbl_Cargo.Text" xml:space="preserve">
+    <value>Cargo:</value>
+  </data>
+  <data name="&gt;&gt;lbl_Cargo.Name" xml:space="preserve">
+    <value>lbl_Cargo</value>
+  </data>
+  <data name="&gt;&gt;lbl_Cargo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_Cargo.Parent" xml:space="preserve">
+    <value>group_TabelaFuncionarios</value>
+  </data>
+  <data name="&gt;&gt;lbl_Cargo.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="lbl_CPF.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_CPF.Location" type="System.Drawing.Point, System.Drawing">
+    <value>554, 19</value>
+  </data>
+  <data name="lbl_CPF.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 13</value>
+  </data>
+  <data name="lbl_CPF.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="lbl_CPF.Text" xml:space="preserve">
+    <value>CPF:</value>
+  </data>
+  <data name="&gt;&gt;lbl_CPF.Name" xml:space="preserve">
+    <value>lbl_CPF</value>
+  </data>
+  <data name="&gt;&gt;lbl_CPF.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_CPF.Parent" xml:space="preserve">
+    <value>group_TabelaFuncionarios</value>
+  </data>
+  <data name="&gt;&gt;lbl_CPF.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="lbl_Nome.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_Nome.Location" type="System.Drawing.Point, System.Drawing">
+    <value>206, 20</value>
+  </data>
+  <data name="lbl_Nome.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 13</value>
+  </data>
+  <data name="lbl_Nome.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lbl_Nome.Text" xml:space="preserve">
+    <value>Nome:</value>
+  </data>
+  <data name="&gt;&gt;lbl_Nome.Name" xml:space="preserve">
+    <value>lbl_Nome</value>
+  </data>
+  <data name="&gt;&gt;lbl_Nome.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_Nome.Parent" xml:space="preserve">
+    <value>group_TabelaFuncionarios</value>
+  </data>
+  <data name="&gt;&gt;lbl_Nome.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="lbl_Id.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_Id.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 21</value>
+  </data>
+  <data name="lbl_Id.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 13</value>
+  </data>
+  <data name="lbl_Id.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lbl_Id.Text" xml:space="preserve">
+    <value>Id funcionário:</value>
+  </data>
+  <data name="&gt;&gt;lbl_Id.Name" xml:space="preserve">
+    <value>lbl_Id</value>
+  </data>
+  <data name="&gt;&gt;lbl_Id.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_Id.Parent" xml:space="preserve">
+    <value>group_TabelaFuncionarios</value>
+  </data>
+  <data name="&gt;&gt;lbl_Id.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
   <data name="idFuncionarioDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>Código do funcionário</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="idFuncionarioDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
     <value>123</value>
   </data>
@@ -238,16 +551,11 @@
   <metadata name="dB_EscolaDataSet6.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="dgv_Funcionarios.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="dgv_Funcionarios.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 16</value>
+    <value>3, 40</value>
   </data>
   <data name="dgv_Funcionarios.Size" type="System.Drawing.Size, System.Drawing">
-    <value>981, 310</value>
+    <value>1030, 286</value>
   </data>
   <data name="dgv_Funcionarios.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -262,13 +570,13 @@
     <value>group_TabelaFuncionarios</value>
   </data>
   <data name="&gt;&gt;dgv_Funcionarios.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>12</value>
   </data>
   <data name="group_TabelaFuncionarios.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 13</value>
   </data>
   <data name="group_TabelaFuncionarios.Size" type="System.Drawing.Size, System.Drawing">
-    <value>987, 329</value>
+    <value>1039, 329</value>
   </data>
   <data name="group_TabelaFuncionarios.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -298,28 +606,10 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1012, 354</value>
+    <value>1064, 354</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Tabela de funcionários</value>
-  </data>
-  <data name="&gt;&gt;funcionariosBindingSource.Name" xml:space="preserve">
-    <value>funcionariosBindingSource</value>
-  </data>
-  <data name="&gt;&gt;funcionariosBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dB_EscolaDataSet6.Name" xml:space="preserve">
-    <value>dB_EscolaDataSet6</value>
-  </data>
-  <data name="&gt;&gt;dB_EscolaDataSet6.Type" xml:space="preserve">
-    <value>CadastroFuncionario.DB_EscolaDataSet6, DB_EscolaDataSet6.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;funcionariosTableAdapter.Name" xml:space="preserve">
-    <value>funcionariosTableAdapter</value>
-  </data>
-  <data name="&gt;&gt;funcionariosTableAdapter.Type" xml:space="preserve">
-    <value>CadastroFuncionario.DB_EscolaDataSet6TableAdapters.FuncionariosTableAdapter, DB_EscolaDataSet6.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;idFuncionarioDataGridViewTextBoxColumn.Name" xml:space="preserve">
     <value>idFuncionarioDataGridViewTextBoxColumn</value>
@@ -434,6 +724,24 @@
   </data>
   <data name="&gt;&gt;numeroDataGridViewTextBoxColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;funcionariosBindingSource.Name" xml:space="preserve">
+    <value>funcionariosBindingSource</value>
+  </data>
+  <data name="&gt;&gt;funcionariosBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dB_EscolaDataSet6.Name" xml:space="preserve">
+    <value>dB_EscolaDataSet6</value>
+  </data>
+  <data name="&gt;&gt;dB_EscolaDataSet6.Type" xml:space="preserve">
+    <value>CadastroFuncionario.DB_EscolaDataSet6, DB_EscolaDataSet6.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;funcionariosTableAdapter.Name" xml:space="preserve">
+    <value>funcionariosTableAdapter</value>
+  </data>
+  <data name="&gt;&gt;funcionariosTableAdapter.Type" xml:space="preserve">
+    <value>CadastroFuncionario.DB_EscolaDataSet6TableAdapters.FuncionariosTableAdapter, DB_EscolaDataSet6.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FormTabelaFuncionarios</value>
