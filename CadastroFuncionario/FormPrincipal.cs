@@ -177,5 +177,12 @@ namespace CadastroFuncionario
             form.MdiParent = this;
             form.Show();
         }
+
+        private void planosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormTabelaPlanos form = new FormTabelaPlanos();
+            form.MdiParent = this;
+            form.Show();
+        }
     }
 }

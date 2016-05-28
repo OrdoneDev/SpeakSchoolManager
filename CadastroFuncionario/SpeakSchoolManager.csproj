@@ -64,6 +64,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DB_EscolaDataSet11.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DB_EscolaDataSet121.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_EscolaDataSet121.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DB_EscolaDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -254,6 +259,12 @@
     <Compile Include="FormTabelaIdiomas.Designer.cs">
       <DependentUpon>FormTabelaIdiomas.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormTabelaPlanos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTabelaPlanos.Designer.cs">
+      <DependentUpon>FormTabelaPlanos.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormTabelaResponsavel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -347,6 +358,9 @@
     <EmbeddedResource Include="FormTabelaIdiomas.resx">
       <DependentUpon>FormTabelaIdiomas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormTabelaPlanos.resx">
+      <DependentUpon>FormTabelaPlanos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormTabelaResponsavel.resx">
       <DependentUpon>FormTabelaResponsavel.cs</DependentUpon>
     </EmbeddedResource>
@@ -398,6 +412,17 @@
     </None>
     <None Include="DB_EscolaDataSet11.xss">
       <DependentUpon>DB_EscolaDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="DB_EscolaDataSet121.xsc">
+      <DependentUpon>DB_EscolaDataSet121.xsd</DependentUpon>
+    </None>
+    <None Include="DB_EscolaDataSet121.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_EscolaDataSet121.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_EscolaDataSet121.xss">
+      <DependentUpon>DB_EscolaDataSet121.xsd</DependentUpon>
     </None>
     <None Include="DB_EscolaDataSet2.xsc">
       <DependentUpon>DB_EscolaDataSet2.xsd</DependentUpon>

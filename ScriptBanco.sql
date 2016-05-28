@@ -361,6 +361,17 @@ Create table SysProtected.Planos (
 )
 go
 
+CREATE VIEW IdiomasPlanos AS
+	select	P.Id_Plano,
+			I.Nome		as	'Nome do idioma',
+			P.Id_Idioma,
+			P.Nome		as	'Nome do plano',
+			P.Aulas_Previstas,
+			P.Valor
+	from SysProtected.Idiomas I INNER JOIN SysProtected.Planos P
+	on I.Id_Idioma = P.Id_Idioma
+go
+
 Create unique index Unico_Plano
    on SysProtected.Planos (Id_Idioma, Nome); 
 go

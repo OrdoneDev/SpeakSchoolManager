@@ -63,6 +63,7 @@
             this.responsáveisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.alunosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.idiomasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.planosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -307,7 +308,8 @@
             this.funcionariosToolStripMenuItem1,
             this.responsáveisToolStripMenuItem,
             this.alunosToolStripMenuItem,
-            this.idiomasToolStripMenuItem});
+            this.idiomasToolStripMenuItem,
+            this.planosToolStripMenuItem});
             this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
             this.editarToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
             this.editarToolStripMenuItem.Text = "Editar";
@@ -346,6 +348,13 @@
             this.idiomasToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.idiomasToolStripMenuItem.Text = "Idiomas...";
             this.idiomasToolStripMenuItem.Click += new System.EventHandler(this.idiomasToolStripMenuItem_Click);
+            // 
+            // planosToolStripMenuItem
+            // 
+            this.planosToolStripMenuItem.Name = "planosToolStripMenuItem";
+            this.planosToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.planosToolStripMenuItem.Text = "Planos...";
+            this.planosToolStripMenuItem.Click += new System.EventHandler(this.planosToolStripMenuItem_Click);
             // 
             // FormPrincipal
             // 
@@ -407,6 +416,7 @@
         private System.Windows.Forms.ToolStripMenuItem históricosRegistradosToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem alunosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem idiomasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem planosToolStripMenuItem;
 
     }
 }
