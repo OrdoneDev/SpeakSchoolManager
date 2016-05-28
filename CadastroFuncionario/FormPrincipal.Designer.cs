@@ -64,6 +64,7 @@
             this.alunosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.idiomasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.planosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.financeirosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -309,7 +310,8 @@
             this.responsáveisToolStripMenuItem,
             this.alunosToolStripMenuItem,
             this.idiomasToolStripMenuItem,
-            this.planosToolStripMenuItem});
+            this.planosToolStripMenuItem,
+            this.financeirosToolStripMenuItem});
             this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
             this.editarToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
             this.editarToolStripMenuItem.Text = "Editar";
@@ -355,6 +357,13 @@
             this.planosToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.planosToolStripMenuItem.Text = "Planos...";
             this.planosToolStripMenuItem.Click += new System.EventHandler(this.planosToolStripMenuItem_Click);
+            // 
+            // financeirosToolStripMenuItem
+            // 
+            this.financeirosToolStripMenuItem.Name = "financeirosToolStripMenuItem";
+            this.financeirosToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.financeirosToolStripMenuItem.Text = "Financeiros...";
+            this.financeirosToolStripMenuItem.Click += new System.EventHandler(this.financeirosToolStripMenuItem_Click);
             // 
             // FormPrincipal
             // 
@@ -417,6 +426,7 @@
         private System.Windows.Forms.ToolStripMenuItem alunosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem idiomasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem planosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem financeirosToolStripMenuItem;
 
     }
 }

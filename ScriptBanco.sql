@@ -386,6 +386,18 @@ Create table SysProtected.Financeiro (
 )
 go
 
+CREATE VIEW FinanceiroFuncionario AS
+	select	FU.Nome,
+			FI.Id_Financeiro,
+			FI.Id_Funcionario,
+			FI.Banco,
+			FI.Agencia,
+			FI.Conta,
+			FI.Data
+	from SysProtected.Funcionarios FU INNER JOIN SysProtected.Financeiro FI
+	on FU.Id_Funcionario = FI.Id_Funcionario
+go
+
 Create unique index Unico_Financeiro
    ON SysProtected.Financeiro (Banco, Agencia, Conta); 
 go

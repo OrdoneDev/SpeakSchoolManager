@@ -184,5 +184,12 @@ namespace CadastroFuncionario
             form.MdiParent = this;
             form.Show();
         }
+
+        private void financeirosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormTabelaFinanceiros form = new FormTabelaFinanceiros();
+            form.MdiParent = this;
+            form.Show();
+        }
     }
 }
