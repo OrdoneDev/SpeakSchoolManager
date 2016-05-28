@@ -163,5 +163,12 @@ namespace CadastroFuncionario
             form.MdiParent = this;
             form.Show();
         }
+
+        private void alunosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormTabelaAlunos form = new FormTabelaAlunos();
+            form.MdiParent = this;
+            form.Show();
+        }
     }
 }

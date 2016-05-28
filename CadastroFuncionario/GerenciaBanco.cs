@@ -1522,7 +1522,7 @@ namespace CadastroFuncionario
                         if (@Tipo1 == "TOP 5 Nome, Id_Funcionario, Cargo")
                             Cargo = (dr.GetString(2));
                     }
-                    if (Tabela == "Alunos")
+                    if (Tabela == "Alunos" && @Tipo1 == "TOP 5 Nome, Id_Aluno")
                         Id_Aluno = (dr.GetInt32(1));
                     if (Tabela == "Planos")
                         Id_Plano = (dr.GetInt32(1));

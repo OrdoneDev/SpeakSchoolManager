@@ -41,6 +41,7 @@
             this.reponsavelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.historicoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.alunoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.históricosRegistradosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.administrativoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastrarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.financeiroEmpresaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -60,7 +61,7 @@
             this.enderecosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.funcionariosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.responsáveisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.históricosRegistradosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.alunosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -91,7 +92,7 @@
             this.funcionariosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.novoFuncionarioToolStripMenuItem});
             this.funcionariosToolStripMenuItem.Name = "funcionariosToolStripMenuItem";
-            this.funcionariosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.funcionariosToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.funcionariosToolStripMenuItem.Text = "Cadastrar";
             // 
             // novoFuncionarioToolStripMenuItem
@@ -107,7 +108,7 @@
             this.funcionarioToolStripMenuItem,
             this.históricosRegistradosToolStripMenuItem});
             this.historicoToolStripMenuItem.Name = "historicoToolStripMenuItem";
-            this.historicoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.historicoToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.historicoToolStripMenuItem.Text = "Histórico..";
             // 
             // funcionarioToolStripMenuItem
@@ -139,7 +140,7 @@
             this.alunosToolStripMenuItem2,
             this.reponsavelToolStripMenuItem});
             this.cadastrarToolStripMenuItem1.Name = "cadastrarToolStripMenuItem1";
-            this.cadastrarToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.cadastrarToolStripMenuItem1.Size = new System.Drawing.Size(124, 22);
             this.cadastrarToolStripMenuItem1.Text = "Cadastrar";
             // 
             // alunosToolStripMenuItem2
@@ -162,7 +163,7 @@
             this.alunoToolStripMenuItem,
             this.históricosRegistradosToolStripMenuItem1});
             this.historicoToolStripMenuItem1.Name = "historicoToolStripMenuItem1";
-            this.historicoToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.historicoToolStripMenuItem1.Size = new System.Drawing.Size(124, 22);
             this.historicoToolStripMenuItem1.Text = "Histórico";
             // 
             // alunoToolStripMenuItem
@@ -171,6 +172,13 @@
             this.alunoToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
             this.alunoToolStripMenuItem.Text = "Novo histórico do aluno...";
             this.alunoToolStripMenuItem.Click += new System.EventHandler(this.alunoToolStripMenuItem_Click);
+            // 
+            // históricosRegistradosToolStripMenuItem1
+            // 
+            this.históricosRegistradosToolStripMenuItem1.Name = "históricosRegistradosToolStripMenuItem1";
+            this.históricosRegistradosToolStripMenuItem1.Size = new System.Drawing.Size(211, 22);
+            this.históricosRegistradosToolStripMenuItem1.Text = "Históricos registrados...";
+            this.históricosRegistradosToolStripMenuItem1.Click += new System.EventHandler(this.históricosRegistradosToolStripMenuItem1_Click);
             // 
             // administrativoToolStripMenuItem
             // 
@@ -296,7 +304,8 @@
             this.editarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.enderecosToolStripMenuItem,
             this.funcionariosToolStripMenuItem1,
-            this.responsáveisToolStripMenuItem});
+            this.responsáveisToolStripMenuItem,
+            this.alunosToolStripMenuItem});
             this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
             this.editarToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
             this.editarToolStripMenuItem.Text = "Editar";
@@ -322,12 +331,12 @@
             this.responsáveisToolStripMenuItem.Text = "Responsáveis...";
             this.responsáveisToolStripMenuItem.Click += new System.EventHandler(this.responsáveisToolStripMenuItem_Click);
             // 
-            // históricosRegistradosToolStripMenuItem1
+            // alunosToolStripMenuItem
             // 
-            this.históricosRegistradosToolStripMenuItem1.Name = "históricosRegistradosToolStripMenuItem1";
-            this.históricosRegistradosToolStripMenuItem1.Size = new System.Drawing.Size(211, 22);
-            this.históricosRegistradosToolStripMenuItem1.Text = "Históricos registrados...";
-            this.históricosRegistradosToolStripMenuItem1.Click += new System.EventHandler(this.históricosRegistradosToolStripMenuItem1_Click);
+            this.alunosToolStripMenuItem.Name = "alunosToolStripMenuItem";
+            this.alunosToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.alunosToolStripMenuItem.Text = "Alunos...";
+            this.alunosToolStripMenuItem.Click += new System.EventHandler(this.alunosToolStripMenuItem_Click);
             // 
             // FormPrincipal
             // 
@@ -387,6 +396,7 @@
         private System.Windows.Forms.ToolStripMenuItem responsáveisToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem históricosRegistradosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem históricosRegistradosToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem alunosToolStripMenuItem;
 
     }
 }

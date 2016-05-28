@@ -54,6 +54,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DB_EscolaDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DB_EscolaDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_EscolaDataSet10.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DB_EscolaDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -220,6 +225,12 @@
     <Compile Include="FormRegistraPagamentoFuncionario.Designer.cs">
       <DependentUpon>FormRegistraPagamentoFuncionario.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormTabelaAlunos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTabelaAlunos.Designer.cs">
+      <DependentUpon>FormTabelaAlunos.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormTabelaEndereco.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -313,6 +324,9 @@
     <EmbeddedResource Include="FormRegistraPagamentoFuncionario.resx">
       <DependentUpon>FormRegistraPagamentoFuncionario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormTabelaAlunos.resx">
+      <DependentUpon>FormTabelaAlunos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormTabelaEndereco.resx">
       <DependentUpon>FormTabelaEndereco.cs</DependentUpon>
     </EmbeddedResource>
@@ -348,6 +362,17 @@
     </None>
     <None Include="DB_EscolaDataSet1.xss">
       <DependentUpon>DB_EscolaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DB_EscolaDataSet10.xsc">
+      <DependentUpon>DB_EscolaDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="DB_EscolaDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_EscolaDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_EscolaDataSet10.xss">
+      <DependentUpon>DB_EscolaDataSet10.xsd</DependentUpon>
     </None>
     <None Include="DB_EscolaDataSet2.xsc">
       <DependentUpon>DB_EscolaDataSet2.xsd</DependentUpon>
