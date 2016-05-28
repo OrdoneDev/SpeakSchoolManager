@@ -35,7 +35,7 @@ go
 
 Create schema SysProtected authorization dbo
 go
- 
+
 Create table SysProtected.Endereco (
 	Id_Endereco			Int							Primary key		identity,
 	Estado				Varchar(15)		not null,

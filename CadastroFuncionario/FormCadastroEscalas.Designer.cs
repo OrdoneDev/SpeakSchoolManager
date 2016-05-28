@@ -163,6 +163,7 @@
             resources.ApplyResources(this.cmb_NomeFuncionario, "cmb_NomeFuncionario");
             this.cmb_NomeFuncionario.Name = "cmb_NomeFuncionario";
             this.cmb_NomeFuncionario.Tag = "";
+            this.cmb_NomeFuncionario.SelectedValueChanged += new System.EventHandler(this.cmb_NomeFuncionario_SelectedValueChanged);
             this.cmb_NomeFuncionario.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.cmb_NomeFuncionario_PreviewKeyDown);
             // 
             // btn_Cancelar

@@ -31,6 +31,9 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTabelaEndereco));
             this.group_Enderecos = new System.Windows.Forms.GroupBox();
+            this.btn_FiltrarId = new System.Windows.Forms.Button();
+            this.lbl_IdEndereco = new System.Windows.Forms.Label();
+            this.msk_IdEndereco = new System.Windows.Forms.MaskedTextBox();
             this.dgv_Enderecos = new System.Windows.Forms.DataGridView();
             this.idEnderecoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.estadoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,9 +44,15 @@
             this.enderecoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dB_EscolaDataSet3 = new CadastroFuncionario.DB_EscolaDataSet3();
             this.enderecoTableAdapter = new CadastroFuncionario.DB_EscolaDataSet3TableAdapters.EnderecoTableAdapter();
-            this.msk_IdEndereco = new System.Windows.Forms.MaskedTextBox();
-            this.lbl_IdEndereco = new System.Windows.Forms.Label();
-            this.btn_Consultar = new System.Windows.Forms.Button();
+            this.cmb_Estado = new System.Windows.Forms.ComboBox();
+            this.lbl_Estado = new System.Windows.Forms.Label();
+            this.btn_FiltrarEstado = new System.Windows.Forms.Button();
+            this.lbl_Cidade = new System.Windows.Forms.Label();
+            this.cmb_Cidade = new System.Windows.Forms.ComboBox();
+            this.btn_FiltrarCidade = new System.Windows.Forms.Button();
+            this.lbl_Bairro = new System.Windows.Forms.Label();
+            this.cmb_Bairro = new System.Windows.Forms.ComboBox();
+            this.btn_FiltrarBairro = new System.Windows.Forms.Button();
             this.group_Enderecos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Enderecos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.enderecoBindingSource)).BeginInit();
@@ -52,13 +61,39 @@
             // 
             // group_Enderecos
             // 
-            this.group_Enderecos.Controls.Add(this.btn_Consultar);
+            this.group_Enderecos.Controls.Add(this.btn_FiltrarBairro);
+            this.group_Enderecos.Controls.Add(this.cmb_Bairro);
+            this.group_Enderecos.Controls.Add(this.lbl_Bairro);
+            this.group_Enderecos.Controls.Add(this.btn_FiltrarCidade);
+            this.group_Enderecos.Controls.Add(this.cmb_Cidade);
+            this.group_Enderecos.Controls.Add(this.lbl_Cidade);
+            this.group_Enderecos.Controls.Add(this.btn_FiltrarEstado);
+            this.group_Enderecos.Controls.Add(this.lbl_Estado);
+            this.group_Enderecos.Controls.Add(this.cmb_Estado);
+            this.group_Enderecos.Controls.Add(this.btn_FiltrarId);
             this.group_Enderecos.Controls.Add(this.lbl_IdEndereco);
             this.group_Enderecos.Controls.Add(this.msk_IdEndereco);
             this.group_Enderecos.Controls.Add(this.dgv_Enderecos);
             resources.ApplyResources(this.group_Enderecos, "group_Enderecos");
             this.group_Enderecos.Name = "group_Enderecos";
             this.group_Enderecos.TabStop = false;
+            // 
+            // btn_FiltrarId
+            // 
+            resources.ApplyResources(this.btn_FiltrarId, "btn_FiltrarId");
+            this.btn_FiltrarId.Name = "btn_FiltrarId";
+            this.btn_FiltrarId.UseVisualStyleBackColor = true;
+            this.btn_FiltrarId.Click += new System.EventHandler(this.btn_FiltrarId_Click);
+            // 
+            // lbl_IdEndereco
+            // 
+            resources.ApplyResources(this.lbl_IdEndereco, "lbl_IdEndereco");
+            this.lbl_IdEndereco.Name = "lbl_IdEndereco";
+            // 
+            // msk_IdEndereco
+            // 
+            resources.ApplyResources(this.msk_IdEndereco, "msk_IdEndereco");
+            this.msk_IdEndereco.Name = "msk_IdEndereco";
             // 
             // dgv_Enderecos
             // 
@@ -128,22 +163,65 @@
             // 
             this.enderecoTableAdapter.ClearBeforeFill = true;
             // 
-            // msk_IdEndereco
+            // cmb_Estado
             // 
-            resources.ApplyResources(this.msk_IdEndereco, "msk_IdEndereco");
-            this.msk_IdEndereco.Name = "msk_IdEndereco";
+            this.cmb_Estado.FormattingEnabled = true;
+            resources.ApplyResources(this.cmb_Estado, "cmb_Estado");
+            this.cmb_Estado.Name = "cmb_Estado";
+            this.cmb_Estado.SelectedValueChanged += new System.EventHandler(this.cmb_Estado_SelectedValueChanged);
+            this.cmb_Estado.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.cmb_Estado_PreviewKeyDown);
             // 
-            // lbl_IdEndereco
+            // lbl_Estado
             // 
-            resources.ApplyResources(this.lbl_IdEndereco, "lbl_IdEndereco");
-            this.lbl_IdEndereco.Name = "lbl_IdEndereco";
+            resources.ApplyResources(this.lbl_Estado, "lbl_Estado");
+            this.lbl_Estado.Name = "lbl_Estado";
             // 
-            // btn_Consultar
+            // btn_FiltrarEstado
             // 
-            resources.ApplyResources(this.btn_Consultar, "btn_Consultar");
-            this.btn_Consultar.Name = "btn_Consultar";
-            this.btn_Consultar.UseVisualStyleBackColor = true;
-            this.btn_Consultar.Click += new System.EventHandler(this.button1_Click);
+            resources.ApplyResources(this.btn_FiltrarEstado, "btn_FiltrarEstado");
+            this.btn_FiltrarEstado.Name = "btn_FiltrarEstado";
+            this.btn_FiltrarEstado.UseVisualStyleBackColor = true;
+            this.btn_FiltrarEstado.Click += new System.EventHandler(this.btn_FiltrarEstado_Click);
+            // 
+            // lbl_Cidade
+            // 
+            resources.ApplyResources(this.lbl_Cidade, "lbl_Cidade");
+            this.lbl_Cidade.Name = "lbl_Cidade";
+            // 
+            // cmb_Cidade
+            // 
+            this.cmb_Cidade.FormattingEnabled = true;
+            resources.ApplyResources(this.cmb_Cidade, "cmb_Cidade");
+            this.cmb_Cidade.Name = "cmb_Cidade";
+            this.cmb_Cidade.SelectedValueChanged += new System.EventHandler(this.cmb_Cidade_SelectedValueChanged);
+            this.cmb_Cidade.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.cmb_Cidade_PreviewKeyDown);
+            // 
+            // btn_FiltrarCidade
+            // 
+            resources.ApplyResources(this.btn_FiltrarCidade, "btn_FiltrarCidade");
+            this.btn_FiltrarCidade.Name = "btn_FiltrarCidade";
+            this.btn_FiltrarCidade.UseVisualStyleBackColor = true;
+            this.btn_FiltrarCidade.Click += new System.EventHandler(this.btn_FiltrarCidade_Click);
+            // 
+            // lbl_Bairro
+            // 
+            resources.ApplyResources(this.lbl_Bairro, "lbl_Bairro");
+            this.lbl_Bairro.Name = "lbl_Bairro";
+            // 
+            // cmb_Bairro
+            // 
+            this.cmb_Bairro.FormattingEnabled = true;
+            resources.ApplyResources(this.cmb_Bairro, "cmb_Bairro");
+            this.cmb_Bairro.Name = "cmb_Bairro";
+            this.cmb_Bairro.SelectedValueChanged += new System.EventHandler(this.cmb_Bairro_SelectedValueChanged);
+            this.cmb_Bairro.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.cmb_Bairro_PreviewKeyDown);
+            // 
+            // btn_FiltrarBairro
+            // 
+            resources.ApplyResources(this.btn_FiltrarBairro, "btn_FiltrarBairro");
+            this.btn_FiltrarBairro.Name = "btn_FiltrarBairro";
+            this.btn_FiltrarBairro.UseVisualStyleBackColor = true;
+            this.btn_FiltrarBairro.Click += new System.EventHandler(this.btn_FiltrarBairro_Click);
             // 
             // FormTabelaEndereco
             // 
@@ -176,8 +254,17 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn cEPDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn bairroDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomeRuaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button btn_Consultar;
+        private System.Windows.Forms.Button btn_FiltrarId;
         private System.Windows.Forms.Label lbl_IdEndereco;
         private System.Windows.Forms.MaskedTextBox msk_IdEndereco;
+        private System.Windows.Forms.Label lbl_Estado;
+        private System.Windows.Forms.ComboBox cmb_Estado;
+        private System.Windows.Forms.Button btn_FiltrarEstado;
+        private System.Windows.Forms.Button btn_FiltrarCidade;
+        private System.Windows.Forms.ComboBox cmb_Cidade;
+        private System.Windows.Forms.Label lbl_Cidade;
+        private System.Windows.Forms.Button btn_FiltrarBairro;
+        private System.Windows.Forms.ComboBox cmb_Bairro;
+        private System.Windows.Forms.Label lbl_Bairro;
     }
 }

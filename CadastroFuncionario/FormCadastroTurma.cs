@@ -78,11 +78,21 @@ namespace CadastroFuncionario
             msk_IdPlano.Text = GerenciaBanco.Id_Plano.ToString().PadLeft(4, '0');
         }
 
+        private void cmb_NomePlano_SelectedValueChanged(object sender, EventArgs e)
+        {
+            ValidaCampos.Deleta = true;
+        }
+
         private void cmb_NomeFuncionario_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
             ValidaCampos.GetLista(cmb_NomeFuncionario, "TOP 5 Nome, Id_Funcionario", "Nome", e, "Planos");
 
             msk_IdPlano.Text = GerenciaBanco.Id_Plano.ToString().PadLeft(4, '0');
+        }
+
+        private void cmb_NomeFuncionario_SelectedValueChanged(object sender, EventArgs e)
+        {
+            ValidaCampos.Deleta = true;
         }
 
         private void btn_SalvarTurma_Click(object sender, EventArgs e)

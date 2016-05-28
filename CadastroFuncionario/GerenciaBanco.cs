@@ -2050,5 +2050,39 @@ namespace CadastroFuncionario
 
             return Id_Financeiro;
         }
+
+        public static DataTable getEnderecoFiltro(string Filtro, string Campo)
+        {
+            DataTable dt = null;
+            SqlConnection conexao = new SqlConnection(strConexao);
+            SqlCommand cmd;
+
+            try
+            {
+                conexao.Open();
+                cmd = new SqlCommand();
+                cmd.Connection = conexao;
+
+                cmd.CommandText = "SELECT * FROM SysProtected.Endereco where "+@Campo+" = @Filtro";
+
+                cmd.Parameters.Add(new SqlParameter("@Campo", Campo));
+                cmd.Parameters.Add(new SqlParameter("@Filtro", Filtro));
+
+                cmd.CommandType = CommandType.Text;
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                dt = new DataTable();
+                da.Fill(dt);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return null;
+            }
+            finally
+            {
+                conexao.Close();
+            }
+            return dt;
+        }
     }
 }

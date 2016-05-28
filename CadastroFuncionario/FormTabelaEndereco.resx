@@ -118,30 +118,255 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btn_Consultar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>112, 17</value>
+  <data name="btn_FiltrarBairro.Location" type="System.Drawing.Point, System.Drawing">
+    <value>965, 16</value>
   </data>
-  <data name="btn_Consultar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+  <data name="btn_FiltrarBairro.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 23</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btn_Consultar.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="btn_FiltrarBairro.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
   </data>
-  <data name="btn_Consultar.Text" xml:space="preserve">
-    <value>Consultar</value>
+  <data name="btn_FiltrarBairro.Text" xml:space="preserve">
+    <value>Filtrar por bairro</value>
   </data>
-  <data name="&gt;&gt;btn_Consultar.Name" xml:space="preserve">
-    <value>btn_Consultar</value>
+  <data name="&gt;&gt;btn_FiltrarBairro.Name" xml:space="preserve">
+    <value>btn_FiltrarBairro</value>
   </data>
-  <data name="&gt;&gt;btn_Consultar.Type" xml:space="preserve">
+  <data name="&gt;&gt;btn_FiltrarBairro.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btn_Consultar.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btn_FiltrarBairro.Parent" xml:space="preserve">
     <value>group_Enderecos</value>
   </data>
-  <data name="&gt;&gt;btn_Consultar.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btn_FiltrarBairro.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="cmb_Bairro.Location" type="System.Drawing.Point, System.Drawing">
+    <value>810, 17</value>
+  </data>
+  <data name="cmb_Bairro.MaxLength" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="cmb_Bairro.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 21</value>
+  </data>
+  <data name="cmb_Bairro.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;cmb_Bairro.Name" xml:space="preserve">
+    <value>cmb_Bairro</value>
+  </data>
+  <data name="&gt;&gt;cmb_Bairro.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmb_Bairro.Parent" xml:space="preserve">
+    <value>group_Enderecos</value>
+  </data>
+  <data name="&gt;&gt;cmb_Bairro.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lbl_Bairro.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_Bairro.Location" type="System.Drawing.Point, System.Drawing">
+    <value>769, 23</value>
+  </data>
+  <data name="lbl_Bairro.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 13</value>
+  </data>
+  <data name="lbl_Bairro.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="lbl_Bairro.Text" xml:space="preserve">
+    <value>Bairro:</value>
+  </data>
+  <data name="&gt;&gt;lbl_Bairro.Name" xml:space="preserve">
+    <value>lbl_Bairro</value>
+  </data>
+  <data name="&gt;&gt;lbl_Bairro.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_Bairro.Parent" xml:space="preserve">
+    <value>group_Enderecos</value>
+  </data>
+  <data name="&gt;&gt;lbl_Bairro.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btn_FiltrarCidade.Location" type="System.Drawing.Point, System.Drawing">
+    <value>665, 16</value>
+  </data>
+  <data name="btn_FiltrarCidade.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 23</value>
+  </data>
+  <data name="btn_FiltrarCidade.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="btn_FiltrarCidade.Text" xml:space="preserve">
+    <value>Filtrar por cidade</value>
+  </data>
+  <data name="&gt;&gt;btn_FiltrarCidade.Name" xml:space="preserve">
+    <value>btn_FiltrarCidade</value>
+  </data>
+  <data name="&gt;&gt;btn_FiltrarCidade.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_FiltrarCidade.Parent" xml:space="preserve">
+    <value>group_Enderecos</value>
+  </data>
+  <data name="&gt;&gt;btn_FiltrarCidade.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="cmb_Cidade.Location" type="System.Drawing.Point, System.Drawing">
+    <value>510, 17</value>
+  </data>
+  <data name="cmb_Cidade.MaxLength" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="cmb_Cidade.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 21</value>
+  </data>
+  <data name="cmb_Cidade.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;cmb_Cidade.Name" xml:space="preserve">
+    <value>cmb_Cidade</value>
+  </data>
+  <data name="&gt;&gt;cmb_Cidade.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmb_Cidade.Parent" xml:space="preserve">
+    <value>group_Enderecos</value>
+  </data>
+  <data name="&gt;&gt;cmb_Cidade.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lbl_Cidade.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_Cidade.Location" type="System.Drawing.Point, System.Drawing">
+    <value>467, 21</value>
+  </data>
+  <data name="lbl_Cidade.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 13</value>
+  </data>
+  <data name="lbl_Cidade.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="lbl_Cidade.Text" xml:space="preserve">
+    <value>Cidade:</value>
+  </data>
+  <data name="&gt;&gt;lbl_Cidade.Name" xml:space="preserve">
+    <value>lbl_Cidade</value>
+  </data>
+  <data name="&gt;&gt;lbl_Cidade.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_Cidade.Parent" xml:space="preserve">
+    <value>group_Enderecos</value>
+  </data>
+  <data name="&gt;&gt;lbl_Cidade.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="btn_FiltrarEstado.Location" type="System.Drawing.Point, System.Drawing">
+    <value>364, 16</value>
+  </data>
+  <data name="btn_FiltrarEstado.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 23</value>
+  </data>
+  <data name="btn_FiltrarEstado.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="btn_FiltrarEstado.Text" xml:space="preserve">
+    <value>Filtrar por estado</value>
+  </data>
+  <data name="&gt;&gt;btn_FiltrarEstado.Name" xml:space="preserve">
+    <value>btn_FiltrarEstado</value>
+  </data>
+  <data name="&gt;&gt;btn_FiltrarEstado.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_FiltrarEstado.Parent" xml:space="preserve">
+    <value>group_Enderecos</value>
+  </data>
+  <data name="&gt;&gt;btn_FiltrarEstado.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="lbl_Estado.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_Estado.Location" type="System.Drawing.Point, System.Drawing">
+    <value>198, 22</value>
+  </data>
+  <data name="lbl_Estado.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 13</value>
+  </data>
+  <data name="lbl_Estado.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="lbl_Estado.Text" xml:space="preserve">
+    <value>Estado:</value>
+  </data>
+  <data name="&gt;&gt;lbl_Estado.Name" xml:space="preserve">
+    <value>lbl_Estado</value>
+  </data>
+  <data name="&gt;&gt;lbl_Estado.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_Estado.Parent" xml:space="preserve">
+    <value>group_Enderecos</value>
+  </data>
+  <data name="&gt;&gt;lbl_Estado.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="cmb_Estado.Location" type="System.Drawing.Point, System.Drawing">
+    <value>241, 18</value>
+  </data>
+  <data name="cmb_Estado.MaxLength" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="cmb_Estado.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 21</value>
+  </data>
+  <data name="cmb_Estado.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;cmb_Estado.Name" xml:space="preserve">
+    <value>cmb_Estado</value>
+  </data>
+  <data name="&gt;&gt;cmb_Estado.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmb_Estado.Parent" xml:space="preserve">
+    <value>group_Enderecos</value>
+  </data>
+  <data name="&gt;&gt;cmb_Estado.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="btn_FiltrarId.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 17</value>
+  </data>
+  <data name="btn_FiltrarId.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 23</value>
+  </data>
+  <data name="btn_FiltrarId.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btn_FiltrarId.Text" xml:space="preserve">
+    <value>Filtrar por id</value>
+  </data>
+  <data name="&gt;&gt;btn_FiltrarId.Name" xml:space="preserve">
+    <value>btn_FiltrarId</value>
+  </data>
+  <data name="&gt;&gt;btn_FiltrarId.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_FiltrarId.Parent" xml:space="preserve">
+    <value>group_Enderecos</value>
+  </data>
+  <data name="&gt;&gt;btn_FiltrarId.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
   <data name="lbl_IdEndereco.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -168,7 +393,7 @@
     <value>group_Enderecos</value>
   </data>
   <data name="&gt;&gt;lbl_IdEndereco.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>10</value>
   </data>
   <data name="msk_IdEndereco.Location" type="System.Drawing.Point, System.Drawing">
     <value>75, 19</value>
@@ -192,7 +417,7 @@
     <value>group_Enderecos</value>
   </data>
   <data name="&gt;&gt;msk_IdEndereco.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>11</value>
   </data>
   <data name="idEnderecoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>Código do endereço</value>
@@ -219,10 +444,10 @@
     <value>17, 17</value>
   </metadata>
   <data name="dgv_Enderecos.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 46</value>
+    <value>6, 46</value>
   </data>
   <data name="dgv_Enderecos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>977, 276</value>
+    <value>1055, 276</value>
   </data>
   <data name="dgv_Enderecos.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -237,13 +462,13 @@
     <value>group_Enderecos</value>
   </data>
   <data name="&gt;&gt;dgv_Enderecos.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>12</value>
   </data>
   <data name="group_Enderecos.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 13</value>
   </data>
   <data name="group_Enderecos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>983, 325</value>
+    <value>1067, 325</value>
   </data>
   <data name="group_Enderecos.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -273,7 +498,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1008, 350</value>
+    <value>1092, 350</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Tabela de endereços</value>
