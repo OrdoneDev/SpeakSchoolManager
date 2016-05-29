@@ -212,5 +212,12 @@ namespace CadastroFuncionario
             form.MdiParent = this;
             form.Show();
         }
+
+        private void boletinsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormTabelaBoletins form = new FormTabelaBoletins();
+            form.MdiParent = this;
+            form.Show();
+        }
     }
 }

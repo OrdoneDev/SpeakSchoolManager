@@ -10,18 +10,17 @@ using System.Windows.Forms;
 
 namespace CadastroFuncionario
 {
-    public partial class FormTabelaInscricoes : Form
+    public partial class FormTabelaBoletins : Form
     {
-        public FormTabelaInscricoes()
+        public FormTabelaBoletins()
         {
             InitializeComponent();
         }
 
-        private void FormTabelaInscricoes_Load(object sender, EventArgs e)
+        private void FormTabelaBoletins_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'escola_PrincipalDataSet2.InscricaoAlunoFiltro' table. You can move, or remove it, as needed.
-            this.inscricaoAlunoFiltroTableAdapter.Fill(this.escola_PrincipalDataSet2.InscricaoAlunoFiltro);
-
+            // TODO: This line of code loads data into the 'escola_PrincipalDataSet5.BoletinsAlunoFiltro' table. You can move, or remove it, as needed.
+            this.boletinsAlunoFiltroTableAdapter.Fill(this.escola_PrincipalDataSet5.BoletinsAlunoFiltro);
         }
 
         private void cmb_NomeAluno_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
@@ -45,7 +44,7 @@ namespace CadastroFuncionario
 
             cmb_NomeAluno.BackColor = System.Drawing.Color.White;
 
-            dgv_TabelaInscricoes.DataSource = GerenciaBanco.getFiltro(cmb_NomeAluno.Text, "Nome", "InscricaoAlunoFiltro");
+            dgv_TabelaBoletins.DataSource = GerenciaBanco.getFiltro(cmb_NomeAluno.Text, "Nome", "BoletinsAlunoFiltro");
         }
     }
 }

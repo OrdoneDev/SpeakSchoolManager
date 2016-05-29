@@ -703,6 +703,19 @@ Create table SysProtected.Boletim (
 )
 go
 
+CREATE VIEW BoletinsAlunoFiltro AS
+	select	B.Id_Boletim,
+			B.Id_Inscricao,
+			A.Nome,
+			B.Nota1,
+			B.Nota2,
+			B.Media,
+			B.Numero_Faltas
+	from SysProtected.Boletim B INNER JOIN SysProtected.Inscricao I
+	on B.Id_Inscricao = I.Id_Inscricao INNER JOIN SysProtected.Alunos A
+	on I.Id_Aluno = A.Id_Aluno
+GO
+
 Create trigger TGR_BoletimAlunosHistorico
 on SysProtected.Boletim
 after update

@@ -129,6 +129,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Escola_PrincipalDataSet4.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Escola_PrincipalDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Escola_PrincipalDataSet5.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FormAdquirirCursoAluno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -261,6 +266,12 @@
     <Compile Include="FormTabelaAlunos.Designer.cs">
       <DependentUpon>FormTabelaAlunos.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormTabelaBoletins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTabelaBoletins.Designer.cs">
+      <DependentUpon>FormTabelaBoletins.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormTabelaEndereco.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -392,6 +403,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormTabelaAlunos.resx">
       <DependentUpon>FormTabelaAlunos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTabelaBoletins.resx">
+      <DependentUpon>FormTabelaBoletins.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormTabelaEndereco.resx">
       <DependentUpon>FormTabelaEndereco.cs</DependentUpon>
@@ -611,6 +625,17 @@
     </None>
     <None Include="Escola_PrincipalDataSet4.xss">
       <DependentUpon>Escola_PrincipalDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Escola_PrincipalDataSet5.xsc">
+      <DependentUpon>Escola_PrincipalDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Escola_PrincipalDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Escola_PrincipalDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Escola_PrincipalDataSet5.xss">
+      <DependentUpon>Escola_PrincipalDataSet5.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
