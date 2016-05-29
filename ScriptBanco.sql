@@ -1239,3 +1239,12 @@ GO
 
 GRANT EXECUTE ON [dbo].[CadastroResponsavel] TO [ANA\Secretario]
 GO
+
+GRANT INSERT ON [SysProtected].[Alunos] TO [ANA\Secretario]
+GO
+
+GRANT SELECT ON [SysProtected].[Alunos] TO [ANA\Secretario]
+GO
+
+GRANT UPDATE ON [SysProtected].[Alunos] TO [ANA\Secretario]
+GO

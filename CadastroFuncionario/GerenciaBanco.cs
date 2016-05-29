@@ -911,6 +911,43 @@ namespace CadastroFuncionario
             }
             return;
         }
+
+        public static int VerificaPermissao(int Tag, string Tabela)
+        {
+            SqlConnection conexao = new SqlConnection(strConexao);
+            SqlCommand cmd;
+            SqlDataReader dr;
+
+            try
+            {
+                conexao.Open();
+                cmd = new SqlCommand();
+                cmd.Connection = conexao;
+
+                cmd.CommandText = "SELECT * FROM SysProtected." + @Tabela;
+
+                cmd.Parameters.Add(new SqlParameter("@Tabela", Tabela));
+
+                dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    if (@Tabela == "Funcionarios")
+                        Tag = 1;
+                    else if (@Tabela == "Alunos")
+                        Tag = 2;
+                }
+            }
+            catch (Exception)
+            {
+                Tag = 0;
+            }
+            finally
+            {
+                conexao.Close();
+            }
+
+            return Tag;
+        }
         
         public static bool VerificaFuncionario(string RG, string CPF)
         {

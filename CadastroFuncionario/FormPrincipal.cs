@@ -12,9 +12,49 @@ namespace CadastroFuncionario
 {
     public partial class FormPrincipal : Form
     {
+        public int Tag = 0;
+
         public FormPrincipal()
         {
             InitializeComponent();
+
+            Tag = GerenciaBanco.VerificaPermissao(Tag, "Funcionarios");
+
+            if (Tag == 0)
+                Tag = GerenciaBanco.VerificaPermissao(Tag, "Alunos");
+
+            ValidaPermissoes(menuStrip1);
+        }
+
+        private void ValidaPermissoes(MenuStrip Menu)
+        {
+            foreach (ToolStripMenuItem control in Menu.Items)
+            {
+                if (control is ToolStripMenuItem)
+                {
+                    foreach (ToolStripMenuItem controles in control.DropDownItems)
+                    { 
+                        if (controles.Tag == "1" && Tag != 1)
+                        {
+                            controles.Enabled = false;
+                        }
+                        if (controles.Tag == "2" && (Tag != 2 && Tag != 1))
+                        {
+                            controles.Enabled = false;
+                        }
+                        foreach (ToolStripMenuItem itens in controles.DropDownItems)
+                        {
+                            if (itens.Tag == "1" && Tag != 1)
+                            {
+                                itens.Enabled = false;
+                            }else if (itens.Tag == "2" && (Tag != 2 && Tag != 1))
+                            {
+                                itens.Enabled = false;
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         private void novoFuncionarioToolStripMenuItem_Click(object sender, EventArgs e)
