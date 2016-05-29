@@ -31,24 +31,23 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTabelaFinanceiros));
             this.group_TabelaFinanceiro = new System.Windows.Forms.GroupBox();
-            this.dgv_TabelaFinanceiros = new System.Windows.Forms.DataGridView();
-            this.lbl_Nome = new System.Windows.Forms.Label();
-            this.cmb_Nome = new System.Windows.Forms.ComboBox();
             this.btn_FiltrarNome = new System.Windows.Forms.Button();
-            this.dB_EscolaDataSet13 = new CadastroFuncionario.DB_EscolaDataSet13();
+            this.cmb_Nome = new System.Windows.Forms.ComboBox();
+            this.lbl_Nome = new System.Windows.Forms.Label();
+            this.dgv_TabelaFinanceiros = new System.Windows.Forms.DataGridView();
             this.financeiroFuncionarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dB_EscolaDataSet13 = new CadastroFuncionario.DB_EscolaDataSet13();
             this.financeiroFuncionarioTableAdapter = new CadastroFuncionario.DB_EscolaDataSet13TableAdapters.FinanceiroFuncionarioTableAdapter();
             this.idFinanceiroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idFuncionarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bancoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.agenciaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.group_TabelaFinanceiro.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_TabelaFinanceiros)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dB_EscolaDataSet13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.financeiroFuncionarioBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dB_EscolaDataSet13)).BeginInit();
             this.SuspendLayout();
             // 
             // group_TabelaFinanceiro
@@ -61,27 +60,12 @@
             this.group_TabelaFinanceiro.Name = "group_TabelaFinanceiro";
             this.group_TabelaFinanceiro.TabStop = false;
             // 
-            // dgv_TabelaFinanceiros
+            // btn_FiltrarNome
             // 
-            this.dgv_TabelaFinanceiros.AllowUserToAddRows = false;
-            this.dgv_TabelaFinanceiros.AutoGenerateColumns = false;
-            this.dgv_TabelaFinanceiros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_TabelaFinanceiros.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idFinanceiroDataGridViewTextBoxColumn,
-            this.idFuncionarioDataGridViewTextBoxColumn,
-            this.nomeDataGridViewTextBoxColumn,
-            this.bancoDataGridViewTextBoxColumn,
-            this.agenciaDataGridViewTextBoxColumn,
-            this.contaDataGridViewTextBoxColumn,
-            this.dataDataGridViewTextBoxColumn});
-            this.dgv_TabelaFinanceiros.DataSource = this.financeiroFuncionarioBindingSource;
-            resources.ApplyResources(this.dgv_TabelaFinanceiros, "dgv_TabelaFinanceiros");
-            this.dgv_TabelaFinanceiros.Name = "dgv_TabelaFinanceiros";
-            // 
-            // lbl_Nome
-            // 
-            resources.ApplyResources(this.lbl_Nome, "lbl_Nome");
-            this.lbl_Nome.Name = "lbl_Nome";
+            resources.ApplyResources(this.btn_FiltrarNome, "btn_FiltrarNome");
+            this.btn_FiltrarNome.Name = "btn_FiltrarNome";
+            this.btn_FiltrarNome.UseVisualStyleBackColor = true;
+            this.btn_FiltrarNome.Click += new System.EventHandler(this.btn_FiltrarNome_Click);
             // 
             // cmb_Nome
             // 
@@ -91,22 +75,36 @@
             this.cmb_Nome.SelectedValueChanged += new System.EventHandler(this.cmb_Nome_SelectedValueChanged);
             this.cmb_Nome.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.cmb_Nome_PreviewKeyDown);
             // 
-            // btn_FiltrarNome
+            // lbl_Nome
             // 
-            resources.ApplyResources(this.btn_FiltrarNome, "btn_FiltrarNome");
-            this.btn_FiltrarNome.Name = "btn_FiltrarNome";
-            this.btn_FiltrarNome.UseVisualStyleBackColor = true;
-            this.btn_FiltrarNome.Click += new System.EventHandler(this.btn_FiltrarNome_Click);
+            resources.ApplyResources(this.lbl_Nome, "lbl_Nome");
+            this.lbl_Nome.Name = "lbl_Nome";
             // 
-            // dB_EscolaDataSet13
+            // dgv_TabelaFinanceiros
             // 
-            this.dB_EscolaDataSet13.DataSetName = "DB_EscolaDataSet13";
-            this.dB_EscolaDataSet13.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.dgv_TabelaFinanceiros.AllowUserToAddRows = false;
+            this.dgv_TabelaFinanceiros.AutoGenerateColumns = false;
+            this.dgv_TabelaFinanceiros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_TabelaFinanceiros.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idFinanceiroDataGridViewTextBoxColumn,
+            this.idFuncionarioDataGridViewTextBoxColumn,
+            this.bancoDataGridViewTextBoxColumn,
+            this.agenciaDataGridViewTextBoxColumn,
+            this.contaDataGridViewTextBoxColumn,
+            this.dataDataGridViewTextBoxColumn});
+            this.dgv_TabelaFinanceiros.DataSource = this.financeiroFuncionarioBindingSource;
+            resources.ApplyResources(this.dgv_TabelaFinanceiros, "dgv_TabelaFinanceiros");
+            this.dgv_TabelaFinanceiros.Name = "dgv_TabelaFinanceiros";
             // 
             // financeiroFuncionarioBindingSource
             // 
             this.financeiroFuncionarioBindingSource.DataMember = "FinanceiroFuncionario";
             this.financeiroFuncionarioBindingSource.DataSource = this.dB_EscolaDataSet13;
+            // 
+            // dB_EscolaDataSet13
+            // 
+            this.dB_EscolaDataSet13.DataSetName = "DB_EscolaDataSet13";
+            this.dB_EscolaDataSet13.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // financeiroFuncionarioTableAdapter
             // 
@@ -123,12 +121,6 @@
             this.idFuncionarioDataGridViewTextBoxColumn.DataPropertyName = "Id_Funcionario";
             resources.ApplyResources(this.idFuncionarioDataGridViewTextBoxColumn, "idFuncionarioDataGridViewTextBoxColumn");
             this.idFuncionarioDataGridViewTextBoxColumn.Name = "idFuncionarioDataGridViewTextBoxColumn";
-            // 
-            // nomeDataGridViewTextBoxColumn
-            // 
-            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
-            resources.ApplyResources(this.nomeDataGridViewTextBoxColumn, "nomeDataGridViewTextBoxColumn");
-            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
             // 
             // bancoDataGridViewTextBoxColumn
             // 
@@ -166,8 +158,8 @@
             this.group_TabelaFinanceiro.ResumeLayout(false);
             this.group_TabelaFinanceiro.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_TabelaFinanceiros)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dB_EscolaDataSet13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.financeiroFuncionarioBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dB_EscolaDataSet13)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -184,7 +176,6 @@
         private DB_EscolaDataSet13TableAdapters.FinanceiroFuncionarioTableAdapter financeiroFuncionarioTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn idFinanceiroDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn idFuncionarioDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn bancoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn agenciaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn contaDataGridViewTextBoxColumn;

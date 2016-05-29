@@ -394,7 +394,7 @@ CREATE VIEW FinanceiroFuncionario AS
 			FI.Agencia,
 			FI.Conta,
 			FI.Data
-	from SysProtected.Funcionarios FU INNER JOIN SysProtected.Financeiro FI
+	from SysProtected.Funcionarios FU RIGHT JOIN SysProtected.Financeiro FI
 	on FU.Id_Funcionario = FI.Id_Funcionario
 go
 
@@ -411,6 +411,19 @@ Create table SysProtected.Negociacao (
 	Situacao			bit				not null
 )
 go
+
+CREATE VIEW NegociacaoAluno AS
+	select	A.Nome	as	'Nome do aluno',
+			P.Nome	as	'Nome do plano',
+			N.Id_Negociacao,
+			N.Id_Aluno,
+			N.Id_Plano,
+			N.Parcelas,
+			N.Situacao
+	from SysProtected.Alunos A INNER JOIN SysProtected.Negociacao N
+	on A.Id_Aluno = N.Id_Aluno INNER JOIN SysProtected.Planos P
+	on N.Id_Plano = P.Id_Plano
+GO
 
 Create trigger TGR_AlunoRealizaNegociacaoHistorico
 on SysProtected.Negociacao

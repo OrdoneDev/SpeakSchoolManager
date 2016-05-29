@@ -200,12 +200,6 @@
   <data name="idFuncionarioDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>Código do funcionário</value>
   </data>
-  <data name="nomeDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Nome</value>
-  </data>
-  <data name="nomeDataGridViewTextBoxColumn.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
   <data name="bancoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>Banco</value>
   </data>
@@ -220,6 +214,9 @@
   </data>
   <metadata name="financeiroFuncionarioBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>178, 17</value>
+  </metadata>
+  <metadata name="dB_EscolaDataSet13.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
   </metadata>
   <data name="dgv_TabelaFinanceiros.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 44</value>
@@ -266,9 +263,6 @@
   <data name="&gt;&gt;group_TabelaFinanceiro.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="dB_EscolaDataSet13.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <metadata name="financeiroFuncionarioTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>426, 17</value>
   </metadata>
@@ -284,17 +278,17 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Tabela de financeiros</value>
   </data>
-  <data name="&gt;&gt;dB_EscolaDataSet13.Name" xml:space="preserve">
-    <value>dB_EscolaDataSet13</value>
-  </data>
-  <data name="&gt;&gt;dB_EscolaDataSet13.Type" xml:space="preserve">
-    <value>CadastroFuncionario.DB_EscolaDataSet13, DB_EscolaDataSet13.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
   <data name="&gt;&gt;financeiroFuncionarioBindingSource.Name" xml:space="preserve">
     <value>financeiroFuncionarioBindingSource</value>
   </data>
   <data name="&gt;&gt;financeiroFuncionarioBindingSource.Type" xml:space="preserve">
     <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dB_EscolaDataSet13.Name" xml:space="preserve">
+    <value>dB_EscolaDataSet13</value>
+  </data>
+  <data name="&gt;&gt;dB_EscolaDataSet13.Type" xml:space="preserve">
+    <value>CadastroFuncionario.DB_EscolaDataSet13, DB_EscolaDataSet13.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;financeiroFuncionarioTableAdapter.Name" xml:space="preserve">
     <value>financeiroFuncionarioTableAdapter</value>
@@ -312,12 +306,6 @@
     <value>idFuncionarioDataGridViewTextBoxColumn</value>
   </data>
   <data name="&gt;&gt;idFuncionarioDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;nomeDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>nomeDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;nomeDataGridViewTextBoxColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;bancoDataGridViewTextBoxColumn.Name" xml:space="preserve">

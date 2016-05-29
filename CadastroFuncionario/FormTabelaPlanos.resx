@@ -207,12 +207,6 @@
   <data name="idIdiomaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>Código do idioma</value>
   </data>
-  <data name="nomeDoIdiomaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Nome do idioma</value>
-  </data>
-  <data name="nomeDoIdiomaDataGridViewTextBoxColumn.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
   <data name="nomeDoPlanoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>Nome do plano</value>
   </data>
@@ -273,9 +267,6 @@
   <data name="&gt;&gt;group_TabelaPlanos.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="dB_EscolaDataSet12.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <metadata name="idiomasPlanosTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>387, 17</value>
   </metadata>
@@ -291,17 +282,17 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Tabela de planos</value>
   </data>
-  <data name="&gt;&gt;dB_EscolaDataSet12.Name" xml:space="preserve">
-    <value>dB_EscolaDataSet12</value>
-  </data>
-  <data name="&gt;&gt;dB_EscolaDataSet12.Type" xml:space="preserve">
-    <value>CadastroFuncionario.DB_EscolaDataSet12, DB_EscolaDataSet121.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
   <data name="&gt;&gt;idiomasPlanosBindingSource.Name" xml:space="preserve">
     <value>idiomasPlanosBindingSource</value>
   </data>
   <data name="&gt;&gt;idiomasPlanosBindingSource.Type" xml:space="preserve">
     <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dB_EscolaDataSet12.Name" xml:space="preserve">
+    <value>dB_EscolaDataSet12</value>
+  </data>
+  <data name="&gt;&gt;dB_EscolaDataSet12.Type" xml:space="preserve">
+    <value>CadastroFuncionario.DB_EscolaDataSet12, DB_EscolaDataSet121.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;idiomasPlanosTableAdapter.Name" xml:space="preserve">
     <value>idiomasPlanosTableAdapter</value>
@@ -319,12 +310,6 @@
     <value>idIdiomaDataGridViewTextBoxColumn</value>
   </data>
   <data name="&gt;&gt;idIdiomaDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;nomeDoIdiomaDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>nomeDoIdiomaDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;nomeDoIdiomaDataGridViewTextBoxColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;nomeDoPlanoDataGridViewTextBoxColumn.Name" xml:space="preserve">
