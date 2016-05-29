@@ -29,8 +29,8 @@ namespace CadastroFuncionario
 
         private void FormTabelaFinanceiros_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dB_EscolaDataSet13.FinanceiroFuncionario' table. You can move, or remove it, as needed.
-            this.financeiroFuncionarioTableAdapter.Fill(this.dB_EscolaDataSet13.FinanceiroFuncionario);
+            // TODO: This line of code loads data into the 'escola_PrincipalDataSet4.FinanceiroFuncionarioFiltro' table. You can move, or remove it, as needed.
+            this.financeiroFuncionarioFiltroTableAdapter.Fill(this.escola_PrincipalDataSet4.FinanceiroFuncionarioFiltro);
         }
 
         private void btn_FiltrarNome_Click(object sender, EventArgs e)

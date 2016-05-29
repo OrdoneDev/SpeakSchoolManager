@@ -20,17 +20,17 @@ namespace CadastroFuncionario {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("Escola_PrincipalDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("Escola_PrincipalDataSet4")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class Escola_PrincipalDataSet : global::System.Data.DataSet {
+    public partial class Escola_PrincipalDataSet4 : global::System.Data.DataSet {
         
-        private NegociacaoDataTable tableNegociacao;
+        private FinanceiroFuncionarioFiltroDataTable tableFinanceiroFuncionarioFiltro;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public Escola_PrincipalDataSet() {
+        public Escola_PrincipalDataSet4() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace CadastroFuncionario {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        protected Escola_PrincipalDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected Escola_PrincipalDataSet4(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace CadastroFuncionario {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["Negociacao"] != null)) {
-                    base.Tables.Add(new NegociacaoDataTable(ds.Tables["Negociacao"]));
+                if ((ds.Tables["FinanceiroFuncionarioFiltro"] != null)) {
+                    base.Tables.Add(new FinanceiroFuncionarioFiltroDataTable(ds.Tables["FinanceiroFuncionarioFiltro"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace CadastroFuncionario {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public NegociacaoDataTable Negociacao {
+        public FinanceiroFuncionarioFiltroDataTable FinanceiroFuncionarioFiltro {
             get {
-                return this.tableNegociacao;
+                return this.tableFinanceiroFuncionarioFiltro;
             }
         }
         
@@ -127,7 +127,7 @@ namespace CadastroFuncionario {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            Escola_PrincipalDataSet cln = ((Escola_PrincipalDataSet)(base.Clone()));
+            Escola_PrincipalDataSet4 cln = ((Escola_PrincipalDataSet4)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace CadastroFuncionario {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["Negociacao"] != null)) {
-                    base.Tables.Add(new NegociacaoDataTable(ds.Tables["Negociacao"]));
+                if ((ds.Tables["FinanceiroFuncionarioFiltro"] != null)) {
+                    base.Tables.Add(new FinanceiroFuncionarioFiltroDataTable(ds.Tables["FinanceiroFuncionarioFiltro"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace CadastroFuncionario {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableNegociacao = ((NegociacaoDataTable)(base.Tables["Negociacao"]));
+            this.tableFinanceiroFuncionarioFiltro = ((FinanceiroFuncionarioFiltroDataTable)(base.Tables["FinanceiroFuncionarioFiltro"]));
             if ((initTable == true)) {
-                if ((this.tableNegociacao != null)) {
-                    this.tableNegociacao.InitVars();
+                if ((this.tableFinanceiroFuncionarioFiltro != null)) {
+                    this.tableFinanceiroFuncionarioFiltro.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace CadastroFuncionario {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "Escola_PrincipalDataSet";
+            this.DataSetName = "Escola_PrincipalDataSet4";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/Escola_PrincipalDataSet.xsd";
+            this.Namespace = "http://tempuri.org/Escola_PrincipalDataSet4.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableNegociacao = new NegociacaoDataTable();
-            base.Tables.Add(this.tableNegociacao);
+            this.tableFinanceiroFuncionarioFiltro = new FinanceiroFuncionarioFiltroDataTable();
+            base.Tables.Add(this.tableFinanceiroFuncionarioFiltro);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private bool ShouldSerializeNegociacao() {
+        private bool ShouldSerializeFinanceiroFuncionarioFiltro() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace CadastroFuncionario {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            Escola_PrincipalDataSet ds = new Escola_PrincipalDataSet();
+            Escola_PrincipalDataSet4 ds = new Escola_PrincipalDataSet4();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,31 +270,33 @@ namespace CadastroFuncionario {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public delegate void NegociacaoRowChangeEventHandler(object sender, NegociacaoRowChangeEvent e);
+        public delegate void FinanceiroFuncionarioFiltroRowChangeEventHandler(object sender, FinanceiroFuncionarioFiltroRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class NegociacaoDataTable : global::System.Data.TypedTableBase<NegociacaoRow> {
+        public partial class FinanceiroFuncionarioFiltroDataTable : global::System.Data.TypedTableBase<FinanceiroFuncionarioFiltroRow> {
             
-            private global::System.Data.DataColumn columnId_Negociacao;
+            private global::System.Data.DataColumn columnNome;
             
             private global::System.Data.DataColumn columnId_Financeiro;
             
-            private global::System.Data.DataColumn columnId_Aluno;
+            private global::System.Data.DataColumn columnId_Funcionario;
             
-            private global::System.Data.DataColumn columnId_Plano;
+            private global::System.Data.DataColumn columnBanco;
             
-            private global::System.Data.DataColumn columnParcelas;
+            private global::System.Data.DataColumn columnAgencia;
             
-            private global::System.Data.DataColumn columnSituacao;
+            private global::System.Data.DataColumn columnConta;
+            
+            private global::System.Data.DataColumn columnData;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public NegociacaoDataTable() {
-                this.TableName = "Negociacao";
+            public FinanceiroFuncionarioFiltroDataTable() {
+                this.TableName = "FinanceiroFuncionarioFiltro";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -302,7 +304,7 @@ namespace CadastroFuncionario {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal NegociacaoDataTable(global::System.Data.DataTable table) {
+            internal FinanceiroFuncionarioFiltroDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -319,16 +321,16 @@ namespace CadastroFuncionario {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected NegociacaoDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected FinanceiroFuncionarioFiltroDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn Id_NegociacaoColumn {
+            public global::System.Data.DataColumn NomeColumn {
                 get {
-                    return this.columnId_Negociacao;
+                    return this.columnNome;
                 }
             }
             
@@ -342,33 +344,41 @@ namespace CadastroFuncionario {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn Id_AlunoColumn {
+            public global::System.Data.DataColumn Id_FuncionarioColumn {
                 get {
-                    return this.columnId_Aluno;
+                    return this.columnId_Funcionario;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn Id_PlanoColumn {
+            public global::System.Data.DataColumn BancoColumn {
                 get {
-                    return this.columnId_Plano;
+                    return this.columnBanco;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn ParcelasColumn {
+            public global::System.Data.DataColumn AgenciaColumn {
                 get {
-                    return this.columnParcelas;
+                    return this.columnAgencia;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn SituacaoColumn {
+            public global::System.Data.DataColumn ContaColumn {
                 get {
-                    return this.columnSituacao;
+                    return this.columnConta;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn DataColumn {
+                get {
+                    return this.columnData;
                 }
             }
             
@@ -383,57 +393,58 @@ namespace CadastroFuncionario {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public NegociacaoRow this[int index] {
+            public FinanceiroFuncionarioFiltroRow this[int index] {
                 get {
-                    return ((NegociacaoRow)(this.Rows[index]));
+                    return ((FinanceiroFuncionarioFiltroRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event NegociacaoRowChangeEventHandler NegociacaoRowChanging;
+            public event FinanceiroFuncionarioFiltroRowChangeEventHandler FinanceiroFuncionarioFiltroRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event NegociacaoRowChangeEventHandler NegociacaoRowChanged;
+            public event FinanceiroFuncionarioFiltroRowChangeEventHandler FinanceiroFuncionarioFiltroRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event NegociacaoRowChangeEventHandler NegociacaoRowDeleting;
+            public event FinanceiroFuncionarioFiltroRowChangeEventHandler FinanceiroFuncionarioFiltroRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event NegociacaoRowChangeEventHandler NegociacaoRowDeleted;
+            public event FinanceiroFuncionarioFiltroRowChangeEventHandler FinanceiroFuncionarioFiltroRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void AddNegociacaoRow(NegociacaoRow row) {
+            public void AddFinanceiroFuncionarioFiltroRow(FinanceiroFuncionarioFiltroRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public NegociacaoRow AddNegociacaoRow(int Id_Financeiro, int Id_Aluno, int Id_Plano, byte Parcelas, bool Situacao) {
-                NegociacaoRow rowNegociacaoRow = ((NegociacaoRow)(this.NewRow()));
+            public FinanceiroFuncionarioFiltroRow AddFinanceiroFuncionarioFiltroRow(string Nome, int Id_Financeiro, int Id_Funcionario, string Banco, int Agencia, int Conta, System.DateTime Data) {
+                FinanceiroFuncionarioFiltroRow rowFinanceiroFuncionarioFiltroRow = ((FinanceiroFuncionarioFiltroRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        null,
+                        Nome,
                         Id_Financeiro,
-                        Id_Aluno,
-                        Id_Plano,
-                        Parcelas,
-                        Situacao};
-                rowNegociacaoRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowNegociacaoRow);
-                return rowNegociacaoRow;
+                        Id_Funcionario,
+                        Banco,
+                        Agencia,
+                        Conta,
+                        Data};
+                rowFinanceiroFuncionarioFiltroRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowFinanceiroFuncionarioFiltroRow);
+                return rowFinanceiroFuncionarioFiltroRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public NegociacaoRow FindById_Negociacao(int Id_Negociacao) {
-                return ((NegociacaoRow)(this.Rows.Find(new object[] {
-                            Id_Negociacao})));
+            public FinanceiroFuncionarioFiltroRow FindById_Financeiro(int Id_Financeiro) {
+                return ((FinanceiroFuncionarioFiltroRow)(this.Rows.Find(new object[] {
+                            Id_Financeiro})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                NegociacaoDataTable cln = ((NegociacaoDataTable)(base.Clone()));
+                FinanceiroFuncionarioFiltroDataTable cln = ((FinanceiroFuncionarioFiltroDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -441,74 +452,73 @@ namespace CadastroFuncionario {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new NegociacaoDataTable();
+                return new FinanceiroFuncionarioFiltroDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
-                this.columnId_Negociacao = base.Columns["Id_Negociacao"];
+                this.columnNome = base.Columns["Nome"];
                 this.columnId_Financeiro = base.Columns["Id_Financeiro"];
-                this.columnId_Aluno = base.Columns["Id_Aluno"];
-                this.columnId_Plano = base.Columns["Id_Plano"];
-                this.columnParcelas = base.Columns["Parcelas"];
-                this.columnSituacao = base.Columns["Situacao"];
+                this.columnId_Funcionario = base.Columns["Id_Funcionario"];
+                this.columnBanco = base.Columns["Banco"];
+                this.columnAgencia = base.Columns["Agencia"];
+                this.columnConta = base.Columns["Conta"];
+                this.columnData = base.Columns["Data"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private void InitClass() {
-                this.columnId_Negociacao = new global::System.Data.DataColumn("Id_Negociacao", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnId_Negociacao);
+                this.columnNome = new global::System.Data.DataColumn("Nome", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNome);
                 this.columnId_Financeiro = new global::System.Data.DataColumn("Id_Financeiro", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnId_Financeiro);
-                this.columnId_Aluno = new global::System.Data.DataColumn("Id_Aluno", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnId_Aluno);
-                this.columnId_Plano = new global::System.Data.DataColumn("Id_Plano", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnId_Plano);
-                this.columnParcelas = new global::System.Data.DataColumn("Parcelas", typeof(byte), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnParcelas);
-                this.columnSituacao = new global::System.Data.DataColumn("Situacao", typeof(bool), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnSituacao);
+                this.columnId_Funcionario = new global::System.Data.DataColumn("Id_Funcionario", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnId_Funcionario);
+                this.columnBanco = new global::System.Data.DataColumn("Banco", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnBanco);
+                this.columnAgencia = new global::System.Data.DataColumn("Agencia", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAgencia);
+                this.columnConta = new global::System.Data.DataColumn("Conta", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnConta);
+                this.columnData = new global::System.Data.DataColumn("Data", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnData);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnId_Negociacao}, true));
-                this.columnId_Negociacao.AutoIncrement = true;
-                this.columnId_Negociacao.AutoIncrementSeed = -1;
-                this.columnId_Negociacao.AutoIncrementStep = -1;
-                this.columnId_Negociacao.AllowDBNull = false;
-                this.columnId_Negociacao.ReadOnly = true;
-                this.columnId_Negociacao.Unique = true;
+                                this.columnId_Financeiro}, true));
+                this.columnNome.MaxLength = 40;
                 this.columnId_Financeiro.AllowDBNull = false;
-                this.columnId_Aluno.AllowDBNull = false;
-                this.columnId_Plano.AllowDBNull = false;
-                this.columnParcelas.AllowDBNull = false;
-                this.columnSituacao.AllowDBNull = false;
+                this.columnId_Financeiro.Unique = true;
+                this.columnBanco.AllowDBNull = false;
+                this.columnBanco.MaxLength = 20;
+                this.columnAgencia.AllowDBNull = false;
+                this.columnConta.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public NegociacaoRow NewNegociacaoRow() {
-                return ((NegociacaoRow)(this.NewRow()));
+            public FinanceiroFuncionarioFiltroRow NewFinanceiroFuncionarioFiltroRow() {
+                return ((FinanceiroFuncionarioFiltroRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new NegociacaoRow(builder);
+                return new FinanceiroFuncionarioFiltroRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(NegociacaoRow);
+                return typeof(FinanceiroFuncionarioFiltroRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.NegociacaoRowChanged != null)) {
-                    this.NegociacaoRowChanged(this, new NegociacaoRowChangeEvent(((NegociacaoRow)(e.Row)), e.Action));
+                if ((this.FinanceiroFuncionarioFiltroRowChanged != null)) {
+                    this.FinanceiroFuncionarioFiltroRowChanged(this, new FinanceiroFuncionarioFiltroRowChangeEvent(((FinanceiroFuncionarioFiltroRow)(e.Row)), e.Action));
                 }
             }
             
@@ -516,8 +526,8 @@ namespace CadastroFuncionario {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.NegociacaoRowChanging != null)) {
-                    this.NegociacaoRowChanging(this, new NegociacaoRowChangeEvent(((NegociacaoRow)(e.Row)), e.Action));
+                if ((this.FinanceiroFuncionarioFiltroRowChanging != null)) {
+                    this.FinanceiroFuncionarioFiltroRowChanging(this, new FinanceiroFuncionarioFiltroRowChangeEvent(((FinanceiroFuncionarioFiltroRow)(e.Row)), e.Action));
                 }
             }
             
@@ -525,8 +535,8 @@ namespace CadastroFuncionario {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.NegociacaoRowDeleted != null)) {
-                    this.NegociacaoRowDeleted(this, new NegociacaoRowChangeEvent(((NegociacaoRow)(e.Row)), e.Action));
+                if ((this.FinanceiroFuncionarioFiltroRowDeleted != null)) {
+                    this.FinanceiroFuncionarioFiltroRowDeleted(this, new FinanceiroFuncionarioFiltroRowChangeEvent(((FinanceiroFuncionarioFiltroRow)(e.Row)), e.Action));
                 }
             }
             
@@ -534,14 +544,14 @@ namespace CadastroFuncionario {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.NegociacaoRowDeleting != null)) {
-                    this.NegociacaoRowDeleting(this, new NegociacaoRowChangeEvent(((NegociacaoRow)(e.Row)), e.Action));
+                if ((this.FinanceiroFuncionarioFiltroRowDeleting != null)) {
+                    this.FinanceiroFuncionarioFiltroRowDeleting(this, new FinanceiroFuncionarioFiltroRowChangeEvent(((FinanceiroFuncionarioFiltroRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void RemoveNegociacaoRow(NegociacaoRow row) {
+            public void RemoveFinanceiroFuncionarioFiltroRow(FinanceiroFuncionarioFiltroRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -550,7 +560,7 @@ namespace CadastroFuncionario {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Escola_PrincipalDataSet ds = new Escola_PrincipalDataSet();
+                Escola_PrincipalDataSet4 ds = new Escola_PrincipalDataSet4();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -568,7 +578,7 @@ namespace CadastroFuncionario {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "NegociacaoDataTable";
+                attribute2.FixedValue = "FinanceiroFuncionarioFiltroDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -612,25 +622,30 @@ namespace CadastroFuncionario {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class NegociacaoRow : global::System.Data.DataRow {
+        public partial class FinanceiroFuncionarioFiltroRow : global::System.Data.DataRow {
             
-            private NegociacaoDataTable tableNegociacao;
+            private FinanceiroFuncionarioFiltroDataTable tableFinanceiroFuncionarioFiltro;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal NegociacaoRow(global::System.Data.DataRowBuilder rb) : 
+            internal FinanceiroFuncionarioFiltroRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableNegociacao = ((NegociacaoDataTable)(this.Table));
+                this.tableFinanceiroFuncionarioFiltro = ((FinanceiroFuncionarioFiltroDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int Id_Negociacao {
+            public string Nome {
                 get {
-                    return ((int)(this[this.tableNegociacao.Id_NegociacaoColumn]));
+                    try {
+                        return ((string)(this[this.tableFinanceiroFuncionarioFiltro.NomeColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Nome\' in table \'FinanceiroFuncionarioFiltro\' is DBNull.", e);
+                    }
                 }
                 set {
-                    this[this.tableNegociacao.Id_NegociacaoColumn] = value;
+                    this[this.tableFinanceiroFuncionarioFiltro.NomeColumn] = value;
                 }
             }
             
@@ -638,55 +653,113 @@ namespace CadastroFuncionario {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int Id_Financeiro {
                 get {
-                    return ((int)(this[this.tableNegociacao.Id_FinanceiroColumn]));
+                    return ((int)(this[this.tableFinanceiroFuncionarioFiltro.Id_FinanceiroColumn]));
                 }
                 set {
-                    this[this.tableNegociacao.Id_FinanceiroColumn] = value;
+                    this[this.tableFinanceiroFuncionarioFiltro.Id_FinanceiroColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int Id_Aluno {
+            public int Id_Funcionario {
                 get {
-                    return ((int)(this[this.tableNegociacao.Id_AlunoColumn]));
+                    try {
+                        return ((int)(this[this.tableFinanceiroFuncionarioFiltro.Id_FuncionarioColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Id_Funcionario\' in table \'FinanceiroFuncionarioFiltro\' is D" +
+                                "BNull.", e);
+                    }
                 }
                 set {
-                    this[this.tableNegociacao.Id_AlunoColumn] = value;
+                    this[this.tableFinanceiroFuncionarioFiltro.Id_FuncionarioColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int Id_Plano {
+            public string Banco {
                 get {
-                    return ((int)(this[this.tableNegociacao.Id_PlanoColumn]));
+                    return ((string)(this[this.tableFinanceiroFuncionarioFiltro.BancoColumn]));
                 }
                 set {
-                    this[this.tableNegociacao.Id_PlanoColumn] = value;
+                    this[this.tableFinanceiroFuncionarioFiltro.BancoColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public byte Parcelas {
+            public int Agencia {
                 get {
-                    return ((byte)(this[this.tableNegociacao.ParcelasColumn]));
+                    return ((int)(this[this.tableFinanceiroFuncionarioFiltro.AgenciaColumn]));
                 }
                 set {
-                    this[this.tableNegociacao.ParcelasColumn] = value;
+                    this[this.tableFinanceiroFuncionarioFiltro.AgenciaColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool Situacao {
+            public int Conta {
                 get {
-                    return ((bool)(this[this.tableNegociacao.SituacaoColumn]));
+                    return ((int)(this[this.tableFinanceiroFuncionarioFiltro.ContaColumn]));
                 }
                 set {
-                    this[this.tableNegociacao.SituacaoColumn] = value;
+                    this[this.tableFinanceiroFuncionarioFiltro.ContaColumn] = value;
                 }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public System.DateTime Data {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tableFinanceiroFuncionarioFiltro.DataColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Data\' in table \'FinanceiroFuncionarioFiltro\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFinanceiroFuncionarioFiltro.DataColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsNomeNull() {
+                return this.IsNull(this.tableFinanceiroFuncionarioFiltro.NomeColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetNomeNull() {
+                this[this.tableFinanceiroFuncionarioFiltro.NomeColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsId_FuncionarioNull() {
+                return this.IsNull(this.tableFinanceiroFuncionarioFiltro.Id_FuncionarioColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetId_FuncionarioNull() {
+                this[this.tableFinanceiroFuncionarioFiltro.Id_FuncionarioColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsDataNull() {
+                return this.IsNull(this.tableFinanceiroFuncionarioFiltro.DataColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetDataNull() {
+                this[this.tableFinanceiroFuncionarioFiltro.DataColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -694,22 +767,22 @@ namespace CadastroFuncionario {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public class NegociacaoRowChangeEvent : global::System.EventArgs {
+        public class FinanceiroFuncionarioFiltroRowChangeEvent : global::System.EventArgs {
             
-            private NegociacaoRow eventRow;
+            private FinanceiroFuncionarioFiltroRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public NegociacaoRowChangeEvent(NegociacaoRow row, global::System.Data.DataRowAction action) {
+            public FinanceiroFuncionarioFiltroRowChangeEvent(FinanceiroFuncionarioFiltroRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public NegociacaoRow Row {
+            public FinanceiroFuncionarioFiltroRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -725,7 +798,7 @@ namespace CadastroFuncionario {
         }
     }
 }
-namespace CadastroFuncionario.Escola_PrincipalDataSetTableAdapters {
+namespace CadastroFuncionario.Escola_PrincipalDataSet4TableAdapters {
     
     
     /// <summary>
@@ -737,7 +810,7 @@ namespace CadastroFuncionario.Escola_PrincipalDataSetTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class NegociacaoTableAdapter : global::System.ComponentModel.Component {
+    public partial class FinanceiroFuncionarioFiltroTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -751,7 +824,7 @@ namespace CadastroFuncionario.Escola_PrincipalDataSetTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public NegociacaoTableAdapter() {
+        public FinanceiroFuncionarioFiltroTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -848,51 +921,15 @@ namespace CadastroFuncionario.Escola_PrincipalDataSetTableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "Negociacao";
-            tableMapping.ColumnMappings.Add("Id_Negociacao", "Id_Negociacao");
+            tableMapping.DataSetTable = "FinanceiroFuncionarioFiltro";
+            tableMapping.ColumnMappings.Add("Nome", "Nome");
             tableMapping.ColumnMappings.Add("Id_Financeiro", "Id_Financeiro");
-            tableMapping.ColumnMappings.Add("Id_Aluno", "Id_Aluno");
-            tableMapping.ColumnMappings.Add("Id_Plano", "Id_Plano");
-            tableMapping.ColumnMappings.Add("Parcelas", "Parcelas");
-            tableMapping.ColumnMappings.Add("Situacao", "Situacao");
+            tableMapping.ColumnMappings.Add("Id_Funcionario", "Id_Funcionario");
+            tableMapping.ColumnMappings.Add("Banco", "Banco");
+            tableMapping.ColumnMappings.Add("Agencia", "Agencia");
+            tableMapping.ColumnMappings.Add("Conta", "Conta");
+            tableMapping.ColumnMappings.Add("Data", "Data");
             this._adapter.TableMappings.Add(tableMapping);
-            this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [SysProtected].[Negociacao] WHERE (([Id_Negociacao] = @Original_Id_Negociacao) AND ([Id_Financeiro] = @Original_Id_Financeiro) AND ([Id_Aluno] = @Original_Id_Aluno) AND ([Id_Plano] = @Original_Id_Plano) AND ([Parcelas] = @Original_Parcelas) AND ([Situacao] = @Original_Situacao))";
-            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id_Negociacao", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id_Negociacao", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id_Financeiro", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id_Financeiro", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id_Aluno", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id_Aluno", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id_Plano", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id_Plano", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Parcelas", global::System.Data.SqlDbType.TinyInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Parcelas", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Situacao", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Situacao", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [SysProtected].[Negociacao] ([Id_Financeiro], [Id_Aluno], [Id_Plano], [Parcelas], [Situacao]) VALUES (@Id_Financeiro, @Id_Aluno, @Id_Plano, @Parcelas, @Situacao);
-SELECT Id_Negociacao, Id_Financeiro, Id_Aluno, Id_Plano, Parcelas, Situacao FROM SysProtected.Negociacao WHERE (Id_Negociacao = SCOPE_IDENTITY())";
-            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Id_Financeiro", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id_Financeiro", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Id_Aluno", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id_Aluno", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Id_Plano", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id_Plano", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Parcelas", global::System.Data.SqlDbType.TinyInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Parcelas", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Situacao", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Situacao", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [SysProtected].[Negociacao] SET [Id_Financeiro] = @Id_Financeiro, [Id_Aluno] = @Id_Aluno, [Id_Plano] = @Id_Plano, [Parcelas] = @Parcelas, [Situacao] = @Situacao WHERE (([Id_Negociacao] = @Original_Id_Negociacao) AND ([Id_Financeiro] = @Original_Id_Financeiro) AND ([Id_Aluno] = @Original_Id_Aluno) AND ([Id_Plano] = @Original_Id_Plano) AND ([Parcelas] = @Original_Parcelas) AND ([Situacao] = @Original_Situacao));
-SELECT Id_Negociacao, Id_Financeiro, Id_Aluno, Id_Plano, Parcelas, Situacao FROM SysProtected.Negociacao WHERE (Id_Negociacao = @Id_Negociacao)";
-            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Id_Financeiro", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id_Financeiro", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Id_Aluno", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id_Aluno", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Id_Plano", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id_Plano", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Parcelas", global::System.Data.SqlDbType.TinyInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Parcelas", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Situacao", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Situacao", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id_Negociacao", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id_Negociacao", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id_Financeiro", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id_Financeiro", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id_Aluno", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id_Aluno", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id_Plano", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id_Plano", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Parcelas", global::System.Data.SqlDbType.TinyInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Parcelas", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Situacao", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Situacao", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Id_Negociacao", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Id_Negociacao", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -908,8 +945,8 @@ SELECT Id_Negociacao, Id_Financeiro, Id_Aluno, Id_Plano, Parcelas, Situacao FROM
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT Id_Negociacao, Id_Financeiro, Id_Aluno, Id_Plano, Parcelas, Situacao FROM " +
-                "SysProtected.Negociacao";
+            this._commandCollection[0].CommandText = "SELECT Nome, Id_Financeiro, Id_Funcionario, Banco, Agencia, Conta, Data FROM dbo." +
+                "FinanceiroFuncionarioFiltro";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -917,7 +954,7 @@ SELECT Id_Negociacao, Id_Financeiro, Id_Aluno, Id_Plano, Parcelas, Situacao FROM
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Escola_PrincipalDataSet.NegociacaoDataTable dataTable) {
+        public virtual int Fill(Escola_PrincipalDataSet4.FinanceiroFuncionarioFiltroDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -930,134 +967,11 @@ SELECT Id_Negociacao, Id_Financeiro, Id_Aluno, Id_Plano, Parcelas, Situacao FROM
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Escola_PrincipalDataSet.NegociacaoDataTable GetData() {
+        public virtual Escola_PrincipalDataSet4.FinanceiroFuncionarioFiltroDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Escola_PrincipalDataSet.NegociacaoDataTable dataTable = new Escola_PrincipalDataSet.NegociacaoDataTable();
+            Escola_PrincipalDataSet4.FinanceiroFuncionarioFiltroDataTable dataTable = new Escola_PrincipalDataSet4.FinanceiroFuncionarioFiltroDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(Escola_PrincipalDataSet.NegociacaoDataTable dataTable) {
-            return this.Adapter.Update(dataTable);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(Escola_PrincipalDataSet dataSet) {
-            return this.Adapter.Update(dataSet, "Negociacao");
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(global::System.Data.DataRow dataRow) {
-            return this.Adapter.Update(new global::System.Data.DataRow[] {
-                        dataRow});
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(global::System.Data.DataRow[] dataRows) {
-            return this.Adapter.Update(dataRows);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_Id_Negociacao, int Original_Id_Financeiro, int Original_Id_Aluno, int Original_Id_Plano, byte Original_Parcelas, bool Original_Situacao) {
-            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_Id_Negociacao));
-            this.Adapter.DeleteCommand.Parameters[1].Value = ((int)(Original_Id_Financeiro));
-            this.Adapter.DeleteCommand.Parameters[2].Value = ((int)(Original_Id_Aluno));
-            this.Adapter.DeleteCommand.Parameters[3].Value = ((int)(Original_Id_Plano));
-            this.Adapter.DeleteCommand.Parameters[4].Value = ((byte)(Original_Parcelas));
-            this.Adapter.DeleteCommand.Parameters[5].Value = ((bool)(Original_Situacao));
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
-            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.DeleteCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.DeleteCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(int Id_Financeiro, int Id_Aluno, int Id_Plano, byte Parcelas, bool Situacao) {
-            this.Adapter.InsertCommand.Parameters[0].Value = ((int)(Id_Financeiro));
-            this.Adapter.InsertCommand.Parameters[1].Value = ((int)(Id_Aluno));
-            this.Adapter.InsertCommand.Parameters[2].Value = ((int)(Id_Plano));
-            this.Adapter.InsertCommand.Parameters[3].Value = ((byte)(Parcelas));
-            this.Adapter.InsertCommand.Parameters[4].Value = ((bool)(Situacao));
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
-            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.InsertCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.InsertCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(int Id_Financeiro, int Id_Aluno, int Id_Plano, byte Parcelas, bool Situacao, int Original_Id_Negociacao, int Original_Id_Financeiro, int Original_Id_Aluno, int Original_Id_Plano, byte Original_Parcelas, bool Original_Situacao, int Id_Negociacao) {
-            this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(Id_Financeiro));
-            this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(Id_Aluno));
-            this.Adapter.UpdateCommand.Parameters[2].Value = ((int)(Id_Plano));
-            this.Adapter.UpdateCommand.Parameters[3].Value = ((byte)(Parcelas));
-            this.Adapter.UpdateCommand.Parameters[4].Value = ((bool)(Situacao));
-            this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(Original_Id_Negociacao));
-            this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(Original_Id_Financeiro));
-            this.Adapter.UpdateCommand.Parameters[7].Value = ((int)(Original_Id_Aluno));
-            this.Adapter.UpdateCommand.Parameters[8].Value = ((int)(Original_Id_Plano));
-            this.Adapter.UpdateCommand.Parameters[9].Value = ((byte)(Original_Parcelas));
-            this.Adapter.UpdateCommand.Parameters[10].Value = ((bool)(Original_Situacao));
-            this.Adapter.UpdateCommand.Parameters[11].Value = ((int)(Id_Negociacao));
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
-            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.UpdateCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.UpdateCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(int Id_Financeiro, int Id_Aluno, int Id_Plano, byte Parcelas, bool Situacao, int Original_Id_Negociacao, int Original_Id_Financeiro, int Original_Id_Aluno, int Original_Id_Plano, byte Original_Parcelas, bool Original_Situacao) {
-            return this.Update(Id_Financeiro, Id_Aluno, Id_Plano, Parcelas, Situacao, Original_Id_Negociacao, Original_Id_Financeiro, Original_Id_Aluno, Original_Id_Plano, Original_Parcelas, Original_Situacao, Original_Id_Negociacao);
         }
     }
     
@@ -1073,8 +987,6 @@ SELECT Id_Negociacao, Id_Financeiro, Id_Aluno, Id_Plano, Parcelas, Situacao FROM
         
         private UpdateOrderOption _updateOrder;
         
-        private NegociacaoTableAdapter _negociacaoTableAdapter;
-        
         private bool _backupDataSetBeforeUpdate;
         
         private global::System.Data.IDbConnection _connection;
@@ -1087,20 +999,6 @@ SELECT Id_Negociacao, Id_Financeiro, Id_Aluno, Id_Plano, Parcelas, Situacao FROM
             }
             set {
                 this._updateOrder = value;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
-            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
-            "a", "System.Drawing.Design.UITypeEditor")]
-        public NegociacaoTableAdapter NegociacaoTableAdapter {
-            get {
-                return this._negociacaoTableAdapter;
-            }
-            set {
-                this._negociacaoTableAdapter = value;
             }
         }
         
@@ -1123,10 +1021,6 @@ SELECT Id_Negociacao, Id_Financeiro, Id_Aluno, Id_Plano, Parcelas, Situacao FROM
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._negociacaoTableAdapter != null) 
-                            && (this._negociacaoTableAdapter.Connection != null))) {
-                    return this._negociacaoTableAdapter.Connection;
-                }
                 return null;
             }
             set {
@@ -1140,9 +1034,6 @@ SELECT Id_Negociacao, Id_Financeiro, Id_Aluno, Id_Plano, Parcelas, Situacao FROM
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
-                if ((this._negociacaoTableAdapter != null)) {
-                    count = (count + 1);
-                }
                 return count;
             }
         }
@@ -1152,17 +1043,8 @@ SELECT Id_Negociacao, Id_Financeiro, Id_Aluno, Id_Plano, Parcelas, Situacao FROM
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateUpdatedRows(Escola_PrincipalDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(Escola_PrincipalDataSet4 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._negociacaoTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.Negociacao.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._negociacaoTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
             return result;
         }
         
@@ -1171,16 +1053,8 @@ SELECT Id_Negociacao, Id_Financeiro, Id_Aluno, Id_Plano, Parcelas, Situacao FROM
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateInsertedRows(Escola_PrincipalDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(Escola_PrincipalDataSet4 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._negociacaoTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.Negociacao.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._negociacaoTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
             return result;
         }
         
@@ -1189,16 +1063,8 @@ SELECT Id_Negociacao, Id_Financeiro, Id_Aluno, Id_Plano, Parcelas, Situacao FROM
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateDeletedRows(Escola_PrincipalDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(Escola_PrincipalDataSet4 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._negociacaoTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.Negociacao.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._negociacaoTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
             return result;
         }
         
@@ -1231,17 +1097,12 @@ SELECT Id_Negociacao, Id_Financeiro, Id_Aluno, Id_Plano, Parcelas, Situacao FROM
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public virtual int UpdateAll(Escola_PrincipalDataSet dataSet) {
+        public virtual int UpdateAll(Escola_PrincipalDataSet4 dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
             if ((dataSet.HasChanges() == false)) {
                 return 0;
-            }
-            if (((this._negociacaoTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._negociacaoTableAdapter.Connection) == false))) {
-                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
-                        "tring.");
             }
             global::System.Data.IDbConnection workConnection = this.Connection;
             if ((workConnection == null)) {
@@ -1275,15 +1136,6 @@ SELECT Id_Negociacao, Id_Financeiro, Id_Aluno, Id_Plano, Parcelas, Situacao FROM
             try {
                 // ---- Prepare for update -----------
                 //
-                if ((this._negociacaoTableAdapter != null)) {
-                    revertConnections.Add(this._negociacaoTableAdapter, this._negociacaoTableAdapter.Connection);
-                    this._negociacaoTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._negociacaoTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._negociacaoTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._negociacaoTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._negociacaoTableAdapter.Adapter);
-                    }
-                }
                 // 
                 //---- Perform updates -----------
                 //
@@ -1341,10 +1193,6 @@ SELECT Id_Negociacao, Id_Financeiro, Id_Aluno, Id_Plano, Parcelas, Situacao FROM
             finally {
                 if (workConnOpened) {
                     workConnection.Close();
-                }
-                if ((this._negociacaoTableAdapter != null)) {
-                    this._negociacaoTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._negociacaoTableAdapter]));
-                    this._negociacaoTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

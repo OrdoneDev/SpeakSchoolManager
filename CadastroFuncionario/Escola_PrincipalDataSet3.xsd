@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema id="DB_EscolaDataSet12" targetNamespace="http://tempuri.org/DB_EscolaDataSet121.xsd" xmlns:mstns="http://tempuri.org/DB_EscolaDataSet121.xsd" xmlns="http://tempuri.org/DB_EscolaDataSet121.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+<xs:schema id="Escola_PrincipalDataSet3" targetNamespace="http://tempuri.org/Escola_PrincipalDataSet3.xsd" xmlns:mstns="http://tempuri.org/Escola_PrincipalDataSet3.xsd" xmlns="http://tempuri.org/Escola_PrincipalDataSet3.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
@@ -7,12 +7,12 @@
           <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DB_EscolaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DB_EscolaConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CadastroFuncionario.Properties.Settings.GlobalReference.Default.DB_EscolaConnectionString" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
-          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="IdiomasPlanosTableAdapter" GeneratorDataComponentClassName="IdiomasPlanosTableAdapter" Name="IdiomasPlanos" UserDataComponentName="IdiomasPlanosTableAdapter">
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="IdiomasPlanosFiltroTableAdapter" GeneratorDataComponentClassName="IdiomasPlanosFiltroTableAdapter" Name="IdiomasPlanosFiltro" UserDataComponentName="IdiomasPlanosFiltroTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="DB_EscolaConnectionString (Settings)" DbObjectName="DB_Escola.dbo.IdiomasPlanos" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="DB_EscolaConnectionString (Settings)" DbObjectName="dbo.IdiomasPlanosFiltro" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>SELECT Id_Plano, [Nome do idioma], Id_Idioma, [Nome do plano], Aulas_Previstas, Valor FROM dbo.IdiomasPlanos</CommandText>
+                    <CommandText>SELECT Id_Plano, [Nome do idioma], Id_Idioma, [Nome do plano], Aulas_Previstas, Valor FROM dbo.IdiomasPlanosFiltro</CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
@@ -33,10 +33,10 @@
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="DB_EscolaDataSet12" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DB_EscolaDataSet12" msprop:Generator_UserDSName="DB_EscolaDataSet12">
+  <xs:element name="Escola_PrincipalDataSet3" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Escola_PrincipalDataSet3" msprop:Generator_UserDSName="Escola_PrincipalDataSet3">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="IdiomasPlanos" msprop:Generator_TableClassName="IdiomasPlanosDataTable" msprop:Generator_TableVarName="tableIdiomasPlanos" msprop:Generator_TablePropName="IdiomasPlanos" msprop:Generator_RowDeletingName="IdiomasPlanosRowDeleting" msprop:Generator_RowChangingName="IdiomasPlanosRowChanging" msprop:Generator_RowEvHandlerName="IdiomasPlanosRowChangeEventHandler" msprop:Generator_RowDeletedName="IdiomasPlanosRowDeleted" msprop:Generator_UserTableName="IdiomasPlanos" msprop:Generator_RowChangedName="IdiomasPlanosRowChanged" msprop:Generator_RowEvArgName="IdiomasPlanosRowChangeEvent" msprop:Generator_RowClassName="IdiomasPlanosRow">
+        <xs:element name="IdiomasPlanosFiltro" msprop:Generator_TableClassName="IdiomasPlanosFiltroDataTable" msprop:Generator_TableVarName="tableIdiomasPlanosFiltro" msprop:Generator_TablePropName="IdiomasPlanosFiltro" msprop:Generator_RowDeletingName="IdiomasPlanosFiltroRowDeleting" msprop:Generator_RowChangingName="IdiomasPlanosFiltroRowChanging" msprop:Generator_RowEvHandlerName="IdiomasPlanosFiltroRowChangeEventHandler" msprop:Generator_RowDeletedName="IdiomasPlanosFiltroRowDeleted" msprop:Generator_UserTableName="IdiomasPlanosFiltro" msprop:Generator_RowChangedName="IdiomasPlanosFiltroRowChanged" msprop:Generator_RowEvArgName="IdiomasPlanosFiltroRowChangeEvent" msprop:Generator_RowClassName="IdiomasPlanosFiltroRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Id_Plano" msprop:Generator_ColumnVarNameInTable="columnId_Plano" msprop:Generator_ColumnPropNameInRow="Id_Plano" msprop:Generator_ColumnPropNameInTable="Id_PlanoColumn" msprop:Generator_UserColumnName="Id_Plano" type="xs:int" />
@@ -63,7 +63,7 @@
       </xs:choice>
     </xs:complexType>
     <xs:unique name="Constraint1" msdata:PrimaryKey="true">
-      <xs:selector xpath=".//mstns:IdiomasPlanos" />
+      <xs:selector xpath=".//mstns:IdiomasPlanosFiltro" />
       <xs:field xpath="mstns:Id_Plano" />
     </xs:unique>
   </xs:element>

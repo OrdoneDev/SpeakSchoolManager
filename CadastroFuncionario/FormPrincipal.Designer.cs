@@ -67,6 +67,7 @@
             this.financeirosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.negociaçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mensalidadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.inscriçõesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -315,7 +316,8 @@
             this.planosToolStripMenuItem,
             this.financeirosToolStripMenuItem,
             this.negociaçõesToolStripMenuItem,
-            this.mensalidadesToolStripMenuItem});
+            this.mensalidadesToolStripMenuItem,
+            this.inscriçõesToolStripMenuItem1});
             this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
             this.editarToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
             this.editarToolStripMenuItem.Text = "Editar";
@@ -383,6 +385,13 @@
             this.mensalidadesToolStripMenuItem.Text = "Mensalidades...";
             this.mensalidadesToolStripMenuItem.Click += new System.EventHandler(this.mensalidadesToolStripMenuItem_Click);
             // 
+            // inscriçõesToolStripMenuItem1
+            // 
+            this.inscriçõesToolStripMenuItem1.Name = "inscriçõesToolStripMenuItem1";
+            this.inscriçõesToolStripMenuItem1.Size = new System.Drawing.Size(155, 22);
+            this.inscriçõesToolStripMenuItem1.Text = "Inscrições...";
+            this.inscriçõesToolStripMenuItem1.Click += new System.EventHandler(this.inscriçõesToolStripMenuItem1_Click);
+            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -447,6 +456,7 @@
         private System.Windows.Forms.ToolStripMenuItem financeirosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem negociaçõesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mensalidadesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem inscriçõesToolStripMenuItem1;
 
     }
 }

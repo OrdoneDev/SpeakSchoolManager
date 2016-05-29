@@ -205,5 +205,12 @@ namespace CadastroFuncionario
             form.MdiParent = this;
             form.Show();
         }
+
+        private void inscriçõesToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FormTabelaInscricoes form = new FormTabelaInscricoes();
+            form.MdiParent = this;
+            form.Show();
+        }
     }
 }

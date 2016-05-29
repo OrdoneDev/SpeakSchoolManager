@@ -19,8 +19,8 @@ namespace CadastroFuncionario
 
         private void FormTabelaNegociações_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'escola_PrincipalDataSet.NegociacaoAluno' table. You can move, or remove it, as needed.
-            this.negociacaoAlunoTableAdapter.Fill(this.escola_PrincipalDataSet.NegociacaoAluno);
+            // TODO: This line of code loads data into the 'escola_PrincipalDataSet.Negociacao' table. You can move, or remove it, as needed.
+            this.negociacaoTableAdapter.Fill(this.escola_PrincipalDataSet.Negociacao);
         }
 
         private void cmb_NomeAluno_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)

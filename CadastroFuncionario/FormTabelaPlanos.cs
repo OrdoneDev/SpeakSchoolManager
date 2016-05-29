@@ -29,8 +29,8 @@ namespace CadastroFuncionario
 
         private void FormTabelaPlanos_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dB_EscolaDataSet12.IdiomasPlanos' table. You can move, or remove it, as needed.
-            this.idiomasPlanosTableAdapter.Fill(this.dB_EscolaDataSet12.IdiomasPlanos);
+            // TODO: This line of code loads data into the 'escola_PrincipalDataSet3.IdiomasPlanosFiltro' table. You can move, or remove it, as needed.
+            this.idiomasPlanosFiltroTableAdapter.Fill(this.escola_PrincipalDataSet3.IdiomasPlanosFiltro);
         }
 
         private void btn_FiltrarIdioma_Click(object sender, EventArgs e)

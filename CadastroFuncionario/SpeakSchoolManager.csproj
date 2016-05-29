@@ -64,16 +64,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DB_EscolaDataSet11.xsd</DependentUpon>
     </Compile>
-    <Compile Include="DB_EscolaDataSet121.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DB_EscolaDataSet121.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DB_EscolaDataSet13.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DB_EscolaDataSet13.xsd</DependentUpon>
-    </Compile>
     <Compile Include="DB_EscolaDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -123,6 +113,21 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Escola_PrincipalDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Escola_PrincipalDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Escola_PrincipalDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Escola_PrincipalDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Escola_PrincipalDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Escola_PrincipalDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Escola_PrincipalDataSet4.xsd</DependentUpon>
     </Compile>
     <Compile Include="FormAdquirirCursoAluno.cs">
       <SubType>Form</SubType>
@@ -280,6 +285,12 @@
     <Compile Include="FormTabelaIdiomas.Designer.cs">
       <DependentUpon>FormTabelaIdiomas.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormTabelaInscricoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTabelaInscricoes.Designer.cs">
+      <DependentUpon>FormTabelaInscricoes.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormTabelaMensalidades.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -394,6 +405,9 @@
     <EmbeddedResource Include="FormTabelaIdiomas.resx">
       <DependentUpon>FormTabelaIdiomas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormTabelaInscricoes.resx">
+      <DependentUpon>FormTabelaInscricoes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormTabelaMensalidades.resx">
       <DependentUpon>FormTabelaMensalidades.cs</DependentUpon>
     </EmbeddedResource>
@@ -454,28 +468,6 @@
     </None>
     <None Include="DB_EscolaDataSet11.xss">
       <DependentUpon>DB_EscolaDataSet11.xsd</DependentUpon>
-    </None>
-    <None Include="DB_EscolaDataSet121.xsc">
-      <DependentUpon>DB_EscolaDataSet121.xsd</DependentUpon>
-    </None>
-    <None Include="DB_EscolaDataSet121.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DB_EscolaDataSet121.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DB_EscolaDataSet121.xss">
-      <DependentUpon>DB_EscolaDataSet121.xsd</DependentUpon>
-    </None>
-    <None Include="DB_EscolaDataSet13.xsc">
-      <DependentUpon>DB_EscolaDataSet13.xsd</DependentUpon>
-    </None>
-    <None Include="DB_EscolaDataSet13.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DB_EscolaDataSet13.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DB_EscolaDataSet13.xss">
-      <DependentUpon>DB_EscolaDataSet13.xsd</DependentUpon>
     </None>
     <None Include="DB_EscolaDataSet2.xsc">
       <DependentUpon>DB_EscolaDataSet2.xsd</DependentUpon>
@@ -586,6 +578,39 @@
     </None>
     <None Include="Escola_PrincipalDataSet1.xss">
       <DependentUpon>Escola_PrincipalDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Escola_PrincipalDataSet2.xsc">
+      <DependentUpon>Escola_PrincipalDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Escola_PrincipalDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Escola_PrincipalDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Escola_PrincipalDataSet2.xss">
+      <DependentUpon>Escola_PrincipalDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Escola_PrincipalDataSet3.xsc">
+      <DependentUpon>Escola_PrincipalDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Escola_PrincipalDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Escola_PrincipalDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Escola_PrincipalDataSet3.xss">
+      <DependentUpon>Escola_PrincipalDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Escola_PrincipalDataSet4.xsc">
+      <DependentUpon>Escola_PrincipalDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Escola_PrincipalDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Escola_PrincipalDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Escola_PrincipalDataSet4.xss">
+      <DependentUpon>Escola_PrincipalDataSet4.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

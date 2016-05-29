@@ -31,17 +31,18 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTabelaNegociações));
             this.group_TabelaNegociacoes = new System.Windows.Forms.GroupBox();
-            this.dgv_TabelaNegociacoes = new System.Windows.Forms.DataGridView();
-            this.lbl_NomeAluno = new System.Windows.Forms.Label();
-            this.cmb_NomeAluno = new System.Windows.Forms.ComboBox();
-            this.btn_FiltrarAluno = new System.Windows.Forms.Button();
-            this.btn_FiltrarPlano = new System.Windows.Forms.Button();
-            this.lbl_Plano = new System.Windows.Forms.Label();
             this.cmb_Plano = new System.Windows.Forms.ComboBox();
+            this.lbl_Plano = new System.Windows.Forms.Label();
+            this.btn_FiltrarPlano = new System.Windows.Forms.Button();
+            this.btn_FiltrarAluno = new System.Windows.Forms.Button();
+            this.cmb_NomeAluno = new System.Windows.Forms.ComboBox();
+            this.lbl_NomeAluno = new System.Windows.Forms.Label();
+            this.dgv_TabelaNegociacoes = new System.Windows.Forms.DataGridView();
             this.escola_PrincipalDataSet = new CadastroFuncionario.Escola_PrincipalDataSet();
-            this.negociacaoAlunoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.negociacaoAlunoTableAdapter = new CadastroFuncionario.Escola_PrincipalDataSetTableAdapters.NegociacaoAlunoTableAdapter();
+            this.negociacaoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.negociacaoTableAdapter = new CadastroFuncionario.Escola_PrincipalDataSetTableAdapters.NegociacaoTableAdapter();
             this.idNegociacaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idFinanceiroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idAlunoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idPlanoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.parcelasDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,7 +50,7 @@
             this.group_TabelaNegociacoes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_TabelaNegociacoes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.escola_PrincipalDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.negociacaoAlunoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.negociacaoBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // group_TabelaNegociacoes
@@ -65,26 +66,32 @@
             this.group_TabelaNegociacoes.Name = "group_TabelaNegociacoes";
             this.group_TabelaNegociacoes.TabStop = false;
             // 
-            // dgv_TabelaNegociacoes
+            // cmb_Plano
             // 
-            this.dgv_TabelaNegociacoes.AllowUserToAddRows = false;
-            this.dgv_TabelaNegociacoes.AutoGenerateColumns = false;
-            this.dgv_TabelaNegociacoes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgv_TabelaNegociacoes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_TabelaNegociacoes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idNegociacaoDataGridViewTextBoxColumn,
-            this.idAlunoDataGridViewTextBoxColumn,
-            this.idPlanoDataGridViewTextBoxColumn,
-            this.parcelasDataGridViewTextBoxColumn,
-            this.situacaoDataGridViewCheckBoxColumn});
-            this.dgv_TabelaNegociacoes.DataSource = this.negociacaoAlunoBindingSource;
-            resources.ApplyResources(this.dgv_TabelaNegociacoes, "dgv_TabelaNegociacoes");
-            this.dgv_TabelaNegociacoes.Name = "dgv_TabelaNegociacoes";
+            this.cmb_Plano.FormattingEnabled = true;
+            resources.ApplyResources(this.cmb_Plano, "cmb_Plano");
+            this.cmb_Plano.Name = "cmb_Plano";
+            this.cmb_Plano.SelectedValueChanged += new System.EventHandler(this.cmb_Plano_SelectedValueChanged);
+            this.cmb_Plano.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.cmb_Plano_PreviewKeyDown);
             // 
-            // lbl_NomeAluno
+            // lbl_Plano
             // 
-            resources.ApplyResources(this.lbl_NomeAluno, "lbl_NomeAluno");
-            this.lbl_NomeAluno.Name = "lbl_NomeAluno";
+            resources.ApplyResources(this.lbl_Plano, "lbl_Plano");
+            this.lbl_Plano.Name = "lbl_Plano";
+            // 
+            // btn_FiltrarPlano
+            // 
+            resources.ApplyResources(this.btn_FiltrarPlano, "btn_FiltrarPlano");
+            this.btn_FiltrarPlano.Name = "btn_FiltrarPlano";
+            this.btn_FiltrarPlano.UseVisualStyleBackColor = true;
+            this.btn_FiltrarPlano.Click += new System.EventHandler(this.btn_FiltrarPlano_Click);
+            // 
+            // btn_FiltrarAluno
+            // 
+            resources.ApplyResources(this.btn_FiltrarAluno, "btn_FiltrarAluno");
+            this.btn_FiltrarAluno.Name = "btn_FiltrarAluno";
+            this.btn_FiltrarAluno.UseVisualStyleBackColor = true;
+            this.btn_FiltrarAluno.Click += new System.EventHandler(this.btn_FiltrarAluno_Click);
             // 
             // cmb_NomeAluno
             // 
@@ -94,46 +101,41 @@
             this.cmb_NomeAluno.SelectedValueChanged += new System.EventHandler(this.cmb_NomeAluno_SelectedValueChanged);
             this.cmb_NomeAluno.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.cmb_NomeAluno_PreviewKeyDown);
             // 
-            // btn_FiltrarAluno
+            // lbl_NomeAluno
             // 
-            resources.ApplyResources(this.btn_FiltrarAluno, "btn_FiltrarAluno");
-            this.btn_FiltrarAluno.Name = "btn_FiltrarAluno";
-            this.btn_FiltrarAluno.UseVisualStyleBackColor = true;
-            this.btn_FiltrarAluno.Click += new System.EventHandler(this.btn_FiltrarAluno_Click);
+            resources.ApplyResources(this.lbl_NomeAluno, "lbl_NomeAluno");
+            this.lbl_NomeAluno.Name = "lbl_NomeAluno";
             // 
-            // btn_FiltrarPlano
+            // dgv_TabelaNegociacoes
             // 
-            resources.ApplyResources(this.btn_FiltrarPlano, "btn_FiltrarPlano");
-            this.btn_FiltrarPlano.Name = "btn_FiltrarPlano";
-            this.btn_FiltrarPlano.UseVisualStyleBackColor = true;
-            this.btn_FiltrarPlano.Click += new System.EventHandler(this.btn_FiltrarPlano_Click);
-            // 
-            // lbl_Plano
-            // 
-            resources.ApplyResources(this.lbl_Plano, "lbl_Plano");
-            this.lbl_Plano.Name = "lbl_Plano";
-            // 
-            // cmb_Plano
-            // 
-            this.cmb_Plano.FormattingEnabled = true;
-            resources.ApplyResources(this.cmb_Plano, "cmb_Plano");
-            this.cmb_Plano.Name = "cmb_Plano";
-            this.cmb_Plano.SelectedValueChanged += new System.EventHandler(this.cmb_Plano_SelectedValueChanged);
-            this.cmb_Plano.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.cmb_Plano_PreviewKeyDown);
+            this.dgv_TabelaNegociacoes.AllowUserToAddRows = false;
+            this.dgv_TabelaNegociacoes.AutoGenerateColumns = false;
+            this.dgv_TabelaNegociacoes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_TabelaNegociacoes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_TabelaNegociacoes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idNegociacaoDataGridViewTextBoxColumn,
+            this.idFinanceiroDataGridViewTextBoxColumn,
+            this.idAlunoDataGridViewTextBoxColumn,
+            this.idPlanoDataGridViewTextBoxColumn,
+            this.parcelasDataGridViewTextBoxColumn,
+            this.situacaoDataGridViewCheckBoxColumn});
+            this.dgv_TabelaNegociacoes.DataSource = this.negociacaoBindingSource;
+            resources.ApplyResources(this.dgv_TabelaNegociacoes, "dgv_TabelaNegociacoes");
+            this.dgv_TabelaNegociacoes.Name = "dgv_TabelaNegociacoes";
             // 
             // escola_PrincipalDataSet
             // 
             this.escola_PrincipalDataSet.DataSetName = "Escola_PrincipalDataSet";
             this.escola_PrincipalDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // negociacaoAlunoBindingSource
+            // negociacaoBindingSource
             // 
-            this.negociacaoAlunoBindingSource.DataMember = "NegociacaoAluno";
-            this.negociacaoAlunoBindingSource.DataSource = this.escola_PrincipalDataSet;
+            this.negociacaoBindingSource.DataMember = "Negociacao";
+            this.negociacaoBindingSource.DataSource = this.escola_PrincipalDataSet;
             // 
-            // negociacaoAlunoTableAdapter
+            // negociacaoTableAdapter
             // 
-            this.negociacaoAlunoTableAdapter.ClearBeforeFill = true;
+            this.negociacaoTableAdapter.ClearBeforeFill = true;
             // 
             // idNegociacaoDataGridViewTextBoxColumn
             // 
@@ -141,6 +143,12 @@
             resources.ApplyResources(this.idNegociacaoDataGridViewTextBoxColumn, "idNegociacaoDataGridViewTextBoxColumn");
             this.idNegociacaoDataGridViewTextBoxColumn.Name = "idNegociacaoDataGridViewTextBoxColumn";
             this.idNegociacaoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // idFinanceiroDataGridViewTextBoxColumn
+            // 
+            this.idFinanceiroDataGridViewTextBoxColumn.DataPropertyName = "Id_Financeiro";
+            resources.ApplyResources(this.idFinanceiroDataGridViewTextBoxColumn, "idFinanceiroDataGridViewTextBoxColumn");
+            this.idFinanceiroDataGridViewTextBoxColumn.Name = "idFinanceiroDataGridViewTextBoxColumn";
             // 
             // idAlunoDataGridViewTextBoxColumn
             // 
@@ -179,7 +187,7 @@
             this.group_TabelaNegociacoes.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_TabelaNegociacoes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.escola_PrincipalDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.negociacaoAlunoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.negociacaoBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -195,9 +203,10 @@
         private System.Windows.Forms.Label lbl_NomeAluno;
         private System.Windows.Forms.DataGridView dgv_TabelaNegociacoes;
         private Escola_PrincipalDataSet escola_PrincipalDataSet;
-        private System.Windows.Forms.BindingSource negociacaoAlunoBindingSource;
-        private Escola_PrincipalDataSetTableAdapters.NegociacaoAlunoTableAdapter negociacaoAlunoTableAdapter;
+        private System.Windows.Forms.BindingSource negociacaoBindingSource;
+        private Escola_PrincipalDataSetTableAdapters.NegociacaoTableAdapter negociacaoTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn idNegociacaoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idFinanceiroDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn idAlunoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn idPlanoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn parcelasDataGridViewTextBoxColumn;

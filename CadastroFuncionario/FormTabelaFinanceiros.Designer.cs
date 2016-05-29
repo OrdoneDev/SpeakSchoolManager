@@ -35,9 +35,9 @@
             this.cmb_Nome = new System.Windows.Forms.ComboBox();
             this.lbl_Nome = new System.Windows.Forms.Label();
             this.dgv_TabelaFinanceiros = new System.Windows.Forms.DataGridView();
-            this.financeiroFuncionarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dB_EscolaDataSet13 = new CadastroFuncionario.DB_EscolaDataSet13();
-            this.financeiroFuncionarioTableAdapter = new CadastroFuncionario.DB_EscolaDataSet13TableAdapters.FinanceiroFuncionarioTableAdapter();
+            this.escola_PrincipalDataSet4 = new CadastroFuncionario.Escola_PrincipalDataSet4();
+            this.financeiroFuncionarioFiltroBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.financeiroFuncionarioFiltroTableAdapter = new CadastroFuncionario.Escola_PrincipalDataSet4TableAdapters.FinanceiroFuncionarioFiltroTableAdapter();
             this.idFinanceiroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idFuncionarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bancoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,8 +46,8 @@
             this.dataDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.group_TabelaFinanceiro.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_TabelaFinanceiros)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.financeiroFuncionarioBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dB_EscolaDataSet13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.escola_PrincipalDataSet4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.financeiroFuncionarioFiltroBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // group_TabelaFinanceiro
@@ -92,29 +92,30 @@
             this.agenciaDataGridViewTextBoxColumn,
             this.contaDataGridViewTextBoxColumn,
             this.dataDataGridViewTextBoxColumn});
-            this.dgv_TabelaFinanceiros.DataSource = this.financeiroFuncionarioBindingSource;
+            this.dgv_TabelaFinanceiros.DataSource = this.financeiroFuncionarioFiltroBindingSource;
             resources.ApplyResources(this.dgv_TabelaFinanceiros, "dgv_TabelaFinanceiros");
             this.dgv_TabelaFinanceiros.Name = "dgv_TabelaFinanceiros";
             // 
-            // financeiroFuncionarioBindingSource
+            // escola_PrincipalDataSet4
             // 
-            this.financeiroFuncionarioBindingSource.DataMember = "FinanceiroFuncionario";
-            this.financeiroFuncionarioBindingSource.DataSource = this.dB_EscolaDataSet13;
+            this.escola_PrincipalDataSet4.DataSetName = "Escola_PrincipalDataSet4";
+            this.escola_PrincipalDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // dB_EscolaDataSet13
+            // financeiroFuncionarioFiltroBindingSource
             // 
-            this.dB_EscolaDataSet13.DataSetName = "DB_EscolaDataSet13";
-            this.dB_EscolaDataSet13.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.financeiroFuncionarioFiltroBindingSource.DataMember = "FinanceiroFuncionarioFiltro";
+            this.financeiroFuncionarioFiltroBindingSource.DataSource = this.escola_PrincipalDataSet4;
             // 
-            // financeiroFuncionarioTableAdapter
+            // financeiroFuncionarioFiltroTableAdapter
             // 
-            this.financeiroFuncionarioTableAdapter.ClearBeforeFill = true;
+            this.financeiroFuncionarioFiltroTableAdapter.ClearBeforeFill = true;
             // 
             // idFinanceiroDataGridViewTextBoxColumn
             // 
             this.idFinanceiroDataGridViewTextBoxColumn.DataPropertyName = "Id_Financeiro";
             resources.ApplyResources(this.idFinanceiroDataGridViewTextBoxColumn, "idFinanceiroDataGridViewTextBoxColumn");
             this.idFinanceiroDataGridViewTextBoxColumn.Name = "idFinanceiroDataGridViewTextBoxColumn";
+            this.idFinanceiroDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // idFuncionarioDataGridViewTextBoxColumn
             // 
@@ -158,8 +159,8 @@
             this.group_TabelaFinanceiro.ResumeLayout(false);
             this.group_TabelaFinanceiro.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_TabelaFinanceiros)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.financeiroFuncionarioBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dB_EscolaDataSet13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.escola_PrincipalDataSet4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.financeiroFuncionarioFiltroBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -171,9 +172,9 @@
         private System.Windows.Forms.Button btn_FiltrarNome;
         private System.Windows.Forms.ComboBox cmb_Nome;
         private System.Windows.Forms.Label lbl_Nome;
-        private DB_EscolaDataSet13 dB_EscolaDataSet13;
-        private System.Windows.Forms.BindingSource financeiroFuncionarioBindingSource;
-        private DB_EscolaDataSet13TableAdapters.FinanceiroFuncionarioTableAdapter financeiroFuncionarioTableAdapter;
+        private Escola_PrincipalDataSet4 escola_PrincipalDataSet4;
+        private System.Windows.Forms.BindingSource financeiroFuncionarioFiltroBindingSource;
+        private Escola_PrincipalDataSet4TableAdapters.FinanceiroFuncionarioFiltroTableAdapter financeiroFuncionarioFiltroTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn idFinanceiroDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn idFuncionarioDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn bancoDataGridViewTextBoxColumn;

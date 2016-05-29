@@ -212,11 +212,8 @@
   <data name="dataDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>Data para depósito</value>
   </data>
-  <metadata name="financeiroFuncionarioBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>178, 17</value>
-  </metadata>
-  <metadata name="dB_EscolaDataSet13.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
+  <metadata name="financeiroFuncionarioFiltroBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>203, 17</value>
   </metadata>
   <data name="dgv_TabelaFinanceiros.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 44</value>
@@ -263,8 +260,11 @@
   <data name="&gt;&gt;group_TabelaFinanceiro.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="financeiroFuncionarioTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>426, 17</value>
+  <metadata name="escola_PrincipalDataSet4.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="financeiroFuncionarioFiltroTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>479, 17</value>
   </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -278,23 +278,23 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Tabela de financeiros</value>
   </data>
-  <data name="&gt;&gt;financeiroFuncionarioBindingSource.Name" xml:space="preserve">
-    <value>financeiroFuncionarioBindingSource</value>
+  <data name="&gt;&gt;escola_PrincipalDataSet4.Name" xml:space="preserve">
+    <value>escola_PrincipalDataSet4</value>
   </data>
-  <data name="&gt;&gt;financeiroFuncionarioBindingSource.Type" xml:space="preserve">
+  <data name="&gt;&gt;escola_PrincipalDataSet4.Type" xml:space="preserve">
+    <value>CadastroFuncionario.Escola_PrincipalDataSet4, Escola_PrincipalDataSet4.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;financeiroFuncionarioFiltroBindingSource.Name" xml:space="preserve">
+    <value>financeiroFuncionarioFiltroBindingSource</value>
+  </data>
+  <data name="&gt;&gt;financeiroFuncionarioFiltroBindingSource.Type" xml:space="preserve">
     <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;dB_EscolaDataSet13.Name" xml:space="preserve">
-    <value>dB_EscolaDataSet13</value>
+  <data name="&gt;&gt;financeiroFuncionarioFiltroTableAdapter.Name" xml:space="preserve">
+    <value>financeiroFuncionarioFiltroTableAdapter</value>
   </data>
-  <data name="&gt;&gt;dB_EscolaDataSet13.Type" xml:space="preserve">
-    <value>CadastroFuncionario.DB_EscolaDataSet13, DB_EscolaDataSet13.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;financeiroFuncionarioTableAdapter.Name" xml:space="preserve">
-    <value>financeiroFuncionarioTableAdapter</value>
-  </data>
-  <data name="&gt;&gt;financeiroFuncionarioTableAdapter.Type" xml:space="preserve">
-    <value>CadastroFuncionario.DB_EscolaDataSet13TableAdapters.FinanceiroFuncionarioTableAdapter, DB_EscolaDataSet13.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="&gt;&gt;financeiroFuncionarioFiltroTableAdapter.Type" xml:space="preserve">
+    <value>CadastroFuncionario.Escola_PrincipalDataSet4TableAdapters.FinanceiroFuncionarioFiltroTableAdapter, Escola_PrincipalDataSet4.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;idFinanceiroDataGridViewTextBoxColumn.Name" xml:space="preserve">
     <value>idFinanceiroDataGridViewTextBoxColumn</value>

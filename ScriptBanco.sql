@@ -498,7 +498,7 @@ Create table SysProtected.Mensalidades (
 	Data				Date			not null
 )
 go
---------------------------------------------------------------------------------------------------------
+
 CREATE VIEW MensalidadesAlunosFiltro AS
 	select	M.Id_Mensalidade,
 			M.Id_Financeiro,
@@ -651,6 +651,16 @@ Create table SysProtected.Inscricao (
 )
 go
 
+CREATE VIEW InscricaoAlunoFiltro AS
+	select	I.Id_Inscricao,
+			I.Id_Aluno,
+			A.Nome,
+			I.Id_Negociacao,
+			I.Data,
+			I.Status
+	from SysProtected.Inscricao I INNER JOIN SysProtected.Alunos A
+	on I.Id_Aluno = A.Id_Aluno
+GO
 
 Create unique index Unica_Inscricao
    on SysProtected.Inscricao (Id_Aluno, Id_Negociacao);

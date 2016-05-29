@@ -273,7 +273,25 @@
   <data name="&gt;&gt;lbl_NomeAluno.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <metadata name="negociacaoAlunoBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <data name="idNegociacaoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Código da negociação</value>
+  </data>
+  <data name="idFinanceiroDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Código do financeiro</value>
+  </data>
+  <data name="idAlunoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Código do aluno</value>
+  </data>
+  <data name="idPlanoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Código do plano</value>
+  </data>
+  <data name="parcelasDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Nº total de parcelas</value>
+  </data>
+  <data name="situacaoDataGridViewCheckBoxColumn.HeaderText" xml:space="preserve">
+    <value>Situacao</value>
+  </data>
+  <metadata name="negociacaoBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>197, 17</value>
   </metadata>
   <data name="dgv_TabelaNegociacoes.Location" type="System.Drawing.Point, System.Drawing">
@@ -324,30 +342,9 @@
   <metadata name="escola_PrincipalDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <metadata name="negociacaoAlunoBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>197, 17</value>
+  <metadata name="negociacaoTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>390, 17</value>
   </metadata>
-  <metadata name="escola_PrincipalDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="negociacaoAlunoTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>422, 17</value>
-  </metadata>
-  <data name="idNegociacaoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Código da negociação</value>
-  </data>
-  <data name="idAlunoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Código do aluno</value>
-  </data>
-  <data name="idPlanoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Código do plano</value>
-  </data>
-  <data name="parcelasDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Nº total de parcelas</value>
-  </data>
-  <data name="situacaoDataGridViewCheckBoxColumn.HeaderText" xml:space="preserve">
-    <value>Situacao</value>
-  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -366,22 +363,28 @@
   <data name="&gt;&gt;escola_PrincipalDataSet.Type" xml:space="preserve">
     <value>CadastroFuncionario.Escola_PrincipalDataSet, Escola_PrincipalDataSet.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;negociacaoAlunoBindingSource.Name" xml:space="preserve">
-    <value>negociacaoAlunoBindingSource</value>
+  <data name="&gt;&gt;negociacaoBindingSource.Name" xml:space="preserve">
+    <value>negociacaoBindingSource</value>
   </data>
-  <data name="&gt;&gt;negociacaoAlunoBindingSource.Type" xml:space="preserve">
+  <data name="&gt;&gt;negociacaoBindingSource.Type" xml:space="preserve">
     <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;negociacaoAlunoTableAdapter.Name" xml:space="preserve">
-    <value>negociacaoAlunoTableAdapter</value>
+  <data name="&gt;&gt;negociacaoTableAdapter.Name" xml:space="preserve">
+    <value>negociacaoTableAdapter</value>
   </data>
-  <data name="&gt;&gt;negociacaoAlunoTableAdapter.Type" xml:space="preserve">
-    <value>CadastroFuncionario.Escola_PrincipalDataSetTableAdapters.NegociacaoAlunoTableAdapter, Escola_PrincipalDataSet.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="&gt;&gt;negociacaoTableAdapter.Type" xml:space="preserve">
+    <value>CadastroFuncionario.Escola_PrincipalDataSetTableAdapters.NegociacaoTableAdapter, Escola_PrincipalDataSet.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;idNegociacaoDataGridViewTextBoxColumn.Name" xml:space="preserve">
     <value>idNegociacaoDataGridViewTextBoxColumn</value>
   </data>
   <data name="&gt;&gt;idNegociacaoDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;idFinanceiroDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>idFinanceiroDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;idFinanceiroDataGridViewTextBoxColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;idAlunoDataGridViewTextBoxColumn.Name" xml:space="preserve">

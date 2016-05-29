@@ -20,17 +20,17 @@ namespace CadastroFuncionario {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("DB_EscolaDataSet12")]
+    [global::System.Xml.Serialization.XmlRootAttribute("Escola_PrincipalDataSet3")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class DB_EscolaDataSet12 : global::System.Data.DataSet {
+    public partial class Escola_PrincipalDataSet3 : global::System.Data.DataSet {
         
-        private IdiomasPlanosDataTable tableIdiomasPlanos;
+        private IdiomasPlanosFiltroDataTable tableIdiomasPlanosFiltro;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public DB_EscolaDataSet12() {
+        public Escola_PrincipalDataSet3() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace CadastroFuncionario {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        protected DB_EscolaDataSet12(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected Escola_PrincipalDataSet3(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace CadastroFuncionario {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["IdiomasPlanos"] != null)) {
-                    base.Tables.Add(new IdiomasPlanosDataTable(ds.Tables["IdiomasPlanos"]));
+                if ((ds.Tables["IdiomasPlanosFiltro"] != null)) {
+                    base.Tables.Add(new IdiomasPlanosFiltroDataTable(ds.Tables["IdiomasPlanosFiltro"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace CadastroFuncionario {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public IdiomasPlanosDataTable IdiomasPlanos {
+        public IdiomasPlanosFiltroDataTable IdiomasPlanosFiltro {
             get {
-                return this.tableIdiomasPlanos;
+                return this.tableIdiomasPlanosFiltro;
             }
         }
         
@@ -127,7 +127,7 @@ namespace CadastroFuncionario {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            DB_EscolaDataSet12 cln = ((DB_EscolaDataSet12)(base.Clone()));
+            Escola_PrincipalDataSet3 cln = ((Escola_PrincipalDataSet3)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace CadastroFuncionario {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["IdiomasPlanos"] != null)) {
-                    base.Tables.Add(new IdiomasPlanosDataTable(ds.Tables["IdiomasPlanos"]));
+                if ((ds.Tables["IdiomasPlanosFiltro"] != null)) {
+                    base.Tables.Add(new IdiomasPlanosFiltroDataTable(ds.Tables["IdiomasPlanosFiltro"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace CadastroFuncionario {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableIdiomasPlanos = ((IdiomasPlanosDataTable)(base.Tables["IdiomasPlanos"]));
+            this.tableIdiomasPlanosFiltro = ((IdiomasPlanosFiltroDataTable)(base.Tables["IdiomasPlanosFiltro"]));
             if ((initTable == true)) {
-                if ((this.tableIdiomasPlanos != null)) {
-                    this.tableIdiomasPlanos.InitVars();
+                if ((this.tableIdiomasPlanosFiltro != null)) {
+                    this.tableIdiomasPlanosFiltro.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace CadastroFuncionario {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "DB_EscolaDataSet12";
+            this.DataSetName = "Escola_PrincipalDataSet3";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/DB_EscolaDataSet121.xsd";
+            this.Namespace = "http://tempuri.org/Escola_PrincipalDataSet3.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableIdiomasPlanos = new IdiomasPlanosDataTable();
-            base.Tables.Add(this.tableIdiomasPlanos);
+            this.tableIdiomasPlanosFiltro = new IdiomasPlanosFiltroDataTable();
+            base.Tables.Add(this.tableIdiomasPlanosFiltro);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private bool ShouldSerializeIdiomasPlanos() {
+        private bool ShouldSerializeIdiomasPlanosFiltro() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace CadastroFuncionario {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            DB_EscolaDataSet12 ds = new DB_EscolaDataSet12();
+            Escola_PrincipalDataSet3 ds = new Escola_PrincipalDataSet3();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,14 +270,14 @@ namespace CadastroFuncionario {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public delegate void IdiomasPlanosRowChangeEventHandler(object sender, IdiomasPlanosRowChangeEvent e);
+        public delegate void IdiomasPlanosFiltroRowChangeEventHandler(object sender, IdiomasPlanosFiltroRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class IdiomasPlanosDataTable : global::System.Data.TypedTableBase<IdiomasPlanosRow> {
+        public partial class IdiomasPlanosFiltroDataTable : global::System.Data.TypedTableBase<IdiomasPlanosFiltroRow> {
             
             private global::System.Data.DataColumn columnId_Plano;
             
@@ -293,8 +293,8 @@ namespace CadastroFuncionario {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public IdiomasPlanosDataTable() {
-                this.TableName = "IdiomasPlanos";
+            public IdiomasPlanosFiltroDataTable() {
+                this.TableName = "IdiomasPlanosFiltro";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -302,7 +302,7 @@ namespace CadastroFuncionario {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal IdiomasPlanosDataTable(global::System.Data.DataTable table) {
+            internal IdiomasPlanosFiltroDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -319,7 +319,7 @@ namespace CadastroFuncionario {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected IdiomasPlanosDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected IdiomasPlanosFiltroDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
@@ -383,34 +383,34 @@ namespace CadastroFuncionario {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public IdiomasPlanosRow this[int index] {
+            public IdiomasPlanosFiltroRow this[int index] {
                 get {
-                    return ((IdiomasPlanosRow)(this.Rows[index]));
+                    return ((IdiomasPlanosFiltroRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event IdiomasPlanosRowChangeEventHandler IdiomasPlanosRowChanging;
+            public event IdiomasPlanosFiltroRowChangeEventHandler IdiomasPlanosFiltroRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event IdiomasPlanosRowChangeEventHandler IdiomasPlanosRowChanged;
+            public event IdiomasPlanosFiltroRowChangeEventHandler IdiomasPlanosFiltroRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event IdiomasPlanosRowChangeEventHandler IdiomasPlanosRowDeleting;
+            public event IdiomasPlanosFiltroRowChangeEventHandler IdiomasPlanosFiltroRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event IdiomasPlanosRowChangeEventHandler IdiomasPlanosRowDeleted;
+            public event IdiomasPlanosFiltroRowChangeEventHandler IdiomasPlanosFiltroRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void AddIdiomasPlanosRow(IdiomasPlanosRow row) {
+            public void AddIdiomasPlanosFiltroRow(IdiomasPlanosFiltroRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public IdiomasPlanosRow AddIdiomasPlanosRow(int Id_Plano, string Nome_do_idioma, int Id_Idioma, string Nome_do_plano, byte Aulas_Previstas, decimal Valor) {
-                IdiomasPlanosRow rowIdiomasPlanosRow = ((IdiomasPlanosRow)(this.NewRow()));
+            public IdiomasPlanosFiltroRow AddIdiomasPlanosFiltroRow(int Id_Plano, string Nome_do_idioma, int Id_Idioma, string Nome_do_plano, byte Aulas_Previstas, decimal Valor) {
+                IdiomasPlanosFiltroRow rowIdiomasPlanosFiltroRow = ((IdiomasPlanosFiltroRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Id_Plano,
                         Nome_do_idioma,
@@ -418,22 +418,22 @@ namespace CadastroFuncionario {
                         Nome_do_plano,
                         Aulas_Previstas,
                         Valor};
-                rowIdiomasPlanosRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowIdiomasPlanosRow);
-                return rowIdiomasPlanosRow;
+                rowIdiomasPlanosFiltroRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowIdiomasPlanosFiltroRow);
+                return rowIdiomasPlanosFiltroRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public IdiomasPlanosRow FindById_Plano(int Id_Plano) {
-                return ((IdiomasPlanosRow)(this.Rows.Find(new object[] {
+            public IdiomasPlanosFiltroRow FindById_Plano(int Id_Plano) {
+                return ((IdiomasPlanosFiltroRow)(this.Rows.Find(new object[] {
                             Id_Plano})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                IdiomasPlanosDataTable cln = ((IdiomasPlanosDataTable)(base.Clone()));
+                IdiomasPlanosFiltroDataTable cln = ((IdiomasPlanosFiltroDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -441,7 +441,7 @@ namespace CadastroFuncionario {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new IdiomasPlanosDataTable();
+                return new IdiomasPlanosFiltroDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -485,28 +485,28 @@ namespace CadastroFuncionario {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public IdiomasPlanosRow NewIdiomasPlanosRow() {
-                return ((IdiomasPlanosRow)(this.NewRow()));
+            public IdiomasPlanosFiltroRow NewIdiomasPlanosFiltroRow() {
+                return ((IdiomasPlanosFiltroRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new IdiomasPlanosRow(builder);
+                return new IdiomasPlanosFiltroRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(IdiomasPlanosRow);
+                return typeof(IdiomasPlanosFiltroRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.IdiomasPlanosRowChanged != null)) {
-                    this.IdiomasPlanosRowChanged(this, new IdiomasPlanosRowChangeEvent(((IdiomasPlanosRow)(e.Row)), e.Action));
+                if ((this.IdiomasPlanosFiltroRowChanged != null)) {
+                    this.IdiomasPlanosFiltroRowChanged(this, new IdiomasPlanosFiltroRowChangeEvent(((IdiomasPlanosFiltroRow)(e.Row)), e.Action));
                 }
             }
             
@@ -514,8 +514,8 @@ namespace CadastroFuncionario {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.IdiomasPlanosRowChanging != null)) {
-                    this.IdiomasPlanosRowChanging(this, new IdiomasPlanosRowChangeEvent(((IdiomasPlanosRow)(e.Row)), e.Action));
+                if ((this.IdiomasPlanosFiltroRowChanging != null)) {
+                    this.IdiomasPlanosFiltroRowChanging(this, new IdiomasPlanosFiltroRowChangeEvent(((IdiomasPlanosFiltroRow)(e.Row)), e.Action));
                 }
             }
             
@@ -523,8 +523,8 @@ namespace CadastroFuncionario {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.IdiomasPlanosRowDeleted != null)) {
-                    this.IdiomasPlanosRowDeleted(this, new IdiomasPlanosRowChangeEvent(((IdiomasPlanosRow)(e.Row)), e.Action));
+                if ((this.IdiomasPlanosFiltroRowDeleted != null)) {
+                    this.IdiomasPlanosFiltroRowDeleted(this, new IdiomasPlanosFiltroRowChangeEvent(((IdiomasPlanosFiltroRow)(e.Row)), e.Action));
                 }
             }
             
@@ -532,14 +532,14 @@ namespace CadastroFuncionario {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.IdiomasPlanosRowDeleting != null)) {
-                    this.IdiomasPlanosRowDeleting(this, new IdiomasPlanosRowChangeEvent(((IdiomasPlanosRow)(e.Row)), e.Action));
+                if ((this.IdiomasPlanosFiltroRowDeleting != null)) {
+                    this.IdiomasPlanosFiltroRowDeleting(this, new IdiomasPlanosFiltroRowChangeEvent(((IdiomasPlanosFiltroRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void RemoveIdiomasPlanosRow(IdiomasPlanosRow row) {
+            public void RemoveIdiomasPlanosFiltroRow(IdiomasPlanosFiltroRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -548,7 +548,7 @@ namespace CadastroFuncionario {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                DB_EscolaDataSet12 ds = new DB_EscolaDataSet12();
+                Escola_PrincipalDataSet3 ds = new Escola_PrincipalDataSet3();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -566,7 +566,7 @@ namespace CadastroFuncionario {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "IdiomasPlanosDataTable";
+                attribute2.FixedValue = "IdiomasPlanosFiltroDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -610,25 +610,25 @@ namespace CadastroFuncionario {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class IdiomasPlanosRow : global::System.Data.DataRow {
+        public partial class IdiomasPlanosFiltroRow : global::System.Data.DataRow {
             
-            private IdiomasPlanosDataTable tableIdiomasPlanos;
+            private IdiomasPlanosFiltroDataTable tableIdiomasPlanosFiltro;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal IdiomasPlanosRow(global::System.Data.DataRowBuilder rb) : 
+            internal IdiomasPlanosFiltroRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableIdiomasPlanos = ((IdiomasPlanosDataTable)(this.Table));
+                this.tableIdiomasPlanosFiltro = ((IdiomasPlanosFiltroDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int Id_Plano {
                 get {
-                    return ((int)(this[this.tableIdiomasPlanos.Id_PlanoColumn]));
+                    return ((int)(this[this.tableIdiomasPlanosFiltro.Id_PlanoColumn]));
                 }
                 set {
-                    this[this.tableIdiomasPlanos.Id_PlanoColumn] = value;
+                    this[this.tableIdiomasPlanosFiltro.Id_PlanoColumn] = value;
                 }
             }
             
@@ -636,10 +636,10 @@ namespace CadastroFuncionario {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string Nome_do_idioma {
                 get {
-                    return ((string)(this[this.tableIdiomasPlanos.Nome_do_idiomaColumn]));
+                    return ((string)(this[this.tableIdiomasPlanosFiltro.Nome_do_idiomaColumn]));
                 }
                 set {
-                    this[this.tableIdiomasPlanos.Nome_do_idiomaColumn] = value;
+                    this[this.tableIdiomasPlanosFiltro.Nome_do_idiomaColumn] = value;
                 }
             }
             
@@ -647,10 +647,10 @@ namespace CadastroFuncionario {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int Id_Idioma {
                 get {
-                    return ((int)(this[this.tableIdiomasPlanos.Id_IdiomaColumn]));
+                    return ((int)(this[this.tableIdiomasPlanosFiltro.Id_IdiomaColumn]));
                 }
                 set {
-                    this[this.tableIdiomasPlanos.Id_IdiomaColumn] = value;
+                    this[this.tableIdiomasPlanosFiltro.Id_IdiomaColumn] = value;
                 }
             }
             
@@ -658,10 +658,10 @@ namespace CadastroFuncionario {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string Nome_do_plano {
                 get {
-                    return ((string)(this[this.tableIdiomasPlanos.Nome_do_planoColumn]));
+                    return ((string)(this[this.tableIdiomasPlanosFiltro.Nome_do_planoColumn]));
                 }
                 set {
-                    this[this.tableIdiomasPlanos.Nome_do_planoColumn] = value;
+                    this[this.tableIdiomasPlanosFiltro.Nome_do_planoColumn] = value;
                 }
             }
             
@@ -669,10 +669,10 @@ namespace CadastroFuncionario {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public byte Aulas_Previstas {
                 get {
-                    return ((byte)(this[this.tableIdiomasPlanos.Aulas_PrevistasColumn]));
+                    return ((byte)(this[this.tableIdiomasPlanosFiltro.Aulas_PrevistasColumn]));
                 }
                 set {
-                    this[this.tableIdiomasPlanos.Aulas_PrevistasColumn] = value;
+                    this[this.tableIdiomasPlanosFiltro.Aulas_PrevistasColumn] = value;
                 }
             }
             
@@ -680,10 +680,10 @@ namespace CadastroFuncionario {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public decimal Valor {
                 get {
-                    return ((decimal)(this[this.tableIdiomasPlanos.ValorColumn]));
+                    return ((decimal)(this[this.tableIdiomasPlanosFiltro.ValorColumn]));
                 }
                 set {
-                    this[this.tableIdiomasPlanos.ValorColumn] = value;
+                    this[this.tableIdiomasPlanosFiltro.ValorColumn] = value;
                 }
             }
         }
@@ -692,22 +692,22 @@ namespace CadastroFuncionario {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public class IdiomasPlanosRowChangeEvent : global::System.EventArgs {
+        public class IdiomasPlanosFiltroRowChangeEvent : global::System.EventArgs {
             
-            private IdiomasPlanosRow eventRow;
+            private IdiomasPlanosFiltroRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public IdiomasPlanosRowChangeEvent(IdiomasPlanosRow row, global::System.Data.DataRowAction action) {
+            public IdiomasPlanosFiltroRowChangeEvent(IdiomasPlanosFiltroRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public IdiomasPlanosRow Row {
+            public IdiomasPlanosFiltroRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -723,7 +723,7 @@ namespace CadastroFuncionario {
         }
     }
 }
-namespace CadastroFuncionario.DB_EscolaDataSet12TableAdapters {
+namespace CadastroFuncionario.Escola_PrincipalDataSet3TableAdapters {
     
     
     /// <summary>
@@ -735,7 +735,7 @@ namespace CadastroFuncionario.DB_EscolaDataSet12TableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class IdiomasPlanosTableAdapter : global::System.ComponentModel.Component {
+    public partial class IdiomasPlanosFiltroTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -749,7 +749,7 @@ namespace CadastroFuncionario.DB_EscolaDataSet12TableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public IdiomasPlanosTableAdapter() {
+        public IdiomasPlanosFiltroTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -846,7 +846,7 @@ namespace CadastroFuncionario.DB_EscolaDataSet12TableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "IdiomasPlanos";
+            tableMapping.DataSetTable = "IdiomasPlanosFiltro";
             tableMapping.ColumnMappings.Add("Id_Plano", "Id_Plano");
             tableMapping.ColumnMappings.Add("Nome do idioma", "Nome do idioma");
             tableMapping.ColumnMappings.Add("Id_Idioma", "Id_Idioma");
@@ -870,7 +870,7 @@ namespace CadastroFuncionario.DB_EscolaDataSet12TableAdapters {
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT Id_Plano, [Nome do idioma], Id_Idioma, [Nome do plano], Aulas_Previstas, V" +
-                "alor FROM dbo.IdiomasPlanos";
+                "alor FROM dbo.IdiomasPlanosFiltro";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -878,7 +878,7 @@ namespace CadastroFuncionario.DB_EscolaDataSet12TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DB_EscolaDataSet12.IdiomasPlanosDataTable dataTable) {
+        public virtual int Fill(Escola_PrincipalDataSet3.IdiomasPlanosFiltroDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -891,9 +891,9 @@ namespace CadastroFuncionario.DB_EscolaDataSet12TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DB_EscolaDataSet12.IdiomasPlanosDataTable GetData() {
+        public virtual Escola_PrincipalDataSet3.IdiomasPlanosFiltroDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            DB_EscolaDataSet12.IdiomasPlanosDataTable dataTable = new DB_EscolaDataSet12.IdiomasPlanosDataTable();
+            Escola_PrincipalDataSet3.IdiomasPlanosFiltroDataTable dataTable = new Escola_PrincipalDataSet3.IdiomasPlanosFiltroDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -967,7 +967,7 @@ namespace CadastroFuncionario.DB_EscolaDataSet12TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateUpdatedRows(DB_EscolaDataSet12 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(Escola_PrincipalDataSet3 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -977,7 +977,7 @@ namespace CadastroFuncionario.DB_EscolaDataSet12TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateInsertedRows(DB_EscolaDataSet12 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(Escola_PrincipalDataSet3 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -987,7 +987,7 @@ namespace CadastroFuncionario.DB_EscolaDataSet12TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateDeletedRows(DB_EscolaDataSet12 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(Escola_PrincipalDataSet3 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             return result;
         }
@@ -1021,7 +1021,7 @@ namespace CadastroFuncionario.DB_EscolaDataSet12TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public virtual int UpdateAll(DB_EscolaDataSet12 dataSet) {
+        public virtual int UpdateAll(Escola_PrincipalDataSet3 dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
