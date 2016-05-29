@@ -111,6 +111,7 @@
             // 
             this.novoFuncionarioToolStripMenuItem.Name = "novoFuncionarioToolStripMenuItem";
             this.novoFuncionarioToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.novoFuncionarioToolStripMenuItem.Tag = "1";
             this.novoFuncionarioToolStripMenuItem.Text = "Novo funcionário...";
             this.novoFuncionarioToolStripMenuItem.Click += new System.EventHandler(this.novoFuncionarioToolStripMenuItem_Click);
             // 
@@ -128,6 +129,7 @@
             // 
             this.funcionarioToolStripMenuItem.Name = "funcionarioToolStripMenuItem";
             this.funcionarioToolStripMenuItem.Size = new System.Drawing.Size(242, 22);
+            this.funcionarioToolStripMenuItem.Tag = "2";
             this.funcionarioToolStripMenuItem.Text = "Novo histórico do funcionario...";
             this.funcionarioToolStripMenuItem.Click += new System.EventHandler(this.funcionarioToolStripMenuItem_Click);
             // 
@@ -135,6 +137,7 @@
             // 
             this.históricosRegistradosToolStripMenuItem.Name = "históricosRegistradosToolStripMenuItem";
             this.históricosRegistradosToolStripMenuItem.Size = new System.Drawing.Size(242, 22);
+            this.históricosRegistradosToolStripMenuItem.Tag = "2";
             this.históricosRegistradosToolStripMenuItem.Text = "Históricos registrados...";
             this.históricosRegistradosToolStripMenuItem.Click += new System.EventHandler(this.históricosRegistradosToolStripMenuItem_Click);
             // 
@@ -161,6 +164,7 @@
             // 
             this.alunosToolStripMenuItem2.Name = "alunosToolStripMenuItem2";
             this.alunosToolStripMenuItem2.Size = new System.Drawing.Size(177, 22);
+            this.alunosToolStripMenuItem2.Tag = "2";
             this.alunosToolStripMenuItem2.Text = "Novo aluno...";
             this.alunosToolStripMenuItem2.Click += new System.EventHandler(this.alunosToolStripMenuItem2_Click);
             // 
@@ -168,6 +172,7 @@
             // 
             this.reponsavelToolStripMenuItem.Name = "reponsavelToolStripMenuItem";
             this.reponsavelToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
+            this.reponsavelToolStripMenuItem.Tag = "2";
             this.reponsavelToolStripMenuItem.Text = "Novo responsável...";
             this.reponsavelToolStripMenuItem.Click += new System.EventHandler(this.reponsavelToolStripMenuItem_Click);
             // 

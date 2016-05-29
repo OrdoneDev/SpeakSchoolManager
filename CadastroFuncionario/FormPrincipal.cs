@@ -24,6 +24,13 @@ namespace CadastroFuncionario
                 Tag = GerenciaBanco.VerificaPermissao(Tag, "Alunos");
 
             ValidaPermissoes(menuStrip1);
+
+            if (Tag == 1)
+                MessageBox.Show("Seja bem vindo diretor!");
+            if (Tag == 2)
+                MessageBox.Show("Seja bem vindo secretário!");
+            if (Tag == 0)
+                MessageBox.Show("Seja bem vindo professor!");
         }
 
         private void ValidaPermissoes(MenuStrip Menu)
@@ -38,7 +45,7 @@ namespace CadastroFuncionario
                         {
                             controles.Enabled = false;
                         }
-                        if (controles.Tag == "2" && (Tag != 2 && Tag != 1))
+                        if (controles.Tag == "2" && Tag == 0)
                         {
                             controles.Enabled = false;
                         }
@@ -47,7 +54,8 @@ namespace CadastroFuncionario
                             if (itens.Tag == "1" && Tag != 1)
                             {
                                 itens.Enabled = false;
-                            }else if (itens.Tag == "2" && (Tag != 2 && Tag != 1))
+                            }
+                            if (itens.Tag == "2" && Tag == 0)
                             {
                                 itens.Enabled = false;
                             }
