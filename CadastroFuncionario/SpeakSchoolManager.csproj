@@ -119,6 +119,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Escola_PrincipalDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Escola_PrincipalDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Escola_PrincipalDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FormAdquirirCursoAluno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -275,6 +280,12 @@
     <Compile Include="FormTabelaIdiomas.Designer.cs">
       <DependentUpon>FormTabelaIdiomas.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormTabelaMensalidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTabelaMensalidades.Designer.cs">
+      <DependentUpon>FormTabelaMensalidades.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormTabelaNegociações.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -382,6 +393,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormTabelaIdiomas.resx">
       <DependentUpon>FormTabelaIdiomas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTabelaMensalidades.resx">
+      <DependentUpon>FormTabelaMensalidades.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormTabelaNegociações.resx">
       <DependentUpon>FormTabelaNegociações.cs</DependentUpon>
@@ -561,6 +575,17 @@
     </None>
     <None Include="Escola_PrincipalDataSet.xss">
       <DependentUpon>Escola_PrincipalDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Escola_PrincipalDataSet1.xsc">
+      <DependentUpon>Escola_PrincipalDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Escola_PrincipalDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Escola_PrincipalDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Escola_PrincipalDataSet1.xss">
+      <DependentUpon>Escola_PrincipalDataSet1.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

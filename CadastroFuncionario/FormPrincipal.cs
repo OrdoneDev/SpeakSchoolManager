@@ -198,5 +198,12 @@ namespace CadastroFuncionario
             form.MdiParent = this;
             form.Show();
         }
+
+        private void mensalidadesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormTabelaMensalidades form = new FormTabelaMensalidades();
+            form.MdiParent = this;
+            form.Show();
+        }
     }
 }

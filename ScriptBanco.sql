@@ -361,7 +361,7 @@ Create table SysProtected.Planos (
 )
 go
 
-CREATE VIEW IdiomasPlanos AS
+CREATE VIEW IdiomasPlanosFiltro AS
 	select	P.Id_Plano,
 			I.Nome		as	'Nome do idioma',
 			P.Id_Idioma,
@@ -386,7 +386,7 @@ Create table SysProtected.Financeiro (
 )
 go
 
-CREATE VIEW FinanceiroFuncionario AS
+CREATE VIEW FinanceiroFuncionarioFiltro AS
 	select	FU.Nome,
 			FI.Id_Financeiro,
 			FI.Id_Funcionario,
@@ -412,7 +412,7 @@ Create table SysProtected.Negociacao (
 )
 go
 
-CREATE VIEW NegociacaoAluno AS
+CREATE VIEW NegociacaoAlunoFiltro AS
 	select	A.Nome	as	'Nome do aluno',
 			P.Nome	as	'Nome do plano',
 			N.Id_Negociacao,
@@ -498,8 +498,8 @@ Create table SysProtected.Mensalidades (
 	Data				Date			not null
 )
 go
-
-CREATE VIEW MensalidadesFiltroAlunos AS
+--------------------------------------------------------------------------------------------------------
+CREATE VIEW MensalidadesAlunosFiltro AS
 	select	M.Id_Mensalidade,
 			M.Id_Financeiro,
 			M.Id_Negociacao,
@@ -510,6 +510,19 @@ CREATE VIEW MensalidadesFiltroAlunos AS
 	from SysProtected.Mensalidades M INNER JOIN SysProtected.Negociacao N
 	on M.Id_Negociacao = N.Id_Negociacao INNER JOIN SysProtected.Alunos A
 	on N.Id_Aluno = A.Id_Aluno
+GO
+
+CREATE VIEW MensalidadesFuncionariosFiltro AS
+	select	M.Id_Mensalidade,
+			M.Id_Financeiro,
+			M.Id_Negociacao,
+			FU.Nome,
+			M.Numero_Parcela,
+			M.Situacao,
+			M.Data 
+	from SysProtected.Mensalidades M INNER JOIN SysProtected.Financeiro FI
+	on M.Id_Financeiro = FI.Id_Financeiro INNER JOIN SysProtected.Funcionarios FU
+	on FI.Id_Funcionario = FU.Id_Funcionario
 GO
 
 CREATE VIEW PagamentoFuncionario AS
