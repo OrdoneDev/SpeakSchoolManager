@@ -70,6 +70,7 @@
             this.inscriçõesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.boletinsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.escalasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.turmasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -321,7 +322,8 @@
             this.mensalidadesToolStripMenuItem,
             this.inscriçõesToolStripMenuItem1,
             this.boletinsToolStripMenuItem,
-            this.escalasToolStripMenuItem});
+            this.escalasToolStripMenuItem,
+            this.turmasToolStripMenuItem});
             this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
             this.editarToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
             this.editarToolStripMenuItem.Text = "Editar";
@@ -410,6 +412,13 @@
             this.escalasToolStripMenuItem.Text = "Escalas...";
             this.escalasToolStripMenuItem.Click += new System.EventHandler(this.escalasToolStripMenuItem_Click);
             // 
+            // turmasToolStripMenuItem
+            // 
+            this.turmasToolStripMenuItem.Name = "turmasToolStripMenuItem";
+            this.turmasToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.turmasToolStripMenuItem.Text = "Turmas...";
+            this.turmasToolStripMenuItem.Click += new System.EventHandler(this.turmasToolStripMenuItem_Click);
+            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -477,6 +486,7 @@
         private System.Windows.Forms.ToolStripMenuItem inscriçõesToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem boletinsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem escalasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem turmasToolStripMenuItem;
 
     }
 }

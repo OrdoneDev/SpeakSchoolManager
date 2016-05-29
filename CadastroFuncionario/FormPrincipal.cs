@@ -226,5 +226,12 @@ namespace CadastroFuncionario
             form.MdiParent = this;
             form.Show();
         }
+
+        private void turmasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormTabelaTurmas form = new FormTabelaTurmas();
+            form.MdiParent = this;
+            form.Show();
+        }
     }
 }

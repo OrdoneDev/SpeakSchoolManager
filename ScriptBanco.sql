@@ -852,6 +852,22 @@ Create table SysProtected.Turmas (
 )
 go
 
+CREATE VIEW TurmasFiltro AS
+	select	T.Id_Turma,
+			T.Id_Plano,
+			P.Nome		as 'Nome do plano',
+			T.Id_Escala,
+			F.Nome		as 'Nome do funcionário',
+			T.Sala,
+			T.Data,
+			T.Hora_Entrada,
+			T.Hora_Saida
+	from SysProtected.Planos P INNER JOIN SysProtected.Turmas T
+	on P.Id_Plano = T.Id_Plano INNER JOIN SysProtected.Escalas E
+	on T.Id_Escala = E.Id_Escala INNER JOIN SysProtected.Funcionarios F
+	on E.Id_Funcionario = F.Id_Funcionario
+GO
+
 Create trigger TGR_FuncionarioTurmasHistorico
 on SysProtected.Turmas
 after insert

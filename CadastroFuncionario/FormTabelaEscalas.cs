@@ -38,7 +38,7 @@ namespace CadastroFuncionario
         {
             if (cmb_NomeFuncionario.Text.Trim().Length == 0)
             {
-                MessageBox.Show("Preencha o campo nome!");
+                MessageBox.Show("Preencha o campo funcionário!");
                 cmb_NomeFuncionario.BackColor = System.Drawing.Color.LightGray;
                 return;
             }
