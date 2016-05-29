@@ -65,6 +65,7 @@
             this.idiomasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.planosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.financeirosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.negociaçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -311,7 +312,8 @@
             this.alunosToolStripMenuItem,
             this.idiomasToolStripMenuItem,
             this.planosToolStripMenuItem,
-            this.financeirosToolStripMenuItem});
+            this.financeirosToolStripMenuItem,
+            this.negociaçõesToolStripMenuItem});
             this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
             this.editarToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
             this.editarToolStripMenuItem.Text = "Editar";
@@ -364,6 +366,13 @@
             this.financeirosToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.financeirosToolStripMenuItem.Text = "Financeiros...";
             this.financeirosToolStripMenuItem.Click += new System.EventHandler(this.financeirosToolStripMenuItem_Click);
+            // 
+            // negociaçõesToolStripMenuItem
+            // 
+            this.negociaçõesToolStripMenuItem.Name = "negociaçõesToolStripMenuItem";
+            this.negociaçõesToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.negociaçõesToolStripMenuItem.Text = "Negociações...";
+            this.negociaçõesToolStripMenuItem.Click += new System.EventHandler(this.negociaçõesToolStripMenuItem_Click);
             // 
             // FormPrincipal
             // 
@@ -427,6 +436,7 @@
         private System.Windows.Forms.ToolStripMenuItem idiomasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem planosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem financeirosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem negociaçõesToolStripMenuItem;
 
     }
 }

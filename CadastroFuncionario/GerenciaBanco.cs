@@ -1524,7 +1524,7 @@ namespace CadastroFuncionario
                     }
                     if (Tabela == "Alunos" && @Tipo1 == "TOP 5 Nome, Id_Aluno")
                         Id_Aluno = (dr.GetInt32(1));
-                    if (Tabela == "Planos")
+                    if (Tabela == "Planos" && @Tipo1 == "TOP 5 Nome, Id_Plano")
                         Id_Plano = (dr.GetInt32(1));
                 }
             }

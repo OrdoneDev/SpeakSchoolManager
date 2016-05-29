@@ -191,5 +191,12 @@ namespace CadastroFuncionario
             form.MdiParent = this;
             form.Show();
         }
+
+        private void negociaçõesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormTabelaNegociações form = new FormTabelaNegociações();
+            form.MdiParent = this;
+            form.Show();
+        }
     }
 }

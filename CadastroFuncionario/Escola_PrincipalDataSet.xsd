@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Escola_PrincipalDataSet" targetNamespace="http://tempuri.org/Escola_PrincipalDataSet.xsd" xmlns:mstns="http://tempuri.org/Escola_PrincipalDataSet.xsd" xmlns="http://tempuri.org/Escola_PrincipalDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DB_EscolaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DB_EscolaConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CadastroFuncionario.Properties.Settings.GlobalReference.Default.DB_EscolaConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="NegociacaoAlunoTableAdapter" GeneratorDataComponentClassName="NegociacaoAlunoTableAdapter" Name="NegociacaoAluno" UserDataComponentName="NegociacaoAlunoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DB_EscolaConnectionString (Settings)" DbObjectName="dbo.NegociacaoAluno" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [Nome do aluno], [Nome do plano], Id_Negociacao, Id_Aluno, Id_Plano, Parcelas, Situacao FROM dbo.NegociacaoAluno</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Nome do aluno" DataSetColumn="Nome do aluno" />
+              <Mapping SourceColumn="Nome do plano" DataSetColumn="Nome do plano" />
+              <Mapping SourceColumn="Id_Negociacao" DataSetColumn="Id_Negociacao" />
+              <Mapping SourceColumn="Id_Aluno" DataSetColumn="Id_Aluno" />
+              <Mapping SourceColumn="Id_Plano" DataSetColumn="Id_Plano" />
+              <Mapping SourceColumn="Parcelas" DataSetColumn="Parcelas" />
+              <Mapping SourceColumn="Situacao" DataSetColumn="Situacao" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Escola_PrincipalDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Escola_PrincipalDataSet" msprop:Generator_UserDSName="Escola_PrincipalDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="NegociacaoAluno" msprop:Generator_TableClassName="NegociacaoAlunoDataTable" msprop:Generator_TableVarName="tableNegociacaoAluno" msprop:Generator_TablePropName="NegociacaoAluno" msprop:Generator_RowDeletingName="NegociacaoAlunoRowDeleting" msprop:Generator_RowChangingName="NegociacaoAlunoRowChanging" msprop:Generator_RowEvHandlerName="NegociacaoAlunoRowChangeEventHandler" msprop:Generator_RowDeletedName="NegociacaoAlunoRowDeleted" msprop:Generator_UserTableName="NegociacaoAluno" msprop:Generator_RowChangedName="NegociacaoAlunoRowChanged" msprop:Generator_RowEvArgName="NegociacaoAlunoRowChangeEvent" msprop:Generator_RowClassName="NegociacaoAlunoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Nome_x0020_do_x0020_aluno" msprop:Generator_ColumnVarNameInTable="columnNome_do_aluno" msprop:Generator_ColumnPropNameInRow="Nome_do_aluno" msprop:Generator_ColumnPropNameInTable="Nome_do_alunoColumn" msprop:Generator_UserColumnName="Nome do aluno">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nome_x0020_do_x0020_plano" msprop:Generator_ColumnVarNameInTable="columnNome_do_plano" msprop:Generator_ColumnPropNameInRow="Nome_do_plano" msprop:Generator_ColumnPropNameInTable="Nome_do_planoColumn" msprop:Generator_UserColumnName="Nome do plano">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Id_Negociacao" msprop:Generator_ColumnVarNameInTable="columnId_Negociacao" msprop:Generator_ColumnPropNameInRow="Id_Negociacao" msprop:Generator_ColumnPropNameInTable="Id_NegociacaoColumn" msprop:Generator_UserColumnName="Id_Negociacao" type="xs:int" />
+              <xs:element name="Id_Aluno" msprop:Generator_ColumnVarNameInTable="columnId_Aluno" msprop:Generator_ColumnPropNameInRow="Id_Aluno" msprop:Generator_ColumnPropNameInTable="Id_AlunoColumn" msprop:Generator_UserColumnName="Id_Aluno" type="xs:int" />
+              <xs:element name="Id_Plano" msprop:Generator_ColumnVarNameInTable="columnId_Plano" msprop:Generator_ColumnPropNameInRow="Id_Plano" msprop:Generator_ColumnPropNameInTable="Id_PlanoColumn" msprop:Generator_UserColumnName="Id_Plano" type="xs:int" />
+              <xs:element name="Parcelas" msprop:Generator_ColumnVarNameInTable="columnParcelas" msprop:Generator_ColumnPropNameInRow="Parcelas" msprop:Generator_ColumnPropNameInTable="ParcelasColumn" msprop:Generator_UserColumnName="Parcelas" type="xs:unsignedByte" />
+              <xs:element name="Situacao" msprop:Generator_ColumnVarNameInTable="columnSituacao" msprop:Generator_ColumnPropNameInRow="Situacao" msprop:Generator_ColumnPropNameInTable="SituacaoColumn" msprop:Generator_UserColumnName="Situacao" type="xs:boolean" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:NegociacaoAluno" />
+      <xs:field xpath="mstns:Id_Negociacao" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

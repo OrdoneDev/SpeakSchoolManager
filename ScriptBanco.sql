@@ -593,16 +593,16 @@ begin
 	on M.Id_Negociacao = N.Id_Negociacao
 	where M.Id_Negociacao = @Id_Negociacao;
 
-	while (@X < @I)
+	while (@X <= @I)
 	begin
 		Select @Situacao = M.Situacao from SysProtected.Mensalidades M where M.Id_Negociacao = @Id_Negociacao and M.Numero_Parcela = @X;
 		if (@Situacao = 0)
 		begin
-			Select @true = 0;
+			Set @true = 0;
 			break;
 		end
-		Select @true = 1;
-		Select @X = @X + 1;
+		Set @true = 1;
+		Set @X = @X + 1;
 	end
 	
 	if (@true = 0)
