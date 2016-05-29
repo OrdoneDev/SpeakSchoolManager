@@ -897,6 +897,20 @@ Create table SysProtected.Inscricoes_Turmas (
 )
 go
 
+CREATE VIEW InscricoesTurmasFiltro AS
+	select	IT.Id_Inscricao_Turma,
+			IT.Id_Inscricao,
+			A.Nome					as 'Nome do aluno',
+			IT.Id_Turma,
+			F.Nome					as 'Nome do funcionário'
+	from SysProtected.Funcionarios F INNER JOIN SysProtected.Escalas E
+	on F.Id_Funcionario = E.Id_Funcionario INNER JOIN SysProtected.Turmas T
+	on E.Id_Escala = T.Id_Escala INNER JOIN SysProtected.Inscricoes_Turmas IT
+	on T.Id_Turma = IT.Id_Turma INNER JOIN SysProtected.Inscricao I
+	on IT.Id_Inscricao = I.Id_Inscricao INNER JOIN SysProtected.Alunos A
+	on I.Id_Aluno = A.Id_Aluno
+GO
+
 Create trigger TGR_AlunosVinculadosHistorico
 on SysProtected.Inscricoes_Turmas
 after insert
