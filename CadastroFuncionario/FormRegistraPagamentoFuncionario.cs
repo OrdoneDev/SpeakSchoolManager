@@ -55,6 +55,11 @@ namespace CadastroFuncionario
             msk_IdFuncionario.Text = GerenciaBanco.Id_Funcionario.ToString().PadLeft(4, '0');
         }
 
+        private void cmb_NomeFuncionario_SelectedValueChanged(object sender, EventArgs e)
+        {
+            ValidaCampos.Deleta = true;
+        }
+
         private void btn_RegistrarPagamento_Click(object sender, EventArgs e)
         {
             DateTime Data;

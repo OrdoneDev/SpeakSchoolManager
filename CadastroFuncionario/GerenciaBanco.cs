@@ -1516,15 +1516,15 @@ namespace CadastroFuncionario
                 while (dr.Read())
                 {
                     lista.Add(dr.GetString(0));
-                    if (Tabela == "Funcionarios")
+                    if (Tabela == "Funcionarios" && (@Tipo1 == "TOP 5 Nome, Id_Funcionario" || @Tipo1 == "TOP 5 Nome, Id_Funcionario, Cargo"))
                     {
                         Id_Funcionario = (dr.GetInt32(1));
                         if (@Tipo1 == "TOP 5 Nome, Id_Funcionario, Cargo")
                             Cargo = (dr.GetString(2));
                     }
-                    if (Tabela == "Alunos")
+                    if (Tabela == "Alunos" && @Tipo1 == "TOP 5 Nome, Id_Aluno")
                         Id_Aluno = (dr.GetInt32(1));
-                    if (Tabela == "Planos")
+                    if (Tabela == "Planos" && @Tipo1 == "TOP 5 Nome, Id_Plano")
                         Id_Plano = (dr.GetInt32(1));
                 }
             }
@@ -2041,7 +2041,7 @@ namespace CadastroFuncionario
             }
             catch (Exception)
             {
-                Id_Financeiro = 1;
+                Id_Financeiro = 0;
             }
             finally
             {
@@ -2049,6 +2049,41 @@ namespace CadastroFuncionario
             }
 
             return Id_Financeiro;
+        }
+
+        public static DataTable getFiltro(string Filtro, string Campo, string Tabela)
+        {
+            DataTable dt = null;
+            SqlConnection conexao = new SqlConnection(strConexao);
+            SqlCommand cmd;
+
+            try
+            {
+                conexao.Open();
+                cmd = new SqlCommand();
+                cmd.Connection = conexao;
+
+                cmd.CommandText = "SELECT * FROM "+@Tabela+" where "+@Campo+" = @Filtro";
+
+                cmd.Parameters.Add(new SqlParameter("@Campo", Campo));
+                cmd.Parameters.Add(new SqlParameter("@Filtro", Filtro));
+                cmd.Parameters.Add(new SqlParameter("@Tabela", Tabela));
+
+                cmd.CommandType = CommandType.Text;
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                dt = new DataTable();
+                da.Fill(dt);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return null;
+            }
+            finally
+            {
+                conexao.Close();
+            }
+            return dt;
         }
     }
 }

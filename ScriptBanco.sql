@@ -35,7 +35,7 @@ go
 
 Create schema SysProtected authorization dbo
 go
- 
+
 Create table SysProtected.Endereco (
 	Id_Endereco			Int							Primary key		identity,
 	Estado				Varchar(15)		not null,
@@ -121,6 +121,17 @@ Create table SysProtected.Historico_Funcionario (
 	Descricao			Varchar(800)	not null
 )
 go
+
+CREATE VIEW HistoricoFuncionario AS
+	select	FU.Id_Funcionario,
+			HF.Id_Historico,
+			FU.Foto,
+			FU.Nome,
+			HF.Data,
+			HF.Descricao
+	from SysProtected.Funcionarios FU INNER JOIN SysProtected.Historico_Funcionario HF
+	on FU.Id_Funcionario = HF.Id_Funcionario
+GO
 
 Create trigger TGR_FuncionariosAdmissaoHistorico
 on SysProtected.Funcionarios
@@ -282,6 +293,17 @@ Create table SysProtected.Historico_Aluno (
 )
 go
 
+CREATE VIEW HistoricoAluno AS
+	select	A.Id_Aluno,
+			H.Id_Historico,
+			A.Foto,
+			A.Nome,
+			H.Data,
+			H.Descricao
+	from SysProtected.Alunos A INNER JOIN SysProtected.Historico_Aluno H
+	on A.Id_Aluno = H.Id_Aluno
+GO
+
 Create trigger TGR_AlunosHistorico
 on SysProtected.Alunos
 after insert
@@ -339,6 +361,17 @@ Create table SysProtected.Planos (
 )
 go
 
+CREATE VIEW IdiomasPlanosFiltro AS
+	select	P.Id_Plano,
+			I.Nome		as	'Nome do idioma',
+			P.Id_Idioma,
+			P.Nome		as	'Nome do plano',
+			P.Aulas_Previstas,
+			P.Valor
+	from SysProtected.Idiomas I INNER JOIN SysProtected.Planos P
+	on I.Id_Idioma = P.Id_Idioma
+go
+
 Create unique index Unico_Plano
    on SysProtected.Planos (Id_Idioma, Nome); 
 go
@@ -351,6 +384,18 @@ Create table SysProtected.Financeiro (
 	Conta				Int				not null,
 	Data				Date			null
 )
+go
+
+CREATE VIEW FinanceiroFuncionarioFiltro AS
+	select	FU.Nome,
+			FI.Id_Financeiro,
+			FI.Id_Funcionario,
+			FI.Banco,
+			FI.Agencia,
+			FI.Conta,
+			FI.Data
+	from SysProtected.Funcionarios FU RIGHT JOIN SysProtected.Financeiro FI
+	on FU.Id_Funcionario = FI.Id_Funcionario
 go
 
 Create unique index Unico_Financeiro
@@ -366,6 +411,19 @@ Create table SysProtected.Negociacao (
 	Situacao			bit				not null
 )
 go
+
+CREATE VIEW NegociacaoAlunoFiltro AS
+	select	A.Nome	as	'Nome do aluno',
+			P.Nome	as	'Nome do plano',
+			N.Id_Negociacao,
+			N.Id_Aluno,
+			N.Id_Plano,
+			N.Parcelas,
+			N.Situacao
+	from SysProtected.Alunos A INNER JOIN SysProtected.Negociacao N
+	on A.Id_Aluno = N.Id_Aluno INNER JOIN SysProtected.Planos P
+	on N.Id_Plano = P.Id_Plano
+GO
 
 Create trigger TGR_AlunoRealizaNegociacaoHistorico
 on SysProtected.Negociacao
@@ -386,11 +444,11 @@ begin
 
 	if (@Situacao = 0)
 	begin
-		set @SituacaoParcela = 'À pagar';
+		set @SituacaoParcela = 'à pagar';
 	end
 	else
 	begin
-		set @SituacaoParcela = 'Pagas';
+		set @SituacaoParcela = 'paga(s)';
 	end
 	
 	Insert into SysProtected.Historico_Aluno values (@Id_Aluno, Getdate( ), 'Aluno efetuou compra do plano '+CONVERT(varchar(40), @Nome_Plano)+' no dia de hoje no total de '+CONVERT(varchar(2), @Parcelas)+' parcelas '+CONVERT(varchar(7), @SituacaoParcela)+'.');
@@ -440,6 +498,32 @@ Create table SysProtected.Mensalidades (
 	Data				Date			not null
 )
 go
+
+CREATE VIEW MensalidadesAlunosFiltro AS
+	select	M.Id_Mensalidade,
+			M.Id_Financeiro,
+			M.Id_Negociacao,
+			A.Nome,
+			M.Numero_Parcela,
+			M.Situacao,
+			M.Data 
+	from SysProtected.Mensalidades M INNER JOIN SysProtected.Negociacao N
+	on M.Id_Negociacao = N.Id_Negociacao INNER JOIN SysProtected.Alunos A
+	on N.Id_Aluno = A.Id_Aluno
+GO
+
+CREATE VIEW MensalidadesFuncionariosFiltro AS
+	select	M.Id_Mensalidade,
+			M.Id_Financeiro,
+			M.Id_Negociacao,
+			FU.Nome,
+			M.Numero_Parcela,
+			M.Situacao,
+			M.Data 
+	from SysProtected.Mensalidades M INNER JOIN SysProtected.Financeiro FI
+	on M.Id_Financeiro = FI.Id_Financeiro INNER JOIN SysProtected.Funcionarios FU
+	on FI.Id_Funcionario = FU.Id_Funcionario
+GO
 
 CREATE VIEW PagamentoFuncionario AS
 	select	FU.Id_Funcionario,
@@ -535,16 +619,16 @@ begin
 	on M.Id_Negociacao = N.Id_Negociacao
 	where M.Id_Negociacao = @Id_Negociacao;
 
-	while (@X < @I)
+	while (@X <= @I)
 	begin
 		Select @Situacao = M.Situacao from SysProtected.Mensalidades M where M.Id_Negociacao = @Id_Negociacao and M.Numero_Parcela = @X;
 		if (@Situacao = 0)
 		begin
-			Select @true = 0;
+			Set @true = 0;
 			break;
 		end
-		Select @true = 1;
-		Select @X = @X + 1;
+		Set @true = 1;
+		Set @X = @X + 1;
 	end
 	
 	if (@true = 0)
@@ -567,6 +651,16 @@ Create table SysProtected.Inscricao (
 )
 go
 
+CREATE VIEW InscricaoAlunoFiltro AS
+	select	I.Id_Inscricao,
+			I.Id_Aluno,
+			A.Nome,
+			I.Id_Negociacao,
+			I.Data,
+			I.Status
+	from SysProtected.Inscricao I INNER JOIN SysProtected.Alunos A
+	on I.Id_Aluno = A.Id_Aluno
+GO
 
 Create unique index Unica_Inscricao
    on SysProtected.Inscricao (Id_Aluno, Id_Negociacao);
@@ -609,6 +703,19 @@ Create table SysProtected.Boletim (
 )
 go
 
+CREATE VIEW BoletinsAlunoFiltro AS
+	select	B.Id_Boletim,
+			B.Id_Inscricao,
+			A.Nome,
+			B.Nota1,
+			B.Nota2,
+			B.Media,
+			B.Numero_Faltas
+	from SysProtected.Boletim B INNER JOIN SysProtected.Inscricao I
+	on B.Id_Inscricao = I.Id_Inscricao INNER JOIN SysProtected.Alunos A
+	on I.Id_Aluno = A.Id_Aluno
+GO
+
 Create trigger TGR_BoletimAlunosHistorico
 on SysProtected.Boletim
 after update
@@ -633,7 +740,7 @@ begin
 	
 	if (@Nota2 is not null)
 	begin
-		Insert into SysProtected.Historico_Aluno values (@Id_Aluno, Getdate( ), 'A nota da 1 prova do aluno foi: '+CONVERT(varchar(4), @Nota2));
+		Insert into SysProtected.Historico_Aluno values (@Id_Aluno, Getdate( ), 'A nota da 2 prova do aluno foi: '+CONVERT(varchar(4), @Nota2));
 	end
 
 	select @Numero_Faltas = Numero_Faltas from inserted;
@@ -690,6 +797,18 @@ Create table SysProtected.Escalas (
 )
 go
 
+CREATE VIEW EscalasFuncionarioFiltro AS
+	select	E.Id_Escala,
+			E.Id_Funcionario,
+			F.Nome,
+			E.Data,
+			E.Hora_Entrada,
+			E.Hora_Saida,
+			E.Descricao_Funcao 
+	from SysProtected.Escalas E INNER JOIN SysProtected.Funcionarios F
+	on E.Id_Funcionario = F.Id_Funcionario
+GO
+
 Create trigger TGR_EscalaFuncionariosHistorico
 on SysProtected.Escalas
 after insert
@@ -733,6 +852,22 @@ Create table SysProtected.Turmas (
 )
 go
 
+CREATE VIEW TurmasFiltro AS
+	select	T.Id_Turma,
+			T.Id_Plano,
+			P.Nome		as 'Nome do plano',
+			T.Id_Escala,
+			F.Nome		as 'Nome do funcionário',
+			T.Sala,
+			T.Data,
+			T.Hora_Entrada,
+			T.Hora_Saida
+	from SysProtected.Planos P INNER JOIN SysProtected.Turmas T
+	on P.Id_Plano = T.Id_Plano INNER JOIN SysProtected.Escalas E
+	on T.Id_Escala = E.Id_Escala INNER JOIN SysProtected.Funcionarios F
+	on E.Id_Funcionario = F.Id_Funcionario
+GO
+
 Create trigger TGR_FuncionarioTurmasHistorico
 on SysProtected.Turmas
 after insert
@@ -761,6 +896,20 @@ Create table SysProtected.Inscricoes_Turmas (
 	Id_Turma			int				not null	Foreign key references SysProtected.Turmas (Id_Turma)
 )
 go
+
+CREATE VIEW InscricoesTurmasFiltro AS
+	select	IT.Id_Inscricao_Turma,
+			IT.Id_Inscricao,
+			A.Nome					as 'Nome do aluno',
+			IT.Id_Turma,
+			F.Nome					as 'Nome do funcionário'
+	from SysProtected.Funcionarios F INNER JOIN SysProtected.Escalas E
+	on F.Id_Funcionario = E.Id_Funcionario INNER JOIN SysProtected.Turmas T
+	on E.Id_Escala = T.Id_Escala INNER JOIN SysProtected.Inscricoes_Turmas IT
+	on T.Id_Turma = IT.Id_Turma INNER JOIN SysProtected.Inscricao I
+	on IT.Id_Inscricao = I.Id_Inscricao INNER JOIN SysProtected.Alunos A
+	on I.Id_Aluno = A.Id_Aluno
+GO
 
 Create trigger TGR_AlunosVinculadosHistorico
 on SysProtected.Inscricoes_Turmas
@@ -833,6 +982,22 @@ Create table SysProtected.Lista_Presenca (
 	Data				date			null
 )
 go
+
+CREATE VIEW ListaPresencaFiltro AS
+	select	LP.Id_Presenca,
+			LP.Id_Inscricao_Turma,
+			A.Nome					as 'Nome do aluno',
+			F.Nome					as 'Nome do professor',
+			LP.Chamada,
+			LP.Data
+	from SysProtected.Lista_Presenca LP INNER JOIN SysProtected.Inscricoes_Turmas IT
+	on LP.Id_Inscricao_Turma = IT.Id_Inscricao_Turma INNER JOIN SysProtected.Turmas T
+	on IT.Id_Turma = T.Id_Turma INNER JOIN SysProtected.Escalas E
+	on T.Id_Escala = E.Id_Escala INNER JOIN SysProtected.Funcionarios F
+	on E.Id_Funcionario = F.Id_Funcionario INNER JOIN SysProtected.Inscricao I
+	on IT.Id_Inscricao = I.Id_Inscricao INNER JOIN SysProtected.Alunos A
+	on I.Id_Aluno = A.Id_Aluno where F.Cargo = 'Professor(a)' or F.Cargo = 'Cordenador(a)'
+GO
 
 Create trigger TGR_ListaPresencaHistorico
 on SysProtected.Lista_Presenca

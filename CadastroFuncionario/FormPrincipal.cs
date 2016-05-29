@@ -128,5 +128,124 @@ namespace CadastroFuncionario
             form.MdiParent = this;
             form.Show();
         }
+
+        private void enderecosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormTabelaEndereco form = new FormTabelaEndereco();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void funcionariosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FormTabelaFuncionarios form = new FormTabelaFuncionarios();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void responsáveisToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormTabelaResponsavel form = new FormTabelaResponsavel();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void históricosRegistradosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormHistoricosFuncionario form = new FormHistoricosFuncionario();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void históricosRegistradosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FormHistoricosAluno form = new FormHistoricosAluno();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void alunosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormTabelaAlunos form = new FormTabelaAlunos();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void idiomasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormTabelaIdiomas form = new FormTabelaIdiomas();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void planosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormTabelaPlanos form = new FormTabelaPlanos();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void financeirosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormTabelaFinanceiros form = new FormTabelaFinanceiros();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void negociaçõesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormTabelaNegociações form = new FormTabelaNegociações();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void mensalidadesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormTabelaMensalidades form = new FormTabelaMensalidades();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void inscriçõesToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FormTabelaInscricoes form = new FormTabelaInscricoes();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void boletinsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormTabelaBoletins form = new FormTabelaBoletins();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void escalasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormTabelaEscalas form = new FormTabelaEscalas();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void turmasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormTabelaTurmas form = new FormTabelaTurmas();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void inscriçõesETurmasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormTabelaInscricoesTurmas form = new FormTabelaInscricoesTurmas();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void listaDePresençaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormTabelaListaPresenca form = new FormTabelaListaPresenca();
+            form.MdiParent = this;
+            form.Show();
+        }
     }
 }

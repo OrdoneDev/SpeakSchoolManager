@@ -55,6 +55,11 @@ namespace CadastroFuncionario
             cmb_CargoFuncionario.Text = GerenciaBanco.Cargo.ToString();
         }
 
+        private void cmb_NomeFuncionario_SelectedValueChanged(object sender, EventArgs e)
+        {
+            ValidaCampos.Deleta = true;
+        }
+
         private void btn_SalvarEscala_Click(object sender, EventArgs e)
         {
             DateTime Data_Historico; 

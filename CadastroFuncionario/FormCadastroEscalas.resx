@@ -117,200 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;msk_IdFuncionario.Name" xml:space="preserve">
-    <value>msk_IdFuncionario</value>
-  </data>
-  <data name="&gt;&gt;msk_IdFuncionario.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;msk_IdFuncionario.Parent" xml:space="preserve">
-    <value>group_CadastroEscala</value>
-  </data>
-  <data name="&gt;&gt;msk_IdFuncionario.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;cmb_CargoFuncionario.Name" xml:space="preserve">
-    <value>cmb_CargoFuncionario</value>
-  </data>
-  <data name="&gt;&gt;cmb_CargoFuncionario.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cmb_CargoFuncionario.Parent" xml:space="preserve">
-    <value>group_CadastroEscala</value>
-  </data>
-  <data name="&gt;&gt;cmb_CargoFuncionario.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;lbl_CargoFuncionario.Name" xml:space="preserve">
-    <value>lbl_CargoFuncionario</value>
-  </data>
-  <data name="&gt;&gt;lbl_CargoFuncionario.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbl_CargoFuncionario.Parent" xml:space="preserve">
-    <value>group_CadastroEscala</value>
-  </data>
-  <data name="&gt;&gt;lbl_CargoFuncionario.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;lbl_DescricaoEncargos.Name" xml:space="preserve">
-    <value>lbl_DescricaoEncargos</value>
-  </data>
-  <data name="&gt;&gt;lbl_DescricaoEncargos.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbl_DescricaoEncargos.Parent" xml:space="preserve">
-    <value>group_CadastroEscala</value>
-  </data>
-  <data name="&gt;&gt;lbl_DescricaoEncargos.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;lbl_HoraSaidaEscala.Name" xml:space="preserve">
-    <value>lbl_HoraSaidaEscala</value>
-  </data>
-  <data name="&gt;&gt;lbl_HoraSaidaEscala.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbl_HoraSaidaEscala.Parent" xml:space="preserve">
-    <value>group_CadastroEscala</value>
-  </data>
-  <data name="&gt;&gt;lbl_HoraSaidaEscala.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;lbl_HoraEntradaEscala.Name" xml:space="preserve">
-    <value>lbl_HoraEntradaEscala</value>
-  </data>
-  <data name="&gt;&gt;lbl_HoraEntradaEscala.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbl_HoraEntradaEscala.Parent" xml:space="preserve">
-    <value>group_CadastroEscala</value>
-  </data>
-  <data name="&gt;&gt;lbl_HoraEntradaEscala.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;lbl_DataEscala.Name" xml:space="preserve">
-    <value>lbl_DataEscala</value>
-  </data>
-  <data name="&gt;&gt;lbl_DataEscala.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbl_DataEscala.Parent" xml:space="preserve">
-    <value>group_CadastroEscala</value>
-  </data>
-  <data name="&gt;&gt;lbl_DataEscala.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;lbl_NomeFuncionario.Name" xml:space="preserve">
-    <value>lbl_NomeFuncionario</value>
-  </data>
-  <data name="&gt;&gt;lbl_NomeFuncionario.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbl_NomeFuncionario.Parent" xml:space="preserve">
-    <value>group_CadastroEscala</value>
-  </data>
-  <data name="&gt;&gt;lbl_NomeFuncionario.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;lbl_IdFuncionario.Name" xml:space="preserve">
-    <value>lbl_IdFuncionario</value>
-  </data>
-  <data name="&gt;&gt;lbl_IdFuncionario.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbl_IdFuncionario.Parent" xml:space="preserve">
-    <value>group_CadastroEscala</value>
-  </data>
-  <data name="&gt;&gt;lbl_IdFuncionario.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;txb_DescricaoEncargos.Name" xml:space="preserve">
-    <value>txb_DescricaoEncargos</value>
-  </data>
-  <data name="&gt;&gt;txb_DescricaoEncargos.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txb_DescricaoEncargos.Parent" xml:space="preserve">
-    <value>group_CadastroEscala</value>
-  </data>
-  <data name="&gt;&gt;txb_DescricaoEncargos.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;msk_HoraSaidaFuncionario.Name" xml:space="preserve">
-    <value>msk_HoraSaidaFuncionario</value>
-  </data>
-  <data name="&gt;&gt;msk_HoraSaidaFuncionario.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;msk_HoraSaidaFuncionario.Parent" xml:space="preserve">
-    <value>group_CadastroEscala</value>
-  </data>
-  <data name="&gt;&gt;msk_HoraSaidaFuncionario.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;msk_HoraEntradaEscala.Name" xml:space="preserve">
-    <value>msk_HoraEntradaEscala</value>
-  </data>
-  <data name="&gt;&gt;msk_HoraEntradaEscala.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;msk_HoraEntradaEscala.Parent" xml:space="preserve">
-    <value>group_CadastroEscala</value>
-  </data>
-  <data name="&gt;&gt;msk_HoraEntradaEscala.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;dte_DataEscala.Name" xml:space="preserve">
-    <value>dte_DataEscala</value>
-  </data>
-  <data name="&gt;&gt;dte_DataEscala.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dte_DataEscala.Parent" xml:space="preserve">
-    <value>group_CadastroEscala</value>
-  </data>
-  <data name="&gt;&gt;dte_DataEscala.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;cmb_NomeFuncionario.Name" xml:space="preserve">
-    <value>cmb_NomeFuncionario</value>
-  </data>
-  <data name="&gt;&gt;cmb_NomeFuncionario.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cmb_NomeFuncionario.Parent" xml:space="preserve">
-    <value>group_CadastroEscala</value>
-  </data>
-  <data name="&gt;&gt;cmb_NomeFuncionario.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="group_CadastroEscala.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 13</value>
-  </data>
-  <data name="group_CadastroEscala.Size" type="System.Drawing.Size, System.Drawing">
-    <value>313, 298</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="group_CadastroEscala.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="group_CadastroEscala.Text" xml:space="preserve">
-    <value>Cadastro de escalas</value>
-  </data>
-  <data name="&gt;&gt;group_CadastroEscala.Name" xml:space="preserve">
-    <value>group_CadastroEscala</value>
-  </data>
-  <data name="&gt;&gt;group_CadastroEscala.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;group_CadastroEscala.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;group_CadastroEscala.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="msk_IdFuncionario.Location" type="System.Drawing.Point, System.Drawing">
     <value>105, 22</value>
   </data>
@@ -320,6 +127,7 @@
   <data name="msk_IdFuncionario.Size" type="System.Drawing.Size, System.Drawing">
     <value>30, 20</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="msk_IdFuncionario.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
@@ -679,6 +487,30 @@
   </data>
   <data name="&gt;&gt;cmb_NomeFuncionario.ZOrder" xml:space="preserve">
     <value>13</value>
+  </data>
+  <data name="group_CadastroEscala.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 13</value>
+  </data>
+  <data name="group_CadastroEscala.Size" type="System.Drawing.Size, System.Drawing">
+    <value>313, 298</value>
+  </data>
+  <data name="group_CadastroEscala.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="group_CadastroEscala.Text" xml:space="preserve">
+    <value>Cadastro de escalas</value>
+  </data>
+  <data name="&gt;&gt;group_CadastroEscala.Name" xml:space="preserve">
+    <value>group_CadastroEscala</value>
+  </data>
+  <data name="&gt;&gt;group_CadastroEscala.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;group_CadastroEscala.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;group_CadastroEscala.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="btn_Cancelar.Location" type="System.Drawing.Point, System.Drawing">
     <value>251, 317</value>
