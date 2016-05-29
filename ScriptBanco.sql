@@ -499,6 +499,19 @@ Create table SysProtected.Mensalidades (
 )
 go
 
+CREATE VIEW MensalidadesFiltroAlunos AS
+	select	M.Id_Mensalidade,
+			M.Id_Financeiro,
+			M.Id_Negociacao,
+			A.Nome,
+			M.Numero_Parcela,
+			M.Situacao,
+			M.Data 
+	from SysProtected.Mensalidades M INNER JOIN SysProtected.Negociacao N
+	on M.Id_Negociacao = N.Id_Negociacao INNER JOIN SysProtected.Alunos A
+	on N.Id_Aluno = A.Id_Aluno
+GO
+
 CREATE VIEW PagamentoFuncionario AS
 	select	FU.Id_Funcionario,
 			FU.Nome,

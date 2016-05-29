@@ -54,7 +54,7 @@ namespace CadastroFuncionario
 
             cmb_NomeAluno.BackColor = System.Drawing.Color.White;
 
-            dgv_TabelaNegociacoes.DataSource = GerenciaBanco.getFiltro(cmb_NomeAluno.Text, "[Nome do aluno]", "NegociacaoAluno");
+            dgv_TabelaNegociacoes.DataSource = GerenciaBanco.getFiltro(cmb_NomeAluno.Text, "[Nome do aluno]", "NegociacaoAlunoFiltro");
         }
 
         private void btn_FiltrarPlano_Click(object sender, EventArgs e)
@@ -68,7 +68,7 @@ namespace CadastroFuncionario
 
             cmb_Plano.BackColor = System.Drawing.Color.White;
 
-            dgv_TabelaNegociacoes.DataSource = GerenciaBanco.getFiltro(cmb_Plano.Text, "[Nome do plano]", "NegociacaoAluno");
+            dgv_TabelaNegociacoes.DataSource = GerenciaBanco.getFiltro(cmb_Plano.Text, "[Nome do plano]", "NegociacaoAlunoFiltro");
         }
     }
 }

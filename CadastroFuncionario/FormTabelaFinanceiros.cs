@@ -44,7 +44,7 @@ namespace CadastroFuncionario
 
             cmb_Nome.BackColor = System.Drawing.Color.White;
 
-            dgv_TabelaFinanceiros.DataSource = GerenciaBanco.getFiltro(cmb_Nome.Text, "Nome", "FinanceiroFuncionario");
+            dgv_TabelaFinanceiros.DataSource = GerenciaBanco.getFiltro(cmb_Nome.Text, "Nome", "FinanceiroFuncionarioFiltro");
         }
     }
 }
