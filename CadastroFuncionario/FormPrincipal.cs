@@ -219,5 +219,12 @@ namespace CadastroFuncionario
             form.MdiParent = this;
             form.Show();
         }
+
+        private void escalasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormTabelaEscalas form = new FormTabelaEscalas();
+            form.MdiParent = this;
+            form.Show();
+        }
     }
 }

@@ -69,6 +69,7 @@
             this.mensalidadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inscriçõesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.boletinsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.escalasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -319,7 +320,8 @@
             this.negociaçõesToolStripMenuItem,
             this.mensalidadesToolStripMenuItem,
             this.inscriçõesToolStripMenuItem1,
-            this.boletinsToolStripMenuItem});
+            this.boletinsToolStripMenuItem,
+            this.escalasToolStripMenuItem});
             this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
             this.editarToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
             this.editarToolStripMenuItem.Text = "Editar";
@@ -401,6 +403,13 @@
             this.boletinsToolStripMenuItem.Text = "Boletins...";
             this.boletinsToolStripMenuItem.Click += new System.EventHandler(this.boletinsToolStripMenuItem_Click);
             // 
+            // escalasToolStripMenuItem
+            // 
+            this.escalasToolStripMenuItem.Name = "escalasToolStripMenuItem";
+            this.escalasToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.escalasToolStripMenuItem.Text = "Escalas...";
+            this.escalasToolStripMenuItem.Click += new System.EventHandler(this.escalasToolStripMenuItem_Click);
+            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -467,6 +476,7 @@
         private System.Windows.Forms.ToolStripMenuItem mensalidadesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem inscriçõesToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem boletinsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem escalasToolStripMenuItem;
 
     }
 }

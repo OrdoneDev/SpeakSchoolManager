@@ -797,6 +797,18 @@ Create table SysProtected.Escalas (
 )
 go
 
+CREATE VIEW EscalasFuncionarioFiltro AS
+	select	E.Id_Escala,
+			E.Id_Funcionario,
+			F.Nome,
+			E.Data,
+			E.Hora_Entrada,
+			E.Hora_Saida,
+			E.Descricao_Funcao 
+	from SysProtected.Escalas E INNER JOIN SysProtected.Funcionarios F
+	on E.Id_Funcionario = F.Id_Funcionario
+GO
+
 Create trigger TGR_EscalaFuncionariosHistorico
 on SysProtected.Escalas
 after insert
