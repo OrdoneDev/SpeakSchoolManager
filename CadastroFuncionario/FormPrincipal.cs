@@ -240,5 +240,12 @@ namespace CadastroFuncionario
             form.MdiParent = this;
             form.Show();
         }
+
+        private void listaDePresençaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormTabelaListaPresenca form = new FormTabelaListaPresenca();
+            form.MdiParent = this;
+            form.Show();
+        }
     }
 }

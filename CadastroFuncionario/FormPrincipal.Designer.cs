@@ -72,6 +72,7 @@
             this.escalasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.turmasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inscriçõesETurmasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listaDePresençaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -325,7 +326,8 @@
             this.boletinsToolStripMenuItem,
             this.escalasToolStripMenuItem,
             this.turmasToolStripMenuItem,
-            this.inscriçõesETurmasToolStripMenuItem});
+            this.inscriçõesETurmasToolStripMenuItem,
+            this.listaDePresençaToolStripMenuItem});
             this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
             this.editarToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
             this.editarToolStripMenuItem.Text = "Editar";
@@ -428,6 +430,13 @@
             this.inscriçõesETurmasToolStripMenuItem.Text = "Inscrições e turmas...";
             this.inscriçõesETurmasToolStripMenuItem.Click += new System.EventHandler(this.inscriçõesETurmasToolStripMenuItem_Click);
             // 
+            // listaDePresençaToolStripMenuItem
+            // 
+            this.listaDePresençaToolStripMenuItem.Name = "listaDePresençaToolStripMenuItem";
+            this.listaDePresençaToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.listaDePresençaToolStripMenuItem.Text = "Lista de presença...";
+            this.listaDePresençaToolStripMenuItem.Click += new System.EventHandler(this.listaDePresençaToolStripMenuItem_Click);
+            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -497,6 +506,7 @@
         private System.Windows.Forms.ToolStripMenuItem escalasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem turmasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem inscriçõesETurmasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listaDePresençaToolStripMenuItem;
 
     }
 }

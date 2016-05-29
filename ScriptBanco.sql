@@ -983,6 +983,22 @@ Create table SysProtected.Lista_Presenca (
 )
 go
 
+CREATE VIEW ListaPresencaFiltro AS
+	select	LP.Id_Presenca,
+			LP.Id_Inscricao_Turma,
+			A.Nome					as 'Nome do aluno',
+			F.Nome					as 'Nome do professor',
+			LP.Chamada,
+			LP.Data
+	from SysProtected.Lista_Presenca LP INNER JOIN SysProtected.Inscricoes_Turmas IT
+	on LP.Id_Inscricao_Turma = IT.Id_Inscricao_Turma INNER JOIN SysProtected.Turmas T
+	on IT.Id_Turma = T.Id_Turma INNER JOIN SysProtected.Escalas E
+	on T.Id_Escala = E.Id_Escala INNER JOIN SysProtected.Funcionarios F
+	on E.Id_Funcionario = F.Id_Funcionario INNER JOIN SysProtected.Inscricao I
+	on IT.Id_Inscricao = I.Id_Inscricao INNER JOIN SysProtected.Alunos A
+	on I.Id_Aluno = A.Id_Aluno where F.Cargo = 'Professor(a)' or F.Cargo = 'Cordenador(a)'
+GO
+
 Create trigger TGR_ListaPresencaHistorico
 on SysProtected.Lista_Presenca
 after update

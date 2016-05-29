@@ -79,6 +79,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DB_EscolaDataSet14.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DB_EscolaDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_EscolaDataSet15.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DB_EscolaDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -329,6 +334,12 @@
     <Compile Include="FormTabelaInscricoesTurmas.Designer.cs">
       <DependentUpon>FormTabelaInscricoesTurmas.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormTabelaListaPresenca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTabelaListaPresenca.Designer.cs">
+      <DependentUpon>FormTabelaListaPresenca.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormTabelaMensalidades.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -461,6 +472,9 @@
     <EmbeddedResource Include="FormTabelaInscricoesTurmas.resx">
       <DependentUpon>FormTabelaInscricoesTurmas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormTabelaListaPresenca.resx">
+      <DependentUpon>FormTabelaListaPresenca.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormTabelaMensalidades.resx">
       <DependentUpon>FormTabelaMensalidades.cs</DependentUpon>
     </EmbeddedResource>
@@ -557,6 +571,17 @@
     </None>
     <None Include="DB_EscolaDataSet14.xss">
       <DependentUpon>DB_EscolaDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="DB_EscolaDataSet15.xsc">
+      <DependentUpon>DB_EscolaDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="DB_EscolaDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_EscolaDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_EscolaDataSet15.xss">
+      <DependentUpon>DB_EscolaDataSet15.xsd</DependentUpon>
     </None>
     <None Include="DB_EscolaDataSet2.xsc">
       <DependentUpon>DB_EscolaDataSet2.xsd</DependentUpon>
