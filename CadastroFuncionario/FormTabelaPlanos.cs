@@ -46,10 +46,5 @@ namespace CadastroFuncionario
 
             dgv_TabelaPlanos.DataSource = GerenciaBanco.getFiltro(cmb_Idioma.Text, "[Nome do idioma]", "IdiomasPlanosFiltro");
         }
-
-        private void btn_MostrarTodos_Click(object sender, EventArgs e)
-        {
-            dgv_TabelaPlanos.DataSource = GerenciaBanco.getFiltro("0", "0", "IdiomasPlanosFiltro");
-        }
     }
 }

@@ -118,34 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btn_MostrarTodos.Location" type="System.Drawing.Point, System.Drawing">
-    <value>653, 15</value>
-  </data>
-  <data name="btn_MostrarTodos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 23</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btn_MostrarTodos.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="btn_MostrarTodos.Text" xml:space="preserve">
-    <value>Mostrar todos</value>
-  </data>
-  <data name="&gt;&gt;btn_MostrarTodos.Name" xml:space="preserve">
-    <value>btn_MostrarTodos</value>
-  </data>
-  <data name="&gt;&gt;btn_MostrarTodos.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_MostrarTodos.Parent" xml:space="preserve">
-    <value>group_TabelaNegociacoes</value>
-  </data>
-  <data name="&gt;&gt;btn_MostrarTodos.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="cmb_Plano.Location" type="System.Drawing.Point, System.Drawing">
     <value>410, 16</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="cmb_Plano.MaxLength" type="System.Int32, mscorlib">
     <value>40</value>
   </data>
@@ -165,7 +141,7 @@
     <value>group_TabelaNegociacoes</value>
   </data>
   <data name="&gt;&gt;cmb_Plano.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="lbl_Plano.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -196,7 +172,7 @@
     <value>group_TabelaNegociacoes</value>
   </data>
   <data name="&gt;&gt;lbl_Plano.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="btn_FiltrarPlano.Location" type="System.Drawing.Point, System.Drawing">
     <value>553, 15</value>
@@ -220,7 +196,7 @@
     <value>group_TabelaNegociacoes</value>
   </data>
   <data name="&gt;&gt;btn_FiltrarPlano.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="btn_FiltrarAluno.Location" type="System.Drawing.Point, System.Drawing">
     <value>270, 14</value>
@@ -244,7 +220,7 @@
     <value>group_TabelaNegociacoes</value>
   </data>
   <data name="&gt;&gt;btn_FiltrarAluno.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="cmb_NomeAluno.Location" type="System.Drawing.Point, System.Drawing">
     <value>92, 15</value>
@@ -268,7 +244,7 @@
     <value>group_TabelaNegociacoes</value>
   </data>
   <data name="&gt;&gt;cmb_NomeAluno.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="lbl_NomeAluno.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -295,7 +271,7 @@
     <value>group_TabelaNegociacoes</value>
   </data>
   <data name="&gt;&gt;lbl_NomeAluno.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="idNegociacaoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>Código da negociação</value>
@@ -340,7 +316,7 @@
     <value>group_TabelaNegociacoes</value>
   </data>
   <data name="&gt;&gt;dgv_TabelaNegociacoes.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="group_TabelaNegociacoes.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 13</value>

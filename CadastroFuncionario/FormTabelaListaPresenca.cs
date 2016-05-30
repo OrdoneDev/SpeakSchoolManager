@@ -70,10 +70,5 @@ namespace CadastroFuncionario
 
             dgv_TabelaListaPresenca.DataSource = GerenciaBanco.getFiltro(cmb_NomeProfessor.Text, "[Nome do professor]", "ListaPresencaFiltro");
         }
-
-        private void btn_MostrarTodos_Click(object sender, EventArgs e)
-        {
-            dgv_TabelaListaPresenca.DataSource = GerenciaBanco.getFiltro("0", "0", "ListaPresencaFiltro");
-        }
     }
 }

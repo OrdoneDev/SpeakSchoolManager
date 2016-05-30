@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTabelaFuncionarios));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.group_TabelaFuncionarios = new System.Windows.Forms.GroupBox();
             this.btn_FIltrarCargo = new System.Windows.Forms.Button();
             this.cmb_Cargo = new System.Windows.Forms.ComboBox();
@@ -67,7 +67,6 @@
             this.funcionariosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dB_EscolaDataSet6 = new CadastroFuncionario.DB_EscolaDataSet6();
             this.funcionariosTableAdapter = new CadastroFuncionario.DB_EscolaDataSet6TableAdapters.FuncionariosTableAdapter();
-            this.btn_MostrarTodos = new System.Windows.Forms.Button();
             this.group_TabelaFuncionarios.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Funcionarios)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.funcionariosBindingSource)).BeginInit();
@@ -76,7 +75,6 @@
             // 
             // group_TabelaFuncionarios
             // 
-            this.group_TabelaFuncionarios.Controls.Add(this.btn_MostrarTodos);
             this.group_TabelaFuncionarios.Controls.Add(this.btn_FIltrarCargo);
             this.group_TabelaFuncionarios.Controls.Add(this.cmb_Cargo);
             this.group_TabelaFuncionarios.Controls.Add(this.btn_FiltrarCPF);
@@ -336,13 +334,6 @@
             // 
             this.funcionariosTableAdapter.ClearBeforeFill = true;
             // 
-            // btn_MostrarTodos
-            // 
-            resources.ApplyResources(this.btn_MostrarTodos, "btn_MostrarTodos");
-            this.btn_MostrarTodos.Name = "btn_MostrarTodos";
-            this.btn_MostrarTodos.UseVisualStyleBackColor = true;
-            this.btn_MostrarTodos.Click += new System.EventHandler(this.btn_MostrarTodos_Click);
-            // 
             // FormTabelaFuncionarios
             // 
             resources.ApplyResources(this, "$this");
@@ -399,6 +390,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn salarioDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn complementoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn numeroDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button btn_MostrarTodos;
     }
 }

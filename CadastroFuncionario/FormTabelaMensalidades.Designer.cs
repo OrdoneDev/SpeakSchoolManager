@@ -47,7 +47,6 @@
             this.mensalidadesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.escola_PrincipalDataSet1 = new CadastroFuncionario.Escola_PrincipalDataSet1();
             this.mensalidadesTableAdapter = new CadastroFuncionario.Escola_PrincipalDataSet1TableAdapters.MensalidadesTableAdapter();
-            this.btn_MostrarTodos = new System.Windows.Forms.Button();
             this.group_TabelaMensalidades.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_TabelaMensalidades)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mensalidadesBindingSource)).BeginInit();
@@ -56,7 +55,6 @@
             // 
             // group_TabelaMensalidades
             // 
-            this.group_TabelaMensalidades.Controls.Add(this.btn_MostrarTodos);
             this.group_TabelaMensalidades.Controls.Add(this.btn_FiltrarFuncionario);
             this.group_TabelaMensalidades.Controls.Add(this.cmb_NomeFuncionario);
             this.group_TabelaMensalidades.Controls.Add(this.lbl_NomeFuncionario);
@@ -176,13 +174,6 @@
             // 
             this.mensalidadesTableAdapter.ClearBeforeFill = true;
             // 
-            // btn_MostrarTodos
-            // 
-            resources.ApplyResources(this.btn_MostrarTodos, "btn_MostrarTodos");
-            this.btn_MostrarTodos.Name = "btn_MostrarTodos";
-            this.btn_MostrarTodos.UseVisualStyleBackColor = true;
-            this.btn_MostrarTodos.Click += new System.EventHandler(this.btn_MostrarTodos_Click);
-            // 
             // FormTabelaMensalidades
             // 
             resources.ApplyResources(this, "$this");
@@ -220,6 +211,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn numeroParcelaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewCheckBoxColumn situacaoDataGridViewCheckBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button btn_MostrarTodos;
     }
 }

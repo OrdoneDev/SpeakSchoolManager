@@ -48,7 +48,6 @@
             this.turmasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dB_EscolaDataSet13 = new CadastroFuncionario.DB_EscolaDataSet13();
             this.turmasTableAdapter = new CadastroFuncionario.DB_EscolaDataSet13TableAdapters.TurmasTableAdapter();
-            this.btn_MostrarTodos = new System.Windows.Forms.Button();
             this.group_TabelaTurmas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_TabelaTurmas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.turmasBindingSource)).BeginInit();
@@ -57,7 +56,6 @@
             // 
             // group_TabelaTurmas
             // 
-            this.group_TabelaTurmas.Controls.Add(this.btn_MostrarTodos);
             this.group_TabelaTurmas.Controls.Add(this.btn_FiltrarPlano);
             this.group_TabelaTurmas.Controls.Add(this.cmb_NomePlano);
             this.group_TabelaTurmas.Controls.Add(this.lbl_NomePlano);
@@ -184,13 +182,6 @@
             // 
             this.turmasTableAdapter.ClearBeforeFill = true;
             // 
-            // btn_MostrarTodos
-            // 
-            resources.ApplyResources(this.btn_MostrarTodos, "btn_MostrarTodos");
-            this.btn_MostrarTodos.Name = "btn_MostrarTodos";
-            this.btn_MostrarTodos.UseVisualStyleBackColor = true;
-            this.btn_MostrarTodos.Click += new System.EventHandler(this.btn_MostrarTodos_Click);
-            // 
             // FormTabelaTurmas
             // 
             resources.ApplyResources(this, "$this");
@@ -229,6 +220,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn horaEntradaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn horaSaidaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button btn_MostrarTodos;
     }
 }

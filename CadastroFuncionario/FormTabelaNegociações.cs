@@ -70,10 +70,5 @@ namespace CadastroFuncionario
 
             dgv_TabelaNegociacoes.DataSource = GerenciaBanco.getFiltro(cmb_Plano.Text, "[Nome do plano]", "NegociacaoAlunoFiltro");
         }
-
-        private void btn_MostrarTodos_Click(object sender, EventArgs e)
-        {
-            dgv_TabelaNegociacoes.DataSource = GerenciaBanco.getFiltro("0", "0", "NegociacaoAlunoFiltro");
-        }
     }
 }

@@ -57,7 +57,6 @@
             this.responsavelAlunoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dB_EscolaDataSet7 = new CadastroFuncionario.DB_EscolaDataSet7();
             this.responsavel_AlunoTableAdapter = new CadastroFuncionario.DB_EscolaDataSet7TableAdapters.Responsavel_AlunoTableAdapter();
-            this.btn_MostrarTodos = new System.Windows.Forms.Button();
             this.group_TabelaResponsaveis.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Responsaveis)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.responsavelAlunoBindingSource)).BeginInit();
@@ -120,7 +119,6 @@
             // 
             // group_TabelaResponsaveis
             // 
-            this.group_TabelaResponsaveis.Controls.Add(this.btn_MostrarTodos);
             this.group_TabelaResponsaveis.Controls.Add(this.btn_FiltrarCPF);
             this.group_TabelaResponsaveis.Controls.Add(this.msk_CPF);
             this.group_TabelaResponsaveis.Controls.Add(this.btn_FiltrarNome);
@@ -252,13 +250,6 @@
             // 
             this.responsavel_AlunoTableAdapter.ClearBeforeFill = true;
             // 
-            // btn_MostrarTodos
-            // 
-            resources.ApplyResources(this.btn_MostrarTodos, "btn_MostrarTodos");
-            this.btn_MostrarTodos.Name = "btn_MostrarTodos";
-            this.btn_MostrarTodos.UseVisualStyleBackColor = true;
-            this.btn_MostrarTodos.Click += new System.EventHandler(this.btn_MostrarTodos_Click);
-            // 
             // FormTabelaResponsavel
             // 
             resources.ApplyResources(this, "$this");
@@ -306,6 +297,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn telefoneDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn complementoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn numeroDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button btn_MostrarTodos;
     }
 }

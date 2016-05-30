@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTabelaPlanos));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.group_TabelaPlanos = new System.Windows.Forms.GroupBox();
             this.btn_FiltrarIdioma = new System.Windows.Forms.Button();
             this.cmb_Idioma = new System.Windows.Forms.ComboBox();
@@ -44,7 +44,6 @@
             this.idiomasPlanosFiltroBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.escola_PrincipalDataSet3 = new CadastroFuncionario.Escola_PrincipalDataSet3();
             this.idiomasPlanosFiltroTableAdapter = new CadastroFuncionario.Escola_PrincipalDataSet3TableAdapters.IdiomasPlanosFiltroTableAdapter();
-            this.btn_MostrarTodos = new System.Windows.Forms.Button();
             this.group_TabelaPlanos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_TabelaPlanos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.idiomasPlanosFiltroBindingSource)).BeginInit();
@@ -53,7 +52,6 @@
             // 
             // group_TabelaPlanos
             // 
-            this.group_TabelaPlanos.Controls.Add(this.btn_MostrarTodos);
             this.group_TabelaPlanos.Controls.Add(this.btn_FiltrarIdioma);
             this.group_TabelaPlanos.Controls.Add(this.cmb_Idioma);
             this.group_TabelaPlanos.Controls.Add(this.label1);
@@ -146,13 +144,6 @@
             // 
             this.idiomasPlanosFiltroTableAdapter.ClearBeforeFill = true;
             // 
-            // btn_MostrarTodos
-            // 
-            resources.ApplyResources(this.btn_MostrarTodos, "btn_MostrarTodos");
-            this.btn_MostrarTodos.Name = "btn_MostrarTodos";
-            this.btn_MostrarTodos.UseVisualStyleBackColor = true;
-            this.btn_MostrarTodos.Click += new System.EventHandler(this.btn_MostrarTodos_Click);
-            // 
             // FormTabelaPlanos
             // 
             resources.ApplyResources(this, "$this");
@@ -186,6 +177,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn nomeDoPlanoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn aulasPrevistasDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn valorDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button btn_MostrarTodos;
     }
 }

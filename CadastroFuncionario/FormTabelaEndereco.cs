@@ -116,7 +116,6 @@ namespace CadastroFuncionario
             }
 
             msk_IdEndereco.BackColor = System.Drawing.Color.White;
-
             dgv_Enderecos.Rows[GerenciaBanco.getFiltro(msk_IdEndereco.Text, "Id_Endereco", "SysProtected.Endereco", "Id_Endereco") - 1].Selected = true;
         }
 

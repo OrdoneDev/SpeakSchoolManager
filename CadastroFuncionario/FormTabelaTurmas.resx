@@ -118,37 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btn_MostrarTodos.Location" type="System.Drawing.Point, System.Drawing">
-    <value>740, 13</value>
-  </data>
-  <data name="btn_MostrarTodos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 23</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btn_MostrarTodos.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="btn_MostrarTodos.Text" xml:space="preserve">
-    <value>Mostrar todos</value>
-  </data>
-  <data name="&gt;&gt;btn_MostrarTodos.Name" xml:space="preserve">
-    <value>btn_MostrarTodos</value>
-  </data>
-  <data name="&gt;&gt;btn_MostrarTodos.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_MostrarTodos.Parent" xml:space="preserve">
-    <value>group_TabelaTurmas</value>
-  </data>
-  <data name="&gt;&gt;btn_MostrarTodos.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="btn_FiltrarPlano.Location" type="System.Drawing.Point, System.Drawing">
     <value>625, 14</value>
   </data>
   <data name="btn_FiltrarPlano.Size" type="System.Drawing.Size, System.Drawing">
     <value>93, 23</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btn_FiltrarPlano.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
@@ -165,7 +141,7 @@
     <value>group_TabelaTurmas</value>
   </data>
   <data name="&gt;&gt;btn_FiltrarPlano.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="cmb_NomePlano.Location" type="System.Drawing.Point, System.Drawing">
     <value>433, 15</value>
@@ -189,7 +165,7 @@
     <value>group_TabelaTurmas</value>
   </data>
   <data name="&gt;&gt;cmb_NomePlano.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="lbl_NomePlano.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -216,7 +192,7 @@
     <value>group_TabelaTurmas</value>
   </data>
   <data name="&gt;&gt;lbl_NomePlano.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="btn_FiltrarFuncionario.Location" type="System.Drawing.Point, System.Drawing">
     <value>266, 14</value>
@@ -240,7 +216,7 @@
     <value>group_TabelaTurmas</value>
   </data>
   <data name="&gt;&gt;btn_FiltrarFuncionario.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="cmb_NomeFuncionario.Location" type="System.Drawing.Point, System.Drawing">
     <value>74, 15</value>
@@ -264,7 +240,7 @@
     <value>group_TabelaTurmas</value>
   </data>
   <data name="&gt;&gt;cmb_NomeFuncionario.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="lbl_NomeFuncionario.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -291,7 +267,7 @@
     <value>group_TabelaTurmas</value>
   </data>
   <data name="&gt;&gt;lbl_NomeFuncionario.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="idTurmaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>Código da turma</value>
@@ -339,7 +315,7 @@
     <value>group_TabelaTurmas</value>
   </data>
   <data name="&gt;&gt;dgv_TabelaTurmas.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="group_TabelaTurmas.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 13</value>

@@ -70,10 +70,5 @@ namespace CadastroFuncionario
 
             dgv_TabelaInscricoesTurmas.DataSource = GerenciaBanco.getFiltro(cmb_NomeFuncionario.Text, "[Nome do funcionário]", "InscricoesTurmasFiltro");
         }
-
-        private void btn_MostrarTodos_Click(object sender, EventArgs e)
-        {
-            dgv_TabelaInscricoesTurmas.DataSource = GerenciaBanco.getFiltro("0", "0", "InscricoesTurmasFiltro");
-        }
     }
 }

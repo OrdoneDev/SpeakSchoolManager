@@ -44,7 +44,6 @@
             this.boletinsAlunoFiltroBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.escola_PrincipalDataSet5 = new CadastroFuncionario.Escola_PrincipalDataSet5();
             this.boletinsAlunoFiltroTableAdapter = new CadastroFuncionario.Escola_PrincipalDataSet5TableAdapters.BoletinsAlunoFiltroTableAdapter();
-            this.btn_MostrarTodos = new System.Windows.Forms.Button();
             this.group_TabelaBoletins.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_TabelaBoletins)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.boletinsAlunoFiltroBindingSource)).BeginInit();
@@ -53,7 +52,6 @@
             // 
             // group_TabelaBoletins
             // 
-            this.group_TabelaBoletins.Controls.Add(this.btn_MostrarTodos);
             this.group_TabelaBoletins.Controls.Add(this.btn_FiltrarAluno);
             this.group_TabelaBoletins.Controls.Add(this.cmb_NomeAluno);
             this.group_TabelaBoletins.Controls.Add(this.lbl_NomeAluno);
@@ -151,13 +149,6 @@
             // 
             this.boletinsAlunoFiltroTableAdapter.ClearBeforeFill = true;
             // 
-            // btn_MostrarTodos
-            // 
-            resources.ApplyResources(this.btn_MostrarTodos, "btn_MostrarTodos");
-            this.btn_MostrarTodos.Name = "btn_MostrarTodos";
-            this.btn_MostrarTodos.UseVisualStyleBackColor = true;
-            this.btn_MostrarTodos.Click += new System.EventHandler(this.btn_MostrarTodos_Click);
-            // 
             // FormTabelaBoletins
             // 
             resources.ApplyResources(this, "$this");
@@ -192,6 +183,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn nota2DataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn mediaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn numeroFaltasDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button btn_MostrarTodos;
     }
 }

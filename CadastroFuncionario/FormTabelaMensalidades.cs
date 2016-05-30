@@ -70,10 +70,5 @@ namespace CadastroFuncionario
 
             dgv_TabelaMensalidades.DataSource = GerenciaBanco.getFiltro(cmb_NomeFuncionario.Text, "Nome", "MensalidadesFuncionariosFiltro");
         }
-
-        private void btn_MostrarTodos_Click(object sender, EventArgs e)
-        {
-            dgv_TabelaMensalidades.DataSource = GerenciaBanco.getFiltro("0", "0", "SysProtected.Mensalidades");
-        }
     }
 }

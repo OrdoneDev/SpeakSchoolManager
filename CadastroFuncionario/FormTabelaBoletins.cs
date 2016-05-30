@@ -46,10 +46,5 @@ namespace CadastroFuncionario
 
             dgv_TabelaBoletins.DataSource = GerenciaBanco.getFiltro(cmb_NomeAluno.Text, "Nome", "BoletinsAlunoFiltro");
         }
-
-        private void btn_MostrarTodos_Click(object sender, EventArgs e)
-        {
-            dgv_TabelaBoletins.DataSource = GerenciaBanco.getFiltro("0", "0", "BoletinsAlunoFiltro");
-        }
     }
 }

@@ -71,10 +71,5 @@ namespace CadastroFuncionario
 
             dgv_TabelaTurmas.DataSource = GerenciaBanco.getFiltro(cmb_NomePlano.Text, "[Nome do plano]", "TurmasFiltro");
         }
-
-        private void btn_MostrarTodos_Click(object sender, EventArgs e)
-        {
-            dgv_TabelaTurmas.DataSource = GerenciaBanco.getFiltro("0", "0", "TurmasFiltro");
-        }
     }
 }

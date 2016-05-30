@@ -44,7 +44,6 @@
             this.inscricoesTurmasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dB_EscolaDataSet14 = new CadastroFuncionario.DB_EscolaDataSet14();
             this.inscricoes_TurmasTableAdapter = new CadastroFuncionario.DB_EscolaDataSet14TableAdapters.Inscricoes_TurmasTableAdapter();
-            this.btn_MostrarTodos = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_TabelaInscricoesTurmas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inscricoesTurmasBindingSource)).BeginInit();
@@ -53,7 +52,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.btn_MostrarTodos);
             this.groupBox1.Controls.Add(this.btn_FiltrarFuncionario);
             this.groupBox1.Controls.Add(this.cmb_NomeFuncionario);
             this.groupBox1.Controls.Add(this.lbl_NomeFuncionario);
@@ -152,13 +150,6 @@
             // 
             this.inscricoes_TurmasTableAdapter.ClearBeforeFill = true;
             // 
-            // btn_MostrarTodos
-            // 
-            resources.ApplyResources(this.btn_MostrarTodos, "btn_MostrarTodos");
-            this.btn_MostrarTodos.Name = "btn_MostrarTodos";
-            this.btn_MostrarTodos.UseVisualStyleBackColor = true;
-            this.btn_MostrarTodos.Click += new System.EventHandler(this.btn_MostrarTodos_Click);
-            // 
             // FormTabelaInscricoesTurmas
             // 
             resources.ApplyResources(this, "$this");
@@ -193,6 +184,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn idInscricaoTurmaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn idInscricaoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn idTurmaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button btn_MostrarTodos;
     }
 }
