@@ -451,7 +451,7 @@ begin
 		set @SituacaoParcela = 'paga(s)';
 	end
 	
-	Insert into SysProtected.Historico_Aluno values (@Id_Aluno, Getdate( ), 'Aluno efetuou compra do plano '+CONVERT(varchar(40), @Nome_Plano)+' no dia de hoje no total de '+CONVERT(varchar(2), @Parcelas)+' parcelas '+CONVERT(varchar(7), @SituacaoParcela)+'.');
+	Insert into SysProtected.Historico_Aluno values (@Id_Aluno, Getdate( ), 'Aluno efetuou compra do plano '+CONVERT(varchar(40), @Nome_Plano)+' no dia de hoje no total de '+CONVERT(varchar(2), @Parcelas)+' parcela(s) '+CONVERT(varchar(7), @SituacaoParcela)+'.');
 end
 go
 
@@ -821,7 +821,7 @@ begin
 
 	select @Id_Funcionario = Id_Funcionario, @Data = Data, @Hora_Entrada = Hora_Entrada, @Hora_Saida = Hora_Saida from inserted;
 
-	Insert into SysProtected.Historico_Funcionario values (@Id_Funcionario, Getdate( ), 'O funcionário foi escalado para trabalhar no dia '+CONVERT(varchar(12), @Data, 101)+' às '+CONVERT(varchar(5), @Hora_Entrada)+' até '+CONVERT(varchar(5), @Hora_Saida)+'.');
+	Insert into SysProtected.Historico_Funcionario values (@Id_Funcionario, Getdate( ), 'O funcionário foi escalado para trabalhar no dia '+CONVERT(varchar(12), @Data, 103)+' às '+CONVERT(varchar(5), @Hora_Entrada)+' até '+CONVERT(varchar(5), @Hora_Saida)+'.');
 end
 go
 
@@ -918,12 +918,18 @@ as
 begin
 	declare @Id_Aluno int;
 	declare @Sala tinyint;
+	declare @Descricao varchar(800);
 
 	select @Id_Aluno = I.Id_Aluno, @Sala = T.Sala from SysProtected.Turmas T INNER JOIN inserted IT 
 	on T.Id_Turma = IT.Id_Turma INNER JOIN SysProtected.Inscricao I
 	on IT.Id_Inscricao = I.Id_Inscricao;
 
-	Insert into SysProtected.Historico_Aluno values (@Id_Aluno, Getdate( ), 'O aluno foi selecionado para participar das aulas na sala '+CONVERT(varchar(3), @Sala)+'.');
+	select @Descricao = Descricao from SysProtected.Historico_Aluno where Descricao = 'O aluno foi selecionado para participar das aulas na sala '+CONVERT(varchar(3), @Sala)+'.' and Id_Aluno = @Id_Aluno
+
+	if (@Descricao is null)
+	begin
+		Insert into SysProtected.Historico_Aluno values (@Id_Aluno, Getdate( ), 'O aluno foi selecionado para participar das aulas na sala '+CONVERT(varchar(3), @Sala)+'.');
+	end
 end
 go
 
@@ -1057,185 +1063,21 @@ Create unique index Unica_Lista_Presenca
 	on SysProtected.Lista_Presenca (Id_Inscricao_Turma, Data);
 go
 
-CREATE USER [ANA\Diretor] FOR LOGIN [ANA\Diretor]
+Insert into SysProtected.Endereco values (
+	'São Paulo', 'Campos do Jordão', '12460-000', 'Vila Nair', 'João Andreolli'
+)
 GO
 
-ALTER ROLE [db_owner] ADD MEMBER [ANA\Diretor]
+Insert into SysProtected.Funcionarios values (
+	1, 'David Christian Dias Ordone', '1994-01-01', 'M', 'Solteiro', '11.111.111-1',
+	'111.111.111-11', 'Inátivo', 'david9108@hotmail.com', null, '012', '997040012', '0',
+	'Ensino Médio Completo', 'Administrador', 1, 'Casa', '416'
+)
 GO
 
-CREATE USER [ANA\Professor] FOR LOGIN [ANA\Professor]
-GO
-
-CREATE USER [ANA\Secretario] FOR LOGIN [ANA\Secretario]
-GO
-
-GRANT INSERT ON [SysProtected].[Alunos] TO [ANA\Secretario]
-GO
-
-GRANT SELECT ON [SysProtected].[Alunos] TO [ANA\Secretario]
-GO
-
-GRANT UPDATE ON [SysProtected].[Alunos] TO [ANA\Secretario]
-GO
-
-GRANT SELECT ON [SysProtected].[Boletim] TO [ANA\Professor]
-GO
-
-GRANT UPDATE ON [SysProtected].[Boletim] TO [ANA\Professor]
-GO
-
-GRANT SELECT ON [SysProtected].[Boletim] TO [ANA\Secretario]
-GO
-
-GRANT INSERT ON [SysProtected].[Endereco] TO [ANA\Secretario]
-GO
-
-GRANT SELECT ON [SysProtected].[Endereco] TO [ANA\Secretario]
-GO
-
-GRANT UPDATE ON [SysProtected].[Endereco] TO [ANA\Secretario]
-GO
-
-GRANT SELECT ON [SysProtected].[Escalas] TO [ANA\Secretario]
-GO
-
-GRANT SELECT ON [SysProtected].[Financeiro] ([Id_Financeiro]) TO [ANA\Secretario]
-GO
-
-GRANT INSERT ON [SysProtected].[Historico_Aluno] TO [ANA\Professor]
-GO
-
-GRANT SELECT ON [SysProtected].[Historico_Aluno] TO [ANA\Professor]
-GO
-
-GRANT UPDATE ON [SysProtected].[Historico_Aluno] TO [ANA\Professor]
-GO
-
-GRANT INSERT ON [SysProtected].[Historico_Aluno] TO [ANA\Secretario]
-GO
-
-GRANT SELECT ON [SysProtected].[Historico_Aluno] TO [ANA\Secretario]
-GO
-
-GRANT SELECT ON [SysProtected].[Historico_Funcionario] TO [ANA\Secretario]
-GO
-
-GRANT INSERT ON [SysProtected].[Inscricao] TO [ANA\Secretario]
-GO
-
-GRANT SELECT ON [SysProtected].[Inscricao] TO [ANA\Secretario]
-GO
-
-GRANT UPDATE ON [SysProtected].[Inscricao] TO [ANA\Secretario]
-GO
-
-GRANT INSERT ON [SysProtected].[Inscricoes_Turmas] TO [ANA\Secretario]
-GO
-
-GRANT SELECT ON [SysProtected].[Inscricoes_Turmas] TO [ANA\Secretario]
-GO
-
-GRANT UPDATE ON [SysProtected].[Inscricoes_Turmas] TO [ANA\Secretario]
-GO
-
-GRANT INSERT ON [SysProtected].[Lista_Presenca] TO [ANA\Professor]
-GO
-
-GRANT SELECT ON [SysProtected].[Lista_Presenca] TO [ANA\Professor]
-GO
-
-GRANT UPDATE ON [SysProtected].[Lista_Presenca] TO [ANA\Professor]
-GO
-
-GRANT SELECT ON [SysProtected].[Lista_Presenca] TO [ANA\Secretario]
-GO
-
-GRANT INSERT ON [SysProtected].[Mensalidades] TO [ANA\Secretario]
-GO
-
-GRANT SELECT ON [SysProtected].[Mensalidades] TO [ANA\Secretario]
-GO
-
-GRANT UPDATE ON [SysProtected].[Mensalidades] TO [ANA\Secretario]
-GO
-
-GRANT INSERT ON [SysProtected].[Negociacao] TO [ANA\Secretario]
-GO
-
-GRANT SELECT ON [SysProtected].[Negociacao] TO [ANA\Secretario]
-GO
-
-GRANT UPDATE ON [SysProtected].[Negociacao] TO [ANA\Secretario]
-GO
-
-GRANT SELECT ON [SysProtected].[Responsavel_Aluno] TO [ANA\Professor]
-GO
-
-GRANT INSERT ON [SysProtected].[Responsavel_Aluno] TO [ANA\Secretario]
-GO
-
-GRANT SELECT ON [SysProtected].[Responsavel_Aluno] TO [ANA\Secretario]
-GO
-
-GRANT UPDATE ON [SysProtected].[Responsavel_Aluno] TO [ANA\Secretario]
-GO
-
-GRANT SELECT ON [SysProtected].[Turmas] TO [ANA\Professor]
-GO
-
-GRANT INSERT ON [SysProtected].[Turmas] TO [ANA\Secretario]
-GO
-
-GRANT SELECT ON [SysProtected].[Turmas] TO [ANA\Secretario]
-GO
-
-GRANT UPDATE ON [SysProtected].[Turmas] TO [ANA\Secretario]
-GO
-
-GRANT INSERT ON SCHEMA::[SysProtected] TO [ANA\Professor]
-GO
-
-GRANT SELECT ON SCHEMA::[SysProtected] TO [ANA\Professor]
-GO
-
-GRANT UPDATE ON SCHEMA::[SysProtected] TO [ANA\Professor]
-GO
-
-GRANT INSERT ON SCHEMA::[SysProtected] TO [ANA\Secretario]
-GO
-
-GRANT SELECT ON SCHEMA::[SysProtected] TO [ANA\Secretario]
-GO
-
-GRANT UPDATE ON SCHEMA::[SysProtected] TO [ANA\Secretario]
-GO
-
-GRANT SELECT ON [dbo].[AllBoletim] TO [ANA\Professor]
-GO
-
-GRANT UPDATE ON [dbo].[AllBoletim] TO [ANA\Professor]
-GO
-
-GRANT SELECT ON [dbo].[AllBoletim] TO [ANA\Secretario]
-GO
-
-GRANT SELECT ON [dbo].[AllInscricoes] TO [ANA\Professor]
-GO
-
-GRANT SELECT ON [dbo].[AllInscricoes] TO [ANA\Secretario]
-GO
-
-GRANT UPDATE ON [dbo].[AllInscricoes] TO [ANA\Secretario]
-GO
-
-GRANT SELECT ON [dbo].[AllMensalidades] TO [ANA\Secretario]
-GO
-
-GRANT UPDATE ON [dbo].[AllMensalidades] TO [ANA\Secretario]
-GO
-
-GRANT EXECUTE ON [dbo].[CadastroAluno] TO [ANA\Secretario]
-GO
-
-GRANT EXECUTE ON [dbo].[CadastroResponsavel] TO [ANA\Secretario]
+Insert into SysProtected.Alunos values
+	(null, 1, 'David Christian Dias Ordone', '1994-01-01', 'M', 'Solteiro', '11.111.111-1',
+	'111.111.111-11', 0, 'david9108@hotmail.com', null, '012', '997040012',
+	'Ensino Médio Completo', 'Casa', '416'
+)
 GO

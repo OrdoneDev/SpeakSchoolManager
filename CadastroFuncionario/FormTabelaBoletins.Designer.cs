@@ -35,23 +35,25 @@
             this.cmb_NomeAluno = new System.Windows.Forms.ComboBox();
             this.lbl_NomeAluno = new System.Windows.Forms.Label();
             this.dgv_TabelaBoletins = new System.Windows.Forms.DataGridView();
-            this.escola_PrincipalDataSet5 = new CadastroFuncionario.Escola_PrincipalDataSet5();
-            this.boletinsAlunoFiltroBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.boletinsAlunoFiltroTableAdapter = new CadastroFuncionario.Escola_PrincipalDataSet5TableAdapters.BoletinsAlunoFiltroTableAdapter();
             this.idBoletimDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idInscricaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nota1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nota2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mediaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.numeroFaltasDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.boletinsAlunoFiltroBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.escola_PrincipalDataSet5 = new CadastroFuncionario.Escola_PrincipalDataSet5();
+            this.boletinsAlunoFiltroTableAdapter = new CadastroFuncionario.Escola_PrincipalDataSet5TableAdapters.BoletinsAlunoFiltroTableAdapter();
+            this.btn_MostrarTodos = new System.Windows.Forms.Button();
             this.group_TabelaBoletins.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_TabelaBoletins)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.escola_PrincipalDataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.boletinsAlunoFiltroBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.escola_PrincipalDataSet5)).BeginInit();
             this.SuspendLayout();
             // 
             // group_TabelaBoletins
             // 
+            this.group_TabelaBoletins.Controls.Add(this.btn_MostrarTodos);
             this.group_TabelaBoletins.Controls.Add(this.btn_FiltrarAluno);
             this.group_TabelaBoletins.Controls.Add(this.cmb_NomeAluno);
             this.group_TabelaBoletins.Controls.Add(this.lbl_NomeAluno);
@@ -97,20 +99,6 @@
             resources.ApplyResources(this.dgv_TabelaBoletins, "dgv_TabelaBoletins");
             this.dgv_TabelaBoletins.Name = "dgv_TabelaBoletins";
             // 
-            // escola_PrincipalDataSet5
-            // 
-            this.escola_PrincipalDataSet5.DataSetName = "Escola_PrincipalDataSet5";
-            this.escola_PrincipalDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // boletinsAlunoFiltroBindingSource
-            // 
-            this.boletinsAlunoFiltroBindingSource.DataMember = "BoletinsAlunoFiltro";
-            this.boletinsAlunoFiltroBindingSource.DataSource = this.escola_PrincipalDataSet5;
-            // 
-            // boletinsAlunoFiltroTableAdapter
-            // 
-            this.boletinsAlunoFiltroTableAdapter.ClearBeforeFill = true;
-            // 
             // idBoletimDataGridViewTextBoxColumn
             // 
             this.idBoletimDataGridViewTextBoxColumn.DataPropertyName = "Id_Boletim";
@@ -149,6 +137,27 @@
             resources.ApplyResources(this.numeroFaltasDataGridViewTextBoxColumn, "numeroFaltasDataGridViewTextBoxColumn");
             this.numeroFaltasDataGridViewTextBoxColumn.Name = "numeroFaltasDataGridViewTextBoxColumn";
             // 
+            // boletinsAlunoFiltroBindingSource
+            // 
+            this.boletinsAlunoFiltroBindingSource.DataMember = "BoletinsAlunoFiltro";
+            this.boletinsAlunoFiltroBindingSource.DataSource = this.escola_PrincipalDataSet5;
+            // 
+            // escola_PrincipalDataSet5
+            // 
+            this.escola_PrincipalDataSet5.DataSetName = "Escola_PrincipalDataSet5";
+            this.escola_PrincipalDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // boletinsAlunoFiltroTableAdapter
+            // 
+            this.boletinsAlunoFiltroTableAdapter.ClearBeforeFill = true;
+            // 
+            // btn_MostrarTodos
+            // 
+            resources.ApplyResources(this.btn_MostrarTodos, "btn_MostrarTodos");
+            this.btn_MostrarTodos.Name = "btn_MostrarTodos";
+            this.btn_MostrarTodos.UseVisualStyleBackColor = true;
+            this.btn_MostrarTodos.Click += new System.EventHandler(this.btn_MostrarTodos_Click);
+            // 
             // FormTabelaBoletins
             // 
             resources.ApplyResources(this, "$this");
@@ -161,8 +170,8 @@
             this.group_TabelaBoletins.ResumeLayout(false);
             this.group_TabelaBoletins.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_TabelaBoletins)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.escola_PrincipalDataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.boletinsAlunoFiltroBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.escola_PrincipalDataSet5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -183,5 +192,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn nota2DataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn mediaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn numeroFaltasDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button btn_MostrarTodos;
     }
 }

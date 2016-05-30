@@ -37,7 +37,7 @@ namespace CadastroFuncionario
 
         private void cmb_EstadoResponsavel_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
-            ValidaCampos.GetLista(cmb_EstadoResponsavel, "DISTINCT TOP 5 Estado", "Estado", e, "Endereco");
+            ValidaCampos.GetLista(cmb_EstadoResponsavel, "DISTINCT TOP 5 Estado", "Estado", e, "SysProtected.Endereco");
         }
 
         private void cmb_EstadoResponsavel_SelectedValueChanged(object sender, EventArgs e)
@@ -47,7 +47,7 @@ namespace CadastroFuncionario
 
         private void cmb_CidadeResponsavel_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
-            ValidaCampos.GetLista(cmb_CidadeResponsavel, "DISTINCT TOP 5 Cidade", "Cidade", e, "Endereco");
+            ValidaCampos.GetLista(cmb_CidadeResponsavel, "DISTINCT TOP 5 Cidade", "Cidade", e, "SysProtected.Endereco");
         }
 
         private void cmb_CidadeResponsavel_SelectedValueChanged(object sender, EventArgs e)
@@ -57,7 +57,7 @@ namespace CadastroFuncionario
 
         private void cmb_BairroResponsavel_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
-            ValidaCampos.GetLista(cmb_BairroResponsavel, "DISTINCT TOP 5 Bairro", "Bairro", e, "Endereco");
+            ValidaCampos.GetLista(cmb_BairroResponsavel, "DISTINCT TOP 5 Bairro", "Bairro", e, "SysProtected.Endereco");
         }
 
         private void cmb_BairroResponsavel_SelectedValueChanged(object sender, EventArgs e)
@@ -67,7 +67,7 @@ namespace CadastroFuncionario
 
         private void cmb_RuaResponsavel_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
-            ValidaCampos.GetLista(cmb_RuaResponsavel, "DISTINCT TOP 5 Nome_Rua", "Nome_Rua", e, "Endereco");
+            ValidaCampos.GetLista(cmb_RuaResponsavel, "DISTINCT TOP 5 Nome_Rua", "Nome_Rua", e, "SysProtected.Endereco");
         }
 
         private void cmb_RuaResponsavel_SelectedValueChanged(object sender, EventArgs e)

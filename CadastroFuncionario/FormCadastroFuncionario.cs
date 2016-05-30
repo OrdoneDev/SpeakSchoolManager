@@ -12,6 +12,8 @@ namespace CadastroFuncionario
 {
     public partial class FormCadastroFuncionario : Form
     {
+        OpenFileDialog openFile = new OpenFileDialog();
+
         public FormCadastroFuncionario()
         {
             InitializeComponent();
@@ -47,7 +49,7 @@ namespace CadastroFuncionario
 
         private void cmb_EstadoFuncionario_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
-            ValidaCampos.GetLista(cmb_EstadoFuncionario, "DISTINCT TOP 5 Estado", "Estado", e, "Endereco");
+            ValidaCampos.GetLista(cmb_EstadoFuncionario, "DISTINCT TOP 5 Estado", "Estado", e, "SysProtected.Endereco");
         }
 
         private void cmb_EstadoFuncionario_SelectedValueChanged(object sender, EventArgs e)
@@ -57,7 +59,7 @@ namespace CadastroFuncionario
 
         private void cmb_CidadeFuncionario_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
-            ValidaCampos.GetLista(cmb_CidadeFuncionario, "DISTINCT TOP 5 Cidade", "Cidade", e, "Endereco");
+            ValidaCampos.GetLista(cmb_CidadeFuncionario, "DISTINCT TOP 5 Cidade", "Cidade", e, "SysProtected.Endereco");
         }
 
         private void cmb_CidadeFuncionario_SelectedValueChanged(object sender, EventArgs e)
@@ -67,7 +69,7 @@ namespace CadastroFuncionario
 
         private void cmb_BairroFuncionario_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
-            ValidaCampos.GetLista(cmb_BairroFuncionario, "DISTINCT TOP 5 Bairro", "Bairro", e, "Endereco");
+            ValidaCampos.GetLista(cmb_BairroFuncionario, "DISTINCT TOP 5 Bairro", "Bairro", e, "SysProtected.Endereco");
         }
 
         private void cmb_BairroFuncionario_SelectedValueChanged(object sender, EventArgs e)
@@ -77,7 +79,7 @@ namespace CadastroFuncionario
 
         private void cmb_RuaFuncionario_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
-            ValidaCampos.GetLista(cmb_RuaFuncionario, "DISTINCT TOP 5 Nome_Rua", "Nome_Rua", e, "Endereco");
+            ValidaCampos.GetLista(cmb_RuaFuncionario, "DISTINCT TOP 5 Nome_Rua", "Nome_Rua", e, "SysProtected.Endereco");
         }
 
         private void cmb_RuaFuncionario_SelectedValueChanged(object sender, EventArgs e)
@@ -100,9 +102,14 @@ namespace CadastroFuncionario
             }
         }
 
+        private void txt_FotoFuncionario_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
+        {
+            if (txt_FotoFuncionario.Text != openFile.FileName)
+                pic_Funcionario.Image = null;
+        }
+
         private void btn_AbrirFotoFuncionario_Click(object sender, EventArgs e)
         {
-            OpenFileDialog openFile = new OpenFileDialog();
             openFile.Filter = "Arquivos de imagem(*.jpg)|*.jpg| Arquivos de imagem(*.jpge)|*.jpge";
             openFile.InitialDirectory = @"c:\";
 

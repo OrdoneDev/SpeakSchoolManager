@@ -421,6 +421,7 @@
             resources.ApplyResources(this.txt_FotoFuncionario, "txt_FotoFuncionario");
             this.txt_FotoFuncionario.Name = "txt_FotoFuncionario";
             this.txt_FotoFuncionario.Tag = "0";
+            this.txt_FotoFuncionario.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.txt_FotoFuncionario_PreviewKeyDown);
             // 
             // btn_EfetuarCadastroFuncionario
             // 

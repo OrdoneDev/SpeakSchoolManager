@@ -25,7 +25,7 @@ namespace CadastroFuncionario
 
         private void cmb_NomeAluno_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
-            ValidaCampos.GetLista(cmb_NomeAluno, "TOP 5 Nome", "Nome", e, "Alunos");
+            ValidaCampos.GetLista(cmb_NomeAluno, "TOP 5 Nome", "Nome", e, "SysProtected.Alunos");
         }
 
         private void cmb_NomeAluno_SelectedValueChanged(object sender, EventArgs e)
@@ -35,7 +35,7 @@ namespace CadastroFuncionario
 
         private void cmb_Plano_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
-            ValidaCampos.GetLista(cmb_Plano, "TOP 5 Nome", "Nome", e, "Planos");
+            ValidaCampos.GetLista(cmb_Plano, "TOP 5 Nome", "Nome", e, "SysProtected.Planos");
         }
 
         private void cmb_Plano_SelectedValueChanged(object sender, EventArgs e)
@@ -69,6 +69,11 @@ namespace CadastroFuncionario
             cmb_Plano.BackColor = System.Drawing.Color.White;
 
             dgv_TabelaNegociacoes.DataSource = GerenciaBanco.getFiltro(cmb_Plano.Text, "[Nome do plano]", "NegociacaoAlunoFiltro");
+        }
+
+        private void btn_MostrarTodos_Click(object sender, EventArgs e)
+        {
+            dgv_TabelaNegociacoes.DataSource = GerenciaBanco.getFiltro("0", "0", "NegociacaoAlunoFiltro");
         }
     }
 }

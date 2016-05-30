@@ -25,7 +25,7 @@ namespace CadastroFuncionario
 
         private void cmb_NomeAluno_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
-            ValidaCampos.GetLista(cmb_NomeAluno, "TOP 5 Nome", "Nome", e, "Alunos");
+            ValidaCampos.GetLista(cmb_NomeAluno, "TOP 5 Nome", "Nome", e, "SysProtected.Alunos");
         }
 
         private void cmb_NomeAluno_SelectedValueChanged(object sender, EventArgs e)
@@ -45,6 +45,11 @@ namespace CadastroFuncionario
             cmb_NomeAluno.BackColor = System.Drawing.Color.White;
 
             dgv_TabelaBoletins.DataSource = GerenciaBanco.getFiltro(cmb_NomeAluno.Text, "Nome", "BoletinsAlunoFiltro");
+        }
+
+        private void btn_MostrarTodos_Click(object sender, EventArgs e)
+        {
+            dgv_TabelaBoletins.DataSource = GerenciaBanco.getFiltro("0", "0", "BoletinsAlunoFiltro");
         }
     }
 }

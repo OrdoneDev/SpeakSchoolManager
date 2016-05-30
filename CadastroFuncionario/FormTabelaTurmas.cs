@@ -26,7 +26,7 @@ namespace CadastroFuncionario
 
         private void cmb_NomeFuncionario_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
-            ValidaCampos.GetLista(cmb_NomeFuncionario, "TOP 5 Nome", "Nome", e, "Funcionarios");
+            ValidaCampos.GetLista(cmb_NomeFuncionario, "TOP 5 Nome", "Nome", e, "SysProtected.Funcionarios");
         }
 
         private void cmb_NomeFuncionario_SelectedValueChanged(object sender, EventArgs e)
@@ -36,7 +36,7 @@ namespace CadastroFuncionario
 
         private void cmb_NomePlano_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
-            ValidaCampos.GetLista(cmb_NomePlano, "DISTINCT TOP 5 Nome", "Nome", e, "Planos");
+            ValidaCampos.GetLista(cmb_NomePlano, "DISTINCT TOP 5 Nome", "Nome", e, "SysProtected.Planos");
         }
 
         private void cmb_NomePlano_SelectedValueChanged(object sender, EventArgs e)
@@ -70,6 +70,11 @@ namespace CadastroFuncionario
             cmb_NomePlano.BackColor = System.Drawing.Color.White;
 
             dgv_TabelaTurmas.DataSource = GerenciaBanco.getFiltro(cmb_NomePlano.Text, "[Nome do plano]", "TurmasFiltro");
+        }
+
+        private void btn_MostrarTodos_Click(object sender, EventArgs e)
+        {
+            dgv_TabelaTurmas.DataSource = GerenciaBanco.getFiltro("0", "0", "TurmasFiltro");
         }
     }
 }

@@ -145,7 +145,7 @@
     <value>group_TabelaResponsaveis</value>
   </data>
   <data name="&gt;&gt;btn_FiltrarCPF.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="msk_CPF.Location" type="System.Drawing.Point, System.Drawing">
     <value>590, 15</value>
@@ -169,7 +169,7 @@
     <value>group_TabelaResponsaveis</value>
   </data>
   <data name="&gt;&gt;msk_CPF.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="btn_FiltrarNome.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -196,7 +196,7 @@
     <value>group_TabelaResponsaveis</value>
   </data>
   <data name="&gt;&gt;btn_FiltrarNome.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="cmb_Nome.Location" type="System.Drawing.Point, System.Drawing">
     <value>250, 14</value>
@@ -220,7 +220,7 @@
     <value>group_TabelaResponsaveis</value>
   </data>
   <data name="&gt;&gt;cmb_Nome.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="btn_FiltrarId.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -247,7 +247,7 @@
     <value>group_TabelaResponsaveis</value>
   </data>
   <data name="&gt;&gt;btn_FiltrarId.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="msk_Id.Location" type="System.Drawing.Point, System.Drawing">
     <value>87, 16</value>
@@ -271,7 +271,7 @@
     <value>group_TabelaResponsaveis</value>
   </data>
   <data name="&gt;&gt;msk_Id.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="lbl_CPF.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -301,7 +301,7 @@
     <value>group_TabelaResponsaveis</value>
   </data>
   <data name="&gt;&gt;lbl_CPF.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="lbl_Nome.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -331,7 +331,7 @@
     <value>group_TabelaResponsaveis</value>
   </data>
   <data name="&gt;&gt;lbl_Nome.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="lbl_Id.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -361,7 +361,79 @@
     <value>group_TabelaResponsaveis</value>
   </data>
   <data name="&gt;&gt;lbl_Id.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
+  </data>
+  <data name="btn_MostrarTodos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>937, 13</value>
+  </data>
+  <data name="btn_MostrarTodos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 23</value>
+  </data>
+  <data name="btn_MostrarTodos.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="btn_MostrarTodos.Text" xml:space="preserve">
+    <value>Mostrar todos</value>
+  </data>
+  <data name="&gt;&gt;btn_MostrarTodos.Name" xml:space="preserve">
+    <value>btn_MostrarTodos</value>
+  </data>
+  <data name="&gt;&gt;btn_MostrarTodos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_MostrarTodos.Parent" xml:space="preserve">
+    <value>group_TabelaResponsaveis</value>
+  </data>
+  <data name="&gt;&gt;btn_MostrarTodos.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="responsavelAlunoBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>171, 17</value>
+  </metadata>
+  <data name="dgv_Responsaveis.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 40</value>
+  </data>
+  <data name="dgv_Responsaveis.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1030, 286</value>
+  </data>
+  <data name="dgv_Responsaveis.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;dgv_Responsaveis.Name" xml:space="preserve">
+    <value>dgv_Responsaveis</value>
+  </data>
+  <data name="&gt;&gt;dgv_Responsaveis.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgv_Responsaveis.Parent" xml:space="preserve">
+    <value>group_TabelaResponsaveis</value>
+  </data>
+  <data name="&gt;&gt;dgv_Responsaveis.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="group_TabelaResponsaveis.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 15</value>
+  </data>
+  <data name="group_TabelaResponsaveis.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1039, 329</value>
+  </data>
+  <data name="group_TabelaResponsaveis.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="group_TabelaResponsaveis.Text" xml:space="preserve">
+    <value>Reponsáveis</value>
+  </data>
+  <data name="&gt;&gt;group_TabelaResponsaveis.Name" xml:space="preserve">
+    <value>group_TabelaResponsaveis</value>
+  </data>
+  <data name="&gt;&gt;group_TabelaResponsaveis.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;group_TabelaResponsaveis.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;group_TabelaResponsaveis.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="idResponsavelDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>Código do responsável</value>
@@ -447,51 +519,9 @@
   <metadata name="dB_EscolaDataSet7.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <data name="dgv_Responsaveis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 40</value>
-  </data>
-  <data name="dgv_Responsaveis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1030, 286</value>
-  </data>
-  <data name="dgv_Responsaveis.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;dgv_Responsaveis.Name" xml:space="preserve">
-    <value>dgv_Responsaveis</value>
-  </data>
-  <data name="&gt;&gt;dgv_Responsaveis.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dgv_Responsaveis.Parent" xml:space="preserve">
-    <value>group_TabelaResponsaveis</value>
-  </data>
-  <data name="&gt;&gt;dgv_Responsaveis.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="group_TabelaResponsaveis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 15</value>
-  </data>
-  <data name="group_TabelaResponsaveis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1039, 329</value>
-  </data>
-  <data name="group_TabelaResponsaveis.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="group_TabelaResponsaveis.Text" xml:space="preserve">
-    <value>Reponsáveis</value>
-  </data>
-  <data name="&gt;&gt;group_TabelaResponsaveis.Name" xml:space="preserve">
-    <value>group_TabelaResponsaveis</value>
-  </data>
-  <data name="&gt;&gt;group_TabelaResponsaveis.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;group_TabelaResponsaveis.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;group_TabelaResponsaveis.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
+  <metadata name="dB_EscolaDataSet7.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <metadata name="responsavel_AlunoTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>398, 17</value>
   </metadata>
@@ -506,24 +536,6 @@
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Tabela de responsavel</value>
-  </data>
-  <data name="&gt;&gt;dB_EscolaDataSet7.Name" xml:space="preserve">
-    <value>dB_EscolaDataSet7</value>
-  </data>
-  <data name="&gt;&gt;dB_EscolaDataSet7.Type" xml:space="preserve">
-    <value>CadastroFuncionario.DB_EscolaDataSet7, DB_EscolaDataSet7.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;responsavelAlunoBindingSource.Name" xml:space="preserve">
-    <value>responsavelAlunoBindingSource</value>
-  </data>
-  <data name="&gt;&gt;responsavelAlunoBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;responsavel_AlunoTableAdapter.Name" xml:space="preserve">
-    <value>responsavel_AlunoTableAdapter</value>
-  </data>
-  <data name="&gt;&gt;responsavel_AlunoTableAdapter.Type" xml:space="preserve">
-    <value>CadastroFuncionario.DB_EscolaDataSet7TableAdapters.Responsavel_AlunoTableAdapter, DB_EscolaDataSet7.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;idResponsavelDataGridViewTextBoxColumn.Name" xml:space="preserve">
     <value>idResponsavelDataGridViewTextBoxColumn</value>
@@ -602,6 +614,24 @@
   </data>
   <data name="&gt;&gt;numeroDataGridViewTextBoxColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;responsavelAlunoBindingSource.Name" xml:space="preserve">
+    <value>responsavelAlunoBindingSource</value>
+  </data>
+  <data name="&gt;&gt;responsavelAlunoBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dB_EscolaDataSet7.Name" xml:space="preserve">
+    <value>dB_EscolaDataSet7</value>
+  </data>
+  <data name="&gt;&gt;dB_EscolaDataSet7.Type" xml:space="preserve">
+    <value>CadastroFuncionario.DB_EscolaDataSet7, DB_EscolaDataSet7.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;responsavel_AlunoTableAdapter.Name" xml:space="preserve">
+    <value>responsavel_AlunoTableAdapter</value>
+  </data>
+  <data name="&gt;&gt;responsavel_AlunoTableAdapter.Type" xml:space="preserve">
+    <value>CadastroFuncionario.DB_EscolaDataSet7TableAdapters.Responsavel_AlunoTableAdapter, DB_EscolaDataSet7.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FormTabelaResponsavel</value>

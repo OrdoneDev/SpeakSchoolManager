@@ -33,7 +33,7 @@ namespace CadastroFuncionario
 
         private void cmb_NomeIdioma_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
-            ValidaCampos.GetLista(cmb_NomeIdioma, "DISTINCT TOP 5 Nome", "Nome", e, "Idiomas");
+            ValidaCampos.GetLista(cmb_NomeIdioma, "DISTINCT TOP 5 Nome", "Nome", e, "SysProtected.Idiomas");
         }
 
         private void cmb_NomeIdioma_SelectedValueChanged(object sender, EventArgs e)

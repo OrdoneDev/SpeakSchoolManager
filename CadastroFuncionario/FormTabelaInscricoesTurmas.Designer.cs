@@ -31,27 +31,29 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTabelaInscricoesTurmas));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dgv_TabelaInscricoesTurmas = new System.Windows.Forms.DataGridView();
-            this.lbl_NomeAluno = new System.Windows.Forms.Label();
-            this.cmb_NomeAluno = new System.Windows.Forms.ComboBox();
-            this.btn_FiltrarAluno = new System.Windows.Forms.Button();
-            this.lbl_NomeFuncionario = new System.Windows.Forms.Label();
-            this.cmb_NomeFuncionario = new System.Windows.Forms.ComboBox();
             this.btn_FiltrarFuncionario = new System.Windows.Forms.Button();
-            this.dB_EscolaDataSet14 = new CadastroFuncionario.DB_EscolaDataSet14();
-            this.inscricoesTurmasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.inscricoes_TurmasTableAdapter = new CadastroFuncionario.DB_EscolaDataSet14TableAdapters.Inscricoes_TurmasTableAdapter();
+            this.cmb_NomeFuncionario = new System.Windows.Forms.ComboBox();
+            this.lbl_NomeFuncionario = new System.Windows.Forms.Label();
+            this.btn_FiltrarAluno = new System.Windows.Forms.Button();
+            this.cmb_NomeAluno = new System.Windows.Forms.ComboBox();
+            this.lbl_NomeAluno = new System.Windows.Forms.Label();
+            this.dgv_TabelaInscricoesTurmas = new System.Windows.Forms.DataGridView();
             this.idInscricaoTurmaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idInscricaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idTurmaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.inscricoesTurmasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dB_EscolaDataSet14 = new CadastroFuncionario.DB_EscolaDataSet14();
+            this.inscricoes_TurmasTableAdapter = new CadastroFuncionario.DB_EscolaDataSet14TableAdapters.Inscricoes_TurmasTableAdapter();
+            this.btn_MostrarTodos = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_TabelaInscricoesTurmas)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dB_EscolaDataSet14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inscricoesTurmasBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dB_EscolaDataSet14)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btn_MostrarTodos);
             this.groupBox1.Controls.Add(this.btn_FiltrarFuncionario);
             this.groupBox1.Controls.Add(this.cmb_NomeFuncionario);
             this.groupBox1.Controls.Add(this.lbl_NomeFuncionario);
@@ -62,6 +64,46 @@
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
+            // 
+            // btn_FiltrarFuncionario
+            // 
+            resources.ApplyResources(this.btn_FiltrarFuncionario, "btn_FiltrarFuncionario");
+            this.btn_FiltrarFuncionario.Name = "btn_FiltrarFuncionario";
+            this.btn_FiltrarFuncionario.UseVisualStyleBackColor = true;
+            this.btn_FiltrarFuncionario.Click += new System.EventHandler(this.btn_FiltrarFuncionario_Click);
+            // 
+            // cmb_NomeFuncionario
+            // 
+            this.cmb_NomeFuncionario.FormattingEnabled = true;
+            resources.ApplyResources(this.cmb_NomeFuncionario, "cmb_NomeFuncionario");
+            this.cmb_NomeFuncionario.Name = "cmb_NomeFuncionario";
+            this.cmb_NomeFuncionario.SelectedValueChanged += new System.EventHandler(this.cmb_NomeFuncionario_SelectedValueChanged);
+            this.cmb_NomeFuncionario.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.cmb_NomeFuncionario_PreviewKeyDown);
+            // 
+            // lbl_NomeFuncionario
+            // 
+            resources.ApplyResources(this.lbl_NomeFuncionario, "lbl_NomeFuncionario");
+            this.lbl_NomeFuncionario.Name = "lbl_NomeFuncionario";
+            // 
+            // btn_FiltrarAluno
+            // 
+            resources.ApplyResources(this.btn_FiltrarAluno, "btn_FiltrarAluno");
+            this.btn_FiltrarAluno.Name = "btn_FiltrarAluno";
+            this.btn_FiltrarAluno.UseVisualStyleBackColor = true;
+            this.btn_FiltrarAluno.Click += new System.EventHandler(this.btn_FiltrarAluno_Click);
+            // 
+            // cmb_NomeAluno
+            // 
+            this.cmb_NomeAluno.FormattingEnabled = true;
+            resources.ApplyResources(this.cmb_NomeAluno, "cmb_NomeAluno");
+            this.cmb_NomeAluno.Name = "cmb_NomeAluno";
+            this.cmb_NomeAluno.SelectedValueChanged += new System.EventHandler(this.cmb_NomeAluno_SelectedValueChanged);
+            this.cmb_NomeAluno.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.cmb_NomeAluno_PreviewKeyDown);
+            // 
+            // lbl_NomeAluno
+            // 
+            resources.ApplyResources(this.lbl_NomeAluno, "lbl_NomeAluno");
+            this.lbl_NomeAluno.Name = "lbl_NomeAluno";
             // 
             // dgv_TabelaInscricoesTurmas
             // 
@@ -76,60 +118,6 @@
             this.dgv_TabelaInscricoesTurmas.DataSource = this.inscricoesTurmasBindingSource;
             resources.ApplyResources(this.dgv_TabelaInscricoesTurmas, "dgv_TabelaInscricoesTurmas");
             this.dgv_TabelaInscricoesTurmas.Name = "dgv_TabelaInscricoesTurmas";
-            // 
-            // lbl_NomeAluno
-            // 
-            resources.ApplyResources(this.lbl_NomeAluno, "lbl_NomeAluno");
-            this.lbl_NomeAluno.Name = "lbl_NomeAluno";
-            // 
-            // cmb_NomeAluno
-            // 
-            this.cmb_NomeAluno.FormattingEnabled = true;
-            resources.ApplyResources(this.cmb_NomeAluno, "cmb_NomeAluno");
-            this.cmb_NomeAluno.Name = "cmb_NomeAluno";
-            this.cmb_NomeAluno.SelectedValueChanged += new System.EventHandler(this.cmb_NomeAluno_SelectedValueChanged);
-            this.cmb_NomeAluno.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.cmb_NomeAluno_PreviewKeyDown);
-            // 
-            // btn_FiltrarAluno
-            // 
-            resources.ApplyResources(this.btn_FiltrarAluno, "btn_FiltrarAluno");
-            this.btn_FiltrarAluno.Name = "btn_FiltrarAluno";
-            this.btn_FiltrarAluno.UseVisualStyleBackColor = true;
-            this.btn_FiltrarAluno.Click += new System.EventHandler(this.btn_FiltrarAluno_Click);
-            // 
-            // lbl_NomeFuncionario
-            // 
-            resources.ApplyResources(this.lbl_NomeFuncionario, "lbl_NomeFuncionario");
-            this.lbl_NomeFuncionario.Name = "lbl_NomeFuncionario";
-            // 
-            // cmb_NomeFuncionario
-            // 
-            this.cmb_NomeFuncionario.FormattingEnabled = true;
-            resources.ApplyResources(this.cmb_NomeFuncionario, "cmb_NomeFuncionario");
-            this.cmb_NomeFuncionario.Name = "cmb_NomeFuncionario";
-            this.cmb_NomeFuncionario.SelectedValueChanged += new System.EventHandler(this.cmb_NomeFuncionario_SelectedValueChanged);
-            this.cmb_NomeFuncionario.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.cmb_NomeFuncionario_PreviewKeyDown);
-            // 
-            // btn_FiltrarFuncionario
-            // 
-            resources.ApplyResources(this.btn_FiltrarFuncionario, "btn_FiltrarFuncionario");
-            this.btn_FiltrarFuncionario.Name = "btn_FiltrarFuncionario";
-            this.btn_FiltrarFuncionario.UseVisualStyleBackColor = true;
-            this.btn_FiltrarFuncionario.Click += new System.EventHandler(this.btn_FiltrarFuncionario_Click);
-            // 
-            // dB_EscolaDataSet14
-            // 
-            this.dB_EscolaDataSet14.DataSetName = "DB_EscolaDataSet14";
-            this.dB_EscolaDataSet14.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // inscricoesTurmasBindingSource
-            // 
-            this.inscricoesTurmasBindingSource.DataMember = "Inscricoes_Turmas";
-            this.inscricoesTurmasBindingSource.DataSource = this.dB_EscolaDataSet14;
-            // 
-            // inscricoes_TurmasTableAdapter
-            // 
-            this.inscricoes_TurmasTableAdapter.ClearBeforeFill = true;
             // 
             // idInscricaoTurmaDataGridViewTextBoxColumn
             // 
@@ -150,6 +138,27 @@
             resources.ApplyResources(this.idTurmaDataGridViewTextBoxColumn, "idTurmaDataGridViewTextBoxColumn");
             this.idTurmaDataGridViewTextBoxColumn.Name = "idTurmaDataGridViewTextBoxColumn";
             // 
+            // inscricoesTurmasBindingSource
+            // 
+            this.inscricoesTurmasBindingSource.DataMember = "Inscricoes_Turmas";
+            this.inscricoesTurmasBindingSource.DataSource = this.dB_EscolaDataSet14;
+            // 
+            // dB_EscolaDataSet14
+            // 
+            this.dB_EscolaDataSet14.DataSetName = "DB_EscolaDataSet14";
+            this.dB_EscolaDataSet14.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // inscricoes_TurmasTableAdapter
+            // 
+            this.inscricoes_TurmasTableAdapter.ClearBeforeFill = true;
+            // 
+            // btn_MostrarTodos
+            // 
+            resources.ApplyResources(this.btn_MostrarTodos, "btn_MostrarTodos");
+            this.btn_MostrarTodos.Name = "btn_MostrarTodos";
+            this.btn_MostrarTodos.UseVisualStyleBackColor = true;
+            this.btn_MostrarTodos.Click += new System.EventHandler(this.btn_MostrarTodos_Click);
+            // 
             // FormTabelaInscricoesTurmas
             // 
             resources.ApplyResources(this, "$this");
@@ -162,8 +171,8 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_TabelaInscricoesTurmas)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dB_EscolaDataSet14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.inscricoesTurmasBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dB_EscolaDataSet14)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -184,5 +193,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn idInscricaoTurmaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn idInscricaoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn idTurmaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button btn_MostrarTodos;
     }
 }

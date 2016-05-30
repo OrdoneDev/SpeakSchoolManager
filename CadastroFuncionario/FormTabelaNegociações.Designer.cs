@@ -38,23 +38,25 @@
             this.cmb_NomeAluno = new System.Windows.Forms.ComboBox();
             this.lbl_NomeAluno = new System.Windows.Forms.Label();
             this.dgv_TabelaNegociacoes = new System.Windows.Forms.DataGridView();
-            this.escola_PrincipalDataSet = new CadastroFuncionario.Escola_PrincipalDataSet();
-            this.negociacaoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.negociacaoTableAdapter = new CadastroFuncionario.Escola_PrincipalDataSetTableAdapters.NegociacaoTableAdapter();
             this.idNegociacaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idFinanceiroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idAlunoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idPlanoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.parcelasDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.situacaoDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.negociacaoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.escola_PrincipalDataSet = new CadastroFuncionario.Escola_PrincipalDataSet();
+            this.negociacaoTableAdapter = new CadastroFuncionario.Escola_PrincipalDataSetTableAdapters.NegociacaoTableAdapter();
+            this.btn_MostrarTodos = new System.Windows.Forms.Button();
             this.group_TabelaNegociacoes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_TabelaNegociacoes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.escola_PrincipalDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.negociacaoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.escola_PrincipalDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // group_TabelaNegociacoes
             // 
+            this.group_TabelaNegociacoes.Controls.Add(this.btn_MostrarTodos);
             this.group_TabelaNegociacoes.Controls.Add(this.cmb_Plano);
             this.group_TabelaNegociacoes.Controls.Add(this.lbl_Plano);
             this.group_TabelaNegociacoes.Controls.Add(this.btn_FiltrarPlano);
@@ -123,20 +125,6 @@
             resources.ApplyResources(this.dgv_TabelaNegociacoes, "dgv_TabelaNegociacoes");
             this.dgv_TabelaNegociacoes.Name = "dgv_TabelaNegociacoes";
             // 
-            // escola_PrincipalDataSet
-            // 
-            this.escola_PrincipalDataSet.DataSetName = "Escola_PrincipalDataSet";
-            this.escola_PrincipalDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // negociacaoBindingSource
-            // 
-            this.negociacaoBindingSource.DataMember = "Negociacao";
-            this.negociacaoBindingSource.DataSource = this.escola_PrincipalDataSet;
-            // 
-            // negociacaoTableAdapter
-            // 
-            this.negociacaoTableAdapter.ClearBeforeFill = true;
-            // 
             // idNegociacaoDataGridViewTextBoxColumn
             // 
             this.idNegociacaoDataGridViewTextBoxColumn.DataPropertyName = "Id_Negociacao";
@@ -174,6 +162,27 @@
             resources.ApplyResources(this.situacaoDataGridViewCheckBoxColumn, "situacaoDataGridViewCheckBoxColumn");
             this.situacaoDataGridViewCheckBoxColumn.Name = "situacaoDataGridViewCheckBoxColumn";
             // 
+            // negociacaoBindingSource
+            // 
+            this.negociacaoBindingSource.DataMember = "Negociacao";
+            this.negociacaoBindingSource.DataSource = this.escola_PrincipalDataSet;
+            // 
+            // escola_PrincipalDataSet
+            // 
+            this.escola_PrincipalDataSet.DataSetName = "Escola_PrincipalDataSet";
+            this.escola_PrincipalDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // negociacaoTableAdapter
+            // 
+            this.negociacaoTableAdapter.ClearBeforeFill = true;
+            // 
+            // btn_MostrarTodos
+            // 
+            resources.ApplyResources(this.btn_MostrarTodos, "btn_MostrarTodos");
+            this.btn_MostrarTodos.Name = "btn_MostrarTodos";
+            this.btn_MostrarTodos.UseVisualStyleBackColor = true;
+            this.btn_MostrarTodos.Click += new System.EventHandler(this.btn_MostrarTodos_Click);
+            // 
             // FormTabelaNegociações
             // 
             resources.ApplyResources(this, "$this");
@@ -186,8 +195,8 @@
             this.group_TabelaNegociacoes.ResumeLayout(false);
             this.group_TabelaNegociacoes.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_TabelaNegociacoes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.escola_PrincipalDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.negociacaoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.escola_PrincipalDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -211,5 +220,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn idPlanoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn parcelasDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewCheckBoxColumn situacaoDataGridViewCheckBoxColumn;
+        private System.Windows.Forms.Button btn_MostrarTodos;
     }
 }

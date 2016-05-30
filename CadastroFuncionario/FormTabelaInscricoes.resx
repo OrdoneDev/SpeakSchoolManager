@@ -118,13 +118,37 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btn_MostrarTodos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>634, 17</value>
+  </data>
+  <data name="btn_MostrarTodos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 23</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btn_MostrarTodos.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="btn_MostrarTodos.Text" xml:space="preserve">
+    <value>Mostrar todos</value>
+  </data>
+  <data name="&gt;&gt;btn_MostrarTodos.Name" xml:space="preserve">
+    <value>btn_MostrarTodos</value>
+  </data>
+  <data name="&gt;&gt;btn_MostrarTodos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_MostrarTodos.Parent" xml:space="preserve">
+    <value>group_TabelaInscricoes</value>
+  </data>
+  <data name="&gt;&gt;btn_MostrarTodos.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="btn_FiltrarAluno.Location" type="System.Drawing.Point, System.Drawing">
     <value>259, 17</value>
   </data>
   <data name="btn_FiltrarAluno.Size" type="System.Drawing.Size, System.Drawing">
     <value>91, 23</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btn_FiltrarAluno.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
@@ -141,7 +165,7 @@
     <value>group_TabelaInscricoes</value>
   </data>
   <data name="&gt;&gt;btn_FiltrarAluno.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="cmb_NomeAluno.Location" type="System.Drawing.Point, System.Drawing">
     <value>48, 19</value>
@@ -165,7 +189,7 @@
     <value>group_TabelaInscricoes</value>
   </data>
   <data name="&gt;&gt;cmb_NomeAluno.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="lbl_NomeAluno.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -192,7 +216,7 @@
     <value>group_TabelaInscricoes</value>
   </data>
   <data name="&gt;&gt;lbl_NomeAluno.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="idInscricaoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>Código da inscrição</value>
@@ -234,7 +258,7 @@
     <value>group_TabelaInscricoes</value>
   </data>
   <data name="&gt;&gt;dgv_TabelaInscricoes.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="group_TabelaInscricoes.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 13</value>
@@ -275,24 +299,6 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Tabela de inscricoes</value>
   </data>
-  <data name="&gt;&gt;escola_PrincipalDataSet2.Name" xml:space="preserve">
-    <value>escola_PrincipalDataSet2</value>
-  </data>
-  <data name="&gt;&gt;escola_PrincipalDataSet2.Type" xml:space="preserve">
-    <value>CadastroFuncionario.Escola_PrincipalDataSet2, Escola_PrincipalDataSet2.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;inscricaoAlunoFiltroBindingSource.Name" xml:space="preserve">
-    <value>inscricaoAlunoFiltroBindingSource</value>
-  </data>
-  <data name="&gt;&gt;inscricaoAlunoFiltroBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;inscricaoAlunoFiltroTableAdapter.Name" xml:space="preserve">
-    <value>inscricaoAlunoFiltroTableAdapter</value>
-  </data>
-  <data name="&gt;&gt;inscricaoAlunoFiltroTableAdapter.Type" xml:space="preserve">
-    <value>CadastroFuncionario.Escola_PrincipalDataSet2TableAdapters.InscricaoAlunoFiltroTableAdapter, Escola_PrincipalDataSet2.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
   <data name="&gt;&gt;idInscricaoDataGridViewTextBoxColumn.Name" xml:space="preserve">
     <value>idInscricaoDataGridViewTextBoxColumn</value>
   </data>
@@ -322,6 +328,24 @@
   </data>
   <data name="&gt;&gt;statusDataGridViewCheckBoxColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;inscricaoAlunoFiltroBindingSource.Name" xml:space="preserve">
+    <value>inscricaoAlunoFiltroBindingSource</value>
+  </data>
+  <data name="&gt;&gt;inscricaoAlunoFiltroBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;escola_PrincipalDataSet2.Name" xml:space="preserve">
+    <value>escola_PrincipalDataSet2</value>
+  </data>
+  <data name="&gt;&gt;escola_PrincipalDataSet2.Type" xml:space="preserve">
+    <value>CadastroFuncionario.Escola_PrincipalDataSet2, Escola_PrincipalDataSet2.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;inscricaoAlunoFiltroTableAdapter.Name" xml:space="preserve">
+    <value>inscricaoAlunoFiltroTableAdapter</value>
+  </data>
+  <data name="&gt;&gt;inscricaoAlunoFiltroTableAdapter.Type" xml:space="preserve">
+    <value>CadastroFuncionario.Escola_PrincipalDataSet2TableAdapters.InscricaoAlunoFiltroTableAdapter, Escola_PrincipalDataSet2.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FormTabelaInscricoes</value>

@@ -19,7 +19,7 @@ namespace CadastroFuncionario
 
         private void cmb_Nome_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
-            ValidaCampos.GetLista(cmb_Nome, "TOP 5 Nome", "Nome", e, "Funcionarios");
+            ValidaCampos.GetLista(cmb_Nome, "TOP 5 Nome", "Nome", e, "SysProtected.Funcionarios");
         }
 
         private void cmb_Nome_SelectedValueChanged(object sender, EventArgs e)
@@ -45,6 +45,11 @@ namespace CadastroFuncionario
             cmb_Nome.BackColor = System.Drawing.Color.White;
 
             dgv_TabelaFinanceiros.DataSource = GerenciaBanco.getFiltro(cmb_Nome.Text, "Nome", "FinanceiroFuncionarioFiltro");
+        }
+
+        private void btn_MostrarTodos_Click(object sender, EventArgs e)
+        {
+            dgv_TabelaFinanceiros.DataSource = GerenciaBanco.getFiltro("0", "0", "FinanceiroFuncionarioFiltro");            
         }
     }
 }

@@ -44,7 +44,7 @@ namespace CadastroFuncionario
 
         private void cmb_Nome_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
-            ValidaCampos.GetLista(cmb_Nome, "TOP 5 Nome", "Nome", e, "Funcionarios");
+            ValidaCampos.GetLista(cmb_Nome, "TOP 5 Nome", "Nome", e, "SysProtected.Funcionarios");
         }
 
         private void cmb_Nome_SelectedValueChanged(object sender, EventArgs e)
@@ -105,6 +105,11 @@ namespace CadastroFuncionario
             msk_CPF.BackColor = System.Drawing.Color.White;
 
             dgv_Funcionarios.DataSource = GerenciaBanco.getFiltro(cmb_Cargo.Text, "Cargo", "SysProtected.Funcionarios");
+        }
+
+        private void btn_MostrarTodos_Click(object sender, EventArgs e)
+        {
+            dgv_Funcionarios.DataSource = GerenciaBanco.getFiltro("0", "0", "SysProtected.Funcionarios");
         }
     }
 }

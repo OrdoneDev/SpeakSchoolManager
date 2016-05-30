@@ -19,7 +19,7 @@ namespace CadastroFuncionario
 
         private void cmb_Idioma_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
-            ValidaCampos.GetLista(cmb_Idioma, "DISTINCT TOP 5 Nome", "Nome", e, "Idiomas");
+            ValidaCampos.GetLista(cmb_Idioma, "DISTINCT TOP 5 Nome", "Nome", e, "SysProtected.Idiomas");
         }
 
         private void cmb_Idioma_SelectedValueChanged(object sender, EventArgs e)
@@ -45,6 +45,11 @@ namespace CadastroFuncionario
             cmb_Idioma.BackColor = System.Drawing.Color.White;
 
             dgv_TabelaPlanos.DataSource = GerenciaBanco.getFiltro(cmb_Idioma.Text, "[Nome do idioma]", "IdiomasPlanosFiltro");
+        }
+
+        private void btn_MostrarTodos_Click(object sender, EventArgs e)
+        {
+            dgv_TabelaPlanos.DataSource = GerenciaBanco.getFiltro("0", "0", "IdiomasPlanosFiltro");
         }
     }
 }

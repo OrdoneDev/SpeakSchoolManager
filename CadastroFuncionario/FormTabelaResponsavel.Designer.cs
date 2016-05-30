@@ -41,9 +41,6 @@
             this.lbl_Id = new System.Windows.Forms.Label();
             this.group_TabelaResponsaveis = new System.Windows.Forms.GroupBox();
             this.dgv_Responsaveis = new System.Windows.Forms.DataGridView();
-            this.dB_EscolaDataSet7 = new CadastroFuncionario.DB_EscolaDataSet7();
-            this.responsavelAlunoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.responsavel_AlunoTableAdapter = new CadastroFuncionario.DB_EscolaDataSet7TableAdapters.Responsavel_AlunoTableAdapter();
             this.idResponsavelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idEnderecoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,10 +54,14 @@
             this.telefoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.complementoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.numeroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.responsavelAlunoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dB_EscolaDataSet7 = new CadastroFuncionario.DB_EscolaDataSet7();
+            this.responsavel_AlunoTableAdapter = new CadastroFuncionario.DB_EscolaDataSet7TableAdapters.Responsavel_AlunoTableAdapter();
+            this.btn_MostrarTodos = new System.Windows.Forms.Button();
             this.group_TabelaResponsaveis.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Responsaveis)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dB_EscolaDataSet7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.responsavelAlunoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dB_EscolaDataSet7)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_FiltrarCPF
@@ -119,6 +120,7 @@
             // 
             // group_TabelaResponsaveis
             // 
+            this.group_TabelaResponsaveis.Controls.Add(this.btn_MostrarTodos);
             this.group_TabelaResponsaveis.Controls.Add(this.btn_FiltrarCPF);
             this.group_TabelaResponsaveis.Controls.Add(this.msk_CPF);
             this.group_TabelaResponsaveis.Controls.Add(this.btn_FiltrarNome);
@@ -156,20 +158,6 @@
             this.dgv_Responsaveis.DataSource = this.responsavelAlunoBindingSource;
             resources.ApplyResources(this.dgv_Responsaveis, "dgv_Responsaveis");
             this.dgv_Responsaveis.Name = "dgv_Responsaveis";
-            // 
-            // dB_EscolaDataSet7
-            // 
-            this.dB_EscolaDataSet7.DataSetName = "DB_EscolaDataSet7";
-            this.dB_EscolaDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // responsavelAlunoBindingSource
-            // 
-            this.responsavelAlunoBindingSource.DataMember = "Responsavel_Aluno";
-            this.responsavelAlunoBindingSource.DataSource = this.dB_EscolaDataSet7;
-            // 
-            // responsavel_AlunoTableAdapter
-            // 
-            this.responsavel_AlunoTableAdapter.ClearBeforeFill = true;
             // 
             // idResponsavelDataGridViewTextBoxColumn
             // 
@@ -250,6 +238,27 @@
             resources.ApplyResources(this.numeroDataGridViewTextBoxColumn, "numeroDataGridViewTextBoxColumn");
             this.numeroDataGridViewTextBoxColumn.Name = "numeroDataGridViewTextBoxColumn";
             // 
+            // responsavelAlunoBindingSource
+            // 
+            this.responsavelAlunoBindingSource.DataMember = "Responsavel_Aluno";
+            this.responsavelAlunoBindingSource.DataSource = this.dB_EscolaDataSet7;
+            // 
+            // dB_EscolaDataSet7
+            // 
+            this.dB_EscolaDataSet7.DataSetName = "DB_EscolaDataSet7";
+            this.dB_EscolaDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // responsavel_AlunoTableAdapter
+            // 
+            this.responsavel_AlunoTableAdapter.ClearBeforeFill = true;
+            // 
+            // btn_MostrarTodos
+            // 
+            resources.ApplyResources(this.btn_MostrarTodos, "btn_MostrarTodos");
+            this.btn_MostrarTodos.Name = "btn_MostrarTodos";
+            this.btn_MostrarTodos.UseVisualStyleBackColor = true;
+            this.btn_MostrarTodos.Click += new System.EventHandler(this.btn_MostrarTodos_Click);
+            // 
             // FormTabelaResponsavel
             // 
             resources.ApplyResources(this, "$this");
@@ -262,8 +271,8 @@
             this.group_TabelaResponsaveis.ResumeLayout(false);
             this.group_TabelaResponsaveis.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Responsaveis)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dB_EscolaDataSet7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.responsavelAlunoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dB_EscolaDataSet7)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -297,5 +306,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn telefoneDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn complementoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn numeroDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button btn_MostrarTodos;
     }
 }

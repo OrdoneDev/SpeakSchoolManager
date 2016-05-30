@@ -118,13 +118,37 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btn_MostrarTodos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>626, 16</value>
+  </data>
+  <data name="btn_MostrarTodos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 23</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btn_MostrarTodos.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="btn_MostrarTodos.Text" xml:space="preserve">
+    <value>Mostrar todos</value>
+  </data>
+  <data name="&gt;&gt;btn_MostrarTodos.Name" xml:space="preserve">
+    <value>btn_MostrarTodos</value>
+  </data>
+  <data name="&gt;&gt;btn_MostrarTodos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_MostrarTodos.Parent" xml:space="preserve">
+    <value>group_TabelaEscalas</value>
+  </data>
+  <data name="&gt;&gt;btn_MostrarTodos.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="btn_FiltrarFuncionario.Location" type="System.Drawing.Point, System.Drawing">
     <value>287, 16</value>
   </data>
   <data name="btn_FiltrarFuncionario.Size" type="System.Drawing.Size, System.Drawing">
     <value>123, 23</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btn_FiltrarFuncionario.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
@@ -141,7 +165,7 @@
     <value>group_TabelaEscalas</value>
   </data>
   <data name="&gt;&gt;btn_FiltrarFuncionario.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="cmb_NomeFuncionario.Location" type="System.Drawing.Point, System.Drawing">
     <value>77, 16</value>
@@ -165,7 +189,7 @@
     <value>group_TabelaEscalas</value>
   </data>
   <data name="&gt;&gt;cmb_NomeFuncionario.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="lbl_NomeFuncionario.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -192,7 +216,7 @@
     <value>group_TabelaEscalas</value>
   </data>
   <data name="&gt;&gt;lbl_NomeFuncionario.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="idEscalaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>Código da escala</value>
@@ -237,7 +261,7 @@
     <value>group_TabelaEscalas</value>
   </data>
   <data name="&gt;&gt;dgv_TabelaEscalas.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="group_TabelaEscalas.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 13</value>
@@ -278,24 +302,6 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Tabela de escalas</value>
   </data>
-  <data name="&gt;&gt;dB_EscolaDataSet12.Name" xml:space="preserve">
-    <value>dB_EscolaDataSet12</value>
-  </data>
-  <data name="&gt;&gt;dB_EscolaDataSet12.Type" xml:space="preserve">
-    <value>CadastroFuncionario.DB_EscolaDataSet12, DB_EscolaDataSet121.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;escalasBindingSource.Name" xml:space="preserve">
-    <value>escalasBindingSource</value>
-  </data>
-  <data name="&gt;&gt;escalasBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;escalasTableAdapter.Name" xml:space="preserve">
-    <value>escalasTableAdapter</value>
-  </data>
-  <data name="&gt;&gt;escalasTableAdapter.Type" xml:space="preserve">
-    <value>CadastroFuncionario.DB_EscolaDataSet12TableAdapters.EscalasTableAdapter, DB_EscolaDataSet121.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
   <data name="&gt;&gt;idEscalaDataGridViewTextBoxColumn.Name" xml:space="preserve">
     <value>idEscalaDataGridViewTextBoxColumn</value>
   </data>
@@ -331,6 +337,24 @@
   </data>
   <data name="&gt;&gt;descricaoFuncaoDataGridViewTextBoxColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;escalasBindingSource.Name" xml:space="preserve">
+    <value>escalasBindingSource</value>
+  </data>
+  <data name="&gt;&gt;escalasBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dB_EscolaDataSet12.Name" xml:space="preserve">
+    <value>dB_EscolaDataSet12</value>
+  </data>
+  <data name="&gt;&gt;dB_EscolaDataSet12.Type" xml:space="preserve">
+    <value>CadastroFuncionario.DB_EscolaDataSet12, DB_EscolaDataSet121.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;escalasTableAdapter.Name" xml:space="preserve">
+    <value>escalasTableAdapter</value>
+  </data>
+  <data name="&gt;&gt;escalasTableAdapter.Type" xml:space="preserve">
+    <value>CadastroFuncionario.DB_EscolaDataSet12TableAdapters.EscalasTableAdapter, DB_EscolaDataSet121.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FormTabelaEscalas</value>

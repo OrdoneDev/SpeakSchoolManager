@@ -12,6 +12,7 @@ namespace CadastroFuncionario
 {
     public partial class FormCadastroAluno : Form
     {
+        OpenFileDialog openFile = new OpenFileDialog();
         private int Id_Responsavel = 0;
 
         public FormCadastroAluno()
@@ -44,7 +45,7 @@ namespace CadastroFuncionario
 
         private void cmb_EstadoAluno_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
-            ValidaCampos.GetLista(cmb_EstadoAluno, "DISTINCT TOP 5 Estado", "Estado", e, "Endereco");
+            ValidaCampos.GetLista(cmb_EstadoAluno, "DISTINCT TOP 5 Estado", "Estado", e, "SysProtected.Endereco");
         }
 
         private void cmb_EstadoAluno_SelectedValueChanged(object sender, EventArgs e)
@@ -54,7 +55,7 @@ namespace CadastroFuncionario
 
         private void cmb_CidadeAluno_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
-            ValidaCampos.GetLista(cmb_CidadeAluno, "DISTINCT TOP 5 Cidade", "Cidade", e, "Endereco");
+            ValidaCampos.GetLista(cmb_CidadeAluno, "DISTINCT TOP 5 Cidade", "Cidade", e, "SysProtected.Endereco");
         }
 
         private void cmb_CidadeAluno_SelectedValueChanged(object sender, EventArgs e)
@@ -64,7 +65,7 @@ namespace CadastroFuncionario
 
         private void cmb_BairroAluno_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
-            ValidaCampos.GetLista(cmb_BairroAluno, "DISTINCT TOP 5 Bairro", "Bairro", e, "Endereco");
+            ValidaCampos.GetLista(cmb_BairroAluno, "DISTINCT TOP 5 Bairro", "Bairro", e, "SysProtected.Endereco");
         }
 
         private void cmb_BairroAluno_SelectedValueChanged(object sender, EventArgs e)
@@ -74,7 +75,7 @@ namespace CadastroFuncionario
 
         private void cmb_RuaAluno_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
-            ValidaCampos.GetLista(cmb_RuaAluno, "DISTINCT TOP 5 Nome_Rua", "Nome_Rua", e, "Endereco");
+            ValidaCampos.GetLista(cmb_RuaAluno, "DISTINCT TOP 5 Nome_Rua", "Nome_Rua", e, "SysProtected.Endereco");
         }
 
         private void cmb_RuaAluno_SelectedValueChanged(object sender, EventArgs e)
@@ -133,9 +134,14 @@ namespace CadastroFuncionario
             }
         }
 
-        private void btn_AbrirFotoAluno_Click(object sender, EventArgs e)
+        private void txt_FotoAluno_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
-            OpenFileDialog openFile = new OpenFileDialog();
+            if (txt_FotoAluno.Text != openFile.FileName)
+                pic_Aluno.Image = null;
+        }
+
+        private void btn_AbrirFotoAluno_Click(object sender, EventArgs e)
+        {           
             openFile.Filter = "Arquivos de imagem(*.jpg)|*.jpg| Arquivos de imagem(*.jpge|*.jpge";
             openFile.InitialDirectory = @"c:\";
 

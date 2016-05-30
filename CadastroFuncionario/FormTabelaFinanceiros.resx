@@ -118,13 +118,37 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btn_MostrarTodos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>476, 15</value>
+  </data>
+  <data name="btn_MostrarTodos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 23</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btn_MostrarTodos.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="btn_MostrarTodos.Text" xml:space="preserve">
+    <value>Mostrar todos</value>
+  </data>
+  <data name="&gt;&gt;btn_MostrarTodos.Name" xml:space="preserve">
+    <value>btn_MostrarTodos</value>
+  </data>
+  <data name="&gt;&gt;btn_MostrarTodos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_MostrarTodos.Parent" xml:space="preserve">
+    <value>group_TabelaFinanceiro</value>
+  </data>
+  <data name="&gt;&gt;btn_MostrarTodos.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="btn_FiltrarNome.Location" type="System.Drawing.Point, System.Drawing">
     <value>316, 17</value>
   </data>
   <data name="btn_FiltrarNome.Size" type="System.Drawing.Size, System.Drawing">
     <value>95, 23</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btn_FiltrarNome.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
@@ -141,7 +165,7 @@
     <value>group_TabelaFinanceiro</value>
   </data>
   <data name="&gt;&gt;btn_FiltrarNome.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="cmb_Nome.Location" type="System.Drawing.Point, System.Drawing">
     <value>106, 17</value>
@@ -165,7 +189,7 @@
     <value>group_TabelaFinanceiro</value>
   </data>
   <data name="&gt;&gt;cmb_Nome.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="lbl_Nome.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -192,7 +216,7 @@
     <value>group_TabelaFinanceiro</value>
   </data>
   <data name="&gt;&gt;lbl_Nome.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="idFinanceiroDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>Código do financeiro</value>
@@ -215,6 +239,9 @@
   <metadata name="financeiroFuncionarioFiltroBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>203, 17</value>
   </metadata>
+  <metadata name="escola_PrincipalDataSet4.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <data name="dgv_TabelaFinanceiros.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 44</value>
   </data>
@@ -234,7 +261,7 @@
     <value>group_TabelaFinanceiro</value>
   </data>
   <data name="&gt;&gt;dgv_TabelaFinanceiros.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="group_TabelaFinanceiro.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 13</value>
@@ -260,9 +287,6 @@
   <data name="&gt;&gt;group_TabelaFinanceiro.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="escola_PrincipalDataSet4.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <metadata name="financeiroFuncionarioFiltroTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>479, 17</value>
   </metadata>
@@ -277,24 +301,6 @@
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Tabela de financeiros</value>
-  </data>
-  <data name="&gt;&gt;escola_PrincipalDataSet4.Name" xml:space="preserve">
-    <value>escola_PrincipalDataSet4</value>
-  </data>
-  <data name="&gt;&gt;escola_PrincipalDataSet4.Type" xml:space="preserve">
-    <value>CadastroFuncionario.Escola_PrincipalDataSet4, Escola_PrincipalDataSet4.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;financeiroFuncionarioFiltroBindingSource.Name" xml:space="preserve">
-    <value>financeiroFuncionarioFiltroBindingSource</value>
-  </data>
-  <data name="&gt;&gt;financeiroFuncionarioFiltroBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;financeiroFuncionarioFiltroTableAdapter.Name" xml:space="preserve">
-    <value>financeiroFuncionarioFiltroTableAdapter</value>
-  </data>
-  <data name="&gt;&gt;financeiroFuncionarioFiltroTableAdapter.Type" xml:space="preserve">
-    <value>CadastroFuncionario.Escola_PrincipalDataSet4TableAdapters.FinanceiroFuncionarioFiltroTableAdapter, Escola_PrincipalDataSet4.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;idFinanceiroDataGridViewTextBoxColumn.Name" xml:space="preserve">
     <value>idFinanceiroDataGridViewTextBoxColumn</value>
@@ -331,6 +337,24 @@
   </data>
   <data name="&gt;&gt;dataDataGridViewTextBoxColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;financeiroFuncionarioFiltroBindingSource.Name" xml:space="preserve">
+    <value>financeiroFuncionarioFiltroBindingSource</value>
+  </data>
+  <data name="&gt;&gt;financeiroFuncionarioFiltroBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;escola_PrincipalDataSet4.Name" xml:space="preserve">
+    <value>escola_PrincipalDataSet4</value>
+  </data>
+  <data name="&gt;&gt;escola_PrincipalDataSet4.Type" xml:space="preserve">
+    <value>CadastroFuncionario.Escola_PrincipalDataSet4, Escola_PrincipalDataSet4.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;financeiroFuncionarioFiltroTableAdapter.Name" xml:space="preserve">
+    <value>financeiroFuncionarioFiltroTableAdapter</value>
+  </data>
+  <data name="&gt;&gt;financeiroFuncionarioFiltroTableAdapter.Type" xml:space="preserve">
+    <value>CadastroFuncionario.Escola_PrincipalDataSet4TableAdapters.FinanceiroFuncionarioFiltroTableAdapter, Escola_PrincipalDataSet4.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FormTabelaFinanceiros</value>
