@@ -918,12 +918,18 @@ as
 begin
 	declare @Id_Aluno int;
 	declare @Sala tinyint;
+	declare @Descricao varchar(800);
 
 	select @Id_Aluno = I.Id_Aluno, @Sala = T.Sala from SysProtected.Turmas T INNER JOIN inserted IT 
 	on T.Id_Turma = IT.Id_Turma INNER JOIN SysProtected.Inscricao I
 	on IT.Id_Inscricao = I.Id_Inscricao;
 
-	Insert into SysProtected.Historico_Aluno values (@Id_Aluno, Getdate( ), 'O aluno foi selecionado para participar das aulas na sala '+CONVERT(varchar(3), @Sala)+'.');
+	select @Descricao = Descricao from SysProtected.Historico_Aluno where Descricao = 'O aluno foi selecionado para participar das aulas na sala '+CONVERT(varchar(3), @Sala)+'.' and Id_Aluno = @Id_Aluno
+
+	if (@Descricao is null)
+	begin
+		Insert into SysProtected.Historico_Aluno values (@Id_Aluno, Getdate( ), 'O aluno foi selecionado para participar das aulas na sala '+CONVERT(varchar(3), @Sala)+'.');
+	end
 end
 go
 
