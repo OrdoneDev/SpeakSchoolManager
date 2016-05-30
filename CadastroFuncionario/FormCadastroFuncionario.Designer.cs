@@ -350,6 +350,7 @@
             // 
             resources.ApplyResources(this.msk_SalarioFuncionario, "msk_SalarioFuncionario");
             this.msk_SalarioFuncionario.Name = "msk_SalarioFuncionario";
+            this.msk_SalarioFuncionario.Tag = "";
             // 
             // cmb_CargoFuncionario
             // 
@@ -382,11 +383,13 @@
             // 
             resources.ApplyResources(this.msk_TelefoneFuncionario, "msk_TelefoneFuncionario");
             this.msk_TelefoneFuncionario.Name = "msk_TelefoneFuncionario";
+            this.msk_TelefoneFuncionario.Tag = "";
             // 
             // msk_DddFuncionario
             // 
             resources.ApplyResources(this.msk_DddFuncionario, "msk_DddFuncionario");
             this.msk_DddFuncionario.Name = "msk_DddFuncionario";
+            this.msk_DddFuncionario.Tag = "";
             // 
             // cmb_EstadoCivilFuncionario
             // 

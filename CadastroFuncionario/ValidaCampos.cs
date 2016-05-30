@@ -81,11 +81,12 @@ namespace CadastroFuncionario
         public static bool ValidaCamposGroup(Control group)
         {
             bool x = true;
+            string[] separators = { ",", ".", "(", ")", "-", "_", " " };
             foreach (Control control in group.Controls)
             {
                 if (control is Control)
                 {
-                    if (control.Tag != "0" && control.Text.Trim().Length == 0)
+                    if (control.Tag != "0" && control.Text.Trim().Split(separators, StringSplitOptions.RemoveEmptyEntries).Length == 0)
                     {
                         control.BackColor = System.Drawing.Color.LightGray;
                         x = false;

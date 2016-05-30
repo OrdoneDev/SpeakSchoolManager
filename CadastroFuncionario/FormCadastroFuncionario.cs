@@ -126,6 +126,7 @@ namespace CadastroFuncionario
             DateTime dataNascimento;
             int Id_Endereco = 0;
 
+           
             if (!VerificaCamposCadastroFuncionario())
                 return;
 
