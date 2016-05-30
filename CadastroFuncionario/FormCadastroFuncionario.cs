@@ -12,6 +12,8 @@ namespace CadastroFuncionario
 {
     public partial class FormCadastroFuncionario : Form
     {
+        OpenFileDialog openFile = new OpenFileDialog();
+
         public FormCadastroFuncionario()
         {
             InitializeComponent();
@@ -100,9 +102,14 @@ namespace CadastroFuncionario
             }
         }
 
+        private void txt_FotoFuncionario_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
+        {
+            if (txt_FotoFuncionario.Text != openFile.FileName)
+                pic_Funcionario.Image = null;
+        }
+
         private void btn_AbrirFotoFuncionario_Click(object sender, EventArgs e)
         {
-            OpenFileDialog openFile = new OpenFileDialog();
             openFile.Filter = "Arquivos de imagem(*.jpg)|*.jpg| Arquivos de imagem(*.jpge)|*.jpge";
             openFile.InitialDirectory = @"c:\";
 

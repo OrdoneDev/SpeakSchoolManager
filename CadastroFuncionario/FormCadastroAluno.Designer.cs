@@ -229,6 +229,7 @@
             resources.ApplyResources(this.txt_FotoAluno, "txt_FotoAluno");
             this.txt_FotoAluno.Name = "txt_FotoAluno";
             this.txt_FotoAluno.Tag = "0";
+            this.txt_FotoAluno.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.txt_FotoAluno_PreviewKeyDown);
             // 
             // btn_AbrirFotoAluno
             // 

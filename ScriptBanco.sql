@@ -1057,6 +1057,25 @@ Create unique index Unica_Lista_Presenca
 	on SysProtected.Lista_Presenca (Id_Inscricao_Turma, Data);
 go
 
+Insert into SysProtected.Endereco values (
+	'São Paulo', 'Campos do Jordão', '12460-000', 'Vila Nair', 'João Andreolli'
+)
+GO
+
+Insert into SysProtected.Funcionarios values (
+	1, 'David Christian Dias Ordone', '1994-01-01', 'M', 'Solteiro', '11.111.111-1',
+	'111.111.111-11', 'Inátivo', 'david9108@hotmail.com', null, '012', '997040012', '0',
+	'Ensino Médio Completo', 'Administrador', 1, 'Casa', '416'
+)
+GO
+
+Insert into SysProtected.Alunos values
+	(null, 1, 'David Christian Dias Ordone', '1994-01-01', 'M', 'Solteiro', '11.111.111-1',
+	'111.111.111-11', 0, 'david9108@hotmail.com', null, '012', '997040012',
+	'Ensino Médio Completo', 'Casa', '416'
+)
+GO
+
 CREATE USER [ANA\Diretor] FOR LOGIN [ANA\Diretor]
 GO
 
@@ -1240,11 +1259,5 @@ GO
 GRANT EXECUTE ON [dbo].[CadastroResponsavel] TO [ANA\Secretario]
 GO
 
-GRANT INSERT ON [SysProtected].[Alunos] TO [ANA\Secretario]
-GO
-
-GRANT SELECT ON [SysProtected].[Alunos] TO [ANA\Secretario]
-GO
-
-GRANT UPDATE ON [SysProtected].[Alunos] TO [ANA\Secretario]
+ALTER SERVER ROLE [bulkadmin] ADD MEMBER [ANA\Diretor]
 GO
