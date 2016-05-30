@@ -30,8 +30,24 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTabelaFuncionarios));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.group_TabelaFuncionarios = new System.Windows.Forms.GroupBox();
+            this.btn_FIltrarCargo = new System.Windows.Forms.Button();
+            this.cmb_Cargo = new System.Windows.Forms.ComboBox();
+            this.btn_FiltrarCPF = new System.Windows.Forms.Button();
+            this.msk_CPF = new System.Windows.Forms.MaskedTextBox();
+            this.btn_FiltrarNome = new System.Windows.Forms.Button();
+            this.cmb_Nome = new System.Windows.Forms.ComboBox();
+            this.btn_FiltrarId = new System.Windows.Forms.Button();
+            this.msk_Id = new System.Windows.Forms.MaskedTextBox();
+            this.lbl_Cargo = new System.Windows.Forms.Label();
+            this.lbl_CPF = new System.Windows.Forms.Label();
+            this.lbl_Nome = new System.Windows.Forms.Label();
+            this.lbl_Id = new System.Windows.Forms.Label();
             this.dgv_Funcionarios = new System.Windows.Forms.DataGridView();
+            this.funcionariosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dB_EscolaDataSet6 = new CadastroFuncionario.DB_EscolaDataSet6();
+            this.funcionariosTableAdapter = new CadastroFuncionario.DB_EscolaDataSet6TableAdapters.FuncionariosTableAdapter();
             this.idFuncionarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idEnderecoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,21 +67,6 @@
             this.salarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.complementoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.numeroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.funcionariosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dB_EscolaDataSet6 = new CadastroFuncionario.DB_EscolaDataSet6();
-            this.funcionariosTableAdapter = new CadastroFuncionario.DB_EscolaDataSet6TableAdapters.FuncionariosTableAdapter();
-            this.lbl_Id = new System.Windows.Forms.Label();
-            this.lbl_Nome = new System.Windows.Forms.Label();
-            this.lbl_CPF = new System.Windows.Forms.Label();
-            this.lbl_Cargo = new System.Windows.Forms.Label();
-            this.msk_Id = new System.Windows.Forms.MaskedTextBox();
-            this.btn_FiltrarId = new System.Windows.Forms.Button();
-            this.cmb_Nome = new System.Windows.Forms.ComboBox();
-            this.btn_FiltrarNome = new System.Windows.Forms.Button();
-            this.msk_CPF = new System.Windows.Forms.MaskedTextBox();
-            this.btn_FiltrarCPF = new System.Windows.Forms.Button();
-            this.cmb_Cargo = new System.Windows.Forms.ComboBox();
-            this.btn_FIltrarCargo = new System.Windows.Forms.Button();
             this.group_TabelaFuncionarios.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Funcionarios)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.funcionariosBindingSource)).BeginInit();
@@ -90,6 +91,83 @@
             resources.ApplyResources(this.group_TabelaFuncionarios, "group_TabelaFuncionarios");
             this.group_TabelaFuncionarios.Name = "group_TabelaFuncionarios";
             this.group_TabelaFuncionarios.TabStop = false;
+            // 
+            // btn_FIltrarCargo
+            // 
+            resources.ApplyResources(this.btn_FIltrarCargo, "btn_FIltrarCargo");
+            this.btn_FIltrarCargo.Name = "btn_FIltrarCargo";
+            this.btn_FIltrarCargo.UseVisualStyleBackColor = true;
+            this.btn_FIltrarCargo.Click += new System.EventHandler(this.btn_FIltrarCargo_Click);
+            // 
+            // cmb_Cargo
+            // 
+            this.cmb_Cargo.FormattingEnabled = true;
+            this.cmb_Cargo.Items.AddRange(new object[] {
+            resources.GetString("cmb_Cargo.Items"),
+            resources.GetString("cmb_Cargo.Items1"),
+            resources.GetString("cmb_Cargo.Items2"),
+            resources.GetString("cmb_Cargo.Items3")});
+            resources.ApplyResources(this.cmb_Cargo, "cmb_Cargo");
+            this.cmb_Cargo.Name = "cmb_Cargo";
+            // 
+            // btn_FiltrarCPF
+            // 
+            resources.ApplyResources(this.btn_FiltrarCPF, "btn_FiltrarCPF");
+            this.btn_FiltrarCPF.Name = "btn_FiltrarCPF";
+            this.btn_FiltrarCPF.UseVisualStyleBackColor = true;
+            this.btn_FiltrarCPF.Click += new System.EventHandler(this.btn_FiltrarCPF_Click);
+            // 
+            // msk_CPF
+            // 
+            resources.ApplyResources(this.msk_CPF, "msk_CPF");
+            this.msk_CPF.Name = "msk_CPF";
+            // 
+            // btn_FiltrarNome
+            // 
+            resources.ApplyResources(this.btn_FiltrarNome, "btn_FiltrarNome");
+            this.btn_FiltrarNome.Name = "btn_FiltrarNome";
+            this.btn_FiltrarNome.UseVisualStyleBackColor = true;
+            this.btn_FiltrarNome.Click += new System.EventHandler(this.btn_FiltrarNome_Click);
+            // 
+            // cmb_Nome
+            // 
+            this.cmb_Nome.FormattingEnabled = true;
+            resources.ApplyResources(this.cmb_Nome, "cmb_Nome");
+            this.cmb_Nome.Name = "cmb_Nome";
+            this.cmb_Nome.SelectedValueChanged += new System.EventHandler(this.cmb_Nome_SelectedValueChanged);
+            this.cmb_Nome.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.cmb_Nome_PreviewKeyDown);
+            // 
+            // btn_FiltrarId
+            // 
+            resources.ApplyResources(this.btn_FiltrarId, "btn_FiltrarId");
+            this.btn_FiltrarId.Name = "btn_FiltrarId";
+            this.btn_FiltrarId.UseVisualStyleBackColor = true;
+            this.btn_FiltrarId.Click += new System.EventHandler(this.btn_FiltrarId_Click);
+            // 
+            // msk_Id
+            // 
+            resources.ApplyResources(this.msk_Id, "msk_Id");
+            this.msk_Id.Name = "msk_Id";
+            // 
+            // lbl_Cargo
+            // 
+            resources.ApplyResources(this.lbl_Cargo, "lbl_Cargo");
+            this.lbl_Cargo.Name = "lbl_Cargo";
+            // 
+            // lbl_CPF
+            // 
+            resources.ApplyResources(this.lbl_CPF, "lbl_CPF");
+            this.lbl_CPF.Name = "lbl_CPF";
+            // 
+            // lbl_Nome
+            // 
+            resources.ApplyResources(this.lbl_Nome, "lbl_Nome");
+            this.lbl_Nome.Name = "lbl_Nome";
+            // 
+            // lbl_Id
+            // 
+            resources.ApplyResources(this.lbl_Id, "lbl_Id");
+            this.lbl_Id.Name = "lbl_Id";
             // 
             // dgv_Funcionarios
             // 
@@ -122,6 +200,20 @@
             this.dgv_Funcionarios.Name = "dgv_Funcionarios";
             this.dgv_Funcionarios.CellMouseEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Funcionarios_CellMouseEnter);
             this.dgv_Funcionarios.CellMouseLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Funcionarios_CellMouseLeave);
+            // 
+            // funcionariosBindingSource
+            // 
+            this.funcionariosBindingSource.DataMember = "Funcionarios";
+            this.funcionariosBindingSource.DataSource = this.dB_EscolaDataSet6;
+            // 
+            // dB_EscolaDataSet6
+            // 
+            this.dB_EscolaDataSet6.DataSetName = "DB_EscolaDataSet6";
+            this.dB_EscolaDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // funcionariosTableAdapter
+            // 
+            this.funcionariosTableAdapter.ClearBeforeFill = true;
             // 
             // idFuncionarioDataGridViewTextBoxColumn
             // 
@@ -224,6 +316,9 @@
             // salarioDataGridViewTextBoxColumn
             // 
             this.salarioDataGridViewTextBoxColumn.DataPropertyName = "Salario";
+            dataGridViewCellStyle1.Format = "C2";
+            dataGridViewCellStyle1.NullValue = null;
+            this.salarioDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
             resources.ApplyResources(this.salarioDataGridViewTextBoxColumn, "salarioDataGridViewTextBoxColumn");
             this.salarioDataGridViewTextBoxColumn.Name = "salarioDataGridViewTextBoxColumn";
             // 
@@ -238,97 +333,6 @@
             this.numeroDataGridViewTextBoxColumn.DataPropertyName = "Numero";
             resources.ApplyResources(this.numeroDataGridViewTextBoxColumn, "numeroDataGridViewTextBoxColumn");
             this.numeroDataGridViewTextBoxColumn.Name = "numeroDataGridViewTextBoxColumn";
-            // 
-            // funcionariosBindingSource
-            // 
-            this.funcionariosBindingSource.DataMember = "Funcionarios";
-            this.funcionariosBindingSource.DataSource = this.dB_EscolaDataSet6;
-            // 
-            // dB_EscolaDataSet6
-            // 
-            this.dB_EscolaDataSet6.DataSetName = "DB_EscolaDataSet6";
-            this.dB_EscolaDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // funcionariosTableAdapter
-            // 
-            this.funcionariosTableAdapter.ClearBeforeFill = true;
-            // 
-            // lbl_Id
-            // 
-            resources.ApplyResources(this.lbl_Id, "lbl_Id");
-            this.lbl_Id.Name = "lbl_Id";
-            // 
-            // lbl_Nome
-            // 
-            resources.ApplyResources(this.lbl_Nome, "lbl_Nome");
-            this.lbl_Nome.Name = "lbl_Nome";
-            // 
-            // lbl_CPF
-            // 
-            resources.ApplyResources(this.lbl_CPF, "lbl_CPF");
-            this.lbl_CPF.Name = "lbl_CPF";
-            // 
-            // lbl_Cargo
-            // 
-            resources.ApplyResources(this.lbl_Cargo, "lbl_Cargo");
-            this.lbl_Cargo.Name = "lbl_Cargo";
-            // 
-            // msk_Id
-            // 
-            resources.ApplyResources(this.msk_Id, "msk_Id");
-            this.msk_Id.Name = "msk_Id";
-            // 
-            // btn_FiltrarId
-            // 
-            resources.ApplyResources(this.btn_FiltrarId, "btn_FiltrarId");
-            this.btn_FiltrarId.Name = "btn_FiltrarId";
-            this.btn_FiltrarId.UseVisualStyleBackColor = true;
-            this.btn_FiltrarId.Click += new System.EventHandler(this.btn_FiltrarId_Click);
-            // 
-            // cmb_Nome
-            // 
-            this.cmb_Nome.FormattingEnabled = true;
-            resources.ApplyResources(this.cmb_Nome, "cmb_Nome");
-            this.cmb_Nome.Name = "cmb_Nome";
-            this.cmb_Nome.SelectedValueChanged += new System.EventHandler(this.cmb_Nome_SelectedValueChanged);
-            this.cmb_Nome.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.cmb_Nome_PreviewKeyDown);
-            // 
-            // btn_FiltrarNome
-            // 
-            resources.ApplyResources(this.btn_FiltrarNome, "btn_FiltrarNome");
-            this.btn_FiltrarNome.Name = "btn_FiltrarNome";
-            this.btn_FiltrarNome.UseVisualStyleBackColor = true;
-            this.btn_FiltrarNome.Click += new System.EventHandler(this.btn_FiltrarNome_Click);
-            // 
-            // msk_CPF
-            // 
-            resources.ApplyResources(this.msk_CPF, "msk_CPF");
-            this.msk_CPF.Name = "msk_CPF";
-            // 
-            // btn_FiltrarCPF
-            // 
-            resources.ApplyResources(this.btn_FiltrarCPF, "btn_FiltrarCPF");
-            this.btn_FiltrarCPF.Name = "btn_FiltrarCPF";
-            this.btn_FiltrarCPF.UseVisualStyleBackColor = true;
-            this.btn_FiltrarCPF.Click += new System.EventHandler(this.btn_FiltrarCPF_Click);
-            // 
-            // cmb_Cargo
-            // 
-            this.cmb_Cargo.FormattingEnabled = true;
-            this.cmb_Cargo.Items.AddRange(new object[] {
-            resources.GetString("cmb_Cargo.Items"),
-            resources.GetString("cmb_Cargo.Items1"),
-            resources.GetString("cmb_Cargo.Items2"),
-            resources.GetString("cmb_Cargo.Items3")});
-            resources.ApplyResources(this.cmb_Cargo, "cmb_Cargo");
-            this.cmb_Cargo.Name = "cmb_Cargo";
-            // 
-            // btn_FIltrarCargo
-            // 
-            resources.ApplyResources(this.btn_FIltrarCargo, "btn_FIltrarCargo");
-            this.btn_FIltrarCargo.Name = "btn_FIltrarCargo";
-            this.btn_FIltrarCargo.UseVisualStyleBackColor = true;
-            this.btn_FIltrarCargo.Click += new System.EventHandler(this.btn_FIltrarCargo_Click);
             // 
             // FormTabelaFuncionarios
             // 
@@ -355,6 +359,18 @@
         private DB_EscolaDataSet6 dB_EscolaDataSet6;
         private System.Windows.Forms.BindingSource funcionariosBindingSource;
         private DB_EscolaDataSet6TableAdapters.FuncionariosTableAdapter funcionariosTableAdapter;
+        private System.Windows.Forms.Label lbl_Cargo;
+        private System.Windows.Forms.Label lbl_CPF;
+        private System.Windows.Forms.Label lbl_Nome;
+        private System.Windows.Forms.Label lbl_Id;
+        private System.Windows.Forms.Button btn_FiltrarNome;
+        private System.Windows.Forms.ComboBox cmb_Nome;
+        private System.Windows.Forms.Button btn_FiltrarId;
+        private System.Windows.Forms.MaskedTextBox msk_Id;
+        private System.Windows.Forms.MaskedTextBox msk_CPF;
+        private System.Windows.Forms.Button btn_FiltrarCPF;
+        private System.Windows.Forms.Button btn_FIltrarCargo;
+        private System.Windows.Forms.ComboBox cmb_Cargo;
         private System.Windows.Forms.DataGridViewTextBoxColumn idFuncionarioDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn idEnderecoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
@@ -374,17 +390,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn salarioDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn complementoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn numeroDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Label lbl_Cargo;
-        private System.Windows.Forms.Label lbl_CPF;
-        private System.Windows.Forms.Label lbl_Nome;
-        private System.Windows.Forms.Label lbl_Id;
-        private System.Windows.Forms.Button btn_FiltrarNome;
-        private System.Windows.Forms.ComboBox cmb_Nome;
-        private System.Windows.Forms.Button btn_FiltrarId;
-        private System.Windows.Forms.MaskedTextBox msk_Id;
-        private System.Windows.Forms.MaskedTextBox msk_CPF;
-        private System.Windows.Forms.Button btn_FiltrarCPF;
-        private System.Windows.Forms.Button btn_FIltrarCargo;
-        private System.Windows.Forms.ComboBox cmb_Cargo;
     }
 }

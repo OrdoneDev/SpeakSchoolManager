@@ -30,13 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTabelaPlanos));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.group_TabelaPlanos = new System.Windows.Forms.GroupBox();
             this.btn_FiltrarIdioma = new System.Windows.Forms.Button();
             this.cmb_Idioma = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dgv_TabelaPlanos = new System.Windows.Forms.DataGridView();
-            this.escola_PrincipalDataSet3 = new CadastroFuncionario.Escola_PrincipalDataSet3();
             this.idiomasPlanosFiltroBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.escola_PrincipalDataSet3 = new CadastroFuncionario.Escola_PrincipalDataSet3();
             this.idiomasPlanosFiltroTableAdapter = new CadastroFuncionario.Escola_PrincipalDataSet3TableAdapters.IdiomasPlanosFiltroTableAdapter();
             this.idPlanoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idIdiomaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,8 +46,8 @@
             this.valorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.group_TabelaPlanos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_TabelaPlanos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.escola_PrincipalDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.idiomasPlanosFiltroBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.escola_PrincipalDataSet3)).BeginInit();
             this.SuspendLayout();
             // 
             // group_TabelaPlanos
@@ -95,15 +96,15 @@
             resources.ApplyResources(this.dgv_TabelaPlanos, "dgv_TabelaPlanos");
             this.dgv_TabelaPlanos.Name = "dgv_TabelaPlanos";
             // 
-            // escola_PrincipalDataSet3
-            // 
-            this.escola_PrincipalDataSet3.DataSetName = "Escola_PrincipalDataSet3";
-            this.escola_PrincipalDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // idiomasPlanosFiltroBindingSource
             // 
             this.idiomasPlanosFiltroBindingSource.DataMember = "IdiomasPlanosFiltro";
             this.idiomasPlanosFiltroBindingSource.DataSource = this.escola_PrincipalDataSet3;
+            // 
+            // escola_PrincipalDataSet3
+            // 
+            this.escola_PrincipalDataSet3.DataSetName = "Escola_PrincipalDataSet3";
+            this.escola_PrincipalDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // idiomasPlanosFiltroTableAdapter
             // 
@@ -137,6 +138,9 @@
             // valorDataGridViewTextBoxColumn
             // 
             this.valorDataGridViewTextBoxColumn.DataPropertyName = "Valor";
+            dataGridViewCellStyle1.Format = "C2";
+            dataGridViewCellStyle1.NullValue = null;
+            this.valorDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
             resources.ApplyResources(this.valorDataGridViewTextBoxColumn, "valorDataGridViewTextBoxColumn");
             this.valorDataGridViewTextBoxColumn.Name = "valorDataGridViewTextBoxColumn";
             // 
@@ -152,8 +156,8 @@
             this.group_TabelaPlanos.ResumeLayout(false);
             this.group_TabelaPlanos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_TabelaPlanos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.escola_PrincipalDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.idiomasPlanosFiltroBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.escola_PrincipalDataSet3)).EndInit();
             this.ResumeLayout(false);
 
         }

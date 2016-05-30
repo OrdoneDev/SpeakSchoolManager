@@ -611,6 +611,24 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Tabela de funcionários</value>
   </data>
+  <data name="&gt;&gt;funcionariosBindingSource.Name" xml:space="preserve">
+    <value>funcionariosBindingSource</value>
+  </data>
+  <data name="&gt;&gt;funcionariosBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dB_EscolaDataSet6.Name" xml:space="preserve">
+    <value>dB_EscolaDataSet6</value>
+  </data>
+  <data name="&gt;&gt;dB_EscolaDataSet6.Type" xml:space="preserve">
+    <value>CadastroFuncionario.DB_EscolaDataSet6, DB_EscolaDataSet6.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;funcionariosTableAdapter.Name" xml:space="preserve">
+    <value>funcionariosTableAdapter</value>
+  </data>
+  <data name="&gt;&gt;funcionariosTableAdapter.Type" xml:space="preserve">
+    <value>CadastroFuncionario.DB_EscolaDataSet6TableAdapters.FuncionariosTableAdapter, DB_EscolaDataSet6.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
   <data name="&gt;&gt;idFuncionarioDataGridViewTextBoxColumn.Name" xml:space="preserve">
     <value>idFuncionarioDataGridViewTextBoxColumn</value>
   </data>
@@ -724,24 +742,6 @@
   </data>
   <data name="&gt;&gt;numeroDataGridViewTextBoxColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;funcionariosBindingSource.Name" xml:space="preserve">
-    <value>funcionariosBindingSource</value>
-  </data>
-  <data name="&gt;&gt;funcionariosBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dB_EscolaDataSet6.Name" xml:space="preserve">
-    <value>dB_EscolaDataSet6</value>
-  </data>
-  <data name="&gt;&gt;dB_EscolaDataSet6.Type" xml:space="preserve">
-    <value>CadastroFuncionario.DB_EscolaDataSet6, DB_EscolaDataSet6.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;funcionariosTableAdapter.Name" xml:space="preserve">
-    <value>funcionariosTableAdapter</value>
-  </data>
-  <data name="&gt;&gt;funcionariosTableAdapter.Type" xml:space="preserve">
-    <value>CadastroFuncionario.DB_EscolaDataSet6TableAdapters.FuncionariosTableAdapter, DB_EscolaDataSet6.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FormTabelaFuncionarios</value>

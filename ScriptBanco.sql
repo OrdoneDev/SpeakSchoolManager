@@ -451,7 +451,7 @@ begin
 		set @SituacaoParcela = 'paga(s)';
 	end
 	
-	Insert into SysProtected.Historico_Aluno values (@Id_Aluno, Getdate( ), 'Aluno efetuou compra do plano '+CONVERT(varchar(40), @Nome_Plano)+' no dia de hoje no total de '+CONVERT(varchar(2), @Parcelas)+' parcelas '+CONVERT(varchar(7), @SituacaoParcela)+'.');
+	Insert into SysProtected.Historico_Aluno values (@Id_Aluno, Getdate( ), 'Aluno efetuou compra do plano '+CONVERT(varchar(40), @Nome_Plano)+' no dia de hoje no total de '+CONVERT(varchar(2), @Parcelas)+' parcela(s) '+CONVERT(varchar(7), @SituacaoParcela)+'.');
 end
 go
 
@@ -821,7 +821,7 @@ begin
 
 	select @Id_Funcionario = Id_Funcionario, @Data = Data, @Hora_Entrada = Hora_Entrada, @Hora_Saida = Hora_Saida from inserted;
 
-	Insert into SysProtected.Historico_Funcionario values (@Id_Funcionario, Getdate( ), 'O funcionário foi escalado para trabalhar no dia '+CONVERT(varchar(12), @Data, 101)+' às '+CONVERT(varchar(5), @Hora_Entrada)+' até '+CONVERT(varchar(5), @Hora_Saida)+'.');
+	Insert into SysProtected.Historico_Funcionario values (@Id_Funcionario, Getdate( ), 'O funcionário foi escalado para trabalhar no dia '+CONVERT(varchar(12), @Data, 103)+' às '+CONVERT(varchar(5), @Hora_Entrada)+' até '+CONVERT(varchar(5), @Hora_Saida)+'.');
 end
 go
 
