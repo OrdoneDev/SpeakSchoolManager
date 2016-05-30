@@ -73,7 +73,7 @@ namespace CadastroFuncionario
 
         private void cmb_NomePlano_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
-            ValidaCampos.GetLista(cmb_NomePlano, "TOP 5 Nome, Id_Plano", "Nome", e, "Planos");
+            ValidaCampos.GetLista(cmb_NomePlano, "TOP 5 Nome, Id_Plano", "Nome", e, "SysProtected.Planos");
 
             msk_IdPlano.Text = GerenciaBanco.Id_Plano.ToString().PadLeft(4, '0');
         }
@@ -85,9 +85,9 @@ namespace CadastroFuncionario
 
         private void cmb_NomeFuncionario_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
-            ValidaCampos.GetLista(cmb_NomeFuncionario, "TOP 5 Nome, Id_Funcionario", "Nome", e, "Planos");
+            ValidaCampos.GetLista(cmb_NomeFuncionario, "TOP 5 Nome, Id_Escala", "Nome", e, "EscalaFuncionario");
 
-            msk_IdPlano.Text = GerenciaBanco.Id_Plano.ToString().PadLeft(4, '0');
+            msk_IdEscala.Text = GerenciaBanco.Id_Escala.ToString().PadLeft(4, '0');
         }
 
         private void cmb_NomeFuncionario_SelectedValueChanged(object sender, EventArgs e)

@@ -43,7 +43,7 @@ namespace CadastroFuncionario
 
         private void cmb_Nome_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
-            ValidaCampos.GetLista(cmb_Nome, "TOP 5 Nome", "Nome", e, "Alunos");
+            ValidaCampos.GetLista(cmb_Nome, "TOP 5 Nome", "Nome", e, "SysProtected.Alunos");
         }
 
         private void cmb_Nome_SelectedValueChanged(object sender, EventArgs e)

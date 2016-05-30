@@ -15,6 +15,7 @@ namespace CadastroFuncionario
         public static int Id_Funcionario = 0;
         public static int Id_Aluno = 0;
         public static int Id_Plano = 0;
+        public static int Id_Escala = 0;
         public static string Cargo = "";
 
         public static int CadastrarEndereco(string Estado, string Cidade, string CEP, string Bairro, string Nome_Rua, int Id_Endereco)
@@ -509,6 +510,8 @@ namespace CadastroFuncionario
 
                 for (int i = 0; i < Id_Inscricao.Length; ++i)
                 {
+                    Id_Valida = 0;
+
                     if (Id_Inscricao[i] != 0)
                     {
                         Id_Valida = getInscricaoTurma(Id_Inscricao[i], Id_Turma[i], Id_Valida);
@@ -521,9 +524,13 @@ namespace CadastroFuncionario
                             {
                                 Id_Inscricao[i] = AtualizaStatusInscricao(Id_Inscricao[i]);
                             }
+                            else
+                            {
+                                Id_Inscricao[i] = 0;
+                            }
                         }
-
-                        if (Id_Inscricao[i] != 0)
+                        Id_Turma[i] = getTurmaId(Id_Turma[i]);
+                        if (Id_Inscricao[i] != 0 && Id_Turma[i] != 0)
                         {
                             cmd.CommandText = "Insert into SysProtected.Inscricoes_Turmas (Id_Inscricao, Id_Turma) values (@Id_Inscricao, @Id_Turma)";
                             cmd.Parameters.Add(new SqlParameter("@Id_Inscricao", Id_Inscricao[i]));
@@ -1543,7 +1550,7 @@ namespace CadastroFuncionario
                 cmd.Connection = conexao;
                 cmd.CommandType = CommandType.Text;
 
-                cmd.CommandText = "SELECT " + @Tipo1 + " FROM SysProtected." + @Tabela + " WHERE "+ @Tipo2 +" LIKE @Parte_Nome";
+                cmd.CommandText = "SELECT " + @Tipo1 + " FROM " + @Tabela + " WHERE "+ @Tipo2 +" LIKE @Parte_Nome";
                 cmd.Parameters.Add(new SqlParameter("@Tipo1", Tipo1));
                 cmd.Parameters.Add(new SqlParameter("@Tipo2", Tipo2));
                 cmd.Parameters.Add(new SqlParameter("@Parte_Nome", Parte_Nome + "%"));
@@ -1553,16 +1560,18 @@ namespace CadastroFuncionario
                 while (dr.Read())
                 {
                     lista.Add(dr.GetString(0));
-                    if (Tabela == "Funcionarios" && (@Tipo1 == "TOP 5 Nome, Id_Funcionario" || @Tipo1 == "TOP 5 Nome, Id_Funcionario, Cargo"))
+                    if (Tabela == "SysProtected.Funcionarios" && (@Tipo1 == "TOP 5 Nome, Id_Funcionario" || @Tipo1 == "TOP 5 Nome, Id_Funcionario, Cargo"))
                     {
                         Id_Funcionario = (dr.GetInt32(1));
                         if (@Tipo1 == "TOP 5 Nome, Id_Funcionario, Cargo")
                             Cargo = (dr.GetString(2));
                     }
-                    if (Tabela == "Alunos" && @Tipo1 == "TOP 5 Nome, Id_Aluno")
+                    if (Tabela == "SysProtected.Alunos" && @Tipo1 == "TOP 5 Nome, Id_Aluno")
                         Id_Aluno = (dr.GetInt32(1));
-                    if (Tabela == "Planos" && @Tipo1 == "TOP 5 Nome, Id_Plano")
+                    if (Tabela == "SysProtected.Planos" && @Tipo1 == "TOP 5 Nome, Id_Plano")
                         Id_Plano = (dr.GetInt32(1));
+                    if (Tabela == "EscalaFuncionario")
+                        Id_Escala = (dr.GetInt32(1));
                 }
             }
             catch (Exception ex)
@@ -1952,6 +1961,43 @@ namespace CadastroFuncionario
             }
 
             return Id_Financeiro;
+        }
+
+        public static int getTurmaId(int Id_Turma)
+        {
+            SqlConnection conexao = new SqlConnection(strConexao);
+            SqlCommand cmd;
+            SqlDataReader dr;
+
+            try
+            {
+                conexao.Open();
+                cmd = new SqlCommand();
+                cmd.Connection = conexao;
+
+                cmd.CommandText = "Select Id_Turma from SysProtected.Turmas where Id_Turma = @Id_Turma";
+                cmd.Parameters.Add(new SqlParameter("@Id_Turma", Id_Turma));
+
+                dr = cmd.ExecuteReader();
+
+                while (dr.Read())
+                {
+                    Id_Turma = (dr.GetInt32(0));
+                }
+
+                if (!dr.Read())
+                    Id_Turma = 0;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conexao.Close();
+            }
+
+            return Id_Turma;
         }
 
         public static int getInscricaoTurma(int Id_Inscricao, int Id_Turma, int Id_Valida)

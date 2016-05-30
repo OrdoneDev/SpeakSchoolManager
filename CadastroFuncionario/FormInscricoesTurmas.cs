@@ -96,17 +96,19 @@ namespace CadastroFuncionario
 
             for (int i = 0; i < dgv_Alunos.RowCount; ++i)
             {
-                if (dgv_Alunos.Rows[i].Cells[5].Value.ToString() == "True")
+                if (dgv_Alunos.Rows[i].Cells[5].Value.ToString() == "True" && dgv_Alunos.Rows[i].Cells[6].Value.ToString().Trim().Length != 0)
                 {
                     Cadastrar = true;
                     Ids_Inscricao[i] = int.Parse(dgv_Alunos.Rows[i].Cells[0].Value.ToString());
                     Turmas[i] = int.Parse(dgv_Alunos.Rows[i].Cells[6].Value.ToString());
                 }
-                else
+                else 
                 {
                     Atualizar = true;
                     Ids_InscricaoFalse[i] = int.Parse(dgv_Alunos.Rows[i].Cells[0].Value.ToString());
-                    TurmasAlteracoes[i] = int.Parse(dgv_Alunos.Rows[i].Cells[6].Value.ToString());
+                    
+                    if (dgv_Alunos.Rows[i].Cells[6].Value.ToString().Trim().Length != 0)
+                        TurmasAlteracoes[i] = int.Parse(dgv_Alunos.Rows[i].Cells[6].Value.ToString());
                 }
             }
 

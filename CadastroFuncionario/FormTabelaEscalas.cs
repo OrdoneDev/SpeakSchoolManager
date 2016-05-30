@@ -26,7 +26,7 @@ namespace CadastroFuncionario
 
         private void cmb_NomeFuncionario_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
-            ValidaCampos.GetLista(cmb_NomeFuncionario, "TOP 5 Nome", "Nome", e, "Funcionarios");
+            ValidaCampos.GetLista(cmb_NomeFuncionario, "TOP 5 Nome", "Nome", e, "SysProtected.Funcionarios");
         }
 
         private void cmb_NomeFuncionario_SelectedValueChanged(object sender, EventArgs e)

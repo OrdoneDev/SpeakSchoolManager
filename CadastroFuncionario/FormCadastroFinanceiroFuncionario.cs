@@ -27,7 +27,7 @@ namespace CadastroFuncionario
 
         private void cmb_BancoFuncionario_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
-            ValidaCampos.GetLista(cmb_BancoFuncionario, "DISTINCT TOP 5 Banco", "Banco", e, "Financeiro");
+            ValidaCampos.GetLista(cmb_BancoFuncionario, "DISTINCT TOP 5 Banco", "Banco", e, "SysProtected.Financeiro");
         }
 
         private void cmb_BancoFuncionario_SelectedValueChanged(object sender, EventArgs e)
