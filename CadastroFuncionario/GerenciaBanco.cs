@@ -939,9 +939,9 @@ namespace CadastroFuncionario
                 dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
-                    if (@Tabela == "Funcionarios")
+                    if (@Tabela == "Escalas")
                         Tag = 1;
-                    else if (@Tabela == "Alunos")
+                    else if (@Tabela == "Endereco")
                         Tag = 2;
                 }
             }

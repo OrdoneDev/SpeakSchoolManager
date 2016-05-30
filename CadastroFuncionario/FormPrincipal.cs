@@ -18,10 +18,10 @@ namespace CadastroFuncionario
         {
             InitializeComponent();
 
-            Tag = GerenciaBanco.VerificaPermissao(Tag, "Funcionarios");
+            Tag = GerenciaBanco.VerificaPermissao(Tag, "Escalas");
 
             if (Tag == 0)
-                Tag = GerenciaBanco.VerificaPermissao(Tag, "Alunos");
+                Tag = GerenciaBanco.VerificaPermissao(Tag, "Endereco");
 
             ValidaPermissoes(menuStrip1);
 
