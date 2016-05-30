@@ -511,6 +511,7 @@ namespace CadastroFuncionario
                 for (int i = 0; i < Id_Inscricao.Length; ++i)
                 {
                     Id_Valida = 0;
+                    Continua = false;
 
                     if (Id_Inscricao[i] != 0)
                     {
@@ -1979,14 +1980,12 @@ namespace CadastroFuncionario
                 cmd.Parameters.Add(new SqlParameter("@Id_Turma", Id_Turma));
 
                 dr = cmd.ExecuteReader();
+                Id_Turma = 0;
 
                 while (dr.Read())
                 {
                     Id_Turma = (dr.GetInt32(0));
                 }
-
-                if (!dr.Read())
-                    Id_Turma = 0;
             }
             catch (Exception ex)
             {
