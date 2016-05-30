@@ -53,7 +53,8 @@
             this.enderecoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dB_EscolaDataSet3 = new CadastroFuncionario.DB_EscolaDataSet3();
             this.enderecoTableAdapter = new CadastroFuncionario.DB_EscolaDataSet3TableAdapters.EnderecoTableAdapter();
-            this.btn_MostrarTodos = new System.Windows.Forms.Button();
+            this.btn_Cancelar = new System.Windows.Forms.Button();
+            this.btn_SalvarAlteracoes = new System.Windows.Forms.Button();
             this.group_Enderecos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Enderecos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.enderecoBindingSource)).BeginInit();
@@ -62,7 +63,6 @@
             // 
             // group_Enderecos
             // 
-            this.group_Enderecos.Controls.Add(this.btn_MostrarTodos);
             this.group_Enderecos.Controls.Add(this.btn_FiltrarBairro);
             this.group_Enderecos.Controls.Add(this.cmb_Bairro);
             this.group_Enderecos.Controls.Add(this.lbl_Bairro);
@@ -172,6 +172,7 @@
             this.nomeRuaDataGridViewTextBoxColumn});
             this.dgv_Enderecos.DataSource = this.enderecoBindingSource;
             resources.ApplyResources(this.dgv_Enderecos, "dgv_Enderecos");
+            this.dgv_Enderecos.MultiSelect = false;
             this.dgv_Enderecos.Name = "dgv_Enderecos";
             // 
             // idEnderecoDataGridViewTextBoxColumn
@@ -225,17 +226,26 @@
             // 
             this.enderecoTableAdapter.ClearBeforeFill = true;
             // 
-            // btn_MostrarTodos
+            // btn_Cancelar
             // 
-            resources.ApplyResources(this.btn_MostrarTodos, "btn_MostrarTodos");
-            this.btn_MostrarTodos.Name = "btn_MostrarTodos";
-            this.btn_MostrarTodos.UseVisualStyleBackColor = true;
-            this.btn_MostrarTodos.Click += new System.EventHandler(this.btn_MostrarTodos_Click);
+            resources.ApplyResources(this.btn_Cancelar, "btn_Cancelar");
+            this.btn_Cancelar.Name = "btn_Cancelar";
+            this.btn_Cancelar.UseVisualStyleBackColor = true;
+            this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
+            // 
+            // btn_SalvarAlteracoes
+            // 
+            resources.ApplyResources(this.btn_SalvarAlteracoes, "btn_SalvarAlteracoes");
+            this.btn_SalvarAlteracoes.Name = "btn_SalvarAlteracoes";
+            this.btn_SalvarAlteracoes.UseVisualStyleBackColor = true;
+            this.btn_SalvarAlteracoes.Click += new System.EventHandler(this.btn_SalvarAlteracoes_Click);
             // 
             // FormTabelaEndereco
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btn_SalvarAlteracoes);
+            this.Controls.Add(this.btn_Cancelar);
             this.Controls.Add(this.group_Enderecos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MinimizeBox = false;
@@ -275,6 +285,7 @@
         private System.Windows.Forms.Button btn_FiltrarBairro;
         private System.Windows.Forms.ComboBox cmb_Bairro;
         private System.Windows.Forms.Label lbl_Bairro;
-        private System.Windows.Forms.Button btn_MostrarTodos;
+        private System.Windows.Forms.Button btn_Cancelar;
+        private System.Windows.Forms.Button btn_SalvarAlteracoes;
     }
 }

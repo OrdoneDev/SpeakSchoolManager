@@ -2167,5 +2167,44 @@ namespace CadastroFuncionario
             }
             return dt;
         }
+
+        public static int getFiltro(string Filtro, string Campo, string Tabela, string Item)
+        {
+            SqlConnection conexao = new SqlConnection(strConexao);
+            SqlCommand cmd;
+            SqlDataReader dr;
+            int Id_Endereco = 0;
+
+            try
+            {
+                conexao.Open();
+                cmd = new SqlCommand();
+                cmd.Connection = conexao;
+
+                cmd.CommandText = "SELECT "+ @Item +" FROM " + @Tabela + " where " + @Campo + " = @Filtro";
+
+                cmd.Parameters.Add(new SqlParameter("@Item", Item));
+                cmd.Parameters.Add(new SqlParameter("@Campo", Campo));
+                cmd.Parameters.Add(new SqlParameter("@Filtro", Filtro));
+                cmd.Parameters.Add(new SqlParameter("@Tabela", Tabela));
+
+                dr = cmd.ExecuteReader();
+
+                while (dr.Read())
+                {
+                    if (Id_Endereco == 0)
+                        Id_Endereco = (dr.GetInt32(0));
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conexao.Close();
+            }
+            return Id_Endereco;
+        }
     }
 }

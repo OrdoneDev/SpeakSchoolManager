@@ -286,7 +286,7 @@ GO
 
 
 Create table SysProtected.Historico_Aluno (
-	Id_Historico		Int				not null	Primary key		identity,
+	Id_Historico		Int							Primary key		identity,
 	Id_Aluno			Int				not null	Foreign key references SysProtected.Alunos (Id_Aluno),
 	Data				DateTime		not null,
 	Descricao			Varchar(800)	not null
