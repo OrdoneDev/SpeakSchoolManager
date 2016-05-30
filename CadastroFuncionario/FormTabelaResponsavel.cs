@@ -75,5 +75,10 @@ namespace CadastroFuncionario
 
             dgv_Responsaveis.DataSource = GerenciaBanco.getFiltro(msk_CPF.Text, "CPF", "SysProtected.Responsavel_Aluno");
         }
+
+        private void btn_MostrarTodos_Click(object sender, EventArgs e)
+        {
+            dgv_Responsaveis.DataSource = GerenciaBanco.getFiltro("0", "0", "SysProtected.Responsavel_Aluno");
+        }
     }
 }

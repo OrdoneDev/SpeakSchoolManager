@@ -108,5 +108,10 @@ namespace CadastroFuncionario
 
             dgv_Enderecos.DataSource = GerenciaBanco.getFiltro(cmb_Bairro.Text, "Bairro", "SysProtected.Endereco");
         }
+
+        private void btn_MostrarTodos_Click(object sender, EventArgs e)
+        {
+            dgv_Enderecos.DataSource = GerenciaBanco.getFiltro("0", "0", "SysProtected.Endereco");
+        }
     }
 }

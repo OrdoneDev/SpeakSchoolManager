@@ -35,23 +35,25 @@
             this.cmb_Nome = new System.Windows.Forms.ComboBox();
             this.lbl_Nome = new System.Windows.Forms.Label();
             this.dgv_TabelaFinanceiros = new System.Windows.Forms.DataGridView();
-            this.escola_PrincipalDataSet4 = new CadastroFuncionario.Escola_PrincipalDataSet4();
-            this.financeiroFuncionarioFiltroBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.financeiroFuncionarioFiltroTableAdapter = new CadastroFuncionario.Escola_PrincipalDataSet4TableAdapters.FinanceiroFuncionarioFiltroTableAdapter();
             this.idFinanceiroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idFuncionarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bancoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.agenciaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.financeiroFuncionarioFiltroBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.escola_PrincipalDataSet4 = new CadastroFuncionario.Escola_PrincipalDataSet4();
+            this.financeiroFuncionarioFiltroTableAdapter = new CadastroFuncionario.Escola_PrincipalDataSet4TableAdapters.FinanceiroFuncionarioFiltroTableAdapter();
+            this.btn_MostrarTodos = new System.Windows.Forms.Button();
             this.group_TabelaFinanceiro.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_TabelaFinanceiros)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.escola_PrincipalDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.financeiroFuncionarioFiltroBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.escola_PrincipalDataSet4)).BeginInit();
             this.SuspendLayout();
             // 
             // group_TabelaFinanceiro
             // 
+            this.group_TabelaFinanceiro.Controls.Add(this.btn_MostrarTodos);
             this.group_TabelaFinanceiro.Controls.Add(this.btn_FiltrarNome);
             this.group_TabelaFinanceiro.Controls.Add(this.cmb_Nome);
             this.group_TabelaFinanceiro.Controls.Add(this.lbl_Nome);
@@ -96,20 +98,6 @@
             resources.ApplyResources(this.dgv_TabelaFinanceiros, "dgv_TabelaFinanceiros");
             this.dgv_TabelaFinanceiros.Name = "dgv_TabelaFinanceiros";
             // 
-            // escola_PrincipalDataSet4
-            // 
-            this.escola_PrincipalDataSet4.DataSetName = "Escola_PrincipalDataSet4";
-            this.escola_PrincipalDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // financeiroFuncionarioFiltroBindingSource
-            // 
-            this.financeiroFuncionarioFiltroBindingSource.DataMember = "FinanceiroFuncionarioFiltro";
-            this.financeiroFuncionarioFiltroBindingSource.DataSource = this.escola_PrincipalDataSet4;
-            // 
-            // financeiroFuncionarioFiltroTableAdapter
-            // 
-            this.financeiroFuncionarioFiltroTableAdapter.ClearBeforeFill = true;
-            // 
             // idFinanceiroDataGridViewTextBoxColumn
             // 
             this.idFinanceiroDataGridViewTextBoxColumn.DataPropertyName = "Id_Financeiro";
@@ -147,6 +135,27 @@
             resources.ApplyResources(this.dataDataGridViewTextBoxColumn, "dataDataGridViewTextBoxColumn");
             this.dataDataGridViewTextBoxColumn.Name = "dataDataGridViewTextBoxColumn";
             // 
+            // financeiroFuncionarioFiltroBindingSource
+            // 
+            this.financeiroFuncionarioFiltroBindingSource.DataMember = "FinanceiroFuncionarioFiltro";
+            this.financeiroFuncionarioFiltroBindingSource.DataSource = this.escola_PrincipalDataSet4;
+            // 
+            // escola_PrincipalDataSet4
+            // 
+            this.escola_PrincipalDataSet4.DataSetName = "Escola_PrincipalDataSet4";
+            this.escola_PrincipalDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // financeiroFuncionarioFiltroTableAdapter
+            // 
+            this.financeiroFuncionarioFiltroTableAdapter.ClearBeforeFill = true;
+            // 
+            // btn_MostrarTodos
+            // 
+            resources.ApplyResources(this.btn_MostrarTodos, "btn_MostrarTodos");
+            this.btn_MostrarTodos.Name = "btn_MostrarTodos";
+            this.btn_MostrarTodos.UseVisualStyleBackColor = true;
+            this.btn_MostrarTodos.Click += new System.EventHandler(this.btn_MostrarTodos_Click);
+            // 
             // FormTabelaFinanceiros
             // 
             resources.ApplyResources(this, "$this");
@@ -159,8 +168,8 @@
             this.group_TabelaFinanceiro.ResumeLayout(false);
             this.group_TabelaFinanceiro.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_TabelaFinanceiros)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.escola_PrincipalDataSet4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.financeiroFuncionarioFiltroBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.escola_PrincipalDataSet4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -181,5 +190,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn agenciaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn contaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button btn_MostrarTodos;
     }
 }

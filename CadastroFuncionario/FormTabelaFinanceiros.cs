@@ -46,5 +46,10 @@ namespace CadastroFuncionario
 
             dgv_TabelaFinanceiros.DataSource = GerenciaBanco.getFiltro(cmb_Nome.Text, "Nome", "FinanceiroFuncionarioFiltro");
         }
+
+        private void btn_MostrarTodos_Click(object sender, EventArgs e)
+        {
+            dgv_TabelaFinanceiros.DataSource = GerenciaBanco.getFiltro("0", "0", "FinanceiroFuncionarioFiltro");            
+        }
     }
 }

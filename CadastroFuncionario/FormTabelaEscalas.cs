@@ -47,5 +47,10 @@ namespace CadastroFuncionario
 
             dgv_TabelaEscalas.DataSource = GerenciaBanco.getFiltro(cmb_NomeFuncionario.Text, "Nome", "EscalasFuncionarioFiltro");
         }
+
+        private void btn_MostrarTodos_Click(object sender, EventArgs e)
+        {
+            dgv_TabelaEscalas.DataSource = GerenciaBanco.getFiltro("0", "0", "EscalasFuncionarioFiltro");
+        }
     }
 }

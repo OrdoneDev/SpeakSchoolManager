@@ -117,18 +117,42 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btn_MostrarTodos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>556, 13</value>
+  </data>
+  <data name="btn_MostrarTodos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 23</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btn_MostrarTodos.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="btn_MostrarTodos.Text" xml:space="preserve">
+    <value>Mostrar todos</value>
+  </data>
+  <data name="&gt;&gt;btn_MostrarTodos.Name" xml:space="preserve">
+    <value>btn_MostrarTodos</value>
+  </data>
+  <data name="&gt;&gt;btn_MostrarTodos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_MostrarTodos.Parent" xml:space="preserve">
+    <value>group_TabelaPlanos</value>
+  </data>
+  <data name="&gt;&gt;btn_MostrarTodos.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btn_FiltrarIdioma.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btn_FiltrarIdioma.Location" type="System.Drawing.Point, System.Drawing">
     <value>206, 13</value>
   </data>
   <data name="btn_FiltrarIdioma.Size" type="System.Drawing.Size, System.Drawing">
     <value>108, 23</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btn_FiltrarIdioma.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
@@ -145,7 +169,7 @@
     <value>group_TabelaPlanos</value>
   </data>
   <data name="&gt;&gt;btn_FiltrarIdioma.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="cmb_Idioma.Location" type="System.Drawing.Point, System.Drawing">
     <value>47, 13</value>
@@ -169,7 +193,7 @@
     <value>group_TabelaPlanos</value>
   </data>
   <data name="&gt;&gt;cmb_Idioma.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -199,7 +223,7 @@
     <value>group_TabelaPlanos</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="idPlanoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>Código do plano</value>
@@ -241,7 +265,7 @@
     <value>group_TabelaPlanos</value>
   </data>
   <data name="&gt;&gt;dgv_TabelaPlanos.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="group_TabelaPlanos.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 12</value>
@@ -282,24 +306,6 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Tabela de planos</value>
   </data>
-  <data name="&gt;&gt;idiomasPlanosFiltroBindingSource.Name" xml:space="preserve">
-    <value>idiomasPlanosFiltroBindingSource</value>
-  </data>
-  <data name="&gt;&gt;idiomasPlanosFiltroBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;escola_PrincipalDataSet3.Name" xml:space="preserve">
-    <value>escola_PrincipalDataSet3</value>
-  </data>
-  <data name="&gt;&gt;escola_PrincipalDataSet3.Type" xml:space="preserve">
-    <value>CadastroFuncionario.Escola_PrincipalDataSet3, Escola_PrincipalDataSet3.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;idiomasPlanosFiltroTableAdapter.Name" xml:space="preserve">
-    <value>idiomasPlanosFiltroTableAdapter</value>
-  </data>
-  <data name="&gt;&gt;idiomasPlanosFiltroTableAdapter.Type" xml:space="preserve">
-    <value>CadastroFuncionario.Escola_PrincipalDataSet3TableAdapters.IdiomasPlanosFiltroTableAdapter, Escola_PrincipalDataSet3.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
   <data name="&gt;&gt;idPlanoDataGridViewTextBoxColumn.Name" xml:space="preserve">
     <value>idPlanoDataGridViewTextBoxColumn</value>
   </data>
@@ -329,6 +335,24 @@
   </data>
   <data name="&gt;&gt;valorDataGridViewTextBoxColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;idiomasPlanosFiltroBindingSource.Name" xml:space="preserve">
+    <value>idiomasPlanosFiltroBindingSource</value>
+  </data>
+  <data name="&gt;&gt;idiomasPlanosFiltroBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;escola_PrincipalDataSet3.Name" xml:space="preserve">
+    <value>escola_PrincipalDataSet3</value>
+  </data>
+  <data name="&gt;&gt;escola_PrincipalDataSet3.Type" xml:space="preserve">
+    <value>CadastroFuncionario.Escola_PrincipalDataSet3, Escola_PrincipalDataSet3.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;idiomasPlanosFiltroTableAdapter.Name" xml:space="preserve">
+    <value>idiomasPlanosFiltroTableAdapter</value>
+  </data>
+  <data name="&gt;&gt;idiomasPlanosFiltroTableAdapter.Type" xml:space="preserve">
+    <value>CadastroFuncionario.Escola_PrincipalDataSet3TableAdapters.IdiomasPlanosFiltroTableAdapter, Escola_PrincipalDataSet3.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FormTabelaPlanos</value>

@@ -106,5 +106,10 @@ namespace CadastroFuncionario
 
             dgv_Funcionarios.DataSource = GerenciaBanco.getFiltro(cmb_Cargo.Text, "Cargo", "SysProtected.Funcionarios");
         }
+
+        private void btn_MostrarTodos_Click(object sender, EventArgs e)
+        {
+            dgv_Funcionarios.DataSource = GerenciaBanco.getFiltro("0", "0", "SysProtected.Funcionarios");
+        }
     }
 }

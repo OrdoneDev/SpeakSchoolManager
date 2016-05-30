@@ -78,5 +78,10 @@ namespace CadastroFuncionario
 
             dgv_Alunos.DataSource = GerenciaBanco.getFiltro(cmb_Nome.Text, "Nome", "SysProtected.Alunos");
         }
+
+        private void btn_MostrarTodos_Click(object sender, EventArgs e)
+        {
+            dgv_Alunos.DataSource = GerenciaBanco.getFiltro("0", "0", "SysProtected.Alunos");
+        }
     }
 }
