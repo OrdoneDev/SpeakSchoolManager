@@ -19,8 +19,7 @@ namespace CadastroFuncionario
 
         private void FormTabelaMensalidades_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'escola_PrincipalDataSet1.Mensalidades' table. You can move, or remove it, as needed.
-            this.mensalidadesTableAdapter.Fill(this.escola_PrincipalDataSet1.Mensalidades);
+            dgv_TabelaMensalidades.DataSource = GerenciaBanco.carregaDados("Mensalidades").Tables[0];
         }
 
         private void cmb_NomeAluno_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
@@ -69,6 +68,21 @@ namespace CadastroFuncionario
             cmb_NomeFuncionario.BackColor = System.Drawing.Color.White;
 
             dgv_TabelaMensalidades.DataSource = GerenciaBanco.getFiltro(cmb_NomeFuncionario.Text, "Nome", "MensalidadesFuncionariosFiltro");
+        }
+
+        private void btn_SalvarAlteracoes_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Deseja salvar as alterações?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                GerenciaBanco.updateDados("Mensalidades");
+            }
+
+            dgv_TabelaMensalidades.DataSource = GerenciaBanco.carregaDados("Mensalidades").Tables[0];
+        }
+
+        private void btn_Cancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

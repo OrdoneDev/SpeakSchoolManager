@@ -194,27 +194,6 @@
   <data name="&gt;&gt;lbl_NomeAluno.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="idInscricaoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Código da inscrição</value>
-  </data>
-  <data name="idAlunoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Código do aluno</value>
-  </data>
-  <data name="idNegociacaoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Código da negociação</value>
-  </data>
-  <data name="dataDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Data</value>
-  </data>
-  <data name="statusDataGridViewCheckBoxColumn.HeaderText" xml:space="preserve">
-    <value>Status</value>
-  </data>
-  <metadata name="inscricaoAlunoFiltroBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>203, 17</value>
-  </metadata>
-  <metadata name="escola_PrincipalDataSet2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <data name="dgv_TabelaInscricoes.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 46</value>
   </data>
@@ -258,11 +237,60 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;group_TabelaInscricoes.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btn_Cancelar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>689, 321</value>
+  </data>
+  <data name="btn_Cancelar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btn_Cancelar.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btn_Cancelar.Text" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.Name" xml:space="preserve">
+    <value>btn_Cancelar</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btn_SalvarAlteracoes.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_SalvarAlteracoes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>562, 321</value>
+  </data>
+  <data name="btn_SalvarAlteracoes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 23</value>
+  </data>
+  <data name="btn_SalvarAlteracoes.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btn_SalvarAlteracoes.Text" xml:space="preserve">
+    <value>Salvar alterações</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarAlteracoes.Name" xml:space="preserve">
+    <value>btn_SalvarAlteracoes</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarAlteracoes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarAlteracoes.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarAlteracoes.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="inscricaoAlunoFiltroTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>441, 17</value>
-  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -270,58 +298,10 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>776, 327</value>
+    <value>776, 350</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Tabela de inscricoes</value>
-  </data>
-  <data name="&gt;&gt;idInscricaoDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>idInscricaoDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;idInscricaoDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;idAlunoDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>idAlunoDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;idAlunoDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;idNegociacaoDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>idNegociacaoDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;idNegociacaoDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dataDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>dataDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;dataDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;statusDataGridViewCheckBoxColumn.Name" xml:space="preserve">
-    <value>statusDataGridViewCheckBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;statusDataGridViewCheckBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;inscricaoAlunoFiltroBindingSource.Name" xml:space="preserve">
-    <value>inscricaoAlunoFiltroBindingSource</value>
-  </data>
-  <data name="&gt;&gt;inscricaoAlunoFiltroBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;escola_PrincipalDataSet2.Name" xml:space="preserve">
-    <value>escola_PrincipalDataSet2</value>
-  </data>
-  <data name="&gt;&gt;escola_PrincipalDataSet2.Type" xml:space="preserve">
-    <value>CadastroFuncionario.Escola_PrincipalDataSet2, Escola_PrincipalDataSet2.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;inscricaoAlunoFiltroTableAdapter.Name" xml:space="preserve">
-    <value>inscricaoAlunoFiltroTableAdapter</value>
-  </data>
-  <data name="&gt;&gt;inscricaoAlunoFiltroTableAdapter.Type" xml:space="preserve">
-    <value>CadastroFuncionario.Escola_PrincipalDataSet2TableAdapters.InscricaoAlunoFiltroTableAdapter, Escola_PrincipalDataSet2.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FormTabelaInscricoes</value>

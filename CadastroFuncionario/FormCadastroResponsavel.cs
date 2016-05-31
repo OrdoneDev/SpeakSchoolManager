@@ -97,44 +97,47 @@ namespace CadastroFuncionario
             if (!VerificaCamposCadastroReponsavel())
                 return;
 
-            if (!ValidaCampos.ValidaCPF(msk_CpfResponsavel.Text))
+            if (MessageBox.Show("Deseja efetuar o cadastro?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                MessageBox.Show("CPF Invalido!");
-                return;
-            }
+                if (!ValidaCampos.ValidaCPF(msk_CpfResponsavel.Text))
+                {
+                    MessageBox.Show("CPF Invalido!");
+                    return;
+                }
 
-            if (!ValidaCampos.ValidaCep(msk_CepResponsavel.Text))
-            {
-                MessageBox.Show("CEP Invalido!");
-                return;
-            }
+                if (!ValidaCampos.ValidaCep(msk_CepResponsavel.Text))
+                {
+                    MessageBox.Show("CEP Invalido!");
+                    return;
+                }
 
-            if (!GerenciaBanco.VerificaResponsavel(msk_RgResponsavel.Text, msk_CpfResponsavel.Text))
-            {
-                MessageBox.Show("Houve uma duplicação no campo de RG ou CPF do responsável!");
-                return;
-            }
+                if (!GerenciaBanco.VerificaResponsavel(msk_RgResponsavel.Text, msk_CpfResponsavel.Text))
+                {
+                    MessageBox.Show("Houve uma duplicação no campo de RG ou CPF do responsável!");
+                    return;
+                }
 
-            Id_Endereco = GerenciaBanco.getId_Endereco(msk_CepResponsavel.Text, cmb_BairroResponsavel.Text, cmb_RuaResponsavel.Text, Id_Endereco);
+                Id_Endereco = GerenciaBanco.getId_Endereco(msk_CepResponsavel.Text, cmb_BairroResponsavel.Text, cmb_RuaResponsavel.Text, Id_Endereco);
 
-            if (Id_Endereco == 0)
-            {
-                Id_Endereco = GerenciaBanco.CadastrarEndereco(cmb_EstadoResponsavel.Text, cmb_CidadeResponsavel.Text,
-                msk_CepResponsavel.Text, cmb_BairroResponsavel.Text, cmb_RuaResponsavel.Text, Id_Endereco);
-            }
+                if (Id_Endereco == 0)
+                {
+                    Id_Endereco = GerenciaBanco.CadastrarEndereco(cmb_EstadoResponsavel.Text, cmb_CidadeResponsavel.Text,
+                    msk_CepResponsavel.Text, cmb_BairroResponsavel.Text, cmb_RuaResponsavel.Text, Id_Endereco);
+                }
 
-            dataNascimento = dte_DataNascimentoResponsavel.Value.Date;
+                dataNascimento = dte_DataNascimentoResponsavel.Value.Date;
 
-            if (GerenciaBanco.CadastrarResponsavel(Id_Endereco, txt_NomeResponsavel.Text, dataNascimento,
-                char.Parse(cmb_SexoResponsavel.Text), cmb_EstadoCivilResponsavel.Text, msk_RgResponsavel.Text,
-                msk_CpfResponsavel.Text, txt_EmailResponsavel.Text, msk_DddResponsavel.Text,
-                msk_TelefoneResponsavel.Text, txt_ComplementoResponsavel.Text, msk_NumeroResponsavel.Text))
-            {
-                MessageBox.Show("Usuario cadastrado com sucesso!");
-            }
-            else
-            {
-                MessageBox.Show("Foi encontrado algum erro no ato de cadastrar responsável!");
+                if (GerenciaBanco.CadastrarResponsavel(Id_Endereco, txt_NomeResponsavel.Text, dataNascimento,
+                    char.Parse(cmb_SexoResponsavel.Text), cmb_EstadoCivilResponsavel.Text, msk_RgResponsavel.Text,
+                    msk_CpfResponsavel.Text, txt_EmailResponsavel.Text, msk_DddResponsavel.Text,
+                    msk_TelefoneResponsavel.Text, txt_ComplementoResponsavel.Text, msk_NumeroResponsavel.Text))
+                {
+                    MessageBox.Show("Usuario cadastrado com sucesso!");
+                }
+                else
+                {
+                    MessageBox.Show("Foi encontrado algum erro no ato de cadastrar responsável!");
+                }
             }
         }
 

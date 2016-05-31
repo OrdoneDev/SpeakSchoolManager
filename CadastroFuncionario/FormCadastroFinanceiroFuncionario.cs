@@ -42,20 +42,23 @@ namespace CadastroFuncionario
             if (!VerificaCamposCadastroFinanceiroFuncionario())
                 return;
 
-            if (GerenciaBanco.VerificaFinanceiro(cmb_BancoFuncionario.Text, int.Parse(txt_AgenciaFuncionario.Text),
-                int.Parse(txt_ContaFuncionario.Text)))
+            if (MessageBox.Show("Deseja concluir o cadastro?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                ValidaCampos.banco = cmb_BancoFuncionario.Text;
-                ValidaCampos.agencia = int.Parse(txt_AgenciaFuncionario.Text);
-                ValidaCampos.conta = int.Parse(txt_ContaFuncionario.Text);
-                ValidaCampos.dataDeposito = dte_DataDepositoFuncionario.Value.Date;
-                ValidaCampos.Continua = true;
-                this.Close();
-            }
-            else
-            {
-                MessageBox.Show("Estes dados financeiro já estão cadastrados em outro funcionário!");
-                return;
+                if (GerenciaBanco.VerificaFinanceiro(cmb_BancoFuncionario.Text, int.Parse(txt_AgenciaFuncionario.Text),
+                    int.Parse(txt_ContaFuncionario.Text)))
+                {
+                    ValidaCampos.banco = cmb_BancoFuncionario.Text;
+                    ValidaCampos.agencia = int.Parse(txt_AgenciaFuncionario.Text);
+                    ValidaCampos.conta = int.Parse(txt_ContaFuncionario.Text);
+                    ValidaCampos.dataDeposito = dte_DataDepositoFuncionario.Value.Date;
+                    ValidaCampos.Continua = true;
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Estes dados financeiro já estão cadastrados em outro funcionário!");
+                    return;
+                }
             }
         }
 

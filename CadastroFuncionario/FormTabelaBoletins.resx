@@ -194,30 +194,6 @@
   <data name="&gt;&gt;lbl_NomeAluno.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="idBoletimDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Código do boletim</value>
-  </data>
-  <data name="idInscricaoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Código da inscrição</value>
-  </data>
-  <data name="nota1DataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Prova 1</value>
-  </data>
-  <data name="nota2DataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Prova 2</value>
-  </data>
-  <data name="mediaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Media</value>
-  </data>
-  <data name="numeroFaltasDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Nº total de faltas</value>
-  </data>
-  <metadata name="boletinsAlunoFiltroBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>203, 17</value>
-  </metadata>
-  <metadata name="escola_PrincipalDataSet5.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <data name="dgv_TabelaBoletins.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 42</value>
   </data>
@@ -261,11 +237,56 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;group_TabelaBoletins.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btn_Cancelar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>542, 329</value>
+  </data>
+  <data name="btn_Cancelar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btn_Cancelar.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btn_Cancelar.Text" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.Name" xml:space="preserve">
+    <value>btn_Cancelar</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btn_SalvarAlteracoes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>431, 329</value>
+  </data>
+  <data name="btn_SalvarAlteracoes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 23</value>
+  </data>
+  <data name="btn_SalvarAlteracoes.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btn_SalvarAlteracoes.Text" xml:space="preserve">
+    <value>Salvar alterações</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarAlteracoes.Name" xml:space="preserve">
+    <value>btn_SalvarAlteracoes</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarAlteracoes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarAlteracoes.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarAlteracoes.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="boletinsAlunoFiltroTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>437, 17</value>
-  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -273,64 +294,10 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>629, 335</value>
+    <value>629, 357</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Tabela de boletins</value>
-  </data>
-  <data name="&gt;&gt;idBoletimDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>idBoletimDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;idBoletimDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;idInscricaoDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>idInscricaoDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;idInscricaoDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;nota1DataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>nota1DataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;nota1DataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;nota2DataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>nota2DataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;nota2DataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;mediaDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>mediaDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;mediaDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numeroFaltasDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>numeroFaltasDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;numeroFaltasDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;boletinsAlunoFiltroBindingSource.Name" xml:space="preserve">
-    <value>boletinsAlunoFiltroBindingSource</value>
-  </data>
-  <data name="&gt;&gt;boletinsAlunoFiltroBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;escola_PrincipalDataSet5.Name" xml:space="preserve">
-    <value>escola_PrincipalDataSet5</value>
-  </data>
-  <data name="&gt;&gt;escola_PrincipalDataSet5.Type" xml:space="preserve">
-    <value>CadastroFuncionario.Escola_PrincipalDataSet5, Escola_PrincipalDataSet5.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;boletinsAlunoFiltroTableAdapter.Name" xml:space="preserve">
-    <value>boletinsAlunoFiltroTableAdapter</value>
-  </data>
-  <data name="&gt;&gt;boletinsAlunoFiltroTableAdapter.Type" xml:space="preserve">
-    <value>CadastroFuncionario.Escola_PrincipalDataSet5TableAdapters.BoletinsAlunoFiltroTableAdapter, Escola_PrincipalDataSet5.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FormTabelaBoletins</value>

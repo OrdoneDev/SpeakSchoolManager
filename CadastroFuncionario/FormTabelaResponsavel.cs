@@ -19,9 +19,7 @@ namespace CadastroFuncionario
 
         private void FormTabelaResponsavel_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dB_EscolaDataSet7.Responsavel_Aluno' table. You can move, or remove it, as needed.
-            this.responsavel_AlunoTableAdapter.Fill(this.dB_EscolaDataSet7.Responsavel_Aluno);
-
+            dgv_Responsaveis.DataSource = GerenciaBanco.carregaDados("Responsavel_Aluno").Tables[0];
         }
 
         private void cmb_Nome_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
@@ -74,6 +72,21 @@ namespace CadastroFuncionario
             msk_CPF.BackColor = System.Drawing.Color.White;
 
             dgv_Responsaveis.DataSource = GerenciaBanco.getFiltro(msk_CPF.Text, "CPF", "SysProtected.Responsavel_Aluno");
+        }
+
+        private void btn_SalvarAlteracoes_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Deseja salvar as alterações?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                GerenciaBanco.updateDados("Responsavel_Aluno");
+            }
+
+            dgv_Responsaveis.DataSource = GerenciaBanco.carregaDados("Responsavel_Aluno").Tables[0];
+        }
+
+        private void btn_Cancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

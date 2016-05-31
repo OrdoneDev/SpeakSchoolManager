@@ -12,24 +12,24 @@ namespace CadastroFuncionario
 {
     public partial class FormPrincipal : Form
     {
-        public int Tag = 0;
+        public int TagP = 0;
 
         public FormPrincipal()
         {
             InitializeComponent();
 
-            Tag = GerenciaBanco.VerificaPermissao(Tag, "Escalas");
+            TagP = GerenciaBanco.VerificaPermissao(TagP, "Escalas");
 
-            if (Tag == 0)
-                Tag = GerenciaBanco.VerificaPermissao(Tag, "Endereco");
+            if (TagP == 0)
+                Tag = GerenciaBanco.VerificaPermissao(TagP, "Endereco");
 
             ValidaPermissoes(menuStrip1);
 
-            if (Tag == 1)
+            if (TagP == 1)
                 MessageBox.Show("Seja bem vindo diretor!");
-            if (Tag == 2)
+            if (TagP == 2)
                 MessageBox.Show("Seja bem vindo secretário!");
-            if (Tag == 0)
+            if (TagP == 0)
                 MessageBox.Show("Seja bem vindo professor!");
         }
 
@@ -41,21 +41,21 @@ namespace CadastroFuncionario
                 {
                     foreach (ToolStripMenuItem controles in control.DropDownItems)
                     { 
-                        if (controles.Tag == "1" && Tag != 1)
+                        if (controles.Tag == "1" && TagP != 1)
                         {
                             controles.Enabled = false;
                         }
-                        if (controles.Tag == "2" && Tag == 0)
+                        if (controles.Tag == "2" && TagP == 0)
                         {
                             controles.Enabled = false;
                         }
                         foreach (ToolStripMenuItem itens in controles.DropDownItems)
                         {
-                            if (itens.Tag == "1" && Tag != 1)
+                            if (itens.Tag == "1" && TagP != 1)
                             {
                                 itens.Enabled = false;
                             }
-                            if (itens.Tag == "2" && Tag == 0)
+                            if (itens.Tag == "2" && TagP == 0)
                             {
                                 itens.Enabled = false;
                             }

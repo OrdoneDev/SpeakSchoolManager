@@ -17,6 +17,11 @@ namespace CadastroFuncionario
             InitializeComponent();
         }
 
+        private void FormTabelaPlanos_Load(object sender, EventArgs e)
+        {
+            dgv_TabelaPlanos.DataSource = GerenciaBanco.carregaDados("Planos").Tables[0];
+        }
+
         private void cmb_Idioma_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
             ValidaCampos.GetLista(cmb_Idioma, "DISTINCT TOP 5 Nome", "Nome", e, "SysProtected.Idiomas");
@@ -25,12 +30,6 @@ namespace CadastroFuncionario
         private void cmb_Idioma_SelectedValueChanged(object sender, EventArgs e)
         {
             ValidaCampos.Deleta = true;
-        }
-
-        private void FormTabelaPlanos_Load(object sender, EventArgs e)
-        {
-            // TODO: This line of code loads data into the 'escola_PrincipalDataSet3.IdiomasPlanosFiltro' table. You can move, or remove it, as needed.
-            this.idiomasPlanosFiltroTableAdapter.Fill(this.escola_PrincipalDataSet3.IdiomasPlanosFiltro);
         }
 
         private void btn_FiltrarIdioma_Click(object sender, EventArgs e)
@@ -45,6 +44,21 @@ namespace CadastroFuncionario
             cmb_Idioma.BackColor = System.Drawing.Color.White;
 
             dgv_TabelaPlanos.DataSource = GerenciaBanco.getFiltro(cmb_Idioma.Text, "[Nome do idioma]", "IdiomasPlanosFiltro");
+        }
+
+        private void btn_SalvarAlteracoes_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Deseja salvar as alterações?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                GerenciaBanco.updateDados("Planos");
+            }
+
+            dgv_TabelaPlanos.DataSource = GerenciaBanco.carregaDados("Planos").Tables[0];
+        }
+
+        private void btn_Cancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

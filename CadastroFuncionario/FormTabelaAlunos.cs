@@ -14,7 +14,6 @@ namespace CadastroFuncionario
     public partial class FormTabelaAlunos : Form
     {
         FormFotoInscricao form;
-        DataSet ds;
         
         public FormTabelaAlunos()
         {
@@ -22,60 +21,9 @@ namespace CadastroFuncionario
             this.form = new FormFotoInscricao();
         }
 
-        private void carregaDados()
-        {
-            string strCon = "Data Source=.\\MSSQLSERVER2012; Initial Catalog=DB_Escola; Trusted_Connection=Yes;";
-            SqlConnection con = new SqlConnection(strCon);
-            con.Open();
-            string sql = "SELECT * FROM SysProtected.Alunos";
-
-            // O dataAdapter é responsável pela representacao fisica do banco
-            SqlDataAdapter da = new SqlDataAdapter(sql, con);
-
-            // O objeto ds é global, ele representa uma cópia da tabela na memoria
-            ds = new DataSet();
-
-            // O 'da' (tabela 'fisica') esta preenchendo o 'ds' (tabela na memoria) com a
-            // tabela chamada 'tabela'.
-            da.Fill(ds);
-
-            // mostra os dados no dataGridView (dgv) vinculando o dataSet ao dgv
-            dgv_Alunos.DataSource = ds.Tables[0];
-
-            con.Close();
-
-            dgv_Alunos.Refresh();
-        }
-
-        private void updateDados()
-        {
-            SqlDataAdapter da;
-            try
-            {
-                string strCon = "Data Source=.\\MSSQLSERVER2012; Initial Catalog=DB_Escola; Trusted_Connection=Yes;";
-                SqlConnection con = new SqlConnection(strCon);
-                string sql = "SELECT * FROM SysProtected.Alunos";
-
-                // O dataAdapter é responsável pela representacao fisica do banco
-                da = new SqlDataAdapter(sql, con);
-                con.Open();
-
-                // Cria o código do update dentro do Adapter
-                SqlCommandBuilder cmdBuilder = new SqlCommandBuilder(da);
-
-                // O 'da' (tabela 'fisica') esta atualizando os dados a partir do 'ds'.
-                da.Update(ds);
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("No sistema há vinculos com este dado que deseja remover. Porfavor remova os dados vinculados e retorne a este procedimento!");
-            }
-            ds.Reset();
-        }
-
         private void FormTabelaAlunos_Load(object sender, EventArgs e)
         {
-            carregaDados();
+            dgv_Alunos.DataSource = GerenciaBanco.carregaDados("Alunos").Tables[0];
         }
 
         private void dgv_Alunos_CellMouseEnter(object sender, DataGridViewCellEventArgs e)
@@ -131,8 +79,12 @@ namespace CadastroFuncionario
 
         private void btn_SalvarAlteracoes_Click(object sender, EventArgs e)
         {
-            updateDados();
-            carregaDados();
+            if (MessageBox.Show("Deseja salvar as alterações?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                GerenciaBanco.updateDados("Alunos");
+            }
+
+            dgv_Alunos.DataSource = GerenciaBanco.carregaDados("Alunos").Tables[0];
         }
 
         private void btn_Cancelar_Click(object sender, EventArgs e)

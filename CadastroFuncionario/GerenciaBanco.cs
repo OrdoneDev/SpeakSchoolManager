@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,12 +13,32 @@ namespace CadastroFuncionario
 {
     class GerenciaBanco
     {
+        static DataSet ds;
         static string strConexao = "Server=.\\MSSQLSERVER2012; Database=DB_Escola; Trusted_Connection=Yes;";
         public static int Id_Funcionario = 0;
         public static int Id_Aluno = 0;
         public static int Id_Plano = 0;
         public static int Id_Escala = 0;
         public static string Cargo = "";
+
+        public static byte[] ScaleImage(Image image)
+        {
+            var ratioX = (double)300 / image.Width;
+            var ratioY = (double)400 / image.Height;
+            var ratio = Math.Min(ratioX, ratioY);
+
+            var newWidth = (int)(image.Width * ratio);
+            var newHeight = (int)(image.Height * ratio);
+
+            var newImage = new Bitmap(newWidth, newHeight);
+
+            using (var graphics = Graphics.FromImage(newImage))
+                graphics.DrawImage(image, 0, 0, newWidth, newHeight);
+
+            MemoryStream ms = new MemoryStream();
+            newImage.Save(ms,System.Drawing.Imaging.ImageFormat.Gif);
+            return  ms.ToArray();
+        }
 
         public static int CadastrarEndereco(string Estado, string Cidade, string CEP, string Bairro, string Nome_Rua, int Id_Endereco)
         {
@@ -55,7 +77,7 @@ namespace CadastroFuncionario
         }
 
         public static bool CadastrarFuncionario(int Id_Endereco, string Nome, DateTime DataNascimento, char Sexo, string Estado_Civil,
-                                            string RG, string CPF, string Email, string Foto, string DDD, string Telefone,
+                                            string RG, string CPF, string Email, Image Foto, string DDD, string Telefone,
                                             short Quantidade_Filhos, string Historico_Escolar, string Cargo, float Salario,
                                             string Complemento, string Numero)
         {
@@ -97,9 +119,11 @@ namespace CadastroFuncionario
 
                 getUltimoFuncionarioRegistrado();
 
-                if (Foto != "null")
+                if (Foto != null)
                 {
-                    AtualizaFotoFuncionario(Foto);
+                    byte[] FotoFinal;
+                    FotoFinal = ScaleImage(Foto);
+                    AtualizaFotoFuncionario(FotoFinal);
                 }
 
                 return true;
@@ -156,7 +180,7 @@ namespace CadastroFuncionario
         }
 
         public static bool CadastrarAluno(int Id_Responsavel, int Id_Endereco, string Nome, DateTime DataNascimento, char Sexo, string Estado_Civil,
-                                            string RG, string CPF, string Email, string Foto, string DDD, string Telefone,
+                                            string RG, string CPF, string Email, Image Foto, string DDD, string Telefone,
                                             string Historico_Escolar, string Complemento, string Numero)
         {
             SqlConnection conexao = new SqlConnection(strConexao);
@@ -194,9 +218,11 @@ namespace CadastroFuncionario
 
                 getUltimoAlunoRegistrado();
 
-                if (Foto != "null")
+                if (Foto != null)
                 {
-                    AtualizaFotoAluno(Foto);
+                    byte[] FotoFinal;
+                    FotoFinal = ScaleImage(Foto);
+                    AtualizaFotoAluno(FotoFinal);
                 }
 
                 return true;
@@ -624,7 +650,7 @@ namespace CadastroFuncionario
             return true;
         }
 
-        public static void AtualizaFotoFuncionario(string Foto)
+        public static void AtualizaFotoFuncionario(byte[] Foto)
         {
             SqlConnection conexao = new SqlConnection(strConexao);
             SqlCommand cmd;
@@ -635,10 +661,9 @@ namespace CadastroFuncionario
                 cmd = new SqlCommand();
                 cmd.Connection = conexao;
 
-                cmd.CommandText = "Declare @img1 as varbinary(max) Set @img1 = (Select * from openrowset(bulk N'" + @Foto +
-                "', single_blob) as imagem) Update SysProtected.Funcionarios set Foto = @img1 where Id_Funcionario = @Id_Funcionario";
+                cmd.CommandText = "Update SysProtected.Funcionarios set Foto = @Foto where Id_Funcionario = @Id_Funcionario";
 
-                cmd.Parameters.Add(new SqlParameter("@Foto", Foto));
+                cmd.Parameters.Add(new SqlParameter("@Foto", SqlDbType.Image)).Value = Foto;
                 cmd.Parameters.Add(new SqlParameter("@Id_Funcionario", @Id_Funcionario));
                 cmd.CommandType = CommandType.Text;
                 cmd.ExecuteNonQuery();
@@ -655,7 +680,7 @@ namespace CadastroFuncionario
             return;
         }
 
-        public static void AtualizaFotoAluno(string Foto)
+        public static void AtualizaFotoAluno(byte[] Foto)
         {
             SqlConnection conexao = new SqlConnection(strConexao);
             SqlCommand cmd;
@@ -666,10 +691,9 @@ namespace CadastroFuncionario
                 cmd = new SqlCommand();
                 cmd.Connection = conexao;
 
-                cmd.CommandText = "Declare @img1 as varbinary(max) Set @img1 = (Select * from openrowset(bulk N'" + @Foto +
-                "', single_blob) as imagem) Update SysProtected.Alunos set Foto = @img1 where Id_Aluno = @Id_Aluno";
+                cmd.CommandText = "Update SysProtected.Alunos set Foto = @Foto where Id_Aluno = @Id_Aluno";
 
-                cmd.Parameters.Add(new SqlParameter("@Foto", Foto));
+                cmd.Parameters.Add(new SqlParameter("@Foto", SqlDbType.Image)).Value = Foto;
                 cmd.Parameters.Add(new SqlParameter("@Id_Aluno", @Id_Aluno));
                 cmd.CommandType = CommandType.Text;
                 cmd.ExecuteNonQuery();
@@ -1688,11 +1712,11 @@ namespace CadastroFuncionario
             return dt;
         }
 
-        public static DataTable getBoletim(int Id_Aluno)
+        public static int getBoletim(int Id_Aluno)
         {
-            DataTable dt = null;
             SqlConnection conexao = new SqlConnection(strConexao);
             SqlCommand cmd;
+            SqlDataReader dr;
 
             try
             {
@@ -1700,25 +1724,25 @@ namespace CadastroFuncionario
                 cmd = new SqlCommand();
                 cmd.Connection = conexao;
 
-                cmd.CommandText = "Select * from AllBoletim where [Código do aluno] = @Id_Aluno";
+                cmd.CommandText = "Select [Código do aluno] from AllBoletim where [Código do aluno] = @Id_Aluno";
 
                 cmd.Parameters.Add(new SqlParameter("@Id_Aluno", Id_Aluno));
 
-                cmd.CommandType = CommandType.Text;
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
-                dt = new DataTable();
-                da.Fill(dt);
+                dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    Id_Aluno = (dr.GetInt32(0));
+                }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-                return null;
             }
             finally
             {
                 conexao.Close();
             }
-            return dt;
+            return Id_Aluno;
         }
 
         public static DataTable getListaPresenca(int Id_Turma)
@@ -2205,6 +2229,56 @@ namespace CadastroFuncionario
                 conexao.Close();
             }
             return Id_Endereco;
+        }
+
+        public static DataSet carregaDados(string Tabela)
+        {
+            string strCon = "Data Source=.\\MSSQLSERVER2012; Initial Catalog=DB_Escola; Trusted_Connection=Yes;";
+            SqlConnection con = new SqlConnection(strCon);
+            con.Open();
+            string sql = "SELECT * FROM SysProtected." + Tabela;
+
+            // O dataAdapter é responsável pela representacao fisica do banco
+            SqlDataAdapter da = new SqlDataAdapter(sql, con);
+
+            // O objeto ds é global, ele representa uma cópia da tabela na memoria
+            ds = new DataSet();
+
+            // O 'da' (tabela 'fisica') esta preenchendo o 'ds' (tabela na memoria) com a
+            // tabela chamada 'tabela'.
+            da.Fill(ds);
+
+            con.Close();
+
+            return ds;            
+        }
+
+        public static void updateDados(string Tabela)
+        {
+            SqlDataAdapter da;
+            try
+            {
+                string strCon = "Data Source=.\\MSSQLSERVER2012; Initial Catalog=DB_Escola; Trusted_Connection=Yes;";
+                SqlConnection con = new SqlConnection(strCon);
+                string sql = "SELECT * FROM SysProtected." + Tabela;
+
+                // O dataAdapter é responsável pela representacao fisica do banco
+                da = new SqlDataAdapter(sql, con);
+                con.Open();
+
+                // Cria o código do update dentro do Adapter
+                SqlCommandBuilder cmdBuilder = new SqlCommandBuilder(da);
+
+                // O 'da' (tabela 'fisica') esta atualizando os dados a partir do 'ds'.
+                da.Update(ds);
+                con.Close();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("No sistema há vinculos com este dado que deseja remover. Porfavor remova os dados vinculados e retorne a este procedimento!");
+            }
+            ds.Reset();
+            
         }
     }
 }

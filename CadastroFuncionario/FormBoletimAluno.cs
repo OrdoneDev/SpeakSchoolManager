@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,10 +14,6 @@ namespace CadastroFuncionario
 {
     public partial class FormBoletimAluno : Form
     {
-        int Id_Inscricao;
-        float Nota1, Nota2;
-        short Numero_Faltas;
-
         public FormBoletimAluno()
         {
             InitializeComponent();
@@ -31,8 +28,7 @@ namespace CadastroFuncionario
 
         private void FormBoletimAluno_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dB_EscolaDataSet2.AllBoletim' table. You can move, or remove it, as needed.
-            this.allBoletimTableAdapter.Fill(this.dB_EscolaDataSet2.AllBoletim);
+            dgv_BoletimAluno.DataSource = GerenciaBanco.carregaDados("Boletim").Tables[0];
         }
 
         private void msk_IdAluno_TextChanged(object sender, EventArgs e)
@@ -86,55 +82,17 @@ namespace CadastroFuncionario
             if (!VerificaCamposBoletimAluno())
                 return;
 
-            dgv_BoletimAluno.DataSource = GerenciaBanco.getBoletim(int.Parse(msk_IdAluno.Text));
+            dgv_BoletimAluno.Rows[GerenciaBanco.getBoletim(int.Parse(msk_IdAluno.Text)) - 1].Selected = true;
         }
 
         private void btn_SalvarAlteracoes_Click(object sender, EventArgs e)
         {
-            if (!VerificaCamposBoletimAluno())
-                return;
-
-            Id_Inscricao = Convert.ToInt32(dgv_BoletimAluno.CurrentRow.Cells[0].Value);
-
-            if (dgv_BoletimAluno.CurrentRow.Cells[5].Value.ToString().Length > 0)
-                Nota1 = float.Parse(dgv_BoletimAluno.CurrentRow.Cells[5].Value.ToString());
-            else
-                Nota1 = 0;
-
-            if (Nota1 > 10 || Nota1 < 0)
+            if (MessageBox.Show("Deseja salvar as alterações?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                MessageBox.Show("A nota da primeira prova deve ser maior que 0 e menor que 10!");
-                dgv_BoletimAluno.CurrentRow.Cells[5].Value = 0;
-                return;
+                GerenciaBanco.updateDados("Boletim");
             }
 
-            if (dgv_BoletimAluno.CurrentRow.Cells[6].Value.ToString().Length > 0)
-                Nota2 = float.Parse(dgv_BoletimAluno.CurrentRow.Cells[6].Value.ToString());
-            else
-                Nota2 = 0;
-
-            if (Nota2 > 10 || Nota2 < 0)
-            {
-                MessageBox.Show("A nota da segunda prova deve ser maior que 0 e menor que 10!");
-                dgv_BoletimAluno.CurrentRow.Cells[6].Value = 0;
-                return;
-            }
-
-            if (dgv_BoletimAluno.CurrentRow.Cells[8].Value.ToString().Length > 0)
-                Numero_Faltas = short.Parse(dgv_BoletimAluno.CurrentRow.Cells[8].Value.ToString());
-            else
-                Numero_Faltas = 0;
-
-            if (GerenciaBanco.AtualizaBoletim(Id_Inscricao, Nota1, Nota2, Numero_Faltas))
-            {
-                MessageBox.Show("O boletim foi atualizado com sucesso!");
-            }
-            else
-            {
-                MessageBox.Show("Não foi possível atualizar os dados do boletim!");
-            }
-
-            dgv_BoletimAluno.DataSource = GerenciaBanco.getBoletim(int.Parse(msk_IdAluno.Text));
+            dgv_BoletimAluno.DataSource = GerenciaBanco.carregaDados("Boletim").Tables[0];
         }
 
         private void btn_Cancelar_Click(object sender, EventArgs e)

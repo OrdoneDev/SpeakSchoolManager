@@ -19,9 +19,7 @@ namespace CadastroFuncionario
 
         private void FormTabelaInscricoes_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'escola_PrincipalDataSet2.InscricaoAlunoFiltro' table. You can move, or remove it, as needed.
-            this.inscricaoAlunoFiltroTableAdapter.Fill(this.escola_PrincipalDataSet2.InscricaoAlunoFiltro);
-
+            dgv_TabelaInscricoes.DataSource = GerenciaBanco.carregaDados("Inscricao").Tables[0];
         }
 
         private void cmb_NomeAluno_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
@@ -46,6 +44,21 @@ namespace CadastroFuncionario
             cmb_NomeAluno.BackColor = System.Drawing.Color.White;
 
             dgv_TabelaInscricoes.DataSource = GerenciaBanco.getFiltro(cmb_NomeAluno.Text, "Nome", "InscricaoAlunoFiltro");
+        }
+
+        private void btn_SalvarAlteracoes_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Deseja salvar as alterações?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                GerenciaBanco.updateDados("Inscricao");
+            }
+
+            dgv_TabelaInscricoes.DataSource = GerenciaBanco.carregaDados("Inscricao").Tables[0];
+        }
+
+        private void btn_Cancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

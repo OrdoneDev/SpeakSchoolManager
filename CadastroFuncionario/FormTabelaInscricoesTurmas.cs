@@ -19,8 +19,7 @@ namespace CadastroFuncionario
 
         private void FormTabelaInscricoesTurmas_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dB_EscolaDataSet14.Inscricoes_Turmas' table. You can move, or remove it, as needed.
-            this.inscricoes_TurmasTableAdapter.Fill(this.dB_EscolaDataSet14.Inscricoes_Turmas);
+            dgv_TabelaInscricoesTurmas.DataSource = GerenciaBanco.carregaDados("Inscricoes_Turmas").Tables[0];
         }
 
         private void cmb_NomeAluno_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
@@ -69,6 +68,21 @@ namespace CadastroFuncionario
             cmb_NomeFuncionario.BackColor = System.Drawing.Color.White;
 
             dgv_TabelaInscricoesTurmas.DataSource = GerenciaBanco.getFiltro(cmb_NomeFuncionario.Text, "[Nome do funcionário]", "InscricoesTurmasFiltro");
+        }
+
+        private void btn_SalvarAlteracoes_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Deseja salvar as alterações?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                GerenciaBanco.updateDados("Inscricoes_Turmas");
+            }
+
+            dgv_TabelaInscricoesTurmas.DataSource = GerenciaBanco.carregaDados("Inscricoes_Turmas").Tables[0];
+        }
+
+        private void btn_Cancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

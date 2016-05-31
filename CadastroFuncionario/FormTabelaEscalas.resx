@@ -194,30 +194,6 @@
   <data name="&gt;&gt;lbl_NomeFuncionario.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="idEscalaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Código da escala</value>
-  </data>
-  <data name="idFuncionarioDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Código do funcionário</value>
-  </data>
-  <data name="dataDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Data escalada</value>
-  </data>
-  <data name="horaEntradaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Entrada</value>
-  </data>
-  <data name="horaSaidaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Saída</value>
-  </data>
-  <data name="descricaoFuncaoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Descrição de encargos</value>
-  </data>
-  <metadata name="escalasBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>178, 17</value>
-  </metadata>
-  <metadata name="dB_EscolaDataSet12.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <data name="dgv_TabelaEscalas.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 45</value>
   </data>
@@ -261,11 +237,56 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;group_TabelaEscalas.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btn_Cancelar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>675, 386</value>
+  </data>
+  <data name="btn_Cancelar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btn_Cancelar.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btn_Cancelar.Text" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.Name" xml:space="preserve">
+    <value>btn_Cancelar</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btn_SalvarAlteracoes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>563, 386</value>
+  </data>
+  <data name="btn_SalvarAlteracoes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 23</value>
+  </data>
+  <data name="btn_SalvarAlteracoes.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btn_SalvarAlteracoes.Text" xml:space="preserve">
+    <value>Salvar alterações</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarAlteracoes.Name" xml:space="preserve">
+    <value>btn_SalvarAlteracoes</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarAlteracoes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarAlteracoes.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarAlteracoes.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="escalasTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>347, 17</value>
-  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -273,64 +294,10 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>762, 392</value>
+    <value>762, 414</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Tabela de escalas</value>
-  </data>
-  <data name="&gt;&gt;idEscalaDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>idEscalaDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;idEscalaDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;idFuncionarioDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>idFuncionarioDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;idFuncionarioDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dataDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>dataDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;dataDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;horaEntradaDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>horaEntradaDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;horaEntradaDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;horaSaidaDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>horaSaidaDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;horaSaidaDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;descricaoFuncaoDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>descricaoFuncaoDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;descricaoFuncaoDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;escalasBindingSource.Name" xml:space="preserve">
-    <value>escalasBindingSource</value>
-  </data>
-  <data name="&gt;&gt;escalasBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dB_EscolaDataSet12.Name" xml:space="preserve">
-    <value>dB_EscolaDataSet12</value>
-  </data>
-  <data name="&gt;&gt;dB_EscolaDataSet12.Type" xml:space="preserve">
-    <value>CadastroFuncionario.DB_EscolaDataSet12, DB_EscolaDataSet121.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;escalasTableAdapter.Name" xml:space="preserve">
-    <value>escalasTableAdapter</value>
-  </data>
-  <data name="&gt;&gt;escalasTableAdapter.Type" xml:space="preserve">
-    <value>CadastroFuncionario.DB_EscolaDataSet12TableAdapters.EscalasTableAdapter, DB_EscolaDataSet121.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FormTabelaEscalas</value>

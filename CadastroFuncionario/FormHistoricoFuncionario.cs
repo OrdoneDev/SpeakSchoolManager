@@ -62,16 +62,19 @@ namespace CadastroFuncionario
             if (!VerificaCamposCadastroHistoricoFuncionario())
                 return;
 
-            dataHistorico = dte_DataHistoricoFuncionario.Value;
+            if (MessageBox.Show("Deseja salvar o histórico?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                dataHistorico = dte_DataHistoricoFuncionario.Value;
 
-            if (GerenciaBanco.CadastrarHistorico(msk_IdFuncionario.Text, dataHistorico,
-                txb_HistoricoFuncionario.Text, "Id_Funcionario", "Historico_Funcionario"))
-            {
-                MessageBox.Show("Histórico cadastrado com sucesso!");
-            }
-            else
-            {
-                MessageBox.Show("Foi encontrado um erro no cadastro de histórico!");
+                if (GerenciaBanco.CadastrarHistorico(msk_IdFuncionario.Text, dataHistorico,
+                    txb_HistoricoFuncionario.Text, "Id_Funcionario", "Historico_Funcionario"))
+                {
+                    MessageBox.Show("Histórico cadastrado com sucesso!");
+                }
+                else
+                {
+                    MessageBox.Show("Foi encontrado um erro no cadastro de histórico!");
+                }
             }
         }
 

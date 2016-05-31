@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -19,8 +20,7 @@ namespace CadastroFuncionario
 
         private void FormTabelaBoletins_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'escola_PrincipalDataSet5.BoletinsAlunoFiltro' table. You can move, or remove it, as needed.
-            this.boletinsAlunoFiltroTableAdapter.Fill(this.escola_PrincipalDataSet5.BoletinsAlunoFiltro);
+            dgv_TabelaBoletins.DataSource = GerenciaBanco.carregaDados("Boletim").Tables[0];
         }
 
         private void cmb_NomeAluno_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
@@ -43,8 +43,17 @@ namespace CadastroFuncionario
             }
 
             cmb_NomeAluno.BackColor = System.Drawing.Color.White;
+            dgv_TabelaBoletins.Rows[GerenciaBanco.getFiltro(cmb_NomeAluno.Text, "Nome", "BoletinsAlunoFiltro", "Id_Inscricao") - 1].Selected = true;
+        }
 
-            dgv_TabelaBoletins.DataSource = GerenciaBanco.getFiltro(cmb_NomeAluno.Text, "Nome", "BoletinsAlunoFiltro");
+        private void btn_SalvarAlteracoes_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Deseja salvar as alterações?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                GerenciaBanco.updateDados("Boletim");
+            }
+
+            dgv_TabelaBoletins.DataSource = GerenciaBanco.carregaDados("Boletim").Tables[0];
         }
     }
 }

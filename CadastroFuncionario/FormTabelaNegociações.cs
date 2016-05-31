@@ -19,8 +19,7 @@ namespace CadastroFuncionario
 
         private void FormTabelaNegociações_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'escola_PrincipalDataSet.Negociacao' table. You can move, or remove it, as needed.
-            this.negociacaoTableAdapter.Fill(this.escola_PrincipalDataSet.Negociacao);
+            dgv_TabelaNegociacoes.DataSource = GerenciaBanco.carregaDados("Negociacao").Tables[0];
         }
 
         private void cmb_NomeAluno_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
@@ -69,6 +68,21 @@ namespace CadastroFuncionario
             cmb_Plano.BackColor = System.Drawing.Color.White;
 
             dgv_TabelaNegociacoes.DataSource = GerenciaBanco.getFiltro(cmb_Plano.Text, "[Nome do plano]", "NegociacaoAlunoFiltro");
+        }
+
+        private void btn_SalvarAlteracoes_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Deseja salvar as alterações?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                GerenciaBanco.updateDados("Negociacao");
+            }
+
+            dgv_TabelaNegociacoes.DataSource = GerenciaBanco.carregaDados("Negociacao").Tables[0];
+        }
+
+        private void btn_Cancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

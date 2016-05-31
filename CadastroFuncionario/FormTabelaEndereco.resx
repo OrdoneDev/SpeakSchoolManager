@@ -419,30 +419,6 @@
   <data name="&gt;&gt;msk_IdEndereco.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
-  <data name="idEnderecoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Código do endereço</value>
-  </data>
-  <data name="estadoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Estado</value>
-  </data>
-  <data name="cidadeDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Cidade</value>
-  </data>
-  <data name="cEPDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>CEP</value>
-  </data>
-  <data name="bairroDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Bairro</value>
-  </data>
-  <data name="nomeRuaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Nome da rua</value>
-  </data>
-  <metadata name="enderecoBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>171, 17</value>
-  </metadata>
-  <metadata name="dB_EscolaDataSet3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <data name="dgv_Enderecos.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 46</value>
   </data>
@@ -488,12 +464,6 @@
   <data name="&gt;&gt;group_Enderecos.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <metadata name="dB_EscolaDataSet3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="enderecoTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>352, 17</value>
-  </metadata>
   <data name="btn_Cancelar.Location" type="System.Drawing.Point, System.Drawing">
     <value>1115, 344</value>
   </data>
@@ -553,60 +523,6 @@
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Tabela de endereços</value>
-  </data>
-  <data name="&gt;&gt;idEnderecoDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>idEnderecoDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;idEnderecoDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;estadoDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>estadoDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;estadoDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cidadeDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>cidadeDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;cidadeDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cEPDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>cEPDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;cEPDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bairroDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>bairroDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;bairroDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;nomeRuaDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>nomeRuaDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;nomeRuaDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;enderecoBindingSource.Name" xml:space="preserve">
-    <value>enderecoBindingSource</value>
-  </data>
-  <data name="&gt;&gt;enderecoBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dB_EscolaDataSet3.Name" xml:space="preserve">
-    <value>dB_EscolaDataSet3</value>
-  </data>
-  <data name="&gt;&gt;dB_EscolaDataSet3.Type" xml:space="preserve">
-    <value>CadastroFuncionario.DB_EscolaDataSet3, DB_EscolaDataSet3.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;enderecoTableAdapter.Name" xml:space="preserve">
-    <value>enderecoTableAdapter</value>
-  </data>
-  <data name="&gt;&gt;enderecoTableAdapter.Type" xml:space="preserve">
-    <value>CadastroFuncionario.DB_EscolaDataSet3TableAdapters.EnderecoTableAdapter, DB_EscolaDataSet3.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FormTabelaEndereco</value>

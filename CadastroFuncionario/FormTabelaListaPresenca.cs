@@ -19,8 +19,7 @@ namespace CadastroFuncionario
 
         private void FormTabelaListaPresenca_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dB_EscolaDataSet15.Lista_Presenca' table. You can move, or remove it, as needed.
-            this.lista_PresencaTableAdapter.Fill(this.dB_EscolaDataSet15.Lista_Presenca);
+            dgv_TabelaListaPresenca.DataSource = GerenciaBanco.carregaDados("Lista_Presenca").Tables[0];
         }
 
         private void cmb_NomeAluno_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
@@ -69,6 +68,21 @@ namespace CadastroFuncionario
             cmb_NomeProfessor.BackColor = System.Drawing.Color.White;
 
             dgv_TabelaListaPresenca.DataSource = GerenciaBanco.getFiltro(cmb_NomeProfessor.Text, "[Nome do professor]", "ListaPresencaFiltro");
+        }
+
+        private void btn_SalvarAlteracoes_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Deseja salvar as alterações?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                GerenciaBanco.updateDados("Lista_Presenca");
+            }
+
+            dgv_TabelaListaPresenca.DataSource = GerenciaBanco.carregaDados("Lista_Presenca").Tables[0];
+        }
+
+        private void btn_Cancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

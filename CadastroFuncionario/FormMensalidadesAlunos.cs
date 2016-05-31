@@ -89,24 +89,27 @@ namespace CadastroFuncionario
             if (!VerificaCamposMensalidadesAluno())
                 return;
 
-            if (rdb_APagar.Checked)
+            if (MessageBox.Show("Deseja salvar as alterações?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                Situacao = "A receber";
-                x = 0;
-            }
-            else
-            {
-                Situacao = "Pago";
-                x = 1;
-            }
+                if (rdb_APagar.Checked)
+                {
+                    Situacao = "A receber";
+                    x = 0;
+                }
+                else
+                {
+                    Situacao = "Pago";
+                    x = 1;
+                }
 
-            if (GerenciaBanco.AtualizaMensalidade(Id_Mensalidade, x))
-            {
-                MessageBox.Show("Mensalidade atualizada com sucesso!");
-            }
-            else
-            {
-                MessageBox.Show("Houve um erro na hora de atualizar a mensalidade!");
+                if (GerenciaBanco.AtualizaMensalidade(Id_Mensalidade, x))
+                {
+                    MessageBox.Show("Mensalidade atualizada com sucesso!");
+                }
+                else
+                {
+                    MessageBox.Show("Houve um erro na hora de atualizar a mensalidade!");
+                }
             }
 
             dgv_MensalidadesAluno.DataSource = GerenciaBanco.getMensalidades(int.Parse(msk_IdAluno.Text));

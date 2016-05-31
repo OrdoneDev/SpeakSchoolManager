@@ -40,14 +40,18 @@ namespace CadastroFuncionario
             if (!VerificaCamposCadastroFinanceiroEmpresa())
                 return;
 
-            if (GerenciaBanco.CadastrarFinanceiro(cmb_BancoEmpresa.Text, int.Parse(txt_AgenciaEmpresa.Text),
-                int.Parse(txt_ContaEmpresa.Text)))
+
+            if (MessageBox.Show("Deseja salvar os dados?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                MessageBox.Show("Financeiro Cadastrado com sucesso!");
-            }
-            else
-            {
-                MessageBox.Show("Não foi possivel efetuar o cadastro do financeiro!");
+                if (GerenciaBanco.CadastrarFinanceiro(cmb_BancoEmpresa.Text, int.Parse(txt_AgenciaEmpresa.Text),
+                    int.Parse(txt_ContaEmpresa.Text)))
+                {
+                    MessageBox.Show("Financeiro Cadastrado com sucesso!");
+                }
+                else
+                {
+                    MessageBox.Show("Não foi possivel efetuar o cadastro do financeiro!");
+                }
             }
         }
 

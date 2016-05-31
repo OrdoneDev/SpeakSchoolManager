@@ -269,21 +269,6 @@
   <data name="&gt;&gt;lbl_NomeAluno.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="idInscricaoTurmaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Código inscrição turma</value>
-  </data>
-  <data name="idInscricaoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Código da inscrição</value>
-  </data>
-  <data name="idTurmaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Código da turma</value>
-  </data>
-  <metadata name="inscricoesTurmasBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>178, 17</value>
-  </metadata>
-  <metadata name="dB_EscolaDataSet14.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <data name="dgv_TabelaInscricoesTurmas.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 47</value>
   </data>
@@ -327,11 +312,56 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btn_Cancelar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>718, 292</value>
+  </data>
+  <data name="btn_Cancelar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btn_Cancelar.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btn_Cancelar.Text" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.Name" xml:space="preserve">
+    <value>btn_Cancelar</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btn_SalvarAlteracoes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>597, 292</value>
+  </data>
+  <data name="btn_SalvarAlteracoes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 23</value>
+  </data>
+  <data name="btn_SalvarAlteracoes.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btn_SalvarAlteracoes.Text" xml:space="preserve">
+    <value>Salvar alterações</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarAlteracoes.Name" xml:space="preserve">
+    <value>btn_SalvarAlteracoes</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarAlteracoes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarAlteracoes.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarAlteracoes.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="inscricoes_TurmasTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>401, 17</value>
-  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -339,46 +369,10 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>805, 298</value>
+    <value>805, 321</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Tabela de inscrições e turmas</value>
-  </data>
-  <data name="&gt;&gt;idInscricaoTurmaDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>idInscricaoTurmaDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;idInscricaoTurmaDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;idInscricaoDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>idInscricaoDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;idInscricaoDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;idTurmaDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>idTurmaDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;idTurmaDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;inscricoesTurmasBindingSource.Name" xml:space="preserve">
-    <value>inscricoesTurmasBindingSource</value>
-  </data>
-  <data name="&gt;&gt;inscricoesTurmasBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dB_EscolaDataSet14.Name" xml:space="preserve">
-    <value>dB_EscolaDataSet14</value>
-  </data>
-  <data name="&gt;&gt;dB_EscolaDataSet14.Type" xml:space="preserve">
-    <value>CadastroFuncionario.DB_EscolaDataSet14, DB_EscolaDataSet14.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;inscricoes_TurmasTableAdapter.Name" xml:space="preserve">
-    <value>inscricoes_TurmasTableAdapter</value>
-  </data>
-  <data name="&gt;&gt;inscricoes_TurmasTableAdapter.Type" xml:space="preserve">
-    <value>CadastroFuncionario.DB_EscolaDataSet14TableAdapters.Inscricoes_TurmasTableAdapter, DB_EscolaDataSet14.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FormTabelaInscricoesTurmas</value>

@@ -22,8 +22,7 @@ namespace CadastroFuncionario
 
         private void FormTabelaFuncionarios_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dB_EscolaDataSet6.Funcionarios' table. You can move, or remove it, as needed.
-            this.funcionariosTableAdapter.Fill(this.dB_EscolaDataSet6.Funcionarios);
+            dgv_Funcionarios.DataSource = GerenciaBanco.carregaDados("Funcionarios").Tables[0];
         }
 
         private void dgv_Funcionarios_CellMouseEnter(object sender, DataGridViewCellEventArgs e)
@@ -105,6 +104,21 @@ namespace CadastroFuncionario
             msk_CPF.BackColor = System.Drawing.Color.White;
 
             dgv_Funcionarios.DataSource = GerenciaBanco.getFiltro(cmb_Cargo.Text, "Cargo", "SysProtected.Funcionarios");
+        }
+
+        private void btn_SalvarAlteracoes_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Deseja salvar as alterações?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                GerenciaBanco.updateDados("Funcionarios");
+            }
+
+            dgv_Funcionarios.DataSource = GerenciaBanco.carregaDados("Funcionarios").Tables[0];
+        }
+
+        private void btn_Cancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -54,46 +54,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DB_EscolaDataSet1.xsd</DependentUpon>
     </Compile>
-    <Compile Include="DB_EscolaDataSet10.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DB_EscolaDataSet10.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DB_EscolaDataSet11.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DB_EscolaDataSet11.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DB_EscolaDataSet121.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DB_EscolaDataSet121.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DB_EscolaDataSet13.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DB_EscolaDataSet13.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DB_EscolaDataSet14.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DB_EscolaDataSet14.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DB_EscolaDataSet15.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DB_EscolaDataSet15.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DB_EscolaDataSet2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DB_EscolaDataSet2.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DB_EscolaDataSet3.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DB_EscolaDataSet3.xsd</DependentUpon>
-    </Compile>
     <Compile Include="DB_EscolaDataSet4.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -104,16 +64,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DB_EscolaDataSet5.xsd</DependentUpon>
     </Compile>
-    <Compile Include="DB_EscolaDataSet6.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DB_EscolaDataSet6.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DB_EscolaDataSet7.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DB_EscolaDataSet7.xsd</DependentUpon>
-    </Compile>
     <Compile Include="DB_EscolaDataSet8.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -123,36 +73,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DB_EscolaDataSet9.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Escola_PrincipalDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Escola_PrincipalDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Escola_PrincipalDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Escola_PrincipalDataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Escola_PrincipalDataSet2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Escola_PrincipalDataSet2.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Escola_PrincipalDataSet3.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Escola_PrincipalDataSet3.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Escola_PrincipalDataSet4.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Escola_PrincipalDataSet4.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Escola_PrincipalDataSet5.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Escola_PrincipalDataSet5.xsd</DependentUpon>
     </Compile>
     <Compile Include="FormAdquirirCursoAluno.cs">
       <SubType>Form</SubType>
@@ -517,94 +437,6 @@
     <None Include="DB_EscolaDataSet1.xss">
       <DependentUpon>DB_EscolaDataSet1.xsd</DependentUpon>
     </None>
-    <None Include="DB_EscolaDataSet10.xsc">
-      <DependentUpon>DB_EscolaDataSet10.xsd</DependentUpon>
-    </None>
-    <None Include="DB_EscolaDataSet10.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DB_EscolaDataSet10.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DB_EscolaDataSet10.xss">
-      <DependentUpon>DB_EscolaDataSet10.xsd</DependentUpon>
-    </None>
-    <None Include="DB_EscolaDataSet11.xsc">
-      <DependentUpon>DB_EscolaDataSet11.xsd</DependentUpon>
-    </None>
-    <None Include="DB_EscolaDataSet11.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DB_EscolaDataSet11.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DB_EscolaDataSet11.xss">
-      <DependentUpon>DB_EscolaDataSet11.xsd</DependentUpon>
-    </None>
-    <None Include="DB_EscolaDataSet121.xsc">
-      <DependentUpon>DB_EscolaDataSet121.xsd</DependentUpon>
-    </None>
-    <None Include="DB_EscolaDataSet121.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DB_EscolaDataSet121.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DB_EscolaDataSet121.xss">
-      <DependentUpon>DB_EscolaDataSet121.xsd</DependentUpon>
-    </None>
-    <None Include="DB_EscolaDataSet13.xsc">
-      <DependentUpon>DB_EscolaDataSet13.xsd</DependentUpon>
-    </None>
-    <None Include="DB_EscolaDataSet13.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DB_EscolaDataSet13.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DB_EscolaDataSet13.xss">
-      <DependentUpon>DB_EscolaDataSet13.xsd</DependentUpon>
-    </None>
-    <None Include="DB_EscolaDataSet14.xsc">
-      <DependentUpon>DB_EscolaDataSet14.xsd</DependentUpon>
-    </None>
-    <None Include="DB_EscolaDataSet14.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DB_EscolaDataSet14.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DB_EscolaDataSet14.xss">
-      <DependentUpon>DB_EscolaDataSet14.xsd</DependentUpon>
-    </None>
-    <None Include="DB_EscolaDataSet15.xsc">
-      <DependentUpon>DB_EscolaDataSet15.xsd</DependentUpon>
-    </None>
-    <None Include="DB_EscolaDataSet15.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DB_EscolaDataSet15.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DB_EscolaDataSet15.xss">
-      <DependentUpon>DB_EscolaDataSet15.xsd</DependentUpon>
-    </None>
-    <None Include="DB_EscolaDataSet2.xsc">
-      <DependentUpon>DB_EscolaDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="DB_EscolaDataSet2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DB_EscolaDataSet2.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DB_EscolaDataSet2.xss">
-      <DependentUpon>DB_EscolaDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="DB_EscolaDataSet3.xsc">
-      <DependentUpon>DB_EscolaDataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="DB_EscolaDataSet3.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DB_EscolaDataSet3.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DB_EscolaDataSet3.xss">
-      <DependentUpon>DB_EscolaDataSet3.xsd</DependentUpon>
-    </None>
     <None Include="DB_EscolaDataSet4.xsc">
       <DependentUpon>DB_EscolaDataSet4.xsd</DependentUpon>
     </None>
@@ -627,28 +459,6 @@
     <None Include="DB_EscolaDataSet5.xss">
       <DependentUpon>DB_EscolaDataSet5.xsd</DependentUpon>
     </None>
-    <None Include="DB_EscolaDataSet6.xsc">
-      <DependentUpon>DB_EscolaDataSet6.xsd</DependentUpon>
-    </None>
-    <None Include="DB_EscolaDataSet6.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DB_EscolaDataSet6.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DB_EscolaDataSet6.xss">
-      <DependentUpon>DB_EscolaDataSet6.xsd</DependentUpon>
-    </None>
-    <None Include="DB_EscolaDataSet7.xsc">
-      <DependentUpon>DB_EscolaDataSet7.xsd</DependentUpon>
-    </None>
-    <None Include="DB_EscolaDataSet7.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DB_EscolaDataSet7.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DB_EscolaDataSet7.xss">
-      <DependentUpon>DB_EscolaDataSet7.xsd</DependentUpon>
-    </None>
     <None Include="DB_EscolaDataSet8.xsc">
       <DependentUpon>DB_EscolaDataSet8.xsd</DependentUpon>
     </None>
@@ -670,72 +480,6 @@
     </None>
     <None Include="DB_EscolaDataSet9.xss">
       <DependentUpon>DB_EscolaDataSet9.xsd</DependentUpon>
-    </None>
-    <None Include="Escola_PrincipalDataSet.xsc">
-      <DependentUpon>Escola_PrincipalDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="Escola_PrincipalDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Escola_PrincipalDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Escola_PrincipalDataSet.xss">
-      <DependentUpon>Escola_PrincipalDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="Escola_PrincipalDataSet1.xsc">
-      <DependentUpon>Escola_PrincipalDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="Escola_PrincipalDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Escola_PrincipalDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Escola_PrincipalDataSet1.xss">
-      <DependentUpon>Escola_PrincipalDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="Escola_PrincipalDataSet2.xsc">
-      <DependentUpon>Escola_PrincipalDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="Escola_PrincipalDataSet2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Escola_PrincipalDataSet2.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Escola_PrincipalDataSet2.xss">
-      <DependentUpon>Escola_PrincipalDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="Escola_PrincipalDataSet3.xsc">
-      <DependentUpon>Escola_PrincipalDataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="Escola_PrincipalDataSet3.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Escola_PrincipalDataSet3.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Escola_PrincipalDataSet3.xss">
-      <DependentUpon>Escola_PrincipalDataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="Escola_PrincipalDataSet4.xsc">
-      <DependentUpon>Escola_PrincipalDataSet4.xsd</DependentUpon>
-    </None>
-    <None Include="Escola_PrincipalDataSet4.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Escola_PrincipalDataSet4.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Escola_PrincipalDataSet4.xss">
-      <DependentUpon>Escola_PrincipalDataSet4.xsd</DependentUpon>
-    </None>
-    <None Include="Escola_PrincipalDataSet5.xsc">
-      <DependentUpon>Escola_PrincipalDataSet5.xsd</DependentUpon>
-    </None>
-    <None Include="Escola_PrincipalDataSet5.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Escola_PrincipalDataSet5.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Escola_PrincipalDataSet5.xss">
-      <DependentUpon>Escola_PrincipalDataSet5.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

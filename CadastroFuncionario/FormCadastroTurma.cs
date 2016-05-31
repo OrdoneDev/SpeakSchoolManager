@@ -99,15 +99,17 @@ namespace CadastroFuncionario
         {
             if (!VerificaCamposCadastroTurma())
                 return;
-            
-            if (GerenciaBanco.CadastrarTurma(int.Parse(msk_IdPlano.Text), int.Parse(msk_IdEscala.Text),
-            int.Parse(cmb_SalaTurma.Text), Data, lbl_ValorHoraEntrada.Text, lbl_ValorHoraSaida.Text))
+            if (MessageBox.Show("Deseja efetuar o cadastro?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                MessageBox.Show("Turma cadastrada com sucesso!");
-            }
-            else
-            {
-                MessageBox.Show("Não foi possível cadastrar uma turma!");
+                if (GerenciaBanco.CadastrarTurma(int.Parse(msk_IdPlano.Text), int.Parse(msk_IdEscala.Text),
+                int.Parse(cmb_SalaTurma.Text), Data, lbl_ValorHoraEntrada.Text, lbl_ValorHoraSaida.Text))
+                {
+                    MessageBox.Show("Turma cadastrada com sucesso!");
+                }
+                else
+                {
+                    MessageBox.Show("Não foi possível cadastrar uma turma!");
+                }
             }
         }
 

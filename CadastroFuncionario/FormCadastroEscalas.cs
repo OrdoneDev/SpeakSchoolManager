@@ -69,20 +69,23 @@ namespace CadastroFuncionario
 
             Data_Historico = dte_DataEscala.Value.Date;
 
-            if (cmb_CargoFuncionario.Text == GerenciaBanco.Cargo.ToString())
+            if (MessageBox.Show("Deseja efetuar o cadastro?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                if (GerenciaBanco.CadastrarEscala(int.Parse(msk_IdFuncionario.Text.ToString()), Data_Historico,
-                msk_HoraEntradaEscala.Text, msk_HoraSaidaFuncionario.Text, txb_DescricaoEncargos.Text))
+                if (cmb_CargoFuncionario.Text == GerenciaBanco.Cargo.ToString())
                 {
-                    MessageBox.Show("Escala cadastrada com sucesso!");
+                    if (GerenciaBanco.CadastrarEscala(int.Parse(msk_IdFuncionario.Text.ToString()), Data_Historico,
+                    msk_HoraEntradaEscala.Text, msk_HoraSaidaFuncionario.Text, txb_DescricaoEncargos.Text))
+                    {
+                        MessageBox.Show("Escala cadastrada com sucesso!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Não foi possível efetuar o cadastro da escala!");
+                    }
                 }
                 else
-                {
-                    MessageBox.Show("Não foi possível efetuar o cadastro da escala!");
-                }
+                    MessageBox.Show("O funcionário informado esta cadastrado em outro cargo!");
             }
-            else
-                MessageBox.Show("O funcionário informado esta cadastrado em outro cargo!");
         }
 
         private void btn_Cancelar_Click(object sender, EventArgs e)

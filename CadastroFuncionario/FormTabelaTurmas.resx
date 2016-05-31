@@ -269,33 +269,6 @@
   <data name="&gt;&gt;lbl_NomeFuncionario.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="idTurmaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Código da turma</value>
-  </data>
-  <data name="idPlanoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Código do plano</value>
-  </data>
-  <data name="idEscalaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Código da escala</value>
-  </data>
-  <data name="salaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Sala</value>
-  </data>
-  <data name="dataDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Data</value>
-  </data>
-  <data name="horaEntradaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Entrada</value>
-  </data>
-  <data name="horaSaidaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Saída</value>
-  </data>
-  <metadata name="turmasBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>178, 17</value>
-  </metadata>
-  <metadata name="dB_EscolaDataSet13.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <data name="dgv_TabelaTurmas.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 42</value>
   </data>
@@ -339,11 +312,56 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;group_TabelaTurmas.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btn_Cancelar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>796, 341</value>
+  </data>
+  <data name="btn_Cancelar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btn_Cancelar.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btn_Cancelar.Text" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.Name" xml:space="preserve">
+    <value>btn_Cancelar</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btn_SalvarAlteracoes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>680, 341</value>
+  </data>
+  <data name="btn_SalvarAlteracoes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 23</value>
+  </data>
+  <data name="btn_SalvarAlteracoes.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btn_SalvarAlteracoes.Text" xml:space="preserve">
+    <value>Salvar alterações</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarAlteracoes.Name" xml:space="preserve">
+    <value>btn_SalvarAlteracoes</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarAlteracoes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarAlteracoes.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarAlteracoes.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="turmasTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>346, 17</value>
-  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -351,70 +369,10 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>883, 347</value>
+    <value>883, 372</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Tabela de turmas</value>
-  </data>
-  <data name="&gt;&gt;idTurmaDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>idTurmaDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;idTurmaDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;idPlanoDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>idPlanoDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;idPlanoDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;idEscalaDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>idEscalaDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;idEscalaDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;salaDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>salaDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;salaDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dataDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>dataDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;dataDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;horaEntradaDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>horaEntradaDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;horaEntradaDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;horaSaidaDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>horaSaidaDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;horaSaidaDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;turmasBindingSource.Name" xml:space="preserve">
-    <value>turmasBindingSource</value>
-  </data>
-  <data name="&gt;&gt;turmasBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dB_EscolaDataSet13.Name" xml:space="preserve">
-    <value>dB_EscolaDataSet13</value>
-  </data>
-  <data name="&gt;&gt;dB_EscolaDataSet13.Type" xml:space="preserve">
-    <value>CadastroFuncionario.DB_EscolaDataSet13, DB_EscolaDataSet13.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;turmasTableAdapter.Name" xml:space="preserve">
-    <value>turmasTableAdapter</value>
-  </data>
-  <data name="&gt;&gt;turmasTableAdapter.Type" xml:space="preserve">
-    <value>CadastroFuncionario.DB_EscolaDataSet13TableAdapters.TurmasTableAdapter, DB_EscolaDataSet13.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FormTabelaTurmas</value>

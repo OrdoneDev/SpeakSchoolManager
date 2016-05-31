@@ -95,54 +95,58 @@ namespace CadastroFuncionario
             if (!VerificaCamposAdquirirCursoAluno())
                 return;
 
-            Financeiro = GerenciaBanco.getFinanceiroEmpresa().ToArray();
-
-            if (Financeiro.Length > 0)
-                Id_Financeiro = int.Parse(Financeiro[3]);
-
-            Plano = GerenciaBanco.getNome(msk_IdPlano.Text, "Planos", "Id_Plano");
-            Aluno = GerenciaBanco.getNome(msk_IdAluno.Text, "Alunos", "Id_Aluno");
-
-            if (Id_Financeiro == 0)
+            if (MessageBox.Show("Deseja confirmar o cadastro?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                MessageBox.Show("Os dados financeiros da empresa não estão cadastrados, porfavor efetue o cadastro do financeiro da empresa!");
-                return;
-            }
 
-            if (Plano.Length == 0)
-            {
-                MessageBox.Show("O plano informado não está cadastrado no sistema!");
-                return;
-            }
+                Financeiro = GerenciaBanco.getFinanceiroEmpresa().ToArray();
 
-            if (Aluno.Length == 0)
-            {
-                MessageBox.Show("O aluno informado não está cadastrado no sistema!");
-                return;
-            }
+                if (Financeiro.Length > 0)
+                    Id_Financeiro = int.Parse(Financeiro[3]);
 
-            if (!GerenciaBanco.VerificaAquisicao(int.Parse(msk_IdAluno.Text), int.Parse(msk_IdPlano.Text)))
-            {
-                MessageBox.Show("Houve uma duplicação nas negociações!");
-                return;
-            }
+                Plano = GerenciaBanco.getNome(msk_IdPlano.Text, "Planos", "Id_Plano");
+                Aluno = GerenciaBanco.getNome(msk_IdAluno.Text, "Alunos", "Id_Aluno");
 
-            if (rdb_APagar.Checked)
-            {
-                Situacao = 0;
-            }
-            else if (rdb_Pago.Checked && cmb_Parcelas.Text == "1")
-            {
-                Situacao = 1;
-            }
+                if (Id_Financeiro == 0)
+                {
+                    MessageBox.Show("Os dados financeiros da empresa não estão cadastrados, porfavor efetue o cadastro do financeiro da empresa!");
+                    return;
+                }
 
-            if (GerenciaBanco.CadastrarAquisicaoCursoAluno(Id_Financeiro, int.Parse(msk_IdPlano.Text), int.Parse(msk_IdAluno.Text), short.Parse(cmb_Parcelas.Text), Situacao))
-            {
-                MessageBox.Show("O plano foi adquirido com sucesso!");
-            }
-            else
-            {
-                MessageBox.Show("Nâo foi possível efetuar a aquisição do plano para o aluno!");
+                if (Plano.Length == 0)
+                {
+                    MessageBox.Show("O plano informado não está cadastrado no sistema!");
+                    return;
+                }
+
+                if (Aluno.Length == 0)
+                {
+                    MessageBox.Show("O aluno informado não está cadastrado no sistema!");
+                    return;
+                }
+
+                if (!GerenciaBanco.VerificaAquisicao(int.Parse(msk_IdAluno.Text), int.Parse(msk_IdPlano.Text)))
+                {
+                    MessageBox.Show("Houve uma duplicação nas negociações!");
+                    return;
+                }
+
+                if (rdb_APagar.Checked)
+                {
+                    Situacao = 0;
+                }
+                else if (rdb_Pago.Checked && cmb_Parcelas.Text == "1")
+                {
+                    Situacao = 1;
+                }
+
+                if (GerenciaBanco.CadastrarAquisicaoCursoAluno(Id_Financeiro, int.Parse(msk_IdPlano.Text), int.Parse(msk_IdAluno.Text), short.Parse(cmb_Parcelas.Text), Situacao))
+                {
+                    MessageBox.Show("O plano foi adquirido com sucesso!");
+                }
+                else
+                {
+                    MessageBox.Show("Nâo foi possível efetuar a aquisição do plano para o aluno!");
+                }
             }
         }
 

@@ -29,8 +29,7 @@ namespace CadastroFuncionario
 
         private void FormTabelaFinanceiros_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'escola_PrincipalDataSet4.FinanceiroFuncionarioFiltro' table. You can move, or remove it, as needed.
-            this.financeiroFuncionarioFiltroTableAdapter.Fill(this.escola_PrincipalDataSet4.FinanceiroFuncionarioFiltro);
+            dgv_TabelaFinanceiros.DataSource = GerenciaBanco.carregaDados("Financeiro").Tables[0];
         }
 
         private void btn_FiltrarNome_Click(object sender, EventArgs e)
@@ -45,6 +44,21 @@ namespace CadastroFuncionario
             cmb_Nome.BackColor = System.Drawing.Color.White;
 
             dgv_TabelaFinanceiros.DataSource = GerenciaBanco.getFiltro(cmb_Nome.Text, "Nome", "FinanceiroFuncionarioFiltro");
+        }
+
+        private void btn_SalvarAlteracoes_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Deseja salvar as alterações?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                GerenciaBanco.updateDados("Financeiro");
+            }
+
+            dgv_TabelaFinanceiros.DataSource = GerenciaBanco.carregaDados("Financeiro").Tables[0];
+        }
+
+        private void btn_Cancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -28,26 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTabelaEscalas));
             this.group_TabelaEscalas = new System.Windows.Forms.GroupBox();
             this.btn_FiltrarFuncionario = new System.Windows.Forms.Button();
             this.cmb_NomeFuncionario = new System.Windows.Forms.ComboBox();
             this.lbl_NomeFuncionario = new System.Windows.Forms.Label();
             this.dgv_TabelaEscalas = new System.Windows.Forms.DataGridView();
-            this.idEscalaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idFuncionarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.horaEntradaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.horaSaidaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descricaoFuncaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.escalasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dB_EscolaDataSet12 = new CadastroFuncionario.DB_EscolaDataSet12();
-            this.escalasTableAdapter = new CadastroFuncionario.DB_EscolaDataSet12TableAdapters.EscalasTableAdapter();
+            this.btn_Cancelar = new System.Windows.Forms.Button();
+            this.btn_SalvarAlteracoes = new System.Windows.Forms.Button();
             this.group_TabelaEscalas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_TabelaEscalas)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.escalasBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dB_EscolaDataSet12)).BeginInit();
             this.SuspendLayout();
             // 
             // group_TabelaEscalas
@@ -83,75 +73,31 @@
             // dgv_TabelaEscalas
             // 
             this.dgv_TabelaEscalas.AllowUserToAddRows = false;
-            this.dgv_TabelaEscalas.AutoGenerateColumns = false;
             this.dgv_TabelaEscalas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_TabelaEscalas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_TabelaEscalas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idEscalaDataGridViewTextBoxColumn,
-            this.idFuncionarioDataGridViewTextBoxColumn,
-            this.dataDataGridViewTextBoxColumn,
-            this.horaEntradaDataGridViewTextBoxColumn,
-            this.horaSaidaDataGridViewTextBoxColumn,
-            this.descricaoFuncaoDataGridViewTextBoxColumn});
-            this.dgv_TabelaEscalas.DataSource = this.escalasBindingSource;
             resources.ApplyResources(this.dgv_TabelaEscalas, "dgv_TabelaEscalas");
             this.dgv_TabelaEscalas.Name = "dgv_TabelaEscalas";
             // 
-            // idEscalaDataGridViewTextBoxColumn
+            // btn_Cancelar
             // 
-            this.idEscalaDataGridViewTextBoxColumn.DataPropertyName = "Id_Escala";
-            resources.ApplyResources(this.idEscalaDataGridViewTextBoxColumn, "idEscalaDataGridViewTextBoxColumn");
-            this.idEscalaDataGridViewTextBoxColumn.Name = "idEscalaDataGridViewTextBoxColumn";
-            this.idEscalaDataGridViewTextBoxColumn.ReadOnly = true;
+            resources.ApplyResources(this.btn_Cancelar, "btn_Cancelar");
+            this.btn_Cancelar.Name = "btn_Cancelar";
+            this.btn_Cancelar.UseVisualStyleBackColor = true;
+            this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
             // 
-            // idFuncionarioDataGridViewTextBoxColumn
+            // btn_SalvarAlteracoes
             // 
-            this.idFuncionarioDataGridViewTextBoxColumn.DataPropertyName = "Id_Funcionario";
-            resources.ApplyResources(this.idFuncionarioDataGridViewTextBoxColumn, "idFuncionarioDataGridViewTextBoxColumn");
-            this.idFuncionarioDataGridViewTextBoxColumn.Name = "idFuncionarioDataGridViewTextBoxColumn";
-            // 
-            // dataDataGridViewTextBoxColumn
-            // 
-            this.dataDataGridViewTextBoxColumn.DataPropertyName = "Data";
-            resources.ApplyResources(this.dataDataGridViewTextBoxColumn, "dataDataGridViewTextBoxColumn");
-            this.dataDataGridViewTextBoxColumn.Name = "dataDataGridViewTextBoxColumn";
-            // 
-            // horaEntradaDataGridViewTextBoxColumn
-            // 
-            this.horaEntradaDataGridViewTextBoxColumn.DataPropertyName = "Hora_Entrada";
-            resources.ApplyResources(this.horaEntradaDataGridViewTextBoxColumn, "horaEntradaDataGridViewTextBoxColumn");
-            this.horaEntradaDataGridViewTextBoxColumn.Name = "horaEntradaDataGridViewTextBoxColumn";
-            // 
-            // horaSaidaDataGridViewTextBoxColumn
-            // 
-            this.horaSaidaDataGridViewTextBoxColumn.DataPropertyName = "Hora_Saida";
-            resources.ApplyResources(this.horaSaidaDataGridViewTextBoxColumn, "horaSaidaDataGridViewTextBoxColumn");
-            this.horaSaidaDataGridViewTextBoxColumn.Name = "horaSaidaDataGridViewTextBoxColumn";
-            // 
-            // descricaoFuncaoDataGridViewTextBoxColumn
-            // 
-            this.descricaoFuncaoDataGridViewTextBoxColumn.DataPropertyName = "Descricao_Funcao";
-            resources.ApplyResources(this.descricaoFuncaoDataGridViewTextBoxColumn, "descricaoFuncaoDataGridViewTextBoxColumn");
-            this.descricaoFuncaoDataGridViewTextBoxColumn.Name = "descricaoFuncaoDataGridViewTextBoxColumn";
-            // 
-            // escalasBindingSource
-            // 
-            this.escalasBindingSource.DataMember = "Escalas";
-            this.escalasBindingSource.DataSource = this.dB_EscolaDataSet12;
-            // 
-            // dB_EscolaDataSet12
-            // 
-            this.dB_EscolaDataSet12.DataSetName = "DB_EscolaDataSet12";
-            this.dB_EscolaDataSet12.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // escalasTableAdapter
-            // 
-            this.escalasTableAdapter.ClearBeforeFill = true;
+            resources.ApplyResources(this.btn_SalvarAlteracoes, "btn_SalvarAlteracoes");
+            this.btn_SalvarAlteracoes.Name = "btn_SalvarAlteracoes";
+            this.btn_SalvarAlteracoes.UseVisualStyleBackColor = true;
+            this.btn_SalvarAlteracoes.Click += new System.EventHandler(this.btn_SalvarAlteracoes_Click);
             // 
             // FormTabelaEscalas
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btn_SalvarAlteracoes);
+            this.Controls.Add(this.btn_Cancelar);
             this.Controls.Add(this.group_TabelaEscalas);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MinimizeBox = false;
@@ -160,8 +106,6 @@
             this.group_TabelaEscalas.ResumeLayout(false);
             this.group_TabelaEscalas.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_TabelaEscalas)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.escalasBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dB_EscolaDataSet12)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -173,14 +117,7 @@
         private System.Windows.Forms.ComboBox cmb_NomeFuncionario;
         private System.Windows.Forms.Label lbl_NomeFuncionario;
         private System.Windows.Forms.DataGridView dgv_TabelaEscalas;
-        private DB_EscolaDataSet12 dB_EscolaDataSet12;
-        private System.Windows.Forms.BindingSource escalasBindingSource;
-        private DB_EscolaDataSet12TableAdapters.EscalasTableAdapter escalasTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idEscalaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idFuncionarioDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn horaEntradaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn horaSaidaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn descricaoFuncaoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button btn_Cancelar;
+        private System.Windows.Forms.Button btn_SalvarAlteracoes;
     }
 }

@@ -19,9 +19,7 @@ namespace CadastroFuncionario
 
         private void FormTabelaEscalas_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dB_EscolaDataSet12.Escalas' table. You can move, or remove it, as needed.
-            this.escalasTableAdapter.Fill(this.dB_EscolaDataSet12.Escalas);
-
+            dgv_TabelaEscalas.DataSource = GerenciaBanco.carregaDados("Escalas").Tables[0];
         }
 
         private void cmb_NomeFuncionario_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
@@ -46,6 +44,21 @@ namespace CadastroFuncionario
             cmb_NomeFuncionario.BackColor = System.Drawing.Color.White;
 
             dgv_TabelaEscalas.DataSource = GerenciaBanco.getFiltro(cmb_NomeFuncionario.Text, "Nome", "EscalasFuncionarioFiltro");
+        }
+
+        private void btn_SalvarAlteracoes_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Deseja salvar as alterações?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                GerenciaBanco.updateDados("Escalas");
+            }
+
+            dgv_TabelaEscalas.DataSource = GerenciaBanco.carregaDados("Escalas").Tables[0];
+        }
+
+        private void btn_Cancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
