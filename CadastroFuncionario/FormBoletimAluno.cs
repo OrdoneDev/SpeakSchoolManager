@@ -29,7 +29,7 @@ namespace CadastroFuncionario
         private void FormBoletimAluno_Load(object sender, EventArgs e)
         {
             dgv_BoletimAluno.DataSource = GerenciaBanco.carregaDados("Boletim", "Id_Boletim as 'Código do boletim', Id_Inscricao as 'Código da inscrição', " +
-            "Nota1 as '1º Nota', Nota2 as '2º Nota', Media, Numero_Faltas as 'Nº de faltas'").Tables[0];
+            "Nota1 as '1º Nota', Nota2 as '2º Nota', Media as 'Média', Numero_Faltas as 'Nº de faltas'").Tables[0];
 
             dgv_BoletimAluno.Columns[0].ReadOnly = true;
             dgv_BoletimAluno.Columns[1].ReadOnly = true;
@@ -98,11 +98,11 @@ namespace CadastroFuncionario
             if (MessageBox.Show("Deseja salvar as alterações?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 GerenciaBanco.updateDados("Boletim", "Id_Boletim as 'Código do boletim', Id_Inscricao as 'Código da inscrição', " +
-                "Nota1 as '1º Nota', Nota2 as '2º Nota', Media, Numero_Faltas as 'Nº de faltas'");
+            "Nota1 as '1º Nota', Nota2 as '2º Nota', Media as 'Média', Numero_Faltas as 'Nº de faltas'");
             }
 
             dgv_BoletimAluno.DataSource = GerenciaBanco.carregaDados("Boletim", "Id_Boletim as 'Código do boletim', Id_Inscricao as 'Código da inscrição', " +
-            "Nota1 as '1º Nota', Nota2 as '2º Nota', Media, Numero_Faltas as 'Nº de faltas'").Tables[0];
+            "Nota1 as '1º Nota', Nota2 as '2º Nota', Media as 'Média', Numero_Faltas as 'Nº de faltas'").Tables[0];
         }
 
         private void btn_Cancelar_Click(object sender, EventArgs e)
