@@ -58,6 +58,8 @@
             this.alunosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dB_EscolaDataSet10 = new CadastroFuncionario.DB_EscolaDataSet10();
             this.alunosTableAdapter = new CadastroFuncionario.DB_EscolaDataSet10TableAdapters.AlunosTableAdapter();
+            this.btn_Cancelar = new System.Windows.Forms.Button();
+            this.btn_SalvarAlteracoes = new System.Windows.Forms.Button();
             this.group_TabelaAlunos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Alunos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.alunosBindingSource)).BeginInit();
@@ -262,10 +264,26 @@
             // 
             this.alunosTableAdapter.ClearBeforeFill = true;
             // 
+            // btn_Cancelar
+            // 
+            resources.ApplyResources(this.btn_Cancelar, "btn_Cancelar");
+            this.btn_Cancelar.Name = "btn_Cancelar";
+            this.btn_Cancelar.UseVisualStyleBackColor = true;
+            this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
+            // 
+            // btn_SalvarAlteracoes
+            // 
+            resources.ApplyResources(this.btn_SalvarAlteracoes, "btn_SalvarAlteracoes");
+            this.btn_SalvarAlteracoes.Name = "btn_SalvarAlteracoes";
+            this.btn_SalvarAlteracoes.UseVisualStyleBackColor = true;
+            this.btn_SalvarAlteracoes.Click += new System.EventHandler(this.btn_SalvarAlteracoes_Click);
+            // 
             // FormTabelaAlunos
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btn_SalvarAlteracoes);
+            this.Controls.Add(this.btn_Cancelar);
             this.Controls.Add(this.group_TabelaAlunos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MinimizeBox = false;
@@ -310,5 +328,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn historicoEscolarDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn complementoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn numeroDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button btn_Cancelar;
+        private System.Windows.Forms.Button btn_SalvarAlteracoes;
     }
 }
