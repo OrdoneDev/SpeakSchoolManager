@@ -63,7 +63,11 @@ namespace CadastroFuncionario
             }
 
             msk_IdEndereco.BackColor = System.Drawing.Color.White;
-            dgv_Enderecos.Rows[GerenciaBanco.getFiltro(msk_IdEndereco.Text, "Id_Endereco", "SysProtected.Endereco", "Id_Endereco") - 1].Selected = true;
+
+            if (GerenciaBanco.getFiltro(msk_IdEndereco.Text, "Id_Endereco", "SysProtected.Endereco", "Id_Endereco") != 0)
+            {
+                dgv_Enderecos.Rows[GerenciaBanco.getFiltro(msk_IdEndereco.Text, "Id_Endereco", "SysProtected.Endereco", "Id_Endereco") - 1].Selected = true;
+            }
         }
 
         private void btn_FiltrarEstado_Click(object sender, EventArgs e)
@@ -76,7 +80,11 @@ namespace CadastroFuncionario
             }
 
             cmb_Estado.BackColor = System.Drawing.Color.White;
-            dgv_Enderecos.Rows[GerenciaBanco.getFiltro(cmb_Estado.Text, "Estado", "SysProtected.Endereco", "Id_Endereco") - 1].Selected = true;
+
+            if (GerenciaBanco.getFiltro(cmb_Estado.Text, "Estado", "SysProtected.Endereco", "Id_Endereco") != 0)
+            {
+                dgv_Enderecos.Rows[GerenciaBanco.getFiltro(cmb_Estado.Text, "Estado", "SysProtected.Endereco", "Id_Endereco") - 1].Selected = true;
+            }
         }
 
         private void btn_FiltrarCidade_Click(object sender, EventArgs e)
@@ -89,7 +97,11 @@ namespace CadastroFuncionario
             }
 
             cmb_Cidade.BackColor = System.Drawing.Color.White;
-            dgv_Enderecos.Rows[GerenciaBanco.getFiltro(cmb_Cidade.Text, "Cidade", "SysProtected.Endereco", "Id_Endereco") - 1].Selected = true;
+
+            if (GerenciaBanco.getFiltro(cmb_Cidade.Text, "Cidade", "SysProtected.Endereco", "Id_Endereco") != 0)
+            {
+                dgv_Enderecos.Rows[GerenciaBanco.getFiltro(cmb_Cidade.Text, "Cidade", "SysProtected.Endereco", "Id_Endereco") - 1].Selected = true;
+            }
         }
 
         private void btn_FiltrarBairro_Click(object sender, EventArgs e)
@@ -102,7 +114,11 @@ namespace CadastroFuncionario
             }
 
             cmb_Bairro.BackColor = System.Drawing.Color.White;
-            dgv_Enderecos.Rows[GerenciaBanco.getFiltro(cmb_Bairro.Text, "Bairro", "SysProtected.Endereco", "Id_Endereco") - 1].Selected = true;
+
+            if (GerenciaBanco.getFiltro(cmb_Bairro.Text, "Bairro", "SysProtected.Endereco", "Id_Endereco") != 0)
+            {
+                dgv_Enderecos.Rows[GerenciaBanco.getFiltro(cmb_Bairro.Text, "Bairro", "SysProtected.Endereco", "Id_Endereco") - 1].Selected = true;
+            }
         }
 
         private void btn_SalvarAlteracoes_Click(object sender, EventArgs e)

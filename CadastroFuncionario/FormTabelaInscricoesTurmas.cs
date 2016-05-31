@@ -53,7 +53,10 @@ namespace CadastroFuncionario
 
             cmb_NomeAluno.BackColor = System.Drawing.Color.White;
 
-            dgv_TabelaInscricoesTurmas.Rows[GerenciaBanco.getFiltro(cmb_NomeAluno.Text, "[Nome do aluno]", "InscricoesTurmasFiltro", "Id_Inscricao_Turma") - 1].Selected = true;
+            if (GerenciaBanco.getFiltro(cmb_NomeAluno.Text, "[Nome do aluno]", "InscricoesTurmasFiltro", "Id_Inscricao_Turma") != 0)
+            {
+                dgv_TabelaInscricoesTurmas.Rows[GerenciaBanco.getFiltro(cmb_NomeAluno.Text, "[Nome do aluno]", "InscricoesTurmasFiltro", "Id_Inscricao_Turma") - 1].Selected = true;
+            }
         }
 
         private void btn_FiltrarFuncionario_Click(object sender, EventArgs e)
@@ -67,7 +70,10 @@ namespace CadastroFuncionario
 
             cmb_NomeFuncionario.BackColor = System.Drawing.Color.White;
 
-            dgv_TabelaInscricoesTurmas.Rows[GerenciaBanco.getFiltro(cmb_NomeFuncionario.Text, "[Nome do funcionário]", "InscricoesTurmasFiltro", "Id_Inscricao_Turma") - 1].Selected = true;
+            if (GerenciaBanco.getFiltro(cmb_NomeFuncionario.Text, "[Nome do funcionário]", "InscricoesTurmasFiltro", "Id_Inscricao_Turma") != 0)
+            {
+                dgv_TabelaInscricoesTurmas.Rows[GerenciaBanco.getFiltro(cmb_NomeFuncionario.Text, "[Nome do funcionário]", "InscricoesTurmasFiltro", "Id_Inscricao_Turma") - 1].Selected = true;
+            }
         }
 
         private void btn_SalvarAlteracoes_Click(object sender, EventArgs e)

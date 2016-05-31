@@ -62,7 +62,10 @@ namespace CadastroFuncionario
 
             msk_Id.BackColor = System.Drawing.Color.White;
 
-            dgv_Funcionarios.Rows[GerenciaBanco.getFiltro(msk_Id.Text, "Id_Funcionario", "SysProtected.Funcionarios", "Id_Funcionario") - 1].Selected = true;
+            if (GerenciaBanco.getFiltro(msk_Id.Text, "Id_Funcionario", "SysProtected.Funcionarios", "Id_Funcionario") != 0)
+            {
+                dgv_Funcionarios.Rows[GerenciaBanco.getFiltro(msk_Id.Text, "Id_Funcionario", "SysProtected.Funcionarios", "Id_Funcionario") - 1].Selected = true;
+            }
         }
 
         private void btn_FiltrarNome_Click(object sender, EventArgs e)
@@ -76,7 +79,10 @@ namespace CadastroFuncionario
 
             cmb_Nome.BackColor = System.Drawing.Color.White;
 
-            dgv_Funcionarios.Rows[GerenciaBanco.getFiltro(cmb_Nome.Text, "Nome", "SysProtected.Funcionarios", "Id_Funcionario") - 1].Selected = true;
+            if (GerenciaBanco.getFiltro(cmb_Nome.Text, "Nome", "SysProtected.Funcionarios", "Id_Funcionario") != 0)
+            {
+                dgv_Funcionarios.Rows[GerenciaBanco.getFiltro(cmb_Nome.Text, "Nome", "SysProtected.Funcionarios", "Id_Funcionario") - 1].Selected = true;
+            }
         }
 
         private void btn_FiltrarCPF_Click(object sender, EventArgs e)
@@ -90,7 +96,10 @@ namespace CadastroFuncionario
 
             msk_CPF.BackColor = System.Drawing.Color.White;
 
-            dgv_Funcionarios.Rows[GerenciaBanco.getFiltro(msk_CPF.Text, "CPF", "SysProtected.Funcionarios", "Id_Funcionario") - 1].Selected = true;
+            if (GerenciaBanco.getFiltro(msk_CPF.Text, "CPF", "SysProtected.Funcionarios", "Id_Funcionario") != 0)
+            {
+                dgv_Funcionarios.Rows[GerenciaBanco.getFiltro(msk_CPF.Text, "CPF", "SysProtected.Funcionarios", "Id_Funcionario") - 1].Selected = true;
+            }
         }
 
         private void btn_FIltrarCargo_Click(object sender, EventArgs e)
@@ -103,7 +112,10 @@ namespace CadastroFuncionario
 
             msk_CPF.BackColor = System.Drawing.Color.White;
 
-            dgv_Funcionarios.Rows[GerenciaBanco.getFiltro(cmb_Cargo.Text, "Cargo", "SysProtected.Funcionarios", "Id_Funcionario") - 1].Selected = true;
+            if (GerenciaBanco.getFiltro(cmb_Cargo.Text, "Cargo", "SysProtected.Funcionarios", "Id_Funcionario") != 0)
+            {
+                dgv_Funcionarios.Rows[GerenciaBanco.getFiltro(cmb_Cargo.Text, "Cargo", "SysProtected.Funcionarios", "Id_Funcionario") - 1].Selected = true;
+            }
         }
 
         private void btn_SalvarAlteracoes_Click(object sender, EventArgs e)

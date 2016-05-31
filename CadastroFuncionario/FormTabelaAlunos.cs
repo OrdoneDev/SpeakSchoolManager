@@ -61,7 +61,11 @@ namespace CadastroFuncionario
             }
 
             msk_Id.BackColor = System.Drawing.Color.White;
-            dgv_Alunos.Rows[GerenciaBanco.getFiltro(msk_Id.Text, "Id_Aluno", "SysProtected.Alunos", "Id_Aluno") - 1].Selected = true;
+
+            if (GerenciaBanco.getFiltro(msk_Id.Text, "Id_Aluno", "SysProtected.Alunos", "Id_Aluno") != 0)
+            {
+                dgv_Alunos.Rows[GerenciaBanco.getFiltro(msk_Id.Text, "Id_Aluno", "SysProtected.Alunos", "Id_Aluno") - 1].Selected = true;
+            }
         }
 
         private void btn_FiltrarNome_Click(object sender, EventArgs e)
@@ -74,7 +78,11 @@ namespace CadastroFuncionario
             }
 
             cmb_Nome.BackColor = System.Drawing.Color.White;
-            dgv_Alunos.Rows[GerenciaBanco.getFiltro(cmb_Nome.Text, "Nome", "SysProtected.Alunos", "Id_Aluno") - 1].Selected = true;
+
+            if (GerenciaBanco.getFiltro(cmb_Nome.Text, "Nome", "SysProtected.Alunos", "Id_Aluno") != 0)
+            {
+                dgv_Alunos.Rows[GerenciaBanco.getFiltro(cmb_Nome.Text, "Nome", "SysProtected.Alunos", "Id_Aluno") - 1].Selected = true;
+            }
         }
 
         private void btn_SalvarAlteracoes_Click(object sender, EventArgs e)

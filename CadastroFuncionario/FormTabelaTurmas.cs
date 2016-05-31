@@ -53,7 +53,10 @@ namespace CadastroFuncionario
 
             cmb_NomeFuncionario.BackColor = System.Drawing.Color.White;
 
-            dgv_TabelaTurmas.Rows[GerenciaBanco.getFiltro(cmb_NomeFuncionario.Text, "[Nome do funcionário]", "TurmasFiltro", "Id_Turma") - 1].Selected = true;
+            if (GerenciaBanco.getFiltro(cmb_NomeFuncionario.Text, "[Nome do funcionário]", "TurmasFiltro", "Id_Turma") != 0)
+            {
+                dgv_TabelaTurmas.Rows[GerenciaBanco.getFiltro(cmb_NomeFuncionario.Text, "[Nome do funcionário]", "TurmasFiltro", "Id_Turma") - 1].Selected = true;
+            }
         }
 
         private void btn_FiltrarPlano_Click(object sender, EventArgs e)
@@ -67,7 +70,10 @@ namespace CadastroFuncionario
 
             cmb_NomePlano.BackColor = System.Drawing.Color.White;
 
-            dgv_TabelaTurmas.Rows[GerenciaBanco.getFiltro(cmb_NomePlano.Text, "[Nome do plano]", "TurmasFiltro", "Id_Turma") - 1].Selected = true;
+            if (GerenciaBanco.getFiltro(cmb_NomePlano.Text, "[Nome do plano]", "TurmasFiltro", "Id_Turma") != 0)
+            {
+                dgv_TabelaTurmas.Rows[GerenciaBanco.getFiltro(cmb_NomePlano.Text, "[Nome do plano]", "TurmasFiltro", "Id_Turma") - 1].Selected = true;
+            }
         }
 
         private void btn_SalvarAlteracoes_Click(object sender, EventArgs e)
