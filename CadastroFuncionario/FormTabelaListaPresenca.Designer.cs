@@ -102,6 +102,7 @@
             this.dgv_TabelaListaPresenca.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_TabelaListaPresenca.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             resources.ApplyResources(this.dgv_TabelaListaPresenca, "dgv_TabelaListaPresenca");
+            this.dgv_TabelaListaPresenca.MultiSelect = false;
             this.dgv_TabelaListaPresenca.Name = "dgv_TabelaListaPresenca";
             // 
             // btn_Cancelar

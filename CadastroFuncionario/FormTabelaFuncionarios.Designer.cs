@@ -151,6 +151,7 @@
             this.dgv_Funcionarios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgv_Funcionarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             resources.ApplyResources(this.dgv_Funcionarios, "dgv_Funcionarios");
+            this.dgv_Funcionarios.MultiSelect = false;
             this.dgv_Funcionarios.Name = "dgv_Funcionarios";
             this.dgv_Funcionarios.CellMouseEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Funcionarios_CellMouseEnter);
             this.dgv_Funcionarios.CellMouseLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Funcionarios_CellMouseLeave);

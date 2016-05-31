@@ -43,7 +43,7 @@ namespace CadastroFuncionario
 
             cmb_NomeFuncionario.BackColor = System.Drawing.Color.White;
 
-            dgv_TabelaEscalas.DataSource = GerenciaBanco.getFiltro(cmb_NomeFuncionario.Text, "Nome", "EscalasFuncionarioFiltro");
+            dgv_TabelaEscalas.Rows[GerenciaBanco.getFiltro(cmb_NomeFuncionario.Text, "Nome", "EscalasFuncionarioFiltro", "Id_Escala") - 1].Selected = true;
         }
 
         private void btn_SalvarAlteracoes_Click(object sender, EventArgs e)

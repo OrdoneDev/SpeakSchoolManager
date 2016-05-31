@@ -43,7 +43,10 @@ namespace CadastroFuncionario
 
             cmb_Idioma.BackColor = System.Drawing.Color.White;
 
-            dgv_TabelaPlanos.DataSource = GerenciaBanco.getFiltro(cmb_Idioma.Text, "[Nome do idioma]", "IdiomasPlanosFiltro");
+            if (GerenciaBanco.getFiltro(cmb_Idioma.Text, "[Nome do idioma]", "IdiomasPlanosFiltro", "Id_Plano") != 0)
+            {
+                dgv_TabelaPlanos.Rows[GerenciaBanco.getFiltro(cmb_Idioma.Text, "[Nome do idioma]", "IdiomasPlanosFiltro", "Id_Plano") - 1].Selected = true;
+            }
         }
 
         private void btn_SalvarAlteracoes_Click(object sender, EventArgs e)

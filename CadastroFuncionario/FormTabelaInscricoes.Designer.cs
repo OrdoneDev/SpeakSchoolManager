@@ -76,6 +76,7 @@
             this.dgv_TabelaInscricoes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_TabelaInscricoes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             resources.ApplyResources(this.dgv_TabelaInscricoes, "dgv_TabelaInscricoes");
+            this.dgv_TabelaInscricoes.MultiSelect = false;
             this.dgv_TabelaInscricoes.Name = "dgv_TabelaInscricoes";
             // 
             // btn_Cancelar

@@ -102,6 +102,7 @@
             this.dgv_TabelaInscricoesTurmas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_TabelaInscricoesTurmas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             resources.ApplyResources(this.dgv_TabelaInscricoesTurmas, "dgv_TabelaInscricoesTurmas");
+            this.dgv_TabelaInscricoesTurmas.MultiSelect = false;
             this.dgv_TabelaInscricoesTurmas.Name = "dgv_TabelaInscricoesTurmas";
             // 
             // btn_Cancelar

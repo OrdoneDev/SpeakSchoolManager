@@ -53,6 +53,7 @@
             this.dgv_TabelaIdiomas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_TabelaIdiomas.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgv_TabelaIdiomas.Location = new System.Drawing.Point(3, 16);
+            this.dgv_TabelaIdiomas.MultiSelect = false;
             this.dgv_TabelaIdiomas.Name = "dgv_TabelaIdiomas";
             this.dgv_TabelaIdiomas.Size = new System.Drawing.Size(618, 231);
             this.dgv_TabelaIdiomas.TabIndex = 0;

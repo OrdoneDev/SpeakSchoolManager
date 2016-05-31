@@ -403,7 +403,8 @@ namespace CadastroFuncionario
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Houve uma duplicidade de dados!");
+                conexao.Close();
                 return false;
             }
             finally
@@ -2197,7 +2198,7 @@ namespace CadastroFuncionario
             SqlConnection conexao = new SqlConnection(strConexao);
             SqlCommand cmd;
             SqlDataReader dr;
-            int Id_Endereco = 0;
+            int Id = 0;
 
             try
             {
@@ -2216,8 +2217,8 @@ namespace CadastroFuncionario
 
                 while (dr.Read())
                 {
-                    if (Id_Endereco == 0)
-                        Id_Endereco = (dr.GetInt32(0));
+                    if (Id == 0)
+                        Id = (dr.GetInt32(0));
                 }
             }
             catch (Exception ex)
@@ -2228,7 +2229,13 @@ namespace CadastroFuncionario
             {
                 conexao.Close();
             }
-            return Id_Endereco;
+
+            if (Id == 0)
+            {
+                MessageBox.Show("Não foi encontrado nenhum resultado!");
+            }
+
+            return Id;
         }
 
         public static DataSet carregaDados(string Tabela)

@@ -53,7 +53,7 @@ namespace CadastroFuncionario
 
             cmb_NomeAluno.BackColor = System.Drawing.Color.White;
 
-            dgv_TabelaMensalidades.DataSource = GerenciaBanco.getFiltro(cmb_NomeAluno.Text, "Nome", "MensalidadesAlunosFiltro");
+            dgv_TabelaMensalidades.Rows[GerenciaBanco.getFiltro(cmb_NomeAluno.Text, "Nome", "MensalidadesAlunosFiltro", "Id_Mensalidade") - 1].Selected = true;
         }
 
         private void btn_FiltrarFuncionario_Click(object sender, EventArgs e)
@@ -67,7 +67,7 @@ namespace CadastroFuncionario
 
             cmb_NomeFuncionario.BackColor = System.Drawing.Color.White;
 
-            dgv_TabelaMensalidades.DataSource = GerenciaBanco.getFiltro(cmb_NomeFuncionario.Text, "Nome", "MensalidadesFuncionariosFiltro");
+            dgv_TabelaMensalidades.Rows[GerenciaBanco.getFiltro(cmb_NomeFuncionario.Text, "Nome", "MensalidadesFuncionariosFiltro", "Id_Mensalidade") - 1].Selected = true;
         }
 
         private void btn_SalvarAlteracoes_Click(object sender, EventArgs e)

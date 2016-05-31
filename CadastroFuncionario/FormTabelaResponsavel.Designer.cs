@@ -122,6 +122,7 @@
             this.dgv_Responsaveis.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgv_Responsaveis.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             resources.ApplyResources(this.dgv_Responsaveis, "dgv_Responsaveis");
+            this.dgv_Responsaveis.MultiSelect = false;
             this.dgv_Responsaveis.Name = "dgv_Responsaveis";
             // 
             // btn_Cancelar

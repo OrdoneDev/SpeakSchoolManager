@@ -75,6 +75,7 @@
             this.dgv_TabelaFinanceiros.AllowUserToAddRows = false;
             this.dgv_TabelaFinanceiros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             resources.ApplyResources(this.dgv_TabelaFinanceiros, "dgv_TabelaFinanceiros");
+            this.dgv_TabelaFinanceiros.MultiSelect = false;
             this.dgv_TabelaFinanceiros.Name = "dgv_TabelaFinanceiros";
             // 
             // btn_Cancelar

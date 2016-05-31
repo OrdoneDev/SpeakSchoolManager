@@ -1075,9 +1075,6 @@ Insert into SysProtected.Funcionarios values (
 )
 GO
 
-Insert into SysProtected.Alunos values
-	(null, 1, 'David Christian Dias Ordone', '1994-01-01', 'M', 'Solteiro', '11.111.111-1',
-	'111.111.111-11', 0, 'david9108@hotmail.com', null, '012', '997040012',
-	'Ensino Médio Completo', 'Casa', '416'
-)
+Insert into SysProtected.Escalas values
+	(1, '2016-05-31', '07:15', '11:40', 'Estudar')
 GO

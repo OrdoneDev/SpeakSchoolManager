@@ -102,6 +102,7 @@
             this.dgv_TabelaTurmas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_TabelaTurmas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             resources.ApplyResources(this.dgv_TabelaTurmas, "dgv_TabelaTurmas");
+            this.dgv_TabelaTurmas.MultiSelect = false;
             this.dgv_TabelaTurmas.Name = "dgv_TabelaTurmas";
             // 
             // btn_Cancelar

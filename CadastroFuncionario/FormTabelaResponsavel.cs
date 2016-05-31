@@ -43,7 +43,7 @@ namespace CadastroFuncionario
 
             msk_Id.BackColor = System.Drawing.Color.White;
 
-            dgv_Responsaveis.DataSource = GerenciaBanco.getFiltro(msk_Id.Text, "Id_Responsavel", "SysProtected.Responsavel_Aluno");
+            dgv_Responsaveis.Rows[GerenciaBanco.getFiltro(msk_Id.Text, "Id_Responsavel", "SysProtected.Responsavel_Aluno", "Id_Responsavel") - 1].Selected = true;
         }
 
         private void btn_FiltrarNome_Click(object sender, EventArgs e)
@@ -57,7 +57,7 @@ namespace CadastroFuncionario
 
             cmb_Nome.BackColor = System.Drawing.Color.White;
 
-            dgv_Responsaveis.DataSource = GerenciaBanco.getFiltro(cmb_Nome.Text, "Nome", "SysProtected.Responsavel_Aluno");
+            dgv_Responsaveis.Rows[GerenciaBanco.getFiltro(cmb_Nome.Text, "Nome", "SysProtected.Responsavel_Aluno", "Id_Responsavel") - 1].Selected = true;
         }
 
         private void btn_FiltrarCPF_Click(object sender, EventArgs e)
@@ -71,7 +71,7 @@ namespace CadastroFuncionario
 
             msk_CPF.BackColor = System.Drawing.Color.White;
 
-            dgv_Responsaveis.DataSource = GerenciaBanco.getFiltro(msk_CPF.Text, "CPF", "SysProtected.Responsavel_Aluno");
+            dgv_Responsaveis.Rows[GerenciaBanco.getFiltro(msk_CPF.Text, "CPF", "SysProtected.Responsavel_Aluno", "Id_Responsavel") - 1].Selected = true;
         }
 
         private void btn_SalvarAlteracoes_Click(object sender, EventArgs e)

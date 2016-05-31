@@ -76,6 +76,7 @@
             this.dgv_TabelaPlanos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_TabelaPlanos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             resources.ApplyResources(this.dgv_TabelaPlanos, "dgv_TabelaPlanos");
+            this.dgv_TabelaPlanos.MultiSelect = false;
             this.dgv_TabelaPlanos.Name = "dgv_TabelaPlanos";
             // 
             // btn_Cancelar

@@ -53,7 +53,7 @@ namespace CadastroFuncionario
 
             cmb_NomeAluno.BackColor = System.Drawing.Color.White;
 
-            dgv_TabelaListaPresenca.DataSource = GerenciaBanco.getFiltro(cmb_NomeAluno.Text, "[Nome do aluno]", "ListaPresencaFiltro");
+            dgv_TabelaListaPresenca.Rows[GerenciaBanco.getFiltro(cmb_NomeAluno.Text, "[Nome do aluno]", "ListaPresencaFiltro", "Id_Presenca") - 1].Selected = true;
         }
 
         private void btn_FiltrarProfessor_Click(object sender, EventArgs e)
@@ -67,7 +67,7 @@ namespace CadastroFuncionario
 
             cmb_NomeProfessor.BackColor = System.Drawing.Color.White;
 
-            dgv_TabelaListaPresenca.DataSource = GerenciaBanco.getFiltro(cmb_NomeProfessor.Text, "[Nome do professor]", "ListaPresencaFiltro");
+            dgv_TabelaListaPresenca.Rows[GerenciaBanco.getFiltro(cmb_NomeProfessor.Text, "[Nome do professor]", "ListaPresencaFiltro", "Id_Presenca") - 1].Selected = true;
         }
 
         private void btn_SalvarAlteracoes_Click(object sender, EventArgs e)

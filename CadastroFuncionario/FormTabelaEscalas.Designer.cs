@@ -76,6 +76,7 @@
             this.dgv_TabelaEscalas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_TabelaEscalas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             resources.ApplyResources(this.dgv_TabelaEscalas, "dgv_TabelaEscalas");
+            this.dgv_TabelaEscalas.MultiSelect = false;
             this.dgv_TabelaEscalas.Name = "dgv_TabelaEscalas";
             // 
             // btn_Cancelar
