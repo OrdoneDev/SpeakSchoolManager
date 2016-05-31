@@ -19,7 +19,8 @@ namespace CadastroFuncionario
 
         private void FormTabelaEscalas_Load(object sender, EventArgs e)
         {
-            dgv_TabelaEscalas.DataSource = GerenciaBanco.carregaDados("Escalas").Tables[0];
+            dgv_TabelaEscalas.DataSource = GerenciaBanco.carregaDados("Escalas", "Id_Escala as 'Código da escala', Id_Funcionario as 'Código do funcionário', Data, " +
+            "Hora_Entrada as 'Entrada', Hora_Saida as 'Saída', Descricao_Funcao as 'Encargos'").Tables[0];
         }
 
         private void cmb_NomeFuncionario_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
@@ -53,10 +54,12 @@ namespace CadastroFuncionario
         {
             if (MessageBox.Show("Deseja salvar as alterações?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                GerenciaBanco.updateDados("Escalas");
+                GerenciaBanco.updateDados("Escalas", "Id_Escala as 'Código da escala', Id_Funcionario as 'Código do funcionário', Data, " +
+            "Hora_Entrada as 'Entrada', Hora_Saida as 'Saída', Descricao_Funcao as 'Encargos'");
             }
 
-            dgv_TabelaEscalas.DataSource = GerenciaBanco.carregaDados("Escalas").Tables[0];
+            dgv_TabelaEscalas.DataSource = GerenciaBanco.carregaDados("Escalas", "Id_Escala as 'Código da escala', Id_Funcionario as 'Código do funcionário', Data, " +
+            "Hora_Entrada as 'Entrada', Hora_Saida as 'Saída', Descricao_Funcao as 'Encargos'").Tables[0];
         }
 
         private void btn_Cancelar_Click(object sender, EventArgs e)

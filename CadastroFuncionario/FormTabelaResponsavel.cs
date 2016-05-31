@@ -19,7 +19,9 @@ namespace CadastroFuncionario
 
         private void FormTabelaResponsavel_Load(object sender, EventArgs e)
         {
-            dgv_Responsaveis.DataSource = GerenciaBanco.carregaDados("Responsavel_Aluno").Tables[0];
+            dgv_Responsaveis.DataSource = GerenciaBanco.carregaDados("Responsavel_Aluno", "Id_Responsavel as 'Código do responsável', " +
+            "Id_Endereco as 'Código do endereço', Nome, DataNascimento as 'Data de nascimento', Sexo, Estado_Civil as 'Estado civil', " +
+            "RG, CPF, Email, DDD, Telefone, Complemento, Numero as 'Nº'").Tables[0];
         }
 
         private void cmb_Nome_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
@@ -87,10 +89,14 @@ namespace CadastroFuncionario
         {
             if (MessageBox.Show("Deseja salvar as alterações?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                GerenciaBanco.updateDados("Responsavel_Aluno");
+                GerenciaBanco.updateDados("Responsavel_Aluno", "Id_Responsavel as 'Código do responsável', " +
+            "Id_Endereco as 'Código do endereço', Nome, DataNascimento as 'Data de nascimento', Sexo, Estado_Civil as 'Estado civil', " +
+            "RG, CPF, Email, DDD, Telefone, Complemento, Numero as 'Nº'");
             }
 
-            dgv_Responsaveis.DataSource = GerenciaBanco.carregaDados("Responsavel_Aluno").Tables[0];
+            dgv_Responsaveis.DataSource = GerenciaBanco.carregaDados("Responsavel_Aluno", "Id_Responsavel as 'Código do responsável', " +
+            "Id_Endereco as 'Código do endereço', Nome, DataNascimento as 'Data de nascimento', Sexo, Estado_Civil as 'Estado civil', " +
+            "RG, CPF, Email, DDD, Telefone, Complemento, Numero as 'Nº'").Tables[0];
         }
 
         private void btn_Cancelar_Click(object sender, EventArgs e)

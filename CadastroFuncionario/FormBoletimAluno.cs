@@ -28,7 +28,12 @@ namespace CadastroFuncionario
 
         private void FormBoletimAluno_Load(object sender, EventArgs e)
         {
-            dgv_BoletimAluno.DataSource = GerenciaBanco.carregaDados("Boletim").Tables[0];
+            dgv_BoletimAluno.DataSource = GerenciaBanco.carregaDados("Boletim", "Id_Boletim as 'Código do boletim', Id_Inscricao as 'Código da inscrição', " +
+            "Nota1 as '1º Nota', Nota2 as '2º Nota', Media, Numero_Faltas as 'Nº de faltas'").Tables[0];
+
+            dgv_BoletimAluno.Columns[0].ReadOnly = true;
+            dgv_BoletimAluno.Columns[1].ReadOnly = true;
+            dgv_BoletimAluno.Columns[4].ReadOnly = true;
         }
 
         private void msk_IdAluno_TextChanged(object sender, EventArgs e)
@@ -63,9 +68,9 @@ namespace CadastroFuncionario
 
         private void dgv_BoletimAluno_CellParsing(object sender, DataGridViewCellParsingEventArgs e)
         {
-            Regex Valida = new Regex(@"(^[0-9]{1}\.[0-9]{1})|(^[0-9]0{1})|(^[0-9]{1})");
+            Regex Valida = new Regex(@"(^[0-9]{1}\.[0-9]{1})$|(^[0-9]0{1})$|(^[0-9]{1})$");
 
-            if (!Valida.IsMatch(e.Value.ToString()))
+            if (!Valida.IsMatch(e.Value.ToString()) && (e.ColumnIndex == 2 || e.ColumnIndex == 3))
             {
                 dgv_BoletimAluno.RefreshEdit();
                 MessageBox.Show("Insira valores númericos entre 0 e 10!");
@@ -82,17 +87,22 @@ namespace CadastroFuncionario
             if (!VerificaCamposBoletimAluno())
                 return;
 
-            dgv_BoletimAluno.Rows[GerenciaBanco.getBoletim(int.Parse(msk_IdAluno.Text)) - 1].Selected = true;
+            if (GerenciaBanco.getBoletim(int.Parse(msk_IdAluno.Text)) != 0)
+            {
+                dgv_BoletimAluno.Rows[GerenciaBanco.getBoletim(int.Parse(msk_IdAluno.Text)) - 1].Selected = true;
+            }
         }
 
         private void btn_SalvarAlteracoes_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Deseja salvar as alterações?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                GerenciaBanco.updateDados("Boletim");
+                GerenciaBanco.updateDados("Boletim", "Id_Boletim as 'Código do boletim', Id_Inscricao as 'Código da inscrição', " +
+                "Nota1 as '1º Nota', Nota2 as '2º Nota', Media, Numero_Faltas as 'Nº de faltas'");
             }
 
-            dgv_BoletimAluno.DataSource = GerenciaBanco.carregaDados("Boletim").Tables[0];
+            dgv_BoletimAluno.DataSource = GerenciaBanco.carregaDados("Boletim", "Id_Boletim as 'Código do boletim', Id_Inscricao as 'Código da inscrição', " +
+            "Nota1 as '1º Nota', Nota2 as '2º Nota', Media, Numero_Faltas as 'Nº de faltas'").Tables[0];
         }
 
         private void btn_Cancelar_Click(object sender, EventArgs e)

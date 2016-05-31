@@ -19,7 +19,8 @@ namespace CadastroFuncionario
 
         private void FormTabelaPlanos_Load(object sender, EventArgs e)
         {
-            dgv_TabelaPlanos.DataSource = GerenciaBanco.carregaDados("Planos").Tables[0];
+            dgv_TabelaPlanos.DataSource = GerenciaBanco.carregaDados("Planos", "Id_Plano as 'Código do plano', Id_Idioma as 'Código do idioma', " +
+            "Nome, Aulas_Previstas as 'Nº de aulas previstas', Valor").Tables[0];
         }
 
         private void cmb_Idioma_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
@@ -53,10 +54,12 @@ namespace CadastroFuncionario
         {
             if (MessageBox.Show("Deseja salvar as alterações?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                GerenciaBanco.updateDados("Planos");
+                GerenciaBanco.updateDados("Planos", "Id_Plano as 'Código do plano', Id_Idioma as 'Código do idioma', " +
+                "Nome, Aulas_Previstas as 'Nº de aulas previstas', Valor");
             }
 
-            dgv_TabelaPlanos.DataSource = GerenciaBanco.carregaDados("Planos").Tables[0];
+            dgv_TabelaPlanos.DataSource = GerenciaBanco.carregaDados("Planos", "Id_Plano as 'Código do plano', Id_Idioma as 'Código do idioma', " +
+            "Nome, Aulas_Previstas as 'Nº de aulas previstas', Valor").Tables[0];
         }
 
         private void btn_Cancelar_Click(object sender, EventArgs e)

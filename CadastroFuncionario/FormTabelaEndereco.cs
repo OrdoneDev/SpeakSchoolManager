@@ -20,7 +20,8 @@ namespace CadastroFuncionario
 
         private void FormTabelaEndereco_Load(object sender, EventArgs e)
         {
-            dgv_Enderecos.DataSource = GerenciaBanco.carregaDados("Endereco").Tables[0];
+            dgv_Enderecos.DataSource = GerenciaBanco.carregaDados("Endereco", "Id_Endereco as 'Código do endereço', Estado, Cidade, " +
+            "CEP, Bairro, Nome_Rua as 'Nome da rua'").Tables[0];
         }
 
         private void cmb_Estado_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
@@ -125,10 +126,12 @@ namespace CadastroFuncionario
         {
             if (MessageBox.Show("Deseja salvar as alterações?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                GerenciaBanco.updateDados("Endereco");
+                GerenciaBanco.updateDados("Endereco", "Id_Endereco as 'Código do endereço', Estado, Cidade, " +
+            "CEP, Bairro, Nome_Rua as 'Nome da rua'");
             }
 
-            dgv_Enderecos.DataSource = GerenciaBanco.carregaDados("Endereco").Tables[0];
+            dgv_Enderecos.DataSource = GerenciaBanco.carregaDados("Endereco", "Id_Endereco as 'Código do endereço', Estado, Cidade, " +
+            "CEP, Bairro, Nome_Rua as 'Nome da rua'").Tables[0];
         }
 
         private void btn_Cancelar_Click(object sender, EventArgs e)

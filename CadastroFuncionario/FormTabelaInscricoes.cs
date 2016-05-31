@@ -19,7 +19,8 @@ namespace CadastroFuncionario
 
         private void FormTabelaInscricoes_Load(object sender, EventArgs e)
         {
-            dgv_TabelaInscricoes.DataSource = GerenciaBanco.carregaDados("Inscricao").Tables[0];
+            dgv_TabelaInscricoes.DataSource = GerenciaBanco.carregaDados("Inscricao", "Id_Inscricao as 'Código da inscrição', " +
+            "Id_Aluno as 'Código do aluno', Id_Negociacao as 'Código da negociação', Data, Status").Tables[0];
         }
 
         private void cmb_NomeAluno_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
@@ -53,10 +54,12 @@ namespace CadastroFuncionario
         {
             if (MessageBox.Show("Deseja salvar as alterações?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                GerenciaBanco.updateDados("Inscricao");
+                GerenciaBanco.updateDados("Inscricao", "Id_Inscricao as 'Código da inscrição', " +
+            "Id_Aluno as 'Código do aluno', Id_Negociacao as 'Código da negociação', Data, Status");
             }
 
-            dgv_TabelaInscricoes.DataSource = GerenciaBanco.carregaDados("Inscricao").Tables[0];
+            dgv_TabelaInscricoes.DataSource = GerenciaBanco.carregaDados("Inscricao", "Id_Inscricao as 'Código da inscrição', " +
+            "Id_Aluno as 'Código do aluno', Id_Negociacao as 'Código da negociação', Data, Status").Tables[0];
         }
 
         private void btn_Cancelar_Click(object sender, EventArgs e)

@@ -19,7 +19,8 @@ namespace CadastroFuncionario
 
         private void FormTabelaMensalidades_Load(object sender, EventArgs e)
         {
-            dgv_TabelaMensalidades.DataSource = GerenciaBanco.carregaDados("Mensalidades").Tables[0];
+            dgv_TabelaMensalidades.DataSource = GerenciaBanco.carregaDados("Mensalidades", "Id_Mensalidade as 'Código da mensalidade', Id_Financeiro as 'Código do financeiro', " +
+            "Id_Negociacao as 'Código da negociação', Numero_Parcela as 'Nº da parcela', Situacao, Data as 'Data depósito'").Tables[0];
         }
 
         private void cmb_NomeAluno_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
@@ -80,10 +81,12 @@ namespace CadastroFuncionario
         {
             if (MessageBox.Show("Deseja salvar as alterações?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                GerenciaBanco.updateDados("Mensalidades");
+                GerenciaBanco.updateDados("Mensalidades", "Id_Mensalidade as 'Código da mensalidade', Id_Financeiro as 'Código do financeiro', " +
+                "Id_Negociacao as 'Código da negociação', Numero_Parcela as 'Nº da parcela', Situacao, Data as 'Data depósito'");
             }
 
-            dgv_TabelaMensalidades.DataSource = GerenciaBanco.carregaDados("Mensalidades").Tables[0];
+            dgv_TabelaMensalidades.DataSource = GerenciaBanco.carregaDados("Mensalidades", "Id_Mensalidade as 'Código da mensalidade', Id_Financeiro as 'Código do financeiro', " +
+            "Id_Negociacao as 'Código da negociação', Numero_Parcela as 'Nº da parcela', Situacao, Data as 'Data depósito'").Tables[0];
         }
 
         private void btn_Cancelar_Click(object sender, EventArgs e)

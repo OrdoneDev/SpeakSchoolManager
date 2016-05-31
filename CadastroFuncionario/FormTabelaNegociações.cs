@@ -19,7 +19,8 @@ namespace CadastroFuncionario
 
         private void FormTabelaNegociações_Load(object sender, EventArgs e)
         {
-            dgv_TabelaNegociacoes.DataSource = GerenciaBanco.carregaDados("Negociacao").Tables[0];
+            dgv_TabelaNegociacoes.DataSource = GerenciaBanco.carregaDados("Negociacao", "Id_Negociacao as 'Código da negocição', Id_Financeiro as 'Código do financeiro', " +
+            "Id_Aluno as 'Código do aluno', Id_Plano as 'Código do plano', Parcelas as 'Nº de parcelas', Situacao").Tables[0];
         }
 
         private void cmb_NomeAluno_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
@@ -80,10 +81,12 @@ namespace CadastroFuncionario
         {
             if (MessageBox.Show("Deseja salvar as alterações?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                GerenciaBanco.updateDados("Negociacao");
+                GerenciaBanco.updateDados("Negociacao", "Id_Negociacao as 'Código da negocição', Id_Financeiro as 'Código do financeiro', " +
+            "Id_Aluno as 'Código do aluno', Id_Plano as 'Código do plano', Parcelas as 'Nº de parcelas', Situacao");
             }
 
-            dgv_TabelaNegociacoes.DataSource = GerenciaBanco.carregaDados("Negociacao").Tables[0];
+            dgv_TabelaNegociacoes.DataSource = GerenciaBanco.carregaDados("Negociacao", "Id_Negociacao as 'Código da negocição', Id_Financeiro as 'Código do financeiro', " +
+            "Id_Aluno as 'Código do aluno', Id_Plano as 'Código do plano', Parcelas as 'Nº de parcelas', Situacao").Tables[0];
         }
 
         private void btn_Cancelar_Click(object sender, EventArgs e)

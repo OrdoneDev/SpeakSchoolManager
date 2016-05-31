@@ -22,7 +22,19 @@ namespace CadastroFuncionario
 
         private void FormTabelaFuncionarios_Load(object sender, EventArgs e)
         {
-            dgv_Funcionarios.DataSource = GerenciaBanco.carregaDados("Funcionarios").Tables[0];
+            dgv_Funcionarios.DataSource = GerenciaBanco.carregaDados("Funcionarios", "Id_Funcionario as 'Código do funcionário', " +
+            "Id_Endereco as 'Código do endereço', Nome, DataNascimento as 'Data de nascimento', Sexo, Estado_Civil as 'Estado Civil', " +
+            "RG, CPF, Status_Funcionario as 'Status', Email, Foto, DDD, Telefone, Quantidade_Filhos as 'Nº de filhos', " +
+            "Historico_Escolar as 'Histórico escolar', Cargo, Salario as 'Salário', Complemento, Numero as 'Nº'").Tables[0];
+
+            foreach (DataGridViewColumn column in dgv_Funcionarios.Columns)
+            {
+                if (column is DataGridViewImageColumn)
+                {
+                    (column as DataGridViewImageColumn).ImageLayout = DataGridViewImageCellLayout.Zoom;
+                    (column as DataGridViewImageColumn).Description = "Zoomed";
+                }
+            }
         }
 
         private void dgv_Funcionarios_CellMouseEnter(object sender, DataGridViewCellEventArgs e)
@@ -110,7 +122,7 @@ namespace CadastroFuncionario
                 return;
             }
 
-            msk_CPF.BackColor = System.Drawing.Color.White;
+            cmb_Cargo.BackColor = System.Drawing.Color.White;
 
             if (GerenciaBanco.getFiltro(cmb_Cargo.Text, "Cargo", "SysProtected.Funcionarios", "Id_Funcionario") != 0)
             {
@@ -122,10 +134,16 @@ namespace CadastroFuncionario
         {
             if (MessageBox.Show("Deseja salvar as alterações?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                GerenciaBanco.updateDados("Funcionarios");
+                GerenciaBanco.updateDados("Funcionarios", "Id_Funcionario as 'Código do funcionário', Id_Endereco as 'Código do endereço', " +
+                "Nome, DataNascimento as 'Data de nascimento', Sexo, Estado_Civil as 'Estado Civil', " +
+                "RG, CPF, Status_Funcionario as 'Status', Email, Foto, DDD, Telefone, Quantidade_Filhos as 'Nº de filhos', " +
+                "Historico_Escolar as 'Histórico escolar', Cargo, Salario as 'Salário', Complemento, Numero as 'Nº'");
             }
 
-            dgv_Funcionarios.DataSource = GerenciaBanco.carregaDados("Funcionarios").Tables[0];
+            dgv_Funcionarios.DataSource = GerenciaBanco.carregaDados("Funcionarios", "Id_Funcionario as 'Código do funcionário', " +
+            "Id_Endereco as 'Código do endereço', Nome, DataNascimento as 'Data de nascimento', Sexo, Estado_Civil as 'Estado Civil', " +
+            "RG, CPF, Status_Funcionario as 'Status', Email, Foto, DDD, Telefone, Quantidade_Filhos as 'Nº de filhos', " +
+            "Historico_Escolar as 'Histórico escolar', Cargo, Salario as 'Salário', Complemento, Numero as 'Nº'").Tables[0];
         }
 
         private void btn_Cancelar_Click(object sender, EventArgs e)

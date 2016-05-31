@@ -23,7 +23,18 @@ namespace CadastroFuncionario
 
         private void FormTabelaAlunos_Load(object sender, EventArgs e)
         {
-            dgv_Alunos.DataSource = GerenciaBanco.carregaDados("Alunos").Tables[0];
+            dgv_Alunos.DataSource = GerenciaBanco.carregaDados("Alunos", "Id_Aluno as 'Código do aluno', Id_Responsavel as 'Código do responsável', " +
+            "Id_Endereco as 'Código do endereço', Nome, DataNascimento as 'Data de nascimento', Sexo, Estado_Civil as 'Estado civil', " +
+            "RG, CPF, Status_Aluno as 'Status', Email, Foto, DDD, Telefone, Historico_Escolar as 'Histórico escolar', Complemento, Numero as 'Nº'").Tables[0];
+
+            foreach (DataGridViewColumn column in dgv_Alunos.Columns)
+            {
+                if (column is DataGridViewImageColumn)
+                {
+                    (column as DataGridViewImageColumn).ImageLayout = DataGridViewImageCellLayout.Zoom;
+                    (column as DataGridViewImageColumn).Description = "Zoomed";
+                }
+            }
         }
 
         private void dgv_Alunos_CellMouseEnter(object sender, DataGridViewCellEventArgs e)
@@ -89,10 +100,14 @@ namespace CadastroFuncionario
         {
             if (MessageBox.Show("Deseja salvar as alterações?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                GerenciaBanco.updateDados("Alunos");
+                GerenciaBanco.updateDados("Alunos", "Id_Aluno as 'Código do aluno', Id_Responsavel as 'Código do responsável', " +
+                "Id_Endereco as 'Código do endereço', Nome, DataNascimento as 'Data de nascimento', Sexo, Estado_Civil as 'Estado civil', " +
+                "RG, CPF, Status_Aluno as 'Status', Email, Foto, DDD, Telefone, Historico_Escolar as 'Histórico escolar', Complemento, Numero as 'Nº'");
             }
 
-            dgv_Alunos.DataSource = GerenciaBanco.carregaDados("Alunos").Tables[0];
+            dgv_Alunos.DataSource = GerenciaBanco.carregaDados("Alunos", "Id_Aluno as 'Código do aluno', Id_Responsavel as 'Código do responsável', " +
+            "Id_Endereco as 'Código do endereço', Nome, DataNascimento as 'Data de nascimento', Sexo, Estado_Civil as 'Estado civil', " +
+            "RG, CPF, Status_Aluno as 'Status', Email, Foto, DDD, Telefone, Historico_Escolar as 'Histórico escolar', Complemento, Numero as 'Nº'").Tables[0];
         }
 
         private void btn_Cancelar_Click(object sender, EventArgs e)

@@ -19,7 +19,8 @@ namespace CadastroFuncionario
 
         private void FormTabelaTurmas_Load(object sender, EventArgs e)
         {
-            dgv_TabelaTurmas.DataSource = GerenciaBanco.carregaDados("Turmas").Tables[0];
+            dgv_TabelaTurmas.DataSource = GerenciaBanco.carregaDados("Turmas", "Id_Turma as 'Código da turma', Id_Plano as 'Código do plano', "+
+            "Id_Escala as 'Código da escala', Sala, Data, Hora_Entrada as 'Entrada', Hora_Saida as 'Saída'").Tables[0];
         }
 
         private void cmb_NomeFuncionario_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
@@ -80,10 +81,12 @@ namespace CadastroFuncionario
         {
             if (MessageBox.Show("Deseja salvar as alterações?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                GerenciaBanco.updateDados("Turmas");
+                GerenciaBanco.updateDados("Turmas", "Id_Turma as 'Código da turma', Id_Plano as 'Código do plano', " +
+            "Id_Escala as 'Código da escala', Sala, Data, Hora_Entrada as 'Entrada', Hora_Saida as 'Saída'");
             }
 
-            dgv_TabelaTurmas.DataSource = GerenciaBanco.carregaDados("Turmas").Tables[0];
+            dgv_TabelaTurmas.DataSource = GerenciaBanco.carregaDados("Turmas", "Id_Turma as 'Código da turma', Id_Plano as 'Código do plano', " +
+            "Id_Escala as 'Código da escala', Sala, Data, Hora_Entrada as 'Entrada', Hora_Saida as 'Saída'").Tables[0];
         }
 
         private void btn_Cancelar_Click(object sender, EventArgs e)

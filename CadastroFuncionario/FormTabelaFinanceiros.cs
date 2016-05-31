@@ -29,7 +29,8 @@ namespace CadastroFuncionario
 
         private void FormTabelaFinanceiros_Load(object sender, EventArgs e)
         {
-            dgv_TabelaFinanceiros.DataSource = GerenciaBanco.carregaDados("Financeiro").Tables[0];
+            dgv_TabelaFinanceiros.DataSource = GerenciaBanco.carregaDados("Financeiro", "Id_Financeiro as 'Código do financeiro', Id_Funcionario as 'Código do funcionário', " +
+            "Banco, Agencia, Conta, Data as 'Data para depósito'").Tables[0];
         }
 
         private void btn_FiltrarNome_Click(object sender, EventArgs e)
@@ -53,10 +54,12 @@ namespace CadastroFuncionario
         {
             if (MessageBox.Show("Deseja salvar as alterações?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                GerenciaBanco.updateDados("Financeiro");
+                GerenciaBanco.updateDados("Financeiro", "Id_Financeiro as 'Código do financeiro', Id_Funcionario as 'Código do funcionário', " +
+                "Banco, Agencia, Conta, Data as 'Data para depósito'");
             }
 
-            dgv_TabelaFinanceiros.DataSource = GerenciaBanco.carregaDados("Financeiro").Tables[0];
+            dgv_TabelaFinanceiros.DataSource = GerenciaBanco.carregaDados("Financeiro", "Id_Financeiro as 'Código do financeiro', Id_Funcionario as 'Código do funcionário', " +
+            "Banco, Agencia, Conta, Data as 'Data para depósito'").Tables[0];
         }
 
         private void btn_Cancelar_Click(object sender, EventArgs e)

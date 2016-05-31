@@ -401,7 +401,7 @@ namespace CadastroFuncionario
                 cmd.CommandType = CommandType.Text;
                 cmd.ExecuteNonQuery();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 MessageBox.Show("Houve uma duplicidade de dados!");
                 conexao.Close();
@@ -1725,11 +1725,12 @@ namespace CadastroFuncionario
                 cmd = new SqlCommand();
                 cmd.Connection = conexao;
 
-                cmd.CommandText = "Select [Código do aluno] from AllBoletim where [Código do aluno] = @Id_Aluno";
+                cmd.CommandText = "Select [Código da inscrição] from AllBoletim where [Código do aluno] = @Id_Aluno";
 
                 cmd.Parameters.Add(new SqlParameter("@Id_Aluno", Id_Aluno));
 
                 dr = cmd.ExecuteReader();
+                Id_Aluno = 0;
                 while (dr.Read())
                 {
                     Id_Aluno = (dr.GetInt32(0));
@@ -1743,6 +1744,10 @@ namespace CadastroFuncionario
             {
                 conexao.Close();
             }
+
+            if (Id_Aluno == 0)
+                MessageBox.Show("Pesquisa não localizada!");
+
             return Id_Aluno;
         }
 
@@ -2238,12 +2243,12 @@ namespace CadastroFuncionario
             return Id;
         }
 
-        public static DataSet carregaDados(string Tabela)
+        public static DataSet carregaDados(string Tabela, string aliases)
         {
             string strCon = "Data Source=.\\MSSQLSERVER2012; Initial Catalog=DB_Escola; Trusted_Connection=Yes;";
             SqlConnection con = new SqlConnection(strCon);
             con.Open();
-            string sql = "SELECT * FROM SysProtected." + Tabela;
+            string sql = "SELECT " + aliases + " FROM SysProtected." + Tabela;
 
             // O dataAdapter é responsável pela representacao fisica do banco
             SqlDataAdapter da = new SqlDataAdapter(sql, con);
@@ -2260,14 +2265,14 @@ namespace CadastroFuncionario
             return ds;            
         }
 
-        public static void updateDados(string Tabela)
+        public static void updateDados(string Tabela, string aliases)
         {
             SqlDataAdapter da;
             try
             {
                 string strCon = "Data Source=.\\MSSQLSERVER2012; Initial Catalog=DB_Escola; Trusted_Connection=Yes;";
                 SqlConnection con = new SqlConnection(strCon);
-                string sql = "SELECT * FROM SysProtected." + Tabela;
+                string sql = "SELECT " + aliases + " FROM SysProtected." + Tabela;
 
                 // O dataAdapter é responsável pela representacao fisica do banco
                 da = new SqlDataAdapter(sql, con);
@@ -2285,7 +2290,7 @@ namespace CadastroFuncionario
                 MessageBox.Show("No sistema há vinculos com este dado que deseja remover. Porfavor remova os dados vinculados e retorne a este procedimento!");
             }
             ds.Reset();
-            
+
         }
     }
 }
