@@ -35,6 +35,8 @@ namespace CadastroFuncionario
                     (column as DataGridViewImageColumn).Description = "Zoomed";
                 }
             }
+
+            dgv_Funcionarios.Columns[16].DefaultCellStyle.Format = "C2";
         }
 
         private void dgv_Funcionarios_CellMouseEnter(object sender, DataGridViewCellEventArgs e)

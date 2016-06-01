@@ -103,6 +103,7 @@
             this.dgv_Alunos.Name = "dgv_Alunos";
             this.dgv_Alunos.CellMouseEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Alunos_CellMouseEnter);
             this.dgv_Alunos.CellMouseLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Alunos_CellMouseLeave);
+            this.dgv_Alunos.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dgv_Alunos_DataError);
             // 
             // btn_Cancelar
             // 

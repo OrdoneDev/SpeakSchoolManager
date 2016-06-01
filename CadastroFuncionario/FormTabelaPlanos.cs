@@ -21,6 +21,8 @@ namespace CadastroFuncionario
         {
             dgv_TabelaPlanos.DataSource = GerenciaBanco.carregaDados("Planos", "Id_Plano as 'Código do plano', Id_Idioma as 'Código do idioma', " +
             "Nome, Aulas_Previstas as 'Nº de aulas previstas', Valor").Tables[0];
+
+            dgv_TabelaPlanos.Columns[4].DefaultCellStyle.Format = "C2";
         }
 
         private void cmb_Idioma_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)

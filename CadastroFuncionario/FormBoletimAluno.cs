@@ -14,6 +14,8 @@ namespace CadastroFuncionario
 {
     public partial class FormBoletimAluno : Form
     {
+        bool Error = false;
+
         public FormBoletimAluno()
         {
             InitializeComponent();
@@ -69,17 +71,18 @@ namespace CadastroFuncionario
         private void dgv_BoletimAluno_CellParsing(object sender, DataGridViewCellParsingEventArgs e)
         {
             Regex Valida = new Regex(@"(^[0-9]{1}\.[0-9]{1})$|(^[0-9]0{1})$|(^[0-9]{1})$");
-
+            
             if (!Valida.IsMatch(e.Value.ToString()) && (e.ColumnIndex == 2 || e.ColumnIndex == 3))
             {
-                dgv_BoletimAluno.RefreshEdit();
                 MessageBox.Show("Insira valores númericos entre 0 e 10!");
+                e.InheritedCellStyle = null;
             }
         }
 
         private void dgv_BoletimAluno_DataError(object sender, DataGridViewDataErrorEventArgs e)
         {
             e.Cancel = true;
+            dgv_BoletimAluno.RefreshEdit();
         } 
 
         private void btn_ConsultarBoletim_Click(object sender, EventArgs e)

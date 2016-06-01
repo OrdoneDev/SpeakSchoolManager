@@ -153,6 +153,7 @@
             resources.ApplyResources(this.dgv_Enderecos, "dgv_Enderecos");
             this.dgv_Enderecos.MultiSelect = false;
             this.dgv_Enderecos.Name = "dgv_Enderecos";
+            this.dgv_Enderecos.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dgv_Enderecos_DataError);
             // 
             // btn_Cancelar
             // 

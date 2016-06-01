@@ -24,6 +24,12 @@ namespace CadastroFuncionario
             "CEP, Bairro, Nome_Rua as 'Nome da rua'").Tables[0];
         }
 
+        private void dgv_Enderecos_DataError(object sender, DataGridViewDataErrorEventArgs e)
+        {
+            e.Cancel = true;
+            MessageBox.Show("O valor fornecido a esta celula está invalido!");
+        }
+
         private void cmb_Estado_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
             ValidaCampos.GetLista(cmb_Estado, "DISTINCT TOP 5 Estado", "Estado", e, "SysProtected.Endereco");

@@ -78,6 +78,8 @@
             resources.ApplyResources(this.dgv_TabelaBoletins, "dgv_TabelaBoletins");
             this.dgv_TabelaBoletins.MultiSelect = false;
             this.dgv_TabelaBoletins.Name = "dgv_TabelaBoletins";
+            this.dgv_TabelaBoletins.CellParsing += new System.Windows.Forms.DataGridViewCellParsingEventHandler(this.dgv_TabelaBoletins_CellParsing);
+            this.dgv_TabelaBoletins.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dgv_TabelaBoletins_DataError);
             // 
             // btn_Cancelar
             // 

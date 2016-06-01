@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -22,6 +23,23 @@ namespace CadastroFuncionario
         {
             dgv_TabelaBoletins.DataSource = GerenciaBanco.carregaDados("Boletim", "Id_Boletim as 'Código do boletim', Id_Inscricao as 'Código da inscrição', " +
             "Nota1 as '1º Nota', Nota2 as '2º Nota', Media as 'Média', Numero_Faltas as 'Nº de faltas'").Tables[0];
+        }
+
+        private void dgv_TabelaBoletins_CellParsing(object sender, DataGridViewCellParsingEventArgs e)
+        {
+            Regex Valida = new Regex(@"(^[0-9]{1}\.[0-9]{1})$|(^[0-9]0{1})$|(^[0-9]{1})$");
+
+            if (!Valida.IsMatch(e.Value.ToString()) && (e.ColumnIndex == 2 || e.ColumnIndex == 3))
+            {
+                MessageBox.Show("Insira valores númericos entre 0 e 10!");
+                e.InheritedCellStyle = null;
+            }
+        }
+
+        private void dgv_TabelaBoletins_DataError(object sender, DataGridViewDataErrorEventArgs e)
+        {
+            e.Cancel = true;
+            dgv_TabelaBoletins.RefreshEdit();
         }
 
         private void cmb_NomeAluno_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
