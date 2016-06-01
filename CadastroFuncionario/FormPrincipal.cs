@@ -295,5 +295,19 @@ namespace CadastroFuncionario
             form.MdiParent = this;
             form.Show();
         }
+
+        private void históricoDoFuncionárioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormTabelaHistoricoFuncionario form = new FormTabelaHistoricoFuncionario();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void históricoDoAlunoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormTabelaHistoricoAluno form = new FormTabelaHistoricoAluno();
+            form.MdiParent = this;
+            form.Show();
+        }
     }
 }
