@@ -92,6 +92,7 @@
             resources.ApplyResources(this.dgv_TabelaHistoricoFuncionario, "dgv_TabelaHistoricoFuncionario");
             this.dgv_TabelaHistoricoFuncionario.MultiSelect = false;
             this.dgv_TabelaHistoricoFuncionario.Name = "dgv_TabelaHistoricoFuncionario";
+            this.dgv_TabelaHistoricoFuncionario.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dgv_TabelaHistoricoFuncionario_DataError);
             // 
             // FormTabelaHistoricoFuncionario
             // 

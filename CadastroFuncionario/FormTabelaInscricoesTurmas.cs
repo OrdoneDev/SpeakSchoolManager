@@ -23,6 +23,13 @@ namespace CadastroFuncionario
             "Id_Inscricao as 'Código da inscrição', Id_Turma as 'Código da turma'").Tables[0];
         }
 
+        private void dgv_TabelaInscricoesTurmas_DataError(object sender, DataGridViewDataErrorEventArgs e)
+        {
+            e.Cancel = true;
+            dgv_TabelaInscricoesTurmas.RefreshEdit();
+            MessageBox.Show("O valor fornecido a esta celula está invalido!");
+        }
+
         private void cmb_NomeAluno_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
             ValidaCampos.GetLista(cmb_NomeAluno, "TOP 5 Nome", "Nome", e, "SysProtected.Alunos");

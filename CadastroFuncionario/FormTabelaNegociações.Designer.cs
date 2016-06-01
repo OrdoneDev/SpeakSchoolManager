@@ -104,6 +104,7 @@
             resources.ApplyResources(this.dgv_TabelaNegociacoes, "dgv_TabelaNegociacoes");
             this.dgv_TabelaNegociacoes.MultiSelect = false;
             this.dgv_TabelaNegociacoes.Name = "dgv_TabelaNegociacoes";
+            this.dgv_TabelaNegociacoes.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dgv_TabelaNegociacoes_DataError);
             // 
             // btn_Cancelar
             // 

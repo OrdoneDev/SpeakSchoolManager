@@ -104,6 +104,7 @@
             resources.ApplyResources(this.dgv_TabelaListaPresenca, "dgv_TabelaListaPresenca");
             this.dgv_TabelaListaPresenca.MultiSelect = false;
             this.dgv_TabelaListaPresenca.Name = "dgv_TabelaListaPresenca";
+            this.dgv_TabelaListaPresenca.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dgv_TabelaListaPresenca_DataError);
             // 
             // btn_Cancelar
             // 

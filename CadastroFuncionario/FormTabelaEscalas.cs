@@ -23,6 +23,13 @@ namespace CadastroFuncionario
             "Hora_Entrada as 'Entrada', Hora_Saida as 'Saída', Descricao_Funcao as 'Encargos'").Tables[0];
         }
 
+        private void dgv_TabelaEscalas_DataError(object sender, DataGridViewDataErrorEventArgs e)
+        {
+            e.Cancel = true;
+            dgv_TabelaEscalas.RefreshEdit();
+            MessageBox.Show("O valor fornecido a esta celula está invalido!");
+        }
+
         private void cmb_NomeFuncionario_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
             ValidaCampos.GetLista(cmb_NomeFuncionario, "TOP 5 Nome", "Nome", e, "SysProtected.Funcionarios");

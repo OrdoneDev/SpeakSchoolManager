@@ -77,6 +77,7 @@
             resources.ApplyResources(this.dgv_TabelaFinanceiros, "dgv_TabelaFinanceiros");
             this.dgv_TabelaFinanceiros.MultiSelect = false;
             this.dgv_TabelaFinanceiros.Name = "dgv_TabelaFinanceiros";
+            this.dgv_TabelaFinanceiros.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dgv_TabelaFinanceiros_DataError);
             // 
             // btn_Cancelar
             // 

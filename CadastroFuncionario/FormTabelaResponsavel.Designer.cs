@@ -124,6 +124,7 @@
             resources.ApplyResources(this.dgv_Responsaveis, "dgv_Responsaveis");
             this.dgv_Responsaveis.MultiSelect = false;
             this.dgv_Responsaveis.Name = "dgv_Responsaveis";
+            this.dgv_Responsaveis.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dgv_Responsaveis_DataError);
             // 
             // btn_Cancelar
             // 

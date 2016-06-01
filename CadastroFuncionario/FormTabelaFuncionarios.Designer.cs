@@ -155,6 +155,7 @@
             this.dgv_Funcionarios.Name = "dgv_Funcionarios";
             this.dgv_Funcionarios.CellMouseEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Funcionarios_CellMouseEnter);
             this.dgv_Funcionarios.CellMouseLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Funcionarios_CellMouseLeave);
+            this.dgv_Funcionarios.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dgv_Funcionarios_DataError);
             // 
             // btn_Cancelar
             // 

@@ -78,6 +78,7 @@
             resources.ApplyResources(this.dgv_TabelaInscricoes, "dgv_TabelaInscricoes");
             this.dgv_TabelaInscricoes.MultiSelect = false;
             this.dgv_TabelaInscricoes.Name = "dgv_TabelaInscricoes";
+            this.dgv_TabelaInscricoes.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dgv_TabelaInscricoes_DataError);
             // 
             // btn_Cancelar
             // 

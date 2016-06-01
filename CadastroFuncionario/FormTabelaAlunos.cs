@@ -40,8 +40,8 @@ namespace CadastroFuncionario
         private void dgv_Alunos_DataError(object sender, DataGridViewDataErrorEventArgs e)
         {
             e.Cancel = true;
-            MessageBox.Show("O valor fornecido a esta celula está invalido!");
             dgv_Alunos.RefreshEdit();
+            MessageBox.Show("O valor fornecido a esta celula está invalido!");
         }
 
         private void dgv_Alunos_CellMouseEnter(object sender, DataGridViewCellEventArgs e)

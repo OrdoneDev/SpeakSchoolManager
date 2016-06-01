@@ -104,6 +104,7 @@
             resources.ApplyResources(this.dgv_TabelaInscricoesTurmas, "dgv_TabelaInscricoesTurmas");
             this.dgv_TabelaInscricoesTurmas.MultiSelect = false;
             this.dgv_TabelaInscricoesTurmas.Name = "dgv_TabelaInscricoesTurmas";
+            this.dgv_TabelaInscricoesTurmas.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dgv_TabelaInscricoesTurmas_DataError);
             // 
             // btn_Cancelar
             // 

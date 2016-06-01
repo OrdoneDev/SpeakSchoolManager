@@ -24,6 +24,13 @@ namespace CadastroFuncionario
             "RG, CPF, Email, DDD, Telefone, Complemento, Numero as 'Nº'").Tables[0];
         }
 
+        private void dgv_Responsaveis_DataError(object sender, DataGridViewDataErrorEventArgs e)
+        {
+            e.Cancel = true;
+            dgv_Responsaveis.RefreshEdit();
+            MessageBox.Show("O valor fornecido a esta celula está invalido!");
+        }
+
         private void cmb_Nome_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
             ValidaCampos.GetLista(cmb_Nome, "TOP 5 Nome", "Nome", e, "SysProtected.Responsavel_Aluno");

@@ -23,6 +23,13 @@ namespace CadastroFuncionario
             "Id_Funcionario as 'Código do funcionário', Data, Descricao").Tables[0];
         }
 
+        private void dgv_TabelaHistoricoFuncionario_DataError(object sender, DataGridViewDataErrorEventArgs e)
+        {
+            e.Cancel = true;
+            dgv_TabelaHistoricoFuncionario.RefreshEdit();
+            MessageBox.Show("O valor fornecido a esta celula está invalido!");
+        }
+
         private void cmb_NomeFuncionario_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
             ValidaCampos.GetLista(cmb_NomeFuncionario, "TOP 5 Nome", "Nome", e, "SysProtected.Funcionarios");

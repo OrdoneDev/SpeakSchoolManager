@@ -104,6 +104,7 @@
             resources.ApplyResources(this.dgv_TabelaTurmas, "dgv_TabelaTurmas");
             this.dgv_TabelaTurmas.MultiSelect = false;
             this.dgv_TabelaTurmas.Name = "dgv_TabelaTurmas";
+            this.dgv_TabelaTurmas.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dgv_TabelaTurmas_DataError);
             // 
             // btn_Cancelar
             // 

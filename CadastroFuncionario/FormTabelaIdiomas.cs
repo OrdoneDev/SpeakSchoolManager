@@ -22,6 +22,13 @@ namespace CadastroFuncionario
             dgv_TabelaIdiomas.DataSource = GerenciaBanco.carregaDados("Idiomas", "Id_Idioma as 'Código do idioma', Nome, Descricao").Tables[0];
         }
 
+        private void dgv_TabelaIdiomas_DataError(object sender, DataGridViewDataErrorEventArgs e)
+        {
+            e.Cancel = true;
+            dgv_TabelaIdiomas.RefreshEdit();
+            MessageBox.Show("O valor fornecido a esta celula está invalido!");
+        }
+
         private void btn_SalvarAlteracoes_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Deseja salvar as alterações?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)

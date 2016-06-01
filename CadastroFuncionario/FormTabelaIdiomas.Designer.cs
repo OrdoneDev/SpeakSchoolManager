@@ -57,6 +57,7 @@
             this.dgv_TabelaIdiomas.Name = "dgv_TabelaIdiomas";
             this.dgv_TabelaIdiomas.Size = new System.Drawing.Size(618, 231);
             this.dgv_TabelaIdiomas.TabIndex = 0;
+            this.dgv_TabelaIdiomas.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dgv_TabelaIdiomas_DataError);
             // 
             // btn_Cancelar
             // 

@@ -78,6 +78,7 @@
             resources.ApplyResources(this.dgv_TabelaPlanos, "dgv_TabelaPlanos");
             this.dgv_TabelaPlanos.MultiSelect = false;
             this.dgv_TabelaPlanos.Name = "dgv_TabelaPlanos";
+            this.dgv_TabelaPlanos.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dgv_TabelaPlanos_DataError);
             // 
             // btn_Cancelar
             // 

@@ -39,6 +39,13 @@ namespace CadastroFuncionario
             dgv_Funcionarios.Columns[16].DefaultCellStyle.Format = "C2";
         }
 
+        private void dgv_Funcionarios_DataError(object sender, DataGridViewDataErrorEventArgs e)
+        {
+            e.Cancel = true;
+            dgv_Funcionarios.RefreshEdit();
+            MessageBox.Show("O valor fornecido a esta celula está invalido!");
+        }
+
         private void dgv_Funcionarios_CellMouseEnter(object sender, DataGridViewCellEventArgs e)
         {
             if (e.ColumnIndex == 10 && e.RowIndex >= 0)

@@ -25,6 +25,13 @@ namespace CadastroFuncionario
             dgv_TabelaPlanos.Columns[4].DefaultCellStyle.Format = "C2";
         }
 
+        private void dgv_TabelaPlanos_DataError(object sender, DataGridViewDataErrorEventArgs e)
+        {
+            e.Cancel = true;
+            dgv_TabelaPlanos.RefreshEdit();
+            MessageBox.Show("O valor fornecido a esta celula está invalido!");
+        }
+
         private void cmb_Idioma_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
             ValidaCampos.GetLista(cmb_Idioma, "DISTINCT TOP 5 Nome", "Nome", e, "SysProtected.Idiomas");

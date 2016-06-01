@@ -23,6 +23,13 @@ namespace CadastroFuncionario
             "Id_Aluno as 'Código do aluno', Id_Plano as 'Código do plano', Parcelas as 'Nº de parcelas', Situacao").Tables[0];
         }
 
+        private void dgv_TabelaNegociacoes_DataError(object sender, DataGridViewDataErrorEventArgs e)
+        {
+            e.Cancel = true;
+            dgv_TabelaNegociacoes.RefreshEdit();
+            MessageBox.Show("O valor fornecido a esta celula está invalido!");
+        }
+
         private void cmb_NomeAluno_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
             ValidaCampos.GetLista(cmb_NomeAluno, "TOP 5 Nome", "Nome", e, "SysProtected.Alunos");

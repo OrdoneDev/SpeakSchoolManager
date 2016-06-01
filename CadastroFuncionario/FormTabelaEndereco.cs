@@ -27,6 +27,7 @@ namespace CadastroFuncionario
         private void dgv_Enderecos_DataError(object sender, DataGridViewDataErrorEventArgs e)
         {
             e.Cancel = true;
+            dgv_Enderecos.RefreshEdit();
             MessageBox.Show("O valor fornecido a esta celula está invalido!");
         }
 

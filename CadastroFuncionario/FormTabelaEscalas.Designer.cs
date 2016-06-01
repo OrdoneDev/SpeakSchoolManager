@@ -78,6 +78,7 @@
             resources.ApplyResources(this.dgv_TabelaEscalas, "dgv_TabelaEscalas");
             this.dgv_TabelaEscalas.MultiSelect = false;
             this.dgv_TabelaEscalas.Name = "dgv_TabelaEscalas";
+            this.dgv_TabelaEscalas.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dgv_TabelaEscalas_DataError);
             // 
             // btn_Cancelar
             // 

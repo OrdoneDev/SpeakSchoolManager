@@ -17,6 +17,19 @@ namespace CadastroFuncionario
             InitializeComponent();
         }
 
+        private void FormTabelaFinanceiros_Load(object sender, EventArgs e)
+        {
+            dgv_TabelaFinanceiros.DataSource = GerenciaBanco.carregaDados("Financeiro", "Id_Financeiro as 'Código do financeiro', Id_Funcionario as 'Código do funcionário', " +
+            "Banco, Agencia, Conta, Data as 'Data para depósito'").Tables[0];
+        }
+
+        private void dgv_TabelaFinanceiros_DataError(object sender, DataGridViewDataErrorEventArgs e)
+        {
+            e.Cancel = true;
+            dgv_TabelaFinanceiros.RefreshEdit();
+            MessageBox.Show("O valor fornecido a esta celula está invalido!");
+        }
+
         private void cmb_Nome_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
             ValidaCampos.GetLista(cmb_Nome, "TOP 5 Nome", "Nome", e, "SysProtected.Funcionarios");
@@ -25,12 +38,6 @@ namespace CadastroFuncionario
         private void cmb_Nome_SelectedValueChanged(object sender, EventArgs e)
         {
             ValidaCampos.Deleta = true;
-        }
-
-        private void FormTabelaFinanceiros_Load(object sender, EventArgs e)
-        {
-            dgv_TabelaFinanceiros.DataSource = GerenciaBanco.carregaDados("Financeiro", "Id_Financeiro as 'Código do financeiro', Id_Funcionario as 'Código do funcionário', " +
-            "Banco, Agencia, Conta, Data as 'Data para depósito'").Tables[0];
         }
 
         private void btn_FiltrarNome_Click(object sender, EventArgs e)
