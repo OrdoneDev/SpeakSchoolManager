@@ -15,6 +15,7 @@ namespace CadastroFuncionario
     /// Instituição de ensino: IFSP-CJO
     /// Data: 02/06/2016
     /// Descrição: Software gerenciador de escolas
+    /// Versão: 1.0
     /// </summary>
 
     public partial class FormPrincipal : Form
