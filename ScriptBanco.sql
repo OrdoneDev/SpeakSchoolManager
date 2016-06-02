@@ -602,7 +602,7 @@ CREATE VIEW AllMensalidades AS
 	N.Parcelas					as 'Número total de parcelas',
 	case when M.Situacao = 1	then 'Pago' else 'A receber' end 'Situação total',
 	A.Nome,
-	M.Data						as 'Valor da parcela'
+	M.Valor						as 'Valor da parcela'
 	from SysProtected.Mensalidades M INNER JOIN SysProtected.Negociacao N	on M.Id_Negociacao = 
 	N.Id_Negociacao INNER JOIN SysProtected.Alunos A on N.Id_Aluno = A.Id_Aluno
 GO

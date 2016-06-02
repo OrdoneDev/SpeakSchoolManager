@@ -25,7 +25,6 @@ namespace CadastroFuncionario
         {
             // TODO: This line of code loads data into the 'dB_EscolaDataSet.InscricoesTurmas' table. You can move, or remove it, as needed.
             this.inscricoesTurmasTableAdapter.Fill(this.dB_EscolaDataSet.InscricoesTurmas);
-
         }
 
         private void dgv_Alunos_DataError(object sender, DataGridViewDataErrorEventArgs e)
