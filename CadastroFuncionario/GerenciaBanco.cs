@@ -11,6 +11,14 @@ using System.Windows.Forms;
 
 namespace CadastroFuncionario
 {
+    /// <summary>
+    /// Autor: David Christian Dias Ordone 
+    /// Instituição de ensino: IFSP-CJO
+    /// Data: 02/06/2016
+    /// Descrição: Software gerenciador de escolas
+    /// Versão: 1.0
+    /// </summary>
+
     class GerenciaBanco
     {
         static DataSet ds;
