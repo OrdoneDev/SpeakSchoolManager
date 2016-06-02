@@ -12,6 +12,7 @@ namespace CadastroFuncionario
 {
     /// <summary>
     /// Autor: David Christian Dias Ordone 
+    /// Email: david9108@hotmail.com
     /// Instituição de ensino: IFSP-CJO
     /// Data: 02/06/2016
     /// Descrição: Software gerenciador de escolas
