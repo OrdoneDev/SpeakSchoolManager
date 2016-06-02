@@ -158,7 +158,7 @@
             this.alunosToolStripMenuItem2,
             this.reponsavelToolStripMenuItem});
             this.cadastrarToolStripMenuItem1.Name = "cadastrarToolStripMenuItem1";
-            this.cadastrarToolStripMenuItem1.Size = new System.Drawing.Size(124, 22);
+            this.cadastrarToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.cadastrarToolStripMenuItem1.Tag = "2";
             this.cadastrarToolStripMenuItem1.Text = "Cadastrar";
             // 
@@ -184,7 +184,7 @@
             this.alunoToolStripMenuItem,
             this.históricosRegistradosToolStripMenuItem1});
             this.historicoToolStripMenuItem1.Name = "historicoToolStripMenuItem1";
-            this.historicoToolStripMenuItem1.Size = new System.Drawing.Size(124, 22);
+            this.historicoToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.historicoToolStripMenuItem1.Text = "Histórico";
             // 
             // alunoToolStripMenuItem
@@ -302,7 +302,7 @@
             this.registrarPagamentoFuncionarioToolStripMenuItem.Name = "registrarPagamentoFuncionarioToolStripMenuItem";
             this.registrarPagamentoFuncionarioToolStripMenuItem.Size = new System.Drawing.Size(273, 22);
             this.registrarPagamentoFuncionarioToolStripMenuItem.Tag = "1";
-            this.registrarPagamentoFuncionarioToolStripMenuItem.Text = "Registrar pagamento de funcionario...";
+            this.registrarPagamentoFuncionarioToolStripMenuItem.Text = "Registrar pagamento de funcionário...";
             this.registrarPagamentoFuncionarioToolStripMenuItem.Click += new System.EventHandler(this.registrarPagamentoFuncionarioToolStripMenuItem_Click);
             // 
             // alterarToolStripMenuItem
