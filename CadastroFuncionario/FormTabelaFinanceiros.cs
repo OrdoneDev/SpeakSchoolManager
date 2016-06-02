@@ -17,6 +17,19 @@ namespace CadastroFuncionario
             InitializeComponent();
         }
 
+        private void FormTabelaFinanceiros_Load(object sender, EventArgs e)
+        {
+            dgv_TabelaFinanceiros.DataSource = GerenciaBanco.carregaDados("Financeiro", "Id_Financeiro as 'Código do financeiro', Id_Funcionario as 'Código do funcionário', " +
+            "Banco, Agencia, Conta, Data as 'Data para depósito'").Tables[0];
+        }
+
+        private void dgv_TabelaFinanceiros_DataError(object sender, DataGridViewDataErrorEventArgs e)
+        {
+            e.Cancel = true;
+            dgv_TabelaFinanceiros.RefreshEdit();
+            MessageBox.Show("O valor fornecido a esta celula está invalido!");
+        }
+
         private void cmb_Nome_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
             ValidaCampos.GetLista(cmb_Nome, "TOP 5 Nome", "Nome", e, "SysProtected.Funcionarios");
@@ -25,12 +38,6 @@ namespace CadastroFuncionario
         private void cmb_Nome_SelectedValueChanged(object sender, EventArgs e)
         {
             ValidaCampos.Deleta = true;
-        }
-
-        private void FormTabelaFinanceiros_Load(object sender, EventArgs e)
-        {
-            // TODO: This line of code loads data into the 'escola_PrincipalDataSet4.FinanceiroFuncionarioFiltro' table. You can move, or remove it, as needed.
-            this.financeiroFuncionarioFiltroTableAdapter.Fill(this.escola_PrincipalDataSet4.FinanceiroFuncionarioFiltro);
         }
 
         private void btn_FiltrarNome_Click(object sender, EventArgs e)
@@ -44,12 +51,27 @@ namespace CadastroFuncionario
 
             cmb_Nome.BackColor = System.Drawing.Color.White;
 
-            dgv_TabelaFinanceiros.DataSource = GerenciaBanco.getFiltro(cmb_Nome.Text, "Nome", "FinanceiroFuncionarioFiltro");
+            if (GerenciaBanco.getFiltro(cmb_Nome.Text, "Nome", "FinanceiroFuncionarioFiltro", "Id_Financeiro") != 0)
+            {
+                dgv_TabelaFinanceiros.Rows[GerenciaBanco.getFiltro(cmb_Nome.Text, "Nome", "FinanceiroFuncionarioFiltro", "Id_Financeiro") - 1].Selected = true;
+            }
         }
 
-        private void btn_MostrarTodos_Click(object sender, EventArgs e)
+        private void btn_SalvarAlteracoes_Click(object sender, EventArgs e)
         {
-            dgv_TabelaFinanceiros.DataSource = GerenciaBanco.getFiltro("0", "0", "FinanceiroFuncionarioFiltro");            
+            if (MessageBox.Show("Deseja salvar as alterações?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                GerenciaBanco.updateDados("Financeiro", "Id_Financeiro as 'Código do financeiro', Id_Funcionario as 'Código do funcionário', " +
+                "Banco, Agencia, Conta, Data as 'Data para depósito'");
+            }
+
+            dgv_TabelaFinanceiros.DataSource = GerenciaBanco.carregaDados("Financeiro", "Id_Financeiro as 'Código do financeiro', Id_Funcionario as 'Código do funcionário', " +
+            "Banco, Agencia, Conta, Data as 'Data para depósito'").Tables[0];
+        }
+
+        private void btn_Cancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

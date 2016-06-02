@@ -124,8 +124,9 @@ namespace CadastroFuncionario
         {
             FormCadastroFinanceiroFuncionario form = new FormCadastroFinanceiroFuncionario();
             DateTime dataNascimento;
+            Image foto = null;
             int Id_Endereco = 0;
-
+           
             if (!VerificaCamposCadastroFuncionario())
                 return;
 
@@ -162,9 +163,12 @@ namespace CadastroFuncionario
 
             dataNascimento = dte_DataNascimentoFuncionario.Value.Date;
 
+            if (pic_Funcionario.Image != null)
+                foto = pic_Funcionario.Image;
+
             if (GerenciaBanco.CadastrarFuncionario(Id_Endereco, txt_NomeFuncionario.Text, dataNascimento,
                 char.Parse(cmb_SexoFuncionario.Text), cmb_EstadoCivilFuncionario.Text, msk_RgFuncionario.Text,
-                msk_CpfFuncionario.Text, txt_EmailFuncionario.Text, txt_FotoFuncionario.Text, msk_DddFuncionario.Text,
+                msk_CpfFuncionario.Text, txt_EmailFuncionario.Text, foto, msk_DddFuncionario.Text,
                 msk_TelefoneFuncionario.Text, short.Parse(msk_FilhosFuncionario.Text), cmb_GrauEscolaridadeFuncionario.Text,
                 cmb_CargoFuncionario.Text, float.Parse(msk_SalarioFuncionario.Text), txt_ComplementoFuncionario.Text,
                 msk_NumeroFuncionario.Text))

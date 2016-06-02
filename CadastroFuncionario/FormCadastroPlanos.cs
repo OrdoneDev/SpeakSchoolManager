@@ -48,24 +48,27 @@ namespace CadastroFuncionario
             if (!VerificaCamposCadastroPlano())
                 return;
 
-            Id_Idioma = GerenciaBanco.getId_Idioma(cmb_NomeIdioma.Text, txb_DescricaoIdioma.Text);
-
-            if (Id_Idioma == 0)
-                Id_Idioma = GerenciaBanco.CadastrarIdioma(Id_Idioma, cmb_NomeIdioma.Text, txb_DescricaoIdioma.Text);
-
-            if (!GerenciaBanco.VerificaPlano(Id_Idioma, cmb_NomePlano.Text))
+            if (MessageBox.Show("Deseja efetuar o cadastro?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                MessageBox.Show("Houve uma duplicação de planos!");
-                return;
-            }
+                Id_Idioma = GerenciaBanco.getId_Idioma(cmb_NomeIdioma.Text, txb_DescricaoIdioma.Text);
 
-            if (GerenciaBanco.CadastrarPlano(Id_Idioma, cmb_NomePlano.Text, msk_NumeroAulas.Text, msk_ValorPlano.Text))
-            {
-                MessageBox.Show("Plano cadastrado com sucesso!");
-            }
-            else
-            {
-                MessageBox.Show("Houve um erro no ato de cadastrar o plano!");
+                if (Id_Idioma == 0)
+                    Id_Idioma = GerenciaBanco.CadastrarIdioma(Id_Idioma, cmb_NomeIdioma.Text, txb_DescricaoIdioma.Text);
+
+                if (!GerenciaBanco.VerificaPlano(Id_Idioma, cmb_NomePlano.Text))
+                {
+                    MessageBox.Show("Houve uma duplicação de planos!");
+                    return;
+                }
+
+                if (GerenciaBanco.CadastrarPlano(Id_Idioma, cmb_NomePlano.Text, msk_NumeroAulas.Text, msk_ValorPlano.Text))
+                {
+                    MessageBox.Show("Plano cadastrado com sucesso!");
+                }
+                else
+                {
+                    MessageBox.Show("Houve um erro no ato de cadastrar o plano!");
+                }
             }
         }
 

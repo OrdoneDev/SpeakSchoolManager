@@ -19,8 +19,17 @@ namespace CadastroFuncionario
 
         private void FormTabelaMensalidades_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'escola_PrincipalDataSet1.Mensalidades' table. You can move, or remove it, as needed.
-            this.mensalidadesTableAdapter.Fill(this.escola_PrincipalDataSet1.Mensalidades);
+            dgv_TabelaMensalidades.DataSource = GerenciaBanco.carregaDados("Mensalidades", "Id_Mensalidade as 'Código da mensalidade', Id_Financeiro as 'Código do financeiro', " +
+            "Id_Negociacao as 'Código da negociação', Numero_Parcela as 'Nº da parcela', Situacao, Data as 'Data depósito', Valor as 'Valor da parcela'").Tables[0];
+
+            dgv_TabelaMensalidades.Columns[6].DefaultCellStyle.Format = "C2";
+        }
+
+        private void dgv_TabelaMensalidades_DataError(object sender, DataGridViewDataErrorEventArgs e)
+        {
+            e.Cancel = true;
+            dgv_TabelaMensalidades.RefreshEdit();
+            MessageBox.Show("O valor fornecido a esta celula está invalido!");
         }
 
         private void cmb_NomeAluno_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
@@ -54,7 +63,10 @@ namespace CadastroFuncionario
 
             cmb_NomeAluno.BackColor = System.Drawing.Color.White;
 
-            dgv_TabelaMensalidades.DataSource = GerenciaBanco.getFiltro(cmb_NomeAluno.Text, "Nome", "MensalidadesAlunosFiltro");
+            if (GerenciaBanco.getFiltro(cmb_NomeAluno.Text, "Nome", "MensalidadesAlunosFiltro", "Id_Mensalidade") != 0)
+            {
+                dgv_TabelaMensalidades.Rows[GerenciaBanco.getFiltro(cmb_NomeAluno.Text, "Nome", "MensalidadesAlunosFiltro", "Id_Mensalidade") - 1].Selected = true;
+            }
         }
 
         private void btn_FiltrarFuncionario_Click(object sender, EventArgs e)
@@ -68,12 +80,27 @@ namespace CadastroFuncionario
 
             cmb_NomeFuncionario.BackColor = System.Drawing.Color.White;
 
-            dgv_TabelaMensalidades.DataSource = GerenciaBanco.getFiltro(cmb_NomeFuncionario.Text, "Nome", "MensalidadesFuncionariosFiltro");
+            if (GerenciaBanco.getFiltro(cmb_NomeFuncionario.Text, "Nome", "MensalidadesFuncionariosFiltro", "Id_Mensalidade") != 0)
+            {
+                dgv_TabelaMensalidades.Rows[GerenciaBanco.getFiltro(cmb_NomeFuncionario.Text, "Nome", "MensalidadesFuncionariosFiltro", "Id_Mensalidade") - 1].Selected = true;
+            }
         }
 
-        private void btn_MostrarTodos_Click(object sender, EventArgs e)
+        private void btn_SalvarAlteracoes_Click(object sender, EventArgs e)
         {
-            dgv_TabelaMensalidades.DataSource = GerenciaBanco.getFiltro("0", "0", "SysProtected.Mensalidades");
+            if (MessageBox.Show("Deseja salvar as alterações?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                GerenciaBanco.updateDados("Mensalidades", "Id_Mensalidade as 'Código da mensalidade', Id_Financeiro as 'Código do financeiro', " +
+            "Id_Negociacao as 'Código da negociação', Numero_Parcela as 'Nº da parcela', Situacao, Data as 'Data depósito', Valor as 'Valor da parcela'");
+            }
+
+            dgv_TabelaMensalidades.DataSource = GerenciaBanco.carregaDados("Mensalidades", "Id_Mensalidade as 'Código da mensalidade', Id_Financeiro as 'Código do financeiro', " +
+            "Id_Negociacao as 'Código da negociação', Numero_Parcela as 'Nº da parcela', Situacao, Data as 'Data depósito', Valor as 'Valor da parcela'").Tables[0];
+        }
+
+        private void btn_Cancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

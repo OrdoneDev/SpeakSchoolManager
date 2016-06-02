@@ -19,8 +19,29 @@ namespace CadastroFuncionario
 
         private void FormTabelaIdiomas_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dB_EscolaDataSet11.Idiomas' table. You can move, or remove it, as needed.
-            this.idiomasTableAdapter1.Fill(this.dB_EscolaDataSet11.Idiomas);
+            dgv_TabelaIdiomas.DataSource = GerenciaBanco.carregaDados("Idiomas", "Id_Idioma as 'Código do idioma', Nome, Descricao").Tables[0];
+        }
+
+        private void dgv_TabelaIdiomas_DataError(object sender, DataGridViewDataErrorEventArgs e)
+        {
+            e.Cancel = true;
+            dgv_TabelaIdiomas.RefreshEdit();
+            MessageBox.Show("O valor fornecido a esta celula está invalido!");
+        }
+
+        private void btn_SalvarAlteracoes_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Deseja salvar as alterações?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                GerenciaBanco.updateDados("Idiomas", "Id_Idioma as 'Código do idioma', Nome, Descricao");
+            }
+
+            dgv_TabelaIdiomas.DataSource = GerenciaBanco.carregaDados("Idiomas", "Id_Idioma as 'Código do idioma', Nome, Descricao").Tables[0];
+        }
+
+        private void btn_Cancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -22,8 +23,25 @@ namespace CadastroFuncionario
 
         private void FormTabelaAlunos_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dB_EscolaDataSet10.Alunos' table. You can move, or remove it, as needed.
-            this.alunosTableAdapter.Fill(this.dB_EscolaDataSet10.Alunos);
+            dgv_Alunos.DataSource = GerenciaBanco.carregaDados("Alunos", "Id_Aluno as 'Código do aluno', Id_Responsavel as 'Código do responsável', " +
+            "Id_Endereco as 'Código do endereço', Nome, DataNascimento as 'Data de nascimento', Sexo, Estado_Civil as 'Estado civil', " +
+            "RG, CPF, Status_Aluno as 'Status', Email, Foto, DDD, Telefone, Historico_Escolar as 'Histórico escolar', Complemento, Numero as 'Nº'").Tables[0];
+
+            foreach (DataGridViewColumn column in dgv_Alunos.Columns)
+            {
+                if (column is DataGridViewImageColumn)
+                {
+                    (column as DataGridViewImageColumn).ImageLayout = DataGridViewImageCellLayout.Zoom;
+                    (column as DataGridViewImageColumn).Description = "Zoomed";
+                }
+            }
+        }
+
+        private void dgv_Alunos_DataError(object sender, DataGridViewDataErrorEventArgs e)
+        {
+            e.Cancel = true;
+            dgv_Alunos.RefreshEdit();
+            MessageBox.Show("O valor fornecido a esta celula está invalido!");
         }
 
         private void dgv_Alunos_CellMouseEnter(object sender, DataGridViewCellEventArgs e)
@@ -62,7 +80,10 @@ namespace CadastroFuncionario
 
             msk_Id.BackColor = System.Drawing.Color.White;
 
-            dgv_Alunos.DataSource = GerenciaBanco.getFiltro(msk_Id.Text, "Id_Aluno", "SysProtected.Alunos");
+            if (GerenciaBanco.getFiltro(msk_Id.Text, "Id_Aluno", "SysProtected.Alunos", "Id_Aluno") != 0)
+            {
+                dgv_Alunos.Rows[GerenciaBanco.getFiltro(msk_Id.Text, "Id_Aluno", "SysProtected.Alunos", "Id_Aluno") - 1].Selected = true;
+            }
         }
 
         private void btn_FiltrarNome_Click(object sender, EventArgs e)
@@ -76,12 +97,29 @@ namespace CadastroFuncionario
 
             cmb_Nome.BackColor = System.Drawing.Color.White;
 
-            dgv_Alunos.DataSource = GerenciaBanco.getFiltro(cmb_Nome.Text, "Nome", "SysProtected.Alunos");
+            if (GerenciaBanco.getFiltro(cmb_Nome.Text, "Nome", "SysProtected.Alunos", "Id_Aluno") != 0)
+            {
+                dgv_Alunos.Rows[GerenciaBanco.getFiltro(cmb_Nome.Text, "Nome", "SysProtected.Alunos", "Id_Aluno") - 1].Selected = true;
+            }
         }
 
-        private void btn_MostrarTodos_Click(object sender, EventArgs e)
+        private void btn_SalvarAlteracoes_Click(object sender, EventArgs e)
         {
-            dgv_Alunos.DataSource = GerenciaBanco.getFiltro("0", "0", "SysProtected.Alunos");
+            if (MessageBox.Show("Deseja salvar as alterações?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                GerenciaBanco.updateDados("Alunos", "Id_Aluno as 'Código do aluno', Id_Responsavel as 'Código do responsável', " +
+                "Id_Endereco as 'Código do endereço', Nome, DataNascimento as 'Data de nascimento', Sexo, Estado_Civil as 'Estado civil', " +
+                "RG, CPF, Status_Aluno as 'Status', Email, Foto, DDD, Telefone, Historico_Escolar as 'Histórico escolar', Complemento, Numero as 'Nº'");
+            }
+
+            dgv_Alunos.DataSource = GerenciaBanco.carregaDados("Alunos", "Id_Aluno as 'Código do aluno', Id_Responsavel as 'Código do responsável', " +
+            "Id_Endereco as 'Código do endereço', Nome, DataNascimento as 'Data de nascimento', Sexo, Estado_Civil as 'Estado civil', " +
+            "RG, CPF, Status_Aluno as 'Status', Email, Foto, DDD, Telefone, Historico_Escolar as 'Histórico escolar', Complemento, Numero as 'Nº'").Tables[0];
+        }
+
+        private void btn_Cancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

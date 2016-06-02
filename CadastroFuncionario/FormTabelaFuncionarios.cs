@@ -22,8 +22,28 @@ namespace CadastroFuncionario
 
         private void FormTabelaFuncionarios_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dB_EscolaDataSet6.Funcionarios' table. You can move, or remove it, as needed.
-            this.funcionariosTableAdapter.Fill(this.dB_EscolaDataSet6.Funcionarios);
+            dgv_Funcionarios.DataSource = GerenciaBanco.carregaDados("Funcionarios", "Id_Funcionario as 'Código do funcionário', " +
+            "Id_Endereco as 'Código do endereço', Nome, DataNascimento as 'Data de nascimento', Sexo, Estado_Civil as 'Estado Civil', " +
+            "RG, CPF, Status_Funcionario as 'Status', Email, Foto, DDD, Telefone, Quantidade_Filhos as 'Nº de filhos', " +
+            "Historico_Escolar as 'Histórico escolar', Cargo, Salario as 'Salário', Complemento, Numero as 'Nº'").Tables[0];
+
+            foreach (DataGridViewColumn column in dgv_Funcionarios.Columns)
+            {
+                if (column is DataGridViewImageColumn)
+                {
+                    (column as DataGridViewImageColumn).ImageLayout = DataGridViewImageCellLayout.Zoom;
+                    (column as DataGridViewImageColumn).Description = "Zoomed";
+                }
+            }
+
+            dgv_Funcionarios.Columns[16].DefaultCellStyle.Format = "C2";
+        }
+
+        private void dgv_Funcionarios_DataError(object sender, DataGridViewDataErrorEventArgs e)
+        {
+            e.Cancel = true;
+            dgv_Funcionarios.RefreshEdit();
+            MessageBox.Show("O valor fornecido a esta celula está invalido!");
         }
 
         private void dgv_Funcionarios_CellMouseEnter(object sender, DataGridViewCellEventArgs e)
@@ -63,7 +83,10 @@ namespace CadastroFuncionario
 
             msk_Id.BackColor = System.Drawing.Color.White;
 
-            dgv_Funcionarios.DataSource = GerenciaBanco.getFiltro(msk_Id.Text, "Id_Funcionario", "SysProtected.Funcionarios");
+            if (GerenciaBanco.getFiltro(msk_Id.Text, "Id_Funcionario", "SysProtected.Funcionarios", "Id_Funcionario") != 0)
+            {
+                dgv_Funcionarios.Rows[GerenciaBanco.getFiltro(msk_Id.Text, "Id_Funcionario", "SysProtected.Funcionarios", "Id_Funcionario") - 1].Selected = true;
+            }
         }
 
         private void btn_FiltrarNome_Click(object sender, EventArgs e)
@@ -77,7 +100,10 @@ namespace CadastroFuncionario
 
             cmb_Nome.BackColor = System.Drawing.Color.White;
 
-            dgv_Funcionarios.DataSource = GerenciaBanco.getFiltro(cmb_Nome.Text, "Nome", "SysProtected.Funcionarios");
+            if (GerenciaBanco.getFiltro(cmb_Nome.Text, "Nome", "SysProtected.Funcionarios", "Id_Funcionario") != 0)
+            {
+                dgv_Funcionarios.Rows[GerenciaBanco.getFiltro(cmb_Nome.Text, "Nome", "SysProtected.Funcionarios", "Id_Funcionario") - 1].Selected = true;
+            }
         }
 
         private void btn_FiltrarCPF_Click(object sender, EventArgs e)
@@ -91,7 +117,10 @@ namespace CadastroFuncionario
 
             msk_CPF.BackColor = System.Drawing.Color.White;
 
-            dgv_Funcionarios.DataSource = GerenciaBanco.getFiltro(msk_CPF.Text, "CPF", "SysProtected.Funcionarios");
+            if (GerenciaBanco.getFiltro(msk_CPF.Text, "CPF", "SysProtected.Funcionarios", "Id_Funcionario") != 0)
+            {
+                dgv_Funcionarios.Rows[GerenciaBanco.getFiltro(msk_CPF.Text, "CPF", "SysProtected.Funcionarios", "Id_Funcionario") - 1].Selected = true;
+            }
         }
 
         private void btn_FIltrarCargo_Click(object sender, EventArgs e)
@@ -102,14 +131,33 @@ namespace CadastroFuncionario
                 return;
             }
 
-            msk_CPF.BackColor = System.Drawing.Color.White;
+            cmb_Cargo.BackColor = System.Drawing.Color.White;
 
-            dgv_Funcionarios.DataSource = GerenciaBanco.getFiltro(cmb_Cargo.Text, "Cargo", "SysProtected.Funcionarios");
+            if (GerenciaBanco.getFiltro(cmb_Cargo.Text, "Cargo", "SysProtected.Funcionarios", "Id_Funcionario") != 0)
+            {
+                dgv_Funcionarios.Rows[GerenciaBanco.getFiltro(cmb_Cargo.Text, "Cargo", "SysProtected.Funcionarios", "Id_Funcionario") - 1].Selected = true;
+            }
         }
 
-        private void btn_MostrarTodos_Click(object sender, EventArgs e)
+        private void btn_SalvarAlteracoes_Click(object sender, EventArgs e)
         {
-            dgv_Funcionarios.DataSource = GerenciaBanco.getFiltro("0", "0", "SysProtected.Funcionarios");
+            if (MessageBox.Show("Deseja salvar as alterações?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                GerenciaBanco.updateDados("Funcionarios", "Id_Funcionario as 'Código do funcionário', Id_Endereco as 'Código do endereço', " +
+                "Nome, DataNascimento as 'Data de nascimento', Sexo, Estado_Civil as 'Estado Civil', " +
+                "RG, CPF, Status_Funcionario as 'Status', Email, Foto, DDD, Telefone, Quantidade_Filhos as 'Nº de filhos', " +
+                "Historico_Escolar as 'Histórico escolar', Cargo, Salario as 'Salário', Complemento, Numero as 'Nº'");
+            }
+
+            dgv_Funcionarios.DataSource = GerenciaBanco.carregaDados("Funcionarios", "Id_Funcionario as 'Código do funcionário', " +
+            "Id_Endereco as 'Código do endereço', Nome, DataNascimento as 'Data de nascimento', Sexo, Estado_Civil as 'Estado Civil', " +
+            "RG, CPF, Status_Funcionario as 'Status', Email, Foto, DDD, Telefone, Quantidade_Filhos as 'Nº de filhos', " +
+            "Historico_Escolar as 'Histórico escolar', Cargo, Salario as 'Salário', Complemento, Numero as 'Nº'").Tables[0];
+        }
+
+        private void btn_Cancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

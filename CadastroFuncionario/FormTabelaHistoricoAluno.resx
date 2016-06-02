@@ -117,88 +117,71 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btn_FiltrarProfessor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>629, 22</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btn_SalvarAlteracoes.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="btn_FiltrarProfessor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 23</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btn_SalvarAlteracoes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>562, 385</value>
+  </data>
+  <data name="btn_SalvarAlteracoes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 23</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btn_FiltrarProfessor.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="btn_SalvarAlteracoes.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
-  <data name="btn_FiltrarProfessor.Text" xml:space="preserve">
-    <value>Filtrar por professor</value>
+  <data name="btn_SalvarAlteracoes.Text" xml:space="preserve">
+    <value>Salvar alterações</value>
   </data>
-  <data name="&gt;&gt;btn_FiltrarProfessor.Name" xml:space="preserve">
-    <value>btn_FiltrarProfessor</value>
+  <data name="&gt;&gt;btn_SalvarAlteracoes.Name" xml:space="preserve">
+    <value>btn_SalvarAlteracoes</value>
   </data>
-  <data name="&gt;&gt;btn_FiltrarProfessor.Type" xml:space="preserve">
+  <data name="&gt;&gt;btn_SalvarAlteracoes.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btn_FiltrarProfessor.Parent" xml:space="preserve">
-    <value>group_TabelaListaPresenca</value>
+  <data name="&gt;&gt;btn_SalvarAlteracoes.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="&gt;&gt;btn_FiltrarProfessor.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btn_SalvarAlteracoes.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="cmb_NomeProfessor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>422, 23</value>
+  <data name="btn_Cancelar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="cmb_NomeProfessor.MaxLength" type="System.Int32, mscorlib">
-    <value>40</value>
+  <data name="btn_Cancelar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>674, 385</value>
   </data>
-  <data name="cmb_NomeProfessor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 21</value>
+  <data name="btn_Cancelar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
   </data>
-  <data name="cmb_NomeProfessor.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="btn_Cancelar.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
-  <data name="&gt;&gt;cmb_NomeProfessor.Name" xml:space="preserve">
-    <value>cmb_NomeProfessor</value>
+  <data name="btn_Cancelar.Text" xml:space="preserve">
+    <value>Cancelar</value>
   </data>
-  <data name="&gt;&gt;cmb_NomeProfessor.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;btn_Cancelar.Name" xml:space="preserve">
+    <value>btn_Cancelar</value>
   </data>
-  <data name="&gt;&gt;cmb_NomeProfessor.Parent" xml:space="preserve">
-    <value>group_TabelaListaPresenca</value>
+  <data name="&gt;&gt;btn_Cancelar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;cmb_NomeProfessor.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btn_Cancelar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="lbl_NomeProfessor.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lbl_NomeProfessor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>365, 26</value>
-  </data>
-  <data name="lbl_NomeProfessor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 13</value>
-  </data>
-  <data name="lbl_NomeProfessor.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="lbl_NomeProfessor.Text" xml:space="preserve">
-    <value>Professor:</value>
-  </data>
-  <data name="&gt;&gt;lbl_NomeProfessor.Name" xml:space="preserve">
-    <value>lbl_NomeProfessor</value>
-  </data>
-  <data name="&gt;&gt;lbl_NomeProfessor.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbl_NomeProfessor.Parent" xml:space="preserve">
-    <value>group_TabelaListaPresenca</value>
-  </data>
-  <data name="&gt;&gt;lbl_NomeProfessor.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="btn_FiltrarAluno.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="btn_FiltrarAluno.Location" type="System.Drawing.Point, System.Drawing">
-    <value>254, 22</value>
+    <value>259, 15</value>
   </data>
   <data name="btn_FiltrarAluno.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 23</value>
+    <value>123, 23</value>
   </data>
   <data name="btn_FiltrarAluno.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -213,19 +196,19 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btn_FiltrarAluno.Parent" xml:space="preserve">
-    <value>group_TabelaListaPresenca</value>
+    <value>group_TabelaHistoricoAluno</value>
   </data>
   <data name="&gt;&gt;btn_FiltrarAluno.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>0</value>
   </data>
   <data name="cmb_NomeAluno.Location" type="System.Drawing.Point, System.Drawing">
-    <value>47, 23</value>
+    <value>49, 16</value>
   </data>
   <data name="cmb_NomeAluno.MaxLength" type="System.Int32, mscorlib">
     <value>40</value>
   </data>
   <data name="cmb_NomeAluno.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 21</value>
+    <value>204, 21</value>
   </data>
   <data name="cmb_NomeAluno.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -237,16 +220,19 @@
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;cmb_NomeAluno.Parent" xml:space="preserve">
-    <value>group_TabelaListaPresenca</value>
+    <value>group_TabelaHistoricoAluno</value>
   </data>
   <data name="&gt;&gt;cmb_NomeAluno.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>1</value>
   </data>
   <data name="lbl_NomeAluno.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="lbl_NomeAluno.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="lbl_NomeAluno.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 26</value>
+    <value>6, 19</value>
   </data>
   <data name="lbl_NomeAluno.Size" type="System.Drawing.Size, System.Drawing">
     <value>37, 13</value>
@@ -264,103 +250,55 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lbl_NomeAluno.Parent" xml:space="preserve">
-    <value>group_TabelaListaPresenca</value>
+    <value>group_TabelaHistoricoAluno</value>
   </data>
   <data name="&gt;&gt;lbl_NomeAluno.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>2</value>
   </data>
-  <data name="dgv_TabelaListaPresenca.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 55</value>
+  <data name="dgv_TabelaHistoricoAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 45</value>
   </data>
-  <data name="dgv_TabelaListaPresenca.Size" type="System.Drawing.Size, System.Drawing">
-    <value>850, 235</value>
+  <data name="dgv_TabelaHistoricoAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>724, 316</value>
   </data>
-  <data name="dgv_TabelaListaPresenca.TabIndex" type="System.Int32, mscorlib">
+  <data name="dgv_TabelaHistoricoAluno.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;dgv_TabelaListaPresenca.Name" xml:space="preserve">
-    <value>dgv_TabelaListaPresenca</value>
+  <data name="&gt;&gt;dgv_TabelaHistoricoAluno.Name" xml:space="preserve">
+    <value>dgv_TabelaHistoricoAluno</value>
   </data>
-  <data name="&gt;&gt;dgv_TabelaListaPresenca.Type" xml:space="preserve">
+  <data name="&gt;&gt;dgv_TabelaHistoricoAluno.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;dgv_TabelaListaPresenca.Parent" xml:space="preserve">
-    <value>group_TabelaListaPresenca</value>
+  <data name="&gt;&gt;dgv_TabelaHistoricoAluno.Parent" xml:space="preserve">
+    <value>group_TabelaHistoricoAluno</value>
   </data>
-  <data name="&gt;&gt;dgv_TabelaListaPresenca.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="&gt;&gt;dgv_TabelaHistoricoAluno.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
-  <data name="group_TabelaListaPresenca.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="group_TabelaHistoricoAluno.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 12</value>
   </data>
-  <data name="group_TabelaListaPresenca.Size" type="System.Drawing.Size, System.Drawing">
-    <value>863, 296</value>
+  <data name="group_TabelaHistoricoAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>737, 367</value>
   </data>
-  <data name="group_TabelaListaPresenca.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="group_TabelaHistoricoAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
-  <data name="group_TabelaListaPresenca.Text" xml:space="preserve">
-    <value>Lista de presença</value>
+  <data name="group_TabelaHistoricoAluno.Text" xml:space="preserve">
+    <value>Histórico do aluno</value>
   </data>
-  <data name="&gt;&gt;group_TabelaListaPresenca.Name" xml:space="preserve">
-    <value>group_TabelaListaPresenca</value>
+  <data name="&gt;&gt;group_TabelaHistoricoAluno.Name" xml:space="preserve">
+    <value>group_TabelaHistoricoAluno</value>
   </data>
-  <data name="&gt;&gt;group_TabelaListaPresenca.Type" xml:space="preserve">
+  <data name="&gt;&gt;group_TabelaHistoricoAluno.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;group_TabelaListaPresenca.Parent" xml:space="preserve">
+  <data name="&gt;&gt;group_TabelaHistoricoAluno.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;group_TabelaListaPresenca.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;group_TabelaHistoricoAluno.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="btn_Cancelar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>800, 314</value>
-  </data>
-  <data name="btn_Cancelar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="btn_Cancelar.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="btn_Cancelar.Text" xml:space="preserve">
-    <value>Cancelar</value>
-  </data>
-  <data name="&gt;&gt;btn_Cancelar.Name" xml:space="preserve">
-    <value>btn_Cancelar</value>
-  </data>
-  <data name="&gt;&gt;btn_Cancelar.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_Cancelar.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btn_Cancelar.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="btn_SalvarAlteracoes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>681, 314</value>
-  </data>
-  <data name="btn_SalvarAlteracoes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 23</value>
-  </data>
-  <data name="btn_SalvarAlteracoes.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="btn_SalvarAlteracoes.Text" xml:space="preserve">
-    <value>Salvar alterações</value>
-  </data>
-  <data name="&gt;&gt;btn_SalvarAlteracoes.Name" xml:space="preserve">
-    <value>btn_SalvarAlteracoes</value>
-  </data>
-  <data name="&gt;&gt;btn_SalvarAlteracoes.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_SalvarAlteracoes.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btn_SalvarAlteracoes.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -369,13 +307,13 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>887, 345</value>
+    <value>763, 418</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Tabela de lista de presença</value>
+    <value>Tabela histórico do aluno</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>FormTabelaListaPresenca</value>
+    <value>FormTabelaHistoricoAluno</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

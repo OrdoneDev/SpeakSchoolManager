@@ -13,6 +13,7 @@ namespace CadastroFuncionario
     public partial class FormRegistraPagamentoFuncionario : Form
     {
         public int Id_Financeiro = 0;
+        float Salario;
 
         public FormRegistraPagamentoFuncionario()
         {
@@ -37,6 +38,7 @@ namespace CadastroFuncionario
                 {
                     cmb_NomeFuncionario.Text = InformacoesFuncionario[0];
                     lbl_SalarioFuncionario.Text = "Salario: " + InformacoesFuncionario[1];
+                    Salario = float.Parse(InformacoesFuncionario[1]);
                     Id_Financeiro = int.Parse(InformacoesFuncionario[2]);
                 }
             }
@@ -44,6 +46,7 @@ namespace CadastroFuncionario
             {
                 cmb_NomeFuncionario.Text = "";
                 lbl_SalarioFuncionario.Text = "";
+                Salario = 0;
                 Id_Financeiro = 0;
             }
         }
@@ -65,16 +68,18 @@ namespace CadastroFuncionario
             DateTime Data;
             if (!VerificaCamposPagamentoFuncionario())
                 return;
-
-            Data = dtp_DataPagamento.Value;
-
-            if (GerenciaBanco.CadastrarPagamentoFuncionario(Id_Financeiro, Data))
+            if (MessageBox.Show("Deseja registrar o pagamento?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                MessageBox.Show("Pagamento registrado com sucesso!");
-            }
-            else
-            {
-                MessageBox.Show("Não foi possível registrar o pagamento do funcionário!");
+                Data = dtp_DataPagamento.Value;
+
+                if (GerenciaBanco.CadastrarPagamentoFuncionario(Id_Financeiro, Data, Salario))
+                {
+                    MessageBox.Show("Pagamento registrado com sucesso!");
+                }
+                else
+                {
+                    MessageBox.Show("Não foi possível registrar o pagamento do funcionário!");
+                }
             }
         }
 

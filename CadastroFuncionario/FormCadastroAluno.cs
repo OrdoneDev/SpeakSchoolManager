@@ -155,61 +155,68 @@ namespace CadastroFuncionario
         private void btn_EfetuarCadastroAluno_Click(object sender, EventArgs e)
         {
             DateTime dataNascimento;
+            Image Foto = null;
             int Id_Endereco = 0;
             
             if (!VerificaCamposCadastroAluno())
                 return;
 
-            if (group_Responsavel.Visible == true)
-                if (!ValidaCampos.ValidaCamposGroup(group_Responsavel))
+            if (MessageBox.Show("Deseja efetuar o cadastro?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                if (group_Responsavel.Visible == true)
+                    if (!ValidaCampos.ValidaCamposGroup(group_Responsavel))
+                    {
+                        MessageBox.Show("É necessário vincular este aluno a um responsável devido a sua idade!");
+                        return;
+                    }
+
+                if (!ValidaCampos.ValidaCep(msk_CepAluno.Text))
                 {
-                    MessageBox.Show("É necessário vincular este aluno a um responsável devido a sua idade!");
+                    MessageBox.Show("CEP Invalido!");
                     return;
                 }
 
-            if (!ValidaCampos.ValidaCep(msk_CepAluno.Text))
-            {
-                MessageBox.Show("CEP Invalido!");
-                return;
-            }
+                dataNascimento = dte_DataNascimentoAluno.Value.Date;
 
-            dataNascimento = dte_DataNascimentoAluno.Value.Date;
-
-            if (!GerenciaBanco.VerificaAluno(txt_NomeAluno.Text, dataNascimento, cmb_GrauEscolaridadeAluno.Text, msk_NumeroAluno.Text))
-            {
-                MessageBox.Show("Houve uma duplicação nos dados do aluno!");
-                return;
-            }
-
-            Id_Endereco = GerenciaBanco.getId_Endereco(msk_CepAluno.Text, cmb_BairroAluno.Text, cmb_RuaAluno.Text, Id_Endereco);
-
-            if (Id_Endereco == 0)
-            {
-                Id_Endereco = GerenciaBanco.CadastrarEndereco(cmb_EstadoAluno.Text, cmb_CidadeAluno.Text,
-                msk_CepAluno.Text, cmb_BairroAluno.Text, cmb_RuaAluno.Text, Id_Endereco);
-            }
-
-            if (group_Responsavel.Visible == true)
-            {
-                string[] lista;
-                if (!ValidaCampos.ValidaCamposGroup(group_Responsavel))
+                if (!GerenciaBanco.VerificaAluno(txt_NomeAluno.Text, dataNascimento, cmb_GrauEscolaridadeAluno.Text, msk_NumeroAluno.Text))
+                {
+                    MessageBox.Show("Houve uma duplicação nos dados do aluno!");
                     return;
+                }
 
-                lista = GerenciaBanco.getId_Responsavel(msk_CpfResponsavelAluno.Text).ToArray();
-                Id_Responsavel = int.Parse(lista[0]);
-            }
+                Id_Endereco = GerenciaBanco.getId_Endereco(msk_CepAluno.Text, cmb_BairroAluno.Text, cmb_RuaAluno.Text, Id_Endereco);
 
-            if (GerenciaBanco.CadastrarAluno(Id_Responsavel, Id_Endereco, txt_NomeAluno.Text, dataNascimento,
-            char.Parse(cmb_SexoAluno.Text), cmb_EstadoAluno.Text, msk_RgAluno.Text, msk_CpfAluno.Text,
-            txt_EmailAluno.Text, txt_FotoAluno.Text, msk_DddAluno.Text, msk_TelefoneAluno.Text,
-            cmb_GrauEscolaridadeAluno.Text, txt_ComplementoAluno.Text, msk_NumeroAluno.Text))
-            {
-                MessageBox.Show("Usuario cadastrado com sucesso!");
-                Id_Responsavel = 0;
-            }
-            else
-            {
-                MessageBox.Show("Foi encontrado algum erro no ato de cadastrar usuario!");
+                if (Id_Endereco == 0)
+                {
+                    Id_Endereco = GerenciaBanco.CadastrarEndereco(cmb_EstadoAluno.Text, cmb_CidadeAluno.Text,
+                    msk_CepAluno.Text, cmb_BairroAluno.Text, cmb_RuaAluno.Text, Id_Endereco);
+                }
+
+                if (group_Responsavel.Visible == true)
+                {
+                    string[] lista;
+                    if (!ValidaCampos.ValidaCamposGroup(group_Responsavel))
+                        return;
+
+                    lista = GerenciaBanco.getId_Responsavel(msk_CpfResponsavelAluno.Text).ToArray();
+                    Id_Responsavel = int.Parse(lista[0]);
+                }
+
+                if (pic_Aluno.Image != null)
+                    Foto = pic_Aluno.Image;
+
+                if (GerenciaBanco.CadastrarAluno(Id_Responsavel, Id_Endereco, txt_NomeAluno.Text, dataNascimento,
+                char.Parse(cmb_SexoAluno.Text), cmb_EstadoAluno.Text, msk_RgAluno.Text, msk_CpfAluno.Text,
+                txt_EmailAluno.Text, Foto, msk_DddAluno.Text, msk_TelefoneAluno.Text,
+                cmb_GrauEscolaridadeAluno.Text, txt_ComplementoAluno.Text, msk_NumeroAluno.Text))
+                {
+                    MessageBox.Show("Usuario cadastrado com sucesso!");
+                    Id_Responsavel = 0;
+                }
+                else
+                {
+                    MessageBox.Show("Foi encontrado algum erro no ato de cadastrar usuario!");
+                }
             }
         }
 

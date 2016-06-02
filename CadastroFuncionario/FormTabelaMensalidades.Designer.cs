@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTabelaMensalidades));
             this.group_TabelaMensalidades = new System.Windows.Forms.GroupBox();
             this.btn_FiltrarFuncionario = new System.Windows.Forms.Button();
@@ -38,25 +37,14 @@
             this.cmb_NomeAluno = new System.Windows.Forms.ComboBox();
             this.lbl_NomeAluno = new System.Windows.Forms.Label();
             this.dgv_TabelaMensalidades = new System.Windows.Forms.DataGridView();
-            this.idMensalidadeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idFinanceiroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idNegociacaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.numeroParcelaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.situacaoDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.dataDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mensalidadesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.escola_PrincipalDataSet1 = new CadastroFuncionario.Escola_PrincipalDataSet1();
-            this.mensalidadesTableAdapter = new CadastroFuncionario.Escola_PrincipalDataSet1TableAdapters.MensalidadesTableAdapter();
-            this.btn_MostrarTodos = new System.Windows.Forms.Button();
+            this.btn_Cancelar = new System.Windows.Forms.Button();
+            this.btn_SalvarAlteracoes = new System.Windows.Forms.Button();
             this.group_TabelaMensalidades.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_TabelaMensalidades)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mensalidadesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.escola_PrincipalDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // group_TabelaMensalidades
             // 
-            this.group_TabelaMensalidades.Controls.Add(this.btn_MostrarTodos);
             this.group_TabelaMensalidades.Controls.Add(this.btn_FiltrarFuncionario);
             this.group_TabelaMensalidades.Controls.Add(this.cmb_NomeFuncionario);
             this.group_TabelaMensalidades.Controls.Add(this.lbl_NomeFuncionario);
@@ -111,82 +99,33 @@
             // dgv_TabelaMensalidades
             // 
             this.dgv_TabelaMensalidades.AllowUserToAddRows = false;
-            this.dgv_TabelaMensalidades.AutoGenerateColumns = false;
             this.dgv_TabelaMensalidades.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_TabelaMensalidades.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_TabelaMensalidades.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idMensalidadeDataGridViewTextBoxColumn,
-            this.idFinanceiroDataGridViewTextBoxColumn,
-            this.idNegociacaoDataGridViewTextBoxColumn,
-            this.numeroParcelaDataGridViewTextBoxColumn,
-            this.situacaoDataGridViewCheckBoxColumn,
-            this.dataDataGridViewTextBoxColumn});
-            this.dgv_TabelaMensalidades.DataSource = this.mensalidadesBindingSource;
             resources.ApplyResources(this.dgv_TabelaMensalidades, "dgv_TabelaMensalidades");
+            this.dgv_TabelaMensalidades.MultiSelect = false;
             this.dgv_TabelaMensalidades.Name = "dgv_TabelaMensalidades";
+            this.dgv_TabelaMensalidades.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dgv_TabelaMensalidades_DataError);
             // 
-            // idMensalidadeDataGridViewTextBoxColumn
+            // btn_Cancelar
             // 
-            this.idMensalidadeDataGridViewTextBoxColumn.DataPropertyName = "Id_Mensalidade";
-            resources.ApplyResources(this.idMensalidadeDataGridViewTextBoxColumn, "idMensalidadeDataGridViewTextBoxColumn");
-            this.idMensalidadeDataGridViewTextBoxColumn.Name = "idMensalidadeDataGridViewTextBoxColumn";
-            this.idMensalidadeDataGridViewTextBoxColumn.ReadOnly = true;
+            resources.ApplyResources(this.btn_Cancelar, "btn_Cancelar");
+            this.btn_Cancelar.Name = "btn_Cancelar";
+            this.btn_Cancelar.UseVisualStyleBackColor = true;
+            this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
             // 
-            // idFinanceiroDataGridViewTextBoxColumn
+            // btn_SalvarAlteracoes
             // 
-            this.idFinanceiroDataGridViewTextBoxColumn.DataPropertyName = "Id_Financeiro";
-            resources.ApplyResources(this.idFinanceiroDataGridViewTextBoxColumn, "idFinanceiroDataGridViewTextBoxColumn");
-            this.idFinanceiroDataGridViewTextBoxColumn.Name = "idFinanceiroDataGridViewTextBoxColumn";
-            // 
-            // idNegociacaoDataGridViewTextBoxColumn
-            // 
-            this.idNegociacaoDataGridViewTextBoxColumn.DataPropertyName = "Id_Negociacao";
-            resources.ApplyResources(this.idNegociacaoDataGridViewTextBoxColumn, "idNegociacaoDataGridViewTextBoxColumn");
-            this.idNegociacaoDataGridViewTextBoxColumn.Name = "idNegociacaoDataGridViewTextBoxColumn";
-            // 
-            // numeroParcelaDataGridViewTextBoxColumn
-            // 
-            this.numeroParcelaDataGridViewTextBoxColumn.DataPropertyName = "Numero_Parcela";
-            resources.ApplyResources(this.numeroParcelaDataGridViewTextBoxColumn, "numeroParcelaDataGridViewTextBoxColumn");
-            this.numeroParcelaDataGridViewTextBoxColumn.Name = "numeroParcelaDataGridViewTextBoxColumn";
-            // 
-            // situacaoDataGridViewCheckBoxColumn
-            // 
-            this.situacaoDataGridViewCheckBoxColumn.DataPropertyName = "Situacao";
-            resources.ApplyResources(this.situacaoDataGridViewCheckBoxColumn, "situacaoDataGridViewCheckBoxColumn");
-            this.situacaoDataGridViewCheckBoxColumn.Name = "situacaoDataGridViewCheckBoxColumn";
-            // 
-            // dataDataGridViewTextBoxColumn
-            // 
-            this.dataDataGridViewTextBoxColumn.DataPropertyName = "Data";
-            resources.ApplyResources(this.dataDataGridViewTextBoxColumn, "dataDataGridViewTextBoxColumn");
-            this.dataDataGridViewTextBoxColumn.Name = "dataDataGridViewTextBoxColumn";
-            // 
-            // mensalidadesBindingSource
-            // 
-            this.mensalidadesBindingSource.DataMember = "Mensalidades";
-            this.mensalidadesBindingSource.DataSource = this.escola_PrincipalDataSet1;
-            // 
-            // escola_PrincipalDataSet1
-            // 
-            this.escola_PrincipalDataSet1.DataSetName = "Escola_PrincipalDataSet1";
-            this.escola_PrincipalDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // mensalidadesTableAdapter
-            // 
-            this.mensalidadesTableAdapter.ClearBeforeFill = true;
-            // 
-            // btn_MostrarTodos
-            // 
-            resources.ApplyResources(this.btn_MostrarTodos, "btn_MostrarTodos");
-            this.btn_MostrarTodos.Name = "btn_MostrarTodos";
-            this.btn_MostrarTodos.UseVisualStyleBackColor = true;
-            this.btn_MostrarTodos.Click += new System.EventHandler(this.btn_MostrarTodos_Click);
+            resources.ApplyResources(this.btn_SalvarAlteracoes, "btn_SalvarAlteracoes");
+            this.btn_SalvarAlteracoes.Name = "btn_SalvarAlteracoes";
+            this.btn_SalvarAlteracoes.UseVisualStyleBackColor = true;
+            this.btn_SalvarAlteracoes.Click += new System.EventHandler(this.btn_SalvarAlteracoes_Click);
             // 
             // FormTabelaMensalidades
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btn_SalvarAlteracoes);
+            this.Controls.Add(this.btn_Cancelar);
             this.Controls.Add(this.group_TabelaMensalidades);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MinimizeBox = false;
@@ -195,8 +134,6 @@
             this.group_TabelaMensalidades.ResumeLayout(false);
             this.group_TabelaMensalidades.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_TabelaMensalidades)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mensalidadesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.escola_PrincipalDataSet1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -211,15 +148,7 @@
         private System.Windows.Forms.ComboBox cmb_NomeAluno;
         private System.Windows.Forms.Label lbl_NomeAluno;
         private System.Windows.Forms.DataGridView dgv_TabelaMensalidades;
-        private Escola_PrincipalDataSet1 escola_PrincipalDataSet1;
-        private System.Windows.Forms.BindingSource mensalidadesBindingSource;
-        private Escola_PrincipalDataSet1TableAdapters.MensalidadesTableAdapter mensalidadesTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idMensalidadeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idFinanceiroDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idNegociacaoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn numeroParcelaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn situacaoDataGridViewCheckBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button btn_MostrarTodos;
+        private System.Windows.Forms.Button btn_Cancelar;
+        private System.Windows.Forms.Button btn_SalvarAlteracoes;
     }
 }

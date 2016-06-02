@@ -25,7 +25,13 @@ namespace CadastroFuncionario
         {
             // TODO: This line of code loads data into the 'dB_EscolaDataSet.InscricoesTurmas' table. You can move, or remove it, as needed.
             this.inscricoesTurmasTableAdapter.Fill(this.dB_EscolaDataSet.InscricoesTurmas);
+        }
 
+        private void dgv_Alunos_DataError(object sender, DataGridViewDataErrorEventArgs e)
+        {
+            e.Cancel = true;
+            dgv_Alunos.RefreshEdit();
+            MessageBox.Show("Insira o id da turma para vincular o aluno a uma turma!");
         }
 
         private void msk_IdTurma_TextChanged(object sender, EventArgs e)
@@ -94,40 +100,42 @@ namespace CadastroFuncionario
             bool Cadastrar = false;
             bool Atualizar = false;
 
-            for (int i = 0; i < dgv_Alunos.RowCount; ++i)
+            if (MessageBox.Show("Deseja salvar os vinculos?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                if (dgv_Alunos.Rows[i].Cells[5].Value.ToString() == "True" && dgv_Alunos.Rows[i].Cells[6].Value.ToString().Trim().Length != 0)
+                for (int i = 0; i < dgv_Alunos.RowCount; ++i)
                 {
-                    Cadastrar = true;
-                    Ids_Inscricao[i] = int.Parse(dgv_Alunos.Rows[i].Cells[0].Value.ToString());
-                    Turmas[i] = int.Parse(dgv_Alunos.Rows[i].Cells[6].Value.ToString());
+                    if (dgv_Alunos.Rows[i].Cells[5].Value.ToString() == "True" && dgv_Alunos.Rows[i].Cells[6].Value.ToString().Trim().Length != 0)
+                    {
+                        Cadastrar = true;
+                        Ids_Inscricao[i] = int.Parse(dgv_Alunos.Rows[i].Cells[0].Value.ToString());
+                        Turmas[i] = int.Parse(dgv_Alunos.Rows[i].Cells[6].Value.ToString());
+                    }
+                    else
+                    {
+                        Atualizar = true;
+                        Ids_InscricaoFalse[i] = int.Parse(dgv_Alunos.Rows[i].Cells[0].Value.ToString());
+
+                        if (dgv_Alunos.Rows[i].Cells[6].Value.ToString().Trim().Length != 0)
+                            TurmasAlteracoes[i] = int.Parse(dgv_Alunos.Rows[i].Cells[6].Value.ToString());
+                    }
                 }
-                else 
+
+
+                if (Cadastrar)
                 {
-                    Atualizar = true;
-                    Ids_InscricaoFalse[i] = int.Parse(dgv_Alunos.Rows[i].Cells[0].Value.ToString());
-                    
-                    if (dgv_Alunos.Rows[i].Cells[6].Value.ToString().Trim().Length != 0)
-                        TurmasAlteracoes[i] = int.Parse(dgv_Alunos.Rows[i].Cells[6].Value.ToString());
+                    GerenciaBanco.CadastrarInscricoesTurma(Ids_Inscricao, Turmas);
                 }
+
+                if (Atualizar)
+                {
+                    GerenciaBanco.AtualizaInscricoesTurma(Ids_InscricaoFalse, TurmasAlteracoes);
+                }
+
+                if (Cadastrar || Atualizar)
+                    MessageBox.Show("Agora o aluno está vinculado a uma turma!");
+                else
+                    MessageBox.Show("Não foi possível vincular o aluno a uma turma!");
             }
-
-
-            if (Cadastrar)
-            {
-                GerenciaBanco.CadastrarInscricoesTurma(Ids_Inscricao, Turmas);
-            }
-
-            if (Atualizar)
-            {
-                GerenciaBanco.AtualizaInscricoesTurma(Ids_InscricaoFalse, TurmasAlteracoes);
-            }
-
-            if (Cadastrar || Atualizar)
-                MessageBox.Show("Agora o aluno está vinculado a uma turma!");
-            else
-                MessageBox.Show("Não foi possível vincular o aluno a uma turma!");
-
             this.inscricoesTurmasTableAdapter.Fill(this.dB_EscolaDataSet.InscricoesTurmas);
         }
 

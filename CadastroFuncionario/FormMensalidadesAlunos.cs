@@ -29,8 +29,8 @@ namespace CadastroFuncionario
 
         private void FormMensalidadesAlunos_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dB_EscolaDataSet4.AllMensalidades' table. You can move, or remove it, as needed.
-            this.allMensalidadesTableAdapter.Fill(this.dB_EscolaDataSet4.AllMensalidades);
+            // TODO: This line of code loads data into the 'dB_EscolaDataSet2.AllMensalidades' table. You can move, or remove it, as needed.
+            this.allMensalidadesTableAdapter.Fill(this.dB_EscolaDataSet2.AllMensalidades);
         }
 
         private void msk_IdAluno_TextChanged(object sender, EventArgs e)
@@ -89,24 +89,27 @@ namespace CadastroFuncionario
             if (!VerificaCamposMensalidadesAluno())
                 return;
 
-            if (rdb_APagar.Checked)
+            if (MessageBox.Show("Deseja salvar as alterações?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                Situacao = "A receber";
-                x = 0;
-            }
-            else
-            {
-                Situacao = "Pago";
-                x = 1;
-            }
+                if (rdb_APagar.Checked)
+                {
+                    Situacao = "A receber";
+                    x = 0;
+                }
+                else
+                {
+                    Situacao = "Pago";
+                    x = 1;
+                }
 
-            if (GerenciaBanco.AtualizaMensalidade(Id_Mensalidade, x))
-            {
-                MessageBox.Show("Mensalidade atualizada com sucesso!");
-            }
-            else
-            {
-                MessageBox.Show("Houve um erro na hora de atualizar a mensalidade!");
+                if (GerenciaBanco.AtualizaMensalidade(Id_Mensalidade, x))
+                {
+                    MessageBox.Show("Mensalidade atualizada com sucesso!");
+                }
+                else
+                {
+                    MessageBox.Show("Houve um erro na hora de atualizar a mensalidade!");
+                }
             }
 
             dgv_MensalidadesAluno.DataSource = GerenciaBanco.getMensalidades(int.Parse(msk_IdAluno.Text));

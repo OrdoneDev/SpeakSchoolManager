@@ -19,9 +19,15 @@ namespace CadastroFuncionario
 
         private void FormTabelaTurmas_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dB_EscolaDataSet13.Turmas' table. You can move, or remove it, as needed.
-            this.turmasTableAdapter.Fill(this.dB_EscolaDataSet13.Turmas);
+            dgv_TabelaTurmas.DataSource = GerenciaBanco.carregaDados("Turmas", "Id_Turma as 'Código da turma', Id_Plano as 'Código do plano', "+
+            "Id_Escala as 'Código da escala', Sala, Data, Hora_Entrada as 'Entrada', Hora_Saida as 'Saída'").Tables[0];
+        }
 
+        private void dgv_TabelaTurmas_DataError(object sender, DataGridViewDataErrorEventArgs e)
+        {
+            e.Cancel = true;
+            dgv_TabelaTurmas.RefreshEdit();
+            MessageBox.Show("O valor fornecido a esta celula está invalido!");
         }
 
         private void cmb_NomeFuncionario_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
@@ -55,7 +61,10 @@ namespace CadastroFuncionario
 
             cmb_NomeFuncionario.BackColor = System.Drawing.Color.White;
 
-            dgv_TabelaTurmas.DataSource = GerenciaBanco.getFiltro(cmb_NomeFuncionario.Text, "[Nome do funcionário]", "TurmasFiltro");
+            if (GerenciaBanco.getFiltro(cmb_NomeFuncionario.Text, "[Nome do funcionário]", "TurmasFiltro", "Id_Turma") != 0)
+            {
+                dgv_TabelaTurmas.Rows[GerenciaBanco.getFiltro(cmb_NomeFuncionario.Text, "[Nome do funcionário]", "TurmasFiltro", "Id_Turma") - 1].Selected = true;
+            }
         }
 
         private void btn_FiltrarPlano_Click(object sender, EventArgs e)
@@ -69,12 +78,27 @@ namespace CadastroFuncionario
 
             cmb_NomePlano.BackColor = System.Drawing.Color.White;
 
-            dgv_TabelaTurmas.DataSource = GerenciaBanco.getFiltro(cmb_NomePlano.Text, "[Nome do plano]", "TurmasFiltro");
+            if (GerenciaBanco.getFiltro(cmb_NomePlano.Text, "[Nome do plano]", "TurmasFiltro", "Id_Turma") != 0)
+            {
+                dgv_TabelaTurmas.Rows[GerenciaBanco.getFiltro(cmb_NomePlano.Text, "[Nome do plano]", "TurmasFiltro", "Id_Turma") - 1].Selected = true;
+            }
         }
 
-        private void btn_MostrarTodos_Click(object sender, EventArgs e)
+        private void btn_SalvarAlteracoes_Click(object sender, EventArgs e)
         {
-            dgv_TabelaTurmas.DataSource = GerenciaBanco.getFiltro("0", "0", "TurmasFiltro");
+            if (MessageBox.Show("Deseja salvar as alterações?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                GerenciaBanco.updateDados("Turmas", "Id_Turma as 'Código da turma', Id_Plano as 'Código do plano', " +
+            "Id_Escala as 'Código da escala', Sala, Data, Hora_Entrada as 'Entrada', Hora_Saida as 'Saída'");
+            }
+
+            dgv_TabelaTurmas.DataSource = GerenciaBanco.carregaDados("Turmas", "Id_Turma as 'Código da turma', Id_Plano as 'Código do plano', " +
+            "Id_Escala as 'Código da escala', Sala, Data, Hora_Entrada as 'Entrada', Hora_Saida as 'Saída'").Tables[0];
+        }
+
+        private void btn_Cancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

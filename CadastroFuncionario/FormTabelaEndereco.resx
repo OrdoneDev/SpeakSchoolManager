@@ -118,37 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btn_MostrarTodos.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1075, 17</value>
-  </data>
-  <data name="btn_MostrarTodos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 23</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btn_MostrarTodos.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="btn_MostrarTodos.Text" xml:space="preserve">
-    <value>Mostrar todos</value>
-  </data>
-  <data name="&gt;&gt;btn_MostrarTodos.Name" xml:space="preserve">
-    <value>btn_MostrarTodos</value>
-  </data>
-  <data name="&gt;&gt;btn_MostrarTodos.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_MostrarTodos.Parent" xml:space="preserve">
-    <value>group_Enderecos</value>
-  </data>
-  <data name="&gt;&gt;btn_MostrarTodos.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="btn_FiltrarBairro.Location" type="System.Drawing.Point, System.Drawing">
     <value>965, 16</value>
   </data>
   <data name="btn_FiltrarBairro.Size" type="System.Drawing.Size, System.Drawing">
     <value>94, 23</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btn_FiltrarBairro.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
@@ -165,7 +141,7 @@
     <value>group_Enderecos</value>
   </data>
   <data name="&gt;&gt;btn_FiltrarBairro.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="cmb_Bairro.Location" type="System.Drawing.Point, System.Drawing">
     <value>810, 17</value>
@@ -189,7 +165,7 @@
     <value>group_Enderecos</value>
   </data>
   <data name="&gt;&gt;cmb_Bairro.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="lbl_Bairro.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -216,7 +192,7 @@
     <value>group_Enderecos</value>
   </data>
   <data name="&gt;&gt;lbl_Bairro.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="btn_FiltrarCidade.Location" type="System.Drawing.Point, System.Drawing">
     <value>665, 16</value>
@@ -240,7 +216,7 @@
     <value>group_Enderecos</value>
   </data>
   <data name="&gt;&gt;btn_FiltrarCidade.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="cmb_Cidade.Location" type="System.Drawing.Point, System.Drawing">
     <value>510, 17</value>
@@ -264,7 +240,7 @@
     <value>group_Enderecos</value>
   </data>
   <data name="&gt;&gt;cmb_Cidade.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="lbl_Cidade.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -291,7 +267,7 @@
     <value>group_Enderecos</value>
   </data>
   <data name="&gt;&gt;lbl_Cidade.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="btn_FiltrarEstado.Location" type="System.Drawing.Point, System.Drawing">
     <value>364, 16</value>
@@ -315,7 +291,7 @@
     <value>group_Enderecos</value>
   </data>
   <data name="&gt;&gt;btn_FiltrarEstado.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="lbl_Estado.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -342,7 +318,7 @@
     <value>group_Enderecos</value>
   </data>
   <data name="&gt;&gt;lbl_Estado.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>7</value>
   </data>
   <data name="cmb_Estado.Location" type="System.Drawing.Point, System.Drawing">
     <value>241, 18</value>
@@ -366,7 +342,7 @@
     <value>group_Enderecos</value>
   </data>
   <data name="&gt;&gt;cmb_Estado.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>8</value>
   </data>
   <data name="btn_FiltrarId.Location" type="System.Drawing.Point, System.Drawing">
     <value>112, 17</value>
@@ -390,7 +366,7 @@
     <value>group_Enderecos</value>
   </data>
   <data name="&gt;&gt;btn_FiltrarId.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>9</value>
   </data>
   <data name="lbl_IdEndereco.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -417,7 +393,7 @@
     <value>group_Enderecos</value>
   </data>
   <data name="&gt;&gt;lbl_IdEndereco.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>10</value>
   </data>
   <data name="msk_IdEndereco.Location" type="System.Drawing.Point, System.Drawing">
     <value>75, 19</value>
@@ -441,32 +417,8 @@
     <value>group_Enderecos</value>
   </data>
   <data name="&gt;&gt;msk_IdEndereco.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>11</value>
   </data>
-  <data name="idEnderecoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Código do endereço</value>
-  </data>
-  <data name="estadoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Estado</value>
-  </data>
-  <data name="cidadeDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Cidade</value>
-  </data>
-  <data name="cEPDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>CEP</value>
-  </data>
-  <data name="bairroDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Bairro</value>
-  </data>
-  <data name="nomeRuaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Nome da rua</value>
-  </data>
-  <metadata name="enderecoBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>171, 17</value>
-  </metadata>
-  <metadata name="dB_EscolaDataSet3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <data name="dgv_Enderecos.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 46</value>
   </data>
@@ -486,7 +438,7 @@
     <value>group_Enderecos</value>
   </data>
   <data name="&gt;&gt;dgv_Enderecos.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>12</value>
   </data>
   <data name="group_Enderecos.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 13</value>
@@ -510,11 +462,56 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;group_Enderecos.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btn_Cancelar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1115, 344</value>
+  </data>
+  <data name="btn_Cancelar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btn_Cancelar.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btn_Cancelar.Text" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.Name" xml:space="preserve">
+    <value>btn_Cancelar</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btn_SalvarAlteracoes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1010, 344</value>
+  </data>
+  <data name="btn_SalvarAlteracoes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 23</value>
+  </data>
+  <data name="btn_SalvarAlteracoes.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btn_SalvarAlteracoes.Text" xml:space="preserve">
+    <value>Salvar alterações</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarAlteracoes.Name" xml:space="preserve">
+    <value>btn_SalvarAlteracoes</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarAlteracoes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarAlteracoes.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarAlteracoes.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="enderecoTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>352, 17</value>
-  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -522,64 +519,10 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1202, 350</value>
+    <value>1202, 373</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Tabela de endereços</value>
-  </data>
-  <data name="&gt;&gt;idEnderecoDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>idEnderecoDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;idEnderecoDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;estadoDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>estadoDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;estadoDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cidadeDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>cidadeDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;cidadeDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cEPDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>cEPDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;cEPDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bairroDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>bairroDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;bairroDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;nomeRuaDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>nomeRuaDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;nomeRuaDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;enderecoBindingSource.Name" xml:space="preserve">
-    <value>enderecoBindingSource</value>
-  </data>
-  <data name="&gt;&gt;enderecoBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dB_EscolaDataSet3.Name" xml:space="preserve">
-    <value>dB_EscolaDataSet3</value>
-  </data>
-  <data name="&gt;&gt;dB_EscolaDataSet3.Type" xml:space="preserve">
-    <value>CadastroFuncionario.DB_EscolaDataSet3, DB_EscolaDataSet3.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;enderecoTableAdapter.Name" xml:space="preserve">
-    <value>enderecoTableAdapter</value>
-  </data>
-  <data name="&gt;&gt;enderecoTableAdapter.Type" xml:space="preserve">
-    <value>CadastroFuncionario.DB_EscolaDataSet3TableAdapters.EnderecoTableAdapter, DB_EscolaDataSet3.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FormTabelaEndereco</value>

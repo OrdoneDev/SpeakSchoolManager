@@ -76,25 +76,27 @@ namespace CadastroFuncionario
             bool Sucesso = false;
             if (!VerificaCamposListaPresenca())
                 return;
-
-            for (int i = 0; i < dgv_ListaPresenca.RowCount; ++i)
+            if (MessageBox.Show("Deseja salvar a lista de presença?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                if (dgv_ListaPresenca.Rows[i].Cells[3].Value.ToString() == "True")
+                for (int i = 0; i < dgv_ListaPresenca.RowCount; ++i)
                 {
-                    GerenciaBanco.AtualizarListaPresenca(int.Parse(dgv_ListaPresenca.Rows[i].Cells[0].Value.ToString()), 1);
-                    Sucesso = true;
+                    if (dgv_ListaPresenca.Rows[i].Cells[3].Value.ToString() == "True")
+                    {
+                        GerenciaBanco.AtualizarListaPresenca(int.Parse(dgv_ListaPresenca.Rows[i].Cells[0].Value.ToString()), 1);
+                        Sucesso = true;
+                    }
+                    else
+                    {
+                        GerenciaBanco.AtualizarListaPresenca(int.Parse(dgv_ListaPresenca.Rows[i].Cells[0].Value.ToString()), 0);
+                        Sucesso = true;
+                    }
                 }
-                else
-                {
-                    GerenciaBanco.AtualizarListaPresenca(int.Parse(dgv_ListaPresenca.Rows[i].Cells[0].Value.ToString()), 0);
-                    Sucesso = true;
-                }
-            }
 
-            if (Sucesso)
-                MessageBox.Show("Lista de chamda atualizada com sucesso!");
-            else
-                MessageBox.Show("A lista não foi atualizada!");
+                if (Sucesso)
+                    MessageBox.Show("Lista de chamda atualizada com sucesso!");
+                else
+                    MessageBox.Show("A lista não foi atualizada!");
+            }
 
             dgv_ListaPresenca.DataSource = GerenciaBanco.getListaPresenca(int.Parse(msk_IdTurma.Text));
         }

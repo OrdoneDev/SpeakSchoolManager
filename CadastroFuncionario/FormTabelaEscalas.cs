@@ -19,9 +19,15 @@ namespace CadastroFuncionario
 
         private void FormTabelaEscalas_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dB_EscolaDataSet12.Escalas' table. You can move, or remove it, as needed.
-            this.escalasTableAdapter.Fill(this.dB_EscolaDataSet12.Escalas);
+            dgv_TabelaEscalas.DataSource = GerenciaBanco.carregaDados("Escalas", "Id_Escala as 'Código da escala', Id_Funcionario as 'Código do funcionário', Data, " +
+            "Hora_Entrada as 'Entrada', Hora_Saida as 'Saída', Descricao_Funcao as 'Encargos'").Tables[0];
+        }
 
+        private void dgv_TabelaEscalas_DataError(object sender, DataGridViewDataErrorEventArgs e)
+        {
+            e.Cancel = true;
+            dgv_TabelaEscalas.RefreshEdit();
+            MessageBox.Show("O valor fornecido a esta celula está invalido!");
         }
 
         private void cmb_NomeFuncionario_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
@@ -45,12 +51,27 @@ namespace CadastroFuncionario
 
             cmb_NomeFuncionario.BackColor = System.Drawing.Color.White;
 
-            dgv_TabelaEscalas.DataSource = GerenciaBanco.getFiltro(cmb_NomeFuncionario.Text, "Nome", "EscalasFuncionarioFiltro");
+            if (GerenciaBanco.getFiltro(cmb_NomeFuncionario.Text, "Nome", "EscalasFuncionarioFiltro", "Id_Escala") != 0)
+            {
+                dgv_TabelaEscalas.Rows[GerenciaBanco.getFiltro(cmb_NomeFuncionario.Text, "Nome", "EscalasFuncionarioFiltro", "Id_Escala") - 1].Selected = true;
+            }
         }
 
-        private void btn_MostrarTodos_Click(object sender, EventArgs e)
+        private void btn_SalvarAlteracoes_Click(object sender, EventArgs e)
         {
-            dgv_TabelaEscalas.DataSource = GerenciaBanco.getFiltro("0", "0", "EscalasFuncionarioFiltro");
+            if (MessageBox.Show("Deseja salvar as alterações?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                GerenciaBanco.updateDados("Escalas", "Id_Escala as 'Código da escala', Id_Funcionario as 'Código do funcionário', Data, " +
+            "Hora_Entrada as 'Entrada', Hora_Saida as 'Saída', Descricao_Funcao as 'Encargos'");
+            }
+
+            dgv_TabelaEscalas.DataSource = GerenciaBanco.carregaDados("Escalas", "Id_Escala as 'Código da escala', Id_Funcionario as 'Código do funcionário', Data, " +
+            "Hora_Entrada as 'Entrada', Hora_Saida as 'Saída', Descricao_Funcao as 'Encargos'").Tables[0];
+        }
+
+        private void btn_Cancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

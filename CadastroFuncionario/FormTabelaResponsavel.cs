@@ -19,9 +19,16 @@ namespace CadastroFuncionario
 
         private void FormTabelaResponsavel_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dB_EscolaDataSet7.Responsavel_Aluno' table. You can move, or remove it, as needed.
-            this.responsavel_AlunoTableAdapter.Fill(this.dB_EscolaDataSet7.Responsavel_Aluno);
+            dgv_Responsaveis.DataSource = GerenciaBanco.carregaDados("Responsavel_Aluno", "Id_Responsavel as 'Código do responsável', " +
+            "Id_Endereco as 'Código do endereço', Nome, DataNascimento as 'Data de nascimento', Sexo, Estado_Civil as 'Estado civil', " +
+            "RG, CPF, Email, DDD, Telefone, Complemento, Numero as 'Nº'").Tables[0];
+        }
 
+        private void dgv_Responsaveis_DataError(object sender, DataGridViewDataErrorEventArgs e)
+        {
+            e.Cancel = true;
+            dgv_Responsaveis.RefreshEdit();
+            MessageBox.Show("O valor fornecido a esta celula está invalido!");
         }
 
         private void cmb_Nome_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
@@ -45,7 +52,10 @@ namespace CadastroFuncionario
 
             msk_Id.BackColor = System.Drawing.Color.White;
 
-            dgv_Responsaveis.DataSource = GerenciaBanco.getFiltro(msk_Id.Text, "Id_Responsavel", "SysProtected.Responsavel_Aluno");
+            if (GerenciaBanco.getFiltro(msk_Id.Text, "Id_Responsavel", "SysProtected.Responsavel_Aluno", "Id_Responsavel") != 0)
+            {
+                dgv_Responsaveis.Rows[GerenciaBanco.getFiltro(msk_Id.Text, "Id_Responsavel", "SysProtected.Responsavel_Aluno", "Id_Responsavel") - 1].Selected = true;
+            }
         }
 
         private void btn_FiltrarNome_Click(object sender, EventArgs e)
@@ -59,7 +69,10 @@ namespace CadastroFuncionario
 
             cmb_Nome.BackColor = System.Drawing.Color.White;
 
-            dgv_Responsaveis.DataSource = GerenciaBanco.getFiltro(cmb_Nome.Text, "Nome", "SysProtected.Responsavel_Aluno");
+            if (GerenciaBanco.getFiltro(cmb_Nome.Text, "Nome", "SysProtected.Responsavel_Aluno", "Id_Responsavel") != 0)
+            {
+                dgv_Responsaveis.Rows[GerenciaBanco.getFiltro(cmb_Nome.Text, "Nome", "SysProtected.Responsavel_Aluno", "Id_Responsavel") - 1].Selected = true;
+            }
         }
 
         private void btn_FiltrarCPF_Click(object sender, EventArgs e)
@@ -73,12 +86,29 @@ namespace CadastroFuncionario
 
             msk_CPF.BackColor = System.Drawing.Color.White;
 
-            dgv_Responsaveis.DataSource = GerenciaBanco.getFiltro(msk_CPF.Text, "CPF", "SysProtected.Responsavel_Aluno");
+            if (GerenciaBanco.getFiltro(msk_CPF.Text, "CPF", "SysProtected.Responsavel_Aluno", "Id_Responsavel") != 0)
+            {
+                dgv_Responsaveis.Rows[GerenciaBanco.getFiltro(msk_CPF.Text, "CPF", "SysProtected.Responsavel_Aluno", "Id_Responsavel") - 1].Selected = true;
+            }
         }
 
-        private void btn_MostrarTodos_Click(object sender, EventArgs e)
+        private void btn_SalvarAlteracoes_Click(object sender, EventArgs e)
         {
-            dgv_Responsaveis.DataSource = GerenciaBanco.getFiltro("0", "0", "SysProtected.Responsavel_Aluno");
+            if (MessageBox.Show("Deseja salvar as alterações?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                GerenciaBanco.updateDados("Responsavel_Aluno", "Id_Responsavel as 'Código do responsável', " +
+            "Id_Endereco as 'Código do endereço', Nome, DataNascimento as 'Data de nascimento', Sexo, Estado_Civil as 'Estado civil', " +
+            "RG, CPF, Email, DDD, Telefone, Complemento, Numero as 'Nº'");
+            }
+
+            dgv_Responsaveis.DataSource = GerenciaBanco.carregaDados("Responsavel_Aluno", "Id_Responsavel as 'Código do responsável', " +
+            "Id_Endereco as 'Código do endereço', Nome, DataNascimento as 'Data de nascimento', Sexo, Estado_Civil as 'Estado civil', " +
+            "RG, CPF, Email, DDD, Telefone, Complemento, Numero as 'Nº'").Tables[0];
+        }
+
+        private void btn_Cancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

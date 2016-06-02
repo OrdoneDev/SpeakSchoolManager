@@ -19,8 +19,15 @@ namespace CadastroFuncionario
 
         private void FormTabelaNegociações_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'escola_PrincipalDataSet.Negociacao' table. You can move, or remove it, as needed.
-            this.negociacaoTableAdapter.Fill(this.escola_PrincipalDataSet.Negociacao);
+            dgv_TabelaNegociacoes.DataSource = GerenciaBanco.carregaDados("Negociacao", "Id_Negociacao as 'Código da negocição', Id_Financeiro as 'Código do financeiro', " +
+            "Id_Aluno as 'Código do aluno', Id_Plano as 'Código do plano', Parcelas as 'Nº de parcelas', Situacao").Tables[0];
+        }
+
+        private void dgv_TabelaNegociacoes_DataError(object sender, DataGridViewDataErrorEventArgs e)
+        {
+            e.Cancel = true;
+            dgv_TabelaNegociacoes.RefreshEdit();
+            MessageBox.Show("O valor fornecido a esta celula está invalido!");
         }
 
         private void cmb_NomeAluno_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
@@ -54,7 +61,10 @@ namespace CadastroFuncionario
 
             cmb_NomeAluno.BackColor = System.Drawing.Color.White;
 
-            dgv_TabelaNegociacoes.DataSource = GerenciaBanco.getFiltro(cmb_NomeAluno.Text, "[Nome do aluno]", "NegociacaoAlunoFiltro");
+            if (GerenciaBanco.getFiltro(cmb_NomeAluno.Text, "[Nome do aluno]", "NegociacaoAlunoFiltro", "Id_Negociacao") != 0)
+            {
+                dgv_TabelaNegociacoes.Rows[GerenciaBanco.getFiltro(cmb_NomeAluno.Text, "[Nome do aluno]", "NegociacaoAlunoFiltro", "Id_Negociacao") - 1].Selected = true;
+            }
         }
 
         private void btn_FiltrarPlano_Click(object sender, EventArgs e)
@@ -68,12 +78,27 @@ namespace CadastroFuncionario
 
             cmb_Plano.BackColor = System.Drawing.Color.White;
 
-            dgv_TabelaNegociacoes.DataSource = GerenciaBanco.getFiltro(cmb_Plano.Text, "[Nome do plano]", "NegociacaoAlunoFiltro");
+            if (GerenciaBanco.getFiltro(cmb_Plano.Text, "[Nome do plano]", "NegociacaoAlunoFiltro", "Id_Negociacao") != 0)
+            {
+                dgv_TabelaNegociacoes.Rows[GerenciaBanco.getFiltro(cmb_Plano.Text, "[Nome do plano]", "NegociacaoAlunoFiltro", "Id_Negociacao") - 1].Selected = true;
+            }
         }
 
-        private void btn_MostrarTodos_Click(object sender, EventArgs e)
+        private void btn_SalvarAlteracoes_Click(object sender, EventArgs e)
         {
-            dgv_TabelaNegociacoes.DataSource = GerenciaBanco.getFiltro("0", "0", "NegociacaoAlunoFiltro");
+            if (MessageBox.Show("Deseja salvar as alterações?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                GerenciaBanco.updateDados("Negociacao", "Id_Negociacao as 'Código da negocição', Id_Financeiro as 'Código do financeiro', " +
+            "Id_Aluno as 'Código do aluno', Id_Plano as 'Código do plano', Parcelas as 'Nº de parcelas', Situacao");
+            }
+
+            dgv_TabelaNegociacoes.DataSource = GerenciaBanco.carregaDados("Negociacao", "Id_Negociacao as 'Código da negocição', Id_Financeiro as 'Código do financeiro', " +
+            "Id_Aluno as 'Código do aluno', Id_Plano as 'Código do plano', Parcelas as 'Nº de parcelas', Situacao").Tables[0];
+        }
+
+        private void btn_Cancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

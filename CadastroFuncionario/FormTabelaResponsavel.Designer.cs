@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTabelaResponsavel));
             this.btn_FiltrarCPF = new System.Windows.Forms.Button();
             this.msk_CPF = new System.Windows.Forms.MaskedTextBox();
@@ -41,27 +40,10 @@
             this.lbl_Id = new System.Windows.Forms.Label();
             this.group_TabelaResponsaveis = new System.Windows.Forms.GroupBox();
             this.dgv_Responsaveis = new System.Windows.Forms.DataGridView();
-            this.idResponsavelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idEnderecoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataNascimentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sexoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.estadoCivilDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rGDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cPFDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dDDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.telefoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.complementoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.numeroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.responsavelAlunoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dB_EscolaDataSet7 = new CadastroFuncionario.DB_EscolaDataSet7();
-            this.responsavel_AlunoTableAdapter = new CadastroFuncionario.DB_EscolaDataSet7TableAdapters.Responsavel_AlunoTableAdapter();
-            this.btn_MostrarTodos = new System.Windows.Forms.Button();
+            this.btn_Cancelar = new System.Windows.Forms.Button();
+            this.btn_SalvarAlteracoes = new System.Windows.Forms.Button();
             this.group_TabelaResponsaveis.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Responsaveis)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.responsavelAlunoBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dB_EscolaDataSet7)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_FiltrarCPF
@@ -120,7 +102,6 @@
             // 
             // group_TabelaResponsaveis
             // 
-            this.group_TabelaResponsaveis.Controls.Add(this.btn_MostrarTodos);
             this.group_TabelaResponsaveis.Controls.Add(this.btn_FiltrarCPF);
             this.group_TabelaResponsaveis.Controls.Add(this.msk_CPF);
             this.group_TabelaResponsaveis.Controls.Add(this.btn_FiltrarNome);
@@ -138,131 +119,33 @@
             // dgv_Responsaveis
             // 
             this.dgv_Responsaveis.AllowUserToAddRows = false;
-            this.dgv_Responsaveis.AutoGenerateColumns = false;
             this.dgv_Responsaveis.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgv_Responsaveis.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_Responsaveis.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idResponsavelDataGridViewTextBoxColumn,
-            this.idEnderecoDataGridViewTextBoxColumn,
-            this.nomeDataGridViewTextBoxColumn,
-            this.dataNascimentoDataGridViewTextBoxColumn,
-            this.sexoDataGridViewTextBoxColumn,
-            this.estadoCivilDataGridViewTextBoxColumn,
-            this.rGDataGridViewTextBoxColumn,
-            this.cPFDataGridViewTextBoxColumn,
-            this.emailDataGridViewTextBoxColumn,
-            this.dDDDataGridViewTextBoxColumn,
-            this.telefoneDataGridViewTextBoxColumn,
-            this.complementoDataGridViewTextBoxColumn,
-            this.numeroDataGridViewTextBoxColumn});
-            this.dgv_Responsaveis.DataSource = this.responsavelAlunoBindingSource;
             resources.ApplyResources(this.dgv_Responsaveis, "dgv_Responsaveis");
+            this.dgv_Responsaveis.MultiSelect = false;
             this.dgv_Responsaveis.Name = "dgv_Responsaveis";
+            this.dgv_Responsaveis.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dgv_Responsaveis_DataError);
             // 
-            // idResponsavelDataGridViewTextBoxColumn
+            // btn_Cancelar
             // 
-            this.idResponsavelDataGridViewTextBoxColumn.DataPropertyName = "Id_Responsavel";
-            resources.ApplyResources(this.idResponsavelDataGridViewTextBoxColumn, "idResponsavelDataGridViewTextBoxColumn");
-            this.idResponsavelDataGridViewTextBoxColumn.Name = "idResponsavelDataGridViewTextBoxColumn";
-            this.idResponsavelDataGridViewTextBoxColumn.ReadOnly = true;
+            resources.ApplyResources(this.btn_Cancelar, "btn_Cancelar");
+            this.btn_Cancelar.Name = "btn_Cancelar";
+            this.btn_Cancelar.UseVisualStyleBackColor = true;
+            this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
             // 
-            // idEnderecoDataGridViewTextBoxColumn
+            // btn_SalvarAlteracoes
             // 
-            this.idEnderecoDataGridViewTextBoxColumn.DataPropertyName = "Id_Endereco";
-            resources.ApplyResources(this.idEnderecoDataGridViewTextBoxColumn, "idEnderecoDataGridViewTextBoxColumn");
-            this.idEnderecoDataGridViewTextBoxColumn.Name = "idEnderecoDataGridViewTextBoxColumn";
-            // 
-            // nomeDataGridViewTextBoxColumn
-            // 
-            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
-            resources.ApplyResources(this.nomeDataGridViewTextBoxColumn, "nomeDataGridViewTextBoxColumn");
-            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
-            // 
-            // dataNascimentoDataGridViewTextBoxColumn
-            // 
-            this.dataNascimentoDataGridViewTextBoxColumn.DataPropertyName = "DataNascimento";
-            resources.ApplyResources(this.dataNascimentoDataGridViewTextBoxColumn, "dataNascimentoDataGridViewTextBoxColumn");
-            this.dataNascimentoDataGridViewTextBoxColumn.Name = "dataNascimentoDataGridViewTextBoxColumn";
-            // 
-            // sexoDataGridViewTextBoxColumn
-            // 
-            this.sexoDataGridViewTextBoxColumn.DataPropertyName = "Sexo";
-            resources.ApplyResources(this.sexoDataGridViewTextBoxColumn, "sexoDataGridViewTextBoxColumn");
-            this.sexoDataGridViewTextBoxColumn.Name = "sexoDataGridViewTextBoxColumn";
-            // 
-            // estadoCivilDataGridViewTextBoxColumn
-            // 
-            this.estadoCivilDataGridViewTextBoxColumn.DataPropertyName = "Estado_Civil";
-            resources.ApplyResources(this.estadoCivilDataGridViewTextBoxColumn, "estadoCivilDataGridViewTextBoxColumn");
-            this.estadoCivilDataGridViewTextBoxColumn.Name = "estadoCivilDataGridViewTextBoxColumn";
-            // 
-            // rGDataGridViewTextBoxColumn
-            // 
-            this.rGDataGridViewTextBoxColumn.DataPropertyName = "RG";
-            resources.ApplyResources(this.rGDataGridViewTextBoxColumn, "rGDataGridViewTextBoxColumn");
-            this.rGDataGridViewTextBoxColumn.Name = "rGDataGridViewTextBoxColumn";
-            // 
-            // cPFDataGridViewTextBoxColumn
-            // 
-            this.cPFDataGridViewTextBoxColumn.DataPropertyName = "CPF";
-            resources.ApplyResources(this.cPFDataGridViewTextBoxColumn, "cPFDataGridViewTextBoxColumn");
-            this.cPFDataGridViewTextBoxColumn.Name = "cPFDataGridViewTextBoxColumn";
-            // 
-            // emailDataGridViewTextBoxColumn
-            // 
-            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
-            resources.ApplyResources(this.emailDataGridViewTextBoxColumn, "emailDataGridViewTextBoxColumn");
-            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
-            // 
-            // dDDDataGridViewTextBoxColumn
-            // 
-            this.dDDDataGridViewTextBoxColumn.DataPropertyName = "DDD";
-            resources.ApplyResources(this.dDDDataGridViewTextBoxColumn, "dDDDataGridViewTextBoxColumn");
-            this.dDDDataGridViewTextBoxColumn.Name = "dDDDataGridViewTextBoxColumn";
-            // 
-            // telefoneDataGridViewTextBoxColumn
-            // 
-            this.telefoneDataGridViewTextBoxColumn.DataPropertyName = "Telefone";
-            resources.ApplyResources(this.telefoneDataGridViewTextBoxColumn, "telefoneDataGridViewTextBoxColumn");
-            this.telefoneDataGridViewTextBoxColumn.Name = "telefoneDataGridViewTextBoxColumn";
-            // 
-            // complementoDataGridViewTextBoxColumn
-            // 
-            this.complementoDataGridViewTextBoxColumn.DataPropertyName = "Complemento";
-            resources.ApplyResources(this.complementoDataGridViewTextBoxColumn, "complementoDataGridViewTextBoxColumn");
-            this.complementoDataGridViewTextBoxColumn.Name = "complementoDataGridViewTextBoxColumn";
-            // 
-            // numeroDataGridViewTextBoxColumn
-            // 
-            this.numeroDataGridViewTextBoxColumn.DataPropertyName = "Numero";
-            resources.ApplyResources(this.numeroDataGridViewTextBoxColumn, "numeroDataGridViewTextBoxColumn");
-            this.numeroDataGridViewTextBoxColumn.Name = "numeroDataGridViewTextBoxColumn";
-            // 
-            // responsavelAlunoBindingSource
-            // 
-            this.responsavelAlunoBindingSource.DataMember = "Responsavel_Aluno";
-            this.responsavelAlunoBindingSource.DataSource = this.dB_EscolaDataSet7;
-            // 
-            // dB_EscolaDataSet7
-            // 
-            this.dB_EscolaDataSet7.DataSetName = "DB_EscolaDataSet7";
-            this.dB_EscolaDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // responsavel_AlunoTableAdapter
-            // 
-            this.responsavel_AlunoTableAdapter.ClearBeforeFill = true;
-            // 
-            // btn_MostrarTodos
-            // 
-            resources.ApplyResources(this.btn_MostrarTodos, "btn_MostrarTodos");
-            this.btn_MostrarTodos.Name = "btn_MostrarTodos";
-            this.btn_MostrarTodos.UseVisualStyleBackColor = true;
-            this.btn_MostrarTodos.Click += new System.EventHandler(this.btn_MostrarTodos_Click);
+            resources.ApplyResources(this.btn_SalvarAlteracoes, "btn_SalvarAlteracoes");
+            this.btn_SalvarAlteracoes.Name = "btn_SalvarAlteracoes";
+            this.btn_SalvarAlteracoes.UseVisualStyleBackColor = true;
+            this.btn_SalvarAlteracoes.Click += new System.EventHandler(this.btn_SalvarAlteracoes_Click);
             // 
             // FormTabelaResponsavel
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btn_SalvarAlteracoes);
+            this.Controls.Add(this.btn_Cancelar);
             this.Controls.Add(this.group_TabelaResponsaveis);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MinimizeBox = false;
@@ -271,8 +154,6 @@
             this.group_TabelaResponsaveis.ResumeLayout(false);
             this.group_TabelaResponsaveis.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Responsaveis)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.responsavelAlunoBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dB_EscolaDataSet7)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -290,22 +171,7 @@
         private System.Windows.Forms.Label lbl_Id;
         private System.Windows.Forms.GroupBox group_TabelaResponsaveis;
         private System.Windows.Forms.DataGridView dgv_Responsaveis;
-        private DB_EscolaDataSet7 dB_EscolaDataSet7;
-        private System.Windows.Forms.BindingSource responsavelAlunoBindingSource;
-        private DB_EscolaDataSet7TableAdapters.Responsavel_AlunoTableAdapter responsavel_AlunoTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idResponsavelDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idEnderecoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataNascimentoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sexoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn estadoCivilDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn rGDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cPFDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dDDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn telefoneDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn complementoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn numeroDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button btn_MostrarTodos;
+        private System.Windows.Forms.Button btn_Cancelar;
+        private System.Windows.Forms.Button btn_SalvarAlteracoes;
     }
 }

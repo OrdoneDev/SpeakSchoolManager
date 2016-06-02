@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -19,8 +21,25 @@ namespace CadastroFuncionario
 
         private void FormTabelaBoletins_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'escola_PrincipalDataSet5.BoletinsAlunoFiltro' table. You can move, or remove it, as needed.
-            this.boletinsAlunoFiltroTableAdapter.Fill(this.escola_PrincipalDataSet5.BoletinsAlunoFiltro);
+            dgv_TabelaBoletins.DataSource = GerenciaBanco.carregaDados("Boletim", "Id_Boletim as 'Código do boletim', Id_Inscricao as 'Código da inscrição', " +
+            "Nota1 as '1º Nota', Nota2 as '2º Nota', Media as 'Média', Numero_Faltas as 'Nº de faltas'").Tables[0];
+        }
+
+        private void dgv_TabelaBoletins_CellParsing(object sender, DataGridViewCellParsingEventArgs e)
+        {
+            Regex Valida = new Regex(@"(^[0-9]{1}\.[0-9]{1})$|(^[0-9]0{1})$|(^[0-9]{1})$");
+
+            if (!Valida.IsMatch(e.Value.ToString()) && (e.ColumnIndex == 2 || e.ColumnIndex == 3))
+            {
+                MessageBox.Show("Insira valores númericos entre 0 e 10!");
+                e.InheritedCellStyle = null;
+            }
+        }
+
+        private void dgv_TabelaBoletins_DataError(object sender, DataGridViewDataErrorEventArgs e)
+        {
+            e.Cancel = true;
+            dgv_TabelaBoletins.RefreshEdit();
         }
 
         private void cmb_NomeAluno_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
@@ -44,12 +63,22 @@ namespace CadastroFuncionario
 
             cmb_NomeAluno.BackColor = System.Drawing.Color.White;
 
-            dgv_TabelaBoletins.DataSource = GerenciaBanco.getFiltro(cmb_NomeAluno.Text, "Nome", "BoletinsAlunoFiltro");
+            if (GerenciaBanco.getFiltro(cmb_NomeAluno.Text, "Nome", "BoletinsAlunoFiltro", "Id_Inscricao") != 0)
+            {
+                dgv_TabelaBoletins.Rows[GerenciaBanco.getFiltro(cmb_NomeAluno.Text, "Nome", "BoletinsAlunoFiltro", "Id_Inscricao") - 1].Selected = true;
+            }
         }
 
-        private void btn_MostrarTodos_Click(object sender, EventArgs e)
+        private void btn_SalvarAlteracoes_Click(object sender, EventArgs e)
         {
-            dgv_TabelaBoletins.DataSource = GerenciaBanco.getFiltro("0", "0", "BoletinsAlunoFiltro");
+            if (MessageBox.Show("Deseja salvar as alterações?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                GerenciaBanco.updateDados("Boletim", "Id_Boletim as 'Código do boletim', Id_Inscricao as 'Código da inscrição', " +
+            "Nota1 as '1º Nota', Nota2 as '2º Nota', Media as 'Média', Numero_Faltas as 'Nº de faltas'");
+            }
+
+            dgv_TabelaBoletins.DataSource = GerenciaBanco.carregaDados("Boletim", "Id_Boletim as 'Código do boletim', Id_Inscricao as 'Código da inscrição', " +
+            "Nota1 as '1º Nota', Nota2 as '2º Nota', Media as 'Média', Numero_Faltas as 'Nº de faltas'").Tables[0];
         }
     }
 }

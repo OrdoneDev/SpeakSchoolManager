@@ -19,8 +19,15 @@ namespace CadastroFuncionario
 
         private void FormTabelaInscricoesTurmas_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dB_EscolaDataSet14.Inscricoes_Turmas' table. You can move, or remove it, as needed.
-            this.inscricoes_TurmasTableAdapter.Fill(this.dB_EscolaDataSet14.Inscricoes_Turmas);
+            dgv_TabelaInscricoesTurmas.DataSource = GerenciaBanco.carregaDados("Inscricoes_Turmas", "Id_Inscricao_Turma as 'Código da inscrição turma', " + 
+            "Id_Inscricao as 'Código da inscrição', Id_Turma as 'Código da turma'").Tables[0];
+        }
+
+        private void dgv_TabelaInscricoesTurmas_DataError(object sender, DataGridViewDataErrorEventArgs e)
+        {
+            e.Cancel = true;
+            dgv_TabelaInscricoesTurmas.RefreshEdit();
+            MessageBox.Show("O valor fornecido a esta celula está invalido!");
         }
 
         private void cmb_NomeAluno_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
@@ -54,7 +61,10 @@ namespace CadastroFuncionario
 
             cmb_NomeAluno.BackColor = System.Drawing.Color.White;
 
-            dgv_TabelaInscricoesTurmas.DataSource = GerenciaBanco.getFiltro(cmb_NomeAluno.Text, "[Nome do aluno]", "InscricoesTurmasFiltro");
+            if (GerenciaBanco.getFiltro(cmb_NomeAluno.Text, "[Nome do aluno]", "InscricoesTurmasFiltro", "Id_Inscricao_Turma") != 0)
+            {
+                dgv_TabelaInscricoesTurmas.Rows[GerenciaBanco.getFiltro(cmb_NomeAluno.Text, "[Nome do aluno]", "InscricoesTurmasFiltro", "Id_Inscricao_Turma") - 1].Selected = true;
+            }
         }
 
         private void btn_FiltrarFuncionario_Click(object sender, EventArgs e)
@@ -68,12 +78,27 @@ namespace CadastroFuncionario
 
             cmb_NomeFuncionario.BackColor = System.Drawing.Color.White;
 
-            dgv_TabelaInscricoesTurmas.DataSource = GerenciaBanco.getFiltro(cmb_NomeFuncionario.Text, "[Nome do funcionário]", "InscricoesTurmasFiltro");
+            if (GerenciaBanco.getFiltro(cmb_NomeFuncionario.Text, "[Nome do funcionário]", "InscricoesTurmasFiltro", "Id_Inscricao_Turma") != 0)
+            {
+                dgv_TabelaInscricoesTurmas.Rows[GerenciaBanco.getFiltro(cmb_NomeFuncionario.Text, "[Nome do funcionário]", "InscricoesTurmasFiltro", "Id_Inscricao_Turma") - 1].Selected = true;
+            }
         }
 
-        private void btn_MostrarTodos_Click(object sender, EventArgs e)
+        private void btn_SalvarAlteracoes_Click(object sender, EventArgs e)
         {
-            dgv_TabelaInscricoesTurmas.DataSource = GerenciaBanco.getFiltro("0", "0", "InscricoesTurmasFiltro");
+            if (MessageBox.Show("Deseja salvar as alterações?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                GerenciaBanco.updateDados("Inscricoes_Turmas", "Id_Inscricao_Turma as 'Código da inscrição turma', " +
+            "Id_Inscricao as 'Código da inscrição', Id_Turma as 'Código da turma'");
+            }
+
+            dgv_TabelaInscricoesTurmas.DataSource = GerenciaBanco.carregaDados("Inscricoes_Turmas", "Id_Inscricao_Turma as 'Código da inscrição turma', " +
+            "Id_Inscricao as 'Código da inscrição', Id_Turma as 'Código da turma'").Tables[0];
+        }
+
+        private void btn_Cancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

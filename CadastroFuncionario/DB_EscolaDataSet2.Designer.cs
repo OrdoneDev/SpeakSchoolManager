@@ -24,7 +24,7 @@ namespace CadastroFuncionario {
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
     public partial class DB_EscolaDataSet2 : global::System.Data.DataSet {
         
-        private AllBoletimDataTable tableAllBoletim;
+        private AllMensalidadesDataTable tableAllMensalidades;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -54,8 +54,8 @@ namespace CadastroFuncionario {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["AllBoletim"] != null)) {
-                    base.Tables.Add(new AllBoletimDataTable(ds.Tables["AllBoletim"]));
+                if ((ds.Tables["AllMensalidades"] != null)) {
+                    base.Tables.Add(new AllMensalidadesDataTable(ds.Tables["AllMensalidades"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace CadastroFuncionario {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public AllBoletimDataTable AllBoletim {
+        public AllMensalidadesDataTable AllMensalidades {
             get {
-                return this.tableAllBoletim;
+                return this.tableAllMensalidades;
             }
         }
         
@@ -152,8 +152,8 @@ namespace CadastroFuncionario {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["AllBoletim"] != null)) {
-                    base.Tables.Add(new AllBoletimDataTable(ds.Tables["AllBoletim"]));
+                if ((ds.Tables["AllMensalidades"] != null)) {
+                    base.Tables.Add(new AllMensalidadesDataTable(ds.Tables["AllMensalidades"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace CadastroFuncionario {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableAllBoletim = ((AllBoletimDataTable)(base.Tables["AllBoletim"]));
+            this.tableAllMensalidades = ((AllMensalidadesDataTable)(base.Tables["AllMensalidades"]));
             if ((initTable == true)) {
-                if ((this.tableAllBoletim != null)) {
-                    this.tableAllBoletim.InitVars();
+                if ((this.tableAllMensalidades != null)) {
+                    this.tableAllMensalidades.InitVars();
                 }
             }
         }
@@ -204,13 +204,13 @@ namespace CadastroFuncionario {
             this.Namespace = "http://tempuri.org/DB_EscolaDataSet2.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableAllBoletim = new AllBoletimDataTable();
-            base.Tables.Add(this.tableAllBoletim);
+            this.tableAllMensalidades = new AllMensalidadesDataTable();
+            base.Tables.Add(this.tableAllMensalidades);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private bool ShouldSerializeAllBoletim() {
+        private bool ShouldSerializeAllMensalidades() {
             return false;
         }
         
@@ -270,37 +270,37 @@ namespace CadastroFuncionario {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public delegate void AllBoletimRowChangeEventHandler(object sender, AllBoletimRowChangeEvent e);
+        public delegate void AllMensalidadesRowChangeEventHandler(object sender, AllMensalidadesRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class AllBoletimDataTable : global::System.Data.TypedTableBase<AllBoletimRow> {
+        public partial class AllMensalidadesDataTable : global::System.Data.TypedTableBase<AllMensalidadesRow> {
             
-            private global::System.Data.DataColumn columnCódigo_da_inscrição;
+            private global::System.Data.DataColumn columnCódigo_da_mensalidade;
             
             private global::System.Data.DataColumn columnCódigo_do_aluno;
             
-            private global::System.Data.DataColumn columnNome_do_aluno;
+            private global::System.Data.DataColumn columnNúmero_da_parcela;
             
-            private global::System.Data.DataColumn columnStatus_do_aluno;
+            private global::System.Data.DataColumn columnSituação;
             
-            private global::System.Data.DataColumn columnCurso;
+            private global::System.Data.DataColumn columnData_de_vencimento;
             
-            private global::System.Data.DataColumn columnProva_1;
+            private global::System.Data.DataColumn columnNúmero_total_de_parcelas;
             
-            private global::System.Data.DataColumn columnProva_2;
+            private global::System.Data.DataColumn columnSituação_total;
             
-            private global::System.Data.DataColumn columnMedia;
+            private global::System.Data.DataColumn columnNome;
             
-            private global::System.Data.DataColumn columnFaltas_no_semestre;
+            private global::System.Data.DataColumn columnValor_da_parcela;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public AllBoletimDataTable() {
-                this.TableName = "AllBoletim";
+            public AllMensalidadesDataTable() {
+                this.TableName = "AllMensalidades";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -308,7 +308,7 @@ namespace CadastroFuncionario {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal AllBoletimDataTable(global::System.Data.DataTable table) {
+            internal AllMensalidadesDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -325,16 +325,16 @@ namespace CadastroFuncionario {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected AllBoletimDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected AllMensalidadesDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn Código_da_inscriçãoColumn {
+            public global::System.Data.DataColumn Código_da_mensalidadeColumn {
                 get {
-                    return this.columnCódigo_da_inscrição;
+                    return this.columnCódigo_da_mensalidade;
                 }
             }
             
@@ -348,57 +348,57 @@ namespace CadastroFuncionario {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn Nome_do_alunoColumn {
+            public global::System.Data.DataColumn Número_da_parcelaColumn {
                 get {
-                    return this.columnNome_do_aluno;
+                    return this.columnNúmero_da_parcela;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn Status_do_alunoColumn {
+            public global::System.Data.DataColumn SituaçãoColumn {
                 get {
-                    return this.columnStatus_do_aluno;
+                    return this.columnSituação;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn CursoColumn {
+            public global::System.Data.DataColumn Data_de_vencimentoColumn {
                 get {
-                    return this.columnCurso;
+                    return this.columnData_de_vencimento;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn Prova_1Column {
+            public global::System.Data.DataColumn Número_total_de_parcelasColumn {
                 get {
-                    return this.columnProva_1;
+                    return this.columnNúmero_total_de_parcelas;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn Prova_2Column {
+            public global::System.Data.DataColumn Situação_totalColumn {
                 get {
-                    return this.columnProva_2;
+                    return this.columnSituação_total;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn MediaColumn {
+            public global::System.Data.DataColumn NomeColumn {
                 get {
-                    return this.columnMedia;
+                    return this.columnNome;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn Faltas_no_semestreColumn {
+            public global::System.Data.DataColumn Valor_da_parcelaColumn {
                 get {
-                    return this.columnFaltas_no_semestre;
+                    return this.columnValor_da_parcela;
                 }
             }
             
@@ -413,53 +413,53 @@ namespace CadastroFuncionario {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public AllBoletimRow this[int index] {
+            public AllMensalidadesRow this[int index] {
                 get {
-                    return ((AllBoletimRow)(this.Rows[index]));
+                    return ((AllMensalidadesRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event AllBoletimRowChangeEventHandler AllBoletimRowChanging;
+            public event AllMensalidadesRowChangeEventHandler AllMensalidadesRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event AllBoletimRowChangeEventHandler AllBoletimRowChanged;
+            public event AllMensalidadesRowChangeEventHandler AllMensalidadesRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event AllBoletimRowChangeEventHandler AllBoletimRowDeleting;
+            public event AllMensalidadesRowChangeEventHandler AllMensalidadesRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event AllBoletimRowChangeEventHandler AllBoletimRowDeleted;
+            public event AllMensalidadesRowChangeEventHandler AllMensalidadesRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void AddAllBoletimRow(AllBoletimRow row) {
+            public void AddAllMensalidadesRow(AllMensalidadesRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public AllBoletimRow AddAllBoletimRow(int Código_da_inscrição, int Código_do_aluno, string Nome_do_aluno, string Status_do_aluno, string Curso, double Prova_1, double Prova_2, double Media, byte Faltas_no_semestre) {
-                AllBoletimRow rowAllBoletimRow = ((AllBoletimRow)(this.NewRow()));
+            public AllMensalidadesRow AddAllMensalidadesRow(int Código_da_mensalidade, int Código_do_aluno, byte Número_da_parcela, bool Situação, System.DateTime Data_de_vencimento, byte Número_total_de_parcelas, string Situação_total, string Nome, decimal Valor_da_parcela) {
+                AllMensalidadesRow rowAllMensalidadesRow = ((AllMensalidadesRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        Código_da_inscrição,
+                        Código_da_mensalidade,
                         Código_do_aluno,
-                        Nome_do_aluno,
-                        Status_do_aluno,
-                        Curso,
-                        Prova_1,
-                        Prova_2,
-                        Media,
-                        Faltas_no_semestre};
-                rowAllBoletimRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowAllBoletimRow);
-                return rowAllBoletimRow;
+                        Número_da_parcela,
+                        Situação,
+                        Data_de_vencimento,
+                        Número_total_de_parcelas,
+                        Situação_total,
+                        Nome,
+                        Valor_da_parcela};
+                rowAllMensalidadesRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowAllMensalidadesRow);
+                return rowAllMensalidadesRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                AllBoletimDataTable cln = ((AllBoletimDataTable)(base.Clone()));
+                AllMensalidadesDataTable cln = ((AllMensalidadesDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -467,79 +467,81 @@ namespace CadastroFuncionario {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new AllBoletimDataTable();
+                return new AllMensalidadesDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
-                this.columnCódigo_da_inscrição = base.Columns["Código da inscrição"];
+                this.columnCódigo_da_mensalidade = base.Columns["Código da mensalidade"];
                 this.columnCódigo_do_aluno = base.Columns["Código do aluno"];
-                this.columnNome_do_aluno = base.Columns["Nome do aluno"];
-                this.columnStatus_do_aluno = base.Columns["Status do aluno"];
-                this.columnCurso = base.Columns["Curso"];
-                this.columnProva_1 = base.Columns["Prova 1"];
-                this.columnProva_2 = base.Columns["Prova 2"];
-                this.columnMedia = base.Columns["Media"];
-                this.columnFaltas_no_semestre = base.Columns["Faltas no semestre"];
+                this.columnNúmero_da_parcela = base.Columns["Número da parcela"];
+                this.columnSituação = base.Columns["Situação"];
+                this.columnData_de_vencimento = base.Columns["Data de vencimento"];
+                this.columnNúmero_total_de_parcelas = base.Columns["Número total de parcelas"];
+                this.columnSituação_total = base.Columns["Situação total"];
+                this.columnNome = base.Columns["Nome"];
+                this.columnValor_da_parcela = base.Columns["Valor da parcela"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private void InitClass() {
-                this.columnCódigo_da_inscrição = new global::System.Data.DataColumn("Código da inscrição", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCódigo_da_inscrição);
+                this.columnCódigo_da_mensalidade = new global::System.Data.DataColumn("Código da mensalidade", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCódigo_da_mensalidade);
                 this.columnCódigo_do_aluno = new global::System.Data.DataColumn("Código do aluno", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCódigo_do_aluno);
-                this.columnNome_do_aluno = new global::System.Data.DataColumn("Nome do aluno", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnNome_do_aluno);
-                this.columnStatus_do_aluno = new global::System.Data.DataColumn("Status do aluno", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnStatus_do_aluno);
-                this.columnCurso = new global::System.Data.DataColumn("Curso", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCurso);
-                this.columnProva_1 = new global::System.Data.DataColumn("Prova 1", typeof(double), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnProva_1);
-                this.columnProva_2 = new global::System.Data.DataColumn("Prova 2", typeof(double), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnProva_2);
-                this.columnMedia = new global::System.Data.DataColumn("Media", typeof(double), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnMedia);
-                this.columnFaltas_no_semestre = new global::System.Data.DataColumn("Faltas no semestre", typeof(byte), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnFaltas_no_semestre);
-                this.columnCódigo_da_inscrição.AllowDBNull = false;
+                this.columnNúmero_da_parcela = new global::System.Data.DataColumn("Número da parcela", typeof(byte), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNúmero_da_parcela);
+                this.columnSituação = new global::System.Data.DataColumn("Situação", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSituação);
+                this.columnData_de_vencimento = new global::System.Data.DataColumn("Data de vencimento", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnData_de_vencimento);
+                this.columnNúmero_total_de_parcelas = new global::System.Data.DataColumn("Número total de parcelas", typeof(byte), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNúmero_total_de_parcelas);
+                this.columnSituação_total = new global::System.Data.DataColumn("Situação total", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSituação_total);
+                this.columnNome = new global::System.Data.DataColumn("Nome", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNome);
+                this.columnValor_da_parcela = new global::System.Data.DataColumn("Valor da parcela", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnValor_da_parcela);
+                this.columnCódigo_da_mensalidade.AllowDBNull = false;
                 this.columnCódigo_do_aluno.AllowDBNull = false;
-                this.columnNome_do_aluno.AllowDBNull = false;
-                this.columnNome_do_aluno.MaxLength = 40;
-                this.columnStatus_do_aluno.ReadOnly = true;
-                this.columnStatus_do_aluno.MaxLength = 7;
-                this.columnCurso.AllowDBNull = false;
-                this.columnCurso.MaxLength = 40;
-                this.columnMedia.ReadOnly = true;
+                this.columnNúmero_da_parcela.AllowDBNull = false;
+                this.columnSituação.AllowDBNull = false;
+                this.columnData_de_vencimento.AllowDBNull = false;
+                this.columnNúmero_total_de_parcelas.AllowDBNull = false;
+                this.columnSituação_total.ReadOnly = true;
+                this.columnSituação_total.MaxLength = 9;
+                this.columnNome.AllowDBNull = false;
+                this.columnNome.MaxLength = 40;
+                this.columnValor_da_parcela.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public AllBoletimRow NewAllBoletimRow() {
-                return ((AllBoletimRow)(this.NewRow()));
+            public AllMensalidadesRow NewAllMensalidadesRow() {
+                return ((AllMensalidadesRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new AllBoletimRow(builder);
+                return new AllMensalidadesRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(AllBoletimRow);
+                return typeof(AllMensalidadesRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.AllBoletimRowChanged != null)) {
-                    this.AllBoletimRowChanged(this, new AllBoletimRowChangeEvent(((AllBoletimRow)(e.Row)), e.Action));
+                if ((this.AllMensalidadesRowChanged != null)) {
+                    this.AllMensalidadesRowChanged(this, new AllMensalidadesRowChangeEvent(((AllMensalidadesRow)(e.Row)), e.Action));
                 }
             }
             
@@ -547,8 +549,8 @@ namespace CadastroFuncionario {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.AllBoletimRowChanging != null)) {
-                    this.AllBoletimRowChanging(this, new AllBoletimRowChangeEvent(((AllBoletimRow)(e.Row)), e.Action));
+                if ((this.AllMensalidadesRowChanging != null)) {
+                    this.AllMensalidadesRowChanging(this, new AllMensalidadesRowChangeEvent(((AllMensalidadesRow)(e.Row)), e.Action));
                 }
             }
             
@@ -556,8 +558,8 @@ namespace CadastroFuncionario {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.AllBoletimRowDeleted != null)) {
-                    this.AllBoletimRowDeleted(this, new AllBoletimRowChangeEvent(((AllBoletimRow)(e.Row)), e.Action));
+                if ((this.AllMensalidadesRowDeleted != null)) {
+                    this.AllMensalidadesRowDeleted(this, new AllMensalidadesRowChangeEvent(((AllMensalidadesRow)(e.Row)), e.Action));
                 }
             }
             
@@ -565,14 +567,14 @@ namespace CadastroFuncionario {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.AllBoletimRowDeleting != null)) {
-                    this.AllBoletimRowDeleting(this, new AllBoletimRowChangeEvent(((AllBoletimRow)(e.Row)), e.Action));
+                if ((this.AllMensalidadesRowDeleting != null)) {
+                    this.AllMensalidadesRowDeleting(this, new AllMensalidadesRowChangeEvent(((AllMensalidadesRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void RemoveAllBoletimRow(AllBoletimRow row) {
+            public void RemoveAllMensalidadesRow(AllMensalidadesRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -599,7 +601,7 @@ namespace CadastroFuncionario {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "AllBoletimDataTable";
+                attribute2.FixedValue = "AllMensalidadesDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -643,25 +645,25 @@ namespace CadastroFuncionario {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class AllBoletimRow : global::System.Data.DataRow {
+        public partial class AllMensalidadesRow : global::System.Data.DataRow {
             
-            private AllBoletimDataTable tableAllBoletim;
+            private AllMensalidadesDataTable tableAllMensalidades;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal AllBoletimRow(global::System.Data.DataRowBuilder rb) : 
+            internal AllMensalidadesRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableAllBoletim = ((AllBoletimDataTable)(this.Table));
+                this.tableAllMensalidades = ((AllMensalidadesDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int Código_da_inscrição {
+            public int Código_da_mensalidade {
                 get {
-                    return ((int)(this[this.tableAllBoletim.Código_da_inscriçãoColumn]));
+                    return ((int)(this[this.tableAllMensalidades.Código_da_mensalidadeColumn]));
                 }
                 set {
-                    this[this.tableAllBoletim.Código_da_inscriçãoColumn] = value;
+                    this[this.tableAllMensalidades.Código_da_mensalidadeColumn] = value;
                 }
             }
             
@@ -669,173 +671,105 @@ namespace CadastroFuncionario {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int Código_do_aluno {
                 get {
-                    return ((int)(this[this.tableAllBoletim.Código_do_alunoColumn]));
+                    return ((int)(this[this.tableAllMensalidades.Código_do_alunoColumn]));
                 }
                 set {
-                    this[this.tableAllBoletim.Código_do_alunoColumn] = value;
+                    this[this.tableAllMensalidades.Código_do_alunoColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string Nome_do_aluno {
+            public byte Número_da_parcela {
                 get {
-                    return ((string)(this[this.tableAllBoletim.Nome_do_alunoColumn]));
+                    return ((byte)(this[this.tableAllMensalidades.Número_da_parcelaColumn]));
                 }
                 set {
-                    this[this.tableAllBoletim.Nome_do_alunoColumn] = value;
+                    this[this.tableAllMensalidades.Número_da_parcelaColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string Status_do_aluno {
+            public bool Situação {
                 get {
-                    try {
-                        return ((string)(this[this.tableAllBoletim.Status_do_alunoColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Status do aluno\' in table \'AllBoletim\' is DBNull.", e);
-                    }
+                    return ((bool)(this[this.tableAllMensalidades.SituaçãoColumn]));
                 }
                 set {
-                    this[this.tableAllBoletim.Status_do_alunoColumn] = value;
+                    this[this.tableAllMensalidades.SituaçãoColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string Curso {
+            public System.DateTime Data_de_vencimento {
                 get {
-                    return ((string)(this[this.tableAllBoletim.CursoColumn]));
+                    return ((global::System.DateTime)(this[this.tableAllMensalidades.Data_de_vencimentoColumn]));
                 }
                 set {
-                    this[this.tableAllBoletim.CursoColumn] = value;
+                    this[this.tableAllMensalidades.Data_de_vencimentoColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public double Prova_1 {
+            public byte Número_total_de_parcelas {
                 get {
-                    try {
-                        return ((double)(this[this.tableAllBoletim.Prova_1Column]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Prova 1\' in table \'AllBoletim\' is DBNull.", e);
-                    }
+                    return ((byte)(this[this.tableAllMensalidades.Número_total_de_parcelasColumn]));
                 }
                 set {
-                    this[this.tableAllBoletim.Prova_1Column] = value;
+                    this[this.tableAllMensalidades.Número_total_de_parcelasColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public double Prova_2 {
+            public string Situação_total {
                 get {
                     try {
-                        return ((double)(this[this.tableAllBoletim.Prova_2Column]));
+                        return ((string)(this[this.tableAllMensalidades.Situação_totalColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Prova 2\' in table \'AllBoletim\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Situação total\' in table \'AllMensalidades\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableAllBoletim.Prova_2Column] = value;
+                    this[this.tableAllMensalidades.Situação_totalColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public double Media {
+            public string Nome {
                 get {
-                    try {
-                        return ((double)(this[this.tableAllBoletim.MediaColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Media\' in table \'AllBoletim\' is DBNull.", e);
-                    }
+                    return ((string)(this[this.tableAllMensalidades.NomeColumn]));
                 }
                 set {
-                    this[this.tableAllBoletim.MediaColumn] = value;
+                    this[this.tableAllMensalidades.NomeColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public byte Faltas_no_semestre {
+            public decimal Valor_da_parcela {
                 get {
-                    try {
-                        return ((byte)(this[this.tableAllBoletim.Faltas_no_semestreColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Faltas no semestre\' in table \'AllBoletim\' is DBNull.", e);
-                    }
+                    return ((decimal)(this[this.tableAllMensalidades.Valor_da_parcelaColumn]));
                 }
                 set {
-                    this[this.tableAllBoletim.Faltas_no_semestreColumn] = value;
+                    this[this.tableAllMensalidades.Valor_da_parcelaColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsStatus_do_alunoNull() {
-                return this.IsNull(this.tableAllBoletim.Status_do_alunoColumn);
+            public bool IsSituação_totalNull() {
+                return this.IsNull(this.tableAllMensalidades.Situação_totalColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetStatus_do_alunoNull() {
-                this[this.tableAllBoletim.Status_do_alunoColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsProva_1Null() {
-                return this.IsNull(this.tableAllBoletim.Prova_1Column);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetProva_1Null() {
-                this[this.tableAllBoletim.Prova_1Column] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsProva_2Null() {
-                return this.IsNull(this.tableAllBoletim.Prova_2Column);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetProva_2Null() {
-                this[this.tableAllBoletim.Prova_2Column] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsMediaNull() {
-                return this.IsNull(this.tableAllBoletim.MediaColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetMediaNull() {
-                this[this.tableAllBoletim.MediaColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsFaltas_no_semestreNull() {
-                return this.IsNull(this.tableAllBoletim.Faltas_no_semestreColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetFaltas_no_semestreNull() {
-                this[this.tableAllBoletim.Faltas_no_semestreColumn] = global::System.Convert.DBNull;
+            public void SetSituação_totalNull() {
+                this[this.tableAllMensalidades.Situação_totalColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -843,22 +777,22 @@ namespace CadastroFuncionario {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public class AllBoletimRowChangeEvent : global::System.EventArgs {
+        public class AllMensalidadesRowChangeEvent : global::System.EventArgs {
             
-            private AllBoletimRow eventRow;
+            private AllMensalidadesRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public AllBoletimRowChangeEvent(AllBoletimRow row, global::System.Data.DataRowAction action) {
+            public AllMensalidadesRowChangeEvent(AllMensalidadesRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public AllBoletimRow Row {
+            public AllMensalidadesRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -886,7 +820,7 @@ namespace CadastroFuncionario.DB_EscolaDataSet2TableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class AllBoletimTableAdapter : global::System.ComponentModel.Component {
+    public partial class AllMensalidadesTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -900,7 +834,7 @@ namespace CadastroFuncionario.DB_EscolaDataSet2TableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public AllBoletimTableAdapter() {
+        public AllMensalidadesTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -997,16 +931,16 @@ namespace CadastroFuncionario.DB_EscolaDataSet2TableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "AllBoletim";
-            tableMapping.ColumnMappings.Add("Código da inscrição", "Código da inscrição");
+            tableMapping.DataSetTable = "AllMensalidades";
+            tableMapping.ColumnMappings.Add("Código da mensalidade", "Código da mensalidade");
             tableMapping.ColumnMappings.Add("Código do aluno", "Código do aluno");
-            tableMapping.ColumnMappings.Add("Nome do aluno", "Nome do aluno");
-            tableMapping.ColumnMappings.Add("Status do aluno", "Status do aluno");
-            tableMapping.ColumnMappings.Add("Curso", "Curso");
-            tableMapping.ColumnMappings.Add("Prova 1", "Prova 1");
-            tableMapping.ColumnMappings.Add("Prova 2", "Prova 2");
-            tableMapping.ColumnMappings.Add("Media", "Media");
-            tableMapping.ColumnMappings.Add("Faltas no semestre", "Faltas no semestre");
+            tableMapping.ColumnMappings.Add("Número da parcela", "Número da parcela");
+            tableMapping.ColumnMappings.Add("Situação", "Situação");
+            tableMapping.ColumnMappings.Add("Data de vencimento", "Data de vencimento");
+            tableMapping.ColumnMappings.Add("Número total de parcelas", "Número total de parcelas");
+            tableMapping.ColumnMappings.Add("Situação total", "Situação total");
+            tableMapping.ColumnMappings.Add("Nome", "Nome");
+            tableMapping.ColumnMappings.Add("Valor da parcela", "Valor da parcela");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -1023,9 +957,9 @@ namespace CadastroFuncionario.DB_EscolaDataSet2TableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT [Código da inscrição], [Código do aluno], [Nome do aluno], [Status do alun" +
-                "o], Curso, [Prova 1], [Prova 2], Media, [Faltas no semestre] FROM dbo.AllBoletim" +
-                "";
+            this._commandCollection[0].CommandText = "SELECT [Código da mensalidade], [Código do aluno], [Número da parcela], Situação," +
+                " [Data de vencimento], [Número total de parcelas], [Situação total], Nome, [Valo" +
+                "r da parcela] FROM dbo.AllMensalidades";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -1033,7 +967,7 @@ namespace CadastroFuncionario.DB_EscolaDataSet2TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DB_EscolaDataSet2.AllBoletimDataTable dataTable) {
+        public virtual int Fill(DB_EscolaDataSet2.AllMensalidadesDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1046,9 +980,9 @@ namespace CadastroFuncionario.DB_EscolaDataSet2TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DB_EscolaDataSet2.AllBoletimDataTable GetData() {
+        public virtual DB_EscolaDataSet2.AllMensalidadesDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            DB_EscolaDataSet2.AllBoletimDataTable dataTable = new DB_EscolaDataSet2.AllBoletimDataTable();
+            DB_EscolaDataSet2.AllMensalidadesDataTable dataTable = new DB_EscolaDataSet2.AllMensalidadesDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }

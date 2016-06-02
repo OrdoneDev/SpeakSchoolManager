@@ -118,37 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btn_MostrarTodos.Location" type="System.Drawing.Point, System.Drawing">
-    <value>756, 13</value>
-  </data>
-  <data name="btn_MostrarTodos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 23</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btn_MostrarTodos.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="btn_MostrarTodos.Text" xml:space="preserve">
-    <value>Mostrar todos</value>
-  </data>
-  <data name="&gt;&gt;btn_MostrarTodos.Name" xml:space="preserve">
-    <value>btn_MostrarTodos</value>
-  </data>
-  <data name="&gt;&gt;btn_MostrarTodos.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_MostrarTodos.Parent" xml:space="preserve">
-    <value>group_TabelaMensalidades</value>
-  </data>
-  <data name="&gt;&gt;btn_MostrarTodos.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="btn_FiltrarFuncionario.Location" type="System.Drawing.Point, System.Drawing">
     <value>632, 13</value>
   </data>
   <data name="btn_FiltrarFuncionario.Size" type="System.Drawing.Size, System.Drawing">
     <value>118, 23</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btn_FiltrarFuncionario.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
@@ -165,7 +141,7 @@
     <value>group_TabelaMensalidades</value>
   </data>
   <data name="&gt;&gt;btn_FiltrarFuncionario.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="cmb_NomeFuncionario.Location" type="System.Drawing.Point, System.Drawing">
     <value>424, 15</value>
@@ -189,7 +165,7 @@
     <value>group_TabelaMensalidades</value>
   </data>
   <data name="&gt;&gt;cmb_NomeFuncionario.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="lbl_NomeFuncionario.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -216,7 +192,7 @@
     <value>group_TabelaMensalidades</value>
   </data>
   <data name="&gt;&gt;lbl_NomeFuncionario.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="btn_FiltrarAluno.Location" type="System.Drawing.Point, System.Drawing">
     <value>259, 12</value>
@@ -240,7 +216,7 @@
     <value>group_TabelaMensalidades</value>
   </data>
   <data name="&gt;&gt;btn_FiltrarAluno.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="cmb_NomeAluno.Location" type="System.Drawing.Point, System.Drawing">
     <value>51, 15</value>
@@ -264,7 +240,7 @@
     <value>group_TabelaMensalidades</value>
   </data>
   <data name="&gt;&gt;cmb_NomeAluno.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="lbl_NomeAluno.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -291,32 +267,8 @@
     <value>group_TabelaMensalidades</value>
   </data>
   <data name="&gt;&gt;lbl_NomeAluno.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
-  <data name="idMensalidadeDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Código da mensalidade</value>
-  </data>
-  <data name="idFinanceiroDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Código do financeiro</value>
-  </data>
-  <data name="idNegociacaoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Código da negociação</value>
-  </data>
-  <data name="numeroParcelaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Nº da parcela</value>
-  </data>
-  <data name="situacaoDataGridViewCheckBoxColumn.HeaderText" xml:space="preserve">
-    <value>Situacao</value>
-  </data>
-  <data name="dataDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Data</value>
-  </data>
-  <metadata name="mensalidadesBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>203, 17</value>
-  </metadata>
-  <metadata name="escola_PrincipalDataSet1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <data name="dgv_TabelaMensalidades.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 42</value>
   </data>
@@ -336,7 +288,7 @@
     <value>group_TabelaMensalidades</value>
   </data>
   <data name="&gt;&gt;dgv_TabelaMensalidades.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="group_TabelaMensalidades.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 13</value>
@@ -360,11 +312,56 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;group_TabelaMensalidades.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btn_Cancelar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>821, 321</value>
+  </data>
+  <data name="btn_Cancelar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btn_Cancelar.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btn_Cancelar.Text" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.Name" xml:space="preserve">
+    <value>btn_Cancelar</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btn_SalvarAlteracoes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>703, 321</value>
+  </data>
+  <data name="btn_SalvarAlteracoes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 23</value>
+  </data>
+  <data name="btn_SalvarAlteracoes.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btn_SalvarAlteracoes.Text" xml:space="preserve">
+    <value>Salvar alterações</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarAlteracoes.Name" xml:space="preserve">
+    <value>btn_SalvarAlteracoes</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarAlteracoes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarAlteracoes.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarAlteracoes.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="mensalidadesTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>408, 17</value>
-  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -372,64 +369,10 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>908, 327</value>
+    <value>908, 349</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Tabela de mensalidades</value>
-  </data>
-  <data name="&gt;&gt;idMensalidadeDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>idMensalidadeDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;idMensalidadeDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;idFinanceiroDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>idFinanceiroDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;idFinanceiroDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;idNegociacaoDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>idNegociacaoDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;idNegociacaoDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numeroParcelaDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>numeroParcelaDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;numeroParcelaDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;situacaoDataGridViewCheckBoxColumn.Name" xml:space="preserve">
-    <value>situacaoDataGridViewCheckBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;situacaoDataGridViewCheckBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dataDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>dataDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;dataDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;mensalidadesBindingSource.Name" xml:space="preserve">
-    <value>mensalidadesBindingSource</value>
-  </data>
-  <data name="&gt;&gt;mensalidadesBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;escola_PrincipalDataSet1.Name" xml:space="preserve">
-    <value>escola_PrincipalDataSet1</value>
-  </data>
-  <data name="&gt;&gt;escola_PrincipalDataSet1.Type" xml:space="preserve">
-    <value>CadastroFuncionario.Escola_PrincipalDataSet1, Escola_PrincipalDataSet1.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;mensalidadesTableAdapter.Name" xml:space="preserve">
-    <value>mensalidadesTableAdapter</value>
-  </data>
-  <data name="&gt;&gt;mensalidadesTableAdapter.Type" xml:space="preserve">
-    <value>CadastroFuncionario.Escola_PrincipalDataSet1TableAdapters.MensalidadesTableAdapter, Escola_PrincipalDataSet1.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FormTabelaMensalidades</value>

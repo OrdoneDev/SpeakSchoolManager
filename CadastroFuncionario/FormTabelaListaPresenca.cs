@@ -19,8 +19,15 @@ namespace CadastroFuncionario
 
         private void FormTabelaListaPresenca_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dB_EscolaDataSet15.Lista_Presenca' table. You can move, or remove it, as needed.
-            this.lista_PresencaTableAdapter.Fill(this.dB_EscolaDataSet15.Lista_Presenca);
+            dgv_TabelaListaPresenca.DataSource = GerenciaBanco.carregaDados("Lista_Presenca", "Id_Presenca as 'Código da lista de presença', " +
+            "Id_Inscricao_Turma as 'Código da inscrição turma', Chamada, Data").Tables[0];
+        }
+
+        private void dgv_TabelaListaPresenca_DataError(object sender, DataGridViewDataErrorEventArgs e)
+        {
+            e.Cancel = true;
+            dgv_TabelaListaPresenca.RefreshEdit();
+            MessageBox.Show("O valor fornecido a esta celula está invalido!");
         }
 
         private void cmb_NomeAluno_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
@@ -54,7 +61,10 @@ namespace CadastroFuncionario
 
             cmb_NomeAluno.BackColor = System.Drawing.Color.White;
 
-            dgv_TabelaListaPresenca.DataSource = GerenciaBanco.getFiltro(cmb_NomeAluno.Text, "[Nome do aluno]", "ListaPresencaFiltro");
+            if (GerenciaBanco.getFiltro(cmb_NomeAluno.Text, "[Nome do aluno]", "ListaPresencaFiltro", "Id_Presenca") != 0)
+            {
+                dgv_TabelaListaPresenca.Rows[GerenciaBanco.getFiltro(cmb_NomeAluno.Text, "[Nome do aluno]", "ListaPresencaFiltro", "Id_Presenca") - 1].Selected = true;
+            }
         }
 
         private void btn_FiltrarProfessor_Click(object sender, EventArgs e)
@@ -68,12 +78,27 @@ namespace CadastroFuncionario
 
             cmb_NomeProfessor.BackColor = System.Drawing.Color.White;
 
-            dgv_TabelaListaPresenca.DataSource = GerenciaBanco.getFiltro(cmb_NomeProfessor.Text, "[Nome do professor]", "ListaPresencaFiltro");
+            if (GerenciaBanco.getFiltro(cmb_NomeProfessor.Text, "[Nome do professor]", "ListaPresencaFiltro", "Id_Presenca") != 0)
+            {
+                dgv_TabelaListaPresenca.Rows[GerenciaBanco.getFiltro(cmb_NomeProfessor.Text, "[Nome do professor]", "ListaPresencaFiltro", "Id_Presenca") - 1].Selected = true;
+            }
         }
 
-        private void btn_MostrarTodos_Click(object sender, EventArgs e)
+        private void btn_SalvarAlteracoes_Click(object sender, EventArgs e)
         {
-            dgv_TabelaListaPresenca.DataSource = GerenciaBanco.getFiltro("0", "0", "ListaPresencaFiltro");
+            if (MessageBox.Show("Deseja salvar as alterações?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                GerenciaBanco.updateDados("Lista_Presenca", "Id_Presenca as 'Código da lista de presença', " +
+            "Id_Inscricao_Turma as 'Código da inscrição turma', Chamada, Data");
+            }
+
+            dgv_TabelaListaPresenca.DataSource = GerenciaBanco.carregaDados("Lista_Presenca", "Id_Presenca as 'Código da lista de presença', " +
+            "Id_Inscricao_Turma as 'Código da inscrição turma', Chamada, Data").Tables[0];
+        }
+
+        private void btn_Cancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
