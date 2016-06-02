@@ -31,7 +31,7 @@ namespace CadastroFuncionario
         {
             e.Cancel = true;
             dgv_Alunos.RefreshEdit();
-            MessageBox.Show("Insira o id da turma para vincular o aluno a uma turma!");
+            MessageBox.Show("Insira o código da turma para vincular o aluno a uma turma!");
         }
 
         private void msk_IdTurma_TextChanged(object sender, EventArgs e)

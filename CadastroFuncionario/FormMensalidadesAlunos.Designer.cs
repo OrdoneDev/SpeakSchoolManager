@@ -41,11 +41,6 @@
             this.msk_IdAluno = new System.Windows.Forms.MaskedTextBox();
             this.btn_ConsultarMensalidades = new System.Windows.Forms.Button();
             this.dgv_MensalidadesAluno = new System.Windows.Forms.DataGridView();
-            this.allMensalidadesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dB_EscolaDataSet2 = new CadastroFuncionario.DB_EscolaDataSet2();
-            this.btn_Cancelar = new System.Windows.Forms.Button();
-            this.btn_SalvarAlteracao = new System.Windows.Forms.Button();
-            this.allMensalidadesTableAdapter = new CadastroFuncionario.DB_EscolaDataSet2TableAdapters.AllMensalidadesTableAdapter();
             this.códigoDaMensalidadeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.códigoDoAlunoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.númeroDaParcelaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -55,6 +50,11 @@
             this.situaçãoTotalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.valorDaParcelaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.allMensalidadesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dB_EscolaDataSet2 = new CadastroFuncionario.DB_EscolaDataSet2();
+            this.btn_Cancelar = new System.Windows.Forms.Button();
+            this.btn_SalvarAlteracao = new System.Windows.Forms.Button();
+            this.allMensalidadesTableAdapter = new CadastroFuncionario.DB_EscolaDataSet2TableAdapters.AllMensalidadesTableAdapter();
             this.group_MensalidadesAlunos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_MensalidadesAluno)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.allMensalidadesBindingSource)).BeginInit();
@@ -156,34 +156,6 @@
             this.dgv_MensalidadesAluno.Tag = "0";
             this.dgv_MensalidadesAluno.SelectionChanged += new System.EventHandler(this.dgv_MensalidadesAluno_SelectionChanged);
             // 
-            // allMensalidadesBindingSource
-            // 
-            this.allMensalidadesBindingSource.DataMember = "AllMensalidades";
-            this.allMensalidadesBindingSource.DataSource = this.dB_EscolaDataSet2;
-            // 
-            // dB_EscolaDataSet2
-            // 
-            this.dB_EscolaDataSet2.DataSetName = "DB_EscolaDataSet2";
-            this.dB_EscolaDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // btn_Cancelar
-            // 
-            resources.ApplyResources(this.btn_Cancelar, "btn_Cancelar");
-            this.btn_Cancelar.Name = "btn_Cancelar";
-            this.btn_Cancelar.UseVisualStyleBackColor = true;
-            this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
-            // 
-            // btn_SalvarAlteracao
-            // 
-            resources.ApplyResources(this.btn_SalvarAlteracao, "btn_SalvarAlteracao");
-            this.btn_SalvarAlteracao.Name = "btn_SalvarAlteracao";
-            this.btn_SalvarAlteracao.UseVisualStyleBackColor = true;
-            this.btn_SalvarAlteracao.Click += new System.EventHandler(this.btn_SalvarAlteracao_Click);
-            // 
-            // allMensalidadesTableAdapter
-            // 
-            this.allMensalidadesTableAdapter.ClearBeforeFill = true;
-            // 
             // códigoDaMensalidadeDataGridViewTextBoxColumn
             // 
             this.códigoDaMensalidadeDataGridViewTextBoxColumn.DataPropertyName = "Código da mensalidade";
@@ -249,6 +221,34 @@
             resources.ApplyResources(this.valorDaParcelaDataGridViewTextBoxColumn, "valorDaParcelaDataGridViewTextBoxColumn");
             this.valorDaParcelaDataGridViewTextBoxColumn.Name = "valorDaParcelaDataGridViewTextBoxColumn";
             this.valorDaParcelaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // allMensalidadesBindingSource
+            // 
+            this.allMensalidadesBindingSource.DataMember = "AllMensalidades";
+            this.allMensalidadesBindingSource.DataSource = this.dB_EscolaDataSet2;
+            // 
+            // dB_EscolaDataSet2
+            // 
+            this.dB_EscolaDataSet2.DataSetName = "DB_EscolaDataSet2";
+            this.dB_EscolaDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // btn_Cancelar
+            // 
+            resources.ApplyResources(this.btn_Cancelar, "btn_Cancelar");
+            this.btn_Cancelar.Name = "btn_Cancelar";
+            this.btn_Cancelar.UseVisualStyleBackColor = true;
+            this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
+            // 
+            // btn_SalvarAlteracao
+            // 
+            resources.ApplyResources(this.btn_SalvarAlteracao, "btn_SalvarAlteracao");
+            this.btn_SalvarAlteracao.Name = "btn_SalvarAlteracao";
+            this.btn_SalvarAlteracao.UseVisualStyleBackColor = true;
+            this.btn_SalvarAlteracao.Click += new System.EventHandler(this.btn_SalvarAlteracao_Click);
+            // 
+            // allMensalidadesTableAdapter
+            // 
+            this.allMensalidadesTableAdapter.ClearBeforeFill = true;
             // 
             // FormMensalidadesAlunos
             // 

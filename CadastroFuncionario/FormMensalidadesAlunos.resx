@@ -465,25 +465,7 @@
     <value>910, 357</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Mensalidades dos Alunos</value>
-  </data>
-  <data name="&gt;&gt;allMensalidadesBindingSource.Name" xml:space="preserve">
-    <value>allMensalidadesBindingSource</value>
-  </data>
-  <data name="&gt;&gt;allMensalidadesBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dB_EscolaDataSet2.Name" xml:space="preserve">
-    <value>dB_EscolaDataSet2</value>
-  </data>
-  <data name="&gt;&gt;dB_EscolaDataSet2.Type" xml:space="preserve">
-    <value>CadastroFuncionario.DB_EscolaDataSet2, DB_EscolaDataSet2.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;allMensalidadesTableAdapter.Name" xml:space="preserve">
-    <value>allMensalidadesTableAdapter</value>
-  </data>
-  <data name="&gt;&gt;allMensalidadesTableAdapter.Type" xml:space="preserve">
-    <value>CadastroFuncionario.DB_EscolaDataSet2TableAdapters.AllMensalidadesTableAdapter, DB_EscolaDataSet2.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Mensalidades do aluno</value>
   </data>
   <data name="&gt;&gt;códigoDaMensalidadeDataGridViewTextBoxColumn.Name" xml:space="preserve">
     <value>códigoDaMensalidadeDataGridViewTextBoxColumn</value>
@@ -538,6 +520,24 @@
   </data>
   <data name="&gt;&gt;valorDaParcelaDataGridViewTextBoxColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;allMensalidadesBindingSource.Name" xml:space="preserve">
+    <value>allMensalidadesBindingSource</value>
+  </data>
+  <data name="&gt;&gt;allMensalidadesBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dB_EscolaDataSet2.Name" xml:space="preserve">
+    <value>dB_EscolaDataSet2</value>
+  </data>
+  <data name="&gt;&gt;dB_EscolaDataSet2.Type" xml:space="preserve">
+    <value>CadastroFuncionario.DB_EscolaDataSet2, DB_EscolaDataSet2.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;allMensalidadesTableAdapter.Name" xml:space="preserve">
+    <value>allMensalidadesTableAdapter</value>
+  </data>
+  <data name="&gt;&gt;allMensalidadesTableAdapter.Type" xml:space="preserve">
+    <value>CadastroFuncionario.DB_EscolaDataSet2TableAdapters.AllMensalidadesTableAdapter, DB_EscolaDataSet2.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FormMensalidadesAlunos</value>

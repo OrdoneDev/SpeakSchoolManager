@@ -221,7 +221,7 @@
             this.vincularAuloATurmaToolStripMenuItem,
             this.listaDeChamadaToolStripMenuItem});
             this.cadastrarToolStripMenuItem2.Name = "cadastrarToolStripMenuItem2";
-            this.cadastrarToolStripMenuItem2.Size = new System.Drawing.Size(137, 22);
+            this.cadastrarToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
             this.cadastrarToolStripMenuItem2.Text = "Cadastrar";
             // 
             // financeiroEmpresaToolStripMenuItem
@@ -229,7 +229,7 @@
             this.financeiroEmpresaToolStripMenuItem.Name = "financeiroEmpresaToolStripMenuItem";
             this.financeiroEmpresaToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
             this.financeiroEmpresaToolStripMenuItem.Tag = "1";
-            this.financeiroEmpresaToolStripMenuItem.Text = "Financeiro empresa...";
+            this.financeiroEmpresaToolStripMenuItem.Text = "Financeiro da empresa...";
             this.financeiroEmpresaToolStripMenuItem.Click += new System.EventHandler(this.financeiroEmpresaToolStripMenuItem_Click);
             // 
             // novoPlanoToolStripMenuItem
@@ -261,7 +261,7 @@
             this.vincularAuloATurmaToolStripMenuItem.Name = "vincularAuloATurmaToolStripMenuItem";
             this.vincularAuloATurmaToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
             this.vincularAuloATurmaToolStripMenuItem.Tag = "2";
-            this.vincularAuloATurmaToolStripMenuItem.Text = "Vincular aulo à turma...";
+            this.vincularAuloATurmaToolStripMenuItem.Text = "Vincular aluno à turma...";
             this.vincularAuloATurmaToolStripMenuItem.Click += new System.EventHandler(this.vincularAuloATurmaToolStripMenuItem_Click);
             // 
             // listaDeChamadaToolStripMenuItem
@@ -278,7 +278,7 @@
             this.mensalidadesDoAlunoToolStripMenuItem,
             this.registrarPagamentoFuncionarioToolStripMenuItem});
             this.negociaçãoToolStripMenuItem1.Name = "negociaçãoToolStripMenuItem1";
-            this.negociaçãoToolStripMenuItem1.Size = new System.Drawing.Size(137, 22);
+            this.negociaçãoToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.negociaçãoToolStripMenuItem1.Text = "Negociação";
             // 
             // aquisiçãoDeCursoToolStripMenuItem
@@ -311,7 +311,7 @@
             this.inscriçõesToolStripMenuItem,
             this.boletimDoAlunoToolStripMenuItem});
             this.alterarToolStripMenuItem.Name = "alterarToolStripMenuItem";
-            this.alterarToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.alterarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.alterarToolStripMenuItem.Text = "Alterar";
             // 
             // inscriçõesToolStripMenuItem
