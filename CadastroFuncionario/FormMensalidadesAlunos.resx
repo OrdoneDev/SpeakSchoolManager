@@ -333,7 +333,7 @@
     <value>Código do aluno</value>
   </data>
   <data name="númeroDaParcelaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Número da parcela</value>
+    <value>Nº da parcela</value>
   </data>
   <data name="situaçãoDataGridViewCheckBoxColumn.HeaderText" xml:space="preserve">
     <value>Situação</value>
@@ -342,7 +342,7 @@
     <value>Data de vencimento</value>
   </data>
   <data name="númeroTotalDeParcelasDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Número total de parcelas</value>
+    <value>Nº total de parcelas</value>
   </data>
   <data name="situaçãoTotalDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>Situação total</value>
@@ -350,10 +350,13 @@
   <data name="nomeDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>Nome</value>
   </data>
+  <data name="valorDaParcelaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Valor da parcela</value>
+  </data>
   <metadata name="allMensalidadesBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>171, 17</value>
   </metadata>
-  <metadata name="dB_EscolaDataSet4.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="dB_EscolaDataSet2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
   <data name="dgv_MensalidadesAluno.Location" type="System.Drawing.Point, System.Drawing">
@@ -464,6 +467,24 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Mensalidades dos Alunos</value>
   </data>
+  <data name="&gt;&gt;allMensalidadesBindingSource.Name" xml:space="preserve">
+    <value>allMensalidadesBindingSource</value>
+  </data>
+  <data name="&gt;&gt;allMensalidadesBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dB_EscolaDataSet2.Name" xml:space="preserve">
+    <value>dB_EscolaDataSet2</value>
+  </data>
+  <data name="&gt;&gt;dB_EscolaDataSet2.Type" xml:space="preserve">
+    <value>CadastroFuncionario.DB_EscolaDataSet2, DB_EscolaDataSet2.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;allMensalidadesTableAdapter.Name" xml:space="preserve">
+    <value>allMensalidadesTableAdapter</value>
+  </data>
+  <data name="&gt;&gt;allMensalidadesTableAdapter.Type" xml:space="preserve">
+    <value>CadastroFuncionario.DB_EscolaDataSet2TableAdapters.AllMensalidadesTableAdapter, DB_EscolaDataSet2.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
   <data name="&gt;&gt;códigoDaMensalidadeDataGridViewTextBoxColumn.Name" xml:space="preserve">
     <value>códigoDaMensalidadeDataGridViewTextBoxColumn</value>
   </data>
@@ -512,23 +533,11 @@
   <data name="&gt;&gt;nomeDataGridViewTextBoxColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;allMensalidadesBindingSource.Name" xml:space="preserve">
-    <value>allMensalidadesBindingSource</value>
+  <data name="&gt;&gt;valorDaParcelaDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>valorDaParcelaDataGridViewTextBoxColumn</value>
   </data>
-  <data name="&gt;&gt;allMensalidadesBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dB_EscolaDataSet4.Name" xml:space="preserve">
-    <value>dB_EscolaDataSet4</value>
-  </data>
-  <data name="&gt;&gt;dB_EscolaDataSet4.Type" xml:space="preserve">
-    <value>CadastroFuncionario.DB_EscolaDataSet4, DB_EscolaDataSet4.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;allMensalidadesTableAdapter.Name" xml:space="preserve">
-    <value>allMensalidadesTableAdapter</value>
-  </data>
-  <data name="&gt;&gt;allMensalidadesTableAdapter.Type" xml:space="preserve">
-    <value>CadastroFuncionario.DB_EscolaDataSet4TableAdapters.AllMensalidadesTableAdapter, DB_EscolaDataSet4.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="&gt;&gt;valorDaParcelaDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FormMensalidadesAlunos</value>

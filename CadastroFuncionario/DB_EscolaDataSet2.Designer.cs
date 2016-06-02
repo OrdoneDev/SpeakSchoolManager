@@ -20,9 +20,9 @@ namespace CadastroFuncionario {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("DB_EscolaDataSet4")]
+    [global::System.Xml.Serialization.XmlRootAttribute("DB_EscolaDataSet2")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class DB_EscolaDataSet4 : global::System.Data.DataSet {
+    public partial class DB_EscolaDataSet2 : global::System.Data.DataSet {
         
         private AllMensalidadesDataTable tableAllMensalidades;
         
@@ -30,7 +30,7 @@ namespace CadastroFuncionario {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public DB_EscolaDataSet4() {
+        public DB_EscolaDataSet2() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace CadastroFuncionario {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        protected DB_EscolaDataSet4(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected DB_EscolaDataSet2(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -127,7 +127,7 @@ namespace CadastroFuncionario {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            DB_EscolaDataSet4 cln = ((DB_EscolaDataSet4)(base.Clone()));
+            DB_EscolaDataSet2 cln = ((DB_EscolaDataSet2)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -199,9 +199,9 @@ namespace CadastroFuncionario {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "DB_EscolaDataSet4";
+            this.DataSetName = "DB_EscolaDataSet2";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/DB_EscolaDataSet4.xsd";
+            this.Namespace = "http://tempuri.org/DB_EscolaDataSet2.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableAllMensalidades = new AllMensalidadesDataTable();
@@ -225,7 +225,7 @@ namespace CadastroFuncionario {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            DB_EscolaDataSet4 ds = new DB_EscolaDataSet4();
+            DB_EscolaDataSet2 ds = new DB_EscolaDataSet2();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -294,6 +294,8 @@ namespace CadastroFuncionario {
             private global::System.Data.DataColumn columnSituação_total;
             
             private global::System.Data.DataColumn columnNome;
+            
+            private global::System.Data.DataColumn columnValor_da_parcela;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -394,6 +396,14 @@ namespace CadastroFuncionario {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Valor_da_parcelaColumn {
+                get {
+                    return this.columnValor_da_parcela;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -429,7 +439,7 @@ namespace CadastroFuncionario {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public AllMensalidadesRow AddAllMensalidadesRow(int Código_da_mensalidade, int Código_do_aluno, byte Número_da_parcela, bool Situação, System.DateTime Data_de_vencimento, byte Número_total_de_parcelas, string Situação_total, string Nome) {
+            public AllMensalidadesRow AddAllMensalidadesRow(int Código_da_mensalidade, int Código_do_aluno, byte Número_da_parcela, bool Situação, System.DateTime Data_de_vencimento, byte Número_total_de_parcelas, string Situação_total, string Nome, decimal Valor_da_parcela) {
                 AllMensalidadesRow rowAllMensalidadesRow = ((AllMensalidadesRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Código_da_mensalidade,
@@ -439,7 +449,8 @@ namespace CadastroFuncionario {
                         Data_de_vencimento,
                         Número_total_de_parcelas,
                         Situação_total,
-                        Nome};
+                        Nome,
+                        Valor_da_parcela};
                 rowAllMensalidadesRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowAllMensalidadesRow);
                 return rowAllMensalidadesRow;
@@ -470,6 +481,7 @@ namespace CadastroFuncionario {
                 this.columnNúmero_total_de_parcelas = base.Columns["Número total de parcelas"];
                 this.columnSituação_total = base.Columns["Situação total"];
                 this.columnNome = base.Columns["Nome"];
+                this.columnValor_da_parcela = base.Columns["Valor da parcela"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -491,6 +503,8 @@ namespace CadastroFuncionario {
                 base.Columns.Add(this.columnSituação_total);
                 this.columnNome = new global::System.Data.DataColumn("Nome", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnNome);
+                this.columnValor_da_parcela = new global::System.Data.DataColumn("Valor da parcela", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnValor_da_parcela);
                 this.columnCódigo_da_mensalidade.AllowDBNull = false;
                 this.columnCódigo_do_aluno.AllowDBNull = false;
                 this.columnNúmero_da_parcela.AllowDBNull = false;
@@ -501,6 +515,7 @@ namespace CadastroFuncionario {
                 this.columnSituação_total.MaxLength = 9;
                 this.columnNome.AllowDBNull = false;
                 this.columnNome.MaxLength = 40;
+                this.columnValor_da_parcela.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -568,7 +583,7 @@ namespace CadastroFuncionario {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                DB_EscolaDataSet4 ds = new DB_EscolaDataSet4();
+                DB_EscolaDataSet2 ds = new DB_EscolaDataSet2();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -736,6 +751,17 @@ namespace CadastroFuncionario {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal Valor_da_parcela {
+                get {
+                    return ((decimal)(this[this.tableAllMensalidades.Valor_da_parcelaColumn]));
+                }
+                set {
+                    this[this.tableAllMensalidades.Valor_da_parcelaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsSituação_totalNull() {
                 return this.IsNull(this.tableAllMensalidades.Situação_totalColumn);
             }
@@ -782,7 +808,7 @@ namespace CadastroFuncionario {
         }
     }
 }
-namespace CadastroFuncionario.DB_EscolaDataSet4TableAdapters {
+namespace CadastroFuncionario.DB_EscolaDataSet2TableAdapters {
     
     
     /// <summary>
@@ -914,6 +940,7 @@ namespace CadastroFuncionario.DB_EscolaDataSet4TableAdapters {
             tableMapping.ColumnMappings.Add("Número total de parcelas", "Número total de parcelas");
             tableMapping.ColumnMappings.Add("Situação total", "Situação total");
             tableMapping.ColumnMappings.Add("Nome", "Nome");
+            tableMapping.ColumnMappings.Add("Valor da parcela", "Valor da parcela");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -931,8 +958,8 @@ namespace CadastroFuncionario.DB_EscolaDataSet4TableAdapters {
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT [Código da mensalidade], [Código do aluno], [Número da parcela], Situação," +
-                " [Data de vencimento], [Número total de parcelas], [Situação total], Nome FROM d" +
-                "bo.AllMensalidades";
+                " [Data de vencimento], [Número total de parcelas], [Situação total], Nome, [Valo" +
+                "r da parcela] FROM dbo.AllMensalidades";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -940,7 +967,7 @@ namespace CadastroFuncionario.DB_EscolaDataSet4TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DB_EscolaDataSet4.AllMensalidadesDataTable dataTable) {
+        public virtual int Fill(DB_EscolaDataSet2.AllMensalidadesDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -953,9 +980,9 @@ namespace CadastroFuncionario.DB_EscolaDataSet4TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DB_EscolaDataSet4.AllMensalidadesDataTable GetData() {
+        public virtual DB_EscolaDataSet2.AllMensalidadesDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            DB_EscolaDataSet4.AllMensalidadesDataTable dataTable = new DB_EscolaDataSet4.AllMensalidadesDataTable();
+            DB_EscolaDataSet2.AllMensalidadesDataTable dataTable = new DB_EscolaDataSet2.AllMensalidadesDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1029,7 +1056,7 @@ namespace CadastroFuncionario.DB_EscolaDataSet4TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateUpdatedRows(DB_EscolaDataSet4 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(DB_EscolaDataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -1039,7 +1066,7 @@ namespace CadastroFuncionario.DB_EscolaDataSet4TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateInsertedRows(DB_EscolaDataSet4 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(DB_EscolaDataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -1049,7 +1076,7 @@ namespace CadastroFuncionario.DB_EscolaDataSet4TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateDeletedRows(DB_EscolaDataSet4 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(DB_EscolaDataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             return result;
         }
@@ -1083,7 +1110,7 @@ namespace CadastroFuncionario.DB_EscolaDataSet4TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public virtual int UpdateAll(DB_EscolaDataSet4 dataSet) {
+        public virtual int UpdateAll(DB_EscolaDataSet2 dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

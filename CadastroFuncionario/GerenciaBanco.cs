@@ -614,7 +614,7 @@ namespace CadastroFuncionario
             return;
         }
 
-        public static bool CadastrarPagamentoFuncionario(int Id_Financeiro, DateTime Data)
+        public static bool CadastrarPagamentoFuncionario(int Id_Financeiro, DateTime Data, float Valor)
         {
             SqlConnection conexao = new SqlConnection(strConexao);
             SqlCommand cmd;
@@ -629,13 +629,14 @@ namespace CadastroFuncionario
                 Numero_Parcela = getUltimaParcelaPaga(Id_Financeiro);
                 Numero_Parcela++;
 
-                cmd.CommandText = "Insert into SysProtected.Mensalidades (Id_Financeiro, Numero_Parcela, Situacao, Data) values (@Id_Financeiro, @Numero_Parcela, 1, @Data)";
+                cmd.CommandText = "Insert into SysProtected.Mensalidades (Id_Financeiro, Numero_Parcela, Situacao, Data, Valor) values (@Id_Financeiro, @Numero_Parcela, 1, @Data, @Valor)";
 
                 cmd.Parameters.Add(new SqlParameter("@Id_Financeiro", Id_Financeiro));
                 cmd.Parameters.Add(new SqlParameter("@Numero_Parcela", Numero_Parcela));
                 SqlParameter dataParameter = new SqlParameter("@Data", SqlDbType.Date);
                 dataParameter.Value = Data.Date;
                 cmd.Parameters.Add(dataParameter);
+                cmd.Parameters.Add(new SqlParameter("@Valor", Valor));
 
                 cmd.CommandType = CommandType.Text;
                 cmd.ExecuteNonQuery();

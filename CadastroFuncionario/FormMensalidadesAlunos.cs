@@ -29,8 +29,8 @@ namespace CadastroFuncionario
 
         private void FormMensalidadesAlunos_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dB_EscolaDataSet4.AllMensalidades' table. You can move, or remove it, as needed.
-            this.allMensalidadesTableAdapter.Fill(this.dB_EscolaDataSet4.AllMensalidades);
+            // TODO: This line of code loads data into the 'dB_EscolaDataSet2.AllMensalidades' table. You can move, or remove it, as needed.
+            this.allMensalidadesTableAdapter.Fill(this.dB_EscolaDataSet2.AllMensalidades);
         }
 
         private void msk_IdAluno_TextChanged(object sender, EventArgs e)

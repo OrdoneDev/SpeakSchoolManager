@@ -469,21 +469,25 @@ begin
 	declare @Parcelas int;
 	declare @Data date;
 	declare @I int;
+	declare @Valor money;
 	
 	select @Id_Financeiro = Id_Financeiro from inserted;
 	select @Id_Negociacao = Id_Negociacao from inserted;
 	select @Parcelas = Parcelas from inserted;
 	select @Data = GETDATE();
-	select @I = 1;
+	set @I = 1;
+	select @Valor = P.Valor from inserted N INNER JOIN SysProtected.Planos P
+	on N.Id_Plano = P.Id_Plano;
+	set @Valor = @Valor / @Parcelas;
 	
-	Insert into SysProtected.Mensalidades values (@Id_Financeiro, @Id_Negociacao, @I, 1, @Data);
+	Insert into SysProtected.Mensalidades values (@Id_Financeiro, @Id_Negociacao, @I, 1, @Data, @Valor);
 	
 	select @I = @I + 1;
 
 	while (@Parcelas >= @I)
 	begin
 		select @Data = DATEADD(MONTH, 1, @Data);
-		Insert into SysProtected.Mensalidades values (@Id_Financeiro, @Id_Negociacao, @I, 0, @Data);
+		Insert into SysProtected.Mensalidades values (@Id_Financeiro, @Id_Negociacao, @I, 0, @Data, @Valor);
 		select @I = @I + 1;
 	end
 end
@@ -495,7 +499,8 @@ Create table SysProtected.Mensalidades (
 	Id_Negociacao		Int				null		Foreign key	references SysProtected.Negociacao (Id_Negociacao),
 	Numero_Parcela		Tinyint			not null	Check (Numero_Parcela > 0),
 	Situacao			bit				not null,
-	Data				Date			not null
+	Data				Date			not null,
+	Valor				Money			not null
 )
 go
 
@@ -596,7 +601,9 @@ CREATE VIEW AllMensalidades AS
 	M.Data						as 'Data de vencimento',
 	N.Parcelas					as 'Número total de parcelas',
 	case when M.Situacao = 1	then 'Pago' else 'A receber' end 'Situação total',
-	A.Nome from SysProtected.Mensalidades M INNER JOIN SysProtected.Negociacao N	on M.Id_Negociacao = 
+	A.Nome,
+	M.Data						as 'Valor da parcela'
+	from SysProtected.Mensalidades M INNER JOIN SysProtected.Negociacao N	on M.Id_Negociacao = 
 	N.Id_Negociacao INNER JOIN SysProtected.Alunos A on N.Id_Aluno = A.Id_Aluno
 GO
 
