@@ -158,7 +158,7 @@
             this.alunosToolStripMenuItem2,
             this.reponsavelToolStripMenuItem});
             this.cadastrarToolStripMenuItem1.Name = "cadastrarToolStripMenuItem1";
-            this.cadastrarToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.cadastrarToolStripMenuItem1.Size = new System.Drawing.Size(124, 22);
             this.cadastrarToolStripMenuItem1.Tag = "2";
             this.cadastrarToolStripMenuItem1.Text = "Cadastrar";
             // 
@@ -184,7 +184,7 @@
             this.alunoToolStripMenuItem,
             this.históricosRegistradosToolStripMenuItem1});
             this.historicoToolStripMenuItem1.Name = "historicoToolStripMenuItem1";
-            this.historicoToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.historicoToolStripMenuItem1.Size = new System.Drawing.Size(124, 22);
             this.historicoToolStripMenuItem1.Text = "Histórico";
             // 
             // alunoToolStripMenuItem
@@ -221,7 +221,7 @@
             this.vincularAuloATurmaToolStripMenuItem,
             this.listaDeChamadaToolStripMenuItem});
             this.cadastrarToolStripMenuItem2.Name = "cadastrarToolStripMenuItem2";
-            this.cadastrarToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.cadastrarToolStripMenuItem2.Size = new System.Drawing.Size(137, 22);
             this.cadastrarToolStripMenuItem2.Text = "Cadastrar";
             // 
             // financeiroEmpresaToolStripMenuItem
@@ -278,7 +278,7 @@
             this.mensalidadesDoAlunoToolStripMenuItem,
             this.registrarPagamentoFuncionarioToolStripMenuItem});
             this.negociaçãoToolStripMenuItem1.Name = "negociaçãoToolStripMenuItem1";
-            this.negociaçãoToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.negociaçãoToolStripMenuItem1.Size = new System.Drawing.Size(137, 22);
             this.negociaçãoToolStripMenuItem1.Text = "Negociação";
             // 
             // aquisiçãoDeCursoToolStripMenuItem
@@ -311,7 +311,7 @@
             this.inscriçõesToolStripMenuItem,
             this.boletimDoAlunoToolStripMenuItem});
             this.alterarToolStripMenuItem.Name = "alterarToolStripMenuItem";
-            this.alterarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.alterarToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.alterarToolStripMenuItem.Text = "Alterar";
             // 
             // inscriçõesToolStripMenuItem
@@ -475,6 +475,7 @@
             // 
             this.históricoDoFuncionárioToolStripMenuItem.Name = "históricoDoFuncionárioToolStripMenuItem";
             this.históricoDoFuncionárioToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
+            this.históricoDoFuncionárioToolStripMenuItem.Tag = "2";
             this.históricoDoFuncionárioToolStripMenuItem.Text = "Histórico do funcionário...";
             this.históricoDoFuncionárioToolStripMenuItem.Click += new System.EventHandler(this.históricoDoFuncionárioToolStripMenuItem_Click);
             // 
