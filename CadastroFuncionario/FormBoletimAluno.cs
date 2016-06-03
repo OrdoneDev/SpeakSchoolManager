@@ -70,7 +70,7 @@ namespace CadastroFuncionario
 
         private void dgv_BoletimAluno_CellParsing(object sender, DataGridViewCellParsingEventArgs e)
         {
-            Regex Valida = new Regex(@"(^[0-9]{1}\.[0-9]{1})$|(^[0-9]0{1})$|(^[0-9]{1})$");
+            Regex Valida = new Regex(@"(^[0-9]{1}\,[0-9]{1})$|(^[0-9]0{1})$|(^[0-9]{1})$");
             
             if (!Valida.IsMatch(e.Value.ToString()) && (e.ColumnIndex == 2 || e.ColumnIndex == 3))
             {
