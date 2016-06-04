@@ -59,6 +59,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DB_EscolaDataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DB_EscolaDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_EscolaDataSet3.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DB_EscolaDataSet5.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -133,6 +138,12 @@
     </Compile>
     <Compile Include="FormCadastroTurma.Designer.cs">
       <DependentUpon>FormCadastroTurma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCaixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCaixa.Designer.cs">
+      <DependentUpon>FormCaixa.cs</DependentUpon>
     </Compile>
     <Compile Include="FormEditarInscricao.cs">
       <SubType>Form</SubType>
@@ -344,6 +355,9 @@
     <EmbeddedResource Include="FormCadastroTurma.resx">
       <DependentUpon>FormCadastroTurma.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormCaixa.resx">
+      <DependentUpon>FormCaixa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormEditarInscricao.resx">
       <DependentUpon>FormEditarInscricao.cs</DependentUpon>
     </EmbeddedResource>
@@ -465,6 +479,17 @@
     </None>
     <None Include="DB_EscolaDataSet2.xss">
       <DependentUpon>DB_EscolaDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DB_EscolaDataSet3.xsc">
+      <DependentUpon>DB_EscolaDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DB_EscolaDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_EscolaDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_EscolaDataSet3.xss">
+      <DependentUpon>DB_EscolaDataSet3.xsd</DependentUpon>
     </None>
     <None Include="DB_EscolaDataSet5.xsc">
       <DependentUpon>DB_EscolaDataSet5.xsd</DependentUpon>

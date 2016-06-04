@@ -504,6 +504,10 @@ Create table SysProtected.Mensalidades (
 )
 go
 
+CREATE VIEW Caixa AS
+	select SUM(Valor) as 'Valor total pago de mensalidades de alunos',(select SUM(-Valor) from SysProtected.Mensalidades where Id_Negociacao is null and Situacao = 1) as 'Valor total pago aos funcionários' from SysProtected.Mensalidades where Id_Negociacao is not null and Situacao = 1
+GO
+
 CREATE VIEW MensalidadesAlunosFiltro AS
 	select	M.Id_Mensalidade,
 			M.Id_Financeiro,

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DB_EscolaDataSet3" targetNamespace="http://tempuri.org/DB_EscolaDataSet3.xsd" xmlns:mstns="http://tempuri.org/DB_EscolaDataSet3.xsd" xmlns="http://tempuri.org/DB_EscolaDataSet3.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DB_EscolaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DB_EscolaConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CadastroFuncionario.Properties.Settings.GlobalReference.Default.DB_EscolaConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CaixaTableAdapter" GeneratorDataComponentClassName="CaixaTableAdapter" Name="Caixa" UserDataComponentName="CaixaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DB_EscolaConnectionString (Settings)" DbObjectName="DB_Escola.dbo.Caixa" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [Valor total pago de mensalidades de alunos], [Valor total pago aos funcionários] FROM dbo.Caixa</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Valor total pago de mensalidades de alunos" DataSetColumn="Valor total pago de mensalidades de alunos" />
+              <Mapping SourceColumn="Valor total pago aos funcionários" DataSetColumn="Valor total pago aos funcionários" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DB_EscolaDataSet3" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DB_EscolaDataSet3" msprop:Generator_UserDSName="DB_EscolaDataSet3">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Caixa" msprop:Generator_TableClassName="CaixaDataTable" msprop:Generator_TableVarName="tableCaixa" msprop:Generator_TablePropName="Caixa" msprop:Generator_RowDeletingName="CaixaRowDeleting" msprop:Generator_RowChangingName="CaixaRowChanging" msprop:Generator_RowEvHandlerName="CaixaRowChangeEventHandler" msprop:Generator_RowDeletedName="CaixaRowDeleted" msprop:Generator_UserTableName="Caixa" msprop:Generator_RowChangedName="CaixaRowChanged" msprop:Generator_RowEvArgName="CaixaRowChangeEvent" msprop:Generator_RowClassName="CaixaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Valor_x0020_total_x0020_pago_x0020_de_x0020_mensalidades_x0020_de_x0020_alunos" msprop:Generator_ColumnVarNameInTable="columnValor_total_pago_de_mensalidades_de_alunos" msprop:Generator_ColumnPropNameInRow="Valor_total_pago_de_mensalidades_de_alunos" msprop:Generator_ColumnPropNameInTable="Valor_total_pago_de_mensalidades_de_alunosColumn" msprop:Generator_UserColumnName="Valor total pago de mensalidades de alunos" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Valor_x0020_total_x0020_pago_x0020_aos_x0020_funcionários" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnValor_total_pago_aos_funcionários" msprop:Generator_ColumnPropNameInRow="Valor_total_pago_aos_funcionários" msprop:Generator_ColumnPropNameInTable="Valor_total_pago_aos_funcionáriosColumn" msprop:Generator_UserColumnName="Valor total pago aos funcionários" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

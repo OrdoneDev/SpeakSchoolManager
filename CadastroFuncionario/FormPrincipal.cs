@@ -318,5 +318,12 @@ namespace CadastroFuncionario
             form.MdiParent = this;
             form.Show();
         }
+
+        private void caixaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormCaixa form = new FormCaixa();
+            form.MdiParent = this;
+            form.Show();
+        }
     }
 }

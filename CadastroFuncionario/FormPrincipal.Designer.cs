@@ -75,6 +75,7 @@
             this.listaDePresençaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.históricoDoFuncionárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.históricoDoAlunoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.caixaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -206,7 +207,8 @@
             this.administrativoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cadastrarToolStripMenuItem2,
             this.negociaçãoToolStripMenuItem1,
-            this.alterarToolStripMenuItem});
+            this.alterarToolStripMenuItem,
+            this.caixaToolStripMenuItem});
             this.administrativoToolStripMenuItem.Name = "administrativoToolStripMenuItem";
             this.administrativoToolStripMenuItem.Size = new System.Drawing.Size(97, 20);
             this.administrativoToolStripMenuItem.Text = "Administrativo";
@@ -221,7 +223,7 @@
             this.vincularAuloATurmaToolStripMenuItem,
             this.listaDeChamadaToolStripMenuItem});
             this.cadastrarToolStripMenuItem2.Name = "cadastrarToolStripMenuItem2";
-            this.cadastrarToolStripMenuItem2.Size = new System.Drawing.Size(137, 22);
+            this.cadastrarToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
             this.cadastrarToolStripMenuItem2.Text = "Cadastrar";
             // 
             // financeiroEmpresaToolStripMenuItem
@@ -278,7 +280,7 @@
             this.mensalidadesDoAlunoToolStripMenuItem,
             this.registrarPagamentoFuncionarioToolStripMenuItem});
             this.negociaçãoToolStripMenuItem1.Name = "negociaçãoToolStripMenuItem1";
-            this.negociaçãoToolStripMenuItem1.Size = new System.Drawing.Size(137, 22);
+            this.negociaçãoToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.negociaçãoToolStripMenuItem1.Text = "Negociação";
             // 
             // aquisiçãoDeCursoToolStripMenuItem
@@ -311,7 +313,7 @@
             this.inscriçõesToolStripMenuItem,
             this.boletimDoAlunoToolStripMenuItem});
             this.alterarToolStripMenuItem.Name = "alterarToolStripMenuItem";
-            this.alterarToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.alterarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.alterarToolStripMenuItem.Text = "Alterar";
             // 
             // inscriçõesToolStripMenuItem
@@ -486,6 +488,14 @@
             this.históricoDoAlunoToolStripMenuItem.Text = "Histórico do aluno...";
             this.históricoDoAlunoToolStripMenuItem.Click += new System.EventHandler(this.históricoDoAlunoToolStripMenuItem_Click);
             // 
+            // caixaToolStripMenuItem
+            // 
+            this.caixaToolStripMenuItem.Name = "caixaToolStripMenuItem";
+            this.caixaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.caixaToolStripMenuItem.Tag = "1";
+            this.caixaToolStripMenuItem.Text = "Caixa";
+            this.caixaToolStripMenuItem.Click += new System.EventHandler(this.caixaToolStripMenuItem_Click);
+            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -558,6 +568,7 @@
         private System.Windows.Forms.ToolStripMenuItem listaDePresençaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem históricoDoFuncionárioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem históricoDoAlunoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem caixaToolStripMenuItem;
 
     }
 }
