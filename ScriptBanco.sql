@@ -710,7 +710,8 @@ Create table SysProtected.Boletim (
 	Nota1				Float			null		Check (Nota1 > 0 and Nota1 < 11),
 	Nota2				Float			null		Check (Nota2 > 0 and Nota2 < 11),
 	Media											As ((Nota1 + Nota2) / 2),
-	Numero_Faltas		Tinyint			null		Check (Numero_Faltas >= 0)
+	Numero_Faltas		Tinyint			null		Check (Numero_Faltas >= 0),
+	Semestre			tinyint			not null
 )
 go
 
@@ -772,7 +773,33 @@ begin
 
 	Select @Id_Inscricao = Id_Inscricao from inserted;
 
-	Insert into SysProtected.Boletim (Id_Inscricao, Nota1, Nota2, Numero_Faltas) values (@Id_Inscricao, null, null, null);
+	Insert into SysProtected.Boletim (Id_Inscricao, Nota1, Nota2, Numero_Faltas, Semestre) values (@Id_Inscricao, null, null, null, 1);
+end
+go
+
+Create trigger TGR_InscricaoBoletimAlunoSemestre
+on SysProtected.Inscricao
+after update
+as
+begin
+	Declare @Id_Inscricao int;
+	declare @Status bit;
+	declare @Data Date;
+	declare @Semestre tinyint;
+
+	Select @Id_Inscricao = Id_Inscricao from inserted;
+	Select @Status = Status from inserted;
+	Select @Data = Data from inserted;
+	Select @Semestre = Semestre from SysProtected.Boletim where Id_Inscricao = @Id_Inscricao;
+	set @Semestre = @Semestre + 1;
+
+	if (@Data = GetDate())
+	BEGIN
+		if (@Status = 1)
+		BEGIN
+			Insert into SysProtected.Boletim (Id_Inscricao, Nota1, Nota2, Numero_Faltas, Semestre) values (@Id_Inscricao, null, null, null, @Semestre);
+		END
+	END
 end
 go
 
@@ -1052,7 +1079,7 @@ go
 
 Create view ListaPresenca as
 	select	L.Id_Presenca,
-			ROW_NUMBER() OVER(ORDER BY L.Id_Presenca)	as 'Nº chamada',
+			ROW_NUMBER() OVER(PARTITION BY L.Data ORDER BY L.Id_Presenca) as 'Nº chamada',
 			A.Nome										as 'Nome do aluno',
 			L.Chamada									as 'Presença',
 			L.Data										as 'Dia da aula',

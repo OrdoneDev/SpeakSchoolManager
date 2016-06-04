@@ -76,6 +76,7 @@
             this.históricoDoFuncionárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.históricoDoAlunoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.caixaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gerarNovoSemestreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -311,7 +312,8 @@
             // 
             this.alterarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.inscriçõesToolStripMenuItem,
-            this.boletimDoAlunoToolStripMenuItem});
+            this.boletimDoAlunoToolStripMenuItem,
+            this.gerarNovoSemestreToolStripMenuItem});
             this.alterarToolStripMenuItem.Name = "alterarToolStripMenuItem";
             this.alterarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.alterarToolStripMenuItem.Text = "Alterar";
@@ -496,6 +498,14 @@
             this.caixaToolStripMenuItem.Text = "Caixa";
             this.caixaToolStripMenuItem.Click += new System.EventHandler(this.caixaToolStripMenuItem_Click);
             // 
+            // gerarNovoSemestreToolStripMenuItem
+            // 
+            this.gerarNovoSemestreToolStripMenuItem.Name = "gerarNovoSemestreToolStripMenuItem";
+            this.gerarNovoSemestreToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.gerarNovoSemestreToolStripMenuItem.Tag = "1";
+            this.gerarNovoSemestreToolStripMenuItem.Text = "Gerar novo semestre";
+            this.gerarNovoSemestreToolStripMenuItem.Click += new System.EventHandler(this.gerarNovoSemestreToolStripMenuItem_Click);
+            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -569,6 +579,7 @@
         private System.Windows.Forms.ToolStripMenuItem históricoDoFuncionárioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem históricoDoAlunoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem caixaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gerarNovoSemestreToolStripMenuItem;
 
     }
 }

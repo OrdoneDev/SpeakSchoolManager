@@ -68,14 +68,18 @@ namespace CadastroFuncionario
                 }
             }
 
-            dgv_ListaPresenca.DataSource = GerenciaBanco.getListaPresenca(int.Parse(msk_IdTurma.Text));
+            dgv_ListaPresenca.DataSource = GerenciaBanco.getListaPresenca(int.Parse(msk_IdTurma.Text), Data);
         }
 
         private void btn_SalvarLista_Click(object sender, EventArgs e)
         {
+            DateTime Data;
             bool Sucesso = false;
             if (!VerificaCamposListaPresenca())
                 return;
+
+            Data = dtp_DataAula.Value.Date;
+
             if (MessageBox.Show("Deseja salvar a lista de presença?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 for (int i = 0; i < dgv_ListaPresenca.RowCount; ++i)
@@ -98,7 +102,7 @@ namespace CadastroFuncionario
                     MessageBox.Show("A lista não foi atualizada!");
             }
 
-            dgv_ListaPresenca.DataSource = GerenciaBanco.getListaPresenca(int.Parse(msk_IdTurma.Text));
+            dgv_ListaPresenca.DataSource = GerenciaBanco.getListaPresenca(int.Parse(msk_IdTurma.Text), Data);
         }
 
         private void btn_Cancelar_Click(object sender, EventArgs e)

@@ -1761,7 +1761,7 @@ namespace CadastroFuncionario
             return Id_Aluno;
         }
 
-        public static DataTable getListaPresenca(int Id_Turma)
+        public static DataTable getListaPresenca(int Id_Turma, DateTime Data)
         {
             DataTable dt = null;
             SqlConnection conexao = new SqlConnection(strConexao);
@@ -1773,9 +1773,12 @@ namespace CadastroFuncionario
                 cmd = new SqlCommand();
                 cmd.Connection = conexao;
 
-                cmd.CommandText = "Select * from ListaPresenca where [Código da turma] = @Id_Turma";
+                cmd.CommandText = "Select * from ListaPresenca where [Código da turma] = @Id_Turma and [Dia da aula] = @Data";
 
                 cmd.Parameters.Add(new SqlParameter("@Id_Turma", Id_Turma));
+                SqlParameter dataParameter = new SqlParameter("@Data", SqlDbType.Date);
+                dataParameter.Value = Data.Date;
+                cmd.Parameters.Add(dataParameter);
 
                 cmd.CommandType = CommandType.Text;
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
