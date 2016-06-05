@@ -26,6 +26,7 @@ namespace CadastroFuncionario
             dgv_Inscricoes.Columns[1].ReadOnly = true;
             dgv_Inscricoes.Columns[2].ReadOnly = true;
             dgv_Inscricoes.Columns[3].ReadOnly = true;
+            dgv_Inscricoes.Columns[4].ReadOnly = false;
         }
 
         private void cmb_NomeAluno_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
@@ -57,17 +58,21 @@ namespace CadastroFuncionario
 
         private void btn_Atualizar_Click(object sender, EventArgs e)
         {
+            DateTime data = DateTime.Now.Date;
+
             foreach (DataGridViewRow linhas in dgv_Inscricoes.Rows)
             {
                 if (linhas.Cells[4].Value.ToString() == "True")
                 {
-                    linhas.Cells[3].Value = DateTime.Now.ToShortDateString();
+                    linhas.Cells[3].Value = data;
                 }
             }
         }
 
         private void btn_Salvar_Click(object sender, EventArgs e)
         {
+            //int Id_Inscricao;
+
             if (MessageBox.Show("Deseja salvar as alterações?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 GerenciaBanco.updateDados("Inscricao", "Id_Inscricao as 'Código da inscrição', " +
@@ -75,6 +80,12 @@ namespace CadastroFuncionario
 
                 MessageBox.Show("O novo semestre foi gerado com sucesso!");
             }
+
+            /*Id_Inscricao = int.Parse(dgv_Inscricoes.Rows[0].Cells[0].Value.ToString());
+            if (dgv_Inscricoes.Rows[0].Cells[4].Value.ToString() == "True")
+            {
+                GerenciaBanco.AtualizarPrimeiraInscricao(Id_Inscricao, DateTime.Now.Date);
+            }*/
 
             dgv_Inscricoes.DataSource = GerenciaBanco.carregaDados("Inscricao", "Id_Inscricao as 'Código da inscrição', " +
             "Id_Aluno as 'Código do aluno', Id_Negociacao as 'Código da negociação', Data, Status").Tables[0];

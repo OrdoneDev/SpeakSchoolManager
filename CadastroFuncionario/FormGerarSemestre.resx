@@ -117,41 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;btn_BuscarAluno.Name" xml:space="preserve">
-    <value>btn_BuscarAluno</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="dgv_Inscricoes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 49</value>
   </data>
-  <data name="&gt;&gt;btn_BuscarAluno.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="dgv_Inscricoes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>542, 276</value>
   </data>
-  <data name="&gt;&gt;btn_BuscarAluno.Parent" xml:space="preserve">
-    <value>group_Inscricoes</value>
-  </data>
-  <data name="&gt;&gt;btn_BuscarAluno.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;cmb_NomeAluno.Name" xml:space="preserve">
-    <value>cmb_NomeAluno</value>
-  </data>
-  <data name="&gt;&gt;cmb_NomeAluno.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cmb_NomeAluno.Parent" xml:space="preserve">
-    <value>group_Inscricoes</value>
-  </data>
-  <data name="&gt;&gt;cmb_NomeAluno.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;lbl_NomeAluno.Name" xml:space="preserve">
-    <value>lbl_NomeAluno</value>
-  </data>
-  <data name="&gt;&gt;lbl_NomeAluno.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbl_NomeAluno.Parent" xml:space="preserve">
-    <value>group_Inscricoes</value>
-  </data>
-  <data name="&gt;&gt;lbl_NomeAluno.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="dgv_Inscricoes.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
   <data name="&gt;&gt;dgv_Inscricoes.Name" xml:space="preserve">
     <value>dgv_Inscricoes</value>
@@ -163,7 +138,98 @@
     <value>group_Inscricoes</value>
   </data>
   <data name="&gt;&gt;dgv_Inscricoes.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btn_BuscarAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>250, 19</value>
+  </data>
+  <data name="btn_BuscarAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 23</value>
+  </data>
+  <data name="btn_BuscarAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="btn_BuscarAluno.Text" xml:space="preserve">
+    <value>Buscar aluno</value>
+  </data>
+  <data name="&gt;&gt;btn_BuscarAluno.Name" xml:space="preserve">
+    <value>btn_BuscarAluno</value>
+  </data>
+  <data name="&gt;&gt;btn_BuscarAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_BuscarAluno.Parent" xml:space="preserve">
+    <value>group_Inscricoes</value>
+  </data>
+  <data name="&gt;&gt;btn_BuscarAluno.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="cmb_NomeAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>47, 21</value>
+  </data>
+  <data name="cmb_NomeAluno.MaxLength" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="cmb_NomeAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>197, 21</value>
+  </data>
+  <data name="cmb_NomeAluno.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
+  </data>
+  <data name="&gt;&gt;cmb_NomeAluno.Name" xml:space="preserve">
+    <value>cmb_NomeAluno</value>
+  </data>
+  <data name="&gt;&gt;cmb_NomeAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmb_NomeAluno.Parent" xml:space="preserve">
+    <value>group_Inscricoes</value>
+  </data>
+  <data name="&gt;&gt;cmb_NomeAluno.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lbl_NomeAluno.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lbl_NomeAluno.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_NomeAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 24</value>
+  </data>
+  <data name="lbl_NomeAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 13</value>
+  </data>
+  <data name="lbl_NomeAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lbl_NomeAluno.Text" xml:space="preserve">
+    <value>Aluno:</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomeAluno.Name" xml:space="preserve">
+    <value>lbl_NomeAluno</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomeAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomeAluno.Parent" xml:space="preserve">
+    <value>group_Inscricoes</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomeAluno.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btn_Atualizar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>436, 19</value>
+  </data>
+  <data name="btn_Atualizar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 23</value>
+  </data>
+  <data name="btn_Atualizar.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btn_Atualizar.Text" xml:space="preserve">
+    <value>Rematricular alunos</value>
   </data>
   <data name="&gt;&gt;btn_Atualizar.Name" xml:space="preserve">
     <value>btn_Atualizar</value>
@@ -177,14 +243,12 @@
   <data name="&gt;&gt;btn_Atualizar.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="group_Inscricoes.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 13</value>
   </data>
   <data name="group_Inscricoes.Size" type="System.Drawing.Size, System.Drawing">
     <value>555, 331</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="group_Inscricoes.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
@@ -249,130 +313,6 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btn_Salvar.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btn_Atualizar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>436, 19</value>
-  </data>
-  <data name="btn_Atualizar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 23</value>
-  </data>
-  <data name="btn_Atualizar.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="btn_Atualizar.Text" xml:space="preserve">
-    <value>Rematricular alunos</value>
-  </data>
-  <data name="&gt;&gt;btn_Atualizar.Name" xml:space="preserve">
-    <value>btn_Atualizar</value>
-  </data>
-  <data name="&gt;&gt;btn_Atualizar.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_Atualizar.Parent" xml:space="preserve">
-    <value>group_Inscricoes</value>
-  </data>
-  <data name="&gt;&gt;btn_Atualizar.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="dgv_Inscricoes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 49</value>
-  </data>
-  <data name="dgv_Inscricoes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>542, 276</value>
-  </data>
-  <data name="dgv_Inscricoes.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;dgv_Inscricoes.Name" xml:space="preserve">
-    <value>dgv_Inscricoes</value>
-  </data>
-  <data name="&gt;&gt;dgv_Inscricoes.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dgv_Inscricoes.Parent" xml:space="preserve">
-    <value>group_Inscricoes</value>
-  </data>
-  <data name="&gt;&gt;dgv_Inscricoes.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="lbl_NomeAluno.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="lbl_NomeAluno.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lbl_NomeAluno.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 24</value>
-  </data>
-  <data name="lbl_NomeAluno.Size" type="System.Drawing.Size, System.Drawing">
-    <value>37, 13</value>
-  </data>
-  <data name="lbl_NomeAluno.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="lbl_NomeAluno.Text" xml:space="preserve">
-    <value>Aluno:</value>
-  </data>
-  <data name="&gt;&gt;lbl_NomeAluno.Name" xml:space="preserve">
-    <value>lbl_NomeAluno</value>
-  </data>
-  <data name="&gt;&gt;lbl_NomeAluno.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbl_NomeAluno.Parent" xml:space="preserve">
-    <value>group_Inscricoes</value>
-  </data>
-  <data name="&gt;&gt;lbl_NomeAluno.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="cmb_NomeAluno.Location" type="System.Drawing.Point, System.Drawing">
-    <value>47, 21</value>
-  </data>
-  <data name="cmb_NomeAluno.MaxLength" type="System.Int32, mscorlib">
-    <value>40</value>
-  </data>
-  <data name="cmb_NomeAluno.Size" type="System.Drawing.Size, System.Drawing">
-    <value>197, 21</value>
-  </data>
-  <data name="cmb_NomeAluno.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;cmb_NomeAluno.Name" xml:space="preserve">
-    <value>cmb_NomeAluno</value>
-  </data>
-  <data name="&gt;&gt;cmb_NomeAluno.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cmb_NomeAluno.Parent" xml:space="preserve">
-    <value>group_Inscricoes</value>
-  </data>
-  <data name="&gt;&gt;cmb_NomeAluno.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="btn_BuscarAluno.Location" type="System.Drawing.Point, System.Drawing">
-    <value>250, 19</value>
-  </data>
-  <data name="btn_BuscarAluno.Size" type="System.Drawing.Size, System.Drawing">
-    <value>91, 23</value>
-  </data>
-  <data name="btn_BuscarAluno.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="btn_BuscarAluno.Text" xml:space="preserve">
-    <value>Buscar aluno</value>
-  </data>
-  <data name="&gt;&gt;btn_BuscarAluno.Name" xml:space="preserve">
-    <value>btn_BuscarAluno</value>
-  </data>
-  <data name="&gt;&gt;btn_BuscarAluno.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_BuscarAluno.Parent" xml:space="preserve">
-    <value>group_Inscricoes</value>
-  </data>
-  <data name="&gt;&gt;btn_BuscarAluno.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

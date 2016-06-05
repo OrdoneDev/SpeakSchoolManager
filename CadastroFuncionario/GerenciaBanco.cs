@@ -955,6 +955,38 @@ namespace CadastroFuncionario
             return;
         }
 
+        public static void AtualizarPrimeiraInscricao(int Id_Inscricao, DateTime Data)
+        {
+            SqlConnection conexao = new SqlConnection(strConexao);
+            SqlCommand cmd;
+
+            try
+            {
+                conexao.Open();
+                cmd = new SqlCommand();
+                cmd.Connection = conexao;
+
+                cmd.CommandText = "Update SysProtected.Inscricao set Data = @Data where Id_Inscricao = @Id_Inscricao";
+
+                cmd.Parameters.Add(new SqlParameter("@Id_Presenca", Id_Inscricao));
+                SqlParameter dataParameter = new SqlParameter("@Data", SqlDbType.Date);
+                dataParameter.Value = Data.Date;
+                cmd.Parameters.Add(dataParameter);
+
+                cmd.CommandType = CommandType.Text;
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conexao.Close();
+            }
+            return;
+        }
+
         public static int VerificaPermissao(int Tag, string Tabela)
         {
             SqlConnection conexao = new SqlConnection(strConexao);
@@ -2258,8 +2290,7 @@ namespace CadastroFuncionario
 
         public static DataSet carregaDados(string Tabela, string aliases)
         {
-            string strCon = "Data Source=.\\MSSQLSERVER2012; Initial Catalog=DB_Escola; Trusted_Connection=Yes;";
-            SqlConnection con = new SqlConnection(strCon);
+            SqlConnection con = new SqlConnection(strConexao);
             con.Open();
             string sql = "SELECT " + aliases + " FROM SysProtected." + Tabela;
 
@@ -2283,8 +2314,7 @@ namespace CadastroFuncionario
             SqlDataAdapter da;
             try
             {
-                string strCon = "Data Source=.\\MSSQLSERVER2012; Initial Catalog=DB_Escola; Trusted_Connection=Yes;";
-                SqlConnection con = new SqlConnection(strCon);
+                SqlConnection con = new SqlConnection(strConexao);
                 string sql = "SELECT " + aliases + " FROM SysProtected." + Tabela;
 
                 // O dataAdapter é responsável pela representacao fisica do banco

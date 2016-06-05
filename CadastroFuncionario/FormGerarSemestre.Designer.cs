@@ -33,20 +33,20 @@
             this.btn_Cancelar = new System.Windows.Forms.Button();
             this.btn_Salvar = new System.Windows.Forms.Button();
             this.btn_Atualizar = new System.Windows.Forms.Button();
-            this.dgv_Inscricoes = new System.Windows.Forms.DataGridView();
             this.lbl_NomeAluno = new System.Windows.Forms.Label();
             this.cmb_NomeAluno = new System.Windows.Forms.ComboBox();
             this.btn_BuscarAluno = new System.Windows.Forms.Button();
+            this.dgv_Inscricoes = new System.Windows.Forms.DataGridView();
             this.group_Inscricoes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Inscricoes)).BeginInit();
             this.SuspendLayout();
             // 
             // group_Inscricoes
             // 
+            this.group_Inscricoes.Controls.Add(this.dgv_Inscricoes);
             this.group_Inscricoes.Controls.Add(this.btn_BuscarAluno);
             this.group_Inscricoes.Controls.Add(this.cmb_NomeAluno);
             this.group_Inscricoes.Controls.Add(this.lbl_NomeAluno);
-            this.group_Inscricoes.Controls.Add(this.dgv_Inscricoes);
             this.group_Inscricoes.Controls.Add(this.btn_Atualizar);
             resources.ApplyResources(this.group_Inscricoes, "group_Inscricoes");
             this.group_Inscricoes.Name = "group_Inscricoes";
@@ -73,16 +73,6 @@
             this.btn_Atualizar.UseVisualStyleBackColor = true;
             this.btn_Atualizar.Click += new System.EventHandler(this.btn_Atualizar_Click);
             // 
-            // dgv_Inscricoes
-            // 
-            this.dgv_Inscricoes.AllowUserToAddRows = false;
-            this.dgv_Inscricoes.AllowUserToDeleteRows = false;
-            this.dgv_Inscricoes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgv_Inscricoes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            resources.ApplyResources(this.dgv_Inscricoes, "dgv_Inscricoes");
-            this.dgv_Inscricoes.MultiSelect = false;
-            this.dgv_Inscricoes.Name = "dgv_Inscricoes";
-            // 
             // lbl_NomeAluno
             // 
             resources.ApplyResources(this.lbl_NomeAluno, "lbl_NomeAluno");
@@ -102,6 +92,16 @@
             this.btn_BuscarAluno.Name = "btn_BuscarAluno";
             this.btn_BuscarAluno.UseVisualStyleBackColor = true;
             this.btn_BuscarAluno.Click += new System.EventHandler(this.btn_BuscarAluno_Click);
+            // 
+            // dgv_Inscricoes
+            // 
+            this.dgv_Inscricoes.AllowUserToAddRows = false;
+            this.dgv_Inscricoes.AllowUserToDeleteRows = false;
+            this.dgv_Inscricoes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_Inscricoes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            resources.ApplyResources(this.dgv_Inscricoes, "dgv_Inscricoes");
+            this.dgv_Inscricoes.Name = "dgv_Inscricoes";
+            this.dgv_Inscricoes.ReadOnly = true;
             // 
             // FormGerarSemestre
             // 
@@ -124,12 +124,12 @@
         #endregion
 
         private System.Windows.Forms.GroupBox group_Inscricoes;
-        private System.Windows.Forms.DataGridView dgv_Inscricoes;
         private System.Windows.Forms.Button btn_Atualizar;
         private System.Windows.Forms.Button btn_Cancelar;
         private System.Windows.Forms.Button btn_Salvar;
         private System.Windows.Forms.Button btn_BuscarAluno;
         private System.Windows.Forms.ComboBox cmb_NomeAluno;
         private System.Windows.Forms.Label lbl_NomeAluno;
+        private System.Windows.Forms.DataGridView dgv_Inscricoes;
     }
 }
