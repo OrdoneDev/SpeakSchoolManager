@@ -71,21 +71,22 @@ namespace CadastroFuncionario
 
         private void btn_Salvar_Click(object sender, EventArgs e)
         {
-            //int Id_Inscricao;
+            int Id_Inscricao;
+
+            Id_Inscricao = (int)dgv_Inscricoes.Rows[0].Cells[0].Value;
 
             if (MessageBox.Show("Deseja salvar as alterações?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
+                if (dgv_Inscricoes.Rows[0].Cells[4].Value.ToString() == "True")
+                {
+                    GerenciaBanco.AtualizarPrimeiraInscricao(Id_Inscricao, DateTime.Now.Date);
+                }
+
                 GerenciaBanco.updateDados("Inscricao", "Id_Inscricao as 'Código da inscrição', " +
                 "Id_Aluno as 'Código do aluno', Id_Negociacao as 'Código da negociação', Data, Status");
 
                 MessageBox.Show("O novo semestre foi gerado com sucesso!");
             }
-
-            /*Id_Inscricao = int.Parse(dgv_Inscricoes.Rows[0].Cells[0].Value.ToString());
-            if (dgv_Inscricoes.Rows[0].Cells[4].Value.ToString() == "True")
-            {
-                GerenciaBanco.AtualizarPrimeiraInscricao(Id_Inscricao, DateTime.Now.Date);
-            }*/
 
             dgv_Inscricoes.DataSource = GerenciaBanco.carregaDados("Inscricao", "Id_Inscricao as 'Código da inscrição', " +
             "Id_Aluno as 'Código do aluno', Id_Negociacao as 'Código da negociação', Data, Status").Tables[0];

@@ -968,7 +968,7 @@ namespace CadastroFuncionario
 
                 cmd.CommandText = "Update SysProtected.Inscricao set Data = @Data where Id_Inscricao = @Id_Inscricao";
 
-                cmd.Parameters.Add(new SqlParameter("@Id_Presenca", Id_Inscricao));
+                cmd.Parameters.Add(new SqlParameter("@Id_Inscricao", Id_Inscricao));
                 SqlParameter dataParameter = new SqlParameter("@Data", SqlDbType.Date);
                 dataParameter.Value = Data.Date;
                 cmd.Parameters.Add(dataParameter);
