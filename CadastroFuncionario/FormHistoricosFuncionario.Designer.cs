@@ -47,6 +47,7 @@
             this.historicoFuncionarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dB_EscolaDataSet8 = new CadastroFuncionario.DB_EscolaDataSet8();
             this.historicoFuncionarioTableAdapter = new CadastroFuncionario.DB_EscolaDataSet8TableAdapters.HistoricoFuncionarioTableAdapter();
+            this.btn_MostrarTodos = new System.Windows.Forms.Button();
             this.group_HistoricoFuncionario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_HistoricoFuncionario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.historicoFuncionarioBindingSource)).BeginInit();
@@ -55,6 +56,7 @@
             // 
             // group_HistoricoFuncionario
             // 
+            this.group_HistoricoFuncionario.Controls.Add(this.btn_MostrarTodos);
             this.group_HistoricoFuncionario.Controls.Add(this.btn_FiltrarNome);
             this.group_HistoricoFuncionario.Controls.Add(this.btn_FiltrarId);
             this.group_HistoricoFuncionario.Controls.Add(this.cmb_Nome);
@@ -187,6 +189,13 @@
             // 
             this.historicoFuncionarioTableAdapter.ClearBeforeFill = true;
             // 
+            // btn_MostrarTodos
+            // 
+            resources.ApplyResources(this.btn_MostrarTodos, "btn_MostrarTodos");
+            this.btn_MostrarTodos.Name = "btn_MostrarTodos";
+            this.btn_MostrarTodos.UseVisualStyleBackColor = true;
+            this.btn_MostrarTodos.Click += new System.EventHandler(this.btn_MostrarTodos_Click);
+            // 
             // FormHistoricosFuncionario
             // 
             resources.ApplyResources(this, "$this");
@@ -224,5 +233,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn descricaoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button btn_MostrarTodos;
     }
 }

@@ -118,13 +118,37 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btn_MostrarTodos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>876, 16</value>
+  </data>
+  <data name="btn_MostrarTodos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 23</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btn_MostrarTodos.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="btn_MostrarTodos.Text" xml:space="preserve">
+    <value>Mostrar todos</value>
+  </data>
+  <data name="&gt;&gt;btn_MostrarTodos.Name" xml:space="preserve">
+    <value>btn_MostrarTodos</value>
+  </data>
+  <data name="&gt;&gt;btn_MostrarTodos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_MostrarTodos.Parent" xml:space="preserve">
+    <value>group_HistoricoFuncionario</value>
+  </data>
+  <data name="&gt;&gt;btn_MostrarTodos.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="btn_FiltrarNome.Location" type="System.Drawing.Point, System.Drawing">
     <value>474, 16</value>
   </data>
   <data name="btn_FiltrarNome.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 23</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btn_FiltrarNome.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
@@ -141,7 +165,7 @@
     <value>group_HistoricoFuncionario</value>
   </data>
   <data name="&gt;&gt;btn_FiltrarNome.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="btn_FiltrarId.Location" type="System.Drawing.Point, System.Drawing">
     <value>125, 17</value>
@@ -165,7 +189,7 @@
     <value>group_HistoricoFuncionario</value>
   </data>
   <data name="&gt;&gt;btn_FiltrarId.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="cmb_Nome.Location" type="System.Drawing.Point, System.Drawing">
     <value>247, 18</value>
@@ -186,7 +210,7 @@
     <value>group_HistoricoFuncionario</value>
   </data>
   <data name="&gt;&gt;cmb_Nome.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="lbl_Nome.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -217,7 +241,7 @@
     <value>group_HistoricoFuncionario</value>
   </data>
   <data name="&gt;&gt;lbl_Nome.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="lbl_Id.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -247,7 +271,7 @@
     <value>group_HistoricoFuncionario</value>
   </data>
   <data name="&gt;&gt;lbl_Id.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="msk_IdFuncionario.Location" type="System.Drawing.Point, System.Drawing">
     <value>86, 19</value>
@@ -271,7 +295,7 @@
     <value>group_HistoricoFuncionario</value>
   </data>
   <data name="&gt;&gt;msk_IdFuncionario.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="idHistoricoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>Código do histórico</value>
@@ -334,7 +358,7 @@
     <value>group_HistoricoFuncionario</value>
   </data>
   <data name="&gt;&gt;dgv_HistoricoFuncionario.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="group_HistoricoFuncionario.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 13</value>
@@ -360,9 +384,6 @@
   <data name="&gt;&gt;group_HistoricoFuncionario.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="dB_EscolaDataSet8.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <metadata name="historicoFuncionarioTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>412, 17</value>
   </metadata>
