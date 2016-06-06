@@ -715,6 +715,10 @@ Create table SysProtected.Boletim (
 )
 go
 
+Create unique index Unico_Boletim
+   on SysProtected.Boletim (Id_Inscricao, Semestre);
+go
+
 CREATE VIEW BoletinsAlunoFiltro AS
 	select	B.Id_Boletim,
 			B.Id_Inscricao,
@@ -786,14 +790,15 @@ begin
 	declare @Status bit;
 	declare @Data Date;
 	declare @Semestre tinyint;
+	declare @Media float;
 
 	Select @Id_Inscricao = Id_Inscricao from inserted;
 	Select @Status = Status from inserted;
 	Select @Data = Data from inserted;
-	Select @Semestre = Semestre from SysProtected.Boletim where Id_Inscricao = @Id_Inscricao;
+	Select @Semestre = Semestre, @Media = Media from SysProtected.Boletim where Id_Inscricao = @Id_Inscricao;
 	set @Semestre = @Semestre + 1;
 
-	if (@Data = GetDate())
+	if (@Data = CONVERT (date, SYSDATETIME()) and @Media is not null)
 	BEGIN
 		if (@Status = 1)
 		BEGIN

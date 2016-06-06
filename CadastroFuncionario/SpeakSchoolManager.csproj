@@ -157,6 +157,12 @@
     <Compile Include="FormFotoInscricao.Designer.cs">
       <DependentUpon>FormFotoInscricao.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormGerarSemestre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGerarSemestre.Designer.cs">
+      <DependentUpon>FormGerarSemestre.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormHistoricoAluno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -363,6 +369,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormFotoInscricao.resx">
       <DependentUpon>FormFotoInscricao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGerarSemestre.resx">
+      <DependentUpon>FormGerarSemestre.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormHistoricoAluno.resx">
       <DependentUpon>FormHistoricoAluno.cs</DependentUpon>

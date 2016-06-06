@@ -328,7 +328,9 @@ namespace CadastroFuncionario
 
         private void gerarNovoSemestreToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            FormGerarSemestre form = new FormGerarSemestre();
+            form.MdiParent = this;
+            form.Show();
         }
     }
 }

@@ -2302,8 +2302,8 @@ namespace CadastroFuncionario
             {
                 MessageBox.Show("No sistema há vinculos com este dado que deseja remover. Porfavor remova os dados vinculados e retorne a este procedimento!");
             }
-            ds.Reset();
 
+            ds.Reset();
         }
     }
 }

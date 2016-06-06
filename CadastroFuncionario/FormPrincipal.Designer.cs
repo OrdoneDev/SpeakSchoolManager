@@ -501,9 +501,9 @@
             // gerarNovoSemestreToolStripMenuItem
             // 
             this.gerarNovoSemestreToolStripMenuItem.Name = "gerarNovoSemestreToolStripMenuItem";
-            this.gerarNovoSemestreToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.gerarNovoSemestreToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
             this.gerarNovoSemestreToolStripMenuItem.Tag = "1";
-            this.gerarNovoSemestreToolStripMenuItem.Text = "Gerar novo semestre";
+            this.gerarNovoSemestreToolStripMenuItem.Text = "Gerar novo semestre...";
             this.gerarNovoSemestreToolStripMenuItem.Click += new System.EventHandler(this.gerarNovoSemestreToolStripMenuItem_Click);
             // 
             // FormPrincipal
