@@ -987,6 +987,46 @@ namespace CadastroFuncionario
             return;
         }
 
+        public static int VerificaEscala(int Valida, int Id_Funcionario, DateTime Data, string Hora_Entrada, string Hora_Saida)
+        {
+            SqlConnection conexao = new SqlConnection(strConexao);
+            SqlCommand cmd;
+            SqlDataReader dr;
+
+            try
+            {
+                conexao.Open();
+                cmd = new SqlCommand();
+                cmd.Connection = conexao;
+
+                cmd.CommandText = "Select Id_Escala from SysProtected.Escalas where Id_Funcionario = @Id_Funcionario and Data = @Data and " +
+                "Hora_Entrada = @Hora_Entrada and Hora_Saida = @Hora_Saida";
+
+                cmd.Parameters.Add(new SqlParameter("@Id_Funcionario", Id_Funcionario));
+                SqlParameter dataParameter = new SqlParameter("@Data", SqlDbType.Date);
+                dataParameter.Value = Data.Date;
+                cmd.Parameters.Add(dataParameter);
+                cmd.Parameters.Add(new SqlParameter("@Hora_Entrada", Hora_Entrada));
+                cmd.Parameters.Add(new SqlParameter("@Hora_Saida", Hora_Saida));
+
+                dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    Valida = (dr.GetInt32(0));
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conexao.Close();
+            }
+
+            return Valida;
+        }
+
         public static int VerificaPermissao(int Tag, string Tabela)
         {
             SqlConnection conexao = new SqlConnection(strConexao);
