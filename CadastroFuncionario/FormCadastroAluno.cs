@@ -113,7 +113,7 @@ namespace CadastroFuncionario
                 }
                 else
                 {
-                    MessageBox.Show("Responsavel ainda não está cadastrado no sistema!");
+                    MessageBox.Show("Responsável ainda não está cadastrado no sistema!");
                 }
             }
             else

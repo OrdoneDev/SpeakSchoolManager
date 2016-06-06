@@ -79,5 +79,10 @@ namespace CadastroFuncionario
 
             dgv_HistoricoAluno.DataSource = GerenciaBanco.getFiltro(cmb_Nome.Text, "Nome", "HistoricoAluno");
         }
+
+        private void btn_MostrarTodos_Click(object sender, EventArgs e)
+        {
+            dgv_HistoricoAluno.DataSource = this.dB_EscolaDataSet9.HistoricoAluno;
+        }
     }
 }
