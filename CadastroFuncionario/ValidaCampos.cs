@@ -81,7 +81,7 @@ namespace CadastroFuncionario
         public static bool ValidaCamposGroup(Control group)
         {
             bool x = true;
-            string[] separators = { ",", ".", "(", ")", "-", "_", " " };
+            string[] separators = { ",", ".", "(", ")", "-", "_", " ", ":" };
             foreach (Control control in group.Controls)
             {
                 if (control is Control)
