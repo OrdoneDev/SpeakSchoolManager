@@ -104,6 +104,9 @@ namespace CadastroFuncionario
             {
                 for (int i = 0; i < dgv_Alunos.RowCount; ++i)
                 {
+                    if (dgv_Alunos.Rows[i].Cells[5].Value.ToString() == "False")
+                        continue;
+
                     if (dgv_Alunos.Rows[i].Cells[5].Value.ToString() == "True" && dgv_Alunos.Rows[i].Cells[6].Value.ToString().Trim().Length != 0)
                     {
                         Cadastrar = true;

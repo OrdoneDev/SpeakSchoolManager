@@ -987,6 +987,41 @@ namespace CadastroFuncionario
             return;
         }
 
+        public static int VerificaTurma(int Valida, int Id_Plano, int Sala)
+        {
+            SqlConnection conexao = new SqlConnection(strConexao);
+            SqlCommand cmd;
+            SqlDataReader dr;
+
+            try
+            {
+                conexao.Open();
+                cmd = new SqlCommand();
+                cmd.Connection = conexao;
+
+                cmd.CommandText = "Select Id_Turma from SysProtected.Turmas where Id_Plano = @Id_Plano and Sala = @Sala";
+
+                cmd.Parameters.Add(new SqlParameter("@Id_Plano", Id_Plano));
+                cmd.Parameters.Add(new SqlParameter("@Sala", Sala));
+
+                dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    Valida = (dr.GetInt32(0));
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conexao.Close();
+            }
+
+            return Valida;
+        }
+
         public static int VerificaEscala(int Valida, int Id_Funcionario, DateTime Data, string Hora_Entrada, string Hora_Saida)
         {
             SqlConnection conexao = new SqlConnection(strConexao);

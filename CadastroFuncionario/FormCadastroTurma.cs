@@ -97,19 +97,30 @@ namespace CadastroFuncionario
 
         private void btn_SalvarTurma_Click(object sender, EventArgs e)
         {
+            int Valida = 0;
             if (!VerificaCamposCadastroTurma())
                 return;
-            if (MessageBox.Show("Deseja efetuar o cadastro?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
+
+            Valida = GerenciaBanco.VerificaTurma(Valida, int.Parse(msk_IdPlano.Text), int.Parse(cmb_SalaTurma.Text));
+
+            if (Valida == 0)
             {
-                if (GerenciaBanco.CadastrarTurma(int.Parse(msk_IdPlano.Text), int.Parse(msk_IdEscala.Text),
-                int.Parse(cmb_SalaTurma.Text), Data, lbl_ValorHoraEntrada.Text, lbl_ValorHoraSaida.Text))
+                if (MessageBox.Show("Deseja efetuar o cadastro?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
-                    MessageBox.Show("Turma cadastrada com sucesso!");
+                    if (GerenciaBanco.CadastrarTurma(int.Parse(msk_IdPlano.Text), int.Parse(msk_IdEscala.Text),
+                    int.Parse(cmb_SalaTurma.Text), Data, lbl_ValorHoraEntrada.Text, lbl_ValorHoraSaida.Text))
+                    {
+                        MessageBox.Show("Turma cadastrada com sucesso!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Não foi possível cadastrar uma turma!");
+                    }
                 }
-                else
-                {
-                    MessageBox.Show("Não foi possível cadastrar uma turma!");
-                }
+            }
+            else
+            {
+                MessageBox.Show("Houve uma duplicação na turma!");
             }
         }
 
