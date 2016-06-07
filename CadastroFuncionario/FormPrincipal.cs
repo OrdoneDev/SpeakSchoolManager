@@ -30,7 +30,7 @@ namespace CadastroFuncionario
             TagP = GerenciaBanco.VerificaPermissao(TagP, "Escalas");
 
             if (TagP == 0)
-                Tag = GerenciaBanco.VerificaPermissao(TagP, "Endereco");
+                TagP = GerenciaBanco.VerificaPermissao(TagP, "Endereco");
 
             ValidaPermissoes(menuStrip1);
 

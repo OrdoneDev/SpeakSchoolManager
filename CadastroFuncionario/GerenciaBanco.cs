@@ -1081,10 +1081,16 @@ namespace CadastroFuncionario
                 dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
-                    if (@Tabela == "Escalas")
+                    if (Tabela == "Escalas")
+                    {
                         Tag = 1;
-                    else if (@Tabela == "Endereco")
+                        break;
+                    }
+                    if (Tabela == "Endereco")
+                    {
                         Tag = 2;
+                        break;
+                    }
                 }
             }
             catch (Exception)
