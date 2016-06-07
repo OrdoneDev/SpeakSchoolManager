@@ -14,12 +14,13 @@ namespace CadastroFuncionario
     public partial class FormTabelaAlunos : Form
     {
         FormFotoInscricao form;
-        FormPrincipal Permissao = new FormPrincipal();
+        int Permissao;
         
-        public FormTabelaAlunos()
+        public FormTabelaAlunos(int TagP)
         {
             InitializeComponent();
             this.form = new FormFotoInscricao();
+            Permissao = TagP;
         }
 
         private void FormTabelaAlunos_Load(object sender, EventArgs e)
@@ -35,10 +36,10 @@ namespace CadastroFuncionario
                     (column as DataGridViewImageColumn).ImageLayout = DataGridViewImageCellLayout.Zoom;
                     (column as DataGridViewImageColumn).Description = "Zoomed";
                 }
-            }
 
-            if (Permissao.TagP != 1)
-                dgv_Alunos.AllowUserToDeleteRows = false;
+                if (Permissao != 1)
+                    dgv_Alunos.AllowUserToDeleteRows = false;
+            }
         }
 
         private void dgv_Alunos_DataError(object sender, DataGridViewDataErrorEventArgs e)

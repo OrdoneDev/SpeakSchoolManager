@@ -12,11 +12,12 @@ namespace CadastroFuncionario
 {
     public partial class FormTabelaResponsavel : Form
     {
-        FormPrincipal Permissao = new FormPrincipal();
+        int Permissao;
 
-        public FormTabelaResponsavel()
+        public FormTabelaResponsavel(int TagP)
         {
             InitializeComponent();
+            Permissao = TagP;
         }
 
         private void FormTabelaResponsavel_Load(object sender, EventArgs e)
@@ -25,7 +26,7 @@ namespace CadastroFuncionario
             "Id_Endereco as 'Código do endereço', Nome, DataNascimento as 'Data de nascimento', Sexo, Estado_Civil as 'Estado civil', " +
             "RG, CPF, Email, DDD, Telefone, Complemento, Numero as 'Nº'").Tables[0];
 
-            if (Permissao.TagP != 1)
+            if (Permissao != 1)
                 dgv_Responsaveis.AllowUserToDeleteRows = false;
         }
 

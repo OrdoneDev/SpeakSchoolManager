@@ -12,11 +12,12 @@ namespace CadastroFuncionario
 {
     public partial class FormTabelaEscalas : Form
     {
-        FormPrincipal Permissao = new FormPrincipal();
+        int Permissao;
 
-        public FormTabelaEscalas()
+        public FormTabelaEscalas(int TagP)
         {
             InitializeComponent();
+            Permissao = TagP;
         }
 
         private void FormTabelaEscalas_Load(object sender, EventArgs e)
@@ -24,7 +25,7 @@ namespace CadastroFuncionario
             dgv_TabelaEscalas.DataSource = GerenciaBanco.carregaDados("Escalas", "Id_Escala as 'Código da escala', Id_Funcionario as 'Código do funcionário', Data, " +
             "Hora_Entrada as 'Entrada', Hora_Saida as 'Saída', Descricao_Funcao as 'Encargos'").Tables[0];
 
-            if (Permissao.TagP != 1)
+            if (Permissao != 1)
                 dgv_TabelaEscalas.AllowUserToDeleteRows = false;
         }
 

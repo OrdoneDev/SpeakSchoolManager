@@ -14,11 +14,12 @@ namespace CadastroFuncionario
 {
     public partial class FormTabelaBoletins : Form
     {
-        FormPrincipal Permissao = new FormPrincipal();
+        int Permissao;
 
-        public FormTabelaBoletins()
+        public FormTabelaBoletins(int TagP)
         {
             InitializeComponent();
+            Permissao = TagP;
         }
 
         private void FormTabelaBoletins_Load(object sender, EventArgs e)
@@ -26,7 +27,7 @@ namespace CadastroFuncionario
             dgv_TabelaBoletins.DataSource = GerenciaBanco.carregaDados("Boletim", "Id_Boletim as 'Código do boletim', Id_Inscricao as 'Código da inscrição', " +
             "Nota1 as '1º Nota', Nota2 as '2º Nota', Media as 'Média', Numero_Faltas as 'Nº de faltas', Semestre").Tables[0];
 
-            if (Permissao.TagP != 1)
+            if (Permissao != 1)
                 dgv_TabelaBoletins.AllowUserToDeleteRows = false;
         }
 

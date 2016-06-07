@@ -12,11 +12,12 @@ namespace CadastroFuncionario
 {
     public partial class FormTabelaInscricoesTurmas : Form
     {
-        FormPrincipal Permissao = new FormPrincipal();
+        int Permissao;
 
-        public FormTabelaInscricoesTurmas()
+        public FormTabelaInscricoesTurmas(int TagP)
         {
             InitializeComponent();
+            Permissao = TagP;
         }
 
         private void FormTabelaInscricoesTurmas_Load(object sender, EventArgs e)
@@ -24,7 +25,7 @@ namespace CadastroFuncionario
             dgv_TabelaInscricoesTurmas.DataSource = GerenciaBanco.carregaDados("Inscricoes_Turmas", "Id_Inscricao_Turma as 'Código da inscrição turma', " + 
             "Id_Inscricao as 'Código da inscrição', Id_Turma as 'Código da turma'").Tables[0];
             
-            if (Permissao.TagP != 1)
+            if (Permissao != 1)
                 dgv_TabelaInscricoesTurmas.AllowUserToDeleteRows = false;
         }
 

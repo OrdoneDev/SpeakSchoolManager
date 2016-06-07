@@ -12,11 +12,12 @@ namespace CadastroFuncionario
 {
     public partial class FormTabelaHistoricoFuncionario : Form
     {
-        FormPrincipal Permissao = new FormPrincipal();
+        int Permissao;
 
-        public FormTabelaHistoricoFuncionario()
+        public FormTabelaHistoricoFuncionario(int TagP)
         {
             InitializeComponent();
+            Permissao = TagP;
         }
 
         private void FormTabelaHistoricoFuncionario_Load(object sender, EventArgs e)
@@ -24,7 +25,7 @@ namespace CadastroFuncionario
             dgv_TabelaHistoricoFuncionario.DataSource = GerenciaBanco.carregaDados("Historico_Funcionario", "Id_Historico as 'Código do histórico', " +
             "Id_Funcionario as 'Código do funcionário', Data, Descricao").Tables[0];
 
-            if (Permissao.TagP != 1)
+            if (Permissao != 1)
                 dgv_TabelaHistoricoFuncionario.AllowUserToDeleteRows = false;
         }
 

@@ -12,11 +12,12 @@ namespace CadastroFuncionario
 {
     public partial class FormTabelaFinanceiros : Form
     {
-        FormPrincipal Permissao = new FormPrincipal();
+        int Permissao;
 
-        public FormTabelaFinanceiros()
+        public FormTabelaFinanceiros(int TagP)
         {
             InitializeComponent();
+            Permissao = TagP;
         }
 
         private void FormTabelaFinanceiros_Load(object sender, EventArgs e)
@@ -24,7 +25,7 @@ namespace CadastroFuncionario
             dgv_TabelaFinanceiros.DataSource = GerenciaBanco.carregaDados("Financeiro", "Id_Financeiro as 'Código do financeiro', Id_Funcionario as 'Código do funcionário', " +
             "Banco, Agencia, Conta, Data as 'Data para depósito'").Tables[0];
 
-            if (Permissao.TagP != 1)
+            if (Permissao != 1)
                 dgv_TabelaFinanceiros.AllowUserToDeleteRows = false;
         }
 

@@ -12,11 +12,12 @@ namespace CadastroFuncionario
 {
     public partial class FormTabelaListaPresenca : Form
     {
-        FormPrincipal Permissao = new FormPrincipal();
+        int Permissao;
 
-        public FormTabelaListaPresenca()
+        public FormTabelaListaPresenca(int TagP)
         {
             InitializeComponent();
+            Permissao = TagP;
         }
 
         private void FormTabelaListaPresenca_Load(object sender, EventArgs e)
@@ -24,7 +25,7 @@ namespace CadastroFuncionario
             dgv_TabelaListaPresenca.DataSource = GerenciaBanco.carregaDados("Lista_Presenca", "Id_Presenca as 'Código da lista de presença', " +
             "Id_Inscricao_Turma as 'Código da inscrição turma', Chamada, Data").Tables[0];
 
-            if (Permissao.TagP != 1)
+            if (Permissao != 1)
                 dgv_TabelaListaPresenca.AllowUserToDeleteRows = false;
         }
 

@@ -12,11 +12,12 @@ namespace CadastroFuncionario
 {
     public partial class FormTabelaPlanos : Form
     {
-        FormPrincipal Permissao = new FormPrincipal();
+        int Permissao;
 
-        public FormTabelaPlanos()
+        public FormTabelaPlanos(int TagP)
         {
             InitializeComponent();
+            Permissao = TagP;
         }
 
         private void FormTabelaPlanos_Load(object sender, EventArgs e)
@@ -26,7 +27,7 @@ namespace CadastroFuncionario
 
             dgv_TabelaPlanos.Columns[4].DefaultCellStyle.Format = "C2";
 
-            if (Permissao.TagP != 1)
+            if (Permissao != 1)
                 dgv_TabelaPlanos.AllowUserToDeleteRows = false;
         }
 

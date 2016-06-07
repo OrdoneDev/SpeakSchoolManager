@@ -188,21 +188,21 @@ namespace CadastroFuncionario
 
         private void enderecosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormTabelaEndereco form = new FormTabelaEndereco();
+            FormTabelaEndereco form = new FormTabelaEndereco(TagP);
             form.MdiParent = this;
             form.Show();
         }
 
         private void funcionariosToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            FormTabelaFuncionarios form = new FormTabelaFuncionarios();
+            FormTabelaFuncionarios form = new FormTabelaFuncionarios(TagP);
             form.MdiParent = this;
             form.Show();
         }
 
         private void responsáveisToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormTabelaResponsavel form = new FormTabelaResponsavel();
+            FormTabelaResponsavel form = new FormTabelaResponsavel(TagP);
             form.MdiParent = this;
             form.Show();
         }
@@ -223,98 +223,98 @@ namespace CadastroFuncionario
 
         private void alunosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormTabelaAlunos form = new FormTabelaAlunos();
+            FormTabelaAlunos form = new FormTabelaAlunos(TagP);
             form.MdiParent = this;
             form.Show();
         }
 
         private void idiomasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormTabelaIdiomas form = new FormTabelaIdiomas();
+            FormTabelaIdiomas form = new FormTabelaIdiomas(TagP);
             form.MdiParent = this;
             form.Show();
         }
 
         private void planosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormTabelaPlanos form = new FormTabelaPlanos();
+            FormTabelaPlanos form = new FormTabelaPlanos(TagP);
             form.MdiParent = this;
             form.Show();
         }
 
         private void financeirosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormTabelaFinanceiros form = new FormTabelaFinanceiros();
+            FormTabelaFinanceiros form = new FormTabelaFinanceiros(TagP);
             form.MdiParent = this;
             form.Show();
         }
 
         private void negociaçõesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormTabelaNegociações form = new FormTabelaNegociações();
+            FormTabelaNegociações form = new FormTabelaNegociações(TagP);
             form.MdiParent = this;
             form.Show();
         }
 
         private void mensalidadesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormTabelaMensalidades form = new FormTabelaMensalidades();
+            FormTabelaMensalidades form = new FormTabelaMensalidades(TagP);
             form.MdiParent = this;
             form.Show();
         }
 
         private void inscriçõesToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            FormTabelaInscricoes form = new FormTabelaInscricoes();
+            FormTabelaInscricoes form = new FormTabelaInscricoes(TagP);
             form.MdiParent = this;
             form.Show();
         }
 
         private void boletinsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormTabelaBoletins form = new FormTabelaBoletins();
+            FormTabelaBoletins form = new FormTabelaBoletins(TagP);
             form.MdiParent = this;
             form.Show();
         }
 
         private void escalasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormTabelaEscalas form = new FormTabelaEscalas();
+            FormTabelaEscalas form = new FormTabelaEscalas(TagP);
             form.MdiParent = this;
             form.Show();
         }
 
         private void turmasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormTabelaTurmas form = new FormTabelaTurmas();
+            FormTabelaTurmas form = new FormTabelaTurmas(TagP);
             form.MdiParent = this;
             form.Show();
         }
 
         private void inscriçõesETurmasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormTabelaInscricoesTurmas form = new FormTabelaInscricoesTurmas();
+            FormTabelaInscricoesTurmas form = new FormTabelaInscricoesTurmas(TagP);
             form.MdiParent = this;
             form.Show();
         }
 
         private void listaDePresençaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormTabelaListaPresenca form = new FormTabelaListaPresenca();
+            FormTabelaListaPresenca form = new FormTabelaListaPresenca(TagP);
             form.MdiParent = this;
             form.Show();
         }
 
         private void históricoDoFuncionárioToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormTabelaHistoricoFuncionario form = new FormTabelaHistoricoFuncionario();
+            FormTabelaHistoricoFuncionario form = new FormTabelaHistoricoFuncionario(TagP);
             form.MdiParent = this;
             form.Show();
         }
 
         private void históricoDoAlunoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormTabelaHistoricoAluno form = new FormTabelaHistoricoAluno();
+            FormTabelaHistoricoAluno form = new FormTabelaHistoricoAluno(TagP);
             form.MdiParent = this;
             form.Show();
         }

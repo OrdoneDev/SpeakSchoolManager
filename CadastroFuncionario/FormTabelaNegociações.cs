@@ -12,11 +12,12 @@ namespace CadastroFuncionario
 {
     public partial class FormTabelaNegociações : Form
     {
-        FormPrincipal Permissao = new FormPrincipal();
+        int Permissao;
 
-        public FormTabelaNegociações()
+        public FormTabelaNegociações(int TagP)
         {
             InitializeComponent();
+            Permissao = TagP;
         }
 
         private void FormTabelaNegociações_Load(object sender, EventArgs e)
@@ -24,7 +25,7 @@ namespace CadastroFuncionario
             dgv_TabelaNegociacoes.DataSource = GerenciaBanco.carregaDados("Negociacao", "Id_Negociacao as 'Código da negocição', Id_Financeiro as 'Código do financeiro', " +
             "Id_Aluno as 'Código do aluno', Id_Plano as 'Código do plano', Parcelas as 'Nº de parcelas', Situacao").Tables[0];
 
-            if (Permissao.TagP != 1)
+            if (Permissao != 1)
                 dgv_TabelaNegociacoes.AllowUserToDeleteRows = false;
         }
 

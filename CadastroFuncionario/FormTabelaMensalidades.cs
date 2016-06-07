@@ -12,11 +12,12 @@ namespace CadastroFuncionario
 {
     public partial class FormTabelaMensalidades : Form
     {
-        FormPrincipal Permissao = new FormPrincipal();
+        int Permissao;
 
-        public FormTabelaMensalidades()
+        public FormTabelaMensalidades(int TagP)
         {
             InitializeComponent();
+            Permissao = TagP;
         }
 
         private void FormTabelaMensalidades_Load(object sender, EventArgs e)
@@ -26,7 +27,7 @@ namespace CadastroFuncionario
 
             dgv_TabelaMensalidades.Columns[6].DefaultCellStyle.Format = "C2";
 
-            if (Permissao.TagP != 1)
+            if (Permissao != 1)
                 dgv_TabelaMensalidades.AllowUserToDeleteRows = false;
         }
 
