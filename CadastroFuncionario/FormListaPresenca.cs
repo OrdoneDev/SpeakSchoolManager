@@ -97,7 +97,7 @@ namespace CadastroFuncionario
                 }
 
                 if (Sucesso)
-                    MessageBox.Show("Lista de chamda atualizada com sucesso!");
+                    MessageBox.Show("Lista de chamada atualizada com sucesso!");
                 else
                     MessageBox.Show("A lista não foi atualizada!");
             }
