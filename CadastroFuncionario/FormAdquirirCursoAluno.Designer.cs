@@ -40,9 +40,6 @@
             this.cmb_NomeAluno = new System.Windows.Forms.ComboBox();
             this.lbl_Parcelas = new System.Windows.Forms.Label();
             this.cmb_Parcelas = new System.Windows.Forms.ComboBox();
-            this.lbl_SituacaoPagamento = new System.Windows.Forms.Label();
-            this.rdb_Pago = new System.Windows.Forms.RadioButton();
-            this.rdb_APagar = new System.Windows.Forms.RadioButton();
             this.btn_Cancelar = new System.Windows.Forms.Button();
             this.btn_ConfirmarCompra = new System.Windows.Forms.Button();
             this.group_ArquisicaoCurso.SuspendLayout();
@@ -60,9 +57,6 @@
             this.group_ArquisicaoCurso.Controls.Add(this.cmb_NomeAluno);
             this.group_ArquisicaoCurso.Controls.Add(this.lbl_Parcelas);
             this.group_ArquisicaoCurso.Controls.Add(this.cmb_Parcelas);
-            this.group_ArquisicaoCurso.Controls.Add(this.lbl_SituacaoPagamento);
-            this.group_ArquisicaoCurso.Controls.Add(this.rdb_Pago);
-            this.group_ArquisicaoCurso.Controls.Add(this.rdb_APagar);
             resources.ApplyResources(this.group_ArquisicaoCurso, "group_ArquisicaoCurso");
             this.group_ArquisicaoCurso.Name = "group_ArquisicaoCurso";
             this.group_ArquisicaoCurso.TabStop = false;
@@ -139,25 +133,6 @@
             resources.ApplyResources(this.cmb_Parcelas, "cmb_Parcelas");
             this.cmb_Parcelas.Name = "cmb_Parcelas";
             // 
-            // lbl_SituacaoPagamento
-            // 
-            resources.ApplyResources(this.lbl_SituacaoPagamento, "lbl_SituacaoPagamento");
-            this.lbl_SituacaoPagamento.Name = "lbl_SituacaoPagamento";
-            // 
-            // rdb_Pago
-            // 
-            resources.ApplyResources(this.rdb_Pago, "rdb_Pago");
-            this.rdb_Pago.Name = "rdb_Pago";
-            this.rdb_Pago.TabStop = true;
-            this.rdb_Pago.UseVisualStyleBackColor = true;
-            // 
-            // rdb_APagar
-            // 
-            resources.ApplyResources(this.rdb_APagar, "rdb_APagar");
-            this.rdb_APagar.Name = "rdb_APagar";
-            this.rdb_APagar.TabStop = true;
-            this.rdb_APagar.UseVisualStyleBackColor = true;
-            // 
             // btn_Cancelar
             // 
             resources.ApplyResources(this.btn_Cancelar, "btn_Cancelar");
@@ -192,9 +167,6 @@
         #endregion
 
         private System.Windows.Forms.GroupBox group_ArquisicaoCurso;
-        private System.Windows.Forms.RadioButton rdb_APagar;
-        private System.Windows.Forms.RadioButton rdb_Pago;
-        private System.Windows.Forms.Label lbl_SituacaoPagamento;
         private System.Windows.Forms.Label lbl_Parcelas;
         private System.Windows.Forms.ComboBox cmb_Parcelas;
         private System.Windows.Forms.Label lbl_NomeAluno;

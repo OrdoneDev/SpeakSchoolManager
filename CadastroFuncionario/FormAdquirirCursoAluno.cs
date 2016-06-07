@@ -130,11 +130,7 @@ namespace CadastroFuncionario
                     return;
                 }
 
-                if (rdb_APagar.Checked)
-                {
-                    Situacao = 0;
-                }
-                else if (rdb_Pago.Checked && cmb_Parcelas.Text == "1")
+                if (cmb_Parcelas.Text == "1")
                 {
                     Situacao = 1;
                 }

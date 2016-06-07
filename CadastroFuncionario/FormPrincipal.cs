@@ -29,9 +29,6 @@ namespace CadastroFuncionario
 
             TagP = GerenciaBanco.VerificaPermissao(TagP, "Escalas");
 
-            if (TagP == 0)
-                TagP = GerenciaBanco.VerificaPermissao(TagP, "Endereco");
-
             ValidaPermissoes(menuStrip1);
 
             if (TagP == 1)
