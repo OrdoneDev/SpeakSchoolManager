@@ -97,7 +97,6 @@ namespace CadastroFuncionario
 
             if (MessageBox.Show("Deseja confirmar o cadastro?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-
                 Financeiro = GerenciaBanco.getFinanceiroEmpresa().ToArray();
 
                 if (Financeiro.Length > 0)
@@ -108,7 +107,7 @@ namespace CadastroFuncionario
 
                 if (Id_Financeiro == 0)
                 {
-                    MessageBox.Show("Os dados financeiros da empresa não estão cadastrados, porfavor efetue o cadastro do financeiro da empresa!");
+                    MessageBox.Show("Os dados financeiros da empresa não estão cadastrados, por favor efetue o cadastro do financeiro da empresa!");
                     return;
                 }
 
@@ -141,7 +140,7 @@ namespace CadastroFuncionario
                 }
                 else
                 {
-                    MessageBox.Show("Nâo foi possível efetuar a aquisição do plano para o aluno!");
+                    MessageBox.Show("Não foi possível efetuar a aquisição do plano para o aluno!");
                 }
             }
         }
