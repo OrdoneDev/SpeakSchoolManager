@@ -12,6 +12,8 @@ namespace CadastroFuncionario
 {
     public partial class FormTabelaTurmas : Form
     {
+        FormPrincipal Permissao = new FormPrincipal();
+
         public FormTabelaTurmas()
         {
             InitializeComponent();
@@ -21,6 +23,9 @@ namespace CadastroFuncionario
         {
             dgv_TabelaTurmas.DataSource = GerenciaBanco.carregaDados("Turmas", "Id_Turma as 'Código da turma', Id_Plano as 'Código do plano', "+
             "Id_Escala as 'Código da escala', Sala, Data, Hora_Entrada as 'Entrada', Hora_Saida as 'Saída'").Tables[0];
+
+            if (Permissao.TagP != 1)
+                dgv_TabelaTurmas.AllowUserToDeleteRows = false;
         }
 
         private void dgv_TabelaTurmas_DataError(object sender, DataGridViewDataErrorEventArgs e)

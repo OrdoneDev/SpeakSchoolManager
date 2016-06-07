@@ -12,6 +12,8 @@ namespace CadastroFuncionario
 {
     public partial class FormTabelaIdiomas : Form
     {
+        FormPrincipal Permissao = new FormPrincipal();
+
         public FormTabelaIdiomas()
         {
             InitializeComponent();
@@ -20,6 +22,9 @@ namespace CadastroFuncionario
         private void FormTabelaIdiomas_Load(object sender, EventArgs e)
         {
             dgv_TabelaIdiomas.DataSource = GerenciaBanco.carregaDados("Idiomas", "Id_Idioma as 'Código do idioma', Nome, Descricao").Tables[0];
+
+            if (Permissao.TagP != 1)
+                dgv_TabelaIdiomas.AllowUserToDeleteRows = false;
         }
 
         private void dgv_TabelaIdiomas_DataError(object sender, DataGridViewDataErrorEventArgs e)

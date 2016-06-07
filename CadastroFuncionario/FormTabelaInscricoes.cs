@@ -12,6 +12,8 @@ namespace CadastroFuncionario
 {
     public partial class FormTabelaInscricoes : Form
     {
+        FormPrincipal Permissao = new FormPrincipal();
+
         public FormTabelaInscricoes()
         {
             InitializeComponent();
@@ -21,6 +23,9 @@ namespace CadastroFuncionario
         {
             dgv_TabelaInscricoes.DataSource = GerenciaBanco.carregaDados("Inscricao", "Id_Inscricao as 'Código da inscrição', " +
             "Id_Aluno as 'Código do aluno', Id_Negociacao as 'Código da negociação', Data, Status").Tables[0];
+
+            if (Permissao.TagP != 1)
+                dgv_TabelaInscricoes.AllowUserToDeleteRows = false;
         }
 
         private void dgv_TabelaInscricoes_DataError(object sender, DataGridViewDataErrorEventArgs e)

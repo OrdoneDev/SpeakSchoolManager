@@ -12,6 +12,8 @@ namespace CadastroFuncionario
 {
     public partial class FormTabelaEscalas : Form
     {
+        FormPrincipal Permissao = new FormPrincipal();
+
         public FormTabelaEscalas()
         {
             InitializeComponent();
@@ -21,6 +23,9 @@ namespace CadastroFuncionario
         {
             dgv_TabelaEscalas.DataSource = GerenciaBanco.carregaDados("Escalas", "Id_Escala as 'Código da escala', Id_Funcionario as 'Código do funcionário', Data, " +
             "Hora_Entrada as 'Entrada', Hora_Saida as 'Saída', Descricao_Funcao as 'Encargos'").Tables[0];
+
+            if (Permissao.TagP != 1)
+                dgv_TabelaEscalas.AllowUserToDeleteRows = false;
         }
 
         private void dgv_TabelaEscalas_DataError(object sender, DataGridViewDataErrorEventArgs e)

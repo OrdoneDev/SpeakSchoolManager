@@ -13,6 +13,7 @@ namespace CadastroFuncionario
     public partial class FormTabelaFuncionarios : Form
     {
         FormFotoInscricao form;
+        FormPrincipal Permissao = new FormPrincipal();
         
         public FormTabelaFuncionarios()
         {
@@ -37,6 +38,9 @@ namespace CadastroFuncionario
             }
 
             dgv_Funcionarios.Columns[16].DefaultCellStyle.Format = "C2";
+
+            if (Permissao.TagP != 1)
+                dgv_Funcionarios.AllowUserToDeleteRows = false;
         }
 
         private void dgv_Funcionarios_DataError(object sender, DataGridViewDataErrorEventArgs e)

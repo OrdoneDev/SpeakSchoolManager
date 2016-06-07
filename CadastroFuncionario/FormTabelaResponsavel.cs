@@ -12,6 +12,8 @@ namespace CadastroFuncionario
 {
     public partial class FormTabelaResponsavel : Form
     {
+        FormPrincipal Permissao = new FormPrincipal();
+
         public FormTabelaResponsavel()
         {
             InitializeComponent();
@@ -22,6 +24,9 @@ namespace CadastroFuncionario
             dgv_Responsaveis.DataSource = GerenciaBanco.carregaDados("Responsavel_Aluno", "Id_Responsavel as 'Código do responsável', " +
             "Id_Endereco as 'Código do endereço', Nome, DataNascimento as 'Data de nascimento', Sexo, Estado_Civil as 'Estado civil', " +
             "RG, CPF, Email, DDD, Telefone, Complemento, Numero as 'Nº'").Tables[0];
+
+            if (Permissao.TagP != 1)
+                dgv_Responsaveis.AllowUserToDeleteRows = false;
         }
 
         private void dgv_Responsaveis_DataError(object sender, DataGridViewDataErrorEventArgs e)

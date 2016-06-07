@@ -12,6 +12,8 @@ namespace CadastroFuncionario
 {
     public partial class FormTabelaMensalidades : Form
     {
+        FormPrincipal Permissao = new FormPrincipal();
+
         public FormTabelaMensalidades()
         {
             InitializeComponent();
@@ -23,6 +25,9 @@ namespace CadastroFuncionario
             "Id_Negociacao as 'Código da negociação', Numero_Parcela as 'Nº da parcela', Situacao, Data as 'Data depósito', Valor as 'Valor da parcela'").Tables[0];
 
             dgv_TabelaMensalidades.Columns[6].DefaultCellStyle.Format = "C2";
+
+            if (Permissao.TagP != 1)
+                dgv_TabelaMensalidades.AllowUserToDeleteRows = false;
         }
 
         private void dgv_TabelaMensalidades_DataError(object sender, DataGridViewDataErrorEventArgs e)

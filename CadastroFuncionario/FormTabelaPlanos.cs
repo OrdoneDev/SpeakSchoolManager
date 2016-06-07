@@ -12,6 +12,8 @@ namespace CadastroFuncionario
 {
     public partial class FormTabelaPlanos : Form
     {
+        FormPrincipal Permissao = new FormPrincipal();
+
         public FormTabelaPlanos()
         {
             InitializeComponent();
@@ -23,6 +25,9 @@ namespace CadastroFuncionario
             "Nome, Aulas_Previstas as 'Nº de aulas previstas', Valor").Tables[0];
 
             dgv_TabelaPlanos.Columns[4].DefaultCellStyle.Format = "C2";
+
+            if (Permissao.TagP != 1)
+                dgv_TabelaPlanos.AllowUserToDeleteRows = false;
         }
 
         private void dgv_TabelaPlanos_DataError(object sender, DataGridViewDataErrorEventArgs e)

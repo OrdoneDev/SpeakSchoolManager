@@ -13,6 +13,8 @@ namespace CadastroFuncionario
 {
     public partial class FormTabelaEndereco : Form
     {
+        FormPrincipal Permissao = new FormPrincipal();
+
         public FormTabelaEndereco()
         {
             InitializeComponent();
@@ -22,6 +24,9 @@ namespace CadastroFuncionario
         {
             dgv_Enderecos.DataSource = GerenciaBanco.carregaDados("Endereco", "Id_Endereco as 'Código do endereço', Estado, Cidade, " +
             "CEP, Bairro, Nome_Rua as 'Nome da rua'").Tables[0];
+
+            if (Permissao.TagP != 1)
+                dgv_Enderecos.AllowUserToDeleteRows = false;
         }
 
         private void dgv_Enderecos_DataError(object sender, DataGridViewDataErrorEventArgs e)
