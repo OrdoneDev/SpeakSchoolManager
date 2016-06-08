@@ -89,7 +89,7 @@ namespace CadastroFuncionario
                 }
                 else
                 {
-                    MessageBox.Show("Houve uma duplicação nos pagamentos.");
+                    MessageBox.Show("No presente més já foi registrado o pagamento deste funcionário.");
                 }
             }
         }
