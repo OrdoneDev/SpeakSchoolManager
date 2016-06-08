@@ -66,19 +66,30 @@ namespace CadastroFuncionario
         private void btn_RegistrarPagamento_Click(object sender, EventArgs e)
         {
             DateTime Data;
+            int Valida = 0;
+
             if (!VerificaCamposPagamentoFuncionario())
                 return;
             if (MessageBox.Show("Deseja registrar o pagamento?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 Data = dtp_DataPagamento.Value;
 
-                if (GerenciaBanco.CadastrarPagamentoFuncionario(Id_Financeiro, Data, Salario))
+                Valida = GerenciaBanco.VerificaPagamentoFuncionario(Valida, Id_Financeiro, Data);
+
+                if (Valida == 0)
                 {
-                    MessageBox.Show("Pagamento registrado com sucesso!");
+                    if (GerenciaBanco.CadastrarPagamentoFuncionario(Id_Financeiro, Data, Salario))
+                    {
+                        MessageBox.Show("Pagamento registrado com sucesso!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Não foi possível registrar o pagamento do funcionário!");
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Não foi possível registrar o pagamento do funcionário!");
+                    MessageBox.Show("Houve uma duplicação nos pagamentos.");
                 }
             }
         }

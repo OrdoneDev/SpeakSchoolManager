@@ -987,6 +987,43 @@ namespace CadastroFuncionario
             return;
         }
 
+        public static int VerificaPagamentoFuncionario(int Valida, int Id_Financeiro, DateTime Data)
+        {
+            SqlConnection conexao = new SqlConnection(strConexao);
+            SqlCommand cmd;
+            SqlDataReader dr;
+
+            try
+            {
+                conexao.Open();
+                cmd = new SqlCommand();
+                cmd.Connection = conexao;
+
+                cmd.CommandText = "Select Id_Mensalidade from SysProtected.Mensalidades where Id_Financeiro = @Id_Financeiro and Month(Data) = Month(@Data)";
+
+                cmd.Parameters.Add(new SqlParameter("@Id_Financeiro", Id_Financeiro));
+                SqlParameter dataParameter = new SqlParameter("@Data", SqlDbType.Date);
+                dataParameter.Value = Data.Date;
+                cmd.Parameters.Add(dataParameter);
+
+                dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    Valida = (dr.GetInt32(0));
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conexao.Close();
+            }
+
+            return Valida;
+        }
+
         public static int VerificaTurma(int Valida, int Id_Plano, int Sala)
         {
             SqlConnection conexao = new SqlConnection(strConexao);
