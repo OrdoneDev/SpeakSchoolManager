@@ -14,8 +14,6 @@ namespace CadastroFuncionario
 {
     public partial class FormBoletimAluno : Form
     {
-        bool Error = false;
-
         public FormBoletimAluno()
         {
             InitializeComponent();
