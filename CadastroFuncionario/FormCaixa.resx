@@ -117,8 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="valorTotalPagoDeMensalidadesDeAlunosDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Valor total pago de mensalidades de alunos</value>
+  </data>
+  <data name="valorTotalPagoAosFuncionáriosDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Valor total pago aos funcionários</value>
+  </data>
   <metadata name="caixaBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>171, 17</value>
+  </metadata>
+  <metadata name="dB_EscolaDataSet3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="dgv_Caixa.Location" type="System.Drawing.Point, System.Drawing">
@@ -191,24 +200,9 @@
   <data name="&gt;&gt;btn_Cancelar.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="dB_EscolaDataSet3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="caixaBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>171, 17</value>
-  </metadata>
-  <metadata name="dB_EscolaDataSet3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <metadata name="caixaTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>328, 17</value>
   </metadata>
-  <data name="valorTotalPagoDeMensalidadesDeAlunosDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Valor total pago de mensalidades de alunos</value>
-  </data>
-  <data name="valorTotalPagoAosFuncionáriosDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Valor total pago aos funcionários</value>
-  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -218,26 +212,12 @@
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>340, 150</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Caixa</value>
-  </data>
-  <data name="&gt;&gt;dB_EscolaDataSet3.Name" xml:space="preserve">
-    <value>dB_EscolaDataSet3</value>
-  </data>
-  <data name="&gt;&gt;dB_EscolaDataSet3.Type" xml:space="preserve">
-    <value>CadastroFuncionario.DB_EscolaDataSet3, DB_EscolaDataSet3.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;caixaBindingSource.Name" xml:space="preserve">
-    <value>caixaBindingSource</value>
-  </data>
-  <data name="&gt;&gt;caixaBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;caixaTableAdapter.Name" xml:space="preserve">
-    <value>caixaTableAdapter</value>
-  </data>
-  <data name="&gt;&gt;caixaTableAdapter.Type" xml:space="preserve">
-    <value>CadastroFuncionario.DB_EscolaDataSet3TableAdapters.CaixaTableAdapter, DB_EscolaDataSet3.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;valorTotalPagoDeMensalidadesDeAlunosDataGridViewTextBoxColumn.Name" xml:space="preserve">
     <value>valorTotalPagoDeMensalidadesDeAlunosDataGridViewTextBoxColumn</value>
@@ -250,6 +230,24 @@
   </data>
   <data name="&gt;&gt;valorTotalPagoAosFuncionáriosDataGridViewTextBoxColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;caixaBindingSource.Name" xml:space="preserve">
+    <value>caixaBindingSource</value>
+  </data>
+  <data name="&gt;&gt;caixaBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dB_EscolaDataSet3.Name" xml:space="preserve">
+    <value>dB_EscolaDataSet3</value>
+  </data>
+  <data name="&gt;&gt;dB_EscolaDataSet3.Type" xml:space="preserve">
+    <value>CadastroFuncionario.DB_EscolaDataSet3, DB_EscolaDataSet3.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;caixaTableAdapter.Name" xml:space="preserve">
+    <value>caixaTableAdapter</value>
+  </data>
+  <data name="&gt;&gt;caixaTableAdapter.Type" xml:space="preserve">
+    <value>CadastroFuncionario.DB_EscolaDataSet3TableAdapters.CaixaTableAdapter, DB_EscolaDataSet3.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FormCaixa</value>

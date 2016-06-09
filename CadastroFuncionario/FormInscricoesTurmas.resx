@@ -118,6 +118,12 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="group_InscricoesTurmas.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="btn_MostrarNaoVinculados.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
   <data name="btn_MostrarNaoVinculados.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -147,6 +153,9 @@
   <data name="&gt;&gt;btn_MostrarNaoVinculados.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="lbl_HoraSaida.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
   <data name="lbl_HoraSaida.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -174,6 +183,9 @@
   <data name="&gt;&gt;lbl_HoraSaida.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="btn_MostrarVinculados.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
   <data name="btn_MostrarVinculados.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -200,6 +212,9 @@
   </data>
   <data name="&gt;&gt;btn_MostrarVinculados.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="lbl_HorarioSaida.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
   <data name="lbl_HorarioSaida.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -231,6 +246,9 @@
   <data name="&gt;&gt;lbl_HorarioSaida.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="btn_MostarTodos.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
   <data name="btn_MostarTodos.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -258,6 +276,9 @@
   <data name="&gt;&gt;btn_MostarTodos.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="lbl_HoraEntrada.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
   <data name="lbl_HoraEntrada.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -284,6 +305,9 @@
   </data>
   <data name="&gt;&gt;lbl_HoraEntrada.ZOrder" xml:space="preserve">
     <value>5</value>
+  </data>
+  <data name="lbl_HorarioEntrada.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
   <data name="lbl_HorarioEntrada.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -315,6 +339,9 @@
   <data name="&gt;&gt;lbl_HorarioEntrada.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
+  <data name="lbl_NSala.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
   <data name="lbl_NSala.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -341,6 +368,9 @@
   </data>
   <data name="&gt;&gt;lbl_NSala.ZOrder" xml:space="preserve">
     <value>7</value>
+  </data>
+  <data name="lbl_Sala.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
   <data name="lbl_Sala.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -372,6 +402,9 @@
   <data name="&gt;&gt;lbl_Sala.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
+  <data name="lbl_NomeProfessor.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
   <data name="lbl_NomeProfessor.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -398,6 +431,9 @@
   </data>
   <data name="&gt;&gt;lbl_NomeProfessor.ZOrder" xml:space="preserve">
     <value>9</value>
+  </data>
+  <data name="lbl_Professor.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
   <data name="lbl_Professor.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -429,6 +465,9 @@
   <data name="&gt;&gt;lbl_Professor.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
+  <data name="lbl_NomeCurso.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
   <data name="lbl_NomeCurso.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -455,6 +494,9 @@
   </data>
   <data name="&gt;&gt;lbl_NomeCurso.ZOrder" xml:space="preserve">
     <value>11</value>
+  </data>
+  <data name="lbl_Curso.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
   <data name="lbl_Curso.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -486,6 +528,9 @@
   <data name="&gt;&gt;lbl_Curso.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
+  <data name="label1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -516,6 +561,9 @@
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
+  <data name="msk_IdTurma.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
   <data name="msk_IdTurma.Location" type="System.Drawing.Point, System.Drawing">
     <value>653, 34</value>
   </data>
@@ -539,6 +587,9 @@
   </data>
   <data name="&gt;&gt;msk_IdTurma.ZOrder" xml:space="preserve">
     <value>14</value>
+  </data>
+  <data name="dgv_Alunos.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
   </data>
   <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -618,6 +669,9 @@
   <data name="&gt;&gt;group_InscricoesTurmas.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="btn_Cancelar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
   <data name="btn_Cancelar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -644,6 +698,9 @@
   </data>
   <data name="&gt;&gt;btn_Cancelar.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="btn_SalvarVinculo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
   </data>
   <data name="btn_SalvarVinculo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -686,6 +743,9 @@
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>894, 501</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Vincular aluno à turma</value>

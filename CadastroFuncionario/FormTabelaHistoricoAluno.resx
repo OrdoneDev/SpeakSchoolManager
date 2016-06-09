@@ -118,6 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btn_SalvarAlteracoes.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
   <data name="btn_SalvarAlteracoes.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -147,6 +150,9 @@
   <data name="&gt;&gt;btn_SalvarAlteracoes.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="btn_Cancelar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
   <data name="btn_Cancelar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -173,6 +179,9 @@
   </data>
   <data name="&gt;&gt;btn_Cancelar.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="group_TabelaHistoricoAluno.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
   </data>
   <data name="btn_FiltrarAluno.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -255,6 +264,9 @@
   <data name="&gt;&gt;lbl_NomeAluno.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="dgv_TabelaHistoricoAluno.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
   <data name="dgv_TabelaHistoricoAluno.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 45</value>
   </data>
@@ -308,6 +320,9 @@
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>763, 418</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Tabela histórico do aluno</value>

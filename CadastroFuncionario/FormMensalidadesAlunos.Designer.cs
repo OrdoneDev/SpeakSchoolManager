@@ -63,6 +63,7 @@
             // 
             // group_MensalidadesAlunos
             // 
+            resources.ApplyResources(this.group_MensalidadesAlunos, "group_MensalidadesAlunos");
             this.group_MensalidadesAlunos.Controls.Add(this.rdb_APagar);
             this.group_MensalidadesAlunos.Controls.Add(this.rdb_Pago);
             this.group_MensalidadesAlunos.Controls.Add(this.lbl_Situacao);
@@ -72,7 +73,6 @@
             this.group_MensalidadesAlunos.Controls.Add(this.msk_IdAluno);
             this.group_MensalidadesAlunos.Controls.Add(this.btn_ConsultarMensalidades);
             this.group_MensalidadesAlunos.Controls.Add(this.dgv_MensalidadesAluno);
-            resources.ApplyResources(this.group_MensalidadesAlunos, "group_MensalidadesAlunos");
             this.group_MensalidadesAlunos.Name = "group_MensalidadesAlunos";
             this.group_MensalidadesAlunos.TabStop = false;
             // 
@@ -136,6 +136,7 @@
             // 
             this.dgv_MensalidadesAluno.AllowUserToAddRows = false;
             this.dgv_MensalidadesAluno.AllowUserToDeleteRows = false;
+            resources.ApplyResources(this.dgv_MensalidadesAluno, "dgv_MensalidadesAluno");
             this.dgv_MensalidadesAluno.AutoGenerateColumns = false;
             this.dgv_MensalidadesAluno.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_MensalidadesAluno.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -150,7 +151,6 @@
             this.nomeDataGridViewTextBoxColumn,
             this.valorDaParcelaDataGridViewTextBoxColumn});
             this.dgv_MensalidadesAluno.DataSource = this.allMensalidadesBindingSource;
-            resources.ApplyResources(this.dgv_MensalidadesAluno, "dgv_MensalidadesAluno");
             this.dgv_MensalidadesAluno.Name = "dgv_MensalidadesAluno";
             this.dgv_MensalidadesAluno.ReadOnly = true;
             this.dgv_MensalidadesAluno.Tag = "0";

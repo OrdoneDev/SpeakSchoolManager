@@ -42,11 +42,11 @@
             // 
             // group_TabelaPlanos
             // 
+            resources.ApplyResources(this.group_TabelaPlanos, "group_TabelaPlanos");
             this.group_TabelaPlanos.Controls.Add(this.btn_FiltrarIdioma);
             this.group_TabelaPlanos.Controls.Add(this.cmb_Idioma);
             this.group_TabelaPlanos.Controls.Add(this.label1);
             this.group_TabelaPlanos.Controls.Add(this.dgv_TabelaPlanos);
-            resources.ApplyResources(this.group_TabelaPlanos, "group_TabelaPlanos");
             this.group_TabelaPlanos.Name = "group_TabelaPlanos";
             this.group_TabelaPlanos.TabStop = false;
             // 
@@ -73,9 +73,9 @@
             // dgv_TabelaPlanos
             // 
             this.dgv_TabelaPlanos.AllowUserToAddRows = false;
+            resources.ApplyResources(this.dgv_TabelaPlanos, "dgv_TabelaPlanos");
             this.dgv_TabelaPlanos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_TabelaPlanos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            resources.ApplyResources(this.dgv_TabelaPlanos, "dgv_TabelaPlanos");
             this.dgv_TabelaPlanos.MultiSelect = false;
             this.dgv_TabelaPlanos.Name = "dgv_TabelaPlanos";
             this.dgv_TabelaPlanos.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dgv_TabelaPlanos_DataError);

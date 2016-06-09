@@ -117,6 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="group_MensalidadesAlunos.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="rdb_APagar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="rdb_APagar.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -146,6 +153,9 @@
   <data name="&gt;&gt;rdb_APagar.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="rdb_Pago.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
   <data name="rdb_Pago.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -172,6 +182,9 @@
   </data>
   <data name="&gt;&gt;rdb_Pago.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="lbl_Situacao.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
   </data>
   <data name="lbl_Situacao.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -326,6 +339,9 @@
   <data name="&gt;&gt;btn_ConsultarMensalidades.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
+  <data name="dgv_MensalidadesAluno.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
   <data name="códigoDaMensalidadeDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>Código da mensalidade</value>
   </data>
@@ -404,6 +420,9 @@
   <data name="&gt;&gt;group_MensalidadesAlunos.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="btn_Cancelar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
   <data name="btn_Cancelar.Location" type="System.Drawing.Point, System.Drawing">
     <value>825, 325</value>
   </data>
@@ -427,6 +446,9 @@
   </data>
   <data name="&gt;&gt;btn_Cancelar.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="btn_SalvarAlteracao.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
   </data>
   <data name="btn_SalvarAlteracao.Location" type="System.Drawing.Point, System.Drawing">
     <value>706, 325</value>
@@ -463,6 +485,9 @@
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>910, 357</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Mensalidades do aluno</value>

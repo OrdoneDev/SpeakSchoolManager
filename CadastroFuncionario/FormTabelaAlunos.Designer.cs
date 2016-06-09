@@ -45,6 +45,7 @@
             // 
             // group_TabelaAlunos
             // 
+            resources.ApplyResources(this.group_TabelaAlunos, "group_TabelaAlunos");
             this.group_TabelaAlunos.Controls.Add(this.btn_FiltrarNome);
             this.group_TabelaAlunos.Controls.Add(this.cmb_Nome);
             this.group_TabelaAlunos.Controls.Add(this.btn_FiltrarId);
@@ -52,7 +53,6 @@
             this.group_TabelaAlunos.Controls.Add(this.lbl_Nome);
             this.group_TabelaAlunos.Controls.Add(this.lbl_Id);
             this.group_TabelaAlunos.Controls.Add(this.dgv_Alunos);
-            resources.ApplyResources(this.group_TabelaAlunos, "group_TabelaAlunos");
             this.group_TabelaAlunos.Name = "group_TabelaAlunos";
             this.group_TabelaAlunos.TabStop = false;
             // 
@@ -96,9 +96,9 @@
             // dgv_Alunos
             // 
             this.dgv_Alunos.AllowUserToAddRows = false;
+            resources.ApplyResources(this.dgv_Alunos, "dgv_Alunos");
             this.dgv_Alunos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgv_Alunos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            resources.ApplyResources(this.dgv_Alunos, "dgv_Alunos");
             this.dgv_Alunos.MultiSelect = false;
             this.dgv_Alunos.Name = "dgv_Alunos";
             this.dgv_Alunos.CellMouseEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Alunos_CellMouseEnter);

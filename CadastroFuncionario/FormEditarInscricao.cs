@@ -99,14 +99,16 @@ namespace CadastroFuncionario
                 Status = "Ativo";
                 x = 1;
             }
-
-            if (GerenciaBanco.AtualizaInscricao(Id_Inscricao, x))
+            if (MessageBox.Show("Deseja salvar as alterações?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                MessageBox.Show("Inscrição atualizada com sucesso!");
-            }
-            else
-            {
-                MessageBox.Show("Houve um erro na hora de atualizar a inscrição!");
+                if (GerenciaBanco.AtualizaInscricao(Id_Inscricao, x))
+                {
+                    MessageBox.Show("Inscrição atualizada com sucesso!");
+                }
+                else
+                {
+                    MessageBox.Show("Houve um erro na hora de atualizar a inscrição!");
+                }
             }
 
             dgv_InscricaoAluno.DataSource = GerenciaBanco.getInscricoes(int.Parse(msk_IdAluno.Text));

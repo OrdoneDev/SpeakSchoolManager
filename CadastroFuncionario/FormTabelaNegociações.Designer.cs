@@ -45,6 +45,7 @@
             // 
             // group_TabelaNegociacoes
             // 
+            resources.ApplyResources(this.group_TabelaNegociacoes, "group_TabelaNegociacoes");
             this.group_TabelaNegociacoes.Controls.Add(this.cmb_Plano);
             this.group_TabelaNegociacoes.Controls.Add(this.lbl_Plano);
             this.group_TabelaNegociacoes.Controls.Add(this.btn_FiltrarPlano);
@@ -52,7 +53,6 @@
             this.group_TabelaNegociacoes.Controls.Add(this.cmb_NomeAluno);
             this.group_TabelaNegociacoes.Controls.Add(this.lbl_NomeAluno);
             this.group_TabelaNegociacoes.Controls.Add(this.dgv_TabelaNegociacoes);
-            resources.ApplyResources(this.group_TabelaNegociacoes, "group_TabelaNegociacoes");
             this.group_TabelaNegociacoes.Name = "group_TabelaNegociacoes";
             this.group_TabelaNegociacoes.TabStop = false;
             // 
@@ -99,9 +99,9 @@
             // dgv_TabelaNegociacoes
             // 
             this.dgv_TabelaNegociacoes.AllowUserToAddRows = false;
+            resources.ApplyResources(this.dgv_TabelaNegociacoes, "dgv_TabelaNegociacoes");
             this.dgv_TabelaNegociacoes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_TabelaNegociacoes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            resources.ApplyResources(this.dgv_TabelaNegociacoes, "dgv_TabelaNegociacoes");
             this.dgv_TabelaNegociacoes.MultiSelect = false;
             this.dgv_TabelaNegociacoes.Name = "dgv_TabelaNegociacoes";
             this.dgv_TabelaNegociacoes.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dgv_TabelaNegociacoes_DataError);

@@ -118,6 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="group_TabelaAlunos.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
   <data name="btn_FiltrarNome.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -282,6 +285,9 @@
   <data name="&gt;&gt;lbl_Id.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <data name="dgv_Alunos.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
   <data name="dgv_Alunos.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 40</value>
   </data>
@@ -327,6 +333,9 @@
   <data name="&gt;&gt;group_TabelaAlunos.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="btn_Cancelar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
   <data name="btn_Cancelar.Location" type="System.Drawing.Point, System.Drawing">
     <value>992, 348</value>
   </data>
@@ -350,6 +359,9 @@
   </data>
   <data name="&gt;&gt;btn_Cancelar.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="btn_SalvarAlteracoes.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
   </data>
   <data name="btn_SalvarAlteracoes.Location" type="System.Drawing.Point, System.Drawing">
     <value>874, 348</value>
@@ -383,6 +395,9 @@
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1080, 378</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Tabela de alunos</value>

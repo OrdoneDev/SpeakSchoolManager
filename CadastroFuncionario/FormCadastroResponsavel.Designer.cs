@@ -331,6 +331,7 @@
             this.Controls.Add(this.btn_EfetuarCadastroResponsavel);
             this.Controls.Add(this.group_Responsavel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormCadastroResponsavel";
             this.group_Responsavel.ResumeLayout(false);

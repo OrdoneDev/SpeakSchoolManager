@@ -38,6 +38,9 @@
             // 
             // group_TabelaIdiomas
             // 
+            this.group_TabelaIdiomas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.group_TabelaIdiomas.Controls.Add(this.dgv_TabelaIdiomas);
             this.group_TabelaIdiomas.Location = new System.Drawing.Point(13, 13);
             this.group_TabelaIdiomas.Name = "group_TabelaIdiomas";
@@ -49,9 +52,11 @@
             // dgv_TabelaIdiomas
             // 
             this.dgv_TabelaIdiomas.AllowUserToAddRows = false;
+            this.dgv_TabelaIdiomas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_TabelaIdiomas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_TabelaIdiomas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_TabelaIdiomas.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgv_TabelaIdiomas.Location = new System.Drawing.Point(3, 16);
             this.dgv_TabelaIdiomas.MultiSelect = false;
             this.dgv_TabelaIdiomas.Name = "dgv_TabelaIdiomas";
@@ -61,6 +66,7 @@
             // 
             // btn_Cancelar
             // 
+            this.btn_Cancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Cancelar.Location = new System.Drawing.Point(559, 269);
             this.btn_Cancelar.Name = "btn_Cancelar";
             this.btn_Cancelar.Size = new System.Drawing.Size(75, 23);
@@ -71,6 +77,7 @@
             // 
             // btn_SalvarAlteracoes
             // 
+            this.btn_SalvarAlteracoes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_SalvarAlteracoes.Location = new System.Drawing.Point(442, 269);
             this.btn_SalvarAlteracoes.Name = "btn_SalvarAlteracoes";
             this.btn_SalvarAlteracoes.Size = new System.Drawing.Size(111, 23);
@@ -86,6 +93,7 @@
             this.Controls.Add(this.btn_Cancelar);
             this.Controls.Add(this.group_TabelaIdiomas);
             this.Name = "FormTabelaIdiomas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tabela de idiomas";
             this.Load += new System.EventHandler(this.FormTabelaIdiomas_Load);
             this.group_TabelaIdiomas.ResumeLayout(false);

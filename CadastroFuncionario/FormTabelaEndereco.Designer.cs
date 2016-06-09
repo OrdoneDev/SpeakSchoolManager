@@ -51,6 +51,7 @@
             // 
             // group_Enderecos
             // 
+            resources.ApplyResources(this.group_Enderecos, "group_Enderecos");
             this.group_Enderecos.Controls.Add(this.btn_FiltrarBairro);
             this.group_Enderecos.Controls.Add(this.cmb_Bairro);
             this.group_Enderecos.Controls.Add(this.lbl_Bairro);
@@ -64,7 +65,6 @@
             this.group_Enderecos.Controls.Add(this.lbl_IdEndereco);
             this.group_Enderecos.Controls.Add(this.msk_IdEndereco);
             this.group_Enderecos.Controls.Add(this.dgv_Enderecos);
-            resources.ApplyResources(this.group_Enderecos, "group_Enderecos");
             this.group_Enderecos.Name = "group_Enderecos";
             this.group_Enderecos.TabStop = false;
             // 
@@ -148,9 +148,9 @@
             // dgv_Enderecos
             // 
             this.dgv_Enderecos.AllowUserToAddRows = false;
+            resources.ApplyResources(this.dgv_Enderecos, "dgv_Enderecos");
             this.dgv_Enderecos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_Enderecos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            resources.ApplyResources(this.dgv_Enderecos, "dgv_Enderecos");
             this.dgv_Enderecos.MultiSelect = false;
             this.dgv_Enderecos.Name = "dgv_Enderecos";
             this.dgv_Enderecos.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dgv_Enderecos_DataError);

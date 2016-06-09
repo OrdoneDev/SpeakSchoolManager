@@ -47,6 +47,7 @@
             // 
             // group_ArquisicaoCurso
             // 
+            resources.ApplyResources(this.group_ArquisicaoCurso, "group_ArquisicaoCurso");
             this.group_ArquisicaoCurso.Controls.Add(this.lbl_IdPlano);
             this.group_ArquisicaoCurso.Controls.Add(this.msk_IdPlano);
             this.group_ArquisicaoCurso.Controls.Add(this.lbl_NomePlano);
@@ -57,7 +58,6 @@
             this.group_ArquisicaoCurso.Controls.Add(this.cmb_NomeAluno);
             this.group_ArquisicaoCurso.Controls.Add(this.lbl_Parcelas);
             this.group_ArquisicaoCurso.Controls.Add(this.cmb_Parcelas);
-            resources.ApplyResources(this.group_ArquisicaoCurso, "group_ArquisicaoCurso");
             this.group_ArquisicaoCurso.Name = "group_ArquisicaoCurso";
             this.group_ArquisicaoCurso.TabStop = false;
             // 
@@ -156,6 +156,7 @@
             this.Controls.Add(this.btn_Cancelar);
             this.Controls.Add(this.group_ArquisicaoCurso);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormAdquirirCursoAluno";
             this.group_ArquisicaoCurso.ResumeLayout(false);

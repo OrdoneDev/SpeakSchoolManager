@@ -67,6 +67,7 @@
             // 
             // group_InscricoesTurmas
             // 
+            resources.ApplyResources(this.group_InscricoesTurmas, "group_InscricoesTurmas");
             this.group_InscricoesTurmas.Controls.Add(this.btn_MostrarNaoVinculados);
             this.group_InscricoesTurmas.Controls.Add(this.lbl_HoraSaida);
             this.group_InscricoesTurmas.Controls.Add(this.btn_MostrarVinculados);
@@ -83,7 +84,6 @@
             this.group_InscricoesTurmas.Controls.Add(this.label1);
             this.group_InscricoesTurmas.Controls.Add(this.msk_IdTurma);
             this.group_InscricoesTurmas.Controls.Add(this.dgv_Alunos);
-            resources.ApplyResources(this.group_InscricoesTurmas, "group_InscricoesTurmas");
             this.group_InscricoesTurmas.Name = "group_InscricoesTurmas";
             this.group_InscricoesTurmas.TabStop = false;
             // 
@@ -185,6 +185,7 @@
             // 
             this.dgv_Alunos.AllowUserToAddRows = false;
             this.dgv_Alunos.AllowUserToDeleteRows = false;
+            resources.ApplyResources(this.dgv_Alunos, "dgv_Alunos");
             this.dgv_Alunos.AutoGenerateColumns = false;
             this.dgv_Alunos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_Alunos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -197,7 +198,6 @@
             this.vincularAlunoDataGridViewCheckBoxColumn,
             this.turmaDataGridViewTextBoxColumn});
             this.dgv_Alunos.DataSource = this.inscricoesTurmasBindingSource;
-            resources.ApplyResources(this.dgv_Alunos, "dgv_Alunos");
             this.dgv_Alunos.Name = "dgv_Alunos";
             this.dgv_Alunos.Tag = "0";
             this.dgv_Alunos.CellMouseEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Alunos_CellMouseEnter);

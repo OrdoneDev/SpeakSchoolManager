@@ -59,6 +59,7 @@
             // 
             // group_InscricaoAluno
             // 
+            resources.ApplyResources(this.group_InscricaoAluno, "group_InscricaoAluno");
             this.group_InscricaoAluno.Controls.Add(this.rdb_Inativo);
             this.group_InscricaoAluno.Controls.Add(this.rdb_Ativo);
             this.group_InscricaoAluno.Controls.Add(this.lbl_StatusAluno);
@@ -68,7 +69,6 @@
             this.group_InscricaoAluno.Controls.Add(this.cmb_NomeAluno);
             this.group_InscricaoAluno.Controls.Add(this.lbl_IdAluno);
             this.group_InscricaoAluno.Controls.Add(this.msk_IdAluno);
-            resources.ApplyResources(this.group_InscricaoAluno, "group_InscricaoAluno");
             this.group_InscricaoAluno.Name = "group_InscricaoAluno";
             this.group_InscricaoAluno.TabStop = false;
             // 
@@ -95,6 +95,7 @@
             // 
             this.dgv_InscricaoAluno.AllowUserToAddRows = false;
             this.dgv_InscricaoAluno.AllowUserToDeleteRows = false;
+            resources.ApplyResources(this.dgv_InscricaoAluno, "dgv_InscricaoAluno");
             this.dgv_InscricaoAluno.AutoGenerateColumns = false;
             this.dgv_InscricaoAluno.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_InscricaoAluno.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -106,7 +107,6 @@
             this.dataDeInscricaoDataGridViewTextBoxColumn,
             this.statusDaInscriçãoDataGridViewTextBoxColumn});
             this.dgv_InscricaoAluno.DataSource = this.allInscricoesBindingSource;
-            resources.ApplyResources(this.dgv_InscricaoAluno, "dgv_InscricaoAluno");
             this.dgv_InscricaoAluno.Name = "dgv_InscricaoAluno";
             this.dgv_InscricaoAluno.ReadOnly = true;
             this.dgv_InscricaoAluno.Tag = "0";

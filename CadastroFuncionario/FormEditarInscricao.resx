@@ -117,6 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="group_InscricaoAluno.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="rdb_Inativo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="rdb_Inativo.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -146,6 +153,9 @@
   <data name="&gt;&gt;rdb_Inativo.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="rdb_Ativo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
   <data name="rdb_Ativo.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -173,6 +183,9 @@
   <data name="&gt;&gt;rdb_Ativo.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="lbl_StatusAluno.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
   <data name="lbl_StatusAluno.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -199,6 +212,9 @@
   </data>
   <data name="&gt;&gt;lbl_StatusAluno.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="dgv_InscricaoAluno.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
   </data>
   <data name="códigoDaInscriçãoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>Código da inscrição</value>
@@ -392,6 +408,9 @@
   <data name="&gt;&gt;group_InscricaoAluno.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="btn_Cancelar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
   <data name="btn_Cancelar.Location" type="System.Drawing.Point, System.Drawing">
     <value>662, 266</value>
   </data>
@@ -415,6 +434,9 @@
   </data>
   <data name="&gt;&gt;btn_Cancelar.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="btn_SalvarAlteracao.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
   </data>
   <data name="btn_SalvarAlteracao.Location" type="System.Drawing.Point, System.Drawing">
     <value>556, 266</value>
@@ -451,6 +473,9 @@
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>749, 297</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Edição de inscrição do aluno</value>

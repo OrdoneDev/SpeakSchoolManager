@@ -56,11 +56,11 @@
             // 
             // group_TabelaHistoricoAluno
             // 
+            resources.ApplyResources(this.group_TabelaHistoricoAluno, "group_TabelaHistoricoAluno");
             this.group_TabelaHistoricoAluno.Controls.Add(this.btn_FiltrarAluno);
             this.group_TabelaHistoricoAluno.Controls.Add(this.cmb_NomeAluno);
             this.group_TabelaHistoricoAluno.Controls.Add(this.lbl_NomeAluno);
             this.group_TabelaHistoricoAluno.Controls.Add(this.dgv_TabelaHistoricoAluno);
-            resources.ApplyResources(this.group_TabelaHistoricoAluno, "group_TabelaHistoricoAluno");
             this.group_TabelaHistoricoAluno.Name = "group_TabelaHistoricoAluno";
             this.group_TabelaHistoricoAluno.TabStop = false;
             // 
@@ -87,9 +87,9 @@
             // dgv_TabelaHistoricoAluno
             // 
             this.dgv_TabelaHistoricoAluno.AllowUserToAddRows = false;
+            resources.ApplyResources(this.dgv_TabelaHistoricoAluno, "dgv_TabelaHistoricoAluno");
             this.dgv_TabelaHistoricoAluno.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_TabelaHistoricoAluno.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            resources.ApplyResources(this.dgv_TabelaHistoricoAluno, "dgv_TabelaHistoricoAluno");
             this.dgv_TabelaHistoricoAluno.MultiSelect = false;
             this.dgv_TabelaHistoricoAluno.Name = "dgv_TabelaHistoricoAluno";
             this.dgv_TabelaHistoricoAluno.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dgv_TabelaHistoricoAluno_DataError);

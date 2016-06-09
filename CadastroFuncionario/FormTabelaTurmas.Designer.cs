@@ -45,6 +45,7 @@
             // 
             // group_TabelaTurmas
             // 
+            resources.ApplyResources(this.group_TabelaTurmas, "group_TabelaTurmas");
             this.group_TabelaTurmas.Controls.Add(this.btn_FiltrarPlano);
             this.group_TabelaTurmas.Controls.Add(this.cmb_NomePlano);
             this.group_TabelaTurmas.Controls.Add(this.lbl_NomePlano);
@@ -52,7 +53,6 @@
             this.group_TabelaTurmas.Controls.Add(this.cmb_NomeFuncionario);
             this.group_TabelaTurmas.Controls.Add(this.lbl_NomeFuncionario);
             this.group_TabelaTurmas.Controls.Add(this.dgv_TabelaTurmas);
-            resources.ApplyResources(this.group_TabelaTurmas, "group_TabelaTurmas");
             this.group_TabelaTurmas.Name = "group_TabelaTurmas";
             this.group_TabelaTurmas.TabStop = false;
             // 
@@ -99,9 +99,9 @@
             // dgv_TabelaTurmas
             // 
             this.dgv_TabelaTurmas.AllowUserToAddRows = false;
+            resources.ApplyResources(this.dgv_TabelaTurmas, "dgv_TabelaTurmas");
             this.dgv_TabelaTurmas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_TabelaTurmas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            resources.ApplyResources(this.dgv_TabelaTurmas, "dgv_TabelaTurmas");
             this.dgv_TabelaTurmas.MultiSelect = false;
             this.dgv_TabelaTurmas.Name = "dgv_TabelaTurmas";
             this.dgv_TabelaTurmas.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dgv_TabelaTurmas_DataError);

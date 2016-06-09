@@ -107,6 +107,7 @@
             this.Controls.Add(this.btn_Cancelar);
             this.Controls.Add(this.group_FinanceiroEmpresa);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormCadastroFinanceiroEmpresa";
             this.group_FinanceiroEmpresa.ResumeLayout(false);

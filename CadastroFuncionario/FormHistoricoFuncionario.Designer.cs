@@ -126,6 +126,7 @@
             this.Controls.Add(this.btn_SalvarHistoricoFuncionario);
             this.Controls.Add(this.group_HistoricoFuncionario);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormHistoricoFuncionario";
             this.group_HistoricoFuncionario.ResumeLayout(false);

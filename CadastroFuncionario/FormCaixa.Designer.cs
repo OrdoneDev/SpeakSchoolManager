@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCaixa));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.group_Caixa = new System.Windows.Forms.GroupBox();
-            this.btn_Cancelar = new System.Windows.Forms.Button();
             this.dgv_Caixa = new System.Windows.Forms.DataGridView();
-            this.dB_EscolaDataSet3 = new CadastroFuncionario.DB_EscolaDataSet3();
-            this.caixaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.caixaTableAdapter = new CadastroFuncionario.DB_EscolaDataSet3TableAdapters.CaixaTableAdapter();
             this.valorTotalPagoDeMensalidadesDeAlunosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.valorTotalPagoAosFuncionáriosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.caixaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dB_EscolaDataSet3 = new CadastroFuncionario.DB_EscolaDataSet3();
+            this.btn_Cancelar = new System.Windows.Forms.Button();
+            this.caixaTableAdapter = new CadastroFuncionario.DB_EscolaDataSet3TableAdapters.CaixaTableAdapter();
             this.group_Caixa.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Caixa)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dB_EscolaDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.caixaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dB_EscolaDataSet3)).BeginInit();
             this.SuspendLayout();
             // 
             // group_Caixa
@@ -52,13 +52,6 @@
             resources.ApplyResources(this.group_Caixa, "group_Caixa");
             this.group_Caixa.Name = "group_Caixa";
             this.group_Caixa.TabStop = false;
-            // 
-            // btn_Cancelar
-            // 
-            resources.ApplyResources(this.btn_Cancelar, "btn_Cancelar");
-            this.btn_Cancelar.Name = "btn_Cancelar";
-            this.btn_Cancelar.UseVisualStyleBackColor = true;
-            this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
             // 
             // dgv_Caixa
             // 
@@ -75,26 +68,12 @@
             this.dgv_Caixa.Name = "dgv_Caixa";
             this.dgv_Caixa.ReadOnly = true;
             // 
-            // dB_EscolaDataSet3
-            // 
-            this.dB_EscolaDataSet3.DataSetName = "DB_EscolaDataSet3";
-            this.dB_EscolaDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // caixaBindingSource
-            // 
-            this.caixaBindingSource.DataMember = "Caixa";
-            this.caixaBindingSource.DataSource = this.dB_EscolaDataSet3;
-            // 
-            // caixaTableAdapter
-            // 
-            this.caixaTableAdapter.ClearBeforeFill = true;
-            // 
             // valorTotalPagoDeMensalidadesDeAlunosDataGridViewTextBoxColumn
             // 
             this.valorTotalPagoDeMensalidadesDeAlunosDataGridViewTextBoxColumn.DataPropertyName = "Valor total pago de mensalidades de alunos";
-            dataGridViewCellStyle13.Format = "C2";
-            dataGridViewCellStyle13.NullValue = null;
-            this.valorTotalPagoDeMensalidadesDeAlunosDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle1.Format = "C2";
+            dataGridViewCellStyle1.NullValue = null;
+            this.valorTotalPagoDeMensalidadesDeAlunosDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
             resources.ApplyResources(this.valorTotalPagoDeMensalidadesDeAlunosDataGridViewTextBoxColumn, "valorTotalPagoDeMensalidadesDeAlunosDataGridViewTextBoxColumn");
             this.valorTotalPagoDeMensalidadesDeAlunosDataGridViewTextBoxColumn.Name = "valorTotalPagoDeMensalidadesDeAlunosDataGridViewTextBoxColumn";
             this.valorTotalPagoDeMensalidadesDeAlunosDataGridViewTextBoxColumn.ReadOnly = true;
@@ -102,12 +81,33 @@
             // valorTotalPagoAosFuncionáriosDataGridViewTextBoxColumn
             // 
             this.valorTotalPagoAosFuncionáriosDataGridViewTextBoxColumn.DataPropertyName = "Valor total pago aos funcionários";
-            dataGridViewCellStyle14.Format = "C2";
-            dataGridViewCellStyle14.NullValue = null;
-            this.valorTotalPagoAosFuncionáriosDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle2.Format = "C2";
+            dataGridViewCellStyle2.NullValue = null;
+            this.valorTotalPagoAosFuncionáriosDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle2;
             resources.ApplyResources(this.valorTotalPagoAosFuncionáriosDataGridViewTextBoxColumn, "valorTotalPagoAosFuncionáriosDataGridViewTextBoxColumn");
             this.valorTotalPagoAosFuncionáriosDataGridViewTextBoxColumn.Name = "valorTotalPagoAosFuncionáriosDataGridViewTextBoxColumn";
             this.valorTotalPagoAosFuncionáriosDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // caixaBindingSource
+            // 
+            this.caixaBindingSource.DataMember = "Caixa";
+            this.caixaBindingSource.DataSource = this.dB_EscolaDataSet3;
+            // 
+            // dB_EscolaDataSet3
+            // 
+            this.dB_EscolaDataSet3.DataSetName = "DB_EscolaDataSet3";
+            this.dB_EscolaDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // btn_Cancelar
+            // 
+            resources.ApplyResources(this.btn_Cancelar, "btn_Cancelar");
+            this.btn_Cancelar.Name = "btn_Cancelar";
+            this.btn_Cancelar.UseVisualStyleBackColor = true;
+            this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
+            // 
+            // caixaTableAdapter
+            // 
+            this.caixaTableAdapter.ClearBeforeFill = true;
             // 
             // FormCaixa
             // 
@@ -116,13 +116,14 @@
             this.Controls.Add(this.btn_Cancelar);
             this.Controls.Add(this.group_Caixa);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormCaixa";
             this.Load += new System.EventHandler(this.FormCaixa_Load);
             this.group_Caixa.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Caixa)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dB_EscolaDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.caixaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dB_EscolaDataSet3)).EndInit();
             this.ResumeLayout(false);
 
         }

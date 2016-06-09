@@ -117,6 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="group_TabelaNegociacoes.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="cmb_Plano.Location" type="System.Drawing.Point, System.Drawing">
     <value>410, 16</value>
@@ -146,7 +150,6 @@
   <data name="lbl_Plano.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="lbl_Plano.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -273,6 +276,9 @@
   <data name="&gt;&gt;lbl_NomeAluno.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <data name="dgv_TabelaNegociacoes.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
   <data name="dgv_TabelaNegociacoes.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 43</value>
   </data>
@@ -318,6 +324,9 @@
   <data name="&gt;&gt;group_TabelaNegociacoes.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="btn_Cancelar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
   <data name="btn_Cancelar.Location" type="System.Drawing.Point, System.Drawing">
     <value>712, 333</value>
   </data>
@@ -341,6 +350,9 @@
   </data>
   <data name="&gt;&gt;btn_Cancelar.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="btn_SalvarAlteracoes.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
   </data>
   <data name="btn_SalvarAlteracoes.Location" type="System.Drawing.Point, System.Drawing">
     <value>591, 333</value>
@@ -374,6 +386,9 @@
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>799, 362</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Tabela de negociações</value>

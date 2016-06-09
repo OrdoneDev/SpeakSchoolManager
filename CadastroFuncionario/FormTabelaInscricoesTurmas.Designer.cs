@@ -45,6 +45,7 @@
             // 
             // groupBox1
             // 
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.btn_FiltrarFuncionario);
             this.groupBox1.Controls.Add(this.cmb_NomeFuncionario);
             this.groupBox1.Controls.Add(this.lbl_NomeFuncionario);
@@ -52,7 +53,6 @@
             this.groupBox1.Controls.Add(this.cmb_NomeAluno);
             this.groupBox1.Controls.Add(this.lbl_NomeAluno);
             this.groupBox1.Controls.Add(this.dgv_TabelaInscricoesTurmas);
-            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
@@ -99,9 +99,9 @@
             // dgv_TabelaInscricoesTurmas
             // 
             this.dgv_TabelaInscricoesTurmas.AllowUserToAddRows = false;
+            resources.ApplyResources(this.dgv_TabelaInscricoesTurmas, "dgv_TabelaInscricoesTurmas");
             this.dgv_TabelaInscricoesTurmas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_TabelaInscricoesTurmas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            resources.ApplyResources(this.dgv_TabelaInscricoesTurmas, "dgv_TabelaInscricoesTurmas");
             this.dgv_TabelaInscricoesTurmas.MultiSelect = false;
             this.dgv_TabelaInscricoesTurmas.Name = "dgv_TabelaInscricoesTurmas";
             this.dgv_TabelaInscricoesTurmas.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dgv_TabelaInscricoesTurmas_DataError);

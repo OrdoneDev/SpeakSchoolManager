@@ -61,6 +61,7 @@
             // 
             // group_ListaPresenca
             // 
+            resources.ApplyResources(this.group_ListaPresenca, "group_ListaPresenca");
             this.group_ListaPresenca.Controls.Add(this.dtp_DataAula);
             this.group_ListaPresenca.Controls.Add(this.lbl_DataAula);
             this.group_ListaPresenca.Controls.Add(this.lbl_Professor);
@@ -69,7 +70,6 @@
             this.group_ListaPresenca.Controls.Add(this.lbl_IdTurma);
             this.group_ListaPresenca.Controls.Add(this.msk_IdTurma);
             this.group_ListaPresenca.Controls.Add(this.dgv_ListaPresenca);
-            resources.ApplyResources(this.group_ListaPresenca, "group_ListaPresenca");
             this.group_ListaPresenca.Name = "group_ListaPresenca";
             this.group_ListaPresenca.TabStop = false;
             // 
@@ -119,6 +119,7 @@
             // 
             this.dgv_ListaPresenca.AllowUserToAddRows = false;
             this.dgv_ListaPresenca.AllowUserToDeleteRows = false;
+            resources.ApplyResources(this.dgv_ListaPresenca, "dgv_ListaPresenca");
             this.dgv_ListaPresenca.AutoGenerateColumns = false;
             this.dgv_ListaPresenca.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_ListaPresenca.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -133,7 +134,6 @@
             this.nomeDoProfessorDataGridViewTextBoxColumn,
             this.cursoDataGridViewTextBoxColumn});
             this.dgv_ListaPresenca.DataSource = this.listaPresencaBindingSource;
-            resources.ApplyResources(this.dgv_ListaPresenca, "dgv_ListaPresenca");
             this.dgv_ListaPresenca.Name = "dgv_ListaPresenca";
             this.dgv_ListaPresenca.Tag = "0";
             // 

@@ -187,6 +187,7 @@
             this.Controls.Add(this.btn_Cancelar);
             this.Controls.Add(this.group_CadastroTurma);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormCadastroTurma";
             this.group_CadastroTurma.ResumeLayout(false);

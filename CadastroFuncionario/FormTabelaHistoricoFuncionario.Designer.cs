@@ -56,11 +56,11 @@
             // 
             // group_TabelaHistoricoFuncionario
             // 
+            resources.ApplyResources(this.group_TabelaHistoricoFuncionario, "group_TabelaHistoricoFuncionario");
             this.group_TabelaHistoricoFuncionario.Controls.Add(this.btn_FiltrarFuncionario);
             this.group_TabelaHistoricoFuncionario.Controls.Add(this.cmb_NomeFuncionario);
             this.group_TabelaHistoricoFuncionario.Controls.Add(this.lbl_NomeFuncionario);
             this.group_TabelaHistoricoFuncionario.Controls.Add(this.dgv_TabelaHistoricoFuncionario);
-            resources.ApplyResources(this.group_TabelaHistoricoFuncionario, "group_TabelaHistoricoFuncionario");
             this.group_TabelaHistoricoFuncionario.Name = "group_TabelaHistoricoFuncionario";
             this.group_TabelaHistoricoFuncionario.TabStop = false;
             // 
@@ -87,9 +87,9 @@
             // dgv_TabelaHistoricoFuncionario
             // 
             this.dgv_TabelaHistoricoFuncionario.AllowUserToAddRows = false;
+            resources.ApplyResources(this.dgv_TabelaHistoricoFuncionario, "dgv_TabelaHistoricoFuncionario");
             this.dgv_TabelaHistoricoFuncionario.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_TabelaHistoricoFuncionario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            resources.ApplyResources(this.dgv_TabelaHistoricoFuncionario, "dgv_TabelaHistoricoFuncionario");
             this.dgv_TabelaHistoricoFuncionario.MultiSelect = false;
             this.dgv_TabelaHistoricoFuncionario.Name = "dgv_TabelaHistoricoFuncionario";
             this.dgv_TabelaHistoricoFuncionario.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dgv_TabelaHistoricoFuncionario_DataError);

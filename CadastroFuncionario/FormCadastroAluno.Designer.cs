@@ -82,6 +82,7 @@
             // 
             // group_Aluno
             // 
+            resources.ApplyResources(this.group_Aluno, "group_Aluno");
             this.group_Aluno.Controls.Add(this.lbl_NomeAluno);
             this.group_Aluno.Controls.Add(this.txt_NomeAluno);
             this.group_Aluno.Controls.Add(this.lbl_DataNascimentoAluno);
@@ -121,7 +122,6 @@
             this.group_Aluno.Controls.Add(this.txt_ComplementoAluno);
             this.group_Aluno.Controls.Add(this.group_Responsavel);
             this.group_Aluno.Controls.Add(this.pic_Aluno);
-            resources.ApplyResources(this.group_Aluno, "group_Aluno");
             this.group_Aluno.Name = "group_Aluno";
             this.group_Aluno.TabStop = false;
             // 
@@ -439,6 +439,7 @@
             this.Controls.Add(this.btn_EfetuarCadastroAluno);
             this.Controls.Add(this.group_Aluno);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormCadastroAluno";
             this.group_Aluno.ResumeLayout(false);

@@ -138,6 +138,7 @@
             this.Controls.Add(this.btn_Cancelar);
             this.Controls.Add(this.group_CadastroPlano);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormCadastroPlanos";
             this.group_CadastroPlano.ResumeLayout(false);

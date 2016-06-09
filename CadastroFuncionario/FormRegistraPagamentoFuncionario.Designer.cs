@@ -121,6 +121,7 @@
             this.Controls.Add(this.btn_Cancelar);
             this.Controls.Add(this.group_RegistraPagamentoFuncionario);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormRegistraPagamentoFuncionario";
             this.group_RegistraPagamentoFuncionario.ResumeLayout(false);

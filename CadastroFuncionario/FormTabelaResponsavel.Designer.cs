@@ -102,6 +102,7 @@
             // 
             // group_TabelaResponsaveis
             // 
+            resources.ApplyResources(this.group_TabelaResponsaveis, "group_TabelaResponsaveis");
             this.group_TabelaResponsaveis.Controls.Add(this.btn_FiltrarCPF);
             this.group_TabelaResponsaveis.Controls.Add(this.msk_CPF);
             this.group_TabelaResponsaveis.Controls.Add(this.btn_FiltrarNome);
@@ -112,16 +113,15 @@
             this.group_TabelaResponsaveis.Controls.Add(this.lbl_Nome);
             this.group_TabelaResponsaveis.Controls.Add(this.lbl_Id);
             this.group_TabelaResponsaveis.Controls.Add(this.dgv_Responsaveis);
-            resources.ApplyResources(this.group_TabelaResponsaveis, "group_TabelaResponsaveis");
             this.group_TabelaResponsaveis.Name = "group_TabelaResponsaveis";
             this.group_TabelaResponsaveis.TabStop = false;
             // 
             // dgv_Responsaveis
             // 
             this.dgv_Responsaveis.AllowUserToAddRows = false;
+            resources.ApplyResources(this.dgv_Responsaveis, "dgv_Responsaveis");
             this.dgv_Responsaveis.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgv_Responsaveis.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            resources.ApplyResources(this.dgv_Responsaveis, "dgv_Responsaveis");
             this.dgv_Responsaveis.MultiSelect = false;
             this.dgv_Responsaveis.Name = "dgv_Responsaveis";
             this.dgv_Responsaveis.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dgv_Responsaveis_DataError);

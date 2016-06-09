@@ -51,6 +51,7 @@
             // 
             // group_TabelaFuncionarios
             // 
+            resources.ApplyResources(this.group_TabelaFuncionarios, "group_TabelaFuncionarios");
             this.group_TabelaFuncionarios.Controls.Add(this.btn_FIltrarCargo);
             this.group_TabelaFuncionarios.Controls.Add(this.cmb_Cargo);
             this.group_TabelaFuncionarios.Controls.Add(this.btn_FiltrarCPF);
@@ -64,7 +65,6 @@
             this.group_TabelaFuncionarios.Controls.Add(this.lbl_Nome);
             this.group_TabelaFuncionarios.Controls.Add(this.lbl_Id);
             this.group_TabelaFuncionarios.Controls.Add(this.dgv_Funcionarios);
-            resources.ApplyResources(this.group_TabelaFuncionarios, "group_TabelaFuncionarios");
             this.group_TabelaFuncionarios.Name = "group_TabelaFuncionarios";
             this.group_TabelaFuncionarios.TabStop = false;
             // 
@@ -148,9 +148,9 @@
             // dgv_Funcionarios
             // 
             this.dgv_Funcionarios.AllowUserToAddRows = false;
+            resources.ApplyResources(this.dgv_Funcionarios, "dgv_Funcionarios");
             this.dgv_Funcionarios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgv_Funcionarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            resources.ApplyResources(this.dgv_Funcionarios, "dgv_Funcionarios");
             this.dgv_Funcionarios.MultiSelect = false;
             this.dgv_Funcionarios.Name = "dgv_Funcionarios";
             this.dgv_Funcionarios.CellMouseEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Funcionarios_CellMouseEnter);

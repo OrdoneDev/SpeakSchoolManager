@@ -42,11 +42,11 @@
             // 
             // group_TabelaInscricoes
             // 
+            resources.ApplyResources(this.group_TabelaInscricoes, "group_TabelaInscricoes");
             this.group_TabelaInscricoes.Controls.Add(this.btn_FiltrarAluno);
             this.group_TabelaInscricoes.Controls.Add(this.cmb_NomeAluno);
             this.group_TabelaInscricoes.Controls.Add(this.lbl_NomeAluno);
             this.group_TabelaInscricoes.Controls.Add(this.dgv_TabelaInscricoes);
-            resources.ApplyResources(this.group_TabelaInscricoes, "group_TabelaInscricoes");
             this.group_TabelaInscricoes.Name = "group_TabelaInscricoes";
             this.group_TabelaInscricoes.TabStop = false;
             // 
@@ -73,9 +73,9 @@
             // dgv_TabelaInscricoes
             // 
             this.dgv_TabelaInscricoes.AllowUserToAddRows = false;
+            resources.ApplyResources(this.dgv_TabelaInscricoes, "dgv_TabelaInscricoes");
             this.dgv_TabelaInscricoes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_TabelaInscricoes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            resources.ApplyResources(this.dgv_TabelaInscricoes, "dgv_TabelaInscricoes");
             this.dgv_TabelaInscricoes.MultiSelect = false;
             this.dgv_TabelaInscricoes.Name = "dgv_TabelaInscricoes";
             this.dgv_TabelaInscricoes.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dgv_TabelaInscricoes_DataError);

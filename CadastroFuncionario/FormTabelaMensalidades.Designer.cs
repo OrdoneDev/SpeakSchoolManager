@@ -45,6 +45,7 @@
             // 
             // group_TabelaMensalidades
             // 
+            resources.ApplyResources(this.group_TabelaMensalidades, "group_TabelaMensalidades");
             this.group_TabelaMensalidades.Controls.Add(this.btn_FiltrarFuncionario);
             this.group_TabelaMensalidades.Controls.Add(this.cmb_NomeFuncionario);
             this.group_TabelaMensalidades.Controls.Add(this.lbl_NomeFuncionario);
@@ -52,7 +53,6 @@
             this.group_TabelaMensalidades.Controls.Add(this.cmb_NomeAluno);
             this.group_TabelaMensalidades.Controls.Add(this.lbl_NomeAluno);
             this.group_TabelaMensalidades.Controls.Add(this.dgv_TabelaMensalidades);
-            resources.ApplyResources(this.group_TabelaMensalidades, "group_TabelaMensalidades");
             this.group_TabelaMensalidades.Name = "group_TabelaMensalidades";
             this.group_TabelaMensalidades.TabStop = false;
             // 
@@ -99,9 +99,9 @@
             // dgv_TabelaMensalidades
             // 
             this.dgv_TabelaMensalidades.AllowUserToAddRows = false;
+            resources.ApplyResources(this.dgv_TabelaMensalidades, "dgv_TabelaMensalidades");
             this.dgv_TabelaMensalidades.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_TabelaMensalidades.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            resources.ApplyResources(this.dgv_TabelaMensalidades, "dgv_TabelaMensalidades");
             this.dgv_TabelaMensalidades.MultiSelect = false;
             this.dgv_TabelaMensalidades.Name = "dgv_TabelaMensalidades";
             this.dgv_TabelaMensalidades.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dgv_TabelaMensalidades_DataError);

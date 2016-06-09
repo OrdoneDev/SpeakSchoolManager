@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormHistoricosAluno));
             this.group_HistoricoAluno = new System.Windows.Forms.GroupBox();
+            this.btn_MostrarTodos = new System.Windows.Forms.Button();
             this.btn_FiltrarNome = new System.Windows.Forms.Button();
             this.btn_FiltrarId = new System.Windows.Forms.Button();
             this.cmb_Nome = new System.Windows.Forms.ComboBox();
@@ -47,7 +48,6 @@
             this.historicoAlunoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dB_EscolaDataSet9 = new CadastroFuncionario.DB_EscolaDataSet9();
             this.historicoAlunoTableAdapter = new CadastroFuncionario.DB_EscolaDataSet9TableAdapters.HistoricoAlunoTableAdapter();
-            this.btn_MostrarTodos = new System.Windows.Forms.Button();
             this.group_HistoricoAluno.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_HistoricoAluno)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.historicoAlunoBindingSource)).BeginInit();
@@ -56,6 +56,7 @@
             // 
             // group_HistoricoAluno
             // 
+            resources.ApplyResources(this.group_HistoricoAluno, "group_HistoricoAluno");
             this.group_HistoricoAluno.Controls.Add(this.btn_MostrarTodos);
             this.group_HistoricoAluno.Controls.Add(this.btn_FiltrarNome);
             this.group_HistoricoAluno.Controls.Add(this.btn_FiltrarId);
@@ -64,9 +65,15 @@
             this.group_HistoricoAluno.Controls.Add(this.lbl_Id);
             this.group_HistoricoAluno.Controls.Add(this.msk_IdAluno);
             this.group_HistoricoAluno.Controls.Add(this.dgv_HistoricoAluno);
-            resources.ApplyResources(this.group_HistoricoAluno, "group_HistoricoAluno");
             this.group_HistoricoAluno.Name = "group_HistoricoAluno";
             this.group_HistoricoAluno.TabStop = false;
+            // 
+            // btn_MostrarTodos
+            // 
+            resources.ApplyResources(this.btn_MostrarTodos, "btn_MostrarTodos");
+            this.btn_MostrarTodos.Name = "btn_MostrarTodos";
+            this.btn_MostrarTodos.UseVisualStyleBackColor = true;
+            this.btn_MostrarTodos.Click += new System.EventHandler(this.btn_MostrarTodos_Click);
             // 
             // btn_FiltrarNome
             // 
@@ -109,6 +116,7 @@
             // 
             this.dgv_HistoricoAluno.AllowUserToAddRows = false;
             this.dgv_HistoricoAluno.AllowUserToDeleteRows = false;
+            resources.ApplyResources(this.dgv_HistoricoAluno, "dgv_HistoricoAluno");
             this.dgv_HistoricoAluno.AutoGenerateColumns = false;
             this.dgv_HistoricoAluno.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_HistoricoAluno.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -120,7 +128,6 @@
             this.dataDataGridViewTextBoxColumn,
             this.descricaoDataGridViewTextBoxColumn});
             this.dgv_HistoricoAluno.DataSource = this.historicoAlunoBindingSource;
-            resources.ApplyResources(this.dgv_HistoricoAluno, "dgv_HistoricoAluno");
             this.dgv_HistoricoAluno.Name = "dgv_HistoricoAluno";
             this.dgv_HistoricoAluno.ReadOnly = true;
             this.dgv_HistoricoAluno.CellMouseEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_HistoricoAluno_CellMouseEnter);
@@ -188,13 +195,6 @@
             // historicoAlunoTableAdapter
             // 
             this.historicoAlunoTableAdapter.ClearBeforeFill = true;
-            // 
-            // btn_MostrarTodos
-            // 
-            resources.ApplyResources(this.btn_MostrarTodos, "btn_MostrarTodos");
-            this.btn_MostrarTodos.Name = "btn_MostrarTodos";
-            this.btn_MostrarTodos.UseVisualStyleBackColor = true;
-            this.btn_MostrarTodos.Click += new System.EventHandler(this.btn_MostrarTodos_Click);
             // 
             // FormHistoricosAluno
             // 

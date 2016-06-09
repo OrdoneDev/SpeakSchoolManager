@@ -363,6 +363,12 @@
   <data name="&gt;&gt;lbl_Id.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
+  <data name="group_TabelaResponsaveis.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="dgv_Responsaveis.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
   <data name="dgv_Responsaveis.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 40</value>
   </data>
@@ -408,6 +414,9 @@
   <data name="&gt;&gt;group_TabelaResponsaveis.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="btn_Cancelar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
   <data name="btn_Cancelar.Location" type="System.Drawing.Point, System.Drawing">
     <value>979, 350</value>
   </data>
@@ -431,6 +440,9 @@
   </data>
   <data name="&gt;&gt;btn_Cancelar.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="btn_SalvarAlteracoes.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
   </data>
   <data name="btn_SalvarAlteracoes.Location" type="System.Drawing.Point, System.Drawing">
     <value>855, 350</value>
@@ -464,6 +476,9 @@
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1068, 380</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Tabela de responsavel</value>

@@ -42,11 +42,11 @@
             // 
             // group_TabelaFinanceiro
             // 
+            resources.ApplyResources(this.group_TabelaFinanceiro, "group_TabelaFinanceiro");
             this.group_TabelaFinanceiro.Controls.Add(this.btn_FiltrarNome);
             this.group_TabelaFinanceiro.Controls.Add(this.cmb_Nome);
             this.group_TabelaFinanceiro.Controls.Add(this.lbl_Nome);
             this.group_TabelaFinanceiro.Controls.Add(this.dgv_TabelaFinanceiros);
-            resources.ApplyResources(this.group_TabelaFinanceiro, "group_TabelaFinanceiro");
             this.group_TabelaFinanceiro.Name = "group_TabelaFinanceiro";
             this.group_TabelaFinanceiro.TabStop = false;
             // 
@@ -73,8 +73,8 @@
             // dgv_TabelaFinanceiros
             // 
             this.dgv_TabelaFinanceiros.AllowUserToAddRows = false;
-            this.dgv_TabelaFinanceiros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             resources.ApplyResources(this.dgv_TabelaFinanceiros, "dgv_TabelaFinanceiros");
+            this.dgv_TabelaFinanceiros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_TabelaFinanceiros.MultiSelect = false;
             this.dgv_TabelaFinanceiros.Name = "dgv_TabelaFinanceiros";
             this.dgv_TabelaFinanceiros.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dgv_TabelaFinanceiros_DataError);

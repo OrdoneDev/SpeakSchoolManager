@@ -449,6 +449,7 @@
             this.Controls.Add(this.group_Funcionario);
             this.Controls.Add(this.btn_EfetuarCadastroFuncionario);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormCadastroFuncionario";
             this.group_Funcionario.ResumeLayout(false);

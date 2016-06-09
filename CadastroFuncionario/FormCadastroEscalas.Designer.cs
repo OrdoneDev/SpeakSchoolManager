@@ -190,6 +190,7 @@
             this.Controls.Add(this.btn_Cancelar);
             this.Controls.Add(this.group_CadastroEscala);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormCadastroEscalas";
             this.group_CadastroEscala.ResumeLayout(false);

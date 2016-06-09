@@ -117,4 +117,289 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="group_BoletimAluno.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lbl_IdAluno.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lbl_IdAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 23</value>
+  </data>
+  <data name="lbl_IdAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 13</value>
+  </data>
+  <data name="lbl_IdAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lbl_IdAluno.Text" xml:space="preserve">
+    <value>Id aluno:</value>
+  </data>
+  <data name="&gt;&gt;lbl_IdAluno.Name" xml:space="preserve">
+    <value>lbl_IdAluno</value>
+  </data>
+  <data name="&gt;&gt;lbl_IdAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_IdAluno.Parent" xml:space="preserve">
+    <value>group_BoletimAluno</value>
+  </data>
+  <data name="&gt;&gt;lbl_IdAluno.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="msk_IdAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>62, 20</value>
+  </data>
+  <data name="msk_IdAluno.Mask" xml:space="preserve">
+    <value>0000</value>
+  </data>
+  <data name="msk_IdAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 20</value>
+  </data>
+  <data name="msk_IdAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;msk_IdAluno.Name" xml:space="preserve">
+    <value>msk_IdAluno</value>
+  </data>
+  <data name="&gt;&gt;msk_IdAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;msk_IdAluno.Parent" xml:space="preserve">
+    <value>group_BoletimAluno</value>
+  </data>
+  <data name="&gt;&gt;msk_IdAluno.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lbl_NomeAluno.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_NomeAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>242, 23</value>
+  </data>
+  <data name="lbl_NomeAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 13</value>
+  </data>
+  <data name="lbl_NomeAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="lbl_NomeAluno.Text" xml:space="preserve">
+    <value>Nome aluno:</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomeAluno.Name" xml:space="preserve">
+    <value>lbl_NomeAluno</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomeAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomeAluno.Parent" xml:space="preserve">
+    <value>group_BoletimAluno</value>
+  </data>
+  <data name="&gt;&gt;lbl_NomeAluno.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="cmb_NomeAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>315, 20</value>
+  </data>
+  <data name="cmb_NomeAluno.MaxLength" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="cmb_NomeAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>196, 21</value>
+  </data>
+  <data name="cmb_NomeAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;cmb_NomeAluno.Name" xml:space="preserve">
+    <value>cmb_NomeAluno</value>
+  </data>
+  <data name="&gt;&gt;cmb_NomeAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmb_NomeAluno.Parent" xml:space="preserve">
+    <value>group_BoletimAluno</value>
+  </data>
+  <data name="&gt;&gt;cmb_NomeAluno.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="dgv_BoletimAluno.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="dgv_BoletimAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 46</value>
+  </data>
+  <data name="dgv_BoletimAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>763, 218</value>
+  </data>
+  <data name="dgv_BoletimAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;dgv_BoletimAluno.Name" xml:space="preserve">
+    <value>dgv_BoletimAluno</value>
+  </data>
+  <data name="&gt;&gt;dgv_BoletimAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgv_BoletimAluno.Parent" xml:space="preserve">
+    <value>group_BoletimAluno</value>
+  </data>
+  <data name="&gt;&gt;dgv_BoletimAluno.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btn_ConsultarBoletim.Location" type="System.Drawing.Point, System.Drawing">
+    <value>659, 18</value>
+  </data>
+  <data name="btn_ConsultarBoletim.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btn_ConsultarBoletim.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btn_ConsultarBoletim.Text" xml:space="preserve">
+    <value>Consultar</value>
+  </data>
+  <data name="&gt;&gt;btn_ConsultarBoletim.Name" xml:space="preserve">
+    <value>btn_ConsultarBoletim</value>
+  </data>
+  <data name="&gt;&gt;btn_ConsultarBoletim.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ConsultarBoletim.Parent" xml:space="preserve">
+    <value>group_BoletimAluno</value>
+  </data>
+  <data name="&gt;&gt;btn_ConsultarBoletim.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="group_BoletimAluno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 13</value>
+  </data>
+  <data name="group_BoletimAluno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>776, 273</value>
+  </data>
+  <data name="group_BoletimAluno.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="group_BoletimAluno.Text" xml:space="preserve">
+    <value>Boletim do aluno</value>
+  </data>
+  <data name="&gt;&gt;group_BoletimAluno.Name" xml:space="preserve">
+    <value>group_BoletimAluno</value>
+  </data>
+  <data name="&gt;&gt;group_BoletimAluno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;group_BoletimAluno.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;group_BoletimAluno.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btn_Cancelar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="btn_Cancelar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>708, 292</value>
+  </data>
+  <data name="btn_Cancelar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btn_Cancelar.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="btn_Cancelar.Text" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.Name" xml:space="preserve">
+    <value>btn_Cancelar</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_Cancelar.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btn_SalvarAlteracoes.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="btn_SalvarAlteracoes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>590, 292</value>
+  </data>
+  <data name="btn_SalvarAlteracoes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 23</value>
+  </data>
+  <data name="btn_SalvarAlteracoes.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="btn_SalvarAlteracoes.Text" xml:space="preserve">
+    <value>Salvar alterações</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarAlteracoes.Name" xml:space="preserve">
+    <value>btn_SalvarAlteracoes</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarAlteracoes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarAlteracoes.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_SalvarAlteracoes.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Column1.HeaderText" xml:space="preserve">
+    <value>Código do boletim</value>
+  </data>
+  <data name="mediaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Media</value>
+  </data>
+  <data name="mediaDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>61</value>
+  </data>
+  <data name="Column2.HeaderText" xml:space="preserve">
+    <value>Column2</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>800, 328</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Boletim do aluno</value>
+  </data>
+  <data name="&gt;&gt;Column1.Name" xml:space="preserve">
+    <value>Column1</value>
+  </data>
+  <data name="&gt;&gt;Column1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mediaDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>mediaDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;mediaDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Column2.Name" xml:space="preserve">
+    <value>Column2</value>
+  </data>
+  <data name="&gt;&gt;Column2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormBoletimAluno</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

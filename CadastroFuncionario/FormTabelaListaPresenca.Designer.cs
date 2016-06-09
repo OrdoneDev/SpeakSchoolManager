@@ -45,6 +45,7 @@
             // 
             // group_TabelaListaPresenca
             // 
+            resources.ApplyResources(this.group_TabelaListaPresenca, "group_TabelaListaPresenca");
             this.group_TabelaListaPresenca.Controls.Add(this.btn_FiltrarProfessor);
             this.group_TabelaListaPresenca.Controls.Add(this.cmb_NomeProfessor);
             this.group_TabelaListaPresenca.Controls.Add(this.lbl_NomeProfessor);
@@ -52,7 +53,6 @@
             this.group_TabelaListaPresenca.Controls.Add(this.cmb_NomeAluno);
             this.group_TabelaListaPresenca.Controls.Add(this.lbl_NomeAluno);
             this.group_TabelaListaPresenca.Controls.Add(this.dgv_TabelaListaPresenca);
-            resources.ApplyResources(this.group_TabelaListaPresenca, "group_TabelaListaPresenca");
             this.group_TabelaListaPresenca.Name = "group_TabelaListaPresenca";
             this.group_TabelaListaPresenca.TabStop = false;
             // 
@@ -99,9 +99,9 @@
             // dgv_TabelaListaPresenca
             // 
             this.dgv_TabelaListaPresenca.AllowUserToAddRows = false;
+            resources.ApplyResources(this.dgv_TabelaListaPresenca, "dgv_TabelaListaPresenca");
             this.dgv_TabelaListaPresenca.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_TabelaListaPresenca.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            resources.ApplyResources(this.dgv_TabelaListaPresenca, "dgv_TabelaListaPresenca");
             this.dgv_TabelaListaPresenca.MultiSelect = false;
             this.dgv_TabelaListaPresenca.Name = "dgv_TabelaListaPresenca";
             this.dgv_TabelaListaPresenca.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dgv_TabelaListaPresenca_DataError);

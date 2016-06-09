@@ -42,11 +42,11 @@
             // 
             // group_TabelaEscalas
             // 
+            resources.ApplyResources(this.group_TabelaEscalas, "group_TabelaEscalas");
             this.group_TabelaEscalas.Controls.Add(this.btn_FiltrarFuncionario);
             this.group_TabelaEscalas.Controls.Add(this.cmb_NomeFuncionario);
             this.group_TabelaEscalas.Controls.Add(this.lbl_NomeFuncionario);
             this.group_TabelaEscalas.Controls.Add(this.dgv_TabelaEscalas);
-            resources.ApplyResources(this.group_TabelaEscalas, "group_TabelaEscalas");
             this.group_TabelaEscalas.Name = "group_TabelaEscalas";
             this.group_TabelaEscalas.TabStop = false;
             // 
@@ -73,9 +73,9 @@
             // dgv_TabelaEscalas
             // 
             this.dgv_TabelaEscalas.AllowUserToAddRows = false;
+            resources.ApplyResources(this.dgv_TabelaEscalas, "dgv_TabelaEscalas");
             this.dgv_TabelaEscalas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_TabelaEscalas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            resources.ApplyResources(this.dgv_TabelaEscalas, "dgv_TabelaEscalas");
             this.dgv_TabelaEscalas.MultiSelect = false;
             this.dgv_TabelaEscalas.Name = "dgv_TabelaEscalas";
             this.dgv_TabelaEscalas.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dgv_TabelaEscalas_DataError);
