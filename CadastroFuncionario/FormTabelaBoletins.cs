@@ -37,7 +37,7 @@ namespace CadastroFuncionario
 
             if (!Valida.IsMatch(e.Value.ToString()) && (e.ColumnIndex == 2 || e.ColumnIndex == 3))
             {
-                MessageBox.Show("Insira valores númericos entre 0 e 10!");
+                MessageBox.Show("Insira valores numéricos entre 0 e 10!");
                 e.InheritedCellStyle = null;
             }
         }

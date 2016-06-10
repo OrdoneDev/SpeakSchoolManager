@@ -33,7 +33,7 @@ namespace CadastroFuncionario
         {
             e.Cancel = true;
             dgv_TabelaEscalas.RefreshEdit();
-            MessageBox.Show("O valor fornecido a esta celula está invalido!");
+            MessageBox.Show("O valor fornecido a esta célula está invalido!");
         }
 
         private void cmb_NomeFuncionario_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)

@@ -562,6 +562,8 @@ begin
 	on M.Id_Financeiro = FI.Id_Financeiro INNER JOIN SysProtected.Funcionarios FU
 	on FI.Id_Funcionario = FU.Id_Funcionario;
 
+	Update SysProtected.Financeiro set Data = DATEADD(month, 1, GetDate()) where Id_Funcionario = @Id_Funcionario
+
 	if (@Id_Funcionario is not null)
 	begin
 		select @Numero_Parcela = Numero_Parcela from inserted;

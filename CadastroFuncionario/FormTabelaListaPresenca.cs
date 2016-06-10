@@ -33,7 +33,7 @@ namespace CadastroFuncionario
         {
             e.Cancel = true;
             dgv_TabelaListaPresenca.RefreshEdit();
-            MessageBox.Show("O valor fornecido a esta celula está invalido!");
+            MessageBox.Show("O valor fornecido a esta célula está invalido!");
         }
 
         private void cmb_NomeAluno_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
@@ -77,7 +77,7 @@ namespace CadastroFuncionario
         {
             if (cmb_NomeProfessor.Text.Trim().Length == 0)
             {
-                MessageBox.Show("Preencha o campo funcionário!");
+                MessageBox.Show("Preencha o campo professor!");
                 cmb_NomeProfessor.BackColor = System.Drawing.Color.LightGray;
                 return;
             }
