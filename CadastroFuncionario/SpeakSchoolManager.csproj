@@ -59,6 +59,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DB_EscolaDataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DB_EscolaDataSet3.cs">
+      <DependentUpon>DB_EscolaDataSet3.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="DB_EscolaDataSet3.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

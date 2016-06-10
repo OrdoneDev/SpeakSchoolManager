@@ -140,7 +140,7 @@ namespace CadastroFuncionario
             if (MessageBox.Show("Deseja salvar as alterações?", "Salvar?", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 GerenciaBanco.updateDados("Endereco", "Id_Endereco as 'Código do endereço', Estado, Cidade, " +
-            "CEP, Bairro, Nome_Rua as 'Nome da rua'");
+                "CEP, Bairro, Nome_Rua as 'Nome da rua'");
             }
 
             dgv_Enderecos.DataSource = GerenciaBanco.carregaDados("Endereco", "Id_Endereco as 'Código do endereço', Estado, Cidade, " +

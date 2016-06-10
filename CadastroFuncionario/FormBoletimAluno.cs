@@ -100,7 +100,6 @@ namespace CadastroFuncionario
             {
                 GerenciaBanco.updateDados("Boletim", "Id_Boletim as 'Código do boletim', Id_Inscricao as 'Código da inscrição', " +
                 "Nota1 as '1º Nota', Nota2 as '2º Nota', Media as 'Média', Numero_Faltas as 'Nº de faltas', Semestre");
-                MessageBox.Show("As notas foram atualizadas com sucesso!");
             }
 
             dgv_BoletimAluno.DataSource = GerenciaBanco.carregaDados("Boletim", "Id_Boletim as 'Código do boletim', Id_Inscricao as 'Código da inscrição', " +

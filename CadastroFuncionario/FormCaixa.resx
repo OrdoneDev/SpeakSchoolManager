@@ -117,26 +117,117 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="valorTotalPagoDeMensalidadesDeAlunosDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Valor total pago de mensalidades de alunos</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lbl_Mes.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="valorTotalPagoAosFuncionáriosDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Valor total pago aos funcionários</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lbl_Mes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 24</value>
+  </data>
+  <data name="lbl_Mes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 13</value>
+  </data>
+  <data name="lbl_Mes.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="lbl_Mes.Text" xml:space="preserve">
+    <value>Mes:</value>
+  </data>
+  <data name="&gt;&gt;lbl_Mes.Name" xml:space="preserve">
+    <value>lbl_Mes</value>
+  </data>
+  <data name="&gt;&gt;lbl_Mes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_Mes.Parent" xml:space="preserve">
+    <value>group_Caixa</value>
+  </data>
+  <data name="&gt;&gt;lbl_Mes.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btn_Total.Location" type="System.Drawing.Point, System.Drawing">
+    <value>229, 16</value>
+  </data>
+  <data name="btn_Total.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btn_Total.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btn_Total.Text" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="&gt;&gt;btn_Total.Name" xml:space="preserve">
+    <value>btn_Total</value>
+  </data>
+  <data name="&gt;&gt;btn_Total.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Total.Parent" xml:space="preserve">
+    <value>group_Caixa</value>
+  </data>
+  <data name="&gt;&gt;btn_Total.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btn_Mes.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Mes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>148, 16</value>
+  </data>
+  <data name="btn_Mes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btn_Mes.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btn_Mes.Text" xml:space="preserve">
+    <value>Mostrar més</value>
+  </data>
+  <data name="&gt;&gt;btn_Mes.Name" xml:space="preserve">
+    <value>btn_Mes</value>
+  </data>
+  <data name="&gt;&gt;btn_Mes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Mes.Parent" xml:space="preserve">
+    <value>group_Caixa</value>
+  </data>
+  <data name="&gt;&gt;btn_Mes.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="dtp_Data.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 19</value>
+  </data>
+  <data name="dtp_Data.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 20</value>
+  </data>
+  <data name="dtp_Data.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;dtp_Data.Name" xml:space="preserve">
+    <value>dtp_Data</value>
+  </data>
+  <data name="&gt;&gt;dtp_Data.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dtp_Data.Parent" xml:space="preserve">
+    <value>group_Caixa</value>
+  </data>
+  <data name="&gt;&gt;dtp_Data.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <metadata name="caixaBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>171, 17</value>
   </metadata>
-  <metadata name="dB_EscolaDataSet3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="dgv_Caixa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 20</value>
+    <value>6, 54</value>
   </data>
   <data name="dgv_Caixa.Size" type="System.Drawing.Size, System.Drawing">
     <value>303, 70</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="dgv_Caixa.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
@@ -150,13 +241,13 @@
     <value>group_Caixa</value>
   </data>
   <data name="&gt;&gt;dgv_Caixa.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>4</value>
   </data>
   <data name="group_Caixa.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 13</value>
   </data>
   <data name="group_Caixa.Size" type="System.Drawing.Size, System.Drawing">
-    <value>315, 99</value>
+    <value>315, 130</value>
   </data>
   <data name="group_Caixa.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -176,8 +267,23 @@
   <data name="&gt;&gt;group_Caixa.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="valorTotalPagoDeMensalidadesDeAlunosDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Valor total pago de mensalidades de alunos</value>
+  </data>
+  <data name="valorTotalPagoAosFuncionáriosDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Valor total pago aos funcionários</value>
+  </data>
+  <metadata name="caixaBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>171, 17</value>
+  </metadata>
+  <metadata name="dB_EscolaDataSet3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="dB_EscolaDataSet3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <data name="btn_Cancelar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>253, 118</value>
+    <value>253, 149</value>
   </data>
   <data name="btn_Cancelar.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -210,9 +316,8 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>340, 150</value>
+    <value>340, 184</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>

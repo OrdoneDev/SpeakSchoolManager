@@ -84,8 +84,6 @@ namespace CadastroFuncionario
 
                 GerenciaBanco.updateDados("Inscricao", "Id_Inscricao as 'Código da inscrição', " +
                 "Id_Aluno as 'Código do aluno', Id_Negociacao as 'Código da negociação', Data, Status");
-
-                MessageBox.Show("O novo semestre foi gerado com sucesso!");
             }
 
             dgv_Inscricoes.DataSource = GerenciaBanco.carregaDados("Inscricao", "Id_Inscricao as 'Código da inscrição', " +

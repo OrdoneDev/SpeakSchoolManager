@@ -508,6 +508,12 @@ CREATE VIEW Caixa AS
 	select SUM(Valor) as 'Valor total pago de mensalidades de alunos',(select SUM(-Valor) from SysProtected.Mensalidades where Id_Negociacao is null and Situacao = 1) as 'Valor total pago aos funcionários' from SysProtected.Mensalidades where Id_Negociacao is not null and Situacao = 1
 GO
 
+CREATE PROCEDURE CaixaMes
+	@Data		Date
+AS
+	select SUM(Valor) as 'Valor total pago de mensalidades de alunos',(select SUM(-Valor) from SysProtected.Mensalidades where Id_Negociacao is null and Situacao = 1 and Month(Data) = Month(@Data)) as 'Valor total pago aos funcionários' from SysProtected.Mensalidades where Id_Negociacao is not null and Situacao = 1 and Month(Data) = Month(@Data)
+GO
+
 CREATE VIEW MensalidadesAlunosFiltro AS
 	select	M.Id_Mensalidade,
 			M.Id_Financeiro,

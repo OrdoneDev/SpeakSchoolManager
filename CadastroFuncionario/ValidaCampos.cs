@@ -145,7 +145,7 @@ namespace CadastroFuncionario
 
             if (!x)
             {
-                MessageBox.Show("Você deve escolher um(a) " + tipo + " disponivel!");
+                MessageBox.Show("Você deve escolher um(a) " + tipo + " disponível!");
                 return false;
             }
             return true;

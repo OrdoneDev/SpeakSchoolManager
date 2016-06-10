@@ -2445,10 +2445,11 @@ namespace CadastroFuncionario
                 // O 'da' (tabela 'fisica') esta atualizando os dados a partir do 'ds'.
                 da.Update(ds);
                 con.Close();
+                MessageBox.Show("Os dados foram atualizados com sucesso!");
             }
             catch (Exception)
             {
-                MessageBox.Show("No sistema há vinculos com este dado que deseja remover. Porfavor remova os dados vinculados e retorne a este procedimento!");
+                MessageBox.Show("No sistema há vínculos com este dado. Por favor remova os dados vinculados e retorne a este procedimento!");
             }
 
             ds.Reset();

@@ -24,6 +24,17 @@ namespace CadastroFuncionario
             
         }
 
+        private void btn_Mes_Click(object sender, EventArgs e)
+        {
+            DateTime Data = dtp_Data.Value.Date;
+            this.caixaTableAdapter.FillBy(this.dB_EscolaDataSet3.Caixa, Data);
+        }
+
+        private void btn_Total_Click(object sender, EventArgs e)
+        {
+            this.caixaTableAdapter.Fill(this.dB_EscolaDataSet3.Caixa);
+        }
+
         private void btn_Cancelar_Click(object sender, EventArgs e)
         {
             this.Close();
