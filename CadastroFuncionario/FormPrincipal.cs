@@ -29,7 +29,8 @@ namespace CadastroFuncionario
 
             TagP = GerenciaBanco.VerificaPermissao(TagP, "Escalas");
 
-            ValidaPermissoes(menuStrip1);
+            if (TagP == 0)
+                TagP = GerenciaBanco.VerificaPermissao(TagP, "Endereco");
 
             if (TagP == 1)
                 MessageBox.Show("Seja bem vindo diretor!");
@@ -37,6 +38,8 @@ namespace CadastroFuncionario
                 MessageBox.Show("Seja bem vindo secretário!");
             if (TagP == 0)
                 MessageBox.Show("Seja bem vindo professor!");
+
+            ValidaPermissoes(menuStrip1);
         }
 
         private void ValidaPermissoes(MenuStrip Menu)

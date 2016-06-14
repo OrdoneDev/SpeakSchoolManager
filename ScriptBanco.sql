@@ -46,7 +46,7 @@ Create table SysProtected.Endereco (
 )
 go
 
-Create unique index Unico_Endreco
+Create unique index Unico_Endereco
    on SysProtected.Endereco (CEP, Nome_Rua, Bairro); 
 go
 
@@ -60,7 +60,7 @@ Create table SysProtected.Funcionarios (
 	RG					Varchar(12)					Unique check (RG like '[0-9][0-9].[0-9][0-9][0-9].[0-9][0-9][0-9]-[0-9X]'),
 	CPF					Varchar(14)					Unique check (CPF like '[0-9][0-9][0-9].[0-9][0-9][0-9].[0-9][0-9][0-9]-[0-9][0-9]'),
 	Status_Funcionario	Varchar(10)		not null,
-	Email				Varchar(255)	null		Default ('Nome@speakschool.com.br'),
+	Email				Varchar(255)	null,
 	Foto				Varbinary(MAX)	null,
 	DDD					Varchar(5)		not null,			
 	Telefone			Varchar(11)		not null,
