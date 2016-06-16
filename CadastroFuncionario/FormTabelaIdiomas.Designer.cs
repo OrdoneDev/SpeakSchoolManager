@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTabelaIdiomas));
             this.group_TabelaIdiomas = new System.Windows.Forms.GroupBox();
             this.dgv_TabelaIdiomas = new System.Windows.Forms.DataGridView();
             this.btn_Cancelar = new System.Windows.Forms.Button();
@@ -92,6 +93,7 @@
             this.Controls.Add(this.btn_SalvarAlteracoes);
             this.Controls.Add(this.btn_Cancelar);
             this.Controls.Add(this.group_TabelaIdiomas);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormTabelaIdiomas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tabela de idiomas";

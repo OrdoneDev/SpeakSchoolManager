@@ -29,10 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCaixa));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.group_Caixa = new System.Windows.Forms.GroupBox();
+            this.lbl_Mes = new System.Windows.Forms.Label();
+            this.btn_Total = new System.Windows.Forms.Button();
+            this.btn_Mes = new System.Windows.Forms.Button();
+            this.dtp_Data = new System.Windows.Forms.DateTimePicker();
             this.dgv_Caixa = new System.Windows.Forms.DataGridView();
             this.valorTotalPagoDeMensalidadesDeAlunosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.valorTotalPagoAosFuncionáriosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -40,10 +44,6 @@
             this.dB_EscolaDataSet3 = new CadastroFuncionario.DB_EscolaDataSet3();
             this.btn_Cancelar = new System.Windows.Forms.Button();
             this.caixaTableAdapter = new CadastroFuncionario.DB_EscolaDataSet3TableAdapters.CaixaTableAdapter();
-            this.dtp_Data = new System.Windows.Forms.DateTimePicker();
-            this.btn_Mes = new System.Windows.Forms.Button();
-            this.btn_Total = new System.Windows.Forms.Button();
-            this.lbl_Mes = new System.Windows.Forms.Label();
             this.group_Caixa.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Caixa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.caixaBindingSource)).BeginInit();
@@ -60,6 +60,31 @@
             resources.ApplyResources(this.group_Caixa, "group_Caixa");
             this.group_Caixa.Name = "group_Caixa";
             this.group_Caixa.TabStop = false;
+            // 
+            // lbl_Mes
+            // 
+            resources.ApplyResources(this.lbl_Mes, "lbl_Mes");
+            this.lbl_Mes.Name = "lbl_Mes";
+            // 
+            // btn_Total
+            // 
+            resources.ApplyResources(this.btn_Total, "btn_Total");
+            this.btn_Total.Name = "btn_Total";
+            this.btn_Total.UseVisualStyleBackColor = true;
+            this.btn_Total.Click += new System.EventHandler(this.btn_Total_Click);
+            // 
+            // btn_Mes
+            // 
+            resources.ApplyResources(this.btn_Mes, "btn_Mes");
+            this.btn_Mes.Name = "btn_Mes";
+            this.btn_Mes.UseVisualStyleBackColor = true;
+            this.btn_Mes.Click += new System.EventHandler(this.btn_Mes_Click);
+            // 
+            // dtp_Data
+            // 
+            this.dtp_Data.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            resources.ApplyResources(this.dtp_Data, "dtp_Data");
+            this.dtp_Data.Name = "dtp_Data";
             // 
             // dgv_Caixa
             // 
@@ -79,9 +104,9 @@
             // valorTotalPagoDeMensalidadesDeAlunosDataGridViewTextBoxColumn
             // 
             this.valorTotalPagoDeMensalidadesDeAlunosDataGridViewTextBoxColumn.DataPropertyName = "Valor total pago de mensalidades de alunos";
-            dataGridViewCellStyle3.Format = "C2";
-            dataGridViewCellStyle3.NullValue = null;
-            this.valorTotalPagoDeMensalidadesDeAlunosDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Format = "C2";
+            dataGridViewCellStyle1.NullValue = null;
+            this.valorTotalPagoDeMensalidadesDeAlunosDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
             resources.ApplyResources(this.valorTotalPagoDeMensalidadesDeAlunosDataGridViewTextBoxColumn, "valorTotalPagoDeMensalidadesDeAlunosDataGridViewTextBoxColumn");
             this.valorTotalPagoDeMensalidadesDeAlunosDataGridViewTextBoxColumn.Name = "valorTotalPagoDeMensalidadesDeAlunosDataGridViewTextBoxColumn";
             this.valorTotalPagoDeMensalidadesDeAlunosDataGridViewTextBoxColumn.ReadOnly = true;
@@ -89,9 +114,9 @@
             // valorTotalPagoAosFuncionáriosDataGridViewTextBoxColumn
             // 
             this.valorTotalPagoAosFuncionáriosDataGridViewTextBoxColumn.DataPropertyName = "Valor total pago aos funcionários";
-            dataGridViewCellStyle4.Format = "C2";
-            dataGridViewCellStyle4.NullValue = null;
-            this.valorTotalPagoAosFuncionáriosDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Format = "C2";
+            dataGridViewCellStyle2.NullValue = null;
+            this.valorTotalPagoAosFuncionáriosDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle2;
             resources.ApplyResources(this.valorTotalPagoAosFuncionáriosDataGridViewTextBoxColumn, "valorTotalPagoAosFuncionáriosDataGridViewTextBoxColumn");
             this.valorTotalPagoAosFuncionáriosDataGridViewTextBoxColumn.Name = "valorTotalPagoAosFuncionáriosDataGridViewTextBoxColumn";
             this.valorTotalPagoAosFuncionáriosDataGridViewTextBoxColumn.ReadOnly = true;
@@ -116,31 +141,6 @@
             // caixaTableAdapter
             // 
             this.caixaTableAdapter.ClearBeforeFill = true;
-            // 
-            // dtp_Data
-            // 
-            this.dtp_Data.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            resources.ApplyResources(this.dtp_Data, "dtp_Data");
-            this.dtp_Data.Name = "dtp_Data";
-            // 
-            // btn_Mes
-            // 
-            resources.ApplyResources(this.btn_Mes, "btn_Mes");
-            this.btn_Mes.Name = "btn_Mes";
-            this.btn_Mes.UseVisualStyleBackColor = true;
-            this.btn_Mes.Click += new System.EventHandler(this.btn_Mes_Click);
-            // 
-            // btn_Total
-            // 
-            resources.ApplyResources(this.btn_Total, "btn_Total");
-            this.btn_Total.Name = "btn_Total";
-            this.btn_Total.UseVisualStyleBackColor = true;
-            this.btn_Total.Click += new System.EventHandler(this.btn_Total_Click);
-            // 
-            // lbl_Mes
-            // 
-            resources.ApplyResources(this.lbl_Mes, "lbl_Mes");
-            this.lbl_Mes.Name = "lbl_Mes";
             // 
             // FormCaixa
             // 

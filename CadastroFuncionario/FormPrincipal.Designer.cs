@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.cadastrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.funcionariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -57,6 +58,8 @@
             this.alterarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inscriçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.boletimDoAlunoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gerarNovoSemestreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.caixaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.enderecosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.funcionariosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -75,8 +78,6 @@
             this.listaDePresençaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.históricoDoFuncionárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.históricoDoAlunoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.caixaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gerarNovoSemestreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -224,7 +225,7 @@
             this.vincularAuloATurmaToolStripMenuItem,
             this.listaDeChamadaToolStripMenuItem});
             this.cadastrarToolStripMenuItem2.Name = "cadastrarToolStripMenuItem2";
-            this.cadastrarToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.cadastrarToolStripMenuItem2.Size = new System.Drawing.Size(137, 22);
             this.cadastrarToolStripMenuItem2.Text = "Cadastrar";
             // 
             // financeiroEmpresaToolStripMenuItem
@@ -281,7 +282,7 @@
             this.mensalidadesDoAlunoToolStripMenuItem,
             this.registrarPagamentoFuncionarioToolStripMenuItem});
             this.negociaçãoToolStripMenuItem1.Name = "negociaçãoToolStripMenuItem1";
-            this.negociaçãoToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.negociaçãoToolStripMenuItem1.Size = new System.Drawing.Size(137, 22);
             this.negociaçãoToolStripMenuItem1.Text = "Negociação";
             // 
             // aquisiçãoDeCursoToolStripMenuItem
@@ -315,13 +316,13 @@
             this.boletimDoAlunoToolStripMenuItem,
             this.gerarNovoSemestreToolStripMenuItem});
             this.alterarToolStripMenuItem.Name = "alterarToolStripMenuItem";
-            this.alterarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.alterarToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.alterarToolStripMenuItem.Text = "Alterar";
             // 
             // inscriçõesToolStripMenuItem
             // 
             this.inscriçõesToolStripMenuItem.Name = "inscriçõesToolStripMenuItem";
-            this.inscriçõesToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.inscriçõesToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
             this.inscriçõesToolStripMenuItem.Tag = "2";
             this.inscriçõesToolStripMenuItem.Text = "Inscrições de alunos...";
             this.inscriçõesToolStripMenuItem.Click += new System.EventHandler(this.inscriçõesToolStripMenuItem_Click);
@@ -329,9 +330,25 @@
             // boletimDoAlunoToolStripMenuItem
             // 
             this.boletimDoAlunoToolStripMenuItem.Name = "boletimDoAlunoToolStripMenuItem";
-            this.boletimDoAlunoToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.boletimDoAlunoToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
             this.boletimDoAlunoToolStripMenuItem.Text = "Boletim do aluno...";
             this.boletimDoAlunoToolStripMenuItem.Click += new System.EventHandler(this.boletimDoAlunoToolStripMenuItem_Click);
+            // 
+            // gerarNovoSemestreToolStripMenuItem
+            // 
+            this.gerarNovoSemestreToolStripMenuItem.Name = "gerarNovoSemestreToolStripMenuItem";
+            this.gerarNovoSemestreToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
+            this.gerarNovoSemestreToolStripMenuItem.Tag = "1";
+            this.gerarNovoSemestreToolStripMenuItem.Text = "Gerar novo semestre...";
+            this.gerarNovoSemestreToolStripMenuItem.Click += new System.EventHandler(this.gerarNovoSemestreToolStripMenuItem_Click);
+            // 
+            // caixaToolStripMenuItem
+            // 
+            this.caixaToolStripMenuItem.Name = "caixaToolStripMenuItem";
+            this.caixaToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.caixaToolStripMenuItem.Tag = "1";
+            this.caixaToolStripMenuItem.Text = "Caixa";
+            this.caixaToolStripMenuItem.Click += new System.EventHandler(this.caixaToolStripMenuItem_Click);
             // 
             // editarToolStripMenuItem
             // 
@@ -490,32 +507,18 @@
             this.históricoDoAlunoToolStripMenuItem.Text = "Histórico do aluno...";
             this.históricoDoAlunoToolStripMenuItem.Click += new System.EventHandler(this.históricoDoAlunoToolStripMenuItem_Click);
             // 
-            // caixaToolStripMenuItem
-            // 
-            this.caixaToolStripMenuItem.Name = "caixaToolStripMenuItem";
-            this.caixaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.caixaToolStripMenuItem.Tag = "1";
-            this.caixaToolStripMenuItem.Text = "Caixa";
-            this.caixaToolStripMenuItem.Click += new System.EventHandler(this.caixaToolStripMenuItem_Click);
-            // 
-            // gerarNovoSemestreToolStripMenuItem
-            // 
-            this.gerarNovoSemestreToolStripMenuItem.Name = "gerarNovoSemestreToolStripMenuItem";
-            this.gerarNovoSemestreToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
-            this.gerarNovoSemestreToolStripMenuItem.Tag = "1";
-            this.gerarNovoSemestreToolStripMenuItem.Text = "Gerar novo semestre...";
-            this.gerarNovoSemestreToolStripMenuItem.Click += new System.EventHandler(this.gerarNovoSemestreToolStripMenuItem_Click);
-            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackgroundImage = global::CadastroFuncionario.Properties.Resources.trigger_phixr;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(741, 448);
             this.Controls.Add(this.menuStrip1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormPrincipal";

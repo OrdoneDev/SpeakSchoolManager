@@ -17,6 +17,7 @@ namespace CadastroFuncionario
         public FormCadastroFuncionario()
         {
             InitializeComponent();
+            pic_Funcionario.Image = CadastroFuncionario.Properties.Resources.users;
         }
 
         private bool VerificaCamposCadastroFuncionario()
@@ -105,7 +106,7 @@ namespace CadastroFuncionario
         private void txt_FotoFuncionario_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
             if (txt_FotoFuncionario.Text != openFile.FileName)
-                pic_Funcionario.Image = null;
+                pic_Funcionario.Image = CadastroFuncionario.Properties.Resources.users;
         }
 
         private void btn_AbrirFotoFuncionario_Click(object sender, EventArgs e)
