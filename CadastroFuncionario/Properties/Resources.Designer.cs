@@ -63,9 +63,9 @@ namespace CadastroFuncionario.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap trigger_phixr {
+        internal static System.Drawing.Bitmap trigger_phixr_phixr {
             get {
-                object obj = ResourceManager.GetObject("trigger_phixr", resourceCulture);
+                object obj = ResourceManager.GetObject("trigger_phixr_phixr", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
