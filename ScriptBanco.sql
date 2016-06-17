@@ -1120,12 +1120,12 @@ Insert into SysProtected.Endereco values (
 GO
 
 Insert into SysProtected.Funcionarios values (
-	1, 'David Christian Dias Ordone', '1994-01-01', 'M', 'Solteiro', '11.111.111-1',
+	4, 'David Christian Dias Ordone', '1994-01-01', 'M', 'Solteiro', '11.111.111-1',
 	'111.111.111-11', 'Inátivo', 'david9108@hotmail.com', null, '012', '997040012', '0',
 	'Ensino Médio Completo', 'Administrador', 1, 'Casa', '416'
 )
 GO
 
 Insert into SysProtected.Escalas values
-	(1, '2016-05-31', '07:15', '11:40', 'Estudar')
+	(5, '2016-05-31', '07:15', '11:40', 'Estudar')
 GO

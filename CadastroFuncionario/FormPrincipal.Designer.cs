@@ -225,7 +225,7 @@
             this.vincularAuloATurmaToolStripMenuItem,
             this.listaDeChamadaToolStripMenuItem});
             this.cadastrarToolStripMenuItem2.Name = "cadastrarToolStripMenuItem2";
-            this.cadastrarToolStripMenuItem2.Size = new System.Drawing.Size(137, 22);
+            this.cadastrarToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
             this.cadastrarToolStripMenuItem2.Text = "Cadastrar";
             // 
             // financeiroEmpresaToolStripMenuItem
@@ -282,7 +282,8 @@
             this.mensalidadesDoAlunoToolStripMenuItem,
             this.registrarPagamentoFuncionarioToolStripMenuItem});
             this.negociaçãoToolStripMenuItem1.Name = "negociaçãoToolStripMenuItem1";
-            this.negociaçãoToolStripMenuItem1.Size = new System.Drawing.Size(137, 22);
+            this.negociaçãoToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.negociaçãoToolStripMenuItem1.Tag = "2";
             this.negociaçãoToolStripMenuItem1.Text = "Negociação";
             // 
             // aquisiçãoDeCursoToolStripMenuItem
@@ -316,7 +317,7 @@
             this.boletimDoAlunoToolStripMenuItem,
             this.gerarNovoSemestreToolStripMenuItem});
             this.alterarToolStripMenuItem.Name = "alterarToolStripMenuItem";
-            this.alterarToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.alterarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.alterarToolStripMenuItem.Text = "Alterar";
             // 
             // inscriçõesToolStripMenuItem
@@ -345,7 +346,7 @@
             // caixaToolStripMenuItem
             // 
             this.caixaToolStripMenuItem.Name = "caixaToolStripMenuItem";
-            this.caixaToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.caixaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.caixaToolStripMenuItem.Tag = "1";
             this.caixaToolStripMenuItem.Text = "Caixa";
             this.caixaToolStripMenuItem.Click += new System.EventHandler(this.caixaToolStripMenuItem_Click);
