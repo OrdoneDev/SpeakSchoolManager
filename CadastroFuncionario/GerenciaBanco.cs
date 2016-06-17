@@ -90,6 +90,7 @@ namespace CadastroFuncionario
                                             short Quantidade_Filhos, string Historico_Escolar, string Cargo, float Salario,
                                             string Complemento, string Numero)
         {
+            byte[] FotoFinal;
             SqlConnection conexao = new SqlConnection(strConexao);
             SqlCommand cmd;
 
@@ -128,12 +129,8 @@ namespace CadastroFuncionario
 
                 getUltimoFuncionarioRegistrado();
 
-                if (Foto != null)
-                {
-                    byte[] FotoFinal;
-                    FotoFinal = ScaleImage(Foto);
-                    AtualizaFotoFuncionario(FotoFinal);
-                }
+                FotoFinal = ScaleImage(Foto);
+                AtualizaFotoFuncionario(FotoFinal);
 
                 return true;
             }
@@ -192,6 +189,7 @@ namespace CadastroFuncionario
                                             string RG, string CPF, string Email, Image Foto, string DDD, string Telefone,
                                             string Historico_Escolar, string Complemento, string Numero)
         {
+            byte[] FotoFinal;
             SqlConnection conexao = new SqlConnection(strConexao);
             SqlCommand cmd;
 
@@ -227,12 +225,8 @@ namespace CadastroFuncionario
 
                 getUltimoAlunoRegistrado();
 
-                if (Foto != null)
-                {
-                    byte[] FotoFinal;
-                    FotoFinal = ScaleImage(Foto);
-                    AtualizaFotoAluno(FotoFinal);
-                }
+                FotoFinal = ScaleImage(Foto);
+                AtualizaFotoAluno(FotoFinal);
 
                 return true;
             }
