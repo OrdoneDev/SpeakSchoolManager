@@ -45,12 +45,7 @@ namespace CadastroFuncionario
         {
             ValidaCampos.Deleta = true;
         }
-
-        private void cmb_NomeProfessor_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
-        {
-            ValidaCampos.GetLista(cmb_NomeProfessor, "TOP 5 Nome", "Nome", e, "SysProtected.Funcionarios");
-        }
-
+       
         private void cmb_NomeProfessor_SelectedValueChanged(object sender, EventArgs e)
         {
             ValidaCampos.Deleta = true;
@@ -58,6 +53,10 @@ namespace CadastroFuncionario
 
         private void btn_FiltrarAluno_Click(object sender, EventArgs e)
         {
+            int[] X = new int[dgv_TabelaListaPresenca.RowCount];
+            int N;
+            int i = 0;
+
             if (cmb_NomeAluno.Text.Trim().Length == 0)
             {
                 MessageBox.Show("Preencha o campo aluno!");
@@ -67,26 +66,18 @@ namespace CadastroFuncionario
 
             cmb_NomeAluno.BackColor = System.Drawing.Color.White;
 
-            if (GerenciaBanco.getFiltro(cmb_NomeAluno.Text, "[Nome do aluno]", "ListaPresencaFiltro", "Id_Presenca") != 0)
-            {
-                dgv_TabelaListaPresenca.Rows[GerenciaBanco.getFiltro(cmb_NomeAluno.Text, "[Nome do aluno]", "ListaPresencaFiltro", "Id_Presenca") - 1].Selected = true;
-            }
-        }
+            N = GerenciaBanco.getFiltro(cmb_NomeAluno.Text, "[Nome do aluno]", "ListaPresencaFiltro", "Id_Inscricao_Turma");
 
-        private void btn_FiltrarProfessor_Click(object sender, EventArgs e)
-        {
-            if (cmb_NomeProfessor.Text.Trim().Length == 0)
+            if (N > 0)
             {
-                MessageBox.Show("Preencha o campo professor!");
-                cmb_NomeProfessor.BackColor = System.Drawing.Color.LightGray;
-                return;
-            }
-
-            cmb_NomeProfessor.BackColor = System.Drawing.Color.White;
-
-            if (GerenciaBanco.getFiltro(cmb_NomeProfessor.Text, "[Nome do professor]", "ListaPresencaFiltro", "Id_Presenca") != 0)
-            {
-                dgv_TabelaListaPresenca.Rows[GerenciaBanco.getFiltro(cmb_NomeProfessor.Text, "[Nome do professor]", "ListaPresencaFiltro", "Id_Presenca") - 1].Selected = true;
+                foreach (int Y in X)
+                {
+                    if (dgv_TabelaListaPresenca.Rows[i].Cells[1].Value.ToString() == N.ToString())
+                    {
+                        dgv_TabelaListaPresenca.Rows[i].Selected = true;
+                    }
+                    ++i;
+                }
             }
         }
 

@@ -90,7 +90,6 @@
             resources.ApplyResources(this.dgv_TabelaHistoricoAluno, "dgv_TabelaHistoricoAluno");
             this.dgv_TabelaHistoricoAluno.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_TabelaHistoricoAluno.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_TabelaHistoricoAluno.MultiSelect = false;
             this.dgv_TabelaHistoricoAluno.Name = "dgv_TabelaHistoricoAluno";
             this.dgv_TabelaHistoricoAluno.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dgv_TabelaHistoricoAluno_DataError);
             // 

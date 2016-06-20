@@ -78,9 +78,17 @@ namespace CadastroFuncionario
 
             msk_IdEndereco.BackColor = System.Drawing.Color.White;
 
-            if (GerenciaBanco.getFiltro(msk_IdEndereco.Text, "Id_Endereco", "SysProtected.Endereco", "Id_Endereco") != 0)
+            int Y = GerenciaBanco.getFiltro(msk_IdEndereco.Text, "Id_Endereco", "SysProtected.Endereco", "Id_Endereco");
+            if (Y != 0)
             {
-                dgv_Enderecos.Rows[GerenciaBanco.getFiltro(msk_IdEndereco.Text, "Id_Endereco", "SysProtected.Endereco", "Id_Endereco") - 1].Selected = true;
+                int N = dgv_Enderecos.RowCount;
+                for (int I = 0; I < N; ++I)
+                {
+                    if (int.Parse(dgv_Enderecos.Rows[I].Cells[0].Value.ToString()) == Y)
+                    {
+                        dgv_Enderecos.Rows[I].Selected = true;
+                    }
+                }
             }
         }
 
@@ -95,9 +103,17 @@ namespace CadastroFuncionario
 
             cmb_Estado.BackColor = System.Drawing.Color.White;
 
-            if (GerenciaBanco.getFiltro(cmb_Estado.Text, "Estado", "SysProtected.Endereco", "Id_Endereco") != 0)
+            int Y = GerenciaBanco.getFiltro(cmb_Estado.Text, "Estado", "SysProtected.Endereco", "Id_Endereco");
+            if (Y != 0)
             {
-                dgv_Enderecos.Rows[GerenciaBanco.getFiltro(cmb_Estado.Text, "Estado", "SysProtected.Endereco", "Id_Endereco") - 1].Selected = true;
+                int N = dgv_Enderecos.RowCount;
+                for (int I = 0; I < N; ++I)
+                {
+                    if (int.Parse(dgv_Enderecos.Rows[I].Cells[0].Value.ToString()) == Y)
+                    {
+                        dgv_Enderecos.Rows[I].Selected = true;
+                    }
+                }
             }
         }
 
@@ -112,9 +128,17 @@ namespace CadastroFuncionario
 
             cmb_Cidade.BackColor = System.Drawing.Color.White;
 
-            if (GerenciaBanco.getFiltro(cmb_Cidade.Text, "Cidade", "SysProtected.Endereco", "Id_Endereco") != 0)
+            int Y = GerenciaBanco.getFiltro(cmb_Cidade.Text, "Cidade", "SysProtected.Endereco", "Id_Endereco");
+            if (Y != 0)
             {
-                dgv_Enderecos.Rows[GerenciaBanco.getFiltro(cmb_Cidade.Text, "Cidade", "SysProtected.Endereco", "Id_Endereco") - 1].Selected = true;
+                int N = dgv_Enderecos.RowCount;
+                for (int I = 0; I < N; ++I)
+                {
+                    if (int.Parse(dgv_Enderecos.Rows[I].Cells[0].Value.ToString()) == Y)
+                    {
+                        dgv_Enderecos.Rows[I].Selected = true;
+                    }
+                }
             }
         }
 
@@ -129,9 +153,17 @@ namespace CadastroFuncionario
 
             cmb_Bairro.BackColor = System.Drawing.Color.White;
 
-            if (GerenciaBanco.getFiltro(cmb_Bairro.Text, "Bairro", "SysProtected.Endereco", "Id_Endereco") != 0)
+            int Y = GerenciaBanco.getFiltro(cmb_Bairro.Text, "Bairro", "SysProtected.Endereco", "Id_Endereco");
+            if (Y != 0)
             {
-                dgv_Enderecos.Rows[GerenciaBanco.getFiltro(cmb_Bairro.Text, "Bairro", "SysProtected.Endereco", "Id_Endereco") - 1].Selected = true;
+                int N = dgv_Enderecos.RowCount;
+                for (int I = 0; I < N; ++I)
+                {
+                    if (int.Parse(dgv_Enderecos.Rows[I].Cells[0].Value.ToString()) == Y)
+                    {
+                        dgv_Enderecos.Rows[I].Selected = true;
+                    }
+                }
             }
         }
 

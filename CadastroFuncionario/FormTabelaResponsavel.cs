@@ -58,9 +58,17 @@ namespace CadastroFuncionario
 
             msk_Id.BackColor = System.Drawing.Color.White;
 
-            if (GerenciaBanco.getFiltro(msk_Id.Text, "Id_Responsavel", "SysProtected.Responsavel_Aluno", "Id_Responsavel") != 0)
+            int Y = GerenciaBanco.getFiltro(msk_Id.Text, "Id_Responsavel", "SysProtected.Responsavel_Aluno", "Id_Responsavel");
+            if (Y != 0)
             {
-                dgv_Responsaveis.Rows[GerenciaBanco.getFiltro(msk_Id.Text, "Id_Responsavel", "SysProtected.Responsavel_Aluno", "Id_Responsavel") - 1].Selected = true;
+                int N = dgv_Responsaveis.RowCount;
+                for (int I = 0; I < N; ++I)
+                {
+                    if (int.Parse(dgv_Responsaveis.Rows[I].Cells[0].Value.ToString()) == Y)
+                    {
+                        dgv_Responsaveis.Rows[I].Selected = true;
+                    }
+                }
             }
         }
 
@@ -75,9 +83,17 @@ namespace CadastroFuncionario
 
             cmb_Nome.BackColor = System.Drawing.Color.White;
 
-            if (GerenciaBanco.getFiltro(cmb_Nome.Text, "Nome", "SysProtected.Responsavel_Aluno", "Id_Responsavel") != 0)
+            int Y = GerenciaBanco.getFiltro(cmb_Nome.Text, "Nome", "SysProtected.Responsavel_Aluno", "Id_Responsavel");
+            if (Y != 0)
             {
-                dgv_Responsaveis.Rows[GerenciaBanco.getFiltro(cmb_Nome.Text, "Nome", "SysProtected.Responsavel_Aluno", "Id_Responsavel") - 1].Selected = true;
+                int N = dgv_Responsaveis.RowCount;
+                for (int I = 0; I < N; ++I)
+                {
+                    if (int.Parse(dgv_Responsaveis.Rows[I].Cells[0].Value.ToString()) == Y)
+                    {
+                        dgv_Responsaveis.Rows[I].Selected = true;
+                    }
+                }
             }
         }
 
@@ -92,9 +108,17 @@ namespace CadastroFuncionario
 
             msk_CPF.BackColor = System.Drawing.Color.White;
 
-            if (GerenciaBanco.getFiltro(msk_CPF.Text, "CPF", "SysProtected.Responsavel_Aluno", "Id_Responsavel") != 0)
+            int Y = GerenciaBanco.getFiltro(msk_CPF.Text, "CPF", "SysProtected.Responsavel_Aluno", "Id_Responsavel");
+            if (Y != 0)
             {
-                dgv_Responsaveis.Rows[GerenciaBanco.getFiltro(msk_CPF.Text, "CPF", "SysProtected.Responsavel_Aluno", "Id_Responsavel") - 1].Selected = true;
+                int N = dgv_Responsaveis.RowCount;
+                for (int I = 0; I < N; ++I)
+                {
+                    if (int.Parse(dgv_Responsaveis.Rows[I].Cells[0].Value.ToString()) == Y)
+                    {
+                        dgv_Responsaveis.Rows[I].Selected = true;
+                    }
+                }
             }
         }
 

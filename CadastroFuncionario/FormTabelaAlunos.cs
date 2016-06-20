@@ -84,10 +84,17 @@ namespace CadastroFuncionario
             }
 
             msk_Id.BackColor = System.Drawing.Color.White;
-
-            if (GerenciaBanco.getFiltro(msk_Id.Text, "Id_Aluno", "SysProtected.Alunos", "Id_Aluno") != 0)
+            int Y = GerenciaBanco.getFiltro(msk_Id.Text, "Id_Aluno", "SysProtected.Alunos", "Id_Aluno");
+            if (Y != 0)
             {
-                dgv_Alunos.Rows[GerenciaBanco.getFiltro(msk_Id.Text, "Id_Aluno", "SysProtected.Alunos", "Id_Aluno") - 1].Selected = true;
+                int N = dgv_Alunos.RowCount;
+                for (int I = 0; I < N; ++I)
+                {
+                    if (int.Parse(dgv_Alunos.Rows[I].Cells[0].Value.ToString()) == Y)
+                    {
+                        dgv_Alunos.Rows[I].Selected = true;
+                    }
+                }
             }
         }
 
@@ -102,9 +109,17 @@ namespace CadastroFuncionario
 
             cmb_Nome.BackColor = System.Drawing.Color.White;
 
-            if (GerenciaBanco.getFiltro(cmb_Nome.Text, "Nome", "SysProtected.Alunos", "Id_Aluno") != 0)
+            int Y = GerenciaBanco.getFiltro(cmb_Nome.Text, "Nome", "SysProtected.Alunos", "Id_Aluno");
+            if (Y != 0)
             {
-                dgv_Alunos.Rows[GerenciaBanco.getFiltro(cmb_Nome.Text, "Nome", "SysProtected.Alunos", "Id_Aluno") - 1].Selected = true;
+                int N = dgv_Alunos.RowCount;
+                for (int I = 0; I < N; ++I)
+                {
+                    if (int.Parse(dgv_Alunos.Rows[I].Cells[0].Value.ToString()) == Y)
+                    {
+                        dgv_Alunos.Rows[I].Selected = true;
+                    }
+                }
             }
         }
 

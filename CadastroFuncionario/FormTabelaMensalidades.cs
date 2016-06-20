@@ -60,6 +60,10 @@ namespace CadastroFuncionario
 
         private void btn_FiltrarAluno_Click(object sender, EventArgs e)
         {
+            int[] X = new int[dgv_TabelaMensalidades.RowCount];
+            int N;
+            int i = 0;
+
             if (cmb_NomeAluno.Text.Trim().Length == 0)
             {
                 MessageBox.Show("Preencha o campo aluno!");
@@ -69,9 +73,18 @@ namespace CadastroFuncionario
 
             cmb_NomeAluno.BackColor = System.Drawing.Color.White;
 
-            if (GerenciaBanco.getFiltro(cmb_NomeAluno.Text, "Nome", "MensalidadesAlunosFiltro", "Id_Mensalidade") != 0)
+            N = GerenciaBanco.getFiltro(cmb_NomeAluno.Text, "Nome", "MensalidadesAlunosFiltro", "Id_Negociacao");
+
+            if (N > 0)
             {
-                dgv_TabelaMensalidades.Rows[GerenciaBanco.getFiltro(cmb_NomeAluno.Text, "Nome", "MensalidadesAlunosFiltro", "Id_Mensalidade") - 1].Selected = true;
+                foreach (int Y in X)
+                {
+                    if (dgv_TabelaMensalidades.Rows[i].Cells[2].Value.ToString() == N.ToString())
+                    {
+                        dgv_TabelaMensalidades.Rows[i].Selected = true;
+                    }
+                    ++i;
+                }
             }
         }
 

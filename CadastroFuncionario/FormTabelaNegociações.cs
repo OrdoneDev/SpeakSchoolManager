@@ -67,9 +67,17 @@ namespace CadastroFuncionario
 
             cmb_NomeAluno.BackColor = System.Drawing.Color.White;
 
-            if (GerenciaBanco.getFiltro(cmb_NomeAluno.Text, "[Nome do aluno]", "NegociacaoAlunoFiltro", "Id_Negociacao") != 0)
+            int Y = GerenciaBanco.getFiltro(cmb_NomeAluno.Text, "[Nome do aluno]", "NegociacaoAlunoFiltro", "Id_Negociacao");
+            if (Y != 0)
             {
-                dgv_TabelaNegociacoes.Rows[GerenciaBanco.getFiltro(cmb_NomeAluno.Text, "[Nome do aluno]", "NegociacaoAlunoFiltro", "Id_Negociacao") - 1].Selected = true;
+                int N = dgv_TabelaNegociacoes.RowCount;
+                for (int I = 0; I < N; ++I)
+                {
+                    if (int.Parse(dgv_TabelaNegociacoes.Rows[I].Cells[0].Value.ToString()) == Y)
+                    {
+                        dgv_TabelaNegociacoes.Rows[I].Selected = true;
+                    }
+                }
             }
         }
 
@@ -84,9 +92,17 @@ namespace CadastroFuncionario
 
             cmb_Plano.BackColor = System.Drawing.Color.White;
 
-            if (GerenciaBanco.getFiltro(cmb_Plano.Text, "[Nome do plano]", "NegociacaoAlunoFiltro", "Id_Negociacao") != 0)
+            int Y = GerenciaBanco.getFiltro(cmb_Plano.Text, "[Nome do plano]", "NegociacaoAlunoFiltro", "Id_Negociacao");
+            if (Y != 0)
             {
-                dgv_TabelaNegociacoes.Rows[GerenciaBanco.getFiltro(cmb_Plano.Text, "[Nome do plano]", "NegociacaoAlunoFiltro", "Id_Negociacao") - 1].Selected = true;
+                int N = dgv_TabelaNegociacoes.RowCount;
+                for (int I = 0; I < N; ++I)
+                {
+                    if (int.Parse(dgv_TabelaNegociacoes.Rows[I].Cells[0].Value.ToString()) == Y)
+                    {
+                        dgv_TabelaNegociacoes.Rows[I].Selected = true;
+                    }
+                }
             }
         }
 

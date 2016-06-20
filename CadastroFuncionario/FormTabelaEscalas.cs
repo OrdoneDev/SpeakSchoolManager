@@ -57,10 +57,18 @@ namespace CadastroFuncionario
 
             cmb_NomeFuncionario.BackColor = System.Drawing.Color.White;
 
-            if (GerenciaBanco.getFiltro(cmb_NomeFuncionario.Text, "Nome", "EscalasFuncionarioFiltro", "Id_Escala") != 0)
+            int Y = GerenciaBanco.getFiltro(cmb_NomeFuncionario.Text, "Nome", "EscalasFuncionarioFiltro", "Id_Escala");
+            if (Y != 0)
             {
-                dgv_TabelaEscalas.Rows[GerenciaBanco.getFiltro(cmb_NomeFuncionario.Text, "Nome", "EscalasFuncionarioFiltro", "Id_Escala") - 1].Selected = true;
-            }
+                int N = dgv_TabelaEscalas.RowCount;
+                for (int I = 0; I < N; ++I)
+                {
+                    if (int.Parse(dgv_TabelaEscalas.Rows[I].Cells[0].Value.ToString()) == Y)
+                    {
+                        dgv_TabelaEscalas.Rows[I].Selected = true;
+                    }
+                }
+            }            
         }
 
         private void btn_SalvarAlteracoes_Click(object sender, EventArgs e)

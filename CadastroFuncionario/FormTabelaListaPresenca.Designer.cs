@@ -30,9 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTabelaListaPresenca));
             this.group_TabelaListaPresenca = new System.Windows.Forms.GroupBox();
-            this.btn_FiltrarProfessor = new System.Windows.Forms.Button();
-            this.cmb_NomeProfessor = new System.Windows.Forms.ComboBox();
-            this.lbl_NomeProfessor = new System.Windows.Forms.Label();
             this.btn_FiltrarAluno = new System.Windows.Forms.Button();
             this.cmb_NomeAluno = new System.Windows.Forms.ComboBox();
             this.lbl_NomeAluno = new System.Windows.Forms.Label();
@@ -46,35 +43,12 @@
             // group_TabelaListaPresenca
             // 
             resources.ApplyResources(this.group_TabelaListaPresenca, "group_TabelaListaPresenca");
-            this.group_TabelaListaPresenca.Controls.Add(this.btn_FiltrarProfessor);
-            this.group_TabelaListaPresenca.Controls.Add(this.cmb_NomeProfessor);
-            this.group_TabelaListaPresenca.Controls.Add(this.lbl_NomeProfessor);
             this.group_TabelaListaPresenca.Controls.Add(this.btn_FiltrarAluno);
             this.group_TabelaListaPresenca.Controls.Add(this.cmb_NomeAluno);
             this.group_TabelaListaPresenca.Controls.Add(this.lbl_NomeAluno);
             this.group_TabelaListaPresenca.Controls.Add(this.dgv_TabelaListaPresenca);
             this.group_TabelaListaPresenca.Name = "group_TabelaListaPresenca";
             this.group_TabelaListaPresenca.TabStop = false;
-            // 
-            // btn_FiltrarProfessor
-            // 
-            resources.ApplyResources(this.btn_FiltrarProfessor, "btn_FiltrarProfessor");
-            this.btn_FiltrarProfessor.Name = "btn_FiltrarProfessor";
-            this.btn_FiltrarProfessor.UseVisualStyleBackColor = true;
-            this.btn_FiltrarProfessor.Click += new System.EventHandler(this.btn_FiltrarProfessor_Click);
-            // 
-            // cmb_NomeProfessor
-            // 
-            this.cmb_NomeProfessor.FormattingEnabled = true;
-            resources.ApplyResources(this.cmb_NomeProfessor, "cmb_NomeProfessor");
-            this.cmb_NomeProfessor.Name = "cmb_NomeProfessor";
-            this.cmb_NomeProfessor.SelectedValueChanged += new System.EventHandler(this.cmb_NomeProfessor_SelectedValueChanged);
-            this.cmb_NomeProfessor.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.cmb_NomeProfessor_PreviewKeyDown);
-            // 
-            // lbl_NomeProfessor
-            // 
-            resources.ApplyResources(this.lbl_NomeProfessor, "lbl_NomeProfessor");
-            this.lbl_NomeProfessor.Name = "lbl_NomeProfessor";
             // 
             // btn_FiltrarAluno
             // 
@@ -102,7 +76,6 @@
             resources.ApplyResources(this.dgv_TabelaListaPresenca, "dgv_TabelaListaPresenca");
             this.dgv_TabelaListaPresenca.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_TabelaListaPresenca.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_TabelaListaPresenca.MultiSelect = false;
             this.dgv_TabelaListaPresenca.Name = "dgv_TabelaListaPresenca";
             this.dgv_TabelaListaPresenca.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dgv_TabelaListaPresenca_DataError);
             // 
@@ -141,9 +114,6 @@
         #endregion
 
         private System.Windows.Forms.GroupBox group_TabelaListaPresenca;
-        private System.Windows.Forms.Button btn_FiltrarProfessor;
-        private System.Windows.Forms.ComboBox cmb_NomeProfessor;
-        private System.Windows.Forms.Label lbl_NomeProfessor;
         private System.Windows.Forms.Button btn_FiltrarAluno;
         private System.Windows.Forms.ComboBox cmb_NomeAluno;
         private System.Windows.Forms.Label lbl_NomeAluno;

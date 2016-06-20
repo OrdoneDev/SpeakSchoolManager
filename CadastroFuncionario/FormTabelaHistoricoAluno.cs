@@ -69,7 +69,6 @@ namespace CadastroFuncionario
                     if (dgv_TabelaHistoricoAluno.Rows[i].Cells[1].Value.ToString() == N.ToString())
                     {
                         dgv_TabelaHistoricoAluno.Rows[i].Selected = true;
-                        break;
                     }
                     ++i;
                 }

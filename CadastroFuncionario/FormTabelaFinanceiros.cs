@@ -57,9 +57,17 @@ namespace CadastroFuncionario
 
             cmb_Nome.BackColor = System.Drawing.Color.White;
 
-            if (GerenciaBanco.getFiltro(cmb_Nome.Text, "Nome", "FinanceiroFuncionarioFiltro", "Id_Financeiro") != 0)
+            int Y = GerenciaBanco.getFiltro(cmb_Nome.Text, "Nome", "FinanceiroFuncionarioFiltro", "Id_Financeiro");
+            if (Y != 0)
             {
-                dgv_TabelaFinanceiros.Rows[GerenciaBanco.getFiltro(cmb_Nome.Text, "Nome", "FinanceiroFuncionarioFiltro", "Id_Financeiro") - 1].Selected = true;
+                int N = dgv_TabelaFinanceiros.RowCount;
+                for (int I = 0; I < N; ++I)
+                {
+                    if (int.Parse(dgv_TabelaFinanceiros.Rows[I].Cells[0].Value.ToString()) == Y)
+                    {
+                        dgv_TabelaFinanceiros.Rows[I].Selected = true;
+                    }
+                }
             }
         }
 

@@ -88,9 +88,17 @@ namespace CadastroFuncionario
 
             msk_Id.BackColor = System.Drawing.Color.White;
 
-            if (GerenciaBanco.getFiltro(msk_Id.Text, "Id_Funcionario", "SysProtected.Funcionarios", "Id_Funcionario") != 0)
+            int Y = GerenciaBanco.getFiltro(msk_Id.Text, "Id_Funcionario", "SysProtected.Funcionarios", "Id_Funcionario");
+            if (Y != 0)
             {
-                dgv_Funcionarios.Rows[GerenciaBanco.getFiltro(msk_Id.Text, "Id_Funcionario", "SysProtected.Funcionarios", "Id_Funcionario") - 1].Selected = true;
+                int N = dgv_Funcionarios.RowCount;
+                for (int I = 0; I < N; ++I)
+                {
+                    if (int.Parse(dgv_Funcionarios.Rows[I].Cells[0].Value.ToString()) == Y)
+                    {
+                        dgv_Funcionarios.Rows[I].Selected = true;
+                    }
+                }
             }
         }
 
@@ -105,9 +113,17 @@ namespace CadastroFuncionario
 
             cmb_Nome.BackColor = System.Drawing.Color.White;
 
-            if (GerenciaBanco.getFiltro(cmb_Nome.Text, "Nome", "SysProtected.Funcionarios", "Id_Funcionario") != 0)
+            int Y = GerenciaBanco.getFiltro(cmb_Nome.Text, "Nome", "SysProtected.Funcionarios", "Id_Funcionario");
+            if (Y != 0)
             {
-                dgv_Funcionarios.Rows[GerenciaBanco.getFiltro(cmb_Nome.Text, "Nome", "SysProtected.Funcionarios", "Id_Funcionario") - 1].Selected = true;
+                int N = dgv_Funcionarios.RowCount;
+                for (int I = 0; I < N; ++I)
+                {
+                    if (int.Parse(dgv_Funcionarios.Rows[I].Cells[0].Value.ToString()) == Y)
+                    {
+                        dgv_Funcionarios.Rows[I].Selected = true;
+                    }
+                }
             }
         }
 
@@ -122,9 +138,17 @@ namespace CadastroFuncionario
 
             msk_CPF.BackColor = System.Drawing.Color.White;
 
-            if (GerenciaBanco.getFiltro(msk_CPF.Text, "CPF", "SysProtected.Funcionarios", "Id_Funcionario") != 0)
+            int Y = GerenciaBanco.getFiltro(msk_CPF.Text, "CPF", "SysProtected.Funcionarios", "Id_Funcionario");
+            if (Y != 0)
             {
-                dgv_Funcionarios.Rows[GerenciaBanco.getFiltro(msk_CPF.Text, "CPF", "SysProtected.Funcionarios", "Id_Funcionario") - 1].Selected = true;
+                int N = dgv_Funcionarios.RowCount;
+                for (int I = 0; I < N; ++I)
+                {
+                    if (int.Parse(dgv_Funcionarios.Rows[I].Cells[0].Value.ToString()) == Y)
+                    {
+                        dgv_Funcionarios.Rows[I].Selected = true;
+                    }
+                }
             }
         }
 
@@ -138,9 +162,17 @@ namespace CadastroFuncionario
 
             cmb_Cargo.BackColor = System.Drawing.Color.White;
 
-            if (GerenciaBanco.getFiltro(cmb_Cargo.Text, "Cargo", "SysProtected.Funcionarios", "Id_Funcionario") != 0)
+            int Y = GerenciaBanco.getFiltro(cmb_Cargo.Text, "Cargo", "SysProtected.Funcionarios", "Id_Funcionario");
+            if (Y != 0)
             {
-                dgv_Funcionarios.Rows[GerenciaBanco.getFiltro(cmb_Cargo.Text, "Cargo", "SysProtected.Funcionarios", "Id_Funcionario") - 1].Selected = true;
+                int N = dgv_Funcionarios.RowCount;
+                for (int I = 0; I < N; ++I)
+                {
+                    if (int.Parse(dgv_Funcionarios.Rows[I].Cells[0].Value.ToString()) == Y)
+                    {
+                        dgv_Funcionarios.Rows[I].Selected = true;
+                    }
+                }
             }
         }
 

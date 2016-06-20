@@ -67,9 +67,17 @@ namespace CadastroFuncionario
 
             cmb_NomeAluno.BackColor = System.Drawing.Color.White;
 
-            if (GerenciaBanco.getFiltro(cmb_NomeAluno.Text, "[Nome do aluno]", "InscricoesTurmasFiltro", "Id_Inscricao_Turma") != 0)
+            int Y = GerenciaBanco.getFiltro(cmb_NomeAluno.Text, "[Nome do aluno]", "InscricoesTurmasFiltro", "Id_Inscricao_Turma");
+            if (Y != 0)
             {
-                dgv_TabelaInscricoesTurmas.Rows[GerenciaBanco.getFiltro(cmb_NomeAluno.Text, "[Nome do aluno]", "InscricoesTurmasFiltro", "Id_Inscricao_Turma") - 1].Selected = true;
+                int N = dgv_TabelaInscricoesTurmas.RowCount;
+                for (int I = 0; I < N; ++I)
+                {
+                    if (int.Parse(dgv_TabelaInscricoesTurmas.Rows[I].Cells[0].Value.ToString()) == Y)
+                    {
+                        dgv_TabelaInscricoesTurmas.Rows[I].Selected = true;
+                    }
+                }
             }
         }
 
@@ -84,9 +92,17 @@ namespace CadastroFuncionario
 
             cmb_NomeFuncionario.BackColor = System.Drawing.Color.White;
 
-            if (GerenciaBanco.getFiltro(cmb_NomeFuncionario.Text, "[Nome do funcionário]", "InscricoesTurmasFiltro", "Id_Inscricao_Turma") != 0)
+            int Y = GerenciaBanco.getFiltro(cmb_NomeFuncionario.Text, "[Nome do funcionário]", "InscricoesTurmasFiltro", "Id_Inscricao_Turma");
+            if (Y != 0)
             {
-                dgv_TabelaInscricoesTurmas.Rows[GerenciaBanco.getFiltro(cmb_NomeFuncionario.Text, "[Nome do funcionário]", "InscricoesTurmasFiltro", "Id_Inscricao_Turma") - 1].Selected = true;
+                int N = dgv_TabelaInscricoesTurmas.RowCount;
+                for (int I = 0; I < N; ++I)
+                {
+                    if (int.Parse(dgv_TabelaInscricoesTurmas.Rows[I].Cells[0].Value.ToString()) == Y)
+                    {
+                        dgv_TabelaInscricoesTurmas.Rows[I].Selected = true;
+                    }
+                }
             }
         }
 

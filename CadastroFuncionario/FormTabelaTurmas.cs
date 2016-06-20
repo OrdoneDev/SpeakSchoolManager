@@ -67,9 +67,17 @@ namespace CadastroFuncionario
 
             cmb_NomeFuncionario.BackColor = System.Drawing.Color.White;
 
-            if (GerenciaBanco.getFiltro(cmb_NomeFuncionario.Text, "[Nome do funcionário]", "TurmasFiltro", "Id_Turma") != 0)
+            int Y = GerenciaBanco.getFiltro(cmb_NomeFuncionario.Text, "[Nome do funcionário]", "TurmasFiltro", "Id_Turma");
+            if (Y != 0)
             {
-                dgv_TabelaTurmas.Rows[GerenciaBanco.getFiltro(cmb_NomeFuncionario.Text, "[Nome do funcionário]", "TurmasFiltro", "Id_Turma") - 1].Selected = true;
+                int N = dgv_TabelaTurmas.RowCount;
+                for (int I = 0; I < N; ++I)
+                {
+                    if (int.Parse(dgv_TabelaTurmas.Rows[I].Cells[0].Value.ToString()) == Y)
+                    {
+                        dgv_TabelaTurmas.Rows[I].Selected = true;
+                    }
+                }
             }
         }
 
@@ -84,9 +92,17 @@ namespace CadastroFuncionario
 
             cmb_NomePlano.BackColor = System.Drawing.Color.White;
 
-            if (GerenciaBanco.getFiltro(cmb_NomePlano.Text, "[Nome do plano]", "TurmasFiltro", "Id_Turma") != 0)
+            int Y = GerenciaBanco.getFiltro(cmb_NomePlano.Text, "[Nome do plano]", "TurmasFiltro", "Id_Turma");
+            if (Y != 0)
             {
-                dgv_TabelaTurmas.Rows[GerenciaBanco.getFiltro(cmb_NomePlano.Text, "[Nome do plano]", "TurmasFiltro", "Id_Turma") - 1].Selected = true;
+                int N = dgv_TabelaTurmas.RowCount;
+                for (int I = 0; I < N; ++I)
+                {
+                    if (int.Parse(dgv_TabelaTurmas.Rows[I].Cells[0].Value.ToString()) == Y)
+                    {
+                        dgv_TabelaTurmas.Rows[I].Selected = true;
+                    }
+                }
             }
         }
 

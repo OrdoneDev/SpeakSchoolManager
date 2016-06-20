@@ -102,7 +102,6 @@
             resources.ApplyResources(this.dgv_TabelaMensalidades, "dgv_TabelaMensalidades");
             this.dgv_TabelaMensalidades.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_TabelaMensalidades.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_TabelaMensalidades.MultiSelect = false;
             this.dgv_TabelaMensalidades.Name = "dgv_TabelaMensalidades";
             this.dgv_TabelaMensalidades.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dgv_TabelaMensalidades_DataError);
             // 

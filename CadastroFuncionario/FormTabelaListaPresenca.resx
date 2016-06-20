@@ -122,88 +122,13 @@
     <value>Top, Bottom, Left, Right</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btn_FiltrarProfessor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>629, 22</value>
-  </data>
-  <data name="btn_FiltrarProfessor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 23</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btn_FiltrarProfessor.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="btn_FiltrarProfessor.Text" xml:space="preserve">
-    <value>Filtrar por professor</value>
-  </data>
-  <data name="&gt;&gt;btn_FiltrarProfessor.Name" xml:space="preserve">
-    <value>btn_FiltrarProfessor</value>
-  </data>
-  <data name="&gt;&gt;btn_FiltrarProfessor.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_FiltrarProfessor.Parent" xml:space="preserve">
-    <value>group_TabelaListaPresenca</value>
-  </data>
-  <data name="&gt;&gt;btn_FiltrarProfessor.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="cmb_NomeProfessor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>422, 23</value>
-  </data>
-  <data name="cmb_NomeProfessor.MaxLength" type="System.Int32, mscorlib">
-    <value>40</value>
-  </data>
-  <data name="cmb_NomeProfessor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 21</value>
-  </data>
-  <data name="cmb_NomeProfessor.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;cmb_NomeProfessor.Name" xml:space="preserve">
-    <value>cmb_NomeProfessor</value>
-  </data>
-  <data name="&gt;&gt;cmb_NomeProfessor.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cmb_NomeProfessor.Parent" xml:space="preserve">
-    <value>group_TabelaListaPresenca</value>
-  </data>
-  <data name="&gt;&gt;cmb_NomeProfessor.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="lbl_NomeProfessor.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lbl_NomeProfessor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>365, 26</value>
-  </data>
-  <data name="lbl_NomeProfessor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 13</value>
-  </data>
-  <data name="lbl_NomeProfessor.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="lbl_NomeProfessor.Text" xml:space="preserve">
-    <value>Professor:</value>
-  </data>
-  <data name="&gt;&gt;lbl_NomeProfessor.Name" xml:space="preserve">
-    <value>lbl_NomeProfessor</value>
-  </data>
-  <data name="&gt;&gt;lbl_NomeProfessor.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbl_NomeProfessor.Parent" xml:space="preserve">
-    <value>group_TabelaListaPresenca</value>
-  </data>
-  <data name="&gt;&gt;lbl_NomeProfessor.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="btn_FiltrarAluno.Location" type="System.Drawing.Point, System.Drawing">
     <value>254, 22</value>
   </data>
   <data name="btn_FiltrarAluno.Size" type="System.Drawing.Size, System.Drawing">
     <value>105, 23</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btn_FiltrarAluno.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
@@ -220,7 +145,7 @@
     <value>group_TabelaListaPresenca</value>
   </data>
   <data name="&gt;&gt;btn_FiltrarAluno.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>0</value>
   </data>
   <data name="cmb_NomeAluno.Location" type="System.Drawing.Point, System.Drawing">
     <value>47, 23</value>
@@ -244,7 +169,7 @@
     <value>group_TabelaListaPresenca</value>
   </data>
   <data name="&gt;&gt;cmb_NomeAluno.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>1</value>
   </data>
   <data name="lbl_NomeAluno.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -271,7 +196,7 @@
     <value>group_TabelaListaPresenca</value>
   </data>
   <data name="&gt;&gt;lbl_NomeAluno.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>2</value>
   </data>
   <data name="dgv_TabelaListaPresenca.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -295,7 +220,7 @@
     <value>group_TabelaListaPresenca</value>
   </data>
   <data name="&gt;&gt;dgv_TabelaListaPresenca.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>3</value>
   </data>
   <data name="group_TabelaListaPresenca.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 12</value>
