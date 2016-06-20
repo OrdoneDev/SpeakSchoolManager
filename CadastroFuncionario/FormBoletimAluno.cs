@@ -87,10 +87,17 @@ namespace CadastroFuncionario
         {
             if (!VerificaCamposBoletimAluno())
                 return;
-
-            if (GerenciaBanco.getBoletim(int.Parse(msk_IdAluno.Text)) != 0)
+            int Y = GerenciaBanco.getBoletim(int.Parse(msk_IdAluno.Text));
+            if (Y != 0)
             {
-                dgv_BoletimAluno.Rows[GerenciaBanco.getBoletim(int.Parse(msk_IdAluno.Text)) - 1].Selected = true;
+                int N = dgv_BoletimAluno.RowCount;
+                for (int I = 0; I < N; ++I)
+                {
+                    if (int.Parse(dgv_BoletimAluno.Rows[I].Cells[1].Value.ToString()) == Y)
+                    {
+                        dgv_BoletimAluno.Rows[I].Selected = true;
+                    }
+                }
             }
         }
 
