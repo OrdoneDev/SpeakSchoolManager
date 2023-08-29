@@ -30,6 +30,9 @@ Create database DB_Escola
 	collate latin1_general_cs_as
 go
 
+Use DB_Escola
+go
+
 Create schema SysProtected authorization dbo
 go
 
