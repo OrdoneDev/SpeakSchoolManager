@@ -1,4 +1,4 @@
-# Projeto Integrador para conclusão do curso Técnico - SpeakSchoolManager
+# Projeto Integrador para conclusão do curso Técnico em Informática - SpeakSchoolManager
 
 Software para gerenciar escolas de linguas
 
